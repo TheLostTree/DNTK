@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "WidgetSlotData.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4280
+// EnetChannelId: 0
+// EnetIsReliable: true
+message WidgetActiveChangeNotify {
+	repeated WidgetSlotData widget_data_list = 5;
+}

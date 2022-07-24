@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 199
+// EnetChannelId: 0
+// EnetIsReliable: true
+message ChangeGameTimeRsp {
+	int32 retcode = 8;
+	uint32 extra_days = 5;
+	uint32 cur_game_time = 14;
+}

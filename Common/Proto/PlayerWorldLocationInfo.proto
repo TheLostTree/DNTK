@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "PlayerLocationInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+message PlayerWorldLocationInfo {
+	uint32 scene_id = 1;
+	PlayerLocationInfo player_loc = 12;
+}

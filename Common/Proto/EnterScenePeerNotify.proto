@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 252
+// EnetChannelId: 0
+// EnetIsReliable: true
+message EnterScenePeerNotify {
+	uint32 dest_scene_id = 12;
+	uint32 enter_scene_token = 11;
+	uint32 host_peer_id = 14;
+	uint32 peer_id = 1;
+}

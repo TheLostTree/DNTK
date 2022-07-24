@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "PlayerLocationInfo.proto";
+import "VehicleLocationInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 248
+// EnetChannelId: 1
+// EnetIsReliable: true
+message ScenePlayerLocationNotify {
+	repeated VehicleLocationInfo vehicle_loc_list = 3;
+	uint32 scene_id = 9;
+	repeated PlayerLocationInfo player_loc_list = 14;
+}

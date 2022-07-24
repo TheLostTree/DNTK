@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "AnchorPointData.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4276
+// EnetChannelId: 0
+// EnetIsReliable: true
+message AnchorPointDataNotify {
+	repeated AnchorPointData anchor_point_list = 10;
+	uint32 next_usable_time = 14;
+}

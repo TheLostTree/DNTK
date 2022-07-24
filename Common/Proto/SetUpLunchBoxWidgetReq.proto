@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "LunchBoxData.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4272
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message SetUpLunchBoxWidgetReq {
+	LunchBoxData lunch_box_data = 6;
+}

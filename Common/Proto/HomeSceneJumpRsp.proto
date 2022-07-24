@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4698
+// EnetChannelId: 0
+// EnetIsReliable: true
+message HomeSceneJumpRsp {
+	int32 retcode = 11;
+	bool is_enter_room_scene = 8;
+}

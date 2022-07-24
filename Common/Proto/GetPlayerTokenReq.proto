@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 172
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message GetPlayerTokenReq {
+    string account_token = 10;
+    string account_uid = 11;
+    string psn_region = 4;
+    string online_id = 7;
+    uint32 channel_id = 15;
+    string account_ext = 9;
+    string country_code = 5;
+    string client_seed = 760;
+    bool is_guest = 6;
+    string birthday = 1718;
+    uint32 sub_channel_id = 8;
+    uint32 platform_type = 12;
+    string client_ip_str = 3;
+    string psn_id = 13;
+    uint32 account_type = 1;
+    uint32 Unk2700_NOJPEHIBDJH = 995;
+    uint32 cloud_client_ip = 14;
+    uint32 key_id = 1787;
+    uint32 uid = 2;
+}

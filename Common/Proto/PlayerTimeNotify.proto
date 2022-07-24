@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 191
+// EnetChannelId: 0
+// EnetIsReliable: true
+message PlayerTimeNotify {
+	uint64 server_time = 5;
+	uint64 player_time = 11;
+	bool is_paused = 14;
+}

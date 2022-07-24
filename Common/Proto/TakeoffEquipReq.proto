@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 605
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message TakeoffEquipReq {
+	uint64 avatar_guid = 8;
+	uint32 slot = 15;
+}

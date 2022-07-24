@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+enum CoopPointState {
+	Unstarted = 0;
+	Started = 1;
+	Finished = 2;
+}

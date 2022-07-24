@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "MailData.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1475
+// EnetChannelId: 0
+// EnetIsReliable: true
+message GetAllMailRsp {
+	int32 retcode = 8;
+	repeated MailData mail_list = 14;
+	bool Unk2700_OPEHLDAGICF = 1;
+	bool is_truncated = 2;
+}

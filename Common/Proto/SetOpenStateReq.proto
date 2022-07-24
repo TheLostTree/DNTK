@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 165
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message SetOpenStateReq {
+	uint32 key = 12;
+	uint32 value = 5;
+}

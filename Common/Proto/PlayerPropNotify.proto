@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "PropValue.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 175
+// EnetChannelId: 0
+// EnetIsReliable: true
+message PlayerPropNotify {
+	map<uint32, PropValue> prop_map = 13;
+}

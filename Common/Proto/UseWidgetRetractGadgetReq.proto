@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4286
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message UseWidgetRetractGadgetReq {
+	uint32 entity_id = 3;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4648
+// EnetChannelId: 0
+// EnetIsReliable: true
+message HomeChooseModuleRsp {
+	int32 retcode = 2;
+	uint32 module_id = 8;
+}

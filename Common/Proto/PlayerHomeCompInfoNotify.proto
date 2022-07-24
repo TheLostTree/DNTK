@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "PlayerHomeCompInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4880
+// EnetChannelId: 0
+// EnetIsReliable: true
+message PlayerHomeCompInfoNotify {
+	PlayerHomeCompInfo comp_info = 4;
+}

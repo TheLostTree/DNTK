@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1901
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message GetInvestigationMonsterReq {
+	repeated uint32 city_id_list = 3;
+	bool Unk2700_DEMFDHNFBBJ = 4;
+}

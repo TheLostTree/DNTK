@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "CombatInvokeEntry.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 319
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message CombatInvocationsNotify {
+	repeated CombatInvokeEntry invoke_list = 14;
+}

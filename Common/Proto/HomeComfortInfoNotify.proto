@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "HomeModuleComfortInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4699
+// EnetChannelId: 0
+// EnetIsReliable: true
+message HomeComfortInfoNotify {
+	repeated HomeModuleComfortInfo module_info_list = 6;
+}

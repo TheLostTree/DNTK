@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "Vector.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+message HomeNpcData {
+	uint32 avatar_id = 14;
+	Vector spawn_pos = 15;
+	uint32 costume_id = 3;
+	Vector spawn_rot = 13;
+}

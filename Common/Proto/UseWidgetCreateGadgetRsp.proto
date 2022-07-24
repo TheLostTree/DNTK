@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4290
+// EnetChannelId: 0
+// EnetIsReliable: true
+message UseWidgetCreateGadgetRsp {
+	int32 retcode = 15;
+	uint32 material_id = 12;
+}

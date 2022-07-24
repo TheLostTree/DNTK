@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 253
+// EnetChannelId: 0
+// EnetIsReliable: true
+message SceneTransToPointRsp {
+	uint32 point_id = 14;
+	uint32 scene_id = 3;
+	int32 retcode = 8;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 627
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message ReliquaryPromoteReq {
+	uint64 item_guid = 10;
+	uint64 target_guid = 13;
+}

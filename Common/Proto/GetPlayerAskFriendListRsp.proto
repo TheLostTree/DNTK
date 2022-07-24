@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "FriendBrief.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4066
+// EnetChannelId: 0
+// EnetIsReliable: true
+message GetPlayerAskFriendListRsp {
+	int32 retcode = 13;
+	repeated FriendBrief ask_friend_list = 15;
+}

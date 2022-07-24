@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 2448
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message TowerBuffSelectReq {
+	uint32 tower_buff_id = 5;
+}

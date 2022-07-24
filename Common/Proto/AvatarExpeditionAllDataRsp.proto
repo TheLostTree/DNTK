@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "AvatarExpeditionInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1648
+// EnetChannelId: 0
+// EnetIsReliable: true
+message AvatarExpeditionAllDataRsp {
+	repeated uint32 open_expedition_list = 3;
+	int32 retcode = 15;
+	uint32 expedition_count_limit = 12;
+	map<uint64, AvatarExpeditionInfo> expedition_info_map = 4;
+}

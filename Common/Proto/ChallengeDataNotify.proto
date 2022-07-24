@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 953
+// EnetChannelId: 0
+// EnetIsReliable: true
+message ChallengeDataNotify {
+	uint32 value = 8;
+	uint32 challenge_index = 2;
+	uint32 param_index = 9;
+}

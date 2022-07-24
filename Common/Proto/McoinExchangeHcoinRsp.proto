@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 687
+// EnetChannelId: 0
+// EnetIsReliable: true
+message McoinExchangeHcoinRsp {
+	uint32 mcoin_cost = 8;
+	uint32 hcoin = 7;
+	int32 retcode = 4;
+}

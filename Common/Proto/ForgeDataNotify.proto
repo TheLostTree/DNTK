@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "ForgeQueueData.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 680
+// EnetChannelId: 0
+// EnetIsReliable: true
+message ForgeDataNotify {
+	repeated uint32 forge_id_list = 5;
+	map<uint32, ForgeQueueData> forge_queue_map = 8;
+	uint32 max_queue_num = 14;
+}

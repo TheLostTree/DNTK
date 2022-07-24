@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "Vector.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 366
+// EnetChannelId: 0
+// EnetIsReliable: true
+message EvtAvatarLockChairRsp {
+	uint64 chair_id = 14;
+	uint32 entity_id = 15;
+	Vector position = 4;
+	int32 retcode = 12;
+}

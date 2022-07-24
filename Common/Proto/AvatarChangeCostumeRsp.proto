@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1645
+// EnetChannelId: 0
+// EnetIsReliable: true
+message AvatarChangeCostumeRsp {
+	uint64 avatar_guid = 12;
+	int32 retcode = 7;
+	uint32 costume_id = 13;
+}

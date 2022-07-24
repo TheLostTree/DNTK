@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+import "WidgetCreateLocationInfo.proto";
+import "WidgetCreatorInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4255
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message WidgetDoBagReq {
+	uint32 material_id = 9;
+	oneof op_info {
+		WidgetCreateLocationInfo location_info = 832;
+		WidgetCreatorInfo widget_creator_info = 1497;
+	}
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "BattlePassUnlockStatus.proto";
+
+message BattlePassRewardTag {
+	BattlePassUnlockStatus unlock_status = 2;
+	uint32 level = 4;
+	uint32 reward_id = 7;
+}

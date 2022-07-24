@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+message WidgetCoolDownData {
+	bool is_success = 5;
+	uint64 cool_down_time = 4;
+	uint32 id = 15;
+}

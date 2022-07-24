@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import "HomeLimitedShopInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+message HomeBasicInfo {
+	uint32 level = 10;
+	uint32 cur_room_scene_id = 13;
+	uint32 cur_module_id = 9;
+	bool is_in_edit_mode = 5;
+	uint32 home_owner_uid = 3;
+	uint64 exp = 14;
+	HomeLimitedShopInfo limited_shop_info = 15;
+	string owner_nick_name = 4;
+}

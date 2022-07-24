@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+import "Vector.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+message EvtAnimatorStateChangedInfo {
+	int32 face_angle_compact = 14;
+	uint32 to_state_hash = 5;
+	uint32 normalized_time_compact = 9;
+	uint32 Unk2700_HEMGNDKMAFO = 2;
+	Vector pos = 13;
+	float fade_duration = 3;
+	bool Unk2700_CJCJLGHIBPK = 1;
+	uint32 entity_id = 15;
+	bool Unk2700_JECBLPNLJMJ = 7;
+}

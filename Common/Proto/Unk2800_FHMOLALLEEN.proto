@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+message Unk2800_FHMOLALLEEN {
+	repeated uint32 argument_list = 1;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1666
+// EnetChannelId: 0
+// EnetIsReliable: true
+message ChangeTeamNameRsp {
+	int32 retcode = 11;
+	string team_name = 2;
+	int32 team_id = 4;
+}

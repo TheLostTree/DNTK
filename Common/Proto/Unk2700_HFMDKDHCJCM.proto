@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+import "Vector.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+message Unk2700_HFMDKDHCJCM {
+	Vector Unk2700_CMOMNFNGCGB = 1;
+}

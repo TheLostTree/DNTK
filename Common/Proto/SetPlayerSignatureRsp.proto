@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4005
+// EnetChannelId: 0
+// EnetIsReliable: true
+message SetPlayerSignatureRsp {
+	string signature = 1;
+	int32 retcode = 4;
+}

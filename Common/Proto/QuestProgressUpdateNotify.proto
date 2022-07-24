@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 482
+// EnetChannelId: 0
+// EnetIsReliable: true
+message QuestProgressUpdateNotify {
+	uint32 quest_id = 12;
+	repeated uint32 fail_progress_list = 6;
+	repeated uint32 finish_progress_list = 13;
+}

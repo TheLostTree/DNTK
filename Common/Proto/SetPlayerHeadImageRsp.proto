@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "ProfilePicture.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4047
+// EnetChannelId: 0
+// EnetIsReliable: true
+message SetPlayerHeadImageRsp {
+	ProfilePicture profile_picture = 6;
+	uint32 avatar_id = 5;
+	int32 retcode = 1;
+}

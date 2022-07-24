@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 265
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message GetSceneAreaReq {
+	uint32 scene_id = 4;
+	uint32 belong_uid = 7;
+}

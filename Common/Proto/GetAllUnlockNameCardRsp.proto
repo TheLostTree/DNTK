@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4094
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message GetAllUnlockNameCardRsp {
+	int32 retcode = 4;
+	repeated uint32 name_card_list = 14;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "AvatarTeam.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1706
+// EnetChannelId: 0
+// EnetIsReliable: true
+message AvatarTeamUpdateNotify {
+	map<uint32, AvatarTeam> avatar_team_map = 2;
+	repeated uint64 temp_avatar_guid_list = 13;
+}

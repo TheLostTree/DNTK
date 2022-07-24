@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 193
+// EnetChannelId: 0
+// EnetIsReliable: true
+message OpenStateUpdateNotify {
+	map<uint32, uint32> open_state_map = 6;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4067
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message UpdatePlayerShowAvatarListReq {
+	bool is_show_avatar = 15;
+	repeated uint32 show_avatar_id_list = 13;
+}

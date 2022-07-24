@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "VehicleMember.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+message VehicleInfo {
+	repeated VehicleMember member_list = 1;
+	uint32 owner_uid = 2;
+	float cur_stamina = 3;
+}

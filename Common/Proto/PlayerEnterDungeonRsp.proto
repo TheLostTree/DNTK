@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 935
+// EnetChannelId: 0
+// EnetIsReliable: true
+message PlayerEnterDungeonRsp {
+	uint32 dungeon_id = 2;
+	uint32 point_id = 6;
+	int32 retcode = 5;
+}

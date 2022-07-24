@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "PlayerWorldSceneInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 3129
+// EnetChannelId: 0
+// EnetIsReliable: true
+message PlayerWorldSceneInfoListNotify {
+	repeated PlayerWorldSceneInfo info_list = 5;
+}

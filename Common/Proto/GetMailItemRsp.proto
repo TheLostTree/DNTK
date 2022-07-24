@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "EquipParam.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1407
+// EnetChannelId: 0
+// EnetIsReliable: true
+message GetMailItemRsp {
+	int32 retcode = 7;
+	repeated uint32 mail_id_list = 3;
+	repeated EquipParam item_list = 2;
+}

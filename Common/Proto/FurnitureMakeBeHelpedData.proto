@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "ProfilePicture.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+message FurnitureMakeBeHelpedData {
+	fixed32 time = 12;
+	uint32 icon = 11;
+	uint32 uid = 7;
+	string player_name = 10;
+	ProfilePicture profile_picture = 1;
+}

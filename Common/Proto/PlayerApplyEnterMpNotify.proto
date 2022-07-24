@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "OnlinePlayerInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1826
+// EnetChannelId: 0
+// EnetIsReliable: true
+message PlayerApplyEnterMpNotify {
+	uint32 src_thread_index = 5;
+	uint32 src_app_id = 6;
+	OnlinePlayerInfo src_player_info = 2;
+}

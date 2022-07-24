@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4070
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message GetFriendShowAvatarInfoReq {
+	uint32 uid = 15;
+}

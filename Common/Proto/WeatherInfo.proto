@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+message WeatherInfo {
+	uint32 weather_area_id = 1;
+}

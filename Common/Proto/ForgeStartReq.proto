@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 649
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message ForgeStartReq {
+	uint32 avatar_id = 7;
+	uint32 forge_id = 4;
+	uint32 forge_count = 6;
+}

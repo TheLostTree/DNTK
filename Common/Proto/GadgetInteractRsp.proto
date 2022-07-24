@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+import "InteractType.proto";
+import "InterOpType.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 898
+// EnetChannelId: 0
+// EnetIsReliable: true
+message GadgetInteractRsp {
+	uint32 gadget_entity_id = 10;
+	InteractType interact_type = 2;
+	InterOpType op_type = 3;
+	int32 retcode = 7;
+	uint32 gadget_id = 15;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "MailData.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1498
+// EnetChannelId: 0
+// EnetIsReliable: true
+message MailChangeNotify {
+	repeated MailData mail_list = 14;
+	repeated uint32 del_mail_id_list = 8;
+}

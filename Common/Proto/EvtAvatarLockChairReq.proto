@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "Vector.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 318
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message EvtAvatarLockChairReq {
+	uint64 chair_id = 5;
+	Vector position = 8;
+}

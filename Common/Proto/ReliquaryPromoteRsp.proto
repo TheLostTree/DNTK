@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 694
+// EnetChannelId: 0
+// EnetIsReliable: true
+message ReliquaryPromoteRsp {
+	uint32 old_promote_level = 10;
+	uint64 target_reliquary_guid = 6;
+	repeated uint32 cur_append_prop_list = 9;
+	int32 retcode = 12;
+	uint32 cur_promote_level = 2;
+	repeated uint32 old_append_prop_list = 8;
+}

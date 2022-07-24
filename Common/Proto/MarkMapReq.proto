@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+import "MapMarkPoint.proto";
+import "Operation.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 3466
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message MarkMapReq {
+	MapMarkPoint mark = 8;
+	MapMarkPoint old = 6;
+	Operation op = 9;
+
+	enum Operation {
+		OPERATION_ADD = 0;
+		OPERATION_MOD = 1;
+		OPERATION_DEL = 2;
+		OPERATION_GET = 3;
+	}
+}

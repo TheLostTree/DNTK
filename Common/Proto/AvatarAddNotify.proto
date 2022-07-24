@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "AvatarInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1769
+// EnetChannelId: 0
+// EnetIsReliable: true
+message AvatarAddNotify {
+	AvatarInfo avatar = 13;
+	bool is_in_team = 12;
+}

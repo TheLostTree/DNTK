@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "AiThreatInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 329
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message EvtAiSyncCombatThreatInfoNotify {
+	map<uint32, AiThreatInfo> combat_threat_info_map = 8;
+}

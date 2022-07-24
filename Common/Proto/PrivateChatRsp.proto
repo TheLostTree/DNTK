@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 5048
+// EnetChannelId: 0
+// EnetIsReliable: true
+message PrivateChatRsp {
+	uint32 chat_forbidden_endtime = 12;
+	int32 retcode = 14;
+}

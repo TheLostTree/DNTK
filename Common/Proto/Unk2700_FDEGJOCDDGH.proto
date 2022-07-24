@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+message Unk2700_FDEGJOCDDGH {
+	uint32 cur_progress = 9;
+	uint32 challenge_index = 10;
+	bool is_success = 4;
+	uint32 challenge_id = 8;
+}

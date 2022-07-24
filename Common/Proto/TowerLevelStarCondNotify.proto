@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "TowerLevelStarCondData.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 2406
+// EnetChannelId: 0
+// EnetIsReliable: true
+message TowerLevelStarCondNotify {
+	uint32 level_index = 14;
+	uint32 floor_id = 11;
+	repeated TowerLevelStarCondData cond_data_list = 9;
+}

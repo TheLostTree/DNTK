@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "MapMarkPoint.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 3079
+// EnetChannelId: 0
+// EnetIsReliable: true
+message MarkMapRsp {
+	repeated MapMarkPoint mark_list = 8;
+	int32 retcode = 11;
+}

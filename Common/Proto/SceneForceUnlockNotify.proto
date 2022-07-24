@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 206
+// EnetChannelId: 0
+// EnetIsReliable: true
+message SceneForceUnlockNotify {
+	bool is_add = 10;
+	repeated uint32 force_id_list = 2;
+}

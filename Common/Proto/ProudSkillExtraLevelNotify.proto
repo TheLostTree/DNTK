@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1081
+// EnetChannelId: 0
+// EnetIsReliable: true
+message ProudSkillExtraLevelNotify {
+	uint32 talent_type = 11;
+	uint32 talent_index = 8;
+	uint64 avatar_guid = 15;
+	uint32 extra_level = 3;
+}

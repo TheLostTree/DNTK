@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "EquipParam.proto";
+import "MaterialDeleteInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+message MailItem {
+	EquipParam equip_param = 1;
+	MaterialDeleteInfo delete_info = 2;
+}

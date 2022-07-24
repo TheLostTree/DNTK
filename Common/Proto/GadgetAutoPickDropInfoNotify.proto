@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "Item.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 897
+// EnetChannelId: 0
+// EnetIsReliable: true
+message GadgetAutoPickDropInfoNotify {
+	repeated Item item_list = 11;
+}

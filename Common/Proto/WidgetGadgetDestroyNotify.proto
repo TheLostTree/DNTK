@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4274
+// EnetChannelId: 0
+// EnetIsReliable: true
+message WidgetGadgetDestroyNotify {
+	uint32 entity_id = 15;
+}

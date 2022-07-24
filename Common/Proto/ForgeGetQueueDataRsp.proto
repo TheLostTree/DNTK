@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "ForgeQueueData.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 641
+// EnetChannelId: 0
+// EnetIsReliable: true
+message ForgeGetQueueDataRsp {
+	map<uint32, ForgeQueueData> forge_queue_map = 2;
+	int32 retcode = 15;
+	uint32 max_queue_num = 6;
+}

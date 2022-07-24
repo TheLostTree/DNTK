@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4971
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message PullPrivateChatReq {
+	uint32 target_uid = 5;
+	uint32 pull_num = 7;
+	uint32 from_sequence = 12;
+}

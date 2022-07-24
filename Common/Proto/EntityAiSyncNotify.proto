@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "AiSyncInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 400
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message EntityAiSyncNotify {
+	repeated uint32 local_avatar_alerted_monster_list = 15;
+	repeated AiSyncInfo info_list = 1;
+}

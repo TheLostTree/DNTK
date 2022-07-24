@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "VehicleInteractType.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 865
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message VehicleInteractReq {
+	VehicleInteractType interact_type = 8;
+	uint32 pos = 12;
+	uint32 entity_id = 15;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "EntityClientData.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 3146
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message SetEntityClientDataNotify {
+	uint32 entity_id = 14;
+	EntityClientData entity_client_data = 9;
+}

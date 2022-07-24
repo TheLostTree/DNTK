@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 695
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message WeaponAwakenReq {
+	uint64 item_guid = 10;
+	map<uint32, uint32> affix_level_map = 7;
+	uint64 target_weapon_guid = 9;
+}

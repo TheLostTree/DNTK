@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "AbilityString.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+message ModifierProperty {
+	AbilityString key = 15;
+	float value = 5;
+}

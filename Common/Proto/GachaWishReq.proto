@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1507
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message GachaWishReq {
+	uint32 gacha_schedule_id = 14;
+	uint32 gacha_type = 13;
+	uint32 item_id = 4;
+}

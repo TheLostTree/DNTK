@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "Shop.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 798
+// EnetChannelId: 0
+// EnetIsReliable: true
+message GetShopRsp {
+	Shop shop = 11;
+	int32 retcode = 2;
+}

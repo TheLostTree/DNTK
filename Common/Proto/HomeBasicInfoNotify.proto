@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "HomeBasicInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4885
+// EnetChannelId: 0
+// EnetIsReliable: true
+message HomeBasicInfoNotify {
+	HomeBasicInfo basic_info = 15;
+}

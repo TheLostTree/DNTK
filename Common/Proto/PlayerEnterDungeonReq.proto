@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "Unk2800_JKLFAJKDLDG.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 912
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message PlayerEnterDungeonReq {
+	Unk2800_JKLFAJKDLDG Unk2800_ANJAHBGBIFD = 2;
+	uint32 point_id = 13;
+	uint32 dungeon_id = 7;
+}

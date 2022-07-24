@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+message AbilityMixinCostStamina {
+	bool is_swim = 3;
+}

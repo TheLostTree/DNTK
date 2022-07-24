@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+enum Unk2800_FDLKPKFOIIK {
+	Unk2800_FDLKPKFOIIK_NONE = 0;
+	Unk2800_FDLKPKFOIIK_START = 1;
+	Unk2800_FDLKPKFOIIK_Unk2800_FDPBDHDHAKO = 2;
+}

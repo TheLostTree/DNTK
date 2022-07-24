@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4559
+// EnetChannelId: 0
+// EnetIsReliable: true
+message HomeChangeEditModeRsp {
+	int32 retcode = 10;
+	bool is_enter_edit_mode = 5;
+}

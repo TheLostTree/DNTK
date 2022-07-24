@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "Vector.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 650
+// EnetChannelId: 0
+// EnetIsReliable: true
+message DropHintNotify {
+	Vector position = 7;
+	repeated uint32 item_id_list = 14;
+}

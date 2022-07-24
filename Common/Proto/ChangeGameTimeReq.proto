@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 173
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message ChangeGameTimeReq {
+	uint32 game_time = 6;
+	bool is_force_set = 11;
+	uint32 extra_days = 12;
+}

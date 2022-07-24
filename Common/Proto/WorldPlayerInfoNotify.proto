@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "OnlinePlayerInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 3116
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message WorldPlayerInfoNotify {
+	repeated uint32 player_uid_list = 11;
+	repeated OnlinePlayerInfo player_info_list = 14;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 2431
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message TowerEnterLevelReq {
+	uint32 enter_point_id = 3;
+}

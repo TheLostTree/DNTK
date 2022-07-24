@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 245
+// EnetChannelId: 0
+// EnetIsReliable: true
+message SceneTimeNotify {
+	uint64 scene_time = 14;
+	bool is_paused = 1;
+	uint32 scene_id = 7;
+}

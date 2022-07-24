@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 622
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message WeaponPromoteReq {
+	uint64 target_weapon_guid = 5;
+}

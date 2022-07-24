@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1770
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message AvatarUpgradeReq {
+	uint64 avatar_guid = 6;
+	uint32 count = 2;
+	uint32 item_id = 5;
+}

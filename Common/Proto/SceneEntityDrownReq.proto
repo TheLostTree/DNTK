@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 227
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message SceneEntityDrownReq {
+	uint32 entity_id = 10;
+}

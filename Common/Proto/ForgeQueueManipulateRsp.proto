@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+import "ForgeQueueManipulateType.proto";
+import "ItemParam.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 656
+// EnetChannelId: 0
+// EnetIsReliable: true
+message ForgeQueueManipulateRsp {
+	ForgeQueueManipulateType manipulate_type = 4;
+	repeated ItemParam extra_output_item_list = 13;
+	repeated ItemParam return_item_list = 10;
+	int32 retcode = 1;
+	repeated ItemParam output_item_list = 9;
+}

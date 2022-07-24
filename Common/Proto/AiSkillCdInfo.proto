@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+message AiSkillCdInfo {
+	map<uint32, uint32> skill_cd_map = 11;
+	map<uint32, uint32> skill_group_cd_map = 6;
+}

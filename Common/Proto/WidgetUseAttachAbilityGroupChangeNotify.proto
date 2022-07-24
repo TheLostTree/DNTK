@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4258
+// EnetChannelId: 0
+// EnetIsReliable: true
+message WidgetUseAttachAbilityGroupChangeNotify {
+	bool is_attach = 6;
+	uint32 material_id = 11;
+}

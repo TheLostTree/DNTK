@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 237
+// EnetChannelId: 0
+// EnetIsReliable: true
+message EnterSceneDoneRsp {
+	uint32 enter_scene_token = 15;
+	int32 retcode = 7;
+}

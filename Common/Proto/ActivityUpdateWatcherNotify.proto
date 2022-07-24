@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "ActivityWatcherInfo.proto";
+
+// CmdId: 2172
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message ActivityUpdateWatcherNotify {
+	uint32 activity_id = 1;
+	ActivityWatcherInfo watcher_info = 2;
+}

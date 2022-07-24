@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1696
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message AvatarPromoteGetRewardReq {
+	uint64 avatar_guid = 7;
+	uint32 promote_level = 12;
+}

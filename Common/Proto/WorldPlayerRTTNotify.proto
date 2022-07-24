@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "PlayerRTTInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 22
+// EnetChannelId: 0
+// EnetIsReliable: true
+message WorldPlayerRTTNotify {
+	repeated PlayerRTTInfo player_rtt_list = 1;
+}

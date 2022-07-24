@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "PropValue.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+message PropPair {
+	uint32 type = 1;
+	PropValue prop_value = 2;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4633
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message FurnitureMakeStartReq {
+	uint32 avatar_id = 9;
+	uint32 make_id = 1;
+}

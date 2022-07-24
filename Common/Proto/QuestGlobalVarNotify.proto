@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "QuestGlobalVar.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 434
+// EnetChannelId: 0
+// EnetIsReliable: true
+message QuestGlobalVarNotify {
+	repeated QuestGlobalVar var_list = 1;
+}

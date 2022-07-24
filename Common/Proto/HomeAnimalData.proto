@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "Vector.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+message HomeAnimalData {
+	Vector spawn_rot = 10;
+	uint32 furniture_id = 5;
+	Vector spawn_pos = 6;
+}

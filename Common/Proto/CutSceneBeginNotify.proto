@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 296
+// EnetChannelId: 0
+// EnetIsReliable: true
+message CutSceneBeginNotify {
+	uint32 cutscene_id = 14;
+	bool is_wait_others = 9;
+}

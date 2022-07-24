@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "AbilityInvokeEntry.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1175
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message ClientAbilityChangeNotify {
+	bool Unk2200_FNAFDMAPLHP = 9;
+	uint32 entity_id = 2;
+	repeated AbilityInvokeEntry invokes = 3;
+}

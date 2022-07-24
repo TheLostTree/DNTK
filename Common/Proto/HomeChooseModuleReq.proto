@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4524
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message HomeChooseModuleReq {
+	uint32 module_id = 9;
+}

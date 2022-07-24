@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1656
+// EnetChannelId: 0
+// EnetIsReliable: true
+message AvatarGainFlycloakNotify {
+	uint32 flycloak_id = 3;
+}

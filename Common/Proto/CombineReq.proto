@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 643
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message CombineReq {
+	uint32 combine_count = 12;
+	uint32 combine_id = 9;
+	uint64 avatar_guid = 14;
+}

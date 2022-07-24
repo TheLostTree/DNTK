@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1421
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message DelMailReq {
+	repeated uint32 mail_id_list = 12;
+}

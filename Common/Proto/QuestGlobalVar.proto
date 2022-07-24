@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+message QuestGlobalVar {
+	int32 value = 8;
+	uint32 key = 4;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "FriendBrief.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4065
+// EnetChannelId: 0
+// EnetIsReliable: true
+message AskAddFriendNotify {
+	FriendBrief target_friend_brief = 15;
+	uint32 target_uid = 9;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 302
+// EnetChannelId: 0
+// EnetIsReliable: true
+message DelTeamEntityNotify {
+	repeated uint32 del_entity_id_list = 15;
+	uint32 scene_id = 8;
+}

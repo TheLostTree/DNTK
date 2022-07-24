@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "ParentQuest.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 407
+// EnetChannelId: 0
+// EnetIsReliable: true
+message FinishedParentQuestUpdateNotify {
+	repeated ParentQuest parent_quest_list = 9;
+}

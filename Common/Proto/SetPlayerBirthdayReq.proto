@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "Birthday.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4048
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message SetPlayerBirthdayReq {
+	Birthday birthday = 9;
+}

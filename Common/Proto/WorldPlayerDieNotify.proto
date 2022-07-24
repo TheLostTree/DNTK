@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+import "PlayerDieType.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 285
+// EnetChannelId: 0
+// EnetIsReliable: true
+message WorldPlayerDieNotify {
+	PlayerDieType die_type = 12;
+	uint32 murderer_entity_id = 15;
+	oneof entity {
+		uint32 monster_id = 8;
+		uint32 gadget_id = 4;
+	}
+}

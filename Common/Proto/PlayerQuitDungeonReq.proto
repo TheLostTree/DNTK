@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 907
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message PlayerQuitDungeonReq {
+	bool is_quit_immediately = 10;
+	uint32 point_id = 7;
+}

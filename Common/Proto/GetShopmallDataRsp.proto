@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 721
+// EnetChannelId: 0
+// EnetIsReliable: true
+message GetShopmallDataRsp {
+	repeated uint32 shop_type_list = 15;
+	int32 retcode = 3;
+}

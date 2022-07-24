@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+message ForceUpdateInfo {
+	string force_update_url = 1;
+}

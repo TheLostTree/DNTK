@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 668
+// EnetChannelId: 0
+// EnetIsReliable: true
+message SetEquipLockStateRsp {
+	uint64 target_equip_guid = 14;
+	int32 retcode = 13;
+	bool is_locked = 10;
+}

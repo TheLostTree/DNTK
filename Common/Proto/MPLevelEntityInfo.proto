@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "AbilitySyncStateInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+message MPLevelEntityInfo {
+	AbilitySyncStateInfo ability_info = 2;
+	uint32 entity_id = 11;
+	uint32 authority_peer_id = 3;
+}

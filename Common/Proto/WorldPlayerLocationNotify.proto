@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "PlayerLocationInfo.proto";
+import "PlayerWorldLocationInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 258
+// EnetChannelId: 0
+// EnetIsReliable: true
+message WorldPlayerLocationNotify {
+	repeated PlayerWorldLocationInfo player_world_loc_list = 8;
+	repeated PlayerLocationInfo player_loc_list = 15;
+}

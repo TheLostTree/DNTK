@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1737
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message AvatarWearFlycloakReq {
+	uint64 avatar_guid = 11;
+	uint32 flycloak_id = 13;
+}

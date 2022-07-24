@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "ChatInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 3010
+// EnetChannelId: 0
+// EnetIsReliable: true
+message PlayerChatNotify {
+	ChatInfo chat_info = 3;
+	uint32 channel_id = 6;
+}

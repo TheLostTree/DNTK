@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "AiSkillCdInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 376
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message EvtAiSyncSkillCdNotify {
+	map<uint32, AiSkillCdInfo> ai_cd_map = 7;
+}

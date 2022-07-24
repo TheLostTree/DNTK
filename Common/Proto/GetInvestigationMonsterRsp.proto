@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "InvestigationMonster.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1910
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message GetInvestigationMonsterRsp {
+	repeated InvestigationMonster monster_list = 10;
+	int32 retcode = 1;
+	bool Unk2700_DEMFDHNFBBJ = 2;
+}

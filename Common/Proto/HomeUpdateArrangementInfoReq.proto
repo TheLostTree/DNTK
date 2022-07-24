@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "HomeSceneArrangementInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4510
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message HomeUpdateArrangementInfoReq {
+	HomeSceneArrangementInfo scene_arrangement_info = 6;
+}

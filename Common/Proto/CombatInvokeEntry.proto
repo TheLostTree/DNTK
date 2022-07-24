@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "CombatTypeArgument.proto";
+import "ForwardType.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+message CombatInvokeEntry {
+	bytes combat_data = 12;
+	ForwardType forward_type = 10;
+	CombatTypeArgument argument_type = 11;
+}

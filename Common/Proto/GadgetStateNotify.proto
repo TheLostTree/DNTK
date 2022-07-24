@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 812
+// EnetChannelId: 0
+// EnetIsReliable: true
+message GadgetStateNotify {
+	uint32 gadget_entity_id = 5;
+	uint32 gadget_state = 3;
+	bool is_enable_interact = 11;
+}

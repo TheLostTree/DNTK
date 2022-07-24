@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+enum CBJEDMGOBPL {
+	CBJEDMGOBPL_MBLDLJOKLBL = 0;
+	CBJEDMGOBPL_ILOMIKADKGD = 1;
+	CBJEDMGOBPL_HGHOEJGHMDH = 2;
+	CBJEDMGOBPL_PJCONIDJGOD = 3;
+}

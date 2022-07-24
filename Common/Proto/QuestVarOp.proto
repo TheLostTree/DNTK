@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+message QuestVarOp {
+	uint32 index = 9;
+	int32 value = 5;
+	bool is_add = 6;
+}

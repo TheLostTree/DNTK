@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+message AiSyncInfo {
+	uint32 entity_id = 9;
+	bool is_self_killing = 8;
+	bool has_path_to_target = 4;
+}

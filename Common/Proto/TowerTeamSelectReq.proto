@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "TowerTeam.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 2421
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message TowerTeamSelectReq {
+	repeated TowerTeam tower_team_list = 11;
+	uint32 floor_id = 10;
+}

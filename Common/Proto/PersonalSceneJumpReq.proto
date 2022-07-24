@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 284
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message PersonalSceneJumpReq {
+	uint32 point_id = 4;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import "VehicleInteractType.proto";
+import "VehicleMember.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 804
+// EnetChannelId: 0
+// EnetIsReliable: true
+message VehicleInteractRsp {
+	VehicleInteractType interact_type = 15;
+	VehicleMember member = 3;
+	uint32 entity_id = 2;
+	int32 retcode = 1;
+}

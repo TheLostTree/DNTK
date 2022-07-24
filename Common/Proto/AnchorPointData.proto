@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "Vector.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+message AnchorPointData {
+	uint32 scene_id = 5;
+	uint32 anchor_point_id = 9;
+	uint32 end_time = 8;
+	Vector pos = 15;
+	Vector rot = 2;
+}

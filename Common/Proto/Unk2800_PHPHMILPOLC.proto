@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "Unk2800_FDLKPKFOIIK.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+message Unk2800_PHPHMILPOLC {
+	Unk2800_FDLKPKFOIIK state = 10;
+	uint32 Unk2800_CLOCMPFBGMD = 4;
+}

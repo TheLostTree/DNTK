@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1831
+// EnetChannelId: 0
+// EnetIsReliable: true
+message PlayerApplyEnterMpResultRsp {
+	int32 retcode = 1;
+	bool is_agreed = 3;
+	uint32 apply_uid = 10;
+	uint32 param = 12;
+}

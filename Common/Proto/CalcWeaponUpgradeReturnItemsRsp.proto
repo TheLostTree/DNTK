@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "ItemParam.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 684
+// EnetChannelId: 0
+// EnetIsReliable: true
+message CalcWeaponUpgradeReturnItemsRsp {
+	repeated ItemParam item_param_list = 4;
+	int32 retcode = 15;
+	uint64 target_weapon_guid = 8;
+}

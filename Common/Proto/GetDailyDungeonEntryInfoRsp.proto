@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "DailyDungeonEntryInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 967
+// EnetChannelId: 0
+// EnetIsReliable: true
+message GetDailyDungeonEntryInfoRsp {
+	repeated DailyDungeonEntryInfo daily_dungeon_info_list = 2;
+	int32 retcode = 14;
+}

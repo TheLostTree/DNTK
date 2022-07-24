@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 312
+// EnetChannelId: 0
+// EnetIsReliable: true
+message HostPlayerNotify {
+	uint32 host_peer_id = 13;
+	uint32 host_uid = 10;
+}

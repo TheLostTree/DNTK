@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "Quest.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 472
+// EnetChannelId: 0
+// EnetIsReliable: true
+message QuestListNotify {
+	repeated Quest quest_list = 1;
+}

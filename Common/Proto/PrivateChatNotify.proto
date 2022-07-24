@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "ChatInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4962
+// EnetChannelId: 0
+// EnetIsReliable: true
+message PrivateChatNotify {
+	ChatInfo chat_info = 7;
+}

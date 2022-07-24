@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1661
+// EnetChannelId: 0
+// EnetIsReliable: true
+message ChooseCurAvatarTeamRsp {
+	uint32 cur_team_id = 1;
+	int32 retcode = 14;
+}

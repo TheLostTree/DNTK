@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1512
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message DoGachaReq {
+	uint32 gacha_times = 10;
+	uint32 gacha_schedule_id = 7;
+	uint32 gacha_type = 14;
+	uint32 gacha_random = 13;
+	string gacha_tag = 4;
+}

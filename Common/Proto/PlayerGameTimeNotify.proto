@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 131
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message PlayerGameTimeNotify {
+	uint32 uid = 7;
+	uint32 game_time = 3;
+	bool is_home = 13;
+}

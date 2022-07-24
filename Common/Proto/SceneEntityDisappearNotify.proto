@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "VisionType.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 203
+// EnetChannelId: 0
+// EnetIsReliable: true
+message SceneEntityDisappearNotify {
+	uint32 param = 6;
+	repeated uint32 entity_list = 1;
+	VisionType disappear_type = 2;
+}

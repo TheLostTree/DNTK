@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 921
+// EnetChannelId: 0
+// EnetIsReliable: true
+message PlayerQuitDungeonRsp {
+	uint32 point_id = 11;
+	int32 retcode = 7;
+}

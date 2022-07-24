@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "StoreType.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 635
+// EnetChannelId: 0
+// EnetIsReliable: true
+message StoreItemDelNotify {
+	repeated uint64 guid_list = 12;
+	StoreType store_type = 15;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4772
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message TakeFurnitureMakeReq {
+	uint32 index = 8;
+	bool is_fast_finish = 12;
+	uint32 make_id = 7;
+}

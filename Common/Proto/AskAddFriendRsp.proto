@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4021
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message AskAddFriendRsp {
+	uint32 param = 8;
+	int32 retcode = 7;
+	uint32 target_uid = 4;
+}

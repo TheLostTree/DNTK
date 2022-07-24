@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 834
+// EnetChannelId: 0
+// EnetIsReliable: true
+message VehicleStaminaNotify {
+	uint32 entity_id = 6;
+	float cur_stamina = 14;
+}

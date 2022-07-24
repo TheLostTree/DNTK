@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4075
+// EnetChannelId: 0
+// EnetIsReliable: true
+message DeleteFriendRsp {
+	uint32 target_uid = 14;
+	int32 retcode = 5;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1490
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message GetAuthkeyReq {
+	string auth_appid = 14;
+	uint32 sign_type = 7;
+	uint32 authkey_ver = 13;
+}

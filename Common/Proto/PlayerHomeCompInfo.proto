@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "FriendEnterHomeOption.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+message PlayerHomeCompInfo {
+	repeated uint32 unlocked_module_id_list = 4;
+	repeated uint32 seen_module_id_list = 2;
+	repeated uint32 levelup_reward_got_level_list = 7;
+	FriendEnterHomeOption friend_enter_home_option = 8;
+}

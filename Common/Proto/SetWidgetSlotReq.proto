@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import "WidgetSlotOp.proto";
+import "WidgetSlotTag.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4259
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message SetWidgetSlotReq {
+	repeated WidgetSlotTag tag_list = 15;
+	uint32 material_id = 6;
+	WidgetSlotOp op = 2;
+}

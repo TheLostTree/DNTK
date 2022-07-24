@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+import "AbilityEmbryo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+message AbilityControlBlock {
+	repeated AbilityEmbryo ability_embryo_list = 1;
+}

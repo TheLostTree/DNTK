@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 250
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message EnterWorldAreaReq {
+	uint32 area_type = 8;
+	uint32 area_id = 1;
+}

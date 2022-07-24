@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "Birthday.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4097
+// EnetChannelId: 0
+// EnetIsReliable: true
+message SetPlayerBirthdayRsp {
+	Birthday birthday = 2;
+	int32 retcode = 5;
+}

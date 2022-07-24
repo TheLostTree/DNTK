@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "Vector.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+message PlayerLocationInfo {
+	uint32 uid = 15;
+	Vector pos = 3;
+	Vector rot = 13;
+}

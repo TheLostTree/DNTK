@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4203
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message QueryCodexMonsterBeKilledNumReq {
+	repeated uint32 codex_id_list = 14;
+}

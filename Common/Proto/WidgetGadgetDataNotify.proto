@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "WidgetGadgetData.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4266
+// EnetChannelId: 0
+// EnetIsReliable: true
+message WidgetGadgetDataNotify {
+	WidgetGadgetData widget_gadget_data = 12;
+}

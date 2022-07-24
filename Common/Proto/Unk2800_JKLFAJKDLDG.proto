@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+message Unk2800_JKLFAJKDLDG {
+	uint32 quest_id = 13;
+	uint32 point_id = 6;
+}

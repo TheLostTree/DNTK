@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "ItemParam.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+message GachaTransferItem {
+	ItemParam item = 3;
+	bool is_transfer_item_new = 1;
+}

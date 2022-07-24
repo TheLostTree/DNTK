@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "TowerFloorRecord.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 2498
+// EnetChannelId: 0
+// EnetIsReliable: true
+message TowerFloorRecordChangeNotify {
+	bool is_finished_entrance_floor = 11;
+	repeated TowerFloorRecord tower_floor_record_list = 8;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 821
+// EnetChannelId: 0
+// EnetIsReliable: true
+message SelectWorktopOptionRsp {
+	uint32 gadget_entity_id = 13;
+	uint32 option_id = 7;
+	int32 retcode = 4;
+}

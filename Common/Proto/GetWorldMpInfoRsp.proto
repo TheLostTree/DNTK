@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 3320
+// EnetChannelId: 0
+// EnetIsReliable: true
+message GetWorldMpInfoRsp {
+	int32 retcode = 12;
+	bool is_in_mp_mode = 1;
+	uint32 quit_mp_valid_time = 9;
+}

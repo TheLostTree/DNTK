@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 105
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message SetPlayerBornDataReq {
+	uint32 avatar_id = 2;
+	string nick_name = 13;
+}

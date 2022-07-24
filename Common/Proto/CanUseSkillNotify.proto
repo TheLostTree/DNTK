@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1005
+// EnetChannelId: 0
+// EnetIsReliable: true
+message CanUseSkillNotify {
+	bool is_can_use_skill = 2;
+}

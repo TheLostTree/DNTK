@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "Item.proto";
+import "StoreType.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 612
+// EnetChannelId: 0
+// EnetIsReliable: true
+message StoreItemChangeNotify {
+	StoreType store_type = 12;
+	repeated Item item_list = 10;
+}

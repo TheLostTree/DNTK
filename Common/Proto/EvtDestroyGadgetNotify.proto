@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "ForwardType.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 321
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message EvtDestroyGadgetNotify {
+	ForwardType forward_type = 5;
+	uint32 entity_id = 3;
+}

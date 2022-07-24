@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "ShopGoods.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 712
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message BuyGoodsReq {
+	uint32 buy_count = 14;
+	ShopGoods goods = 15;
+	uint32 shop_type = 7;
+}

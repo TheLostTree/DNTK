@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1606
+// EnetChannelId: 0
+// EnetIsReliable: true
+message AvatarFetterLevelRewardRsp {
+	uint64 avatar_guid = 4;
+	uint32 reward_id = 1;
+	int32 retcode = 13;
+	uint32 fetter_level = 14;
+}

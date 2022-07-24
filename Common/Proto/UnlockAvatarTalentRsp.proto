@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1098
+// EnetChannelId: 0
+// EnetIsReliable: true
+message UnlockAvatarTalentRsp {
+	uint32 talent_id = 2;
+	int32 retcode = 3;
+	uint64 avatar_guid = 10;
+}

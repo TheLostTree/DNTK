@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 200
+// EnetChannelId: 0
+// EnetIsReliable: true
+message PlayerLevelRewardUpdateNotify {
+	repeated uint32 level_list = 9;
+}

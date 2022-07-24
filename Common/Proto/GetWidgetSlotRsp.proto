@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "WidgetSlotData.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4254
+// EnetChannelId: 0
+// EnetIsReliable: true
+message GetWidgetSlotRsp {
+	repeated WidgetSlotData slot_list = 13;
+	int32 retcode = 9;
+}

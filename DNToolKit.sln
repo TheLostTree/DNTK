@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DNToolKit", "DNToolKit\DNToolKit.csproj", "{8A84A673-FFE1-4752-AE7E-72CDB87B453C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{B15F2B40-CAE2-4470-830C-BF8954E27DF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A84A673-FFE1-4752-AE7E-72CDB87B453C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A84A673-FFE1-4752-AE7E-72CDB87B453C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A84A673-FFE1-4752-AE7E-72CDB87B453C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A84A673-FFE1-4752-AE7E-72CDB87B453C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B15F2B40-CAE2-4470-830C-BF8954E27DF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B15F2B40-CAE2-4470-830C-BF8954E27DF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B15F2B40-CAE2-4470-830C-BF8954E27DF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B15F2B40-CAE2-4470-830C-BF8954E27DF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

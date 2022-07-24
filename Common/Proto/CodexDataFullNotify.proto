@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "CodexTypeData.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4205
+// EnetChannelId: 0
+// EnetIsReliable: true
+message CodexDataFullNotify {
+	uint32 Unk2700_BPKOLHOOGFO = 4;
+	repeated uint32 Unk2700_DFJJHFHHIHF = 2;
+	uint32 Unk2700_HJDNBBPMOAP = 3;
+	repeated CodexTypeData type_data_list = 6;
+}

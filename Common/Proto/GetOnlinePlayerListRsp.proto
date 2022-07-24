@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "OnlinePlayerInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 73
+// EnetChannelId: 0
+// EnetIsReliable: true
+message GetOnlinePlayerListRsp {
+	int32 retcode = 7;
+	uint32 param = 11;
+	repeated OnlinePlayerInfo player_info_list = 5;
+}

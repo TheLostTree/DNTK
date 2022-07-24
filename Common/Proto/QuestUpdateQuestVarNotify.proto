@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 453
+// EnetChannelId: 0
+// EnetIsReliable: true
+message QuestUpdateQuestVarNotify {
+	repeated int32 quest_var = 1;
+	uint32 parent_quest_id = 12;
+	uint32 parent_quest_var_seq = 8;
+}

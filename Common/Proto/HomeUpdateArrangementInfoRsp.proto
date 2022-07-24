@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4757
+// EnetChannelId: 0
+// EnetIsReliable: true
+message HomeUpdateArrangementInfoRsp {
+	int32 retcode = 2;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "SceneEntityInfo.proto";
+import "VisionType.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 221
+// EnetChannelId: 0
+// EnetIsReliable: true
+message SceneEntityAppearNotify {
+	VisionType appear_type = 15;
+	uint32 param = 9;
+	repeated SceneEntityInfo entity_list = 5;
+}

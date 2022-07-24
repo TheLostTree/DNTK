@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 632
+// EnetChannelId: 0
+// EnetIsReliable: true
+message CombineFormulaDataNotify {
+	uint32 combine_id = 6;
+	bool is_locked = 3;
+}

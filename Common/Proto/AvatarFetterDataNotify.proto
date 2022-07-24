@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "AvatarFetterInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1782
+// EnetChannelId: 0
+// EnetIsReliable: true
+message AvatarFetterDataNotify {
+	map<uint64, AvatarFetterInfo> fetter_info_map = 15;
+}

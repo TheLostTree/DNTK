@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "AbilityInvokeEntry.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1198
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message AbilityInvocationsNotify {
+	repeated AbilityInvokeEntry invokes = 2;
+}

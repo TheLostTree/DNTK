@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "Vector.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4293
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message UseWidgetCreateGadgetReq {
+	Vector pos = 15;
+	Vector rot = 12;
+	uint32 material_id = 4;
+}

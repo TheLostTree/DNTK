@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1072
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message UnlockAvatarTalentReq {
+	uint32 talent_id = 13;
+	uint64 avatar_guid = 3;
+}

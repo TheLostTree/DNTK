@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "AvatarTeamResonanceInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1082
+// EnetChannelId: 0
+// EnetIsReliable: true
+message TeamResonanceChangeNotify {
+	repeated AvatarTeamResonanceInfo info_list = 1;
+}

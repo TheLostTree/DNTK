@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4653
+// EnetChannelId: 0
+// EnetIsReliable: true
+message TryEnterHomeRsp {
+	uint32 target_uid = 15;
+	int32 retcode = 4;
+	repeated uint32 param_list = 10;
+}

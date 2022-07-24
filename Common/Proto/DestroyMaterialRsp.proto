@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 618
+// EnetChannelId: 0
+// EnetIsReliable: true
+message DestroyMaterialRsp {
+	repeated uint32 item_count_list = 12;
+	repeated uint32 item_id_list = 13;
+	int32 retcode = 11;
+}

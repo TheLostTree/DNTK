@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "SceneEntityInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1644
+// EnetChannelId: 0
+// EnetIsReliable: true
+message AvatarChangeCostumeNotify {
+	SceneEntityInfo entity_info = 7;
+}

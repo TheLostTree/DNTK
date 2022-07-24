@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4252
+// EnetChannelId: 0
+// EnetIsReliable: true
+message AnchorPointOpRsp {
+	int32 retcode = 5;
+	uint32 anchor_point_id = 12;
+	uint32 anchor_point_op_type = 4;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 681
+// EnetChannelId: 0
+// EnetIsReliable: true
+message WearEquipRsp {
+	int32 retcode = 5;
+	uint64 equip_guid = 1;
+	uint64 avatar_guid = 7;
+}

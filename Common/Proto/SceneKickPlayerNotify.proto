@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 211
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message SceneKickPlayerNotify {
+	uint32 target_uid = 8;
+	uint32 kicker_uid = 9;
+}

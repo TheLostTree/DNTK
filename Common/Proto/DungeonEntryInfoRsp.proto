@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+import "DungeonEntryInfo.proto";
+import "Unk2800_MHCFAGCKGIB.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 998
+// EnetChannelId: 0
+// EnetIsReliable: true
+message DungeonEntryInfoRsp {
+	repeated DungeonEntryInfo dungeon_entry_list = 12;
+	uint32 point_id = 15;
+	repeated Unk2800_MHCFAGCKGIB Unk2800_JJFLDCLMEHD = 4;
+	uint32 recommend_dungeon_id = 14;
+	int32 retcode = 11;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 930
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message GetDailyDungeonEntryInfoReq {
+	uint32 scene_id = 15;
+}

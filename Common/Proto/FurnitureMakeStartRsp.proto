@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "FurnitureMakeSlot.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4729
+// EnetChannelId: 0
+// EnetIsReliable: true
+message FurnitureMakeStartRsp {
+	FurnitureMakeSlot furniture_make_slot = 5;
+	int32 retcode = 8;
+}

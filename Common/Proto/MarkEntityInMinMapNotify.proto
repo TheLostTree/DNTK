@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "Vector.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 202
+// EnetChannelId: 0
+// EnetIsReliable: true
+message MarkEntityInMinMapNotify {
+	Vector position = 4;
+	uint32 monster_id = 7;
+	uint32 entity_id = 14;
+}

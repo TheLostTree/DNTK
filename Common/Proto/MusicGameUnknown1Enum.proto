@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+enum MusicGameUnknown1Enum {
+	MusicGameUnknown1Enum_NONE = 0;
+	MusicGameUnknown1Enum_u2 = 1;
+}

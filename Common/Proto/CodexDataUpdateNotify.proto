@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "CodexType.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 4207
+// EnetChannelId: 0
+// EnetIsReliable: true
+message CodexDataUpdateNotify {
+	uint32 id = 8;
+	uint32 weapon_max_promote_level = 15;
+	CodexType type = 11;
+}

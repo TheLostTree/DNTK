@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "UnionCmd.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 5
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message UnionCmdNotify {
+	repeated UnionCmd cmd_list = 1;
+}

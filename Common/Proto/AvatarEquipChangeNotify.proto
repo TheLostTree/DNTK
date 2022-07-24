@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+import "SceneReliquaryInfo.proto";
+import "SceneWeaponInfo.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 647
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message AvatarEquipChangeNotify {
+	uint64 avatar_guid = 10;
+	uint64 equip_guid = 13;
+	SceneReliquaryInfo reliquary = 1;
+	SceneWeaponInfo weapon = 15;
+	uint32 item_id = 14;
+	uint32 equip_type = 8;
+}

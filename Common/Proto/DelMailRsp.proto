@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1403
+// EnetChannelId: 0
+// EnetIsReliable: true
+message DelMailRsp {
+	int32 retcode = 11;
+	repeated uint32 mail_id_list = 5;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "AbilityControlBlock.proto";
+
+option csharp_namespace = "Common.Protobuf";
+
+// CmdId: 1131
+// EnetChannelId: 0
+// EnetIsReliable: true
+message AbilityChangeNotify {
+	uint32 entity_id = 1;
+	AbilityControlBlock ability_control_block = 15;
+}
