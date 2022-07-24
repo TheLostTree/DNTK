@@ -1,14 +1,11 @@
-﻿using PacketDotNet;
+﻿using System.Collections.Concurrent;
+using System.Net.NetworkInformation;
+using PacketDotNet;
+using Serilog;
 using SharpPcap;
 using SharpPcap.LibPcap;
-using System;
-using System.Collections.Concurrent;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Threading;
-using Serilog;
 
-namespace DNToolKit;
+namespace DNToolKit.Sniffer;
 
 public class Sniffer
 {
@@ -18,7 +15,7 @@ public class Sniffer
     public bool Running;
     private Thread _workingThread;
     private ConcurrentQueue<RawCapture> _packetQueue;
-    private Handler _handler;
+    private UdpHandler _udpHandler;
     
     public Sniffer()
     {
@@ -37,7 +34,7 @@ public class Sniffer
         SharpPcapCapturer();
         _workingThread = new Thread(ProcessPacketQueue);
         _workingThread.Name = "ProcessPacketQueue";
-        _handler = new Handler();
+        _udpHandler = new UdpHandler();
         _workingThread.Start();
     }
 
@@ -69,7 +66,7 @@ public class Sniffer
             {
                 if (_packetQueue.TryDequeue(out var rawPacket))
                 {
-                    _handler.HandleRawCapture(rawPacket);
+                    _udpHandler.HandleRawCapture(rawPacket);
                 }
                 else
                 {
