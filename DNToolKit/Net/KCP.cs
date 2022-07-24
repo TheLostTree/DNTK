@@ -24,7 +24,10 @@ public class KCP
             //we dont do shit
             return;
         });
+        _processor = processor;
         _running = true;
+
+        Task.Run(Loop);
     }
 
 
@@ -115,11 +118,11 @@ public class KCP
             var recvArr = RecieveAll();
             foreach (var packets in recvArr)
             {
-                
+                _processor.AddPacket(packets);
             }
             var delay = (int)Check((uint)DateTime.Now.Ticks);
             await Task.Delay(delay);
-            _ = Loop();
+
         }
     }
 

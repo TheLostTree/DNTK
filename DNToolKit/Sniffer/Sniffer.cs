@@ -47,11 +47,10 @@ public class Sniffer
         int readTimeout = 1000;
         _pcapDevice.Open(DeviceModes.Promiscuous | DeviceModes.DataTransferUdp | DeviceModes.NoCaptureLocal, readTimeout);
         _pcapDevice.Filter = "udp portrange 22101-22102";
-
         _pcapDevice.StartCapture();
 
 
-        Log.Information("-- Listening on {0} {1}, hit 'Control + C' to stop...", (object)_pcapDevice.Name, (object)_pcapDevice.Description);
+        Log.Information("-- Listening on {0} {1}", (object)_pcapDevice.Name, (object)_pcapDevice.Description);
 
 
 
@@ -70,7 +69,7 @@ public class Sniffer
                 }
                 else
                 {
-                    Thread.Sleep(10);
+                    Thread.Sleep(1);
                 }
             }
             catch (Exception e)
@@ -86,6 +85,7 @@ public class Sniffer
         Log.Information("-- Capture stopped.");
         Log.Information(_pcapDevice.Statistics.ToString());
         Running = false;
+        _udpHandler.Close();
         _workingThread.Join();
     }
 
@@ -97,7 +97,7 @@ public class Sniffer
         foreach (PcapInterface allPcapInterface in PcapInterface.GetAllPcapInterfaces())
         {
             var friendlyName = allPcapInterface.FriendlyName ?? string.Empty;
-            if (friendlyName.ToLower().Contains("loopback") || friendlyName is "any" or "virbr0-nic") continue;
+            if (friendlyName.ToLower().Contains("loopback") || friendlyName is "any" or "virbr0-nic" ||friendlyName.ToLower().Contains("wsl") ) continue;
             
             var networkInterface = networkInterfaces.FirstOrDefault(ni => ni.Name == friendlyName);
             if ((networkInterface != null ? (networkInterface.OperationalStatus != OperationalStatus.Up ? 1 : 0) : 1) !=

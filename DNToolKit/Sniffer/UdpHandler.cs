@@ -25,13 +25,14 @@ public class UdpHandler
         byte[] packetBytes = udpPacket.PayloadData;
 
 
+        // Log.Information($"Recieved {packetBytes.Length} bytes");
         if(packetBytes.Length == 20)
         {
             try
             {
                 var magic = packetBytes.GetUInt32(0, true);
-                var conv = packetBytes.GetUInt32(0, true);
-                var token = packetBytes.GetUInt32(0, true);
+                var conv = packetBytes.GetUInt32(4, true);
+                var token = packetBytes.GetUInt32(8, true);
                 
                 switch (magic)
                 {
@@ -39,18 +40,22 @@ public class UdpHandler
 
                         if (destination == Destination.Client)
                         {
-                            Log.Debug("Server Handshake : {Conv}, {Token}", conv, token);
+                            Log.Information("Server Handshake : {Conv}, {Token}", conv, token);
                             _client = new KCP(conv, token,"Client",_processor);
                             _server = new KCP(conv, token,"Server",_processor);
                         }
                         //TODO: handle this
                         break;
                     case 0x194:
-                        //todo: DELETE BOTH SERVER AND CLIENT KCPOBJS
+                        Log.Information("Disconnect Handshake");
+                        _client?.Stop()                                                                                                             ;
+                        _server?.Stop();
+                        break;
+                    case 0xFF:                                  
                         break;
                     default:
                         //unhandled handshake
-                        Log.Error("Unhandled Handshake");
+                        Log.Error("Unhandled Handshake", magic);
                         break;
                 }
             }
@@ -67,12 +72,18 @@ public class UdpHandler
             return;
         } 
         
-        Log.Information($"Ignoring {packetBytes.Length} bytes going to {destination}");
+        //Log.Information($"Ignoring {packetBytes.Length} bytes going to {destination}");
 
     }
     enum Destination
     {
         Server,
         Client
+    }
+
+    public void Close()
+    {
+        _client?.Stop();
+        _server?.Stop();
     }
 }

@@ -29,7 +29,13 @@ namespace DNToolKit.Packet
 
         public MTKey(ulong seed)
         {
+            //taken from consoleapp2.exe
             Bytes = MiHoYoKeyGenerator.GenerateKey(seed);
+        }
+
+        public static MTKey PartialKey(ulong seed, int length)
+        {
+            return new MTKey(MiHoYoKeyGenerator.PartialKey(seed, length));
         }
 
         public void Crypt(byte[] buffer)
@@ -73,7 +79,7 @@ namespace DNToolKit.Packet
                     pv1idx = 0x9c;
                     do
                     {
-                        v3 = (ulong)(((uint)state[pv1idx - 0x9b] ^ (uint)state[pv1idx - 0x9c]) & 0x7fffffff) ^ state[pv1idx - 0x9c];
+                        v3 = ((uint)state[pv1idx - 0x9b] ^ (uint)state[pv1idx - 0x9c]) & 0x7fffffff ^ state[pv1idx - 0x9c];
                         state[pv1idx + 0x9c] = (ulong)(int)-((uint)v3 & 1) & 0xb5026f5aa96619e9 ^ v3 >> 1 ^ state[pv1idx];
                         v7--;
                         pv1idx++;
@@ -85,7 +91,7 @@ namespace DNToolKit.Packet
                     pv1idx = 0x1d4;
                     do
                     {
-                        v3 = (ulong)(((uint)state[pv1idx - 0x9b] ^ (uint)state[pv1idx - 0x9c]) & 0x7fffffff) ^ state[pv1idx - 0x9c];
+                        v3 = ((uint)state[pv1idx - 0x9b] ^ (uint)state[pv1idx - 0x9c]) & 0x7fffffff ^ state[pv1idx - 0x9c];
                         state[pv1idx - 0x1d4] = (ulong)(int)-((uint)v3 & 1) & 0xb5026f5aa96619e9 ^ v3 >> 1 ^ state[pv1idx];
                         v7--;
                         pv1idx++;
@@ -95,7 +101,7 @@ namespace DNToolKit.Packet
                     pv1idx = 0;
                     do
                     {
-                        v3 = (ulong)(((uint)state[pv1idx + 0x1d5] ^ (uint)state[pv1idx + 0x1d4]) & 0x7fffffff) ^ state[pv1idx + 0x1d4];
+                        v3 = ((uint)state[pv1idx + 0x1d5] ^ (uint)state[pv1idx + 0x1d4]) & 0x7fffffff ^ state[pv1idx + 0x1d4];
                         state[pv1idx + 0x9c] = (ulong)(int)-((uint)v3 & 1) & 0xb5026f5aa96619e9 ^ v3 >> 1 ^ state[pv1idx];
                         v7--;
                         pv1idx++;
@@ -125,21 +131,37 @@ namespace DNToolKit.Packet
     {
         public static byte[] GenerateKey(ulong source)
         {
-            MiHoYoKeyGenerator.MT19937_64 mt1993764_1 = new MiHoYoKeyGenerator.MT19937_64();
+            MT19937_64 mt1993764_1 = new MT19937_64();
             mt1993764_1.Initialize(source);
-            MiHoYoKeyGenerator.MT19937_64 mt1993764_2 = new MiHoYoKeyGenerator.MT19937_64();
+            MT19937_64 mt1993764_2 = new MT19937_64();
             mt1993764_2.Initialize(mt1993764_1.GenerateULong());
             long num = (long)mt1993764_2.GenerateULong();
             byte[] key = new byte[4096];
             for (int index1 = 0; index1 < key.Length; index1 += 8)
             {
-                byte[] bytes = BitConverter.GetBytes(MiHoYoKeyGenerator.SwapBytes(mt1993764_2.GenerateULong()));
+                byte[] bytes = BitConverter.GetBytes(SwapBytes(mt1993764_2.GenerateULong()));
                 for (int index2 = index1; index2 < index1 + 8; ++index2)
                     key[index2] = bytes[index2 % 8];
             }
             return key;
         }
 
+        public static byte[] PartialKey(ulong seed, int length)
+        {
+            MT19937_64 mt1993764_1 = new MT19937_64();
+            mt1993764_1.Initialize(seed);
+            MT19937_64 mt1993764_2 = new MT19937_64();
+            mt1993764_2.Initialize(mt1993764_1.GenerateULong());
+            long num = (long)mt1993764_2.GenerateULong();
+            byte[] key = new byte[length];
+            for (int index1 = 0; index1 < length; index1 += 8)
+            {
+                byte[] bytes = BitConverter.GetBytes(SwapBytes(mt1993764_2.GenerateULong()));
+                for (int index2 = index1; index2 < index1 + 8; ++index2)
+                    key[index2] = bytes[index2 % 8];
+            }
+            return key;
+        }
         //literally just does the same thing as System.Net.IPAddress.NetworkToHostOrder()
         public static ulong SwapBytes(ulong x)
         {
@@ -158,18 +180,18 @@ namespace DNToolKit.Packet
 
             public void Initialize(ulong[] src, uint mtiSrc = 0)
             {
-                if (src.Length != this.mt.Length)
+                if (src.Length != mt.Length)
                     throw new ArgumentException("NN", nameof(src));
-                Array.Copy((Array)src, 0, (Array)this.mt, 0, src.Length);
-                this.mti = mtiSrc;
+                Array.Copy(src, 0, mt, 0, src.Length);
+                mti = mtiSrc;
             }
 
             public void Initialize(ulong seed)
             {
                 ulong[] mt = this.mt;
                 mt[0] = seed;
-                for (this.mti = 1U; this.mti < 312U; ++this.mti)
-                    mt[(int)this.mti] = (ulong)(6364136223846793005L * ((long)mt[(int)this.mti - 1] ^ (long)(mt[(int)this.mti - 1] >> 62))) + (ulong)this.mti;
+                for (mti = 1U; mti < 312U; ++mti)
+                    mt[(int)mti] = (ulong)(6364136223846793005L * ((long)mt[(int)mti - 1] ^ (long)(mt[(int)mti - 1] >> 62))) + mti;
             }
 
             public ulong GetMag01(ulong val) => ((long)val & 1L) == 0L ? 0UL : 13043109905998158313UL;
@@ -179,8 +201,8 @@ namespace DNToolKit.Packet
                 for (int index1 = 312; index1 < 624; ++index1)
                 {
                     int index2 = index1 - 312;
-                    ulong val = this.mt[index2] ^ (ulong)(((long)this.mt[index2 + 1] ^ (long)this.mt[index2]) & (long)int.MaxValue);
-                    this.mt[index1] = this.GetMag01(val) ^ val >> 1 ^ this.mt[index1 - 156];
+                    ulong val = mt[index2] ^ (ulong)(((long)mt[index2 + 1] ^ (long)mt[index2]) & int.MaxValue);
+                    mt[index1] = GetMag01(val) ^ val >> 1 ^ mt[index1 - 156];
                 }
             }
 
@@ -190,27 +212,27 @@ namespace DNToolKit.Packet
                 for (index1 = 0; index1 < 156; ++index1)
                 {
                     int index2 = index1 + 312;
-                    ulong val = this.mt[index2] ^ (ulong)(((long)this.mt[index2 + 1] ^ (long)this.mt[index2]) & (long)int.MaxValue);
-                    this.mt[index1] = this.GetMag01(val) ^ val >> 1 ^ this.mt[index1 + 312 + 156];
+                    ulong val = mt[index2] ^ (ulong)(((long)mt[index2 + 1] ^ (long)mt[index2]) & int.MaxValue);
+                    mt[index1] = GetMag01(val) ^ val >> 1 ^ mt[index1 + 312 + 156];
                 }
                 for (; index1 < 311; ++index1)
                 {
                     int index3 = index1 + 312;
-                    ulong val = this.mt[index3] ^ (ulong)(((long)this.mt[index3 + 1] ^ (long)this.mt[index3]) & (long)int.MaxValue);
-                    this.mt[index1] = this.GetMag01(val) ^ val >> 1 ^ this.mt[index1 - 156];
+                    ulong val = mt[index3] ^ (ulong)(((long)mt[index3 + 1] ^ (long)mt[index3]) & int.MaxValue);
+                    mt[index1] = GetMag01(val) ^ val >> 1 ^ mt[index1 - 156];
                 }
-                ulong val1 = this.mt[index1 + 312] ^ (ulong)(((long)this.mt[0] ^ (long)this.mt[index1 + 312]) & (long)int.MaxValue);
-                this.mt[index1] = this.GetMag01(val1) ^ val1 >> 1 ^ this.mt[155];
-                this.mti = 0U;
+                ulong val1 = mt[index1 + 312] ^ (ulong)(((long)mt[0] ^ (long)mt[index1 + 312]) & int.MaxValue);
+                mt[index1] = GetMag01(val1) ^ val1 >> 1 ^ mt[155];
+                mti = 0U;
             }
 
             public ulong GenerateULong()
             {
-                if (this.mti == 312U)
-                    this.Regenerate1();
-                else if (624U <= this.mti)
-                    this.Regenerate2();
-                ulong num1 = this.mt[(int)this.mti++];
+                if (mti == 312U)
+                    Regenerate1();
+                else if (624U <= mti)
+                    Regenerate2();
+                ulong num1 = mt[(int)mti++];
                 ulong num2 = (ulong)((((long)(num1 >> 29) & 22906492245L ^ (long)num1) & 62583042209491L) << 17 ^ (long)(num1 >> 29) & 22906492245L) ^ num1;
                 return (ulong)(((long)num2 & -16521L) << 37) ^ num2 ^ ((ulong)(((long)num2 & -16521L) << 37) ^ num2) >> 43;
             }

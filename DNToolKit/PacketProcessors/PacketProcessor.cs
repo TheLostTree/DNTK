@@ -1,6 +1,8 @@
 ﻿using System.Collections.Concurrent;
-
+using System.Diagnostics;
+using Common.Protobuf;
 using DNToolKit.Packet;
+using Serilog;
 
 namespace DNToolKit.PacketProcessors;
 
@@ -8,6 +10,11 @@ public class PacketProcessor
 {
     public ConcurrentQueue<byte[]> Queue = new();
     private bool running = false;
+    
+    private MTKey? _key;
+    private MTKey? _sessionKey;
+
+    private bool _useSessionKey = false;
     public PacketProcessor()
     {
         running = true;
@@ -30,30 +37,45 @@ public class PacketProcessor
         {
             while (Queue.TryDequeue(out var item))
             {
-                ProcessEncryptedBytes(item);
+
+                {
+                    if(!_useSessionKey){
+                        _key ??= KeyRecovery.FindKey(item);
+                        _key?.Crypt(item);
+                    }
+                    else
+                    {
+                        _sessionKey.Crypt(item);
+                    }
+                    if (item.GetUInt16(0, true) == 0x4567)
+                    {
+                        DoStuffWithValidPacket(item);
+                    }
+                    else if(!_useSessionKey)
+                    {
+                        //we may need to bruteforce
+                        Log.Information("Bruteforcing...");
+                        _sessionKey = KeyBruteForcer.BruteForce(item);
+                        _useSessionKey = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine(":(");
+                    }
+                    
+                }
             }
         }
 
         await Task.Delay(5);
-        _ = Work();
+        _ = Task.Run(Work);
     }
 
-    private void ProcessEncryptedBytes(byte[] bytes)
+    
+    //todo: rename
+    public void DoStuffWithValidPacket(byte[] data)
     {
-        if (bytes.GetUInt16(0, true) == 0x4567)
-        {
-            //todo: process
-            return;
-        }
-        var key = KeyRecovery.FindKey(bytes);
-        if(key is not null)
-        {
-            key.Crypt(bytes);
-            //todo: process bytes
-            return;
-        }
-        
-        //todo: add bruteforce alg
-        
+        Console.WriteLine((Opcodes)data.GetUInt16(2, true));
     }
+
 }

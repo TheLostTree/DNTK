@@ -620,7 +620,7 @@ public class IKCP
 
         if (data == null || size < IKCP_OVERHEAD)
             return -1;
-        Console.WriteLine(Convert.ToHexString(data));
+        //Console.WriteLine(Convert.ToHexString(data));
 
         while (true)
         {
