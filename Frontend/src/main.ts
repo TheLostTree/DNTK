@@ -7,11 +7,11 @@ const app = new App({
 export default app
 
 
-const ws = new WebSocket('ws://127.0.0.1:51222');
+const ws = new WebSocket('ws://127.0.0.1:40510');
 
 ws.addEventListener('open', () => {
   console.log('connected');
-  ws.send('Hello Server!');
+  ws.send(JSON.stringify({cmd:"ConnectReq", data:"dntk"}));
 }
 );
 

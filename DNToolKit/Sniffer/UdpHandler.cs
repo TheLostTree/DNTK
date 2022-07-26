@@ -10,7 +10,7 @@ public class UdpHandler
 {
     private KCP? _client;
     private KCP? _server;
-    private PacketProcessor _processor;
+    private PacketProcessor? _processor;
     
     public UdpHandler()
     {
@@ -41,6 +41,8 @@ public class UdpHandler
                         if (sender == Sender.Server)
                         {
                             Log.Information("Server Handshake : {Conv}, {Token}", conv, token);
+                            _processor ??= new PacketProcessor();
+                            
                             _client = new KCP(conv, token,Sender.Client,_processor);
                             _server = new KCP(conv, token,Sender.Server,_processor);
                         }
@@ -50,6 +52,8 @@ public class UdpHandler
                         Log.Information("Disconnect Handshake");
                         _client?.Stop();
                         _server?.Stop();
+                        _processor!.Stop();
+                        _processor = null;
                         break;
                     case 0xFF:                                  
                         break;

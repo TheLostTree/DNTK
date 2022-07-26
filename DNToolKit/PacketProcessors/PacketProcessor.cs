@@ -27,7 +27,7 @@ public class PacketProcessor
     private ulong _tokenRspServerKey;
     private Thread _workingThread;
 
-    public List<string> FrontendQueue = new();
+    public List<object> FrontendQueue = new();
     public PacketProcessor()
     {
         running = true;
@@ -43,6 +43,7 @@ public class PacketProcessor
             
         };
         _workingThread.Start();
+        Task.Run(FrontendUpdate);
     }
 
     public void AddPacket(byte[] data, UdpHandler.Sender sender)
@@ -74,7 +75,7 @@ public class PacketProcessor
                     {
                         if(_sessionKey is null)
                         {
-                            Log.Information("bruteforcing?");
+                            Log.Information("Bruteforcing Key...");
                             //Program.TestBF((long)tokenReqSendTime, tokenRspServerKey, item);
                             
                             _sessionKey = KeyBruteForcer.BruteForce(item, (long)_tokenReqSendTime, _tokenRspServerKey);
@@ -95,7 +96,7 @@ public class PacketProcessor
                     }
                     else
                     {
-                        Console.WriteLine(":(");
+                        
                     }
                 }
             }
@@ -167,7 +168,7 @@ public class PacketProcessor
     public void ProcessPacket(Packet.Packet packet)
     {
         Log.Debug("Received {Type} from {Sender}", packet.PacketType, packet.Sender);
-        FrontendQueue.Add(packet.ToString());
+        FrontendQueue.Add(packet.GetObj());
 
     }
 
@@ -175,15 +176,15 @@ public class PacketProcessor
     {
         while (running)
         {
+            if (FrontendQueue.Count < 2) continue;
             Dictionary<string, object> JSONobj = new();
             JSONobj.Add("cmd", "PacketNotify");
             JSONobj.Add("data", FrontendQueue);
             
             var data = JsonSerializer.Serialize(JSONobj);
             Program.SendWSPacket(data);
-            
+            FrontendQueue.Clear();
             await Task.Delay(20);
-
         }
     }
 

@@ -22,7 +22,7 @@ public class KeyBruteForcer
     {
         //long recvTime = DateTime.Now.Ticks + 10000;
 
-        Console.WriteLine(senttime);
+        // Console.WriteLine(senttime);
 
 
         long recvTime = senttime + 10000;
@@ -47,11 +47,13 @@ public class KeyBruteForcer
             var key = new MTKey(seed);
             if (key.Bytes[0] == keyPrefix[0] && key.Bytes[1] == keyPrefix[1])
             {
+                Log.Information("Seed Found!  {DATA}", seed);
+
                 return key;
             }
         }
 
-        Console.WriteLine($"Cannot find seed!");
+        Log.Error($"Cannot find seed!");
         return null;
     }
 }

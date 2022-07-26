@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Nodes;
+﻿using System.Text;
+using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 using Common;
 using Common.Protobuf;
@@ -13,7 +14,7 @@ namespace DNToolKit.Packet;
 public class Packet
 {
 
-    public static bool IridiumCompatability = false;
+    public static bool IridiumCompatability = true;
     
     
     [System.Text.Json.Serialization.JsonIgnore]
@@ -60,13 +61,21 @@ public class Packet
         
     }
 
-    public override string ToString()
+    public object GetObj()
     {
 
-        if (Packet.IridiumCompatability)
+        if (IridiumCompatability)
         {
+            
             Dictionary<string, object> jsonobj = new();
-            return "";
+            jsonobj.Add("packetID", (int)PacketType);
+            jsonobj.Add("protoName", PacketType.ToString());
+            jsonobj.Add("object", PacketData);
+            jsonobj.Add("packet", Convert.ToBase64String(ProtobufBytes));
+            jsonobj.Add("source", (int)Sender);
+
+            
+            return jsonobj;
         }
         else
         {
@@ -74,9 +83,9 @@ public class Packet
             jsonobj.Add("PacketHead", Metadata);
             jsonobj.Add("PacketData", PacketData);
             jsonobj.Add("CmdID", PacketType.ToString());
-            jsonobj.Add("Sender", Sender.ToString());
+            jsonobj.Add("Sender", (int)Sender);
         
-            return JsonSerializer.Serialize(jsonobj);
+            return jsonobj;
         }
     }
 }
