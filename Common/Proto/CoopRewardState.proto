@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option csharp_namespace = "Common.Protobuf";
-
-enum CoopRewardState {
-	Unlock = 0;
-	Lock = 1;
-	Taken = 2;
-}

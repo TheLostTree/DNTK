@@ -1,4 +1,5 @@
 ﻿using DNToolKit.PacketProcessors;
+using DNToolKit.Sniffer;
 
 namespace DNToolKit.Net;
 
@@ -13,10 +14,13 @@ public class KCP
 
 
     private bool _running = false;
-    public KCP(uint conv, uint token, object user, PacketProcessor processor)
+    private UdpHandler.Sender user;
+    
+    public KCP(uint conv, uint token, UdpHandler.Sender user, PacketProcessor processor)
     {
         
         _ikcp = new IKCP(conv, token, user);
+        this.user = user;
         _ikcp.NoDelay(1, 10, 2, 0);
         _ikcp.WndSize(256, 256);
         _ikcp.SetOutput((data, size, userObj) =>
@@ -118,7 +122,7 @@ public class KCP
             var recvArr = RecieveAll();
             foreach (var packets in recvArr)
             {
-                _processor.AddPacket(packets);
+                _processor.AddPacket(packets, this.user);
             }
             var delay = (int)Check((uint)DateTime.Now.Ticks);
             await Task.Delay(delay);

@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option csharp_namespace = "Common.Protobuf";
-
-enum MarkNewType {
-  _NONE = 0;
-  COMBINE = 1;
-  FORGE = 2;
-}

@@ -21,11 +21,11 @@ public class UdpHandler
     {
         IPv4Packet ipv4Packet = PacketDotNet.Packet.ParsePacket(LinkLayers.Ethernet, rawCapture.Data).Extract<IPv4Packet>();
         UdpPacket udpPacket = ipv4Packet.Extract<UdpPacket>();
-        Destination destination = udpPacket.DestinationPort is 22101 or 22102 ? Destination.Server : Destination.Client;
+        Sender sender = udpPacket.DestinationPort is 22101 or 22102 ? Sender.Client : Sender.Server;
         byte[] packetBytes = udpPacket.PayloadData;
 
 
-        // Log.Information($"Recieved {packetBytes.Length} bytes");
+        // Log.Information($"Received {packetBytes.Length} bytes");
         if(packetBytes.Length == 20)
         {
             try
@@ -38,44 +38,43 @@ public class UdpHandler
                 {
                     case 0x145:
 
-                        if (destination == Destination.Client)
+                        if (sender == Sender.Server)
                         {
                             Log.Information("Server Handshake : {Conv}, {Token}", conv, token);
-                            _client = new KCP(conv, token,"Client",_processor);
-                            _server = new KCP(conv, token,"Server",_processor);
+                            _client = new KCP(conv, token,Sender.Client,_processor);
+                            _server = new KCP(conv, token,Sender.Server,_processor);
                         }
                         //TODO: handle this
                         break;
                     case 0x194:
                         Log.Information("Disconnect Handshake");
-                        _client?.Stop()                                                                                                             ;
+                        _client?.Stop();
                         _server?.Stop();
                         break;
                     case 0xFF:                                  
                         break;
                     default:
                         //unhandled handshake
-                        Log.Error("Unhandled Handshake", magic);
+                        Log.Error("Unhandled Handshake {MagicBytes}", magic);
                         break;
                 }
             }
             catch (Exception e)
             {
-                Log.Error("Handshake Error: {a}", e.ToString());
+                Log.Error("Handshake Error: {Error}", e.ToString());
             }
             return;
         }
         
         if (_client is not null && _server is not null)
         {
-            _ = Destination.Client == destination ? _client.Input(packetBytes) : _server.Input(packetBytes);
-            return;
+            _ = Sender.Client == sender ? _client.Input(packetBytes) : _server.Input(packetBytes);
         } 
         
         //Log.Information($"Ignoring {packetBytes.Length} bytes going to {destination}");
 
     }
-    enum Destination
+    public enum Sender
     {
         Server,
         Client
@@ -85,5 +84,7 @@ public class UdpHandler
     {
         _client?.Stop();
         _server?.Stop();
+        _processor.Stop();
+        Log.Information("UdpHandler stopped...");
     }
 }

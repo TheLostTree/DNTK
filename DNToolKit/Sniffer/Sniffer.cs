@@ -87,6 +87,8 @@ public class Sniffer
         Running = false;
         _udpHandler.Close();
         _workingThread.Join();
+        Log.Information("Sniffer stopped...");
+
     }
 
 

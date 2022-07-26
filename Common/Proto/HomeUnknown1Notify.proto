@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-option csharp_namespace = "Common.Protobuf";
-
-message HomeUnknown1Notify {
-  bool is_enter_edit_mode = 12;
-}

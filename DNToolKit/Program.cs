@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using Common;
 using DNToolKit.Packet;
 using Fleck;
 using Serilog;
@@ -9,30 +10,32 @@ namespace DNToolKit;
 public class Program
 {
     private static Dictionary<IWebSocketConnectionInfo, IWebSocketConnection> _webSocketConnections = new();
-    public static void Main()
+    public static void Main(string[] args)
     {
-        Log.Logger = new LoggerConfiguration().MinimumLevel.Debug().WriteTo.Console().CreateLogger();
+        //todo: add iridium compatability option
+        
+        Log.Logger = new LoggerConfiguration().MinimumLevel.Information().WriteTo.Console().CreateLogger();
         Log.Information("DNToolKit for v2.8");
 
 
         //ugh figure out what to rename the sniffer namespace 
         var sniffer = new Sniffer.Sniffer();
-        TestBF();
         sniffer.Start();
         
         
         var server = new WebSocketServer("ws://127.0.0.1:51222");
+        ProtobufFactory.Initialize();
         server.Start(socket =>
         {
             socket.OnOpen = () =>
             {
                 _webSocketConnections.Add(socket.ConnectionInfo,socket);
-                Console.WriteLine("Open!");
+                //Console.WriteLine("Open!");
             };
             socket.OnClose = () =>
             {
                 _webSocketConnections.Remove(socket.ConnectionInfo);
-                Console.WriteLine("Close!");
+                //Console.WriteLine("Close!");
             };
             socket.OnMessage = message => socket.Send(message);
         });
@@ -58,36 +61,4 @@ public class Program
             webSocketConnection.Value.Send(data);
         }
     }
-    static void TestBF()
-    {
-        //static long GetTotalTicks() => 0x18159E68C18;
-        //int randSeed = (int)GetTotalTicks();
-
-        //var rand = new Random(randSeed);
-        //Console.WriteLine(rand.NextSafeUInt64() == 5335877035264421888ul);
-
-        long recvTime = 1655293841481 + 10000;
-        byte[] keyPrefix = new byte[] { 0xD0 ^ 0x45, 0xAC ^ 0x67 };
-
-        for (long time = recvTime; time > recvTime - 10000; time--)
-        {
-            var rand = new Random((int)time);
-
-            var clientSeed = rand.NextSafeUInt64();
-            var seed = 5518277363375230666ul ^ clientSeed;
-
-            if (clientSeed == 59954822902317360ul)
-                Console.WriteLine("Mero");
-
-            var key = new MTKey(seed);
-
-            if (key.Bytes[0] == keyPrefix[0] && key.Bytes[1] == keyPrefix[1])
-            {
-                Console.WriteLine($"time: {time}");
-                Console.WriteLine($"seed: {seed}");
-                break;
-            }
-        }
-    }
-
 }
