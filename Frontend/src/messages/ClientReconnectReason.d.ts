@@ -1,0 +1,6 @@
+/* eslint-disable */
+export enum ClientReconnectReason {
+  CLIENT_RECONNECT_REASON_RECONNNECT_NONE = 0,
+  CLIENT_RECONNECT_REASON_RECONNNECT_QUIT_MP = 1,
+  UNRECOGNIZED = -1,
+}

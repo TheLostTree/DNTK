@@ -1,0 +1,6 @@
+/* eslint-disable */
+export enum Unk2700HGMCNJOPDAA {
+  Unk2700_HGMCNJOPDAA_NONE = 0,
+  Unk2700_HGMCNJOPDAA_Unk2700_COJANCPMOAI = 1,
+  UNRECOGNIZED = -1,
+}

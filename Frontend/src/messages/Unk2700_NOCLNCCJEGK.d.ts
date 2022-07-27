@@ -1,0 +1,6 @@
+/* eslint-disable */
+export enum Unk2700NOCLNCCJEGK {
+  Unk2700_NOCLNCCJEGK_NONE = 0,
+  Unk2700_NOCLNCCJEGK_Unk2700_ODIJEIGEGED = 1,
+  UNRECOGNIZED = -1,
+}

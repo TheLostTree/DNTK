@@ -1,0 +1,8 @@
+/* eslint-disable */
+export enum MovingPlatformType {
+  MOVING_PLATFORM_TYPE_NONE = 0,
+  MOVING_PLATFORM_TYPE_USE_CONFIG = 1,
+  MOVING_PLATFORM_TYPE_ABILITY = 2,
+  MOVING_PLATFORM_TYPE_ROUTE = 3,
+  UNRECOGNIZED = -1,
+}

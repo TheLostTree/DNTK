@@ -1,0 +1,7 @@
+/* eslint-disable */
+export enum FriendEnterHomeOption {
+  FRIEND_ENTER_HOME_OPTION_NEED_CONFIRM = 0,
+  FRIEND_ENTER_HOME_OPTION_REFUSE = 1,
+  FRIEND_ENTER_HOME_OPTION_DIRECT = 2,
+  UNRECOGNIZED = -1,
+}

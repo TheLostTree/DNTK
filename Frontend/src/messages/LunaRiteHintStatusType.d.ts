@@ -1,0 +1,7 @@
+/* eslint-disable */
+export enum LunaRiteHintStatusType {
+  LUNA_RITE_HINT_STATUS_TYPE_DEFAULT = 0,
+  LUNA_RITE_HINT_STATUS_TYPE_NO_COUNT = 1,
+  LUNA_RITE_HINT_STATUS_TYPE_FINISH = 2,
+  UNRECOGNIZED = -1,
+}

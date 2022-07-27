@@ -1,0 +1,7 @@
+/* eslint-disable */
+export enum FishEscapeReason {
+  FISH_ESCAPE_REASON_FISN_ESCAPE_NONE = 0,
+  FISH_ESCAPE_REASON_SHOCKED = 1,
+  FISH_ESCAPE_REASON_UNHOOK = 2,
+  UNRECOGNIZED = -1,
+}

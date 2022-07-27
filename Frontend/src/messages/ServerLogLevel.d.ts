@@ -1,0 +1,9 @@
+/* eslint-disable */
+export enum ServerLogLevel {
+  SERVER_LOG_LEVEL_NONE = 0,
+  SERVER_LOG_LEVEL_DEBUG = 1,
+  SERVER_LOG_LEVEL_INFO = 2,
+  SERVER_LOG_LEVEL_WARNING = 3,
+  SERVER_LOG_LEVEL_ERROR = 4,
+  UNRECOGNIZED = -1,
+}
