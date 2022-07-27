@@ -14,7 +14,7 @@
       </PackageReference>
     </ItemGroup>
     <ItemGroup>
-        <Protobuf Include="Proto/*.proto" ProtoRoot="Proto" />
+        <Protobuf Include="Proto/*.proto" ProtoRoot="Proto" GrpcServices="None"/>
     </ItemGroup>
 
 </Project>

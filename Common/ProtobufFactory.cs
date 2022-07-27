@@ -37,11 +37,11 @@ public class ProtobufFactory
                     {
                         if (!_parsers.TryAdd(opcode, (Parser as MessageParser)!))
                         {
-                            Console.WriteLine(opcode);
+                            // Console.WriteLine(opcode);
                         }
                         if (!_types.TryAdd(opcode, type))
                         {
-                            Console.WriteLine(opcode);
+                            // Console.WriteLine(opcode);
                         }
                     }
                 }

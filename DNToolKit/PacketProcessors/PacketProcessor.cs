@@ -27,7 +27,7 @@ public class PacketProcessor
     private ulong _tokenRspServerKey;
     private Thread _workingThread;
 
-    public List<object> FrontendQueue = new();
+    public List<Packet.Packet> FrontendQueue = new();
     public PacketProcessor()
     {
         running = true;
@@ -167,8 +167,8 @@ public class PacketProcessor
 
     public void ProcessPacket(Packet.Packet packet)
     {
-        Log.Debug("Received {Type} from {Sender}", packet.PacketType, packet.Sender);
-        FrontendQueue.Add(packet.GetObj());
+        //Log.Debug("Received {Type} from {Sender}", packet.PacketType, packet.Sender);
+        FrontendQueue.Add(packet);
 
     }
 
@@ -176,14 +176,30 @@ public class PacketProcessor
     {
         while (running)
         {
-            if (FrontendQueue.Count < 2) continue;
-            Dictionary<string, object> JSONobj = new();
-            JSONobj.Add("cmd", "PacketNotify");
-            JSONobj.Add("data", FrontendQueue);
-            
-            var data = JsonSerializer.Serialize(JSONobj);
-            Program.SendWSPacket(data);
-            FrontendQueue.Clear();
+            try
+            {
+                if (FrontendQueue.Count < 2 ) continue;
+                //mot quite ideal?
+                
+                var Copy = FrontendQueue.ToArray();
+                FrontendQueue.Clear();
+
+
+                Dictionary<string, object> JSONobj = new();
+                JSONobj.Add("cmd", "PacketNotify");
+                //theres a wierd object reference not set to an instance of an object thing here? try to fixo?
+                var data2 = Copy.Select(x => x.GetObj(Program.WSWrapper.WSType.Iridium));
+                data2 = data2.Where(x => x is not null);
+                JSONobj.Add("data", data2);
+                var data = JsonSerializer.Serialize(JSONobj);
+                Program.SendWSPacket(data, Program.WSWrapper.WSType.Iridium);
+                JSONobj["data"] = Copy.Select(x => x.GetObj(Program.WSWrapper.WSType.DNToolKit)).Where(x=>x is not null);
+                Program.SendWSPacket(JsonSerializer.Serialize(JSONobj), Program.WSWrapper.WSType.DNToolKit);
+            }
+            catch (Exception e)
+            {
+                Log.Error(e.ToString());
+            }
             await Task.Delay(20);
         }
     }

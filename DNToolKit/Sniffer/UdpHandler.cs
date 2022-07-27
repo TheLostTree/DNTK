@@ -52,7 +52,7 @@ public class UdpHandler
                         Log.Information("Disconnect Handshake");
                         _client?.Stop();
                         _server?.Stop();
-                        _processor!.Stop();
+                        _processor?.Stop();
                         _processor = null;
                         break;
                     case 0xFF:                                  
@@ -88,7 +88,7 @@ public class UdpHandler
     {
         _client?.Stop();
         _server?.Stop();
-        _processor.Stop();
+        _processor?.Stop();
         Log.Information("UdpHandler stopped...");
     }
 }

@@ -13,8 +13,7 @@ namespace DNToolKit.Packet;
 
 public class Packet
 {
-
-    public static bool IridiumCompatability = true;
+    
     
     
     [System.Text.Json.Serialization.JsonIgnore]
@@ -61,10 +60,10 @@ public class Packet
         
     }
 
-    public object GetObj()
+    public object GetObj(Program.WSWrapper.WSType wsType)
     {
 
-        if (IridiumCompatability)
+        if (wsType == Program.WSWrapper.WSType.Iridium)
         {
             
             Dictionary<string, object> jsonobj = new();
