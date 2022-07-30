@@ -4,6 +4,8 @@
 // cryptography routines. Truly awful. I wonder if the developers suffered from terminal stupidity.
 //- ysfreedom devs
 
+using System.Runtime.InteropServices;
+
 namespace DNToolKit.Packet
 {
     //thank you so much ysfreedom i am in NOWAY rewriting this bullshit
@@ -33,9 +35,9 @@ namespace DNToolKit.Packet
             Bytes = MiHoYoKeyGenerator.GenerateKey(seed);
         }
 
-        public static MTKey PartialKey(ulong seed, int length)
+        public static byte[] PartialKey(ulong seed, int length)
         {
-            return new MTKey(MiHoYoKeyGenerator.PartialKey(seed, length));
+            return MiHoYoKeyGenerator.PartialKey(seed, length);
         }
 
         public void Crypt(byte[] buffer)
@@ -148,19 +150,19 @@ namespace DNToolKit.Packet
 
         public static byte[] PartialKey(ulong seed, int length)
         {
-            MT19937_64 mt1993764_1 = new MT19937_64();
+            var mt1993764_1 = new MT19937_64();
             mt1993764_1.Initialize(seed);
-            MT19937_64 mt1993764_2 = new MT19937_64();
+            var mt1993764_2 = new MT19937_64();
             mt1993764_2.Initialize(mt1993764_1.GenerateULong());
-            long num = (long)mt1993764_2.GenerateULong();
-            byte[] key = new byte[length];
+            _ = (long)mt1993764_2.GenerateULong();
+            byte[] newkey = new byte[length];
             for (int index1 = 0; index1 < length; index1 += 8)
             {
                 byte[] bytes = BitConverter.GetBytes(SwapBytes(mt1993764_2.GenerateULong()));
                 for (int index2 = index1; index2 < index1 + 8; ++index2)
-                    key[index2] = bytes[index2 % 8];
+                    newkey[index2] = bytes[index2 % 8];
             }
-            return key;
+            return newkey;
         }
         //literally just does the same thing as System.Net.IPAddress.NetworkToHostOrder()
         public static ulong SwapBytes(ulong x)

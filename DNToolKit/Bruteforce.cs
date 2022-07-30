@@ -25,7 +25,7 @@ public class KeyBruteForcer
         // Console.WriteLine(senttime);
 
 
-        long recvTime = senttime + 10000;
+        long recvTime = senttime;
 
         var keyPrefix = new byte[] { (byte)(testBuffer[0] ^ 0x45), (byte)(testBuffer[1] ^ 0x67) };
         // Log.Information("KeyPrefix: @{DATA}", keyPrefix);
@@ -34,24 +34,51 @@ public class KeyBruteForcer
         //ending magic 
         //var keySuffix = new byte[] { (byte)(testBuffer[^1] ^ 0x89), (byte)(testBuffer[^0] ^ 0xAB) };
 
-        
-        
-        for (long time = recvTime; time > recvTime - 20000; time--)
+        for (long offset = 0; offset < 3000; offset++)
         {
-            var rand = new Random((int)time);
-
+            var rand = new Random((int)(recvTime + offset));
             var clientSeed = rand.NextSafeUInt64();
             var seed = serverKey ^ clientSeed;
-
-            // var key = MTKey.PartialKey(seed, testBuffer.Length);
-            var key = new MTKey(seed);
-            if (key.Bytes[0] == keyPrefix[0] && key.Bytes[1] == keyPrefix[1])
+            //yep i dont even know why i bothered
+            var key = MTKey.PartialKey(seed, 8);
+            // var key = new MTKey(seed);
+            if (key[0] == keyPrefix[0] && key[1] == keyPrefix[1])
             {
                 Log.Information("Seed Found!  {DATA}", seed);
-
-                return key;
+                return new MTKey(seed);
+            }
+            
+            //todo: yeah this is ugly but moving it all into a different function is also cringe
+            var rand2 = new Random((int)(recvTime - offset));
+            var clientSeed2 = rand2.NextSafeUInt64();
+            var seed2 = serverKey ^ clientSeed2;
+            var key2 = MTKey.PartialKey(seed2, 8);
+            if (key2[0] == keyPrefix[0] && key2[1] == keyPrefix[1])
+            {
+                Log.Information("Seed Found!  {DATA}", seed2);
+                return new MTKey(seed2);
             }
         }
+        Log.Error($"Cannot find seed!");
+        return null;
+        
+        // for (long time = recvTime; time > recvTime - 20000; time--)
+        // {
+        //     var rand = new Random((int)time);
+        //
+        //     var clientSeed = rand.NextSafeUInt64();
+        //     var seed = serverKey ^ clientSeed;
+        //
+        //     //yep i dont even know why i bothered
+        //     var key = MTKey.PartialKey(seed, 8);
+        //     // var key = new MTKey(seed);
+        //     if (key[0] == keyPrefix[0] && key[1] == keyPrefix[1])
+        //     {
+        //         Log.Information("Seed Found!  {DATA}", seed);
+        //
+        //         return new MTKey(seed);
+        //     }
+        // }
 
         Log.Error($"Cannot find seed!");
         return null;

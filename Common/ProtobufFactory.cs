@@ -15,16 +15,14 @@ public class ProtobufFactory
         var protoClasses = assembly.GetTypes().Where(x => typeof(IMessage).IsAssignableFrom(x));
 
         var enumerable = protoClasses.ToList();
-        var parsers = enumerable.Select(type =>
-        {
-            return type.GetMembers().Where(x => x.Name == "Parser").First();
-        });
+        // _ = enumerable.Select(type =>
+        // {
+        //     return type.GetMembers().Where(x => x.Name == "Parser").First();
+        // });
         
         
         foreach (var type in enumerable)
         {
-
-            
             var classInstance = type.GetConstructors().First().Invoke(new object[]{});
             var getparsermethod = type.GetMethod("get_Parser"); 
             if (getparsermethod is not null)
@@ -35,23 +33,13 @@ public class ProtobufFactory
                 {
                     if (Enum.TryParse(type.Name, out Opcode opcode))
                     {
-                        if (!_parsers.TryAdd(opcode, (Parser as MessageParser)!))
-                        {
-                            // Console.WriteLine(opcode);
-                        }
-                        if (!_types.TryAdd(opcode, type))
-                        {
-                            // Console.WriteLine(opcode);
-                        }
+                        _parsers.TryAdd(opcode, (Parser as MessageParser)!);
+                        _types.TryAdd(opcode, type);
                     }
                 }
                 
             }
         }
-
-
-
-
     }
 
     public static Type? GetPacketType(Opcode opcode)
@@ -59,9 +47,8 @@ public class ProtobufFactory
         if (_types.TryGetValue(opcode, out var type))
         {
             var constructor = type.GetConstructor(new Type[] {});
-            //return c"onstructor.Invoke();
+            //return constructor.Invoke();
         }
-
         return null;
     }
     
@@ -71,9 +58,7 @@ public class ProtobufFactory
         if (_parsers.TryGetValue(opcode, out var parser))
         {
             return parser;
-            //return c"onstructor.Invoke();
         }
-
         return null;
     }
 }

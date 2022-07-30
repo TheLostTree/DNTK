@@ -5,12 +5,7 @@ namespace DNToolKit.PacketProcessors;
 
 public class UnionCmdProcessor
 {
-    public UnionCmdProcessor()
-    {
-        
-    }
-
-    public static List<Packet.Packet> ProcessUnion(Packet.Packet packet)
+    public static void ProcessUnion(Packet.Packet packet)
     {
         var pktArray = new List<Packet.Packet>();
         foreach (var unionCmd in (packet.PacketData as UnionCmdNotify)!.CmdList)
@@ -24,16 +19,9 @@ public class UnionCmdProcessor
             unionpkt.ParsePacket();
             if (unionpkt.PacketType == Opcode.AbilityInvocationsNotify)
             {
-                var AIN = unionpkt.PacketData as AbilityInvocationsNotify;
-                //unfortunately i will have to offload the decrypting somwhere else
-                    
-                pktArray.Add(unionpkt);
-                // var abilitypkt = new Packet.Packet()
-                // {
-                //     _protobufBytes = unionCmd.Body.ToByteArray(),
-                //     PacketType = (Opcode)unionCmd.MessageId,
-                //     _metadataBytes = packet._metadataBytes
-                // };
+
+                AbilityInvokeProcessor.ProcessAbilityInvoke(unionpkt);
+
             }
 
             if (unionpkt.PacketType == Opcode.CombatInvocationsNotify)
@@ -41,7 +29,5 @@ public class UnionCmdProcessor
                 
             }
         }
-
-        return pktArray;
     }
 }

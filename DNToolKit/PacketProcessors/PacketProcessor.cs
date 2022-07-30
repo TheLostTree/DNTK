@@ -14,10 +14,10 @@ namespace DNToolKit.PacketProcessors;
 
 public class PacketProcessor
 {
-    public ConcurrentQueue<EncryptedPacket> Queue = new();
-    private bool running = false;
+    private readonly ConcurrentQueue<EncryptedPacket> Queue = new();
+    private bool _running = false;
 
-    private static RSA ClientPrivate = RSA.Create();
+    private static readonly RSA ClientPrivate = RSA.Create();
     private MTKey? _key;
     private MTKey? _sessionKey = null;
   
@@ -27,10 +27,11 @@ public class PacketProcessor
     private ulong _tokenRspServerKey;
     private Thread _workingThread;
 
-    public List<Packet.Packet> FrontendQueue = new();
+    private byte _timesBFed;
+
     public PacketProcessor()
     {
-        running = true;
+        _running = true;
         
         //todo: take from a file
         ClientPrivate.FromXmlString(
@@ -43,7 +44,12 @@ public class PacketProcessor
             
         };
         _workingThread.Start();
-        Task.Run(FrontendUpdate);
+        _timesBFed = 0;
+    }
+
+    public void Reset()
+    {
+        Queue.Clear();
     }
 
     public void AddPacket(byte[] data, UdpHandler.Sender sender)
@@ -53,7 +59,7 @@ public class PacketProcessor
 
     public void Stop()
     {
-        running = false;
+        _running = false;
         _workingThread.Join();
         Log.Information("PacketProcessor stopped...");
 
@@ -61,7 +67,7 @@ public class PacketProcessor
 
     private void Work()
     {
-        while (running)
+        while (_running)
         {
             while (Queue.TryDequeue(out var encryptedPacket))
             {
@@ -77,11 +83,17 @@ public class PacketProcessor
                         {
                             Log.Information("Bruteforcing Key...");
                             //Program.TestBF((long)tokenReqSendTime, tokenRspServerKey, item);
-                            
+                            _timesBFed++;
                             _sessionKey = KeyBruteForcer.BruteForce(item, (long)_tokenReqSendTime, _tokenRspServerKey);
                         }
                         if(_sessionKey is null) Log.Warning("you suck!");
                         _sessionKey?.Crypt(item);
+                        if (_timesBFed > 10)
+                        {
+                            Log.Error("Failed so many times lets just our cut losses");
+                            Stop();
+
+                        }
                     }
                     if (item.GetUInt16(0, true) == 0x4567)
                     {
@@ -96,7 +108,7 @@ public class PacketProcessor
                     }
                     else
                     {
-                        
+                      Log.Warning("weird...");
                     }
                 }
             }
@@ -105,14 +117,13 @@ public class PacketProcessor
 
     
     //todo: rename
-    public void ParsePacketFromData(EncryptedPacket encryptedPacket)
+    private void ParsePacketFromData(EncryptedPacket encryptedPacket)
     {
-        var data = encryptedPacket.Data;
-        
+
         //todo: i think i need to handle exceptions but i *did* just check packet magic earlier so idk
         try
         {
-            var packet = new Packet.Packet(data)
+            var packet = new Packet.Packet(encryptedPacket.Data)
             {
                 Sender = encryptedPacket.Sender
             };
@@ -127,17 +138,18 @@ public class PacketProcessor
                 // todo: fix this later its probably prone to a race condition and is not thread safe
                 try
                 {
-                    // var metadatLen = data.GetUInt16(4, true);
-                    // var dataLen = data.GetUInt32(6, true);
-                    // var dataBytes = data[(10 + metadatLen)..(int)(10 + metadatLen + dataLen)];
-                    // var tokenRsp = GetPlayerTokenRsp.Parser.ParseFrom(dataBytes);
-
-                    //sussy
                     var tokenRsp = packet.PacketData as GetPlayerTokenRsp;
-                
-                    var key = ClientPrivate.Decrypt(Convert.FromBase64String(tokenRsp!.EncryptedSeed), RSAEncryptionPadding.Pkcs1);
-                    _tokenRspServerKey = key.GetUInt64(0,true);
-                    _useSessionKey = true;
+                    if (tokenRsp?.EncryptedSeed is not null)
+                    {
+                        var key = ClientPrivate.Decrypt(Convert.FromBase64String(tokenRsp.EncryptedSeed), RSAEncryptionPadding.Pkcs1);
+                        _tokenRspServerKey = key.GetUInt64(0,true);
+                        _useSessionKey = true;
+                    }
+                    else
+                    {
+                        Log.Warning("failed to get serverSeed");
+                    }
+                    
                 }
                 catch(Exception e)
                 {
@@ -147,15 +159,11 @@ public class PacketProcessor
         
             if (type == Opcode.UnionCmdNotify)
             {
-                foreach (var packet1 in UnionCmdProcessor.ProcessUnion(packet))
-                {
-                    ProcessPacket(packet1);
-                }
-
+                UnionCmdProcessor.ProcessUnion(packet);
                 return;
             }
 
-            ProcessPacket(packet);
+            Program.FrontendManager.AddGamePacket(packet);
         }
         catch(Exception e)
         {
@@ -164,44 +172,4 @@ public class PacketProcessor
 
 
     }
-
-    public void ProcessPacket(Packet.Packet packet)
-    {
-        //Log.Debug("Received {Type} from {Sender}", packet.PacketType, packet.Sender);
-        FrontendQueue.Add(packet);
-
-    }
-
-    private async Task FrontendUpdate()
-    {
-        while (running)
-        {
-            try
-            {
-                if (FrontendQueue.Count < 2 ) continue;
-                //mot quite ideal?
-                
-                var Copy = FrontendQueue.ToArray();
-                FrontendQueue.Clear();
-
-
-                Dictionary<string, object> JSONobj = new();
-                JSONobj.Add("cmd", "PacketNotify");
-                //theres a wierd object reference not set to an instance of an object thing here? try to fixo?
-                var data2 = Copy.Select(x => x.GetObj(Program.WSWrapper.WSType.Iridium));
-                data2 = data2.Where(x => x is not null);
-                JSONobj.Add("data", data2);
-                var data = JsonSerializer.Serialize(JSONobj);
-                Program.SendWSPacket(data, Program.WSWrapper.WSType.Iridium);
-                JSONobj["data"] = Copy.Select(x => x.GetObj(Program.WSWrapper.WSType.DNToolKit)).Where(x=>x is not null);
-                Program.SendWSPacket(JsonSerializer.Serialize(JSONobj), Program.WSWrapper.WSType.DNToolKit);
-            }
-            catch (Exception e)
-            {
-                Log.Error(e.ToString());
-            }
-            await Task.Delay(20);
-        }
-    }
-
 }
