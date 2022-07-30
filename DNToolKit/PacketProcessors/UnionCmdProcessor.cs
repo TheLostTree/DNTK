@@ -17,16 +17,18 @@ public class UnionCmdProcessor
                 MetadataBytes = packet.MetadataBytes
             };
             unionpkt.ParsePacket();
+            
+            //todo: package all invokes back after parsing them
+            
             if (unionpkt.PacketType == Opcode.AbilityInvocationsNotify)
             {
 
                 AbilityInvokeProcessor.ProcessAbilityInvoke(unionpkt);
-
             }
 
             if (unionpkt.PacketType == Opcode.CombatInvocationsNotify)
             {
-                
+                CombatInvokeProcessor.ProcessCombatInvoke(packet);
             }
         }
     }

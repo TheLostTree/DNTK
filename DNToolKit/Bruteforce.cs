@@ -32,6 +32,7 @@ public class KeyBruteForcer
         // Log.Information("SentTime: {DATA}", senttime);
         // Log.Information("ServerKey: {DATA}", serverKey);
         //ending magic 
+        //i'd do this but then i'd have to generate much more of the key, up to the entire goddamn key sometimes
         //var keySuffix = new byte[] { (byte)(testBuffer[^1] ^ 0x89), (byte)(testBuffer[^0] ^ 0xAB) };
 
         for (long offset = 0; offset < 3000; offset++)
@@ -44,7 +45,7 @@ public class KeyBruteForcer
             // var key = new MTKey(seed);
             if (key[0] == keyPrefix[0] && key[1] == keyPrefix[1])
             {
-                Log.Information("Seed Found!  {DATA}", seed);
+                Log.Debug("Seed Found!  {DATA}", seed);
                 return new MTKey(seed);
             }
             
@@ -55,7 +56,7 @@ public class KeyBruteForcer
             var key2 = MTKey.PartialKey(seed2, 8);
             if (key2[0] == keyPrefix[0] && key2[1] == keyPrefix[1])
             {
-                Log.Information("Seed Found!  {DATA}", seed2);
+                Log.Debug("Seed Found!  {DATA}", seed2);
                 return new MTKey(seed2);
             }
         }

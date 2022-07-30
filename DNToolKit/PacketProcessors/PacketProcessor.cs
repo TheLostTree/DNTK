@@ -54,7 +54,7 @@ public class PacketProcessor
 
     public void AddPacket(byte[] data, UdpHandler.Sender sender)
     {
-        Queue.Enqueue(new EncryptedPacket(data, sender));
+        if(_running) Queue.Enqueue(new EncryptedPacket(data, sender));
     }
 
     public void Stop()
@@ -81,7 +81,7 @@ public class PacketProcessor
                     {
                         if(_sessionKey is null)
                         {
-                            Log.Information("Bruteforcing Key...");
+                            Log.Debug("Bruteforcing Key...");
                             //Program.TestBF((long)tokenReqSendTime, tokenRspServerKey, item);
                             _timesBFed++;
                             _sessionKey = KeyBruteForcer.BruteForce(item, (long)_tokenReqSendTime, _tokenRspServerKey);
@@ -90,9 +90,8 @@ public class PacketProcessor
                         _sessionKey?.Crypt(item);
                         if (_timesBFed > 10)
                         {
-                            Log.Error("Failed so many times lets just our cut losses");
+                            Log.Error("Brute forcing has failed many times, so make sure you login on a freshly launched client. Or something else could have happened idk");
                             Stop();
-
                         }
                     }
                     if (item.GetUInt16(0, true) == 0x4567)
@@ -102,17 +101,19 @@ public class PacketProcessor
                     else if(_sessionKey is null)
                     {
                         //we may need to bruteforce
-                        Log.Warning("Encrypted Packet got through...");
+                        Log.Warning("Encrypted Packet got through lol");
                         //should be fine because we store the time 
                         Queue.Enqueue(encryptedPacket);
                     }
                     else
                     {
-                      Log.Warning("weird...");
+                      Log.Warning("There was a false positive with the bruteforcer somehow");
                     }
                 }
             }
         }
+
+        SpinWait.SpinUntil(()=>Queue.IsEmpty);
     }
 
     

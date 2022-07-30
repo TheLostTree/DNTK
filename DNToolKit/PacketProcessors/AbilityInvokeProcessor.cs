@@ -7,6 +7,6 @@ public class AbilityInvokeProcessor
     public static void ProcessAbilityInvoke(Packet.Packet packet)
     {
         
-        Program.FrontendManager.AddGamePacket(packet);
+        //Program.FrontendManager.AddGamePacket(packet);
     }
 }

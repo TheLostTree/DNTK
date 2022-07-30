@@ -3,6 +3,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 using Common;
 using Common.Protobuf;
+using DNToolKit.Frontend;
 using DNToolKit.Sniffer;
 using Google.Protobuf;
 using Newtonsoft.Json;

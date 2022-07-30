@@ -36,11 +36,12 @@ public class UdpHandler
                 
                 switch (magic)
                 {
+                    //todo: send handshake representation to frontend
                     case 0x145:
 
                         if (sender == Sender.Server)
                         {
-                            Log.Information("Server Handshake : {Conv}, {Token}", conv, token);
+                            Log.Debug("Server Handshake : {Conv}, {Token}", conv, token);
                             _processor ??= new PacketProcessor();
                             
                             _client = new KCP(conv, token,Sender.Client,_processor);
@@ -49,11 +50,14 @@ public class UdpHandler
                         //TODO: handle this
                         break;
                     case 0x194:
-                        Log.Information("Disconnect Handshake");
+                        Log.Information($"{sender} disconnected");
                         _client?.Stop();
                         _server?.Stop();
-                        _processor?.Stop();
-                        _processor = null;
+                        if (_client is not null)
+                        {
+                            _processor?.Stop();
+                            _processor = null;
+                        }
                         break;
                     case 0xFF:                                  
                         break;

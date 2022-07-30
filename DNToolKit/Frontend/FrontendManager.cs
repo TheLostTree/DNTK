@@ -1,10 +1,12 @@
 ﻿// using System.Text.Json;
-using Newtonsoft.Json;
+
 using Common;
+using DNToolKit.Frontend.Models;
 using Fleck;
+using Newtonsoft.Json;
 using Serilog;
 
-namespace DNToolKit;
+namespace DNToolKit.Frontend;
 
 
 //i could honestly make this a static class but adding more keywords is annoying
@@ -62,7 +64,7 @@ public class FrontendManager
                 //Log.Debug("Sending data to socket {a} of type {type}", webSocketConnection.Key.ClientPort, wsType );
                 try
                 {
-                    webSocketConnection.Value.Socket.Send(data);
+                    webSocketConnection.Value.Socket?.Send(data);
                     //Log.Debug(data);
 
                 }
@@ -139,14 +141,7 @@ public class WsWrapper
     {
         _running = false;
     }
-
-    private struct PacketNotify
-    {
-        // ReSharper disable once InconsistentNaming
-        public string cmd;
-        // ReSharper disable once InconsistentNaming
-        public List<object> data;
-    }
+    
     private async Task FrontendUpdate()
     {
         while (_running)
