@@ -630,16 +630,12 @@ public class IKCP
             UInt32 conv = ikcp_decode32u(data, ref offset);
             if (conv_ != conv)
             {
-             //TODO: Fix this please? this is a bad bad bad bad bad workaoround!
-                 Console.WriteLine("(conv)<" + conv.ToString("X")+"!="+conv_.ToString("X")+ ">");
-                 return -7;
+                return -7;
             }
             UInt32 token = ikcp_decode32u(data, ref offset);
 
             if (token_ != token)
             {
-                //TODO: Fix this please? this is a bad bad bad bad bad workaoround!
-                Console.WriteLine("(tkn)<" + token.ToString("X")+"!="+token_.ToString("X")+ ">");
                 return -8;
             }
             UInt32 cmd = ikcp_decode8u(data, ref offset);

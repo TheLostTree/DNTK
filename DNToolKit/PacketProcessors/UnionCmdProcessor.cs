@@ -1,5 +1,6 @@
 ﻿using Common;
 using Common.Protobuf;
+using DNToolKit.Packet;
 
 namespace DNToolKit.PacketProcessors;
 
@@ -7,29 +8,40 @@ public class UnionCmdProcessor
 {
     public static void ProcessUnion(Packet.Packet packet)
     {
-        var pktArray = new List<Packet.Packet>();
+
+        List<UnionCmdPacket.OnionCmd.Cmd> cmds = new List<UnionCmdPacket.OnionCmd.Cmd>();
         foreach (var unionCmd in (packet.PacketData as UnionCmdNotify)!.CmdList)
         {
-            var unionpkt = new Packet.Packet()
-            {
-                ProtobufBytes = unionCmd.Body.ToByteArray(),
-                PacketType = (Opcode)unionCmd.MessageId,
-                MetadataBytes = packet.MetadataBytes
-            };
-            unionpkt.ParsePacket();
+            var unionpkt = (Opcode)unionCmd.MessageId;
+
             
             //todo: package all invokes back after parsing them
             
-            if (unionpkt.PacketType == Opcode.AbilityInvocationsNotify)
+            if (unionpkt == Opcode.AbilityInvocationsNotify)
             {
 
-                AbilityInvokeProcessor.ProcessAbilityInvoke(unionpkt);
+                var a = AbilityInvokeProcessor.ProcessAbilityInvoke(unionCmd.Body.ToByteArray());
+                if(a is not null) cmds.Add(a);
             }
 
-            if (unionpkt.PacketType == Opcode.CombatInvocationsNotify)
+            if (unionpkt == Opcode.CombatInvocationsNotify)
             {
-                CombatInvokeProcessor.ProcessCombatInvoke(packet);
+                var b = CombatInvokeProcessor.ProcessCombatInvoke(unionCmd.Body.ToByteArray());
+                if(b is not null) cmds.Add(b);
             }
         }
+        
+        var un = new UnionCmdPacket()
+        {
+            Metadata = packet.Metadata,
+            PacketType = Opcode.UnionCmdNotify,
+            Sender = packet.Sender,
+            DummyPacketData = new UnionCmdPacket.OnionCmd()
+            {
+                CmdList = cmds.ToArray()
+            }
+        };
+        Program.FrontendManager.AddGamePacket(un);
+        
     }
 }

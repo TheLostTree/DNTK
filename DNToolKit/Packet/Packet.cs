@@ -69,7 +69,7 @@ public class Packet
         
     }
 
-    public object? GetObj(WsWrapper.WsType wsType)
+    public virtual object? GetObj(WsWrapper.WsType wsType)
     {
 
         try

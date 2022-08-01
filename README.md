@@ -14,4 +14,6 @@ You need to bring your own RSA Key, extracted from the client, if the one in thi
 # NOTE 
 pls use like a merge sort when adding new packets to the front end to make sure that sendms is ascending in order for accuracy sake
 
-ty
+# Additions
+
+Additional AbilityInvocations will be added to be processed in the backend on request

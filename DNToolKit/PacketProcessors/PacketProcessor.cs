@@ -115,9 +115,7 @@ public class PacketProcessor
 
         SpinWait.SpinUntil(()=>Queue.IsEmpty);
     }
-
     
-    //todo: rename
     private void ParsePacketFromData(EncryptedPacket encryptedPacket)
     {
 

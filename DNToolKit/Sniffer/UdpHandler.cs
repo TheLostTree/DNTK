@@ -47,7 +47,6 @@ public class UdpHandler
                             _client = new KCP(conv, token,Sender.Client,_processor);
                             _server = new KCP(conv, token,Sender.Server,_processor);
                         }
-                        //TODO: handle this
                         break;
                     case 0x194:
                         Log.Information($"{sender} disconnected");
