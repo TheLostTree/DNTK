@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { DraftInviteFailInfo } from "./DraftInviteFailInfo.ts";
+import type { DraftInviteFailInfo } from "./DraftInviteFailInfo";
 
 /**
  * CmdId: 5435

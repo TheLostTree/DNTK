@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { RegionSearchInfo } from "./RegionSearchInfo.ts";
+import type { RegionSearchInfo } from "./RegionSearchInfo";
 
 /**
  * CmdId: 5626

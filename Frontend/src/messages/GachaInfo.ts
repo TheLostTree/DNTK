@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { GachaUpInfo } from "./GachaUpInfo.ts";
+import type { GachaUpInfo } from "./GachaUpInfo";
 
 export interface GachaInfo {
   GachaPreviewPrefabPath?: string;

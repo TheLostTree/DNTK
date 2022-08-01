@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { TeamEnterSceneInfo } from "./TeamEnterSceneInfo.ts";
-import type { MPLevelEntityInfo } from "./MPLevelEntityInfo.ts";
-import type { AvatarEnterSceneInfo } from "./AvatarEnterSceneInfo.ts";
+import type { TeamEnterSceneInfo } from "./TeamEnterSceneInfo";
+import type { MPLevelEntityInfo } from "./MPLevelEntityInfo";
+import type { AvatarEnterSceneInfo } from "./AvatarEnterSceneInfo";
 
 /**
  * CmdId: 214

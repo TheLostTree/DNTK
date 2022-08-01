@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { MaterialDeleteReturnType } from "./MaterialDeleteReturnType.ts";
+import type { MaterialDeleteReturnType } from "./MaterialDeleteReturnType";
 
 /**
  * CmdId: 661

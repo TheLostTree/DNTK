@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { FallSettleInfo } from "./FallSettleInfo.ts";
+import type { FallSettleInfo } from "./FallSettleInfo";
 
 export interface FleurFairFallSettleInfo {
   SettleInfo?: FallSettleInfo;

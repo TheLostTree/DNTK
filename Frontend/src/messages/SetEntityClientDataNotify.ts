@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { EntityClientData } from "./EntityClientData.ts";
+import type { EntityClientData } from "./EntityClientData";
 
 /**
  * CmdId: 3146

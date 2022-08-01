@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { MapMarkPoint } from "./MapMarkPoint.ts";
+import type { MapMarkPoint } from "./MapMarkPoint";
 
 /**
  * CmdId: 3283

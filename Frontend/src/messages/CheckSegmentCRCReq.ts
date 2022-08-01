@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { SegmentCRCInfo } from "./SegmentCRCInfo.ts";
+import type { SegmentCRCInfo } from "./SegmentCRCInfo";
 
 /**
  * CmdId: 53

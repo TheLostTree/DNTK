@@ -1,6 +1,6 @@
 /* eslint-disable */
 import type Long from "long";
-import type { StoreType } from "./StoreType.ts";
+import type { StoreType } from "./StoreType";
 
 /**
  * CmdId: 631

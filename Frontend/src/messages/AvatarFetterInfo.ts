@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { FetterData } from "./FetterData.ts";
+import type { FetterData } from "./FetterData";
 
 export interface AvatarFetterInfo {
   ExpNumber?: number;

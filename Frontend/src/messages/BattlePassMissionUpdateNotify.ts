@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { BattlePassMission } from "./BattlePassMission.ts";
+import type { BattlePassMission } from "./BattlePassMission";
 
 /**
  * CmdId: 2618

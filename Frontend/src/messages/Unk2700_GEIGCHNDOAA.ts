@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Unk2700IMGLPJNBHCH } from "./Unk2700_IMGLPJNBHCH.ts";
+import type { Unk2700IMGLPJNBHCH } from "./Unk2700_IMGLPJNBHCH";
 
 /**
  * CmdId: 8657

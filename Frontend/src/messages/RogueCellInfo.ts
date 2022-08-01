@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { RogueCellState } from "./RogueCellState.ts";
+import type { RogueCellState } from "./RogueCellState";
 
 export interface RogueCellInfo {
   CellConfigId?: number;

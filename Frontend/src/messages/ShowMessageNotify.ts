@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { SvrMsgId } from "./SvrMsgId.ts";
-import type { MsgParam } from "./MsgParam.ts";
+import type { SvrMsgId } from "./SvrMsgId";
+import type { MsgParam } from "./MsgParam";
 
 /**
  * CmdId: 35

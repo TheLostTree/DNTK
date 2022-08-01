@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { Vector } from "./Vector.ts";
-import type { MotionState } from "./MotionState.ts";
+import type { Vector } from "./Vector";
+import type { MotionState } from "./MotionState";
 import type Long from "long";
 
 export interface MotionInfo {

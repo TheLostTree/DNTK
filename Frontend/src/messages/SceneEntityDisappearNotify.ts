@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { VisionType } from "./VisionType.ts";
+import type { VisionType } from "./VisionType";
 
 /**
  * CmdId: 203

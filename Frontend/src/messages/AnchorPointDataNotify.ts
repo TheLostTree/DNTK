@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AnchorPointData } from "./AnchorPointData.ts";
+import type { AnchorPointData } from "./AnchorPointData";
 
 /**
  * CmdId: 4276

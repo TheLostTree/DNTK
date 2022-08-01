@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { Vector } from "./Vector.ts";
-import type { HomeMarkPointFurnitureData } from "./HomeMarkPointFurnitureData.ts";
+import type { Vector } from "./Vector";
+import type { HomeMarkPointFurnitureData } from "./HomeMarkPointFurnitureData";
 
 export interface HomeMarkPointSceneData {
   FurnitureList?: HomeMarkPointFurnitureData[];

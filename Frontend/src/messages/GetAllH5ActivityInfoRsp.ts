@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { H5ActivityInfo } from "./H5ActivityInfo.ts";
+import type { H5ActivityInfo } from "./H5ActivityInfo";
 
 /**
  * CmdId: 5676

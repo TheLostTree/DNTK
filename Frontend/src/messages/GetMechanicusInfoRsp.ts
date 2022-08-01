@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { MechanicusInfo } from "./MechanicusInfo.ts";
+import type { MechanicusInfo } from "./MechanicusInfo";
 
 /**
  * CmdId: 3998

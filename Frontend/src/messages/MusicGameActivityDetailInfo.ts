@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { MusicGameRecord } from "./MusicGameRecord.ts";
-import type { MusicBriefInfo } from "./MusicBriefInfo.ts";
+import type { MusicGameRecord } from "./MusicGameRecord";
+import type { MusicBriefInfo } from "./MusicBriefInfo";
 
 export interface MusicGameActivityDetailInfo {
   Unk2700HMNHCPMFDCP?: MusicBriefInfo[];

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { BalloonSettleInfo } from "./BalloonSettleInfo.ts";
+import type { BalloonSettleInfo } from "./BalloonSettleInfo";
 
 export interface FleurFairBalloonSettleInfo {
   SettleInfo?: BalloonSettleInfo;

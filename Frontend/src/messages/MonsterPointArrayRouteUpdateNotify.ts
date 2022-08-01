@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { MonsterRoute } from "./MonsterRoute.ts";
+import type { MonsterRoute } from "./MonsterRoute";
 
 /**
  * CmdId: 3410

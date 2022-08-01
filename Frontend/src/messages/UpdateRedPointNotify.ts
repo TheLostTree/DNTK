@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { RedPointData } from "./RedPointData.ts";
+import type { RedPointData } from "./RedPointData";
 
 /**
  * CmdId: 93

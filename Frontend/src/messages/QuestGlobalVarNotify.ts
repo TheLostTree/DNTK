@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { QuestGlobalVar } from "./QuestGlobalVar.ts";
+import type { QuestGlobalVar } from "./QuestGlobalVar";
 
 /**
  * CmdId: 434

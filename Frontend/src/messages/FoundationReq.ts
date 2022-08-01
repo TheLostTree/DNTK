@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { FoundationOpType } from "./FoundationOpType.ts";
+import type { FoundationOpType } from "./FoundationOpType";
 
 /**
  * CmdId: 805

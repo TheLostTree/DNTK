@@ -1,17 +1,17 @@
 /* eslint-disable */
-import type { ProtEntityType } from "./ProtEntityType.ts";
-import type { MotionInfo } from "./MotionInfo.ts";
-import type { EntityClientData } from "./EntityClientData.ts";
-import type { EntityAuthorityInfo } from "./EntityAuthorityInfo.ts";
-import type { PropPair } from "./PropPair.ts";
-import type { FightPropPair } from "./FightPropPair.ts";
-import type { AnimatorParameterValueInfoPair } from "./AnimatorParameterValueInfoPair.ts";
-import type { EntityEnvironmentInfo } from "./EntityEnvironmentInfo.ts";
-import type { ServerBuff } from "./ServerBuff.ts";
-import type { SceneAvatarInfo } from "./SceneAvatarInfo.ts";
-import type { SceneMonsterInfo } from "./SceneMonsterInfo.ts";
-import type { SceneNpcInfo } from "./SceneNpcInfo.ts";
-import type { SceneGadgetInfo } from "./SceneGadgetInfo.ts";
+import type { ProtEntityType } from "./ProtEntityType";
+import type { MotionInfo } from "./MotionInfo";
+import type { EntityClientData } from "./EntityClientData";
+import type { EntityAuthorityInfo } from "./EntityAuthorityInfo";
+import type { PropPair } from "./PropPair";
+import type { FightPropPair } from "./FightPropPair";
+import type { AnimatorParameterValueInfoPair } from "./AnimatorParameterValueInfoPair";
+import type { EntityEnvironmentInfo } from "./EntityEnvironmentInfo";
+import type { ServerBuff } from "./ServerBuff";
+import type { SceneAvatarInfo } from "./SceneAvatarInfo";
+import type { SceneMonsterInfo } from "./SceneMonsterInfo";
+import type { SceneNpcInfo } from "./SceneNpcInfo";
+import type { SceneGadgetInfo } from "./SceneGadgetInfo";
 
 export interface SceneEntityInfo {
   EntityType?: ProtEntityType;

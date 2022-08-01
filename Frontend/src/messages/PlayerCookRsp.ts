@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { CookRecipeData } from "./CookRecipeData.ts";
-import type { ItemParam } from "./ItemParam.ts";
+import type { CookRecipeData } from "./CookRecipeData";
+import type { ItemParam } from "./ItemParam";
 
 /**
  * CmdId: 188

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { DungeonEntryBlockReason } from "./DungeonEntryBlockReason.ts";
+import type { DungeonEntryBlockReason } from "./DungeonEntryBlockReason";
 
 export interface DungeonEntryCond {
   CondReason?: DungeonEntryBlockReason;

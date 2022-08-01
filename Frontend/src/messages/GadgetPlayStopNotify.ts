@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { GadgetPlayUidInfo } from "./GadgetPlayUidInfo.ts";
+import type { GadgetPlayUidInfo } from "./GadgetPlayUidInfo";
 
 /**
  * CmdId: 899

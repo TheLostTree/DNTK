@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { SceneSurfaceMaterial } from "./SceneSurfaceMaterial.ts";
+import type { SceneSurfaceMaterial } from "./SceneSurfaceMaterial";
 
 export interface CellInfo {
   Type?: SceneSurfaceMaterial;

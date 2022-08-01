@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { ProfilePicture } from "./ProfilePicture.ts";
-import type { ExhibitionDisplayInfo } from "./ExhibitionDisplayInfo.ts";
+import type { ProfilePicture } from "./ProfilePicture";
+import type { ExhibitionDisplayInfo } from "./ExhibitionDisplayInfo";
 
 export interface HideAndSeekSettleInfo {
   Uid?: number;

@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { ForgeQueueManipulateType } from "./ForgeQueueManipulateType.ts";
-import type { ItemParam } from "./ItemParam.ts";
+import type { ForgeQueueManipulateType } from "./ForgeQueueManipulateType";
+import type { ItemParam } from "./ItemParam";
 
 /**
  * CmdId: 656

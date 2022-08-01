@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AvatarTeamResonanceInfo } from "./AvatarTeamResonanceInfo.ts";
+import type { AvatarTeamResonanceInfo } from "./AvatarTeamResonanceInfo";
 
 /**
  * CmdId: 1082

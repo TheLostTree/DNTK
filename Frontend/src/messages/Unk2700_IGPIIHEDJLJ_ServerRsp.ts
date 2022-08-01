@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { Unk2700NLFDMMFNMIO } from "./Unk2700_NLFDMMFNMIO.ts";
-import type { Unk2700KBBDJNLFAKD } from "./Unk2700_KBBDJNLFAKD.ts";
+import type { Unk2700NLFDMMFNMIO } from "./Unk2700_NLFDMMFNMIO";
+import type { Unk2700KBBDJNLFAKD } from "./Unk2700_KBBDJNLFAKD";
 
 /**
  * CmdId: 6218

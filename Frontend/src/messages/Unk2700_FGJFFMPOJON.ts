@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ProfilePicture } from "./ProfilePicture.ts";
+import type { ProfilePicture } from "./ProfilePicture";
 
 export interface Unk2700FGJFFMPOJON {
   Nickname?: string;

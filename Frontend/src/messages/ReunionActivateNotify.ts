@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ReunionBriefInfo } from "./ReunionBriefInfo.ts";
+import type { ReunionBriefInfo } from "./ReunionBriefInfo";
 
 /**
  * CmdId: 5085

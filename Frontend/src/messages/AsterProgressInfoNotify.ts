@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AsterProgressDetailInfo } from "./AsterProgressDetailInfo.ts";
+import type { AsterProgressDetailInfo } from "./AsterProgressDetailInfo";
 
 /**
  * CmdId: 2016

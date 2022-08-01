@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ChannelerSlabLoopDungeonInfo } from "./ChannelerSlabLoopDungeonInfo.ts";
+import type { ChannelerSlabLoopDungeonInfo } from "./ChannelerSlabLoopDungeonInfo";
 
 export interface ChannelerSlabLoopDungeonStageInfo {
   DungeonInfoList?: ChannelerSlabLoopDungeonInfo[];

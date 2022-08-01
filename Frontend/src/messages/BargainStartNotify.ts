@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { BargainSnapshot } from "./BargainSnapshot.ts";
+import type { BargainSnapshot } from "./BargainSnapshot";
 
 /**
  * CmdId: 404

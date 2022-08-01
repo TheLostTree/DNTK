@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { FleurFairPlayerStatInfo } from "./FleurFairPlayerStatInfo.ts";
+import type { FleurFairPlayerStatInfo } from "./FleurFairPlayerStatInfo";
 
 export interface FleurFairBossSettleInfo {
   RewardTokenNum?: number;

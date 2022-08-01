@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { EquipParam } from "./EquipParam.ts";
+import type { EquipParam } from "./EquipParam";
 
 /**
  * CmdId: 1407

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Unk2700PIAFGFGHGHM } from "./Unk2700_PIAFGFGHGHM.ts";
+import type { Unk2700PIAFGFGHGHM } from "./Unk2700_PIAFGFGHGHM";
 
 export interface Unk2700DPPCDPBBABA {
   IsOpen?: boolean;

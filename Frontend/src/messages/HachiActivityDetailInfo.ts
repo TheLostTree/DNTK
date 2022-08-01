@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { HachiStageData } from "./HachiStageData.ts";
+import type { HachiStageData } from "./HachiStageData";
 
 export interface HachiActivityDetailInfo {
   StageMap?: { [key: number]: HachiStageData };

@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { Vector } from "./Vector.ts";
-import type { HuntingPair } from "./HuntingPair.ts";
+import type { Vector } from "./Vector";
+import type { HuntingPair } from "./HuntingPair";
 
 /**
  * CmdId: 4329

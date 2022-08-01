@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { MapAreaInfo } from "./MapAreaInfo.ts";
+import type { MapAreaInfo } from "./MapAreaInfo";
 
 /**
  * CmdId: 3328

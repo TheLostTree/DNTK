@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ResinCardData } from "./ResinCardData.ts";
+import type { ResinCardData } from "./ResinCardData";
 
 /**
  * CmdId: 4149

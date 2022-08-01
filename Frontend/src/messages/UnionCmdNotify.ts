@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { UnionCmd } from "./UnionCmd.ts";
+import type { UnionCmd } from "./UnionCmd";
 
 /**
  * CmdId: 5

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ActivityWatcherInfo } from "./ActivityWatcherInfo.ts";
+import type { ActivityWatcherInfo } from "./ActivityWatcherInfo";
 
 /**
  * CmdId: 2156

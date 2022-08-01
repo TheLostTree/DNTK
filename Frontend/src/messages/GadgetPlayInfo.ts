@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { GadgetCrucibleInfo } from "./GadgetCrucibleInfo.ts";
+import type { GadgetCrucibleInfo } from "./GadgetCrucibleInfo";
 
 export interface GadgetPlayInfo {
   PlayType?: number;

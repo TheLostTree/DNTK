@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { FurnitureMakeSlot } from "./FurnitureMakeSlot.ts";
+import type { FurnitureMakeSlot } from "./FurnitureMakeSlot";
 
 /**
  * CmdId: 4683

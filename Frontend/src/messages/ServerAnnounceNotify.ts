@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AnnounceData } from "./AnnounceData.ts";
+import type { AnnounceData } from "./AnnounceData";
 
 /**
  * CmdId: 2197

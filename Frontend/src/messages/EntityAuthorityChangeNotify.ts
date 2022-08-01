@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AuthorityChange } from "./AuthorityChange.ts";
+import type { AuthorityChange } from "./AuthorityChange";
 
 /**
  * CmdId: 394

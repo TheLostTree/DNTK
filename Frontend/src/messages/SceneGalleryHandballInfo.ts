@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { PlaceInfo } from "./PlaceInfo.ts";
+import type { PlaceInfo } from "./PlaceInfo";
 
 export interface SceneGalleryHandballInfo {
   BallPlaceInfo?: PlaceInfo;

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { MatchReason } from "./MatchReason.ts";
+import type { MatchReason } from "./MatchReason";
 
 /**
  * CmdId: 4181

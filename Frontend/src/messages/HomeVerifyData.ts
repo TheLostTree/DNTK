@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { HomeSceneArrangementMuipData } from "./HomeSceneArrangementMuipData.ts";
-import type { HomeVerifySceneData } from "./HomeVerifySceneData.ts";
-import type { LanguageType } from "./LanguageType.ts";
+import type { HomeSceneArrangementMuipData } from "./HomeSceneArrangementMuipData";
+import type { HomeVerifySceneData } from "./HomeVerifySceneData";
+import type { LanguageType } from "./LanguageType";
 
 export interface HomeVerifyData {
   Unk2700OAKBDKKBFHP?: string;

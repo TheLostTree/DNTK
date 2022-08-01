@@ -1,10 +1,10 @@
 /* eslint-disable */
 import type Long from "long";
-import type { SceneWeaponInfo } from "./SceneWeaponInfo.ts";
-import type { CurVehicleInfo } from "./CurVehicleInfo.ts";
-import type { AvatarExcelInfo } from "./AvatarExcelInfo.ts";
-import type { SceneReliquaryInfo } from "./SceneReliquaryInfo.ts";
-import type { ServerBuff } from "./ServerBuff.ts";
+import type { SceneWeaponInfo } from "./SceneWeaponInfo";
+import type { CurVehicleInfo } from "./CurVehicleInfo";
+import type { AvatarExcelInfo } from "./AvatarExcelInfo";
+import type { SceneReliquaryInfo } from "./SceneReliquaryInfo";
+import type { ServerBuff } from "./ServerBuff";
 
 export interface SceneAvatarInfo {
   Uid?: number;

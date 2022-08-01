@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { Unk2700MOFABPNGIKP } from "./Unk2700_MOFABPNGIKP.ts";
-import type { Unk2800BEMANDBNPJB } from "./Unk2800_BEMANDBNPJB.ts";
-import type { ExhibitionDisplayInfo } from "./ExhibitionDisplayInfo.ts";
+import type { Unk2700MOFABPNGIKP } from "./Unk2700_MOFABPNGIKP";
+import type { Unk2800BEMANDBNPJB } from "./Unk2800_BEMANDBNPJB";
+import type { ExhibitionDisplayInfo } from "./ExhibitionDisplayInfo";
 
 /**
  * CmdId: 24601

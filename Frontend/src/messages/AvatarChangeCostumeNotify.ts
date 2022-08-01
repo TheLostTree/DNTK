@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { SceneEntityInfo } from "./SceneEntityInfo.ts";
+import type { SceneEntityInfo } from "./SceneEntityInfo";
 
 /**
  * CmdId: 1644

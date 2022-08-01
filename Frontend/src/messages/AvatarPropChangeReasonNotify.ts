@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { PropChangeReason } from "./PropChangeReason.ts";
+import type { PropChangeReason } from "./PropChangeReason";
 import type Long from "long";
 
 /**

@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { BlitzRushStage } from "./BlitzRushStage.ts";
-import type { ParkourLevelInfo } from "./ParkourLevelInfo.ts";
+import type { BlitzRushStage } from "./BlitzRushStage";
+import type { ParkourLevelInfo } from "./ParkourLevelInfo";
 
 export interface BlitzRushActivityDetailInfo {
   StageList?: BlitzRushStage[];

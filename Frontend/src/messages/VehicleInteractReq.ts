@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { VehicleInteractType } from "./VehicleInteractType.ts";
+import type { VehicleInteractType } from "./VehicleInteractType";
 
 /**
  * CmdId: 865

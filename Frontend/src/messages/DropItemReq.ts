@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { Vector } from "./Vector.ts";
-import type { StoreType } from "./StoreType.ts";
+import type { Vector } from "./Vector";
+import type { StoreType } from "./StoreType";
 import type Long from "long";
 
 /**

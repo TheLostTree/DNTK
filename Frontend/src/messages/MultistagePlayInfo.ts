@@ -1,9 +1,9 @@
 /* eslint-disable */
-import type { InBattleMechanicusInfo } from "./InBattleMechanicusInfo.ts";
-import type { InBattleFleurFairInfo } from "./InBattleFleurFairInfo.ts";
-import type { HideAndSeekStageInfo } from "./HideAndSeekStageInfo.ts";
-import type { InBattleChessInfo } from "./InBattleChessInfo.ts";
-import type { IrodoriChessInfo } from "./IrodoriChessInfo.ts";
+import type { InBattleMechanicusInfo } from "./InBattleMechanicusInfo";
+import type { InBattleFleurFairInfo } from "./InBattleFleurFairInfo";
+import type { HideAndSeekStageInfo } from "./HideAndSeekStageInfo";
+import type { InBattleChessInfo } from "./InBattleChessInfo";
+import type { IrodoriChessInfo } from "./IrodoriChessInfo";
 
 export interface MultistagePlayInfo {
   PlayIndex?: number;

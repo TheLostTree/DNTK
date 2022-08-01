@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AvatarTeam } from "./AvatarTeam.ts";
+import type { AvatarTeam } from "./AvatarTeam";
 import type Long from "long";
 
 /**

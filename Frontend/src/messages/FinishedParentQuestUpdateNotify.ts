@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ParentQuest } from "./ParentQuest.ts";
+import type { ParentQuest } from "./ParentQuest";
 
 /**
  * CmdId: 407

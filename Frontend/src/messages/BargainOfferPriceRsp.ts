@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { BargainResultType } from "./BargainResultType.ts";
+import type { BargainResultType } from "./BargainResultType";
 
 /**
  * CmdId: 427

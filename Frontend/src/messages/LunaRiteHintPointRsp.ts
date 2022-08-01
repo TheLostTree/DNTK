@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { LunaRiteHintStatusType } from "./LunaRiteHintStatusType.ts";
-import type { LunaRiteHintPoint } from "./LunaRiteHintPoint.ts";
+import type { LunaRiteHintStatusType } from "./LunaRiteHintStatusType";
+import type { LunaRiteHintPoint } from "./LunaRiteHintPoint";
 
 /**
  * CmdId: 8765

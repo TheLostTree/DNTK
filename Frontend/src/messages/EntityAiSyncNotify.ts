@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AiSyncInfo } from "./AiSyncInfo.ts";
+import type { AiSyncInfo } from "./AiSyncInfo";
 
 /**
  * CmdId: 400

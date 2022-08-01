@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { MoonfinTrialLevelInfo } from "./MoonfinTrialLevelInfo.ts";
+import type { MoonfinTrialLevelInfo } from "./MoonfinTrialLevelInfo";
 
 export interface MoonfinTrialActivityDetailInfo {
   LevelInfoMap?: { [key: number]: MoonfinTrialLevelInfo };

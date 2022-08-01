@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { BlossomBriefInfo } from "./BlossomBriefInfo.ts";
+import type { BlossomBriefInfo } from "./BlossomBriefInfo";
 
 /**
  * CmdId: 2712

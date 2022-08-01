@@ -1,9 +1,9 @@
 /* eslint-disable */
-import type { FriendOnlineState } from "./FriendOnlineState.ts";
-import type { FriendEnterHomeOption } from "./FriendEnterHomeOption.ts";
-import type { ProfilePicture } from "./ProfilePicture.ts";
-import type { PlatformType } from "./PlatformType.ts";
-import type { SocialShowAvatarInfo } from "./SocialShowAvatarInfo.ts";
+import type { FriendOnlineState } from "./FriendOnlineState";
+import type { FriendEnterHomeOption } from "./FriendEnterHomeOption";
+import type { ProfilePicture } from "./ProfilePicture";
+import type { PlatformType } from "./PlatformType";
+import type { SocialShowAvatarInfo } from "./SocialShowAvatarInfo";
 
 export interface FriendBrief {
   Uid?: number;

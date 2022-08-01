@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { ForwardType } from "./ForwardType.ts";
+import type { ForwardType } from "./ForwardType";
 import type Long from "long";
-import type { Vector } from "./Vector.ts";
+import type { Vector } from "./Vector";
 
 /**
  * CmdId: 307

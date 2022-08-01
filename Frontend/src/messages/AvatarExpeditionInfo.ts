@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AvatarExpeditionState } from "./AvatarExpeditionState.ts";
+import type { AvatarExpeditionState } from "./AvatarExpeditionState";
 
 export interface AvatarExpeditionInfo {
   State?: AvatarExpeditionState;

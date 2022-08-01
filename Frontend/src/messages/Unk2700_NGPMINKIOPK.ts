@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Unk2700PPIBANCGGNI } from "./Unk2700_PPIBANCGGNI.ts";
+import type { Unk2700PPIBANCGGNI } from "./Unk2700_PPIBANCGGNI";
 
 /**
  * CmdId: 8956

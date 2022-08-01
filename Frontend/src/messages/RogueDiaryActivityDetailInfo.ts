@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { Unk2700PILILDPMNNA } from "./Unk2700_PILILDPMNNA.ts";
-import type { RogueDiaryStage } from "./RogueDiaryStage.ts";
+import type { Unk2700PILILDPMNNA } from "./Unk2700_PILILDPMNNA";
+import type { RogueDiaryStage } from "./RogueDiaryStage";
 
 export interface RogueDiaryActivityDetailInfo {
   StageList?: RogueDiaryStage[];

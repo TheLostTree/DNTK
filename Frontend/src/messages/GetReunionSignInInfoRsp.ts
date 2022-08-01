@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ReunionSignInInfo } from "./ReunionSignInInfo.ts";
+import type { ReunionSignInInfo } from "./ReunionSignInInfo";
 
 /**
  * CmdId: 5081

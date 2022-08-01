@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { HomeFishFarmingInfo } from "./HomeFishFarmingInfo.ts";
+import type { HomeFishFarmingInfo } from "./HomeFishFarmingInfo";
 
 /**
  * CmdId: 4678

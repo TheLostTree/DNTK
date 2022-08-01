@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { OpActivityInfo } from "./OpActivityInfo.ts";
+import type { OpActivityInfo } from "./OpActivityInfo";
 
 /**
  * CmdId: 5198

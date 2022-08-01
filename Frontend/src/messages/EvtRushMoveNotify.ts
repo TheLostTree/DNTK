@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { ForwardType } from "./ForwardType.ts";
-import type { EvtRushMoveInfo } from "./EvtRushMoveInfo.ts";
+import type { ForwardType } from "./ForwardType";
+import type { EvtRushMoveInfo } from "./EvtRushMoveInfo";
 
 /**
  * CmdId: 375

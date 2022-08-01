@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Quest } from "./Quest.ts";
+import type { Quest } from "./Quest";
 
 /**
  * CmdId: 498

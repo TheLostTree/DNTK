@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Unk2700CMOCCENBOLJ } from "./Unk2700_CMOCCENBOLJ.ts";
+import type { Unk2700CMOCCENBOLJ } from "./Unk2700_CMOCCENBOLJ";
 
 export interface RogueDiaryStage {
   StageId?: number;

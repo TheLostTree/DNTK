@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { DigMarkPoint } from "./DigMarkPoint.ts";
+import type { DigMarkPoint } from "./DigMarkPoint";
 
 /**
  * CmdId: 8109

@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { MpSettingType } from "./MpSettingType.ts";
-import type { ProfilePicture } from "./ProfilePicture.ts";
+import type { MpSettingType } from "./MpSettingType";
+import type { ProfilePicture } from "./ProfilePicture";
 
 export interface OnlinePlayerInfo {
   Uid?: number;

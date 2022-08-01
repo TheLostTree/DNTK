@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { TreasureMapRegionInfo } from "./TreasureMapRegionInfo.ts";
+import type { TreasureMapRegionInfo } from "./TreasureMapRegionInfo";
 
 /**
  * CmdId: 2185

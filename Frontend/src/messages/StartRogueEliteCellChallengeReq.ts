@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { RogueEliteCellDifficultyType } from "./RogueEliteCellDifficultyType.ts";
+import type { RogueEliteCellDifficultyType } from "./RogueEliteCellDifficultyType";
 
 /**
  * CmdId: 8242

@@ -1,8 +1,8 @@
 /* eslint-disable */
 import type Long from "long";
-import type { Material } from "./Material.ts";
-import type { Equip } from "./Equip.ts";
-import type { Furniture } from "./Furniture.ts";
+import type { Material } from "./Material";
+import type { Equip } from "./Equip";
+import type { Furniture } from "./Furniture";
 
 export interface Item {
   ItemId?: number;

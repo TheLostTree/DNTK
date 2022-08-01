@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { SumoDungeonAvatar } from "./SumoDungeonAvatar.ts";
+import type { SumoDungeonAvatar } from "./SumoDungeonAvatar";
 
 export interface SumoDungeonTeam {
   DungeonAvatarList?: SumoDungeonAvatar[];

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { RoguelikeRuneRecord } from "./RoguelikeRuneRecord.ts";
+import type { RoguelikeRuneRecord } from "./RoguelikeRuneRecord";
 
 /**
  * CmdId: 8973

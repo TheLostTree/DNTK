@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { HomeAvatarRewardEventInfo } from "./HomeAvatarRewardEventInfo.ts";
+import type { HomeAvatarRewardEventInfo } from "./HomeAvatarRewardEventInfo";
 
 /**
  * CmdId: 4852

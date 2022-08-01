@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { RogueAvatarInfo } from "./RogueAvatarInfo.ts";
+import type { RogueAvatarInfo } from "./RogueAvatarInfo";
 
 export interface RogueShowAvatarTeamInfo {
   AvatarList?: RogueAvatarInfo[];

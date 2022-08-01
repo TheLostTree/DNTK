@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { HomeBlockArrangementMuipData } from "./HomeBlockArrangementMuipData.ts";
+import type { HomeBlockArrangementMuipData } from "./HomeBlockArrangementMuipData";
 
 export interface HomeSceneArrangementMuipData {
   ModuleId?: number;

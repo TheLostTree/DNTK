@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { ShapeSphere } from "./ShapeSphere.ts";
-import type { ShapeBox } from "./ShapeBox.ts";
+import type { ShapeSphere } from "./ShapeSphere";
+import type { ShapeBox } from "./ShapeBox";
 
 /**
  * CmdId: 357

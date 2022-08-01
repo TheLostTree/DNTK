@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { PropValue } from "./PropValue.ts";
+import type { PropValue } from "./PropValue";
 
 /**
  * CmdId: 175

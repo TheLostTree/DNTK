@@ -1,6 +1,6 @@
 /* eslint-disable */
 import type Long from "long";
-import type { InBattleMechanicusCardInfo } from "./InBattleMechanicusCardInfo.ts";
+import type { InBattleMechanicusCardInfo } from "./InBattleMechanicusCardInfo";
 
 /**
  * CmdId: 5397

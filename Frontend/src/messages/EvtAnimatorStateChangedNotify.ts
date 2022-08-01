@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { ForwardType } from "./ForwardType.ts";
-import type { EvtAnimatorStateChangedInfo } from "./EvtAnimatorStateChangedInfo.ts";
+import type { ForwardType } from "./ForwardType";
+import type { EvtAnimatorStateChangedInfo } from "./EvtAnimatorStateChangedInfo";
 
 /**
  * CmdId: 331

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { PlantFlowerFriendFlowerWishData } from "./PlantFlowerFriendFlowerWishData.ts";
+import type { PlantFlowerFriendFlowerWishData } from "./PlantFlowerFriendFlowerWishData";
 
 /**
  * CmdId: 8511

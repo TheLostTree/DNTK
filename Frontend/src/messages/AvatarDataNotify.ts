@@ -1,7 +1,7 @@
 /* eslint-disable */
 import type Long from "long";
-import type { AvatarTeam } from "./AvatarTeam.ts";
-import type { AvatarInfo } from "./AvatarInfo.ts";
+import type { AvatarTeam } from "./AvatarTeam";
+import type { AvatarInfo } from "./AvatarInfo";
 
 /**
  * CmdId: 1633

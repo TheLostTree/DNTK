@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { LockedPersonallineData } from "./LockedPersonallineData.ts";
+import type { LockedPersonallineData } from "./LockedPersonallineData";
 
 /**
  * CmdId: 476

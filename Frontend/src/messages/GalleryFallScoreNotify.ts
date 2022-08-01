@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { FallPlayerBrief } from "./FallPlayerBrief.ts";
+import type { FallPlayerBrief } from "./FallPlayerBrief";
 
 /**
  * CmdId: 5521

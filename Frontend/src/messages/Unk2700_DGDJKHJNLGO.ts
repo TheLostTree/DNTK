@@ -1,6 +1,6 @@
 /* eslint-disable */
 import type Long from "long";
-import type { Unk2700PGFLJBBEBKG } from "./Unk2700_PGFLJBBEBKG.ts";
+import type { Unk2700PGFLJBBEBKG } from "./Unk2700_PGFLJBBEBKG";
 
 export interface Unk2700DGDJKHJNLGO {
   Uid?: number;

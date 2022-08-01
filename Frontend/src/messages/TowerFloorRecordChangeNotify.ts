@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { TowerFloorRecord } from "./TowerFloorRecord.ts";
+import type { TowerFloorRecord } from "./TowerFloorRecord";
 
 /**
  * CmdId: 2498

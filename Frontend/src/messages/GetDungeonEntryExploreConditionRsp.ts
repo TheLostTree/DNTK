@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { DungeonEntryCond } from "./DungeonEntryCond.ts";
+import type { DungeonEntryCond } from "./DungeonEntryCond";
 
 /**
  * CmdId: 3269

@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { Vector } from "./Vector.ts";
-import type { CreateGadgetInfo } from "./CreateGadgetInfo.ts";
+import type { Vector } from "./Vector";
+import type { CreateGadgetInfo } from "./CreateGadgetInfo";
 
 export interface CreateEntityInfo {
   Level?: number;

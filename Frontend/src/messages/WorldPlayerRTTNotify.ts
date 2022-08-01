@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { PlayerRTTInfo } from "./PlayerRTTInfo.ts";
+import type { PlayerRTTInfo } from "./PlayerRTTInfo";
 
 /**
  * CmdId: 22

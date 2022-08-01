@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { OpActivityTagBriefInfo } from "./OpActivityTagBriefInfo.ts";
+import type { OpActivityTagBriefInfo } from "./OpActivityTagBriefInfo";
 
 /**
  * CmdId: 2572

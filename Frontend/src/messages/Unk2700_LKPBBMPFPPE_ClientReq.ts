@@ -1,8 +1,8 @@
 /* eslint-disable */
-import type { Unk2700OPEBMJPOOBL } from "./Unk2700_OPEBMJPOOBL.ts";
+import type { Unk2700OPEBMJPOOBL } from "./Unk2700_OPEBMJPOOBL";
 import type Long from "long";
-import type { DropSubfieldType } from "./DropSubfieldType.ts";
-import type { Unk2700CKMOPKMKCAO } from "./Unk2700_CKMOPKMKCAO.ts";
+import type { DropSubfieldType } from "./DropSubfieldType";
+import type { Unk2700CKMOPKMKCAO } from "./Unk2700_CKMOPKMKCAO";
 
 /**
  * CmdId: 6326

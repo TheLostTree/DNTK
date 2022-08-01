@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Unk2800PHPHMILPOLC } from "./Unk2800_PHPHMILPOLC.ts";
+import type { Unk2800PHPHMILPOLC } from "./Unk2800_PHPHMILPOLC";
 
 /**
  * CmdId: 8513

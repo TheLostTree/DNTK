@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { MatchType } from "./MatchType.ts";
-import type { GeneralMatchInfo } from "./GeneralMatchInfo.ts";
+import type { MatchType } from "./MatchType";
+import type { GeneralMatchInfo } from "./GeneralMatchInfo";
 
 /**
  * CmdId: 4179

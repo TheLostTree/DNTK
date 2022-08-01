@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { RogueShowAvatarTeamInfo } from "./RogueShowAvatarTeamInfo.ts";
-import type { RoguelikeRuneRecord } from "./RoguelikeRuneRecord.ts";
+import type { RogueShowAvatarTeamInfo } from "./RogueShowAvatarTeamInfo";
+import type { RoguelikeRuneRecord } from "./RoguelikeRuneRecord";
 
 export interface RogueStageInfo {
   AvatarTeam?: RogueShowAvatarTeamInfo;

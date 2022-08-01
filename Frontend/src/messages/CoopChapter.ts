@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { CoopCg } from "./CoopCg.ts";
-import type { CoopPoint } from "./CoopPoint.ts";
-import type { CoopReward } from "./CoopReward.ts";
+import type { CoopCg } from "./CoopCg";
+import type { CoopPoint } from "./CoopPoint";
+import type { CoopReward } from "./CoopReward";
 
 export interface CoopChapter {
   CoopCgList?: CoopCg[];

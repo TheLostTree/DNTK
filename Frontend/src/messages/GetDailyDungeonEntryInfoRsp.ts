@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { DailyDungeonEntryInfo } from "./DailyDungeonEntryInfo.ts";
+import type { DailyDungeonEntryInfo } from "./DailyDungeonEntryInfo";
 
 /**
  * CmdId: 967

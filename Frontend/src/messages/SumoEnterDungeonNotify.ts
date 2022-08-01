@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { SumoDungeonTeam } from "./SumoDungeonTeam.ts";
+import type { SumoDungeonTeam } from "./SumoDungeonTeam";
 
 /**
  * CmdId: 8013

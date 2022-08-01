@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { InBattleMechanicusCardChallengeState } from "./InBattleMechanicusCardChallengeState.ts";
+import type { InBattleMechanicusCardChallengeState } from "./InBattleMechanicusCardChallengeState";
 
 export interface InBattleMechanicusCardInfo {
   RandEffectId?: number;

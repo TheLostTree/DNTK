@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AbilityInvokeEntry } from "./AbilityInvokeEntry.ts";
+import type { AbilityInvokeEntry } from "./AbilityInvokeEntry";
 
 /**
  * CmdId: 1198

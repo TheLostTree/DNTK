@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { EntityMoveInfo } from "./EntityMoveInfo.ts";
+import type { EntityMoveInfo } from "./EntityMoveInfo";
 
 /**
  * CmdId: 279

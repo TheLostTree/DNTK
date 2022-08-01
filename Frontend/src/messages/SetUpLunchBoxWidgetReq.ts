@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { LunchBoxData } from "./LunchBoxData.ts";
+import type { LunchBoxData } from "./LunchBoxData";
 
 /**
  * CmdId: 4272

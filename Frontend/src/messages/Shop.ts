@@ -1,8 +1,8 @@
 /* eslint-disable */
-import type { ShopConcertProduct } from "./ShopConcertProduct.ts";
-import type { ShopGoods } from "./ShopGoods.ts";
-import type { ShopCardProduct } from "./ShopCardProduct.ts";
-import type { ShopMcoinProduct } from "./ShopMcoinProduct.ts";
+import type { ShopConcertProduct } from "./ShopConcertProduct";
+import type { ShopGoods } from "./ShopGoods";
+import type { ShopCardProduct } from "./ShopCardProduct";
+import type { ShopMcoinProduct } from "./ShopMcoinProduct";
 
 export interface Shop {
   ConcertProductList?: ShopConcertProduct[];

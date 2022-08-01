@@ -1,8 +1,8 @@
 /* eslint-disable */
-import type { CityReputationHuntInfo } from "./CityReputationHuntInfo.ts";
-import type { CityReputationRequestInfo } from "./CityReputationRequestInfo.ts";
-import type { CityReputationQuestInfo } from "./CityReputationQuestInfo.ts";
-import type { CityReputationExploreInfo } from "./CityReputationExploreInfo.ts";
+import type { CityReputationHuntInfo } from "./CityReputationHuntInfo";
+import type { CityReputationRequestInfo } from "./CityReputationRequestInfo";
+import type { CityReputationQuestInfo } from "./CityReputationQuestInfo";
+import type { CityReputationExploreInfo } from "./CityReputationExploreInfo";
 
 export interface CityReputationInfo {
   Level?: number;

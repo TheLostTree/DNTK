@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AbilityString } from "./AbilityString.ts";
+import type { AbilityString } from "./AbilityString";
 
 export interface ModifierProperty {
   Key?: AbilityString;

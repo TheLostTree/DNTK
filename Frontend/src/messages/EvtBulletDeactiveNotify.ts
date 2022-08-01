@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { ForwardType } from "./ForwardType.ts";
-import type { Vector } from "./Vector.ts";
+import type { ForwardType } from "./ForwardType";
+import type { Vector } from "./Vector";
 
 /**
  * CmdId: 397

@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { RogueStageInfo } from "./RogueStageInfo.ts";
-import type { RoguelikeShikigamiRecord } from "./RoguelikeShikigamiRecord.ts";
+import type { RogueStageInfo } from "./RogueStageInfo";
+import type { RoguelikeShikigamiRecord } from "./RoguelikeShikigamiRecord";
 
 export interface RoguelikeDungeonActivityDetailInfo {
   StageList?: RogueStageInfo[];

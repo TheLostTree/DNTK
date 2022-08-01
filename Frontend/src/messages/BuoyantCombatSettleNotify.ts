@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { BuoyantCombatSettleInfo } from "./BuoyantCombatSettleInfo.ts";
+import type { BuoyantCombatSettleInfo } from "./BuoyantCombatSettleInfo";
 
 /**
  * CmdId: 8305

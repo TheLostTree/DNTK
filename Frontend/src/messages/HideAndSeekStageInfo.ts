@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { HideAndSeekStageType } from "./HideAndSeekStageType.ts";
-import type { HideAndSeekPlayerBattleInfo } from "./HideAndSeekPlayerBattleInfo.ts";
+import type { HideAndSeekStageType } from "./HideAndSeekStageType";
+import type { HideAndSeekPlayerBattleInfo } from "./HideAndSeekPlayerBattleInfo";
 
 export interface HideAndSeekStageInfo {
   MapId?: number;

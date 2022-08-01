@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { WidgetGadgetData } from "./WidgetGadgetData.ts";
+import type { WidgetGadgetData } from "./WidgetGadgetData";
 
 /**
  * CmdId: 4266

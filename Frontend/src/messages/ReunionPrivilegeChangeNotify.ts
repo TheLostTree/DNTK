@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ReunionPrivilegeInfo } from "./ReunionPrivilegeInfo.ts";
+import type { ReunionPrivilegeInfo } from "./ReunionPrivilegeInfo";
 
 /**
  * CmdId: 5098

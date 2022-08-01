@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AnimatorParameterValueInfo } from "./AnimatorParameterValueInfo.ts";
+import type { AnimatorParameterValueInfo } from "./AnimatorParameterValueInfo";
 
 export interface AnimatorParameterValueInfoPair {
   NameId?: number;

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AsterMidCampInfo } from "./AsterMidCampInfo.ts";
+import type { AsterMidCampInfo } from "./AsterMidCampInfo";
 
 /**
  * CmdId: 2133

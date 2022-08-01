@@ -1,6 +1,6 @@
 /* eslint-disable */
 import type Long from "long";
-import type { MotionInfo } from "./MotionInfo.ts";
+import type { MotionInfo } from "./MotionInfo";
 
 /**
  * CmdId: 3235

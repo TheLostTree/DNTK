@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ChessCardInfo } from "./ChessCardInfo.ts";
+import type { ChessCardInfo } from "./ChessCardInfo";
 
 /**
  * CmdId: 5392

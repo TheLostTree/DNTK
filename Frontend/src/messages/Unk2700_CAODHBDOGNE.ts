@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Unk2700BJJOMPDLNAL } from "./Unk2700_BJJOMPDLNAL.ts";
+import type { Unk2700BJJOMPDLNAL } from "./Unk2700_BJJOMPDLNAL";
 
 /**
  * CmdId: 8597

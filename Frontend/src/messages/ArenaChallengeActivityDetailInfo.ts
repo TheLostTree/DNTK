@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ArenaChallengeMonsterLevel } from "./ArenaChallengeMonsterLevel.ts";
+import type { ArenaChallengeMonsterLevel } from "./ArenaChallengeMonsterLevel";
 
 export interface ArenaChallengeActivityDetailInfo {
   Unk2800GNKHCICOIMC?: boolean;

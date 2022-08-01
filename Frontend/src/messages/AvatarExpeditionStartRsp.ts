@@ -1,6 +1,6 @@
 /* eslint-disable */
 import type Long from "long";
-import type { AvatarExpeditionInfo } from "./AvatarExpeditionInfo.ts";
+import type { AvatarExpeditionInfo } from "./AvatarExpeditionInfo";
 
 /**
  * CmdId: 1719
@@ -8,7 +8,7 @@ import type { AvatarExpeditionInfo } from "./AvatarExpeditionInfo.ts";
  * EnetIsReliable: true
  */
 export interface AvatarExpeditionStartRsp {
-  ExpeditionInfoMap?: { [key: Long]: AvatarExpeditionInfo };
+  ExpeditionInfoMap?: { [key: string]: AvatarExpeditionInfo };
   Retcode?: number;
 }
 

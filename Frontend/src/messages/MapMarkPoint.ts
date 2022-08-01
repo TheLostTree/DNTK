@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { Vector } from "./Vector.ts";
-import type { MapMarkPointType } from "./MapMarkPointType.ts";
-import type { MapMarkFromType } from "./MapMarkFromType.ts";
+import type { Vector } from "./Vector";
+import type { MapMarkPointType } from "./MapMarkPointType";
+import type { MapMarkFromType } from "./MapMarkFromType";
 
 export interface MapMarkPoint {
   SceneId?: number;

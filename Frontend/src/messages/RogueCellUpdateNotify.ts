@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { RogueCellInfo } from "./RogueCellInfo.ts";
+import type { RogueCellInfo } from "./RogueCellInfo";
 
 /**
  * CmdId: 8642

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Unk2800IOBHBFFAONO } from "./Unk2800_IOBHBFFAONO.ts";
+import type { Unk2800IOBHBFFAONO } from "./Unk2800_IOBHBFFAONO";
 
 /**
  * CmdId: 8870

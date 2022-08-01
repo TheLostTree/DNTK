@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { BlessingRecvPicRecord } from "./BlessingRecvPicRecord.ts";
+import type { BlessingRecvPicRecord } from "./BlessingRecvPicRecord";
 
 /**
  * CmdId: 2083

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Unk2700IGJLOMCPLLE } from "./Unk2700_IGJLOMCPLLE.ts";
+import type { Unk2700IGJLOMCPLLE } from "./Unk2700_IGJLOMCPLLE";
 
 /**
  * CmdId: 6207

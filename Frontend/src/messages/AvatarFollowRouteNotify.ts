@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Route } from "./Route.ts";
+import type { Route } from "./Route";
 
 /**
  * CmdId: 3458

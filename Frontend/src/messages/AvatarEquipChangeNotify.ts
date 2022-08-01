@@ -1,7 +1,7 @@
 /* eslint-disable */
 import type Long from "long";
-import type { SceneReliquaryInfo } from "./SceneReliquaryInfo.ts";
-import type { SceneWeaponInfo } from "./SceneWeaponInfo.ts";
+import type { SceneReliquaryInfo } from "./SceneReliquaryInfo";
+import type { SceneWeaponInfo } from "./SceneWeaponInfo";
 
 /**
  * CmdId: 647

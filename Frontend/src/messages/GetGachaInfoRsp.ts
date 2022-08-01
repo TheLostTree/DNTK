@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { GachaInfo } from "./GachaInfo.ts";
+import type { GachaInfo } from "./GachaInfo";
 
 /**
  * CmdId: 1598

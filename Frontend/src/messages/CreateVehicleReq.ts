@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Vector } from "./Vector.ts";
+import type { Vector } from "./Vector";
 
 /**
  * CmdId: 893

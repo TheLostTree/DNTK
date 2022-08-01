@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { OnlinePlayerInfo } from "./OnlinePlayerInfo.ts";
-import type { ExhibitionDisplayInfo } from "./ExhibitionDisplayInfo.ts";
+import type { OnlinePlayerInfo } from "./OnlinePlayerInfo";
+import type { ExhibitionDisplayInfo } from "./ExhibitionDisplayInfo";
 
 export interface Unk2800BEMANDBNPJB {
   PlayerInfo?: OnlinePlayerInfo;

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AvatarSatiationData } from "./AvatarSatiationData.ts";
+import type { AvatarSatiationData } from "./AvatarSatiationData";
 
 /**
  * CmdId: 1693

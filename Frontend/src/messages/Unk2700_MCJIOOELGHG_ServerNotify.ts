@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Unk2700JDPMOMKAPIF } from "./Unk2700_JDPMOMKAPIF.ts";
+import type { Unk2700JDPMOMKAPIF } from "./Unk2700_JDPMOMKAPIF";
 
 /**
  * CmdId: 6033

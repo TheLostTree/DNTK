@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { SummerTimeSprintBoatInfo } from "./SummerTimeSprintBoatInfo.ts";
-import type { SummerTimeStageInfo } from "./SummerTimeStageInfo.ts";
+import type { SummerTimeSprintBoatInfo } from "./SummerTimeSprintBoatInfo";
+import type { SummerTimeStageInfo } from "./SummerTimeStageInfo";
 
 export interface SummerTimeDetailInfo {
   StageMap?: { [key: number]: SummerTimeStageInfo };

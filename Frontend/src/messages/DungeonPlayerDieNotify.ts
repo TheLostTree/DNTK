@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { PlayerDieType } from "./PlayerDieType.ts";
-import type { StrengthenPointData } from "./StrengthenPointData.ts";
+import type { PlayerDieType } from "./PlayerDieType";
+import type { StrengthenPointData } from "./StrengthenPointData";
 
 /**
  * CmdId: 931

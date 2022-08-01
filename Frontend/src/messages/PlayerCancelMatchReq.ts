@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { MatchType } from "./MatchType.ts";
+import type { MatchType } from "./MatchType";
 
 /**
  * CmdId: 4157

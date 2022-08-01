@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { CreateEntityInfo } from "./CreateEntityInfo.ts";
+import type { CreateEntityInfo } from "./CreateEntityInfo";
 
 /**
  * CmdId: 226

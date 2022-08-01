@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { ForwardType } from "./ForwardType.ts";
-import type { CombatTypeArgument } from "./CombatTypeArgument.ts";
+import type { ForwardType } from "./ForwardType";
+import type { CombatTypeArgument } from "./CombatTypeArgument";
 
 export interface CombatInvokeEntry {
   CombatData?: Buffer;

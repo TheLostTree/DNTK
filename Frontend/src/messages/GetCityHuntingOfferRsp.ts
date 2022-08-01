@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { HuntingPair } from "./HuntingPair.ts";
-import type { HuntingOfferData } from "./HuntingOfferData.ts";
+import type { HuntingPair } from "./HuntingPair";
+import type { HuntingOfferData } from "./HuntingOfferData";
 
 /**
  * CmdId: 4307

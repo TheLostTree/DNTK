@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { FurnitureMakeHelpData } from "./FurnitureMakeHelpData.ts";
+import type { FurnitureMakeHelpData } from "./FurnitureMakeHelpData";
 
 /**
  * CmdId: 4756

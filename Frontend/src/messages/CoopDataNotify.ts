@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { CoopChapter } from "./CoopChapter.ts";
+import type { CoopChapter } from "./CoopChapter";
 
 /**
  * CmdId: 1979

@@ -1,6 +1,6 @@
 /* eslint-disable */
 import type Long from "long";
-import type { ExhibitionDisplayInfo } from "./ExhibitionDisplayInfo.ts";
+import type { ExhibitionDisplayInfo } from "./ExhibitionDisplayInfo";
 
 export interface InBattleChessSettleInfo {
   IsSuccess?: boolean;

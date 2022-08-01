@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { StoreType } from "./StoreType.ts";
-import type { Item } from "./Item.ts";
+import type { StoreType } from "./StoreType";
+import type { Item } from "./Item";
 
 /**
  * CmdId: 672

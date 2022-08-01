@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { MultistagePlayInfo } from "./MultistagePlayInfo.ts";
+import type { MultistagePlayInfo } from "./MultistagePlayInfo";
 
 /**
  * CmdId: 5372

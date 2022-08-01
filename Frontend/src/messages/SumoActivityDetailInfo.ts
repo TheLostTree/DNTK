@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { SumoStageData } from "./SumoStageData.ts";
+import type { SumoStageData } from "./SumoStageData";
 
 export interface SumoActivityDetailInfo {
   DifficultyId?: number;

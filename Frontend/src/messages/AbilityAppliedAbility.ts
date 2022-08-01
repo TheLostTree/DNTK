@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { AbilityString } from "./AbilityString.ts";
-import type { AbilityScalarValueEntry } from "./AbilityScalarValueEntry.ts";
+import type { AbilityString } from "./AbilityString";
+import type { AbilityScalarValueEntry } from "./AbilityScalarValueEntry";
 
 export interface AbilityAppliedAbility {
   AbilityName?: AbilityString;

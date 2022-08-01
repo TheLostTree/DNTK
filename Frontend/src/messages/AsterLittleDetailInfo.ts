@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AsterLittleStageState } from "./AsterLittleStageState.ts";
+import type { AsterLittleStageState } from "./AsterLittleStageState";
 
 export interface AsterLittleDetailInfo {
   IsOpen?: boolean;

@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { WidgetCreatorOpType } from "./WidgetCreatorOpType.ts";
-import type { WidgetCreateLocationInfo } from "./WidgetCreateLocationInfo.ts";
+import type { WidgetCreatorOpType } from "./WidgetCreatorOpType";
+import type { WidgetCreateLocationInfo } from "./WidgetCreateLocationInfo";
 
 export interface WidgetCreatorInfo {
   OpType?: WidgetCreatorOpType;

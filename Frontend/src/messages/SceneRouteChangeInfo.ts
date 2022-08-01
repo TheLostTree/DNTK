@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { RoutePointChangeInfo } from "./RoutePointChangeInfo.ts";
+import type { RoutePointChangeInfo } from "./RoutePointChangeInfo";
 
 export interface SceneRouteChangeInfo {
   IsForward?: boolean;

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ReportReasonType } from "./ReportReasonType.ts";
+import type { ReportReasonType } from "./ReportReasonType";
 
 /**
  * CmdId: 4024

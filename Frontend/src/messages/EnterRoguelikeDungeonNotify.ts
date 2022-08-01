@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { RogueCellInfo } from "./RogueCellInfo.ts";
-import type { RoguelikeRuneRecord } from "./RoguelikeRuneRecord.ts";
+import type { RogueCellInfo } from "./RogueCellInfo";
+import type { RoguelikeRuneRecord } from "./RoguelikeRuneRecord";
 import type Long from "long";
 
 /**

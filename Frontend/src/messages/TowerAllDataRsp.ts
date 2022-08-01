@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { TowerMonthlyBrief } from "./TowerMonthlyBrief.ts";
-import type { TowerCurLevelRecord } from "./TowerCurLevelRecord.ts";
-import type { TowerFloorRecord } from "./TowerFloorRecord.ts";
+import type { TowerMonthlyBrief } from "./TowerMonthlyBrief";
+import type { TowerCurLevelRecord } from "./TowerCurLevelRecord";
+import type { TowerFloorRecord } from "./TowerFloorRecord";
 
 /**
  * CmdId: 2473

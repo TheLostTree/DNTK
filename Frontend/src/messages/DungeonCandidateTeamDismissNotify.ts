@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { DungeonCandidateTeamDismissReason } from "./DungeonCandidateTeamDismissReason.ts";
+import type { DungeonCandidateTeamDismissReason } from "./DungeonCandidateTeamDismissReason";
 
 /**
  * CmdId: 963

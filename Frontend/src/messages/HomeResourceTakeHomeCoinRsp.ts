@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { HomeResource } from "./HomeResource.ts";
+import type { HomeResource } from "./HomeResource";
 
 /**
  * CmdId: 4541

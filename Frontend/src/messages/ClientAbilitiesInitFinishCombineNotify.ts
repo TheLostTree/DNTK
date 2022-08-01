@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { EntityAbilityInvokeEntry } from "./EntityAbilityInvokeEntry.ts";
+import type { EntityAbilityInvokeEntry } from "./EntityAbilityInvokeEntry";
 
 /**
  * CmdId: 1103

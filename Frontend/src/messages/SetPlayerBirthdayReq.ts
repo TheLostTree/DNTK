@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Birthday } from "./Birthday.ts";
+import type { Birthday } from "./Birthday";
 
 /**
  * CmdId: 4048

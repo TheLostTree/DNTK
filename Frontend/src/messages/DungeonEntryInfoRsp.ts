@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { DungeonEntryInfo } from "./DungeonEntryInfo.ts";
-import type { Unk2800MHCFAGCKGIB } from "./Unk2800_MHCFAGCKGIB.ts";
+import type { DungeonEntryInfo } from "./DungeonEntryInfo";
+import type { Unk2800MHCFAGCKGIB } from "./Unk2800_MHCFAGCKGIB";
 
 /**
  * CmdId: 998

@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { ProfilePicture } from "./ProfilePicture.ts";
+import type { ProfilePicture } from "./ProfilePicture";
 import type Long from "long";
-import type { ExhibitionDisplayInfo } from "./ExhibitionDisplayInfo.ts";
+import type { ExhibitionDisplayInfo } from "./ExhibitionDisplayInfo";
 
 export interface ScenePlayBattleSettlePlayerInfo {
   CardList?: ExhibitionDisplayInfo[];

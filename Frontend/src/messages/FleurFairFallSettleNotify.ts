@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { FleurFairFallSettleInfo } from "./FleurFairFallSettleInfo.ts";
+import type { FleurFairFallSettleInfo } from "./FleurFairFallSettleInfo";
 
 /**
  * CmdId: 2017

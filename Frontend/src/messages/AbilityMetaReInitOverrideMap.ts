@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AbilityScalarValueEntry } from "./AbilityScalarValueEntry.ts";
+import type { AbilityScalarValueEntry } from "./AbilityScalarValueEntry";
 
 export interface AbilityMetaReInitOverrideMap {
   OverrideMap?: AbilityScalarValueEntry[];

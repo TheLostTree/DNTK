@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { ChannelerSlabBuffInfo } from "./ChannelerSlabBuffInfo.ts";
-import type { ChannelerSlabLoopDungeonStageInfo } from "./ChannelerSlabLoopDungeonStageInfo.ts";
-import type { ChannelerSlabChallengeStage } from "./ChannelerSlabChallengeStage.ts";
+import type { ChannelerSlabBuffInfo } from "./ChannelerSlabBuffInfo";
+import type { ChannelerSlabLoopDungeonStageInfo } from "./ChannelerSlabLoopDungeonStageInfo";
+import type { ChannelerSlabChallengeStage } from "./ChannelerSlabChallengeStage";
 
 export interface ChannelerSlabActivityDetailInfo {
   BuffInfo?: ChannelerSlabBuffInfo;

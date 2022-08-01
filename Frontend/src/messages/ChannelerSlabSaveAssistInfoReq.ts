@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ChannelerSlabAssistInfo } from "./ChannelerSlabAssistInfo.ts";
+import type { ChannelerSlabAssistInfo } from "./ChannelerSlabAssistInfo";
 
 /**
  * CmdId: 8416

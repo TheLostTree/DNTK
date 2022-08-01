@@ -1,6 +1,6 @@
 /* eslint-disable */
 import type Long from "long";
-import type { ServerBuff } from "./ServerBuff.ts";
+import type { ServerBuff } from "./ServerBuff";
 
 /**
  * CmdId: 361

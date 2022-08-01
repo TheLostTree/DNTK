@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { FriendEnterHomeOption } from "./FriendEnterHomeOption.ts";
+import type { FriendEnterHomeOption } from "./FriendEnterHomeOption";
 
 /**
  * CmdId: 4494

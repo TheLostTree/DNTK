@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { WidgetSlotOp } from "./WidgetSlotOp.ts";
-import type { WidgetSlotData } from "./WidgetSlotData.ts";
+import type { WidgetSlotOp } from "./WidgetSlotOp";
+import type { WidgetSlotData } from "./WidgetSlotData";
 
 /**
  * CmdId: 4267

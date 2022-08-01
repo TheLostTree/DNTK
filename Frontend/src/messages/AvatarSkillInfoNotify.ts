@@ -1,6 +1,6 @@
 /* eslint-disable */
 import type Long from "long";
-import type { AvatarSkillInfo } from "./AvatarSkillInfo.ts";
+import type { AvatarSkillInfo } from "./AvatarSkillInfo";
 
 /**
  * CmdId: 1090

@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { ItemParam } from "./ItemParam.ts";
-import type { BattlePassRewardTakeOption } from "./BattlePassRewardTakeOption.ts";
+import type { ItemParam } from "./ItemParam";
+import type { BattlePassRewardTakeOption } from "./BattlePassRewardTakeOption";
 
 /**
  * CmdId: 2631

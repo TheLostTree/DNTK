@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { MatchPlayerInfo } from "./MatchPlayerInfo.ts";
+import type { MatchPlayerInfo } from "./MatchPlayerInfo";
 
 export interface GeneralMatchInfo {
   MatchParam?: number;

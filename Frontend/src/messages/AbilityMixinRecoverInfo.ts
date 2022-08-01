@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { MassivePropSyncInfo } from "./MassivePropSyncInfo.ts";
+import type { MassivePropSyncInfo } from "./MassivePropSyncInfo";
 
 export interface AbilityMixinRecoverInfo {
   LocalId?: number;

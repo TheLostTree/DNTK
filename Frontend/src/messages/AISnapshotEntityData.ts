@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AISnapshotEntitySkillCycle } from "./AISnapshotEntitySkillCycle.ts";
+import type { AISnapshotEntitySkillCycle } from "./AISnapshotEntitySkillCycle";
 
 export interface AISnapshotEntityData {
   TickTime?: number;

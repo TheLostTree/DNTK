@@ -1,6 +1,6 @@
 /* eslint-disable */
 import type Long from "long";
-import type { ItemParam } from "./ItemParam.ts";
+import type { ItemParam } from "./ItemParam";
 
 /**
  * CmdId: 633

@@ -1,11 +1,11 @@
 /* eslint-disable */
-import type { Unk2700CCEOEOHLAPK } from "./Unk2700_CCEOEOHLAPK.ts";
-import type { LunchBoxData } from "./LunchBoxData.ts";
-import type { AnchorPointData } from "./AnchorPointData.ts";
-import type { ClientCollectorData } from "./ClientCollectorData.ts";
-import type { WidgetCoolDownData } from "./WidgetCoolDownData.ts";
-import type { OneofGatherPointDetectorData } from "./OneofGatherPointDetectorData.ts";
-import type { WidgetSlotData } from "./WidgetSlotData.ts";
+import type { Unk2700CCEOEOHLAPK } from "./Unk2700_CCEOEOHLAPK";
+import type { LunchBoxData } from "./LunchBoxData";
+import type { AnchorPointData } from "./AnchorPointData";
+import type { ClientCollectorData } from "./ClientCollectorData";
+import type { WidgetCoolDownData } from "./WidgetCoolDownData";
+import type { OneofGatherPointDetectorData } from "./OneofGatherPointDetectorData";
+import type { WidgetSlotData } from "./WidgetSlotData";
 
 /**
  * CmdId: 4271

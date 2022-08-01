@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { Vector } from "./Vector.ts";
-import type { HomeFurnitureData } from "./HomeFurnitureData.ts";
-import type { HomeBlockArrangementInfo } from "./HomeBlockArrangementInfo.ts";
+import type { Vector } from "./Vector";
+import type { HomeFurnitureData } from "./HomeFurnitureData";
+import type { HomeBlockArrangementInfo } from "./HomeBlockArrangementInfo";
 
 export interface HomeSceneArrangementInfo {
   BornRot?: Vector;

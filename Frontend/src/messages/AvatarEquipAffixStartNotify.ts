@@ -1,6 +1,6 @@
 /* eslint-disable */
 import type Long from "long";
-import type { AvatarEquipAffixInfo } from "./AvatarEquipAffixInfo.ts";
+import type { AvatarEquipAffixInfo } from "./AvatarEquipAffixInfo";
 
 /**
  * CmdId: 1662

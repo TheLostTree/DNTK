@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { LunaRiteHintStatusType } from "./LunaRiteHintStatusType.ts";
+import type { LunaRiteHintStatusType } from "./LunaRiteHintStatusType";
 
 export interface LunaRiteAreaInfo {
   SacrificeList?: number[];

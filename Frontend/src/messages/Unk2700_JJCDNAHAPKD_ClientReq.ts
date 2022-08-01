@@ -1,6 +1,6 @@
 /* eslint-disable */
 import type Long from "long";
-import type { Unk2700KBBDJNLFAKD } from "./Unk2700_KBBDJNLFAKD.ts";
+import type { Unk2700KBBDJNLFAKD } from "./Unk2700_KBBDJNLFAKD";
 
 /**
  * CmdId: 6226

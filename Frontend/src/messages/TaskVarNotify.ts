@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { TaskVar } from "./TaskVar.ts";
+import type { TaskVar } from "./TaskVar";
 
 /**
  * CmdId: 160

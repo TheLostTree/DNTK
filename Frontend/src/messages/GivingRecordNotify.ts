@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { GivingRecord } from "./GivingRecord.ts";
+import type { GivingRecord } from "./GivingRecord";
 
 /**
  * CmdId: 116

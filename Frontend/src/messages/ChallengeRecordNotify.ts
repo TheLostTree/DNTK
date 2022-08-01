@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ChallengeRecord } from "./ChallengeRecord.ts";
+import type { ChallengeRecord } from "./ChallengeRecord";
 
 /**
  * CmdId: 993

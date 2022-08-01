@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { TowerTeam } from "./TowerTeam.ts";
+import type { TowerTeam } from "./TowerTeam";
 
 export interface TowerCurLevelRecord {
   TowerTeamList?: TowerTeam[];

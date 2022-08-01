@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ForwardType } from "./ForwardType.ts";
+import type { ForwardType } from "./ForwardType";
 
 /**
  * CmdId: 381

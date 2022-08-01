@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { GadgetBornType } from "./GadgetBornType.ts";
+import type { GadgetBornType } from "./GadgetBornType";
 
 export interface CreateGadgetInfo {
   BornType?: GadgetBornType;

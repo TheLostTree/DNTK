@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { InBattleMechanicusSettleInfo } from "./InBattleMechanicusSettleInfo.ts";
-import type { InBattleChessSettleInfo } from "./InBattleChessSettleInfo.ts";
-import type { IrodoriChessSettleInfo } from "./IrodoriChessSettleInfo.ts";
+import type { InBattleMechanicusSettleInfo } from "./InBattleMechanicusSettleInfo";
+import type { InBattleChessSettleInfo } from "./InBattleChessSettleInfo";
+import type { IrodoriChessSettleInfo } from "./IrodoriChessSettleInfo";
 
 /**
  * CmdId: 5313

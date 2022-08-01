@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ClientReconnectReason } from "./ClientReconnectReason.ts";
+import type { ClientReconnectReason } from "./ClientReconnectReason";
 
 /**
  * CmdId: 75

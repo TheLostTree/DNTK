@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { ExpeditionChallengeInfo } from "./ExpeditionChallengeInfo.ts";
-import type { ExpeditionPathInfo } from "./ExpeditionPathInfo.ts";
+import type { ExpeditionChallengeInfo } from "./ExpeditionChallengeInfo";
+import type { ExpeditionPathInfo } from "./ExpeditionPathInfo";
 
 export interface ExpeditionActivityDetailInfo {
   CurChallengeId?: number;

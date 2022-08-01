@@ -1,9 +1,9 @@
 /* eslint-disable */
-import type { Unk2700PHGGAEDHLBN } from "./Unk2700_PHGGAEDHLBN.ts";
-import type { Unk2700OHBMICGFIIK } from "./Unk2700_OHBMICGFIIK.ts";
+import type { Unk2700PHGGAEDHLBN } from "./Unk2700_PHGGAEDHLBN";
+import type { Unk2700OHBMICGFIIK } from "./Unk2700_OHBMICGFIIK";
 import type Long from "long";
-import type { Unk2700BMBAIACNLDF } from "./Unk2700_BMBAIACNLDF.ts";
-import type { Unk2700ELMEOJFCOFH } from "./Unk2700_ELMEOJFCOFH.ts";
+import type { Unk2700BMBAIACNLDF } from "./Unk2700_BMBAIACNLDF";
+import type { Unk2700ELMEOJFCOFH } from "./Unk2700_ELMEOJFCOFH";
 
 export interface Unk2700MIBBHAEMAGI {
   Unk2700JGFDODPBGFL?: Unk2700PHGGAEDHLBN;

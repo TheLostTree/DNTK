@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { HomeVerifyBlockData } from "./HomeVerifyBlockData.ts";
+import type { HomeVerifyBlockData } from "./HomeVerifyBlockData";
 
 export interface HomeVerifySceneData {
   Blocks?: HomeVerifyBlockData[];

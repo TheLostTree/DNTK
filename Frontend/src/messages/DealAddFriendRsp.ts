@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { DealAddFriendResultType } from "./DealAddFriendResultType.ts";
+import type { DealAddFriendResultType } from "./DealAddFriendResultType";
 
 /**
  * CmdId: 4090

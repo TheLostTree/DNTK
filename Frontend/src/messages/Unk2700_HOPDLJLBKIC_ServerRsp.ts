@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { Unk2700NOCLNCCJEGK } from "./Unk2700_NOCLNCCJEGK.ts";
-import type { WidgetCoolDownData } from "./WidgetCoolDownData.ts";
+import type { Unk2700NOCLNCCJEGK } from "./Unk2700_NOCLNCCJEGK";
+import type { WidgetCoolDownData } from "./WidgetCoolDownData";
 
 /**
  * CmdId: 6056

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AbilityControlBlock } from "./AbilityControlBlock.ts";
+import type { AbilityControlBlock } from "./AbilityControlBlock";
 
 /**
  * CmdId: 1131

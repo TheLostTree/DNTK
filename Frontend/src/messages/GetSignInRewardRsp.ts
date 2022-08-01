@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { SignInInfo } from "./SignInInfo.ts";
+import type { SignInInfo } from "./SignInInfo";
 
 /**
  * CmdId: 2521

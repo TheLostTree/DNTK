@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { HuntingPair } from "./HuntingPair.ts";
-import type { HuntingOfferState } from "./HuntingOfferState.ts";
+import type { HuntingPair } from "./HuntingPair";
+import type { HuntingOfferState } from "./HuntingOfferState";
 
 export interface HuntingOfferData {
   HuntingPair?: HuntingPair;

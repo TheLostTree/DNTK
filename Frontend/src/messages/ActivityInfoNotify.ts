@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ActivityInfo } from "./ActivityInfo.ts";
+import type { ActivityInfo } from "./ActivityInfo";
 
 /**
  * CmdId: 2060

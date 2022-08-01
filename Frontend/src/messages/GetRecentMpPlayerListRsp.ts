@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { FriendBrief } from "./FriendBrief.ts";
+import type { FriendBrief } from "./FriendBrief";
 
 /**
  * CmdId: 4050

@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { Vector } from "./Vector.ts";
-import type { HomePlantSubFieldData } from "./HomePlantSubFieldData.ts";
+import type { Vector } from "./Vector";
+import type { HomePlantSubFieldData } from "./HomePlantSubFieldData";
 
 export interface HomePlantFieldData {
   SubFieldList?: HomePlantSubFieldData[];

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { HomePlantFieldStatus } from "./HomePlantFieldStatus.ts";
+import type { HomePlantFieldStatus } from "./HomePlantFieldStatus";
 
 export interface HomePlantSubFieldData {
   EntityIdList?: number[];

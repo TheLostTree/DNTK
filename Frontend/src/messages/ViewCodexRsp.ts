@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { CodexTypeData } from "./CodexTypeData.ts";
+import type { CodexTypeData } from "./CodexTypeData";
 
 /**
  * CmdId: 4201

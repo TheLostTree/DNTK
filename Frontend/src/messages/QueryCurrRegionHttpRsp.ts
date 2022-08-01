@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { RegionInfo } from "./RegionInfo.ts";
-import type { ForceUpdateInfo } from "./ForceUpdateInfo.ts";
-import type { StopServerInfo } from "./StopServerInfo.ts";
+import type { RegionInfo } from "./RegionInfo";
+import type { ForceUpdateInfo } from "./ForceUpdateInfo";
+import type { StopServerInfo } from "./StopServerInfo";
 
 export interface QueryCurrRegionHttpRsp {
   Retcode?: number;

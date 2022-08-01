@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { RoutePoint } from "./RoutePoint.ts";
+import type { RoutePoint } from "./RoutePoint";
 
 export interface MonsterRoute {
   RoutePoints?: RoutePoint[];

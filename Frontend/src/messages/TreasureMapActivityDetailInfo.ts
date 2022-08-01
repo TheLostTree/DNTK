@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { TreasureMapRegionInfo } from "./TreasureMapRegionInfo.ts";
-import type { TreasureMapBonusChallengeInfo } from "./TreasureMapBonusChallengeInfo.ts";
+import type { TreasureMapRegionInfo } from "./TreasureMapRegionInfo";
+import type { TreasureMapBonusChallengeInfo } from "./TreasureMapBonusChallengeInfo";
 
 export interface TreasureMapActivityDetailInfo {
   ActiveRegionIndex?: number;

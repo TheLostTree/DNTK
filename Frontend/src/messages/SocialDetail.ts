@@ -1,9 +1,9 @@
 /* eslint-disable */
-import type { Birthday } from "./Birthday.ts";
-import type { FriendOnlineState } from "./FriendOnlineState.ts";
-import type { FriendEnterHomeOption } from "./FriendEnterHomeOption.ts";
-import type { ProfilePicture } from "./ProfilePicture.ts";
-import type { SocialShowAvatarInfo } from "./SocialShowAvatarInfo.ts";
+import type { Birthday } from "./Birthday";
+import type { FriendOnlineState } from "./FriendOnlineState";
+import type { FriendEnterHomeOption } from "./FriendEnterHomeOption";
+import type { ProfilePicture } from "./ProfilePicture";
+import type { SocialShowAvatarInfo } from "./SocialShowAvatarInfo";
 
 export interface SocialDetail {
   Uid?: number;

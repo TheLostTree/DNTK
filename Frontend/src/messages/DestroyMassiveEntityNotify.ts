@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ClientMassiveEntity } from "./ClientMassiveEntity.ts";
+import type { ClientMassiveEntity } from "./ClientMassiveEntity";
 
 /**
  * CmdId: 358

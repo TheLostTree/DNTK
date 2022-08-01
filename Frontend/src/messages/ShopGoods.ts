@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ItemParam } from "./ItemParam.ts";
+import type { ItemParam } from "./ItemParam";
 
 export interface ShopGoods {
   DiscountEndTime?: number;

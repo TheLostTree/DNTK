@@ -1,8 +1,8 @@
 /* eslint-disable */
-import type { AsterLittleDetailInfo } from "./AsterLittleDetailInfo.ts";
-import type { AsterLargeDetailInfo } from "./AsterLargeDetailInfo.ts";
-import type { AsterMidDetailInfo } from "./AsterMidDetailInfo.ts";
-import type { AsterProgressDetailInfo } from "./AsterProgressDetailInfo.ts";
+import type { AsterLittleDetailInfo } from "./AsterLittleDetailInfo";
+import type { AsterLargeDetailInfo } from "./AsterLargeDetailInfo";
+import type { AsterMidDetailInfo } from "./AsterMidDetailInfo";
+import type { AsterProgressDetailInfo } from "./AsterProgressDetailInfo";
 
 export interface AsterActivityDetailInfo {
   AsterLittle?: AsterLittleDetailInfo;

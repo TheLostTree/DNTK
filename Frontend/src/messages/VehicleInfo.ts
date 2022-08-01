@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { VehicleMember } from "./VehicleMember.ts";
+import type { VehicleMember } from "./VehicleMember";
 
 export interface VehicleInfo {
   MemberList?: VehicleMember[];

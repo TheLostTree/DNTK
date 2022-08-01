@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ClientCollectorData } from "./ClientCollectorData.ts";
+import type { ClientCollectorData } from "./ClientCollectorData";
 
 /**
  * CmdId: 4264

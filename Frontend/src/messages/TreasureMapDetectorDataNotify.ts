@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { TreasureMapDetectorData } from "./TreasureMapDetectorData.ts";
+import type { TreasureMapDetectorData } from "./TreasureMapDetectorData";
 
 /**
  * CmdId: 4300

@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { FleurFairBalloonInfo } from "./FleurFairBalloonInfo.ts";
-import type { FleurFairFallInfo } from "./FleurFairFallInfo.ts";
-import type { FleurFairMusicGameInfo } from "./FleurFairMusicGameInfo.ts";
+import type { FleurFairBalloonInfo } from "./FleurFairBalloonInfo";
+import type { FleurFairFallInfo } from "./FleurFairFallInfo";
+import type { FleurFairMusicGameInfo } from "./FleurFairMusicGameInfo";
 
 export interface FleurFairMinigameInfo {
   MinigameId?: number;

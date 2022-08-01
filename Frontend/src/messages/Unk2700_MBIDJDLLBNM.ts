@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Vector } from "./Vector.ts";
+import type { Vector } from "./Vector";
 
 export interface Unk2700MBIDJDLLBNM {
   OpenTime?: number;

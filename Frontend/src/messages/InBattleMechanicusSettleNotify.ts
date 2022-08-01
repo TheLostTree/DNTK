@@ -1,6 +1,6 @@
 /* eslint-disable */
 import type Long from "long";
-import type { MultistageSettleWatcherInfo } from "./MultistageSettleWatcherInfo.ts";
+import type { MultistageSettleWatcherInfo } from "./MultistageSettleWatcherInfo";
 
 /**
  * CmdId: 5305

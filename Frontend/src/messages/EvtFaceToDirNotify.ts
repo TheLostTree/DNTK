@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { ForwardType } from "./ForwardType.ts";
-import type { EvtFaceToDirInfo } from "./EvtFaceToDirInfo.ts";
+import type { ForwardType } from "./ForwardType";
+import type { EvtFaceToDirInfo } from "./EvtFaceToDirInfo";
 
 /**
  * CmdId: 390

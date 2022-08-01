@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ProductPriceTier } from "./ProductPriceTier.ts";
+import type { ProductPriceTier } from "./ProductPriceTier";
 
 /**
  * CmdId: 4102

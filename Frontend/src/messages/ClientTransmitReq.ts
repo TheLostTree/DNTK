@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { TransmitReason } from "./TransmitReason.ts";
-import type { Vector } from "./Vector.ts";
+import type { TransmitReason } from "./TransmitReason";
+import type { Vector } from "./Vector";
 
 /**
  * CmdId: 291

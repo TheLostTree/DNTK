@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AiThreatInfo } from "./AiThreatInfo.ts";
+import type { AiThreatInfo } from "./AiThreatInfo";
 
 /**
  * CmdId: 329

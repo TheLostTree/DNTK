@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { BuoyantCombatGallerySettleInfo } from "./BuoyantCombatGallerySettleInfo.ts";
+import type { BuoyantCombatGallerySettleInfo } from "./BuoyantCombatGallerySettleInfo";
 
 export interface BuoyantCombatSettleInfo {
   IsNewRecord?: boolean;

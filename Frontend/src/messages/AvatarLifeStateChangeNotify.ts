@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { PlayerDieType } from "./PlayerDieType.ts";
+import type { PlayerDieType } from "./PlayerDieType";
 import type Long from "long";
-import type { ServerBuff } from "./ServerBuff.ts";
+import type { ServerBuff } from "./ServerBuff";
 
 /**
  * CmdId: 1290

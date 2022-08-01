@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ChatEmojiCollectionData } from "./ChatEmojiCollectionData.ts";
+import type { ChatEmojiCollectionData } from "./ChatEmojiCollectionData";
 
 /**
  * CmdId: 4084

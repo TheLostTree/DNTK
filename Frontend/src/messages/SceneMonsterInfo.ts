@@ -1,8 +1,8 @@
 /* eslint-disable */
-import type { MonsterBornType } from "./MonsterBornType.ts";
-import type { MonsterRoute } from "./MonsterRoute.ts";
-import type { SceneWeaponInfo } from "./SceneWeaponInfo.ts";
-import type { SceneFishInfo } from "./SceneFishInfo.ts";
+import type { MonsterBornType } from "./MonsterBornType";
+import type { MonsterRoute } from "./MonsterRoute";
+import type { SceneWeaponInfo } from "./SceneWeaponInfo";
+import type { SceneFishInfo } from "./SceneFishInfo";
 
 export interface SceneMonsterInfo {
   MonsterId?: number;

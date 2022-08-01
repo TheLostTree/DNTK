@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AsterLargeDetailInfo } from "./AsterLargeDetailInfo.ts";
+import type { AsterLargeDetailInfo } from "./AsterLargeDetailInfo";
 
 /**
  * CmdId: 2146

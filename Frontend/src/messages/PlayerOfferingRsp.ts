@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { PlayerOfferingData } from "./PlayerOfferingData.ts";
-import type { ItemParam } from "./ItemParam.ts";
+import type { PlayerOfferingData } from "./PlayerOfferingData";
+import type { ItemParam } from "./ItemParam";
 
 /**
  * CmdId: 2917

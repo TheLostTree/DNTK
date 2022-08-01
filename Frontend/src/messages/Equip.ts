@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { Reliquary } from "./Reliquary.ts";
-import type { Weapon } from "./Weapon.ts";
+import type { Reliquary } from "./Reliquary";
+import type { Weapon } from "./Weapon";
 
 export interface Equip {
   IsLocked?: boolean;

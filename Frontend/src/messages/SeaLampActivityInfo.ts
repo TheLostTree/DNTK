@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { SeaLampSectionInfo } from "./SeaLampSectionInfo.ts";
+import type { SeaLampSectionInfo } from "./SeaLampSectionInfo";
 
 export interface SeaLampActivityInfo {
   IsMechanicusOpen?: boolean;

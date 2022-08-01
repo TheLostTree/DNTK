@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { ItemParam } from "./ItemParam.ts";
-import type { GachaTransferItem } from "./GachaTransferItem.ts";
+import type { ItemParam } from "./ItemParam";
+import type { GachaTransferItem } from "./GachaTransferItem";
 
 export interface GachaItem {
   GachaItem?: ItemParam;

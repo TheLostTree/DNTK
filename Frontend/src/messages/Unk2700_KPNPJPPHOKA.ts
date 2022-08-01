@@ -1,8 +1,8 @@
 /* eslint-disable */
-import type { RacingGalleryInfo } from "./RacingGalleryInfo.ts";
-import type { BalloonGalleryInfo } from "./BalloonGalleryInfo.ts";
-import type { StakePlayGalleryInfo } from "./StakePlayGalleryInfo.ts";
-import type { SeekFurnitureGalleryInfo } from "./SeekFurnitureGalleryInfo.ts";
+import type { RacingGalleryInfo } from "./RacingGalleryInfo";
+import type { BalloonGalleryInfo } from "./BalloonGalleryInfo";
+import type { StakePlayGalleryInfo } from "./StakePlayGalleryInfo";
+import type { SeekFurnitureGalleryInfo } from "./SeekFurnitureGalleryInfo";
 
 export interface Unk2700KPNPJPPHOKA {
   GroupId?: number;

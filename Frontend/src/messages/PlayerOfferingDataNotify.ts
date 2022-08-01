@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { PlayerOfferingData } from "./PlayerOfferingData.ts";
+import type { PlayerOfferingData } from "./PlayerOfferingData";
 
 /**
  * CmdId: 2923

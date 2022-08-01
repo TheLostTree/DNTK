@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ItemParam } from "./ItemParam.ts";
+import type { ItemParam } from "./ItemParam";
 
 export interface Unk2700GPPKNKGDCHJ {
   Unk2700MNPGJOAHINC?: ItemParam[];

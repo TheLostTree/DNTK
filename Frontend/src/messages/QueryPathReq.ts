@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { Vector3Int } from "./Vector3Int.ts";
-import type { Vector } from "./Vector.ts";
-import type { QueryFilter } from "./QueryFilter.ts";
+import type { Vector3Int } from "./Vector3Int";
+import type { Vector } from "./Vector";
+import type { QueryFilter } from "./QueryFilter";
 
 /**
  * CmdId: 2372

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AnimatorParameterValueInfoPair } from "./AnimatorParameterValueInfoPair.ts";
+import type { AnimatorParameterValueInfoPair } from "./AnimatorParameterValueInfoPair";
 
 export interface AbilityMetaSetPoseParameter {
   Value?: AnimatorParameterValueInfoPair;

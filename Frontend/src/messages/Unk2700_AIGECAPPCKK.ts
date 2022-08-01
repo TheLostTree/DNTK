@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Unk2700HIHKGMLLOGD } from "./Unk2700_HIHKGMLLOGD.ts";
+import type { Unk2700HIHKGMLLOGD } from "./Unk2700_HIHKGMLLOGD";
 
 export interface Unk2700AIGECAPPCKK {
   Unk2700AEJIIOOPJIL?: Unk2700HIHKGMLLOGD[];

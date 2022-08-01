@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ResVersionConfig } from "./ResVersionConfig.ts";
+import type { ResVersionConfig } from "./ResVersionConfig";
 
 /**
  * CmdId: 120

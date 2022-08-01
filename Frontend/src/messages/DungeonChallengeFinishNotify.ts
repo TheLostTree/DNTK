@@ -1,10 +1,10 @@
 /* eslint-disable */
-import type { Unk2700FHOKHHBGPEG } from "./Unk2700_FHOKHHBGPEG.ts";
-import type { StrengthenPointData } from "./StrengthenPointData.ts";
-import type { ChannelerSlabLoopDungeonResultInfo } from "./ChannelerSlabLoopDungeonResultInfo.ts";
-import type { EffigyChallengeDungeonResultInfo } from "./EffigyChallengeDungeonResultInfo.ts";
-import type { PotionDungeonResultInfo } from "./PotionDungeonResultInfo.ts";
-import type { CustomDungeonResultInfo } from "./CustomDungeonResultInfo.ts";
+import type { Unk2700FHOKHHBGPEG } from "./Unk2700_FHOKHHBGPEG";
+import type { StrengthenPointData } from "./StrengthenPointData";
+import type { ChannelerSlabLoopDungeonResultInfo } from "./ChannelerSlabLoopDungeonResultInfo";
+import type { EffigyChallengeDungeonResultInfo } from "./EffigyChallengeDungeonResultInfo";
+import type { PotionDungeonResultInfo } from "./PotionDungeonResultInfo";
+import type { CustomDungeonResultInfo } from "./CustomDungeonResultInfo";
 
 /**
  * CmdId: 939

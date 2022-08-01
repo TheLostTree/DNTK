@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { VehicleLocationInfo } from "./VehicleLocationInfo.ts";
-import type { PlayerLocationInfo } from "./PlayerLocationInfo.ts";
+import type { VehicleLocationInfo } from "./VehicleLocationInfo";
+import type { PlayerLocationInfo } from "./PlayerLocationInfo";
 
 /**
  * CmdId: 248

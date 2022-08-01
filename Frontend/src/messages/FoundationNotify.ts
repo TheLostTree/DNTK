@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { FoundationInfo } from "./FoundationInfo.ts";
+import type { FoundationInfo } from "./FoundationInfo";
 
 /**
  * CmdId: 847

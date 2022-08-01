@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ArenaChallengeChildChallengeInfo } from "./ArenaChallengeChildChallengeInfo.ts";
+import type { ArenaChallengeChildChallengeInfo } from "./ArenaChallengeChildChallengeInfo";
 
 /**
  * CmdId: 2030

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { FishBattleResult } from "./FishBattleResult.ts";
+import type { FishBattleResult } from "./FishBattleResult";
 
 /**
  * CmdId: 5841

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { SceneRouteChangeInfo } from "./SceneRouteChangeInfo.ts";
+import type { SceneRouteChangeInfo } from "./SceneRouteChangeInfo";
 
 /**
  * CmdId: 240

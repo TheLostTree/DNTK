@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { CoopPoint } from "./CoopPoint.ts";
+import type { CoopPoint } from "./CoopPoint";
 
 /**
  * CmdId: 1991

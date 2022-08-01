@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { FindHilichurlDayContentInfo } from "./FindHilichurlDayContentInfo.ts";
+import type { FindHilichurlDayContentInfo } from "./FindHilichurlDayContentInfo";
 
 export interface FindHilichurlDetailInfo {
   DayContentInfoList?: FindHilichurlDayContentInfo[];

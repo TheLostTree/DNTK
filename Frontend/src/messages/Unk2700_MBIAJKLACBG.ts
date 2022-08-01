@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { GroupLinkBundle } from "./GroupLinkBundle.ts";
+import type { GroupLinkBundle } from "./GroupLinkBundle";
 
 /**
  * CmdId: 5757

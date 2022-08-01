@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { MaterialInfo } from "./MaterialInfo.ts";
+import type { MaterialInfo } from "./MaterialInfo";
 
 /**
  * CmdId: 640

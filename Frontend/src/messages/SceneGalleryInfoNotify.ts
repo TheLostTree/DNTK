@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { SceneGalleryInfo } from "./SceneGalleryInfo.ts";
+import type { SceneGalleryInfo } from "./SceneGalleryInfo";
 
 /**
  * CmdId: 5581

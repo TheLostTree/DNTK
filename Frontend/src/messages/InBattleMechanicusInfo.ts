@@ -1,9 +1,9 @@
 /* eslint-disable */
 import type Long from "long";
-import type { InBattleMechanicusStageType } from "./InBattleMechanicusStageType.ts";
-import type { InBattleMechanicusCardInfo } from "./InBattleMechanicusCardInfo.ts";
-import type { InBattleMechanicusMonsterInfo } from "./InBattleMechanicusMonsterInfo.ts";
-import type { InBattleMechanicusPlayerInfo } from "./InBattleMechanicusPlayerInfo.ts";
+import type { InBattleMechanicusStageType } from "./InBattleMechanicusStageType";
+import type { InBattleMechanicusCardInfo } from "./InBattleMechanicusCardInfo";
+import type { InBattleMechanicusMonsterInfo } from "./InBattleMechanicusMonsterInfo";
+import type { InBattleMechanicusPlayerInfo } from "./InBattleMechanicusPlayerInfo";
 
 export interface InBattleMechanicusInfo {
   LeftMonster?: number;

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ScenePlayInfo } from "./ScenePlayInfo.ts";
+import type { ScenePlayInfo } from "./ScenePlayInfo";
 
 /**
  * CmdId: 4381

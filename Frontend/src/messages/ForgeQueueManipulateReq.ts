@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ForgeQueueManipulateType } from "./ForgeQueueManipulateType.ts";
+import type { ForgeQueueManipulateType } from "./ForgeQueueManipulateType";
 
 /**
  * CmdId: 624

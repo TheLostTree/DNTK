@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { FishBattleResult } from "./FishBattleResult.ts";
-import type { ItemParam } from "./ItemParam.ts";
+import type { FishBattleResult } from "./FishBattleResult";
+import type { ItemParam } from "./ItemParam";
 
 /**
  * CmdId: 5842

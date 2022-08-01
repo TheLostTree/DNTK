@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { CustomGadgetTreeInfo } from "./CustomGadgetTreeInfo.ts";
+import type { CustomGadgetTreeInfo } from "./CustomGadgetTreeInfo";
 
 /**
  * CmdId: 843

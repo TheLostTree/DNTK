@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { BuildingInfo } from "./BuildingInfo.ts";
+import type { BuildingInfo } from "./BuildingInfo";
 
 /**
  * CmdId: 5320

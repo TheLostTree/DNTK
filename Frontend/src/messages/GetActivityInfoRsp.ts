@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { ActivityInfo } from "./ActivityInfo.ts";
-import type { Uint32Pair } from "./Uint32Pair.ts";
+import type { ActivityInfo } from "./ActivityInfo";
+import type { Uint32Pair } from "./Uint32Pair";
 
 /**
  * CmdId: 2041

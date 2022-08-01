@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { CompoundQueueData } from "./CompoundQueueData.ts";
+import type { CompoundQueueData } from "./CompoundQueueData";
 
 /**
  * CmdId: 146

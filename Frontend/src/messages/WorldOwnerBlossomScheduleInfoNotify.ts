@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { BlossomScheduleInfo } from "./BlossomScheduleInfo.ts";
+import type { BlossomScheduleInfo } from "./BlossomScheduleInfo";
 
 /**
  * CmdId: 2707

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { HomeAvatarSummonEventInfo } from "./HomeAvatarSummonEventInfo.ts";
+import type { HomeAvatarSummonEventInfo } from "./HomeAvatarSummonEventInfo";
 
 /**
  * CmdId: 4808

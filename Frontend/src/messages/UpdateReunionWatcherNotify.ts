@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ReunionWatcherInfo } from "./ReunionWatcherInfo.ts";
+import type { ReunionWatcherInfo } from "./ReunionWatcherInfo";
 
 /**
  * CmdId: 5091

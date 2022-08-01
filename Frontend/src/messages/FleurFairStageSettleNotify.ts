@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { FleurFairGallerySettleInfo } from "./FleurFairGallerySettleInfo.ts";
-import type { FleurFairBossSettleInfo } from "./FleurFairBossSettleInfo.ts";
+import type { FleurFairGallerySettleInfo } from "./FleurFairGallerySettleInfo";
+import type { FleurFairBossSettleInfo } from "./FleurFairBossSettleInfo";
 
 /**
  * CmdId: 5356

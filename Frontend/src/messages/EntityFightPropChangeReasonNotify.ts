@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { ChangeHpReason } from "./ChangeHpReason.ts";
-import type { PropChangeReason } from "./PropChangeReason.ts";
-import type { ChangeEnergyReason } from "./ChangeEnergyReason.ts";
+import type { ChangeHpReason } from "./ChangeHpReason";
+import type { PropChangeReason } from "./PropChangeReason";
+import type { ChangeEnergyReason } from "./ChangeEnergyReason";
 
 /**
  * CmdId: 1203

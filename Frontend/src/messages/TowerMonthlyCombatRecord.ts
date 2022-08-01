@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { TowerFightRecordPair } from "./TowerFightRecordPair.ts";
+import type { TowerFightRecordPair } from "./TowerFightRecordPair";
 
 export interface TowerMonthlyCombatRecord {
   MostKillAvatarPair?: TowerFightRecordPair;

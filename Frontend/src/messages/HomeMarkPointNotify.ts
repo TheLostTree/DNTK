@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { HomeMarkPointSceneData } from "./HomeMarkPointSceneData.ts";
+import type { HomeMarkPointSceneData } from "./HomeMarkPointSceneData";
 
 /**
  * CmdId: 4474

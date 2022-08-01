@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ActivityScheduleInfo } from "./ActivityScheduleInfo.ts";
+import type { ActivityScheduleInfo } from "./ActivityScheduleInfo";
 
 /**
  * CmdId: 2107

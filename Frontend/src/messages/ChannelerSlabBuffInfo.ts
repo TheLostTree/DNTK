@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { ChannelerSlabBuffSchemeInfo } from "./ChannelerSlabBuffSchemeInfo.ts";
-import type { ChannelerSlabAssistInfo } from "./ChannelerSlabAssistInfo.ts";
+import type { ChannelerSlabBuffSchemeInfo } from "./ChannelerSlabBuffSchemeInfo";
+import type { ChannelerSlabAssistInfo } from "./ChannelerSlabAssistInfo";
 
 export interface ChannelerSlabBuffInfo {
   MpBuffSchemeInfo?: ChannelerSlabBuffSchemeInfo;

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Unk2700JOEPIGNPDGH } from "./Unk2700_JOEPIGNPDGH.ts";
+import type { Unk2700JOEPIGNPDGH } from "./Unk2700_JOEPIGNPDGH";
 
 /**
  * CmdId: 133

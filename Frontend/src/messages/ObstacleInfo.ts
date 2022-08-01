@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { MathQuaternion } from "./MathQuaternion.ts";
-import type { Vector } from "./Vector.ts";
-import type { Vector3Int } from "./Vector3Int.ts";
+import type { MathQuaternion } from "./MathQuaternion";
+import type { Vector } from "./Vector";
+import type { Vector3Int } from "./Vector3Int";
 
 export interface ObstacleInfo {
   Rotation?: MathQuaternion;

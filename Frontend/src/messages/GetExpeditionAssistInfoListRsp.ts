@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ExpeditionAssistInfo } from "./ExpeditionAssistInfo.ts";
+import type { ExpeditionAssistInfo } from "./ExpeditionAssistInfo";
 
 /**
  * CmdId: 2035

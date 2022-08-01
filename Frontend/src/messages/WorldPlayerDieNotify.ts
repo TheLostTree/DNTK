@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { PlayerDieType } from "./PlayerDieType.ts";
+import type { PlayerDieType } from "./PlayerDieType";
 
 /**
  * CmdId: 285

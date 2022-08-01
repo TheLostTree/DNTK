@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { QuestVarOp } from "./QuestVarOp.ts";
+import type { QuestVarOp } from "./QuestVarOp";
 
 /**
  * CmdId: 447

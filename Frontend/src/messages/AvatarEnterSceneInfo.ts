@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { AbilitySyncStateInfo } from "./AbilitySyncStateInfo.ts";
+import type { AbilitySyncStateInfo } from "./AbilitySyncStateInfo";
 import type Long from "long";
-import type { ServerBuff } from "./ServerBuff.ts";
+import type { ServerBuff } from "./ServerBuff";
 
 export interface AvatarEnterSceneInfo {
   ServerBuffList?: ServerBuff[];

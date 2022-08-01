@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ChapterState } from "./ChapterState.ts";
+import type { ChapterState } from "./ChapterState";
 
 /**
  * CmdId: 405

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { HomeSceneArrangementInfo } from "./HomeSceneArrangementInfo.ts";
+import type { HomeSceneArrangementInfo } from "./HomeSceneArrangementInfo";
 
 /**
  * CmdId: 4844

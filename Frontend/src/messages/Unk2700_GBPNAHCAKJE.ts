@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { Unk2700EDNGHJGKEKC } from "./Unk2700_EDNGHJGKEKC.ts";
-import type { Unk2700LBPFDCBHCBL } from "./Unk2700_LBPFDCBHCBL.ts";
+import type { Unk2700EDNGHJGKEKC } from "./Unk2700_EDNGHJGKEKC";
+import type { Unk2700LBPFDCBHCBL } from "./Unk2700_LBPFDCBHCBL";
 
 export interface Unk2700GBPNAHCAKJE {
   Unk2700OAKBDKKBFHP?: string;

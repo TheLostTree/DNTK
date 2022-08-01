@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { FleurFairMusicRecord } from "./FleurFairMusicRecord.ts";
+import type { FleurFairMusicRecord } from "./FleurFairMusicRecord";
 
 export interface FleurFairMusicGameInfo {
   MusicRecordMap?: { [key: number]: FleurFairMusicRecord };

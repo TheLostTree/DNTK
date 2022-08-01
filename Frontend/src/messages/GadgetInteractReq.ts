@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { InterOpType } from "./InterOpType.ts";
-import type { ResinCostType } from "./ResinCostType.ts";
+import type { InterOpType } from "./InterOpType";
+import type { ResinCostType } from "./ResinCostType";
 
 /**
  * CmdId: 872

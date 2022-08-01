@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { CityInfo } from "./CityInfo.ts";
+import type { CityInfo } from "./CityInfo";
 
 /**
  * CmdId: 287

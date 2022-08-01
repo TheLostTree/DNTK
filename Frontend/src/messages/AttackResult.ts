@@ -1,8 +1,8 @@
 /* eslint-disable */
-import type { AttackHitEffectResult } from "./AttackHitEffectResult.ts";
-import type { Vector } from "./Vector.ts";
-import type { AbilityIdentifier } from "./AbilityIdentifier.ts";
-import type { HitCollision } from "./HitCollision.ts";
+import type { AttackHitEffectResult } from "./AttackHitEffectResult";
+import type { Vector } from "./Vector";
+import type { AbilityIdentifier } from "./AbilityIdentifier";
+import type { HitCollision } from "./HitCollision";
 
 export interface AttackResult {
   IsResistText?: boolean;

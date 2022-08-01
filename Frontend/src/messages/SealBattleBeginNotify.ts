@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { SealBattleType } from "./SealBattleType.ts";
+import type { SealBattleType } from "./SealBattleType";
 
 /**
  * CmdId: 289

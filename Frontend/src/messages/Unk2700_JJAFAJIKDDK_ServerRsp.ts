@@ -1,7 +1,7 @@
 /* eslint-disable */
 import type Long from "long";
-import type { Unk2700OPEBMJPOOBL } from "./Unk2700_OPEBMJPOOBL.ts";
-import type { MusicBriefInfo } from "./MusicBriefInfo.ts";
+import type { Unk2700OPEBMJPOOBL } from "./Unk2700_OPEBMJPOOBL";
+import type { MusicBriefInfo } from "./MusicBriefInfo";
 
 /**
  * CmdId: 6307

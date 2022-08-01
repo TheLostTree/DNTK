@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { TransmitReason } from "./TransmitReason.ts";
+import type { TransmitReason } from "./TransmitReason";
 
 /**
  * CmdId: 224

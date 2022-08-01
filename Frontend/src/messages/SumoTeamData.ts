@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { SumoAvatarInfo } from "./SumoAvatarInfo.ts";
+import type { SumoAvatarInfo } from "./SumoAvatarInfo";
 
 export interface SumoTeamData {
   SkillIdList?: number[];

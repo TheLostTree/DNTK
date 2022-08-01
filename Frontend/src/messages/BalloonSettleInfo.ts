@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { OnlinePlayerInfo } from "./OnlinePlayerInfo.ts";
+import type { OnlinePlayerInfo } from "./OnlinePlayerInfo";
 
 export interface BalloonSettleInfo {
   Uid?: number;

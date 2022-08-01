@@ -1,11 +1,11 @@
 /* eslint-disable */
-import type { AbilitySyncStateInfo } from "./AbilitySyncStateInfo.ts";
-import type { AvatarInfo } from "./AvatarInfo.ts";
+import type { AbilitySyncStateInfo } from "./AbilitySyncStateInfo";
+import type { AvatarInfo } from "./AvatarInfo";
 import type Long from "long";
-import type { SceneAvatarInfo } from "./SceneAvatarInfo.ts";
-import type { SceneEntityInfo } from "./SceneEntityInfo.ts";
-import type { AbilityControlBlock } from "./AbilityControlBlock.ts";
-import type { ServerBuff } from "./ServerBuff.ts";
+import type { SceneAvatarInfo } from "./SceneAvatarInfo";
+import type { SceneEntityInfo } from "./SceneEntityInfo";
+import type { AbilityControlBlock } from "./AbilityControlBlock";
+import type { ServerBuff } from "./ServerBuff";
 
 export interface SceneTeamAvatar {
   AvatarAbilityInfo?: AbilitySyncStateInfo;

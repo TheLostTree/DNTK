@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { OnlinePlayerInfo } from "./OnlinePlayerInfo.ts";
-import type { MatchType } from "./MatchType.ts";
+import type { OnlinePlayerInfo } from "./OnlinePlayerInfo";
+import type { MatchType } from "./MatchType";
 
 /**
  * CmdId: 4195

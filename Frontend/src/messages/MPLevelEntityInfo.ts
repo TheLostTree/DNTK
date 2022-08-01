@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AbilitySyncStateInfo } from "./AbilitySyncStateInfo.ts";
+import type { AbilitySyncStateInfo } from "./AbilitySyncStateInfo";
 
 export interface MPLevelEntityInfo {
   AbilityInfo?: AbilitySyncStateInfo;

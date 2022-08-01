@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { Unk2800CGODFDDALAG } from "./Unk2800_CGODFDDALAG.ts";
-import type { Unk2800CGPNLBNMPCM } from "./Unk2800_CGPNLBNMPCM.ts";
+import type { Unk2800CGODFDDALAG } from "./Unk2800_CGODFDDALAG";
+import type { Unk2800CGPNLBNMPCM } from "./Unk2800_CGPNLBNMPCM";
 
 export interface SummerTimeV2DetailInfo {
   Unk2800PNBLCPIBKPO?: Unk2800CGODFDDALAG[];

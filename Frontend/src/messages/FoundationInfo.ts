@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { FoundationStatus } from "./FoundationStatus.ts";
+import type { FoundationStatus } from "./FoundationStatus";
 
 export interface FoundationInfo {
   Status?: FoundationStatus;

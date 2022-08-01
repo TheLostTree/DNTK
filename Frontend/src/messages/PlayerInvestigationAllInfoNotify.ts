@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { Investigation } from "./Investigation.ts";
-import type { InvestigationTarget } from "./InvestigationTarget.ts";
+import type { Investigation } from "./Investigation";
+import type { InvestigationTarget } from "./InvestigationTarget";
 
 /**
  * CmdId: 1928

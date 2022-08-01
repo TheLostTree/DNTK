@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { ProfilePicture } from "./ProfilePicture.ts";
-import type { ItemParam } from "./ItemParam.ts";
+import type { ProfilePicture } from "./ProfilePicture";
+import type { ItemParam } from "./ItemParam";
 
 export interface Unk2700KIGGOKAEFHM {
   ItemList?: ItemParam[];

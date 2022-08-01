@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { HomePlantFieldData } from "./HomePlantFieldData.ts";
+import type { HomePlantFieldData } from "./HomePlantFieldData";
 
 /**
  * CmdId: 4549

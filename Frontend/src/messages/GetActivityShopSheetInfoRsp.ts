@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ActivityShopSheetInfo } from "./ActivityShopSheetInfo.ts";
+import type { ActivityShopSheetInfo } from "./ActivityShopSheetInfo";
 
 /**
  * CmdId: 790

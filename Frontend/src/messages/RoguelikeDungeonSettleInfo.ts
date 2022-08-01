@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { RoguelikeSettleCoinInfo } from "./RoguelikeSettleCoinInfo.ts";
+import type { RoguelikeSettleCoinInfo } from "./RoguelikeSettleCoinInfo";
 
 export interface RoguelikeDungeonSettleInfo {
   StageId?: number;

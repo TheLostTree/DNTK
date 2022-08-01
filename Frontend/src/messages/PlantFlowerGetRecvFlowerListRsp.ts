@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { PlantFlowerRecvFlowerData } from "./PlantFlowerRecvFlowerData.ts";
+import type { PlantFlowerRecvFlowerData } from "./PlantFlowerRecvFlowerData";
 
 /**
  * CmdId: 8374

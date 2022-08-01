@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { MistTrialMissionInfo } from "./MistTrialMissionInfo.ts";
+import type { MistTrialMissionInfo } from "./MistTrialMissionInfo";
 
 /**
  * CmdId: 8508

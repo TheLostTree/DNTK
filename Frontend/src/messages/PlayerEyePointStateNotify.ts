@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { Vector } from "./Vector.ts";
-import type { CylinderRegionSize } from "./CylinderRegionSize.ts";
-import type { PolygonRegionSize } from "./PolygonRegionSize.ts";
+import type { Vector } from "./Vector";
+import type { CylinderRegionSize } from "./CylinderRegionSize";
+import type { PolygonRegionSize } from "./PolygonRegionSize";
 
 /**
  * CmdId: 3051

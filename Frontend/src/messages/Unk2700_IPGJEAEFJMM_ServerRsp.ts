@@ -1,9 +1,9 @@
 /* eslint-disable */
 import type Long from "long";
-import type { Unk2700OPEBMJPOOBL } from "./Unk2700_OPEBMJPOOBL.ts";
-import type { DropSubfieldType } from "./DropSubfieldType.ts";
-import type { MusicRecord } from "./MusicRecord.ts";
-import type { MusicBriefInfo } from "./MusicBriefInfo.ts";
+import type { Unk2700OPEBMJPOOBL } from "./Unk2700_OPEBMJPOOBL";
+import type { DropSubfieldType } from "./DropSubfieldType";
+import type { MusicRecord } from "./MusicRecord";
+import type { MusicBriefInfo } from "./MusicBriefInfo";
 
 /**
  * CmdId: 6318

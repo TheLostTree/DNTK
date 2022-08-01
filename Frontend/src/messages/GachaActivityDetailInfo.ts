@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { GachaStage } from "./GachaStage.ts";
+import type { GachaStage } from "./GachaStage";
 
 export interface GachaActivityDetailInfo {
   Unk2700PIDHKNLDALB?: number[];

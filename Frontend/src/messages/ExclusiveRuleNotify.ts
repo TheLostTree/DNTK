@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ExclusiveRuleInfo } from "./ExclusiveRuleInfo.ts";
+import type { ExclusiveRuleInfo } from "./ExclusiveRuleInfo";
 
 /**
  * CmdId: 101

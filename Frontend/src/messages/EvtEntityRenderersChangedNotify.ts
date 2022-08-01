@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { ForwardType } from "./ForwardType.ts";
-import type { EntityRendererChangedInfo } from "./EntityRendererChangedInfo.ts";
+import type { ForwardType } from "./ForwardType";
+import type { EntityRendererChangedInfo } from "./EntityRendererChangedInfo";
 
 /**
  * CmdId: 343

@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { InteractType } from "./InteractType.ts";
-import type { InterOpType } from "./InterOpType.ts";
+import type { InteractType } from "./InteractType";
+import type { InterOpType } from "./InterOpType";
 
 /**
  * CmdId: 898

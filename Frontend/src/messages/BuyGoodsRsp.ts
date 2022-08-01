@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ShopGoods } from "./ShopGoods.ts";
+import type { ShopGoods } from "./ShopGoods";
 
 /**
  * CmdId: 735

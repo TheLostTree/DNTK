@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AiSkillCdInfo } from "./AiSkillCdInfo.ts";
+import type { AiSkillCdInfo } from "./AiSkillCdInfo";
 
 /**
  * CmdId: 376

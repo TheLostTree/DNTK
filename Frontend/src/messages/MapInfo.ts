@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { CellInfo } from "./CellInfo.ts";
+import type { CellInfo } from "./CellInfo";
 
 export interface MapInfo {
   Minx?: number;

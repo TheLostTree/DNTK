@@ -1,8 +1,8 @@
 /* eslint-disable */
-import type { Unk2700GCPNGHFNGDP } from "./Unk2700_GCPNGHFNGDP.ts";
-import type { Unk2700AIGECAPPCKK } from "./Unk2700_AIGECAPPCKK.ts";
-import type { Unk2700AMJFIJNNGHC } from "./Unk2700_AMJFIJNNGHC.ts";
-import type { Unk2700JACACCPGMGC } from "./Unk2700_JACACCPGMGC.ts";
+import type { Unk2700GCPNGHFNGDP } from "./Unk2700_GCPNGHFNGDP";
+import type { Unk2700AIGECAPPCKK } from "./Unk2700_AIGECAPPCKK";
+import type { Unk2700AMJFIJNNGHC } from "./Unk2700_AMJFIJNNGHC";
+import type { Unk2700JACACCPGMGC } from "./Unk2700_JACACCPGMGC";
 
 export interface IrodoriActivityDetailInfo {
   Unk2700KLDGOEPJGNC?: Unk2700JACACCPGMGC[];

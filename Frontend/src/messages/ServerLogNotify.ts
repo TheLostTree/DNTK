@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { ServerLogType } from "./ServerLogType.ts";
-import type { ServerLogLevel } from "./ServerLogLevel.ts";
+import type { ServerLogType } from "./ServerLogType";
+import type { ServerLogLevel } from "./ServerLogLevel";
 
 /**
  * CmdId: 31

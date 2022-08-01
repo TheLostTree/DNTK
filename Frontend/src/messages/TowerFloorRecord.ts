@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { TowerLevelRecord } from "./TowerLevelRecord.ts";
+import type { TowerLevelRecord } from "./TowerLevelRecord";
 
 export interface TowerFloorRecord {
   FloorStarRewardProgress?: number;

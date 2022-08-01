@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { FleurFairMinigameInfo } from "./FleurFairMinigameInfo.ts";
-import type { FleurFairDungeonSectionInfo } from "./FleurFairDungeonSectionInfo.ts";
-import type { FleurFairChapterInfo } from "./FleurFairChapterInfo.ts";
+import type { FleurFairMinigameInfo } from "./FleurFairMinigameInfo";
+import type { FleurFairDungeonSectionInfo } from "./FleurFairDungeonSectionInfo";
+import type { FleurFairChapterInfo } from "./FleurFairChapterInfo";
 
 export interface FleurFairActivityDetailInfo {
   IsContentClosed?: boolean;

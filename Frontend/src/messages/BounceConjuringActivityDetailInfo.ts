@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { BounceConjuringChapterInfo } from "./BounceConjuringChapterInfo.ts";
+import type { BounceConjuringChapterInfo } from "./BounceConjuringChapterInfo";
 
 export interface BounceConjuringActivityDetailInfo {
   ChapterInfoList?: BounceConjuringChapterInfo[];

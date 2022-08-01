@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { ForwardType } from "./ForwardType.ts";
-import type { EvtBeingHitInfo } from "./EvtBeingHitInfo.ts";
+import type { ForwardType } from "./ForwardType";
+import type { EvtBeingHitInfo } from "./EvtBeingHitInfo";
 
 /**
  * CmdId: 372

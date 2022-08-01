@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { MotionInfo } from "./MotionInfo.ts";
+import type { MotionInfo } from "./MotionInfo";
 
 /**
  * CmdId: 273

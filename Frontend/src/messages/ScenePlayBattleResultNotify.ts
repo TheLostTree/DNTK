@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { ScenePlayBattleSettlePlayerInfo } from "./ScenePlayBattleSettlePlayerInfo.ts";
-import type { Unk2700OHOKEEGPPBG } from "./Unk2700_OHOKEEGPPBG.ts";
+import type { ScenePlayBattleSettlePlayerInfo } from "./ScenePlayBattleSettlePlayerInfo";
+import type { Unk2700OHOKEEGPPBG } from "./Unk2700_OHOKEEGPPBG";
 
 /**
  * CmdId: 4398

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { PlayerHomeCompInfo } from "./PlayerHomeCompInfo.ts";
+import type { PlayerHomeCompInfo } from "./PlayerHomeCompInfo";
 
 /**
  * CmdId: 4880

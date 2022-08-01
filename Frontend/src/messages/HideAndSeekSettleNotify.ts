@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { HideAndSeekSettleInfo } from "./HideAndSeekSettleInfo.ts";
-import type { ExhibitionDisplayInfo } from "./ExhibitionDisplayInfo.ts";
+import type { HideAndSeekSettleInfo } from "./HideAndSeekSettleInfo";
+import type { ExhibitionDisplayInfo } from "./ExhibitionDisplayInfo";
 
 /**
  * CmdId: 5317

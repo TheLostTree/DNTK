@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { ChessMysteryInfo } from "./ChessMysteryInfo.ts";
-import type { ChessPlayerInfo } from "./ChessPlayerInfo.ts";
-import type { ChessCardInfo } from "./ChessCardInfo.ts";
+import type { ChessMysteryInfo } from "./ChessMysteryInfo";
+import type { ChessPlayerInfo } from "./ChessPlayerInfo";
+import type { ChessCardInfo } from "./ChessCardInfo";
 
 export interface InBattleChessInfo {
   BanCardTagList?: number[];

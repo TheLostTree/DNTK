@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { WeeklyBossResinDiscountInfo } from "./WeeklyBossResinDiscountInfo.ts";
+import type { WeeklyBossResinDiscountInfo } from "./WeeklyBossResinDiscountInfo";
 
 export interface DungeonEntryInfo {
   EndTime?: number;

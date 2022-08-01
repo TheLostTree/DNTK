@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { RegionSearch } from "./RegionSearch.ts";
+import type { RegionSearch } from "./RegionSearch";
 
 export interface RegionSearchInfo {
   Id?: number;

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ChessMonsterInfo } from "./ChessMonsterInfo.ts";
+import type { ChessMonsterInfo } from "./ChessMonsterInfo";
 
 export interface ChessEntranceInfo {
   MonsterInfoList?: ChessMonsterInfo[];

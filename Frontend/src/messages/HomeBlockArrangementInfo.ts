@@ -1,13 +1,13 @@
 /* eslint-disable */
-import type { HomeAnimalData } from "./HomeAnimalData.ts";
-import type { Unk2700GOHMLAFNBGF } from "./Unk2700_GOHMLAFNBGF.ts";
-import type { WeekendDjinnInfo } from "./WeekendDjinnInfo.ts";
-import type { HomeFurnitureSuiteData } from "./HomeFurnitureSuiteData.ts";
-import type { HomeBlockFieldData } from "./HomeBlockFieldData.ts";
-import type { HomeNpcData } from "./HomeNpcData.ts";
-import type { HomeBlockDotPattern } from "./HomeBlockDotPattern.ts";
-import type { HomeFurnitureData } from "./HomeFurnitureData.ts";
-import type { Unk2700BIEMCDLIFOD } from "./Unk2700_BIEMCDLIFOD.ts";
+import type { HomeAnimalData } from "./HomeAnimalData";
+import type { Unk2700GOHMLAFNBGF } from "./Unk2700_GOHMLAFNBGF";
+import type { WeekendDjinnInfo } from "./WeekendDjinnInfo";
+import type { HomeFurnitureSuiteData } from "./HomeFurnitureSuiteData";
+import type { HomeBlockFieldData } from "./HomeBlockFieldData";
+import type { HomeNpcData } from "./HomeNpcData";
+import type { HomeBlockDotPattern } from "./HomeBlockDotPattern";
+import type { HomeFurnitureData } from "./HomeFurnitureData";
+import type { Unk2700BIEMCDLIFOD } from "./Unk2700_BIEMCDLIFOD";
 
 export interface HomeBlockArrangementInfo {
   IsUnlocked?: boolean;

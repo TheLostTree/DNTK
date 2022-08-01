@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Unk2700EOHBLDIKPME } from "./Unk2700_EOHBLDIKPME.ts";
+import type { Unk2700EOHBLDIKPME } from "./Unk2700_EOHBLDIKPME";
 
 export interface Unk2700PEDJGJMHMHH {
   OpenTime?: number;

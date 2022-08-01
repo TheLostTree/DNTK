@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { TeamEntityInfo } from "./TeamEntityInfo.ts";
+import type { TeamEntityInfo } from "./TeamEntityInfo";
 
 /**
  * CmdId: 317

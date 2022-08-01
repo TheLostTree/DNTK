@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { OneofGatherPointDetectorData } from "./OneofGatherPointDetectorData.ts";
-import type { ClientCollectorData } from "./ClientCollectorData.ts";
-import type { SkyCrystalDetectorQuickUseResult } from "./SkyCrystalDetectorQuickUseResult.ts";
+import type { OneofGatherPointDetectorData } from "./OneofGatherPointDetectorData";
+import type { ClientCollectorData } from "./ClientCollectorData";
+import type { SkyCrystalDetectorQuickUseResult } from "./SkyCrystalDetectorQuickUseResult";
 
 /**
  * CmdId: 4270

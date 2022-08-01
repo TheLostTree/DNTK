@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { EventTriggerType } from "./EventTriggerType.ts";
+import type { EventTriggerType } from "./EventTriggerType";
 
 /**
  * CmdId: 148

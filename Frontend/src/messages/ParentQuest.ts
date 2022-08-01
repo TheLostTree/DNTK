@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { ParentQuestRandomInfo } from "./ParentQuestRandomInfo.ts";
+import type { ParentQuestRandomInfo } from "./ParentQuestRandomInfo";
 import type Long from "long";
-import type { ChildQuest } from "./ChildQuest.ts";
+import type { ChildQuest } from "./ChildQuest";
 
 export interface ParentQuest {
   RandomInfo?: ParentQuestRandomInfo;

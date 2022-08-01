@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { Unk2800FMAOEPEBKHB } from "./Unk2800_FMAOEPEBKHB.ts";
-import type { Unk2800IMLDGLIMODE } from "./Unk2800_IMLDGLIMODE.ts";
+import type { Unk2800FMAOEPEBKHB } from "./Unk2800_FMAOEPEBKHB";
+import type { Unk2800IMLDGLIMODE } from "./Unk2800_IMLDGLIMODE";
 
 export interface SceneGalleryIslandPartySailInfo {
   Unk2800HKHENLCIFNN?: number;

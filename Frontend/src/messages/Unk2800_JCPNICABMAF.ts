@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Unk2800IMLDGLIMODE } from "./Unk2800_IMLDGLIMODE.ts";
+import type { Unk2800IMLDGLIMODE } from "./Unk2800_IMLDGLIMODE";
 
 /**
  * CmdId: 5504

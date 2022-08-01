@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { BonusActivityInfo } from "./BonusActivityInfo.ts";
+import type { BonusActivityInfo } from "./BonusActivityInfo";
 
 /**
  * CmdId: 2505

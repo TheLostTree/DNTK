@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { CoopReward } from "./CoopReward.ts";
+import type { CoopReward } from "./CoopReward";
 
 /**
  * CmdId: 1999

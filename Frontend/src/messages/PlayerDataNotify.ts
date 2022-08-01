@@ -1,6 +1,6 @@
 /* eslint-disable */
 import type Long from "long";
-import type { PropValue } from "./PropValue.ts";
+import type { PropValue } from "./PropValue";
 
 /**
  * CmdId: 190

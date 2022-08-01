@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { PlayerRoutineInfo } from "./PlayerRoutineInfo.ts";
+import type { PlayerRoutineInfo } from "./PlayerRoutineInfo";
 
 /**
  * CmdId: 3526

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { VectorPlane } from "./VectorPlane.ts";
+import type { VectorPlane } from "./VectorPlane";
 
 export interface PolygonRegionSize {
   PointList?: VectorPlane[];

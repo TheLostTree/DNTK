@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { FleurFairBalloonSettleInfo } from "./FleurFairBalloonSettleInfo.ts";
+import type { FleurFairBalloonSettleInfo } from "./FleurFairBalloonSettleInfo";
 
 /**
  * CmdId: 2099

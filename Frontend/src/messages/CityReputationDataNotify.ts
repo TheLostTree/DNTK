@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { CityReputationSimpleInfo } from "./CityReputationSimpleInfo.ts";
+import type { CityReputationSimpleInfo } from "./CityReputationSimpleInfo";
 
 /**
  * CmdId: 2805

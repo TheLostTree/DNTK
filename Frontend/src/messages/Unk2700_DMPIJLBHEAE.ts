@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { BundleInfo } from "./BundleInfo.ts";
-import type { ScoreChallengeInfo } from "./ScoreChallengeInfo.ts";
+import type { BundleInfo } from "./BundleInfo";
+import type { ScoreChallengeInfo } from "./ScoreChallengeInfo";
 
 export interface Unk2700DMPIJLBHEAE {
   ChallengeType?: number;

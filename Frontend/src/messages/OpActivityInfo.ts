@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { BonusOpActivityInfo } from "./BonusOpActivityInfo.ts";
+import type { BonusOpActivityInfo } from "./BonusOpActivityInfo";
 
 export interface OpActivityInfo {
   ActivityId?: number;

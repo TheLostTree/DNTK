@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { SkillResponse } from "./SkillResponse.ts";
-import type { ReliquaryResponse } from "./ReliquaryResponse.ts";
-import type { Unk2800OCOMLNLPLGA } from "./Unk2800_OCOMLNLPLGA.ts";
+import type { SkillResponse } from "./SkillResponse";
+import type { ReliquaryResponse } from "./ReliquaryResponse";
+import type { Unk2800OCOMLNLPLGA } from "./Unk2800_OCOMLNLPLGA";
 
 /**
  * CmdId: 123

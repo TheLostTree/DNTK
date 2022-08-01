@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { CookRecipeData } from "./CookRecipeData.ts";
+import type { CookRecipeData } from "./CookRecipeData";
 
 /**
  * CmdId: 195

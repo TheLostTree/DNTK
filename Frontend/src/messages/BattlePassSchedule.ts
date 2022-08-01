@@ -1,8 +1,8 @@
 /* eslint-disable */
-import type { BattlePassCycle } from "./BattlePassCycle.ts";
-import type { BattlePassUnlockStatus } from "./BattlePassUnlockStatus.ts";
-import type { BattlePassProduct } from "./BattlePassProduct.ts";
-import type { BattlePassRewardTag } from "./BattlePassRewardTag.ts";
+import type { BattlePassCycle } from "./BattlePassCycle";
+import type { BattlePassUnlockStatus } from "./BattlePassUnlockStatus";
+import type { BattlePassProduct } from "./BattlePassProduct";
+import type { BattlePassRewardTag } from "./BattlePassRewardTag";
 
 export interface BattlePassSchedule {
   Level?: number;

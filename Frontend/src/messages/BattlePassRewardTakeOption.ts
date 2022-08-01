@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { BattlePassRewardTag } from "./BattlePassRewardTag.ts";
+import type { BattlePassRewardTag } from "./BattlePassRewardTag";
 
 export interface BattlePassRewardTakeOption {
   Tag?: BattlePassRewardTag;

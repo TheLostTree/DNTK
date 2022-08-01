@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { EffigyDailyInfo } from "./EffigyDailyInfo.ts";
+import type { EffigyDailyInfo } from "./EffigyDailyInfo";
 
 export interface EffigyActivityDetailInfo {
   CurScore?: number;

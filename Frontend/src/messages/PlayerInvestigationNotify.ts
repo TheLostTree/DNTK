@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Investigation } from "./Investigation.ts";
+import type { Investigation } from "./Investigation";
 
 /**
  * CmdId: 1911

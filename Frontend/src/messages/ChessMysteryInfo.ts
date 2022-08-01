@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ChessEntranceDetailInfo } from "./ChessEntranceDetailInfo.ts";
+import type { ChessEntranceDetailInfo } from "./ChessEntranceDetailInfo";
 
 export interface ChessMysteryInfo {
   EntrancePointMap?: { [key: number]: number };

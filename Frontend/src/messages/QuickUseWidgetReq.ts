@@ -1,8 +1,8 @@
 /* eslint-disable */
-import type { WidgetCreateLocationInfo } from "./WidgetCreateLocationInfo.ts";
-import type { WidgetCameraInfo } from "./WidgetCameraInfo.ts";
-import type { WidgetCreatorInfo } from "./WidgetCreatorInfo.ts";
-import type { WidgetThunderBirdFeatherInfo } from "./WidgetThunderBirdFeatherInfo.ts";
+import type { WidgetCreateLocationInfo } from "./WidgetCreateLocationInfo";
+import type { WidgetCameraInfo } from "./WidgetCameraInfo";
+import type { WidgetCreatorInfo } from "./WidgetCreatorInfo";
+import type { WidgetThunderBirdFeatherInfo } from "./WidgetThunderBirdFeatherInfo";
 
 /**
  * CmdId: 4299

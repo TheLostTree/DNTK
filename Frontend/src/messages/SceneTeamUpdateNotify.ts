@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { SceneTeamAvatar } from "./SceneTeamAvatar.ts";
+import type { SceneTeamAvatar } from "./SceneTeamAvatar";
 
 /**
  * CmdId: 1775

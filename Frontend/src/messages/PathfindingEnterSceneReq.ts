@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ObstacleInfo } from "./ObstacleInfo.ts";
+import type { ObstacleInfo } from "./ObstacleInfo";
 
 /**
  * CmdId: 2307

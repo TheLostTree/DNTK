@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { Unk2700DIEGJDEIDKO } from "./Unk2700_DIEGJDEIDKO.ts";
-import type { Unk2700MBIDJDLLBNM } from "./Unk2700_MBIDJDLLBNM.ts";
-import type { ItemParam } from "./ItemParam.ts";
+import type { Unk2700DIEGJDEIDKO } from "./Unk2700_DIEGJDEIDKO";
+import type { Unk2700MBIDJDLLBNM } from "./Unk2700_MBIDJDLLBNM";
+import type { ItemParam } from "./ItemParam";
 
 export interface WinterCampActivityDetailInfo {
   Unk2700FBMHFJHDJNB?: Unk2700MBIDJDLLBNM[];

@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { Vector } from "./Vector.ts";
-import type { ServantInfo } from "./ServantInfo.ts";
+import type { Vector } from "./Vector";
+import type { ServantInfo } from "./ServantInfo";
 
 export interface SceneEntityAiInfo {
   IsAiOpen?: boolean;

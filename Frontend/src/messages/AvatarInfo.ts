@@ -1,12 +1,12 @@
 /* eslint-disable */
 import type Long from "long";
-import type { TrialAvatarInfo } from "./TrialAvatarInfo.ts";
-import type { AvatarFetterInfo } from "./AvatarFetterInfo.ts";
-import type { AvatarExpeditionState } from "./AvatarExpeditionState.ts";
-import type { AvatarExcelInfo } from "./AvatarExcelInfo.ts";
-import type { PropValue } from "./PropValue.ts";
-import type { AvatarSkillInfo } from "./AvatarSkillInfo.ts";
-import type { AvatarEquipAffixInfo } from "./AvatarEquipAffixInfo.ts";
+import type { TrialAvatarInfo } from "./TrialAvatarInfo";
+import type { AvatarFetterInfo } from "./AvatarFetterInfo";
+import type { AvatarExpeditionState } from "./AvatarExpeditionState";
+import type { AvatarExcelInfo } from "./AvatarExcelInfo";
+import type { PropValue } from "./PropValue";
+import type { AvatarSkillInfo } from "./AvatarSkillInfo";
+import type { AvatarEquipAffixInfo } from "./AvatarEquipAffixInfo";
 
 export interface AvatarInfo {
   AvatarId?: number;

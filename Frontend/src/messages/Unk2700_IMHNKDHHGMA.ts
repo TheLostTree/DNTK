@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Unk2700JCOIDFNDHPB } from "./Unk2700_JCOIDFNDHPB.ts";
+import type { Unk2700JCOIDFNDHPB } from "./Unk2700_JCOIDFNDHPB";
 
 /**
  * CmdId: 8186

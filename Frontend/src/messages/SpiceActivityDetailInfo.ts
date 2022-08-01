@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { SpiceStage } from "./SpiceStage.ts";
+import type { SpiceStage } from "./SpiceStage";
 
 export interface SpiceActivityDetailInfo {
   Unk2700IGMHNDNGNPG?: number;

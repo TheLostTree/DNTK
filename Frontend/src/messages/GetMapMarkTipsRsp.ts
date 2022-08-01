@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { MapMarkTipsInfo } from "./MapMarkTipsInfo.ts";
+import type { MapMarkTipsInfo } from "./MapMarkTipsInfo";
 
 /**
  * CmdId: 3327

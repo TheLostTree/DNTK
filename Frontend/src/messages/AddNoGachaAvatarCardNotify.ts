@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AddNoGachaAvatarCardTransferItem } from "./AddNoGachaAvatarCardTransferItem.ts";
+import type { AddNoGachaAvatarCardTransferItem } from "./AddNoGachaAvatarCardTransferItem";
 
 /**
  * CmdId: 1655

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AISnapshotEntityData } from "./AISnapshotEntityData.ts";
+import type { AISnapshotEntityData } from "./AISnapshotEntityData";
 
 export interface AISnapshotInfo {
   AiSnapshots?: AISnapshotEntityData[];

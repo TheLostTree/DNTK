@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Unk2700JLHKOLGFAMI } from "./Unk2700_JLHKOLGFAMI.ts";
+import type { Unk2700JLHKOLGFAMI } from "./Unk2700_JLHKOLGFAMI";
 
 export interface PotionStage {
   StageId?: number;

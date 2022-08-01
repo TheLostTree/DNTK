@@ -1,8 +1,8 @@
 /* eslint-disable */
-import type { PlayProduct } from "./PlayProduct.ts";
-import type { ShopCardProduct } from "./ShopCardProduct.ts";
-import type { ShopMcoinProduct } from "./ShopMcoinProduct.ts";
-import type { ShopConcertProduct } from "./ShopConcertProduct.ts";
+import type { PlayProduct } from "./PlayProduct";
+import type { ShopCardProduct } from "./ShopCardProduct";
+import type { ShopMcoinProduct } from "./ShopMcoinProduct";
+import type { ShopConcertProduct } from "./ShopConcertProduct";
 
 /**
  * CmdId: 4126

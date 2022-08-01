@@ -1,8 +1,8 @@
 /* eslint-disable */
-import type { FurnitureMakeSlot } from "./FurnitureMakeSlot.ts";
-import type { FurnitureMakeBeHelpedData } from "./FurnitureMakeBeHelpedData.ts";
-import type { FurnitureMakeMakeInfo } from "./FurnitureMakeMakeInfo.ts";
-import type { FurnitureMakeHelpData } from "./FurnitureMakeHelpData.ts";
+import type { FurnitureMakeSlot } from "./FurnitureMakeSlot";
+import type { FurnitureMakeBeHelpedData } from "./FurnitureMakeBeHelpedData";
+import type { FurnitureMakeMakeInfo } from "./FurnitureMakeMakeInfo";
+import type { FurnitureMakeHelpData } from "./FurnitureMakeHelpData";
 
 /**
  * CmdId: 4782

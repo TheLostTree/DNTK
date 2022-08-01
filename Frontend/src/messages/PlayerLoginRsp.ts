@@ -1,9 +1,9 @@
 /* eslint-disable */
-import type { ResVersionConfig } from "./ResVersionConfig.ts";
+import type { ResVersionConfig } from "./ResVersionConfig";
 import type Long from "long";
-import type { BlockInfo } from "./BlockInfo.ts";
-import type { ShortAbilityHashPair } from "./ShortAbilityHashPair.ts";
-import type { FeatureBlockInfo } from "./FeatureBlockInfo.ts";
+import type { BlockInfo } from "./BlockInfo";
+import type { ShortAbilityHashPair } from "./ShortAbilityHashPair";
+import type { FeatureBlockInfo } from "./FeatureBlockInfo";
 
 /**
  * CmdId: 135

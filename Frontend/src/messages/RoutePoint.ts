@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { Vector } from "./Vector.ts";
-import type { MathQuaternion } from "./MathQuaternion.ts";
+import type { Vector } from "./Vector";
+import type { MathQuaternion } from "./MathQuaternion";
 
 export interface RoutePoint {
   Position?: Vector;

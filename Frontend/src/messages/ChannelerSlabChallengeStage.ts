@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { ChannelerSlabOneofDungeon } from "./ChannelerSlabOneofDungeon.ts";
-import type { ChannelerSlabChallenge } from "./ChannelerSlabChallenge.ts";
+import type { ChannelerSlabOneofDungeon } from "./ChannelerSlabOneofDungeon";
+import type { ChannelerSlabChallenge } from "./ChannelerSlabChallenge";
 
 export interface ChannelerSlabChallengeStage {
   OpenTime?: number;

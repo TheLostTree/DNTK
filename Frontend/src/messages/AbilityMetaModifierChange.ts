@@ -1,8 +1,8 @@
 /* eslint-disable */
-import type { AbilityAttachedModifier } from "./AbilityAttachedModifier.ts";
-import type { ModifierAction } from "./ModifierAction.ts";
-import type { AbilityString } from "./AbilityString.ts";
-import type { ModifierProperty } from "./ModifierProperty.ts";
+import type { AbilityAttachedModifier } from "./AbilityAttachedModifier";
+import type { ModifierAction } from "./ModifierAction";
+import type { AbilityString } from "./AbilityString";
+import type { ModifierProperty } from "./ModifierProperty";
 
 export interface AbilityMetaModifierChange {
   AttachedInstancedModifier?: AbilityAttachedModifier;

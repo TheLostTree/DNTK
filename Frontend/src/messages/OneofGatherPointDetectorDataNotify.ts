@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { OneofGatherPointDetectorData } from "./OneofGatherPointDetectorData.ts";
+import type { OneofGatherPointDetectorData } from "./OneofGatherPointDetectorData";
 
 /**
  * CmdId: 4297

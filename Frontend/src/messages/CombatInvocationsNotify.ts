@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { CombatInvokeEntry } from "./CombatInvokeEntry.ts";
+import type { CombatInvokeEntry } from "./CombatInvokeEntry";
 
 /**
  * CmdId: 319

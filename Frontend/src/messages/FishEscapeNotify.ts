@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { FishEscapeReason } from "./FishEscapeReason.ts";
-import type { Vector } from "./Vector.ts";
+import type { FishEscapeReason } from "./FishEscapeReason";
+import type { Vector } from "./Vector";
 
 /**
  * CmdId: 5822

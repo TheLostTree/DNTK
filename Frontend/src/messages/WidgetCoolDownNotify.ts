@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { WidgetCoolDownData } from "./WidgetCoolDownData.ts";
+import type { WidgetCoolDownData } from "./WidgetCoolDownData";
 
 /**
  * CmdId: 4295

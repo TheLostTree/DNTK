@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Unk2700MMJJMKMHANL } from "./Unk2700_MMJJMKMHANL.ts";
+import type { Unk2700MMJJMKMHANL } from "./Unk2700_MMJJMKMHANL";
 
 export interface UgcActivityDetailInfo {
   Unk2700GMICFADLAMC?: boolean;

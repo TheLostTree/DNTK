@@ -1,7 +1,7 @@
 /* eslint-disable */
 import type Long from "long";
-import type { AvatarExpeditionInfo } from "./AvatarExpeditionInfo.ts";
-import type { ItemParam } from "./ItemParam.ts";
+import type { AvatarExpeditionInfo } from "./AvatarExpeditionInfo";
+import type { ItemParam } from "./ItemParam";
 
 /**
  * CmdId: 1784

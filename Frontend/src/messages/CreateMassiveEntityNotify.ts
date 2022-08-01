@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ServerMassiveEntity } from "./ServerMassiveEntity.ts";
+import type { ServerMassiveEntity } from "./ServerMassiveEntity";
 
 /**
  * CmdId: 367

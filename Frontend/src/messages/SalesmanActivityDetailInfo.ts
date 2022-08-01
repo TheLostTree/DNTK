@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { SalesmanStatusType } from "./SalesmanStatusType.ts";
+import type { SalesmanStatusType } from "./SalesmanStatusType";
 
 export interface SalesmanActivityDetailInfo {
   SpecialRewardPreviewId?: number;

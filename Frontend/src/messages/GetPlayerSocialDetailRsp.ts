@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { SocialDetail } from "./SocialDetail.ts";
+import type { SocialDetail } from "./SocialDetail";
 
 /**
  * CmdId: 4099

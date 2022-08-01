@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { PBNavMeshTile } from "./PBNavMeshTile.ts";
+import type { PBNavMeshTile } from "./PBNavMeshTile";
 
 /**
  * CmdId: 2400

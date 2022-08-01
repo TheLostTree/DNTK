@@ -1,8 +1,8 @@
 /* eslint-disable */
-import type { Vector } from "./Vector.ts";
-import type { MathQuaternion } from "./MathQuaternion.ts";
-import type { MovingPlatformType } from "./MovingPlatformType.ts";
-import type { Route } from "./Route.ts";
+import type { Vector } from "./Vector";
+import type { MathQuaternion } from "./MathQuaternion";
+import type { MovingPlatformType } from "./MovingPlatformType";
+import type { Route } from "./Route";
 
 export interface PlatformInfo {
   RouteId?: number;

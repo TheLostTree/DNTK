@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { Vector } from "./Vector.ts";
-import type { ItemHint } from "./ItemHint.ts";
+import type { Vector } from "./Vector";
+import type { ItemHint } from "./ItemHint";
 
 /**
  * CmdId: 607

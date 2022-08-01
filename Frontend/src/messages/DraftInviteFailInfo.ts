@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { DraftInviteFailReason } from "./DraftInviteFailReason.ts";
+import type { DraftInviteFailReason } from "./DraftInviteFailReason";
 
 export interface DraftInviteFailInfo {
   Uid?: number;

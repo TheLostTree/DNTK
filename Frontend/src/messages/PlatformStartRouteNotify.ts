@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { PlatformInfo } from "./PlatformInfo.ts";
+import type { PlatformInfo } from "./PlatformInfo";
 
 /**
  * CmdId: 218

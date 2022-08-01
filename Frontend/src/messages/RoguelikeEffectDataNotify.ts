@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { RogueEffectRecord } from "./RogueEffectRecord.ts";
+import type { RogueEffectRecord } from "./RogueEffectRecord";
 
 /**
  * CmdId: 8222

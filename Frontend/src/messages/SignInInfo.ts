@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Unk2700HENCIJOPCIF } from "./Unk2700_HENCIJOPCIF.ts";
+import type { Unk2700HENCIJOPCIF } from "./Unk2700_HENCIJOPCIF";
 
 export interface SignInInfo {
   IsCondSatisfied?: boolean;

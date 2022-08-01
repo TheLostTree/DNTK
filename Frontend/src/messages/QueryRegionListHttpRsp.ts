@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { RegionSimpleInfo } from "./RegionSimpleInfo.ts";
+import type { RegionSimpleInfo } from "./RegionSimpleInfo";
 
 export interface QueryRegionListHttpRsp {
   Retcode?: number;

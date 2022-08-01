@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { AbilityString } from "./AbilityString.ts";
-import type { AbilityAttachedModifier } from "./AbilityAttachedModifier.ts";
-import type { ModifierDurability } from "./ModifierDurability.ts";
+import type { AbilityString } from "./AbilityString";
+import type { AbilityAttachedModifier } from "./AbilityAttachedModifier";
+import type { ModifierDurability } from "./ModifierDurability";
 
 export interface AbilityAppliedModifier {
   ModifierLocalId?: number;

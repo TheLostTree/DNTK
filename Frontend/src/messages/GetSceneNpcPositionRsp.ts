@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { NpcPositionInfo } from "./NpcPositionInfo.ts";
+import type { NpcPositionInfo } from "./NpcPositionInfo";
 
 /**
  * CmdId: 507

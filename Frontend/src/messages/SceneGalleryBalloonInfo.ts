@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { BalloonPlayerInfo } from "./BalloonPlayerInfo.ts";
+import type { BalloonPlayerInfo } from "./BalloonPlayerInfo";
 
 export interface SceneGalleryBalloonInfo {
   ScenePlayerBalloonInfoMap?: { [key: number]: BalloonPlayerInfo };

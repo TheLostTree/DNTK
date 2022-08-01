@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { FishingGallerySettleInfo } from "./FishingGallerySettleInfo.ts";
+import type { FishingGallerySettleInfo } from "./FishingGallerySettleInfo";
 
 /**
  * CmdId: 8780

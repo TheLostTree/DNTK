@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { MassiveEntityState } from "./MassiveEntityState.ts";
+import type { MassiveEntityState } from "./MassiveEntityState";
 
 /**
  * CmdId: 370

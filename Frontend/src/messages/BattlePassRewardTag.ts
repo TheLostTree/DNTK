@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { BattlePassUnlockStatus } from "./BattlePassUnlockStatus.ts";
+import type { BattlePassUnlockStatus } from "./BattlePassUnlockStatus";
 
 export interface BattlePassRewardTag {
   Level?: number;

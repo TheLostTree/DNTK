@@ -1,6 +1,6 @@
 /* eslint-disable */
 import type Long from "long";
-import type { AvatarFetterInfo } from "./AvatarFetterInfo.ts";
+import type { AvatarFetterInfo } from "./AvatarFetterInfo";
 
 /**
  * CmdId: 1782
@@ -8,7 +8,7 @@ import type { AvatarFetterInfo } from "./AvatarFetterInfo.ts";
  * EnetIsReliable: true
  */
 export interface AvatarFetterDataNotify {
-  FetterInfoMap?: { [key: Long]: AvatarFetterInfo };
+  FetterInfoMap?: { [key: string]: AvatarFetterInfo };
 }
 
 export interface AvatarFetterDataNotify_FetterInfoMapEntry {

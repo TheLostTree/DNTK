@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { MailData } from "./MailData.ts";
+import type { MailData } from "./MailData";
 
 /**
  * CmdId: 1475

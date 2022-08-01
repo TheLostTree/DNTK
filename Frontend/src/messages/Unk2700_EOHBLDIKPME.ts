@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Unk2700INMNHKOPCFB } from "./Unk2700_INMNHKOPCFB.ts";
+import type { Unk2700INMNHKOPCFB } from "./Unk2700_INMNHKOPCFB";
 
 export interface Unk2700EOHBLDIKPME {
   MapId?: number;

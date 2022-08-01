@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { RegionSearchState } from "./RegionSearchState.ts";
+import type { RegionSearchState } from "./RegionSearchState";
 
 export interface RegionSearch {
   IsEntered?: boolean;

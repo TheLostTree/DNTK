@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { PlantFlowerAcceptFlowerResultInfo } from "./PlantFlowerAcceptFlowerResultInfo.ts";
+import type { PlantFlowerAcceptFlowerResultInfo } from "./PlantFlowerAcceptFlowerResultInfo";
 
 /**
  * CmdId: 8888

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { HomeLimitedShop } from "./HomeLimitedShop.ts";
+import type { HomeLimitedShop } from "./HomeLimitedShop";
 
 /**
  * CmdId: 4546

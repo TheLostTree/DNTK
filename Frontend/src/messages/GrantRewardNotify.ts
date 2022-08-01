@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Reward } from "./Reward.ts";
+import type { Reward } from "./Reward";
 
 /**
  * CmdId: 663

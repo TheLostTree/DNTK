@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { GachaItem } from "./GachaItem.ts";
+import type { GachaItem } from "./GachaItem";
 
 /**
  * CmdId: 1535

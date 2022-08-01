@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { BounceConjuringGallerySettleInfo } from "./BounceConjuringGallerySettleInfo.ts";
+import type { BounceConjuringGallerySettleInfo } from "./BounceConjuringGallerySettleInfo";
 
 /**
  * CmdId: 8084

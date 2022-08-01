@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Unk2800FMAOEPEBKHB } from "./Unk2800_FMAOEPEBKHB.ts";
+import type { Unk2800FMAOEPEBKHB } from "./Unk2800_FMAOEPEBKHB";
 
 export interface SceneGalleryIslandPartyDownHillInfo {
   Unk2800LBPCDCHOOLJ?: number;

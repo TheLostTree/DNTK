@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { TreasureMapBonusChallengeInfo } from "./TreasureMapBonusChallengeInfo.ts";
+import type { TreasureMapBonusChallengeInfo } from "./TreasureMapBonusChallengeInfo";
 
 /**
  * CmdId: 2115

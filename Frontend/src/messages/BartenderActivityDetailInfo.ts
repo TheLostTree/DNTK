@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { Unk2700LBIDBGLGKCJ } from "./Unk2700_LBIDBGLGKCJ.ts";
-import type { Unk2700KJODHFMHMNC } from "./Unk2700_KJODHFMHMNC.ts";
+import type { Unk2700LBIDBGLGKCJ } from "./Unk2700_LBIDBGLGKCJ";
+import type { Unk2700KJODHFMHMNC } from "./Unk2700_KJODHFMHMNC";
 
 export interface BartenderActivityDetailInfo {
   Unk2700BMOAIJMHPGA?: number[];

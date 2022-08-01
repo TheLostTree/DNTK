@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AttackResult } from "./AttackResult.ts";
+import type { AttackResult } from "./AttackResult";
 
 export interface EvtBeingHitInfo {
   PeerId?: number;

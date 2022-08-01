@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { WorldRoutineTypeInfo } from "./WorldRoutineTypeInfo.ts";
+import type { WorldRoutineTypeInfo } from "./WorldRoutineTypeInfo";
 
 /**
  * CmdId: 3518

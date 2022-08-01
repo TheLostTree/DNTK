@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Unk2700MIBBHAEMAGI } from "./Unk2700_MIBBHAEMAGI.ts";
+import type { Unk2700MIBBHAEMAGI } from "./Unk2700_MIBBHAEMAGI";
 
 /**
  * CmdId: 6223

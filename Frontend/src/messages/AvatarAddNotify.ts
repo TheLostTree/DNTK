@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { AvatarInfo } from "./AvatarInfo.ts";
+import type { AvatarInfo } from "./AvatarInfo";
 
 /**
  * CmdId: 1769

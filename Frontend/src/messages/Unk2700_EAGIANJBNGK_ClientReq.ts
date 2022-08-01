@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { SkillRequest } from "./SkillRequest.ts";
-import type { ReliquaryRequest } from "./ReliquaryRequest.ts";
-import type { Unk2800JBEDBFJFEIH } from "./Unk2800_JBEDBFJFEIH.ts";
+import type { SkillRequest } from "./SkillRequest";
+import type { ReliquaryRequest } from "./ReliquaryRequest";
+import type { Unk2800JBEDBFJFEIH } from "./Unk2800_JBEDBFJFEIH";
 
 /**
  * CmdId: 151

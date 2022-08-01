@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ForgeQueueData } from "./ForgeQueueData.ts";
+import type { ForgeQueueData } from "./ForgeQueueData";
 
 /**
  * CmdId: 680

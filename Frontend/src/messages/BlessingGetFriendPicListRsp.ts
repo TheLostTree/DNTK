@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { BlessingFriendPicData } from "./BlessingFriendPicData.ts";
+import type { BlessingFriendPicData } from "./BlessingFriendPicData";
 
 /**
  * CmdId: 2056

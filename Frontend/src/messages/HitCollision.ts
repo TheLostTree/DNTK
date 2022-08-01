@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { HitColliderType } from "./HitColliderType.ts";
-import type { Vector } from "./Vector.ts";
+import type { HitColliderType } from "./HitColliderType";
+import type { Vector } from "./Vector";
 
 export interface HitCollision {
   HitColliderType?: HitColliderType;

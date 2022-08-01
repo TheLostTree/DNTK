@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { GalleryFlowerStartParam } from "./GalleryFlowerStartParam.ts";
+import type { GalleryFlowerStartParam } from "./GalleryFlowerStartParam";
 
 /**
  * CmdId: 5572

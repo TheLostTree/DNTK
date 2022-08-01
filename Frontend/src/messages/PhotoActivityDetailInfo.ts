@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { PhotoStage } from "./PhotoStage.ts";
+import type { PhotoStage } from "./PhotoStage";
 
 export interface PhotoActivityDetailInfo {
   IsContentClosed?: boolean;

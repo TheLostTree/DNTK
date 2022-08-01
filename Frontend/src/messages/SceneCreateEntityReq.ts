@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { CreateEntityInfo } from "./CreateEntityInfo.ts";
-import type { CreateReason } from "./CreateReason.ts";
+import type { CreateEntityInfo } from "./CreateEntityInfo";
+import type { CreateReason } from "./CreateReason";
 
 /**
  * CmdId: 288

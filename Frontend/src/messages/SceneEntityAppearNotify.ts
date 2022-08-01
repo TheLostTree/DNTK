@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { VisionType } from "./VisionType.ts";
-import type { SceneEntityInfo } from "./SceneEntityInfo.ts";
+import type { VisionType } from "./VisionType";
+import type { SceneEntityInfo } from "./SceneEntityInfo";
 
 /**
  * CmdId: 221

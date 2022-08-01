@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { TrackingIOInfo } from "./TrackingIOInfo.ts";
+import type { TrackingIOInfo } from "./TrackingIOInfo";
 import type Long from "long";
-import type { AdjustTrackingInfo } from "./AdjustTrackingInfo.ts";
+import type { AdjustTrackingInfo } from "./AdjustTrackingInfo";
 
 /**
  * CmdId: 112

@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { DungeonCandidateTeamPlayerState } from "./DungeonCandidateTeamPlayerState.ts";
-import type { DungeonCandidateTeamAvatar } from "./DungeonCandidateTeamAvatar.ts";
+import type { DungeonCandidateTeamPlayerState } from "./DungeonCandidateTeamPlayerState";
+import type { DungeonCandidateTeamAvatar } from "./DungeonCandidateTeamAvatar";
 
 /**
  * CmdId: 927

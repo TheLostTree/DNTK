@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { Vector } from "./Vector.ts";
-import type { HomeBlockSubFieldData } from "./HomeBlockSubFieldData.ts";
+import type { Vector } from "./Vector";
+import type { HomeBlockSubFieldData } from "./HomeBlockSubFieldData";
 
 export interface HomeBlockFieldData {
   Rot?: Vector;

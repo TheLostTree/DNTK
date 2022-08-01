@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { SegmentInfo } from "./SegmentInfo.ts";
+import type { SegmentInfo } from "./SegmentInfo";
 
 /**
  * CmdId: 39

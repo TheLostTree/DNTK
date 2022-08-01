@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ChatInfo } from "./ChatInfo.ts";
+import type { ChatInfo } from "./ChatInfo";
 
 /**
  * CmdId: 3185

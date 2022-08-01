@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { BattlePassSchedule } from "./BattlePassSchedule.ts";
-import type { BattlePassMission } from "./BattlePassMission.ts";
+import type { BattlePassSchedule } from "./BattlePassSchedule";
+import type { BattlePassMission } from "./BattlePassMission";
 
 /**
  * CmdId: 2626

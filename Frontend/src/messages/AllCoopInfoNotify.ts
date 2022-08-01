@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { MainCoop } from "./MainCoop.ts";
+import type { MainCoop } from "./MainCoop";
 
 /**
  * CmdId: 1976

@@ -1,8 +1,8 @@
 /* eslint-disable */
-import type { AvatarFetterInfo } from "./AvatarFetterInfo.ts";
-import type { AvatarExcelInfo } from "./AvatarExcelInfo.ts";
-import type { PropValue } from "./PropValue.ts";
-import type { ShowEquip } from "./ShowEquip.ts";
+import type { AvatarFetterInfo } from "./AvatarFetterInfo";
+import type { AvatarExcelInfo } from "./AvatarExcelInfo";
+import type { PropValue } from "./PropValue";
+import type { ShowEquip } from "./ShowEquip";
 
 export interface ShowAvatarInfo {
   AvatarId?: number;

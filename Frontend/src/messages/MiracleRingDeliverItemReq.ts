@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { InterOpType } from "./InterOpType.ts";
-import type { ItemParam } from "./ItemParam.ts";
+import type { InterOpType } from "./InterOpType";
+import type { ItemParam } from "./ItemParam";
 import type Long from "long";
 
 /**

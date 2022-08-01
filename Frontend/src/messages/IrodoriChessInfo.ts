@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Unk2700IBEKDNOGMLA } from "./Unk2700_IBEKDNOGMLA.ts";
+import type { Unk2700IBEKDNOGMLA } from "./Unk2700_IBEKDNOGMLA";
 
 export interface IrodoriChessInfo {
   MysteryInfo?: Unk2700IBEKDNOGMLA;

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { PlayerWorldSceneInfo } from "./PlayerWorldSceneInfo.ts";
+import type { PlayerWorldSceneInfo } from "./PlayerWorldSceneInfo";
 
 /**
  * CmdId: 3129

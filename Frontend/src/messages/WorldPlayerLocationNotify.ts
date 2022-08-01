@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { PlayerWorldLocationInfo } from "./PlayerWorldLocationInfo.ts";
-import type { PlayerLocationInfo } from "./PlayerLocationInfo.ts";
+import type { PlayerWorldLocationInfo } from "./PlayerWorldLocationInfo";
+import type { PlayerLocationInfo } from "./PlayerLocationInfo";
 
 /**
  * CmdId: 258

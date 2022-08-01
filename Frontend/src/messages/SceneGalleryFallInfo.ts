@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { FallPlayerInfo } from "./FallPlayerInfo.ts";
+import type { FallPlayerInfo } from "./FallPlayerInfo";
 
 export interface SceneGalleryFallInfo {
   ScenePlayerFallInfoMap?: { [key: number]: FallPlayerInfo };

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { DragonSpineChapterInfo } from "./DragonSpineChapterInfo.ts";
+import type { DragonSpineChapterInfo } from "./DragonSpineChapterInfo";
 
 export interface DragonSpineActivityDetailInfo {
   IsContentClosed?: boolean;

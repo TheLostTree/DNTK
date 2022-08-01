@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { PushTipsData } from "./PushTipsData.ts";
+import type { PushTipsData } from "./PushTipsData";
 
 /**
  * CmdId: 2222

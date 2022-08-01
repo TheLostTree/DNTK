@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { HomeCustomFurnitureInfo } from "./HomeCustomFurnitureInfo.ts";
+import type { HomeCustomFurnitureInfo } from "./HomeCustomFurnitureInfo";
 
 /**
  * CmdId: 4724

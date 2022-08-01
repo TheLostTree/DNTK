@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { TowerMonthlyCombatRecord } from "./TowerMonthlyCombatRecord.ts";
-import type { TowerMonthlyBrief } from "./TowerMonthlyBrief.ts";
+import type { TowerMonthlyCombatRecord } from "./TowerMonthlyCombatRecord";
+import type { TowerMonthlyBrief } from "./TowerMonthlyBrief";
 
 export interface TowerMonthlyDetail {
   MonthlyCombatRecord?: TowerMonthlyCombatRecord;

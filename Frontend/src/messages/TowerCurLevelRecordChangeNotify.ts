@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { TowerCurLevelRecord } from "./TowerCurLevelRecord.ts";
+import type { TowerCurLevelRecord } from "./TowerCurLevelRecord";
 
 /**
  * CmdId: 2412

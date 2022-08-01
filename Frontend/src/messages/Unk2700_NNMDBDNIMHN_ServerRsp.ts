@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Unk2700KPNPJPPHOKA } from "./Unk2700_KPNPJPPHOKA.ts";
+import type { Unk2700KPNPJPPHOKA } from "./Unk2700_KPNPJPPHOKA";
 
 /**
  * CmdId: 4538

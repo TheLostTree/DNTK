@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { Unk2700HGFFGMCODNC } from "./Unk2700_HGFFGMCODNC.ts";
-import type { Unk2700NAFAIMHFEFG } from "./Unk2700_NAFAIMHFEFG.ts";
-import type { MichiaeMatsuriStage } from "./MichiaeMatsuriStage.ts";
+import type { Unk2700HGFFGMCODNC } from "./Unk2700_HGFFGMCODNC";
+import type { Unk2700NAFAIMHFEFG } from "./Unk2700_NAFAIMHFEFG";
+import type { MichiaeMatsuriStage } from "./MichiaeMatsuriStage";
 
 export interface MichiaeMatsuriActivityDetailInfo {
   Unk2700MPNNMCPOLAM?: Unk2700HGFFGMCODNC[];

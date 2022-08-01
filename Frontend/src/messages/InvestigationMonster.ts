@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { WeeklyBossResinDiscountInfo } from "./WeeklyBossResinDiscountInfo.ts";
-import type { Vector } from "./Vector.ts";
+import type { WeeklyBossResinDiscountInfo } from "./WeeklyBossResinDiscountInfo";
+import type { Vector } from "./Vector";
 
 export interface InvestigationMonster {
   IsAlive?: boolean;

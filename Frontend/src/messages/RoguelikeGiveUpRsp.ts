@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { RoguelikeDungeonSettleInfo } from "./RoguelikeDungeonSettleInfo.ts";
+import type { RoguelikeDungeonSettleInfo } from "./RoguelikeDungeonSettleInfo";
 
 /**
  * CmdId: 8139

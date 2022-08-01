@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Achievement } from "./Achievement.ts";
+import type { Achievement } from "./Achievement";
 
 /**
  * CmdId: 2676

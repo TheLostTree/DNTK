@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Item } from "./Item.ts";
+import type { Item } from "./Item";
 
 /**
  * CmdId: 897

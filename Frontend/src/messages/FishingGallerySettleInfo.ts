@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { FishInfo } from "./FishInfo.ts";
-import type { FishingScore } from "./FishingScore.ts";
+import type { FishInfo } from "./FishInfo";
+import type { FishingScore } from "./FishingScore";
 
 export interface FishingGallerySettleInfo {
   FishMap?: { [key: number]: FishInfo };

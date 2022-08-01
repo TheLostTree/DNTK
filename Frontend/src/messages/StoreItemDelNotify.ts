@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { StoreType } from "./StoreType.ts";
+import type { StoreType } from "./StoreType";
 import type Long from "long";
 
 /**

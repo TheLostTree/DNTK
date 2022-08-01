@@ -1,8 +1,8 @@
 /* eslint-disable */
 import type Long from "long";
-import type { MassiveWaterInfo } from "./MassiveWaterInfo.ts";
-import type { MassiveGrassInfo } from "./MassiveGrassInfo.ts";
-import type { MassiveBoxInfo } from "./MassiveBoxInfo.ts";
+import type { MassiveWaterInfo } from "./MassiveWaterInfo";
+import type { MassiveGrassInfo } from "./MassiveGrassInfo";
+import type { MassiveBoxInfo } from "./MassiveBoxInfo";
 
 export interface ServerMassiveEntity {
   EntityType?: number;

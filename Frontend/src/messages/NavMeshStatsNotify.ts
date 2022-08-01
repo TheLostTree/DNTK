@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { PbNavMeshStatsInfo } from "./PbNavMeshStatsInfo.ts";
+import type { PbNavMeshStatsInfo } from "./PbNavMeshStatsInfo";
 
 /**
  * CmdId: 2316

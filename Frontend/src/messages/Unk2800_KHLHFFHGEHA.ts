@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Unk2800FGFMMFAKDEL } from "./Unk2800_FGFMMFAKDEL.ts";
+import type { Unk2800FGFMMFAKDEL } from "./Unk2800_FGFMMFAKDEL";
 
 /**
  * CmdId: 21834

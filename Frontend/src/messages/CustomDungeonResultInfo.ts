@@ -1,7 +1,7 @@
 /* eslint-disable */
 import type Long from "long";
-import type { Unk2700OCOKILBJIPJ } from "./Unk2700_OCOKILBJIPJ.ts";
-import type { Unk2700FDEGJOCDDGH } from "./Unk2700_FDEGJOCDDGH.ts";
+import type { Unk2700OCOKILBJIPJ } from "./Unk2700_OCOKILBJIPJ";
+import type { Unk2700FDEGJOCDDGH } from "./Unk2700_FDEGJOCDDGH";
 
 export interface CustomDungeonResultInfo {
   Unk2700BONNHGKDLFO?: boolean;

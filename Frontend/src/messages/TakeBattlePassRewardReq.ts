@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { BattlePassRewardTakeOption } from "./BattlePassRewardTakeOption.ts";
+import type { BattlePassRewardTakeOption } from "./BattlePassRewardTakeOption";
 
 /**
  * CmdId: 2602

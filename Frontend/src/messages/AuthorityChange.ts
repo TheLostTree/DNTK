@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { EntityAuthorityInfo } from "./EntityAuthorityInfo.ts";
+import type { EntityAuthorityInfo } from "./EntityAuthorityInfo";
 
 export interface AuthorityChange {
   EntityAuthorityInfo?: EntityAuthorityInfo;

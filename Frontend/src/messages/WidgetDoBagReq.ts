@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { WidgetCreateLocationInfo } from "./WidgetCreateLocationInfo.ts";
-import type { WidgetCreatorInfo } from "./WidgetCreatorInfo.ts";
+import type { WidgetCreateLocationInfo } from "./WidgetCreateLocationInfo";
+import type { WidgetCreatorInfo } from "./WidgetCreatorInfo";
 
 /**
  * CmdId: 4255

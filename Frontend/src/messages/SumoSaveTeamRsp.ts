@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { SumoTeamData } from "./SumoTeamData.ts";
+import type { SumoTeamData } from "./SumoTeamData";
 
 /**
  * CmdId: 8319

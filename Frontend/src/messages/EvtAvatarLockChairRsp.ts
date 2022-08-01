@@ -1,6 +1,6 @@
 /* eslint-disable */
 import type Long from "long";
-import type { Vector } from "./Vector.ts";
+import type { Vector } from "./Vector";
 
 /**
  * CmdId: 366

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ShowAvatarInfo } from "./ShowAvatarInfo.ts";
+import type { ShowAvatarInfo } from "./ShowAvatarInfo";
 
 /**
  * CmdId: 4017

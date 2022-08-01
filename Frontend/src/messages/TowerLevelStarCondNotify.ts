@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { TowerLevelStarCondData } from "./TowerLevelStarCondData.ts";
+import type { TowerLevelStarCondData } from "./TowerLevelStarCondData";
 
 /**
  * CmdId: 2406

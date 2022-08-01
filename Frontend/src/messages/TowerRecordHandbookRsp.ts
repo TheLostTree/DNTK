@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { TowerMonthlyDetail } from "./TowerMonthlyDetail.ts";
+import type { TowerMonthlyDetail } from "./TowerMonthlyDetail";
 
 /**
  * CmdId: 2443

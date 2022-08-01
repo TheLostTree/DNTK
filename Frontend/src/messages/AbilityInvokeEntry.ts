@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { AbilityInvokeArgument } from "./AbilityInvokeArgument.ts";
-import type { AbilityInvokeEntryHead } from "./AbilityInvokeEntryHead.ts";
-import type { ForwardType } from "./ForwardType.ts";
+import type { AbilityInvokeArgument } from "./AbilityInvokeArgument";
+import type { AbilityInvokeEntryHead } from "./AbilityInvokeEntryHead";
+import type { ForwardType } from "./ForwardType";
 
 export interface AbilityInvokeEntry {
   ArgumentType?: AbilityInvokeArgument;

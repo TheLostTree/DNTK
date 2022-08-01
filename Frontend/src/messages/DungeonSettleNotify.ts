@@ -1,14 +1,14 @@
 /* eslint-disable */
-import type { StrengthenPointData } from "./StrengthenPointData.ts";
-import type { ParamList } from "./ParamList.ts";
-import type { DungeonSettleExhibitionInfo } from "./DungeonSettleExhibitionInfo.ts";
-import type { TowerLevelEndNotify } from "./TowerLevelEndNotify.ts";
-import type { TrialAvatarFirstPassDungeonNotify } from "./TrialAvatarFirstPassDungeonNotify.ts";
-import type { ChannelerSlabLoopDungeonResultInfo } from "./ChannelerSlabLoopDungeonResultInfo.ts";
-import type { EffigyChallengeDungeonResultInfo } from "./EffigyChallengeDungeonResultInfo.ts";
-import type { RoguelikeDungeonSettleInfo } from "./RoguelikeDungeonSettleInfo.ts";
-import type { CrystalLinkSettleInfo } from "./CrystalLinkSettleInfo.ts";
-import type { SummerTimeV2DungeonSettleInfo } from "./SummerTimeV2DungeonSettleInfo.ts";
+import type { StrengthenPointData } from "./StrengthenPointData";
+import type { ParamList } from "./ParamList";
+import type { DungeonSettleExhibitionInfo } from "./DungeonSettleExhibitionInfo";
+import type { TowerLevelEndNotify } from "./TowerLevelEndNotify";
+import type { TrialAvatarFirstPassDungeonNotify } from "./TrialAvatarFirstPassDungeonNotify";
+import type { ChannelerSlabLoopDungeonResultInfo } from "./ChannelerSlabLoopDungeonResultInfo";
+import type { EffigyChallengeDungeonResultInfo } from "./EffigyChallengeDungeonResultInfo";
+import type { RoguelikeDungeonSettleInfo } from "./RoguelikeDungeonSettleInfo";
+import type { CrystalLinkSettleInfo } from "./CrystalLinkSettleInfo";
+import type { SummerTimeV2DungeonSettleInfo } from "./SummerTimeV2DungeonSettleInfo";
 
 /**
  * CmdId: 999

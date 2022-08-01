@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { ExpeditionState } from "./ExpeditionState.ts";
+import type { ExpeditionState } from "./ExpeditionState";
 
 export interface ExpeditionPathInfo {
   MarkId?: number;

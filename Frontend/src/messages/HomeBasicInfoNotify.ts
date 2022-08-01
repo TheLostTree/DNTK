@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { HomeBasicInfo } from "./HomeBasicInfo.ts";
+import type { HomeBasicInfo } from "./HomeBasicInfo";
 
 /**
  * CmdId: 4885

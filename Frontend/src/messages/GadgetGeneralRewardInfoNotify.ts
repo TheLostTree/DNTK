@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { GadgetGeneralRewardInfo } from "./GadgetGeneralRewardInfo.ts";
+import type { GadgetGeneralRewardInfo } from "./GadgetGeneralRewardInfo";
 
 /**
  * CmdId: 848

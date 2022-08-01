@@ -1,6 +1,6 @@
 /* eslint-disable */
 import type Long from "long";
-import type { HomeLimitedShopInfo } from "./HomeLimitedShopInfo.ts";
+import type { HomeLimitedShopInfo } from "./HomeLimitedShopInfo";
 
 export interface HomeBasicInfo {
   Level?: number;

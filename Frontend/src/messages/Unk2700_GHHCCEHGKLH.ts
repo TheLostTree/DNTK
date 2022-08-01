@@ -1,9 +1,9 @@
 /* eslint-disable */
-import type { SocialDetail } from "./SocialDetail.ts";
-import type { Unk2700ELMEOJFCOFH } from "./Unk2700_ELMEOJFCOFH.ts";
+import type { SocialDetail } from "./SocialDetail";
+import type { Unk2700ELMEOJFCOFH } from "./Unk2700_ELMEOJFCOFH";
 import type Long from "long";
-import type { Unk2700PHGGAEDHLBN } from "./Unk2700_PHGGAEDHLBN.ts";
-import type { Unk2700OHBMICGFIIK } from "./Unk2700_OHBMICGFIIK.ts";
+import type { Unk2700PHGGAEDHLBN } from "./Unk2700_PHGGAEDHLBN";
+import type { Unk2700OHBMICGFIIK } from "./Unk2700_OHBMICGFIIK";
 
 export interface Unk2700GHHCCEHGKLH {
   Unk2700KLPJLKPKKHH?: SocialDetail;

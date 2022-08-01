@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { Uint32Pair } from "./Uint32Pair.ts";
+import type { Uint32Pair } from "./Uint32Pair";
 
 export interface MechanicusInfo {
   GearLevelPairList?: Uint32Pair[];

@@ -1,7 +1,7 @@
 /* eslint-disable */
-import type { EnterType } from "./EnterType.ts";
+import type { EnterType } from "./EnterType";
 import type Long from "long";
-import type { Vector } from "./Vector.ts";
+import type { Vector } from "./Vector";
 
 /**
  * CmdId: 272

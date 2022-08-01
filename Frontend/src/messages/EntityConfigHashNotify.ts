@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { EntityConfigHashEntry } from "./EntityConfigHashEntry.ts";
+import type { EntityConfigHashEntry } from "./EntityConfigHashEntry";
 
 /**
  * CmdId: 3189

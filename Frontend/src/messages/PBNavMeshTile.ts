@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { Vector } from "./Vector.ts";
-import type { PBNavMeshPoly } from "./PBNavMeshPoly.ts";
+import type { Vector } from "./Vector";
+import type { PBNavMeshPoly } from "./PBNavMeshPoly";
 
 export interface PBNavMeshTile {
   Vecs?: Vector[];

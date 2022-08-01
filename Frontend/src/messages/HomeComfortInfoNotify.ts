@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { HomeModuleComfortInfo } from "./HomeModuleComfortInfo.ts";
+import type { HomeModuleComfortInfo } from "./HomeModuleComfortInfo";
 
 /**
  * CmdId: 4699

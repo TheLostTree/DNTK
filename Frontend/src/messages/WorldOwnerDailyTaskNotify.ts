@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type { DailyTaskInfo } from "./DailyTaskInfo.ts";
+import type { DailyTaskInfo } from "./DailyTaskInfo";
 
 /**
  * CmdId: 102
