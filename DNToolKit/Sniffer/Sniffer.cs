@@ -43,7 +43,6 @@ public class Sniffer
         _pcapDevice = GetPcapDevice();
 
         _pcapDevice.OnPacketArrival += OnPacketArrival;
-        Console.WriteLine();
         int readTimeout = 1000;
         _pcapDevice.Open(DeviceModes.Promiscuous | DeviceModes.DataTransferUdp | DeviceModes.NoCaptureLocal, readTimeout);
         _pcapDevice.Filter = "udp portrange 22101-22102";
@@ -69,7 +68,7 @@ public class Sniffer
                 }
                 else
                 {
-                    Thread.Sleep(1);
+                    Thread.Sleep(10);
                 }
             }
             catch (Exception e)

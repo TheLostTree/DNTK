@@ -33,7 +33,23 @@ public class FrontendManager
 
     public FrontendManager()
     {
-        _server = new WebSocketServer("ws://127.0.0.1:40510");
+        FleckLog.LogAction = (level, message, ex) => {
+            switch(level) {
+                case LogLevel.Debug:
+                    // Log.Debug(message);
+                    break;
+                case LogLevel.Error:
+                    Log.Error(message);
+                    break;
+                case LogLevel.Warn:
+                    Log.Warning(message);
+                    break;
+                default:
+                    Log.Information(message);
+                    break;
+            }
+        };
+        _server = new WebSocketServer(Program.Config.FrontendUrl);
 
         _server.Start(socket =>
         {
@@ -146,24 +162,20 @@ public class WsWrapper
     {
         while (_running)
         {
-            Packet.Packet? latestPacket = null;
             try
             {
                 if (GamePacketQueue.Count < 2) continue;
                 //mot quite ideal?
 
-                var Copy = GamePacketQueue.ToArray().Where(x=>x is not null);
+                var copy = GamePacketQueue.ToArray().Where(x=>x is not null);
                 GamePacketQueue.Clear();
-
-
 
                 //theres a wierd object reference not set to an instance of an object thing here? try to fixo?
                 var data2 = new List<object>();
-                foreach (var packet in Copy)
+                foreach (var packet in copy)
                 {
                     try
                     {
-                        latestPacket = packet;
                         var obj = packet.GetObj(Type);
                         if (obj is not null)
                         {
@@ -179,8 +191,10 @@ public class WsWrapper
                         Log.Error(e.ToString());
                         Log.Warning($"{packet.PacketType} failed!");
                     }
-
                 }
+                
+                //data2.Sort();
+                
                 var jsonObj = new PacketNotify()
                 {
                     cmd = "PacketNotify",
@@ -192,7 +206,6 @@ public class WsWrapper
             catch (Exception e)
             {
                 Log.Error(e.ToString());
-                Log.Information($"{latestPacket?.PacketType} failed!");
             }
 
             await Task.Delay(20);

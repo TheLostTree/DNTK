@@ -39,18 +39,24 @@ public class AbilityInvokeProcessor
             switch (abilityInvokeEntry.ArgumentType)
             {
                 //todo: HANDLE ALL OF THESE AT LEAST(since gc handles them)
-                // case AbilityInvokeArgument.MetaModifierChange:
-                //     break;
-                // case AbilityInvokeArgument.MetaReinitOverridemap:
-                //     break;
-                // case AbilityInvokeArgument.MetaOverrideParam:
-                //     break;
-                // case AbilityInvokeArgument.MixinCostStamina:
-                //     break;
-                // case AbilityInvokeArgument.ActionGenerateElemBall:
-                //     break;
-                // case AbilityInvokeArgument.ActionCreateGadget:
-                //     break;
+                case AbilityInvokeArgument.MetaModifierChange:
+                    th.AbilityData = AbilityMetaModifierChange.Parser.ParseFrom(abilityInvokeEntry.AbilityData);
+                    break;
+                case AbilityInvokeArgument.MetaReinitOverridemap:
+                    th.AbilityData = AbilityMetaReInitOverrideMap.Parser.ParseFrom(abilityInvokeEntry.AbilityData);
+                    break;
+                case AbilityInvokeArgument.MetaOverrideParam:
+                    th.AbilityData = AbilityScalarValueEntry.Parser.ParseFrom(abilityInvokeEntry.AbilityData);
+                    break;
+                case AbilityInvokeArgument.MixinCostStamina:
+                    th.AbilityData = AbilityMetaReInitOverrideMap.Parser.ParseFrom(abilityInvokeEntry.AbilityData);
+                    break;
+                case AbilityInvokeArgument.ActionGenerateElemBall:
+                    th.AbilityData = AbilityActionGenerateElemBall.Parser.ParseFrom(abilityInvokeEntry.AbilityData);
+                    break;
+                case AbilityInvokeArgument.ActionCreateGadget:
+                    th.AbilityData = AbilityActionCreateGadget.Parser.ParseFrom(abilityInvokeEntry.AbilityData);
+                    break;
                 default:
                     //default
                     th.AbilityData = abilityInvokeEntry.AbilityData.ToBase64();

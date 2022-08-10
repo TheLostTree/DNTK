@@ -20,6 +20,7 @@
     "vite": "^3.0.2"
   },
   "dependencies": {
+    "json-bigint": "^1.0.0",
     "ws": "^8.8.1"
   }
 }

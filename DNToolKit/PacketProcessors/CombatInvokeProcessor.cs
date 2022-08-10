@@ -18,7 +18,8 @@ public class CombatInvokeProcessor
     {
         var data = CombatInvocationsNotify.Parser.ParseFrom(combatinvokebytes);
         var list = new List<CumbatInvuke>();
-        Log.Debug("combat invoke: @{DATA}", data);
+        
+        
         if (data?.InvokeList is null) return null;
         foreach (CombatInvokeEntry invoke in data.InvokeList)
         {

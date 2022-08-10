@@ -1,8 +1,9 @@
 ﻿using Fleck;
-using System.Text.Json;
 using Common;
 using DNToolKit.Frontend;
+using DNToolKit.Frontend.Models;
 using Google.Protobuf;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Serilog;
 
@@ -17,13 +18,11 @@ public class WebSocketReqHandler
     }
 
     //todo: actually just make classes for everything instead of using jObject
-    private class DecryptReqPkt
-    {
-        public string Type;
-        public string B64Data;
-    }
+
     public static void HandleReq(string message, WsWrapper webSocket)
-    {
+    {                    
+        Log.Verbose("Websocket Message recieved: {data}",message);
+
         var b = JObject.Parse(message);
         try
         {
@@ -31,8 +30,6 @@ public class WebSocketReqHandler
             switch (cmd)
             {
                 case "ConnectReq":
-                    Log.Debug("Got ConnectReq to type Iridium");
-
                     var data = b.GetValue("data")?.ToObject<string>();
                     if (data is not null)
                     {
@@ -42,14 +39,14 @@ public class WebSocketReqHandler
                             webSocket.Type = WsWrapper.WsType.Iridium;
                         }
                     }
-                    var str = JsonSerializer.Serialize(new WSPacket()
+                    var str = JsonConvert.SerializeObject(new WSPacket()
                     {
                         cmd = "ConnectRsp",
                         //todo: this is for iridium compatability
-                        data = new Dictionary<string, int>() { { "sessionStarted", 0 } }
+                        data = new Dictionary<string, int>() { { "retcode", 0 } }
                     });
 
-                    webSocket.Socket.Send(str);
+                    webSocket.Socket?.Send(str);
                     break;
                 case "SetWhitelistReq":
                     var stropcodes = b.GetValue("data")?.ToObject<string[]>();
@@ -61,17 +58,19 @@ public class WebSocketReqHandler
                             if (Enum.TryParse(strOpcode, out Opcode opcode))
                             {
                                 temp.Add(opcode);
+                                Log.Information("Added {type} to the whitelist", opcode);
                             }
                         }
 
                         webSocket.SetWhitelist(temp);
                     }
-                    
+
                     break;
                 case "DecryptReq":
                     //i had an idea then forgot it
-                    var req = b.GetValue("data")?.ToObject<DecryptReqPkt>();
+                    var req = b.GetValue("data")?.ToObject<DecryptReq>();
                     
+                    Log.Information("Got DecryptRequest");
                     if (req is not null)
                     {
                         if (Enum.TryParse(req.Type, out Opcode opcode))
@@ -83,11 +82,20 @@ public class WebSocketReqHandler
                             {
                                 throw new Exception("Could not parse DecryptReq packet");
                             }
-                            var strig = JsonSerializer.Serialize(new WSPacket()
+                            //todo: send back the type as well
+                            var pkt = new WSPacket()
                             {
-                                cmd = "DecryptReq",
-                                data = messa
-                            });
+                                cmd = "DecryptRsp",
+                                data = new Dictionary<string, object>()
+                                {
+                                    { "data", messa },
+                                    { "type", opcode.ToString() }
+                                }
+                            };
+                            var strig = JsonConvert.SerializeObject(pkt);
+                            
+                            Log.Information(strig);
+
                             webSocket.Socket?.Send(strig);
                         }
                     }
@@ -95,19 +103,19 @@ public class WebSocketReqHandler
                     break;
                 default:
                     if (cmd is null) cmd = "????";
-                    var stri = JsonSerializer.Serialize(new WSPacket()
+                    var stri = JsonConvert.SerializeObject(new WSPacket()
                     {
-                        cmd = cmd.Replace("Req", "Rsp"),
-                        data = 0
+                        cmd = "ErrorNotify",
+                        data = "No such handler for " + cmd
                     });
-                    webSocket.Socket.Send(stri);
+                    webSocket.Socket?.Send(stri);
                     break;
             }
         }
         catch (Exception e)
         {
             Log.Error(e.ToString());
-            webSocket.Socket?.Send(JsonSerializer.Serialize(new WSPacket()
+            webSocket.Socket?.Send(JsonConvert.SerializeObject(new WSPacket()
             {
                 cmd = "ErrorNotify",
                 data = e.ToString()

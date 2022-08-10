@@ -1,6 +1,7 @@
 import type { PacketHead } from "../messages/PacketHead";
 
-export type WSPacketTypes = "PacketNotify"| "BlankNotify";
+export type WSPacketTypes = ["PacketNotify"| "BlankNotify" | "ConnectReq"];
+
 export type WSPacket = {
     cmd: string;
     data: any;

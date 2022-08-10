@@ -1,5 +1,8 @@
-﻿using Common;
+﻿using System.Diagnostics;
+using System.Text.Json;
+using Common;
 using DNToolKit.Frontend;
+using Newtonsoft.Json;
 using Serilog;
 
 namespace DNToolKit;
@@ -8,27 +11,62 @@ public class Program
 {
 
     public static FrontendManager FrontendManager = null!;
+    public static Config Config = null!;
+    public static Sniffer.Sniffer Sniffer = null!;
+    public static CaptureDumper Dumper = null!;
+
+    public static ushort GameMajorVersion = 2;
+    public static ushort GameMinorVersion = 8;
+    
+
+    private static string _configName = "./config.json";
 
     public static void Main(string[] args)
     {
-        //todo: add iridium compatability option
-        
-        Log.Logger = new LoggerConfiguration().MinimumLevel.Debug().WriteTo.Console().CreateLogger();
+        Log.Logger = new LoggerConfiguration().MinimumLevel.Verbose().WriteTo.Console().CreateLogger();
         Log.Information("DNToolKit for v2.8");
 
+        
+        if (!File.Exists(_configName))
+        {
+            File.WriteAllText(_configName,JsonConvert.SerializeObject(Config.Default));
+            Config = Config.Default;
+        }
+        else
+        {
+            Config = JsonConvert.DeserializeObject<Config>(File.ReadAllText(_configName));
+            if (Config is null)
+            {
+                Config = Config.Default;
+                Log.Error("Invalid Config File! Using Default...");
+            }
+        }
+
+        Dumper = new CaptureDumper();
+        
+        
 
         //ugh figure out what to rename the sniffer namespace 
-        var sniffer = new Sniffer.Sniffer();
+        Sniffer = new Sniffer.Sniffer();
         FrontendManager = new FrontendManager();
-        sniffer.Start();
+        Sniffer.Start();
         
 
         ProtobufFactory.Initialize();
 
+        Log.Information("Ready! Hit Control + C to stop...");
 
-        Log.Information("Press Any Key to Stop!");
-        Console.ReadKey(true);
-        sniffer.Close();
+
+        Console.CancelKeyPress  += Close;
+    }
+
+    public static void Close(object? sender, ConsoleCancelEventArgs e)
+    {
+        Sniffer.Close();
         FrontendManager.Close();
+        Dumper.Close();
+
+        e.Cancel = true;
+
     }
 }

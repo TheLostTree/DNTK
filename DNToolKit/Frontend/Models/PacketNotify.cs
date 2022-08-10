@@ -6,4 +6,7 @@ public class PacketNotify
     public string cmd;
     // ReSharper disable once InconsistentNaming
     public List<object> data;
+    // ReSharper disable once InconsistentNaming
+    public ulong earliestMs;
+
 }

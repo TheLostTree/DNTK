@@ -1,13 +1,61 @@
 <script lang="ts">
-  import logo from './assets/svelte.png'
-  import Counter from './lib/Counter.svelte'
+    import logo from './assets/svelte.png'
+    import Counter from './lib/Counter.svelte'
+    import PacketList from './lib/PacketList';
+    import BackendSocket from './backendsocket';
+    import type { PacketNotify } from './lib/WSPacket';
+    import type { SceneEntityAppearNotify } from './messages/SceneEntityAppearNotify';
+    import { ProtEntityType } from './messages/ProtEntityType';
+    import ConsoleWindow, {addLog} from './lib/ConsoleWindow.svelte';
+
+    const backendSocket = new BackendSocket("ws://127.0.0.1:40510");
+    const packetList = new PacketList();
+
+    backendSocket.on("PacketNotify", (data: PacketNotify) => {
+        packetList.addPackets(data.data);
+    });
+
+    packetList.onAddPackets = (packets) => {
+        let pkts: Array<SceneEntityAppearNotify> = packets.filter(x=>x.CmdId == "SceneEntityAppearNotify").map(x=>x.PacketData);
+        pkts.forEach(x=>{
+            x.EntityList.forEach(y=>{
+                console.log("new entity:", y.EntityId, y.EntityType, y.MotionInfo);
+                if(y.EntityType == ProtEntityType.PROT_ENTITY_TYPE_GADGET){
+                    console.log("gadget:", y.Gadget?.GadgetId);
+                }
+
+                addLog(`new entity: ${y.EntityId} ${y.EntityType} ${y.MotionInfo}`);
+            });
+        })
+    }
+
+    function testReq(){
+        // backendSocket.send({
+        //     "cmd": "DecryptReq",
+        //     data: {
+        //         Type: "BuyResinRsp",
+        //         B64Data: "KAVQAw=="
+        //     }
+        // })
+        backendSocket.send({
+            cmd: "SetWhitelistReq",
+            data: ["SceneEntityAppearNotify", "SceneEntityDisappearNotify"]
+        })
+    }
+
+
+  
 </script>
 
 <main>
   <img src={logo} alt="Svelte Logo" />
   <h1>DNTK WIP FRONTEND</h1>
 
-  <Counter />
+  <ConsoleWindow />
+
+  <br>
+
+  <button on:click={testReq}>testo</button>
 
 </main>
 

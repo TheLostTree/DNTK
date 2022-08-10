@@ -1,10 +1,11 @@
+import Long from "long";
 import type { PacketNotifyData } from "./WSPacket";
 
 export default class PacketList{
     private packetList = new Array<PacketNotifyData>()
 
-    public onAddPackets: (packets:Array<PacketNotifyData>)=>void;
-    
+    public onAddPackets: (newPackets:Array<PacketNotifyData>)=>void;
+
     addPackets(packets: Array<PacketNotifyData>){
         // merge packets and packet List based on PacketHead.SentMs
         
@@ -22,15 +23,15 @@ export default class PacketList{
 
             
             // this might honestly work better
-            // return a.PacketHead.SentMs.subtract(b.PacketHead.SentMs).isNegative() ? -1 : 1;;
+            return Long.fromValue(a.PacketHead.SentMs).subtract(Long.fromValue(b.PacketHead.SentMs)).isNegative() ? -1 : 1;;
 
-            if(a.PacketHead.SentMs.greaterThan(b.PacketHead.SentMs)){
-                return 1;
-            }else if(a.PacketHead.SentMs.lessThan(b.PacketHead.SentMs)){
-                return -1;
-            }else{
-                return 0;
-            }
+            // if(Long.fromValue(a.PacketHead.SentMs).greaterThan(Long.fromValue(b.PacketHead.SentMs))){
+            //     return 1;
+            // }else if(a.PacketHead.SentMs.lessThan(b.PacketHead.SentMs)){
+            //     return -1;
+            // }else{
+            //     return 0;
+            // }
         });
 
         if(this.onAddPackets){

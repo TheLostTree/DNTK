@@ -15,31 +15,28 @@ namespace DNToolKit.Packet;
 
 public class Packet
 {
-    
-    
-    
-    [System.Text.Json.Serialization.JsonIgnore]
     public byte[] ProtobufBytes;
     
-    [JsonInclude]
     public PacketHead Metadata;
-    [System.Text.Json.Serialization.JsonIgnore]
+
     public byte[] MetadataBytes;
     
-    [JsonInclude]
     public Opcode PacketType;
 
-    [JsonInclude]
     public IMessage PacketData;
 
-    [JsonInclude]
+
     public UdpHandler.Sender Sender;
+
+    //don't use this mostly...
+    public byte[] FullData;
     
     public Packet(byte[] data)
     {
         if (data.GetUInt16(0, true) != 0x4567) throw new ArgumentException("Invalid Packet Magic!");
         if (data.GetUInt16(data.Length-2, true) != 0x89AB) throw new ArgumentException("Invalid Packet Magic!");
-        
+
+        FullData = data;
         
         PacketType = (Opcode)data.GetUInt16(2, true);
         var metadatalen = data.GetUInt16(4, true);
