@@ -21,7 +21,7 @@ public class WebSocketReqHandler
 
     public static void HandleReq(string message, WsWrapper webSocket)
     {                    
-        Log.Verbose("Websocket Message recieved: {data}",message);
+        Log.Verbose("Websocket Message received: {data}",message);
 
         var b = JObject.Parse(message);
         try

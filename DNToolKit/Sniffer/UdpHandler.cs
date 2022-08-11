@@ -8,6 +8,7 @@ namespace DNToolKit.Sniffer;
 
 public class UdpHandler
 {
+    //todo: maybe sync the kcp update
     private KCP? _client;
     private KCP? _server;
     private PacketProcessor? _processor;
@@ -19,10 +20,13 @@ public class UdpHandler
 
     public void HandleRawCapture(RawCapture rawCapture)
     {
-        IPv4Packet ipv4Packet = PacketDotNet.Packet.ParsePacket(LinkLayers.Ethernet, rawCapture.Data).Extract<IPv4Packet>();
-        UdpPacket udpPacket = ipv4Packet.Extract<UdpPacket>();
-        Sender sender = udpPacket.DestinationPort is 22101 or 22102 ? Sender.Client : Sender.Server;
-        byte[] packetBytes = udpPacket.PayloadData;
+        var udpPacket = PacketDotNet.Packet.ParsePacket(LinkLayers.Ethernet,
+                rawCapture.Data)
+            .Extract<IPv4Packet>()
+            .Extract<UdpPacket>();
+        
+        var sender = udpPacket.DestinationPort is 22101 or 22102 ? Sender.Client : Sender.Server;
+        var packetBytes = udpPacket.PayloadData;
 
 
         // Log.Information($"Received {packetBytes.Length} bytes");

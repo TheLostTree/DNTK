@@ -66,6 +66,7 @@ public class FrontendManager
             {
                 _webSocketConnections[socket.ConnectionInfo].Stop();
                 _webSocketConnections.Remove(socket.ConnectionInfo);
+                Log.Verbose("WS Disconnect received");
             };
             socket.OnMessage = (message) => { WebSocketReqHandler.HandleReq(message, _webSocketConnections[socket.ConnectionInfo]); };
         });
@@ -94,7 +95,11 @@ public class FrontendManager
 
     public void Close()
     {
-        _server.Dispose();
+        foreach (var webSocketConnection in _webSocketConnections)
+        {
+            webSocketConnection.Value.Socket?.Close();
+        }
+        Log.Information("Frontend Closed...");
     }
     
 }
@@ -167,7 +172,7 @@ public class WsWrapper
                 if (GamePacketQueue.Count < 2) continue;
                 //mot quite ideal?
 
-                var copy = GamePacketQueue.ToArray().Where(x=>x is not null);
+                var copy = GamePacketQueue.ToArray().Where(x => x is not null);
                 GamePacketQueue.Clear();
 
                 //theres a wierd object reference not set to an instance of an object thing here? try to fixo?
@@ -192,9 +197,9 @@ public class WsWrapper
                         Log.Warning($"{packet.PacketType} failed!");
                     }
                 }
-                
+
                 //data2.Sort();
-                
+
                 var jsonObj = new PacketNotify()
                 {
                     cmd = "PacketNotify",
@@ -207,8 +212,12 @@ public class WsWrapper
             {
                 Log.Error(e.ToString());
             }
+            finally
+            {
+                await Task.Delay(200);
+            }
 
-            await Task.Delay(20);
+            
         }
     }
 

@@ -41,9 +41,8 @@ public class PacketProcessor
         _workingThread = new Thread(Work)
         {
             Name = "PacketProcessor",
-            
         };
-        _workingThread.Start();
+        
         _timesBFed = 0;
     }
 
@@ -54,13 +53,18 @@ public class PacketProcessor
 
     public void AddPacket(byte[] data, UdpHandler.Sender sender)
     {
-        if(_running) Queue.Enqueue(new EncryptedPacket(data, sender));
+        if (!_running) return;
+        if(!_workingThread.IsAlive) _workingThread.Start();
+        Queue.Enqueue(new EncryptedPacket(data, sender));
     }
 
     public void Stop()
     {
         _running = false;
-        _workingThread.Join();
+        if (_workingThread.IsAlive)
+        {
+            if(!_workingThread.Join(10000)) _workingThread.Interrupt();
+        }
         Log.Information("PacketProcessor stopped...");
 
     }
@@ -86,12 +90,12 @@ public class PacketProcessor
                             _timesBFed++;
                             _sessionKey = KeyBruteForcer.BruteForce(item, (long)_tokenReqSendTime, _tokenRspServerKey);
                         }
-                        if(_sessionKey is null) Log.Warning("you suck!");
+                        if(_sessionKey is null) Log.Warning("something went wrong!");
                         _sessionKey?.Crypt(item);
                         if (_timesBFed > 10)
                         {
                             Log.Error("Brute forcing has failed many times, so make sure you login on a freshly launched client. Or something else could have happened idk");
-                            Stop();
+                            Program.Stop();
                         }
                     }
                     if (item.GetUInt16(0, true) == 0x4567)
@@ -111,10 +115,10 @@ public class PacketProcessor
                     }
                 }
             }
-            Thread.Sleep(10);
+            Thread.Sleep(50);
         }
 
-        SpinWait.SpinUntil(()=>Queue.IsEmpty);
+        // SpinWait.SpinUntil(()=>Queue.IsEmpty);
     }
     
     private void ParsePacketFromData(EncryptedPacket encryptedPacket)

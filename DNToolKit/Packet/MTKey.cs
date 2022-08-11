@@ -150,6 +150,8 @@ namespace DNToolKit.Packet
 
         public static byte[] PartialKey(ulong seed, int length)
         {
+            //todo: look into if i really need to instantiate two of these...
+            //i think i can get by with only one static one
             var mt1993764_1 = new MT19937_64();
             mt1993764_1.Initialize(seed);
             var mt1993764_2 = new MT19937_64();

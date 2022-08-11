@@ -20,9 +20,12 @@ public class Program
     
 
     private static string _configName = "./config.json";
+    private static TaskCompletionSource tcs = new TaskCompletionSource();
 
     public static void Main(string[] args)
     {
+        
+        
         Log.Logger = new LoggerConfiguration().MinimumLevel.Verbose().WriteTo.Console().CreateLogger();
         Log.Information("DNToolKit for v2.8");
 
@@ -34,7 +37,7 @@ public class Program
         }
         else
         {
-            Config = JsonConvert.DeserializeObject<Config>(File.ReadAllText(_configName));
+            Config = JsonConvert.DeserializeObject<Config>(File.ReadAllText(_configName))!;
             if (Config is null)
             {
                 Config = Config.Default;
@@ -56,17 +59,27 @@ public class Program
 
         Log.Information("Ready! Hit Control + C to stop...");
 
+        //Capture.ParseFromBytes(File.ReadAllBytes("./Captures/"));
 
         Console.CancelKeyPress  += Close;
+        // AppDomain.CurrentDomain.ProcessExit += Close;
+
+
+        tcs.Task.Wait();
     }
 
-    public static void Close(object? sender, ConsoleCancelEventArgs e)
+    private static void Close(object? sender, ConsoleCancelEventArgs e)
+    {        
+        e.Cancel = true;
+        Stop();
+    }
+
+    public static void Stop()
     {
         Sniffer.Close();
         FrontendManager.Close();
         Dumper.Close();
-
-        e.Cancel = true;
-
+        Log.Information("Finished cleaning up...");    
+        tcs.SetResult();
     }
 }

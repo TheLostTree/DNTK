@@ -37,7 +37,6 @@ public class CaptureDumper
     {
         stream.Flush();
         Log.Information("Dumping Finished!");
-        stream = null;
 
     }
 

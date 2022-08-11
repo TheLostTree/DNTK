@@ -5,6 +5,8 @@ import {Entity} from "../world/entity/Entity";
 
 export default function handle(data: PacketNotifyDT<SceneEntityAppearNotify>){
 
+    //todo: treat avatars differently
+
     for(let entity of data.PacketData.EntityList){
         world.registerEntity(Entity.fromSceneEntity(entity), data.PacketData.AppearType)
     }
