@@ -1,11 +1,12 @@
-<script lang="ts" context="module">
+
+<script lang="ts">
     let log = "";
 
     function clearLog(){
         log = "";
     }
 
-    export function addLog(msg){
+    function addLog(msg){
         log += msg + "\n";
     }
 
@@ -17,6 +18,10 @@
         }
     }
     let stuff = ""
+</script>
+
+<script lang="ts" context="module">
+
 </script>
 
 <textarea rows=15 cols=100 readonly>{log}</textarea> <br>

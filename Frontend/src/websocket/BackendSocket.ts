@@ -1,4 +1,4 @@
-import type { PacketNotify, WSPacket } from "./lib/WSPacket";
+import type { PacketNotify, WSPacket } from "./WSPacket";
 import jsonBI from "json-bigint";
 
 export default class BackendSocket{
@@ -18,20 +18,33 @@ export default class BackendSocket{
     }
 
 
-    constructor(connectionString:string){
-        this.ws = new WebSocket(connectionString);
+    constructor(public connectionString:string){
         this.connect();
     }
 
+
+    /**
+     * 
+     * @param data make sure that its the right name for the packet plssss
+     */
+    setWhitelist(data: string[]){
+        this.send({
+            cmd: "SetWhitelistReq",
+            data: data
+        })
+    }
+
     connect(){
+        this.ws = new WebSocket(this.connectionString);
+
         this.ws.addEventListener('open', () => {
             console.log('connected');
             this.ws.send(JSON.stringify({cmd:"ConnectReq", data:"dntk"}));
+            //this.setWhitelist(["SceneEntityAppearNotify", "SceneEntityDisappearNotify"]);
         });
           
           
         this.ws.addEventListener('close', () => {
-            console.log('closed');
             clearTimeout(this.wstimer);
             this.wstimer = setTimeout(()=>this.connect(), 1000)
             console.log("will attempt to reconnect in 1 second")
@@ -67,13 +80,12 @@ export default class BackendSocket{
     }
 
     onWSPacket(packet:WSPacket){
-        console.log("onWSPacket", packet);
         switch(packet.cmd){
             case "PacketNotify":
                 this.emit("PacketNotify", <PacketNotify>packet);
                 break;
             default:
-                console.log("unknown packet: ", packet);
+                console.log("unknown packet: ", packet.cmd);
                 break;
         }
     }

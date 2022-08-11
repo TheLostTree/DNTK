@@ -10,7 +10,15 @@ export type WSPacket = {
 export interface PacketNotifyData{
     PacketHead: PacketHead;
     PacketData: any;
-    CmdId: string;
+    CmdID: string;
+    Sender: "Server"|"Client";
+}
+
+
+export interface PacketNotifyDT<T> extends PacketNotifyData{
+    PacketHead: PacketHead;
+    PacketData: T;
+    CmdID: string;
     Sender: "Server"|"Client";
 }
 
