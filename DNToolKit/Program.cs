@@ -13,7 +13,6 @@ public class Program
     public static FrontendManager FrontendManager = null!;
     public static Config Config = null!;
     public static Sniffer.Sniffer Sniffer = null!;
-    public static CaptureDumper Dumper = null!;
 
     public static ushort GameMajorVersion = 2;
     public static ushort GameMinorVersion = 8;
@@ -21,6 +20,8 @@ public class Program
 
     private static string _configName = "./config.json";
     private static TaskCompletionSource tcs = new TaskCompletionSource();
+
+    public static CaptureDumper CaptureDumper;
 
     public static void Main(string[] args)
     {
@@ -44,13 +45,17 @@ public class Program
                 Log.Error("Invalid Config File! Using Default...");
             }
         }
+        
 
-        Dumper = new CaptureDumper();
-        
-        
+        CaptureDumper = new CaptureDumper();
+
+        Sniffer = new Sniffer.Sniffer();
+
+
+
 
         //ugh figure out what to rename the sniffer namespace 
-        Sniffer = new Sniffer.Sniffer();
+        
         FrontendManager = new FrontendManager();
         Sniffer.Start();
         
@@ -78,7 +83,6 @@ public class Program
     {
         Sniffer.Close();
         FrontendManager.Close();
-        Dumper.Close();
         Log.Information("Finished cleaning up...");    
         tcs.SetResult();
     }

@@ -127,6 +127,8 @@ public class PacketProcessor
         //todo: i think i need to handle exceptions but i *did* just check packet magic earlier so idk
         try
         {
+            //this is SO UGLY
+            
             var packet = new Packet.Packet(encryptedPacket.Data)
             {
                 Sender = encryptedPacket.Sender
@@ -139,25 +141,16 @@ public class PacketProcessor
             };
             if (type == Opcode.GetPlayerTokenRsp)
             {
-                // todo: fix this later its probably prone to a race condition and is not thread safe
-                try
+                var tokenRsp = packet.PacketData as GetPlayerTokenRsp;
+                if (tokenRsp?.EncryptedSeed is not null)
                 {
-                    var tokenRsp = packet.PacketData as GetPlayerTokenRsp;
-                    if (tokenRsp?.EncryptedSeed is not null)
-                    {
-                        var key = ClientPrivate.Decrypt(Convert.FromBase64String(tokenRsp.EncryptedSeed), RSAEncryptionPadding.Pkcs1);
-                        _tokenRspServerKey = key.GetUInt64(0,true);
-                        _useSessionKey = true;
-                    }
-                    else
-                    {
-                        Log.Warning("failed to get serverSeed");
-                    }
-                    
+                    var key = ClientPrivate.Decrypt(Convert.FromBase64String(tokenRsp.EncryptedSeed), RSAEncryptionPadding.Pkcs1);
+                    _tokenRspServerKey = key.GetUInt64(0,true);
+                    _useSessionKey = true;
                 }
-                catch(Exception e)
+                else
                 {
-                    Log.Error(e.ToString());
+                    Log.Warning("failed to get serverSeed");
                 }
             };
         
@@ -167,7 +160,34 @@ public class PacketProcessor
                 return;
             }
             
-            Program.Dumper.AddPacketData(packet.FullData, packet.Sender);
+            if (type == Opcode.CombatInvocationsNotify)
+            {
+                var list = CombatInvokeProcessor.ProcessCombatInvoke(packet.ProtobufBytes);
+                var fake = new FakeCINPacket()
+                {
+                    Metadata = packet.Metadata,
+                    PacketType = Opcode.CombatInvocationsNotify,
+                    Sender = packet.Sender,
+                    DummyPacketData = list.Body as CombatInvokeProcessor.CumbatInvukeNotif
+                };
+                Program.FrontendManager.AddGamePacket(fake);
+                return;
+            }
+            
+            if (type == Opcode.AbilityInvocationsNotify)
+            {
+                var list = AbilityInvokeProcessor.ProcessAbilityInvoke(packet.ProtobufBytes);
+                var fake = new FakeAINPacket()
+                {
+                    Metadata = packet.Metadata,
+                    PacketType = Opcode.AbilityInvocationsNotify,
+                    Sender = packet.Sender,
+                    DummyPacketData = list.Body as AbilityInvokeProcessor.ObilityInvokeNotify
+                };
+                Program.FrontendManager.AddGamePacket(fake);
+                return;
+            }
+
             Program.FrontendManager.AddGamePacket(packet);
         }
         catch(Exception e)
@@ -176,5 +196,75 @@ public class PacketProcessor
         }
 
 
+    }
+    
+    public class FakeCINPacket: Packet.Packet
+    {
+        public CombatInvokeProcessor.CumbatInvukeNotif DummyPacketData;
+        public override object? GetObj(WsWrapper.WsType wsType)
+        {
+            if (wsType == WsWrapper.WsType.Iridium)
+            {
+
+                Dictionary<string, object> jsonobj = new();
+                jsonobj.Add("packetID", (int)PacketType);
+                jsonobj.Add("protoName", PacketType.ToString());
+                jsonobj.Add("object", DummyPacketData);
+                jsonobj.Add("packet", "");
+                jsonobj.Add("source", (int)Sender);
+
+                
+
+                return jsonobj;
+            }
+            if (wsType == WsWrapper.WsType.DNToolKit)
+            {
+                Dictionary<string, object> jsonobj = new();
+                jsonobj.Add("PacketHead", Metadata);
+                jsonobj.Add("PacketData", DummyPacketData);
+                jsonobj.Add("CmdID", PacketType.ToString());
+                jsonobj.Add("Sender", (int)Sender);
+
+                return jsonobj;
+            }
+
+
+            return null;
+        }
+    }
+    
+    public class FakeAINPacket: Packet.Packet
+    {
+        public AbilityInvokeProcessor.ObilityInvokeNotify DummyPacketData;
+        public override object? GetObj(WsWrapper.WsType wsType)
+        {
+            if (wsType == WsWrapper.WsType.Iridium)
+            {
+
+                Dictionary<string, object> jsonobj = new();
+                jsonobj.Add("packetID", (int)PacketType);
+                jsonobj.Add("protoName", PacketType.ToString());
+                jsonobj.Add("object", DummyPacketData);
+                jsonobj.Add("packet", "");
+                jsonobj.Add("source", (int)Sender);
+
+                
+
+                return jsonobj;
+            }
+            if (wsType == WsWrapper.WsType.DNToolKit)
+            {
+                Dictionary<string, object> jsonobj = new();
+                jsonobj.Add("PacketHead", Metadata);
+                jsonobj.Add("PacketData", DummyPacketData);
+                jsonobj.Add("CmdID", PacketType.ToString());
+                jsonobj.Add("Sender", (int)Sender);
+
+                return jsonobj;
+            }
+
+
+            return null;
+        }
     }
 }

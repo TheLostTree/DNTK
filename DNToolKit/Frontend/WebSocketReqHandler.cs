@@ -101,6 +101,14 @@ public class WebSocketReqHandler
                     }
 
                     break;
+                case "FileParseReq":
+                    var fileparse = b.GetValue("data")?.ToObject<FileParseReq>();
+                    if (fileparse is not null)
+                    {
+                        var bytes = Convert.FromBase64String(fileparse.B64Data);
+                        Program.Sniffer.AddPcap(bytes);
+                    }
+                    break;
                 default:
                     if (cmd is null) cmd = "????";
                     var stri = JsonConvert.SerializeObject(new WSPacket()

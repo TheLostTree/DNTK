@@ -80,6 +80,7 @@ export default class BackendSocket{
     }
 
     onWSPacket(packet:WSPacket){
+        console.log(packet.cmd)
         switch(packet.cmd){
             case "PacketNotify":
                 this.emit("PacketNotify", <PacketNotify>packet);

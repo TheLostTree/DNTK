@@ -1,6 +1,7 @@
-﻿
-using DNToolKit.Sniffer;
+﻿using DNToolKit.Sniffer;
 using Serilog;
+using SharpPcap;
+using SharpPcap.LibPcap;
 
 namespace DNToolKit;
 
@@ -10,6 +11,7 @@ public class CaptureDumper
 
     public bool running = false;
     private FileStream stream;
+    private CaptureFileWriterDevice CaptureFileWriter;
     
     public CaptureDumper()
     {
@@ -17,9 +19,29 @@ public class CaptureDumper
         running = true;
         curFile = getFileName();
         Log.Information("Writing new Capture to File {filename}", curFile);
-        stream = new FileStream(Path.Join(dir.FullName, curFile), FileMode.Append);
-        stream.Write(GetHeader());
+
+        CaptureFileWriter = new CaptureFileWriterDevice(Path.Join(dir.FullName, curFile));
+        
+        // rip custom file dumper...
+        // stream = new FileStream(Path.Join(dir.FullName, curFile), FileMode.Append);
+        // stream.Write(GetHeader());
+        // stream.Flush();
+    }
+
+
+
+    public void PcapOnPacketArrival(object sender, PacketCapture e)
+    {
+        Console.WriteLine("pcap");
+        CaptureFileWriter.Write(e.GetPacket());
+    }
+
+    public void Close()
+    {
         stream.Flush();
+        Log.Information("Dumping Finished!");
+        stream = null;
+
     }
 
     public void AddPacketData(byte[] data, UdpHandler.Sender sender)
@@ -32,14 +54,6 @@ public class CaptureDumper
         stream.Flush();
         //footer maybe?
     }
-
-    public void Close()
-    {
-        stream.Flush();
-        Log.Information("Dumping Finished!");
-
-    }
-
     private byte[] GetHeader()
     {
         var header = new byte[4];
@@ -51,6 +65,6 @@ public class CaptureDumper
 
     private string getFileName()
     {
-        return $"{Program.GameMajorVersion}.{Program.GameMinorVersion}_{DateTime.Now:M-dd-yyyy_hh-mm-ss}.dntkap";
+        return $"{Program.GameMajorVersion}.{Program.GameMinorVersion}_{DateTime.Now:M-dd-yyyy_hh-mm-ss}.pcap";
     }
 }

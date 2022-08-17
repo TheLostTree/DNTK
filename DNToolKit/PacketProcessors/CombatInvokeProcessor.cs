@@ -14,6 +14,11 @@ public class CombatInvokeProcessor
         public object CombatData;
     }
 
+    public class CumbatInvukeNotif
+    {
+        public CumbatInvuke[] InvokeList;
+    }
+
     public static UnionCmdPacket.OnionCmd.Cmd? ProcessCombatInvoke(byte[] combatinvokebytes)
     {
         var data = CombatInvocationsNotify.Parser.ParseFrom(combatinvokebytes);
@@ -37,16 +42,21 @@ public class CombatInvokeProcessor
                     break;
                 case CombatTypeArgument.EvtBeingHit:
                     cumbat.CombatData = EvtBeingHitInfo.Parser.ParseFrom(invoke.CombatData);
+                    Log.Information("@{data}", cumbat.CombatData);
                     break;
                 default:
                     cumbat.CombatData = invoke.CombatData.ToBase64();
                     break;
             }
+            
             list.Add(cumbat);
         }
         var onionCmd = new UnionCmdPacket.OnionCmd.Cmd();
         onionCmd.MessageId = (uint)Opcode.CombatInvocationsNotify;
-        onionCmd.Body = list.ToArray();
+        onionCmd.Body = new CumbatInvukeNotif()
+        {
+            InvokeList = list.ToArray()
+        };
         return onionCmd;
         
     }

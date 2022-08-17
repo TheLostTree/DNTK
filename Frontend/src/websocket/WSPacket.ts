@@ -11,15 +11,19 @@ export interface PacketNotifyData{
     PacketHead: PacketHead;
     PacketData: any;
     CmdID: string;
-    Sender: "Server"|"Client";
+    Sender:Sender;
 }
 
+export enum Sender{
+    Server = 0,
+    Client = 1
+}
 
 export interface PacketNotifyDT<T> extends PacketNotifyData{
     PacketHead: PacketHead;
     PacketData: T;
     CmdID: string;
-    Sender: "Server"|"Client";
+    Sender: Sender;
 }
 
 export interface PacketNotify extends WSPacket{

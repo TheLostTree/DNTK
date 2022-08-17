@@ -61,12 +61,13 @@ public class FrontendManager
                     Socket = socket
                 });
                 _webSocketConnections[socket.ConnectionInfo].Start();
+                Log.Information("{amount} connections to ws", _webSocketConnections.Count);
             };
             socket.OnClose = () =>
             {
                 _webSocketConnections[socket.ConnectionInfo].Stop();
                 _webSocketConnections.Remove(socket.ConnectionInfo);
-                Log.Verbose("WS Disconnect received");
+                Log.Information("{amount} connections to ws left", _webSocketConnections.Count);
             };
             socket.OnMessage = (message) => { WebSocketReqHandler.HandleReq(message, _webSocketConnections[socket.ConnectionInfo]); };
         });

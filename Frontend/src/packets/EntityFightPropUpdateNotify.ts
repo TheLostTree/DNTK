@@ -1,5 +1,5 @@
-import type {EntityFightPropUpdateNotify} from "src/messages/EntityFightPropUpdateNotify";
-import type {PacketNotifyDT} from "src/websocket/WSPacket";
+import type {EntityFightPropUpdateNotify} from "../../src/messages/EntityFightPropUpdateNotify";
+import type {PacketNotifyDT} from "../../src/websocket/WSPacket";
 import {world} from "../main";
 import type {Entity} from "../world/entity/Entity";
 import {FightProperties} from "../world/props";

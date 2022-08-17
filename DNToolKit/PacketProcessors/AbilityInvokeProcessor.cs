@@ -18,6 +18,12 @@ public class AbilityInvokeProcessor
         public double TotalTickTime;
         public uint EntityId;
     }
+
+    public class ObilityInvokeNotify
+    {
+        public ObilityInvokeAntree[] Invokes;
+    }
+    
     public static UnionCmdPacket.OnionCmd.Cmd? ProcessAbilityInvoke(byte[] bytes)
     {
 
@@ -69,7 +75,10 @@ public class AbilityInvokeProcessor
         //todo: rename
         var onionCmd = new UnionCmdPacket.OnionCmd.Cmd();
         onionCmd.MessageId = (uint)Opcode.AbilityInvocationsNotify;
-        onionCmd.Body = invokes.ToArray();
+        onionCmd.Body = new ObilityInvokeNotify()
+        {
+            Invokes = invokes.ToArray()
+        };
         return onionCmd;
     }
 }

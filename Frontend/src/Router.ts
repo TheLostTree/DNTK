@@ -2,7 +2,7 @@ import type { PacketNotifyData } from "./websocket/WSPacket";
 import SceneEntityHandle from "./packets/SceneEntityAppearNotify";
 import SceneEntityDisHandle from "./packets/SceneEntityDisappearNotify";
 import CombatInvokeHandle from "./packets/CombatInvocationsNotify"
-// import UnionInvokeHandle from "./packets/UnionCmdNotify"
+import UnionInvokeHandle from "./packets/UnionCmdNotify"
 import EntityFightPropUpdateHandle from "./packets/EntityFightPropUpdateNotify"
 import EvtCreateGadgetHandle from "./packets/EvtCreateGadgetNotify";
 import SceneTeamHandle from "./packets/SceneTeamUpdateNotify";
@@ -16,12 +16,11 @@ export default class Router{
         // it'll be ugly but i dont trust dynamic imports
         this.register("SceneEntityAppearNotify", SceneEntityHandle)
         this.register("SceneEntityDisappearNotify", SceneEntityDisHandle)
-        // this.register("CombatInvocationsNotify", CombatInvokeHandle)
+        this.register("CombatInvocationsNotify", CombatInvokeHandle)
         this.register("EvtCreateGadgetNotify", EvtCreateGadgetHandle)
         this.register("EntityFightPropUpdateNotify", EntityFightPropUpdateHandle)
         this.register("SceneTeamUpdateNotify", SceneTeamHandle)
-
-        // this.register("UnionCmdNotify", UnionInvokeHandle)
+        this.register("UnionCmdNotify", UnionInvokeHandle)
     }
     public register(path: string, handler: (pkt: PacketNotifyData)=> void){
         this.routes[path] = handler;

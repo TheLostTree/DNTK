@@ -2,6 +2,8 @@
     import logo from './assets/svelte.png'
     import {backendSocket} from "./main";
     import ConsoleWindow from "./lib/ConsoleWindow.svelte";
+    import UploadPcapButton from './lib/UploadPcapButton.svelte';
+    import DamageWindow from './lib/DamageWindow.svelte';
 
 
     function testReq(){
@@ -24,6 +26,9 @@
     <p>i learned html in 3rd grade and never again pls don't judge</p> <br>
     <ConsoleWindow/>
 
+    <DamageWindow></DamageWindow>
+
+    <UploadPcapButton/>
     <br>
 
     <button on:click={testReq}>test send</button>

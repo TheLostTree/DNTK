@@ -16,6 +16,8 @@ public class Sniffer
     private Thread _workingThread;
     private ConcurrentQueue<RawCapture> _packetQueue;
     private UdpHandler _udpHandler;
+
+    private object lockObject = new();
     
     public Sniffer()
     {
@@ -24,6 +26,7 @@ public class Sniffer
 
     public void OnPacketArrival(object sender, PacketCapture e)
     {
+        Program.CaptureDumper.PcapOnPacketArrival(sender, e);
         _packetQueue.Enqueue(e.GetPacket());
     }
 
@@ -38,12 +41,35 @@ public class Sniffer
         _workingThread.Start();
     }
 
+    public void AddPcap(byte[] bytes)
+    {
+
+        lock (lockObject)
+        {
+            //i dont like this but the library calls for it...
+            File.WriteAllBytes("temp.pcap", bytes);
+            var pcap = new CaptureFileReaderDevice("temp.pcap");
+        
+            pcap.OnPacketArrival += OnPacketArrival;
+            pcap.Open();
+            pcap.Filter = "udp portrange 22101-22102";
+        
+            //this returns when EOF
+            pcap.Capture();
+            
+            File.Delete("temp.pcap");
+            pcap.Close();
+        }
+    }
+
     public void SharpPcapCapturer()
     {
         _pcapDevice = GetPcapDevice();
 
         _pcapDevice.OnPacketArrival += OnPacketArrival;
-        int readTimeout = 1000;
+        //_pcapDevice.OnPacketArrival += Program.CaptureDumper.PcapOnPacketArrival;
+        
+        const int readTimeout = 1000;
         _pcapDevice.Open(DeviceModes.Promiscuous | DeviceModes.DataTransferUdp | DeviceModes.NoCaptureLocal, readTimeout);
         _pcapDevice.Filter = "udp portrange 22101-22102";
         _pcapDevice.StartCapture();
