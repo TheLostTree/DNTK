@@ -35,7 +35,7 @@ namespace DNToolKit.Packet
 
             if (Keys.ContainsKey(firstBytes))
             {
-                Log.Debug("Key Found, First Bytes: {a}", firstBytes);
+                // Log.Debug("Key Found, First Bytes: {a}", firstBytes);
                 return MTKey.FromBase64(Keys[firstBytes]);
             }
 

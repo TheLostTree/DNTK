@@ -21,7 +21,7 @@ public class Program
     private static string _configName = "./config.json";
     private static TaskCompletionSource tcs = new TaskCompletionSource();
 
-    public static CaptureDumper CaptureDumper;
+    public static PcapDumper PcapDumper;
 
     public static void Main(string[] args)
     {
@@ -47,7 +47,7 @@ public class Program
         }
         
 
-        CaptureDumper = new CaptureDumper();
+        PcapDumper = new PcapDumper();
 
         Sniffer = new Sniffer.Sniffer();
 

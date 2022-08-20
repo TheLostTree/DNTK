@@ -17,24 +17,30 @@ namespace DNToolKit.PacketProcessors;
 public class PacketProcessor
 {
     private readonly ConcurrentQueue<EncryptedPacket> Queue = new();
-    private bool _running = false;
 
     private static readonly RSA ClientPrivate = RSA.Create();
     private MTKey? _key;
-    private MTKey? _sessionKey = null;
+    private ValueFlag<MTKey> _sessionKey = new();
   
 
     private bool _useSessionKey = false;
-    private ulong _tokenReqSendTime;
-    private ulong _tokenRspServerKey;
+    private ValueFlag<ulong> _tokenReqSendTime = new ValueFlag<ulong>();
+    private ValueFlag<ulong> _tokenRspServerKey = new ValueFlag<ulong>();
+    
     private Thread _workingThread;
 
     private byte _timesBFed;
+    bool _running;
 
+    private long count = 0;
+
+    public int len()
+    {
+        return Queue.Count;
+    }
     public PacketProcessor()
     {
         _running = true;
-        
         //todo: take from a file
         ClientPrivate.FromXmlString(Program.Config.ClientPrivateRSA);
         
@@ -42,30 +48,38 @@ public class PacketProcessor
         {
             Name = "PacketProcessor",
         };
-        
+        _workingThread.Start();
         _timesBFed = 0;
     }
 
     public void Reset()
     {
         Queue.Clear();
+        _tokenRspServerKey = new ValueFlag<ulong>();
+        _tokenReqSendTime = new ValueFlag<ulong>();
+        _useSessionKey = false;
+        _sessionKey = new ValueFlag<MTKey>();
+        _key = null;
+        _timesBFed = 0;
+        count = 0;
     }
 
     public void AddPacket(byte[] data, UdpHandler.Sender sender)
     {
-        if (!_running) return;
         if(!_workingThread.IsAlive) _workingThread.Start();
         Queue.Enqueue(new EncryptedPacket(data, sender));
     }
-
     public void Stop()
     {
-        _running = false;
         if (_workingThread.IsAlive)
         {
-            if(!_workingThread.Join(10000)) _workingThread.Interrupt();
+            _running = false;
+            _workingThread.Join();
+            
+            // if(!_workingThread.Join(10000)) _workingThread.Interrupt();
         }
         Log.Information("PacketProcessor stopped...");
+        Log.Information($"{Queue.Count} packets leftover...");
 
     }
 
@@ -75,51 +89,67 @@ public class PacketProcessor
         {
             while (Queue.TryDequeue(out var encryptedPacket))
             {
-                var item = encryptedPacket.Data;
-                {
-                    if(!_useSessionKey){
-                        _key ??= KeyRecovery.FindKey(item);
-                        _key?.Crypt(item);
-                    }
-                    else
+
+                // File.AppendAllText("./ihatelifept2.txt", $"{encryptedPacket}\n");
+
+                    var item = encryptedPacket.Data;
                     {
-                        if(_sessionKey is null)
-                        {
-                            Log.Debug("Bruteforcing Key...");
-                            //Program.TestBF((long)tokenReqSendTime, tokenRspServerKey, item);
-                            _timesBFed++;
-                            _sessionKey = KeyBruteForcer.BruteForce(item, (long)_tokenReqSendTime, _tokenRspServerKey);
+                        if(!_useSessionKey){
+                            _key ??= KeyRecovery.FindKey(item);
+                            _key?.Crypt(item);
                         }
-                        if(_sessionKey is null) Log.Warning("something went wrong!");
-                        _sessionKey?.Crypt(item);
-                        if (_timesBFed > 10)
+                        else
                         {
-                            Log.Error("Brute forcing has failed many times, so make sure you login on a freshly launched client. Or something else could have happened idk");
-                            Program.Stop();
+                            if(!_sessionKey.HasBeenSet())
+                            {
+                                Log.Debug("Bruteforcing Key...");
+                                //Program.TestBF((long)tokenReqSendTime, tokenRspServerKey, item);
+                                _timesBFed++;
+                                Task.WaitAll(new Task[]
+                                {
+                                    _tokenReqSendTime.TaskFlag(),
+                                    _tokenRspServerKey.TaskFlag()
+                                });
+                                _sessionKey.SetValue(KeyBruteForcer.BruteForce(item, (long)_tokenReqSendTime.Value, _tokenRspServerKey.Value));
+                            }
+                            if(!_sessionKey.HasBeenSet()) Log.Warning("something went wrong!");
+                            _sessionKey.Value?.Crypt(item);
+                            
+                            if (_timesBFed > 10)
+                            {
+                                Log.Error("Brute forcing has failed many times, so make sure you login on a freshly launched client. Or something else could have happened idk");
+                                Program.Stop();
+                            }
                         }
-                    }
-                    if (item.GetUInt16(0, true) == 0x4567)
-                    {
-                        ParsePacketFromData(encryptedPacket);
-                    }
-                    else if(_sessionKey is null)
-                    {
-                        //we may need to bruteforce
-                        Log.Warning("Encrypted Packet got through lol");
-                        //should be fine because we store the time 
-                        Queue.Enqueue(encryptedPacket);
-                    }
-                    else
-                    {
-                      Log.Warning("There was a false positive with the bruteforcer somehow");
+                        if (item.GetUInt16(0, true) == 0x4567)
+                        {
+                            ParsePacketFromData(encryptedPacket);
+                        }
+                        else if(!_sessionKey.HasBeenSet())
+                        {
+                            //we may need to bruteforce
+                            Log.Warning("Encrypted Packet got through lol");
+                            // _sessionKey.TaskFlag().Wait();
+                            //should be fine because we store the time 
+                            Queue.Enqueue(encryptedPacket);
+                        }
+                        else
+                        {
+                          Log.Warning("There was a false positive with the bruteforcer somehow");
+                          Log.Information("@{slay}" ,encryptedPacket.Data);
+                        }
                     }
                 }
-            }
             Thread.Sleep(50);
+            // Log.Debug("hi");
+
         }
+        
+        Log.Debug("hadfasfadsi");
 
         // SpinWait.SpinUntil(()=>Queue.IsEmpty);
     }
+    
     
     private void ParsePacketFromData(EncryptedPacket encryptedPacket)
     {
@@ -135,17 +165,19 @@ public class PacketProcessor
             };
             
             var type = packet.PacketType;
-            if (type == Opcode.GetPlayerTokenReq)
-            {
-                _tokenReqSendTime = packet.Metadata.SentMs;
-            };
+
+            Log.Information($"{count++} {type}");
+
             if (type == Opcode.GetPlayerTokenRsp)
             {
+                //ideally we do it based on tokenreq but unless your ping is like 3000 we should be fine
+                _tokenReqSendTime.SetValue(packet.Metadata.SentMs);
+                
                 var tokenRsp = packet.PacketData as GetPlayerTokenRsp;
                 if (tokenRsp?.EncryptedSeed is not null)
                 {
                     var key = ClientPrivate.Decrypt(Convert.FromBase64String(tokenRsp.EncryptedSeed), RSAEncryptionPadding.Pkcs1);
-                    _tokenRspServerKey = key.GetUInt64(0,true);
+                    _tokenRspServerKey.SetValue(key.GetUInt64(0,true));
                     _useSessionKey = true;
                 }
                 else
@@ -197,8 +229,8 @@ public class PacketProcessor
 
 
     }
-    
-    public class FakeCINPacket: Packet.Packet
+
+    private class FakeCINPacket: Packet.Packet
     {
         public CombatInvokeProcessor.CumbatInvukeNotif DummyPacketData;
         public override object? GetObj(WsWrapper.WsType wsType)
@@ -232,8 +264,8 @@ public class PacketProcessor
             return null;
         }
     }
-    
-    public class FakeAINPacket: Packet.Packet
+
+    private class FakeAINPacket: Packet.Packet
     {
         public AbilityInvokeProcessor.ObilityInvokeNotify DummyPacketData;
         public override object? GetObj(WsWrapper.WsType wsType)

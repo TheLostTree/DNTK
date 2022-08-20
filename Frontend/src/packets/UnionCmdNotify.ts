@@ -9,7 +9,7 @@ export default function handle(data: PacketNotifyDT<UnionCmdNotify>) {
 
     //the sent data is acutlaly lying to you sorry it doesnt match the interface
 
-    console.log(data.PacketData)
+    // console.log(data.PacketData)
 
     for(let cmd of data.PacketData.CmdList){
         router.handle(cmd.MessageId == AbilityInvokeCmdId ? "AbilityInvocationsNotify" : "CombatInvocationsNotify", {

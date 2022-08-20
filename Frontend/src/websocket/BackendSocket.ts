@@ -70,6 +70,7 @@ export default class BackendSocket{
     }
 
     send(msg: string | object){
+        console.log(msg)
         if(typeof msg === "object"){
             let data = JSON.stringify(msg);
             console.log(data)
@@ -80,13 +81,13 @@ export default class BackendSocket{
     }
 
     onWSPacket(packet:WSPacket){
-        console.log(packet.cmd)
+        // console.log(packet.cmd)
         switch(packet.cmd){
             case "PacketNotify":
                 this.emit("PacketNotify", <PacketNotify>packet);
                 break;
             default:
-                console.log("unknown packet: ", packet.cmd);
+                // console.log("unknown packet: ", packet.cmd);
                 break;
         }
     }

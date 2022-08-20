@@ -11,7 +11,8 @@ public class UdpHandler
     //todo: maybe sync the kcp update
     private KCP? _client;
     private KCP? _server;
-    private PacketProcessor? _processor;
+    private PacketProcessor _processor;
+
     
     public UdpHandler()
     {
@@ -27,9 +28,7 @@ public class UdpHandler
         
         var sender = udpPacket.DestinationPort is 22101 or 22102 ? Sender.Client : Sender.Server;
         var packetBytes = udpPacket.PayloadData;
-
-
-        // Log.Information($"Received {packetBytes.Length} bytes");
+        
         if(packetBytes.Length == 20)
         {
             try
@@ -46,20 +45,20 @@ public class UdpHandler
                         if (sender == Sender.Server)
                         {
                             Log.Debug("Server Handshake : {Conv}, {Token}", conv, token);
-                            _processor ??= new PacketProcessor();
-                            
+                            _processor.Reset();
+                            _client?.Stop();
+                            _server?.Stop();
                             _client = new KCP(conv, token,Sender.Client,_processor);
                             _server = new KCP(conv, token,Sender.Server,_processor);
                         }
                         break;
                     case 0x194:
-                        Log.Information($"{sender} disconnected");
-                        _client?.Stop();
-                        _server?.Stop();
+                        if (sender == Sender.Server) break;
                         if (_client is not null)
                         {
-                            _processor?.Stop();
-                            _processor = null;
+                            //i will not stop the processor bc im really really sad rn
+                            
+                            Log.Information($"{sender} disconnected");
                         }
                         break;
                     case 0xFF:                                  
@@ -80,9 +79,7 @@ public class UdpHandler
         if (_client is not null && _server is not null)
         {
             _ = Sender.Client == sender ? _client.Input(packetBytes) : _server.Input(packetBytes);
-        } 
-        
-        //Log.Information($"Ignoring {packetBytes.Length} bytes going to {destination}");
+        }
 
     }
     public enum Sender
@@ -91,11 +88,16 @@ public class UdpHandler
         Client
     }
 
+    public void report()
+    {
+        Console.WriteLine(_processor.len());
+    }
+
     public void Close()
     {
         _client?.Stop();
         _server?.Stop();
-        _processor?.Stop();
+        _processor.Stop();
         Log.Information("UdpHandler stopped...");
     }
 }

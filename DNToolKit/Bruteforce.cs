@@ -43,7 +43,7 @@ public class KeyBruteForcer
                 return new MTKey(seed);
             }
         }
-        Log.Error($"Cannot find seed!");
+        Log.Error($"Cannot find seed! @{testBuffer} : {senttime} : {serverKey}");
         return null;
     }
 }

@@ -14,7 +14,7 @@ function parseAvatars(){
     let result = {};
     for(let avatar of AvatarExcel){
         let name = getText(avatar.nameTextMapHash);
-        result[name] = avatar.id;
+        result[avatar.id] = name;
     }
     return result;
 }
@@ -24,7 +24,7 @@ function parseGadgets(){
     let result = {};
     for(let gadget of GadgetExcel){
         let name = gadget.jsonName// == "" ? gadget.id: gadget.jsonName;
-        result[name] = gadget.id;
+        result[gadget.id] = name;
     }
     return result;
 }
@@ -33,7 +33,7 @@ function parseMonsters(){
     let result = {};
     for(let monster of MonsterExcel){
         let name = getText(monster.nameTextMapHash);
-        result[name] = monster.id;
+        result[monster.id] = name;
     }
     return result;
 }

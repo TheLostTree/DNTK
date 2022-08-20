@@ -12,9 +12,7 @@
 <div class="table">
     <div class="tr thead">
         <div class="time">Time</div>
-
         <div class="attacker">attacker</div>
-
     </div>
     <div class="tbody">
         <VirtualList items={items} let:item bind:start bind:end>

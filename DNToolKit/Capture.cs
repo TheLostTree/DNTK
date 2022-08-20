@@ -5,7 +5,7 @@ using SharpPcap.LibPcap;
 
 namespace DNToolKit;
 
-public class CaptureDumper
+public class Capture
 {
     public string curFile;
 
@@ -13,29 +13,19 @@ public class CaptureDumper
     private FileStream stream;
     private CaptureFileWriterDevice CaptureFileWriter;
     
-    public CaptureDumper()
+    public Capture()
     {
         var dir = Directory.CreateDirectory(Program.Config.CaptureFolder);
         running = true;
         curFile = getFileName();
         Log.Information("Writing new Capture to File {filename}", curFile);
-
-        CaptureFileWriter = new CaptureFileWriterDevice(Path.Join(dir.FullName, curFile));
         
         // rip custom file dumper...
-        // stream = new FileStream(Path.Join(dir.FullName, curFile), FileMode.Append);
-        // stream.Write(GetHeader());
-        // stream.Flush();
+        stream = new FileStream(Path.Join(dir.FullName, curFile), FileMode.Append);
+        stream.Write(GetHeader());
+        stream.Flush();
     }
-
-
-
-    public void PcapOnPacketArrival(object sender, PacketCapture e)
-    {
-        Console.WriteLine("pcap");
-        CaptureFileWriter.Write(e.GetPacket());
-    }
-
+    
     public void Close()
     {
         stream.Flush();
@@ -65,6 +55,6 @@ public class CaptureDumper
 
     private string getFileName()
     {
-        return $"{Program.GameMajorVersion}.{Program.GameMinorVersion}_{DateTime.Now:M-dd-yyyy_hh-mm-ss}.pcap";
+        return $"{Program.GameMajorVersion}.{Program.GameMinorVersion}_{DateTime.Now:M-dd-yyyy_hh-mm-ss}.dntkap";
     }
 }

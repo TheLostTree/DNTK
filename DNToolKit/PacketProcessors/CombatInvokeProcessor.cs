@@ -42,7 +42,7 @@ public class CombatInvokeProcessor
                     break;
                 case CombatTypeArgument.EvtBeingHit:
                     cumbat.CombatData = EvtBeingHitInfo.Parser.ParseFrom(invoke.CombatData);
-                    Log.Information("@{data}", cumbat.CombatData);
+                    // Log.Information("@{data}", cumbat.CombatData);
                     break;
                 default:
                     cumbat.CombatData = invoke.CombatData.ToBase64();

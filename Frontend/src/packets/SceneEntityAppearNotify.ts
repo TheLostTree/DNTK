@@ -15,6 +15,6 @@ export default function handle(data: PacketNotifyDT<SceneEntityAppearNotify>){
                 
         world.registerEntity(Entity.fromSceneEntity(entity), data.PacketData.AppearType)
     }
-    console.log(`Registered ${data.PacketData.EntityList.length} entities...`)
+    // console.log(`Registered ${data.PacketData.EntityList.length} entities...`)
 
 }

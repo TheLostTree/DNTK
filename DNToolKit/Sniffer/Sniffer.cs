@@ -1,5 +1,6 @@
 ﻿using System.Collections.Concurrent;
 using System.Net.NetworkInformation;
+using System.Text;
 using PacketDotNet;
 using Serilog;
 using SharpPcap;
@@ -11,54 +12,90 @@ public class Sniffer
 {
 
     private LibPcapLiveDevice _pcapDevice;
-    
-    public bool Running;
-    private Thread _workingThread;
-    private ConcurrentQueue<RawCapture> _packetQueue;
     private UdpHandler _udpHandler;
 
     private object lockObject = new();
     
     public Sniffer()
     {
-        _packetQueue = new();
     }
 
     public void OnPacketArrival(object sender, PacketCapture e)
     {
-        Program.CaptureDumper.PcapOnPacketArrival(sender, e);
-        _packetQueue.Enqueue(e.GetPacket());
+        Program.PcapDumper.PcapOnPacketArrival(sender, e);
+        _udpHandler.HandleRawCapture(e.GetPacket());
     }
 
     public void Start()
     {
         Log.Information("SharpPcap {0}, StartLiveCapture", (object)Pcap.SharpPcapVersion);
-        Running = true;
         SharpPcapCapturer();
-        _workingThread = new Thread(ProcessPacketQueue);
-        _workingThread.Name = "ProcessPacketQueue";
         _udpHandler = new UdpHandler();
-        _workingThread.Start();
     }
-
+    
     public void AddPcap(byte[] bytes)
     {
 
         lock (lockObject)
         {
             //i dont like this but the library calls for it...
-            File.WriteAllBytes("temp.pcap", bytes);
-            var pcap = new CaptureFileReaderDevice("temp.pcap");
+
+            string tempFilePathWithFileName = Path.GetTempFileName( );
+            File.WriteAllBytes(tempFilePathWithFileName, bytes);
+            var pcap = new CaptureFileReaderDevice(tempFilePathWithFileName);
+
+            Log.Information(DateTime.Now.ToString("hh:mm:ss t z"));
+            List<RawCapture> bs = new();
         
-            pcap.OnPacketArrival += OnPacketArrival;
+            pcap.OnPacketArrival += delegate(object sender, PacketCapture capture)
+            {
+                bs.Add(capture.GetPacket());
+            };
+            
             pcap.Open();
             pcap.Filter = "udp portrange 22101-22102";
-        
+
             //this returns when EOF
             pcap.Capture();
-            
-            File.Delete("temp.pcap");
             pcap.Close();
+            //i guessed this lmfao
+            bs.Sort((x, y)=>x.Timeval.Date.Ticks < y.Timeval.Date.Ticks ? -1 : 1);
+
+            var a = new List<string>();
+
+            var count = 0;
+            foreach (var rawCapture in bs)
+            {
+                
+                //slay
+                a.Add($"{rawCapture.Timeval.Date.Ticks}");
+
+                var udpPacket = PacketDotNet.Packet.ParsePacket(LinkLayers.Ethernet,
+                        rawCapture.Data)
+                    .Extract<IPv4Packet>()
+                    .Extract<UdpPacket>();
+                var packetBytes = udpPacket.PayloadData;
+                
+                
+                a.Add($"{Convert.ToHexString(packetBytes)}");
+
+                count++;
+                _udpHandler.HandleRawCapture(rawCapture);
+                if (count == 50)
+                {
+                    count = 0;
+                    Task.Delay(70).Wait();
+                }
+            }
+            File.WriteAllLines("./ihatelife.txt", a.ToArray());
+            File.Delete(tempFilePathWithFileName);
+
+
+            Task.Delay(10000).Wait();
+            Log.Information(DateTime.Now.ToString("hh:mm:ss t z"));
+
+            _udpHandler.report();
+
         }
     }
 
@@ -80,38 +117,13 @@ public class Sniffer
 
 
     }
-
-
-    public void ProcessPacketQueue()
-    {
-        while (Running)
-        {
-            try
-            {
-                if (_packetQueue.TryDequeue(out var rawPacket))
-                {
-                    _udpHandler.HandleRawCapture(rawPacket);
-                }
-                else
-                {
-                    Thread.Sleep(10);
-                }
-            }
-            catch (Exception e)
-            {
-                Log.Error(e.ToString());
-                Thread.Sleep(10);
-            }
-        }
-    }
+    
     public void Close()
     {
         _pcapDevice.StopCapture();
         Log.Information("-- Capture stopped.");
         Log.Information(_pcapDevice.Statistics.ToString());
-        Running = false;
         _udpHandler.Close();
-        _workingThread.Join();
         Log.Information("Sniffer stopped...");
 
     }

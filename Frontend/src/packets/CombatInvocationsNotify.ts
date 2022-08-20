@@ -4,6 +4,9 @@ import type { EvtBeingHitInfo } from "src/messages/EvtBeingHitInfo";
 import type { CombatInvocationsNotify } from "../../src/messages/CombatInvocationsNotify";
 import { CombatTypeArgument } from "../../src/messages/CombatTypeArgument";
 import { PacketNotifyDT, Sender } from "../../src/websocket/WSPacket";
+import { world } from "../../src/main";
+import {Entity} from "../world/entity/Entity"
+import FriendlyNames from "../resources/FriendlyNames.json"
 
 
 export default function handle(data: PacketNotifyDT<CombatInvocationsNotify>){
@@ -31,8 +34,31 @@ function handleHit(data: EvtBeingHitInfo, packet: PacketNotifyDT<CombatInvocatio
         time: BigInt(packet.PacketHead.SentMs.toString())!,
         hitInfo: data
     })
+    
+    const attackerEntity = world.getOwner(world.entityList.get(data.AttackResult.AttackerId)) || world.entityList.get(data.AttackResult.AttackerId);
+    const defenderEntity = world.entityList.get(data.AttackResult.DefenseId);
+
+    // const owner = world.getOwner(attackerEntity);
+
+    let ActualData = {
+        //todo:maybe figure out an enum thing for this
+        Element: data.AttackResult.ElementType, 
+        Damage: data.AttackResult.Damage,
+        IsCrit: data.AttackResult.IsCrit,
+        Attacker: data.AttackResult.AttackerId,
+        Defender: data.AttackResult.DefenseId,
+    }
+
+    ActualData.Attacker = attackerEntity ? world.getFriendlyName(attackerEntity) || ActualData.Attacker : ActualData.Attacker;
+    ActualData.Defender = defenderEntity ? world.getFriendlyName(defenderEntity) || ActualData.Defender : ActualData.Defender;
+    console.log(`${ActualData.Attacker} dealt ${ActualData.Damage} damage to ${ActualData.Defender}`)
+
+
 }
 
 function handleMove(data: EntityMoveInfo){
-    //console.log(data)
+    const entity = world.entityList.get(data.EntityId);
+    if(!entity) return;
+    entity.MotionInfo = data.MotionInfo;
+    //todo: maybe handle emit a EntityMove event
 }

@@ -131,17 +131,17 @@ namespace DNToolKit.Packet
     }
     public class MiHoYoKeyGenerator
     {
+        private static MT19937_64 mt = new MT19937_64();
         public static byte[] GenerateKey(ulong source)
         {
-            MT19937_64 mt1993764_1 = new MT19937_64();
-            mt1993764_1.Initialize(source);
-            MT19937_64 mt1993764_2 = new MT19937_64();
-            mt1993764_2.Initialize(mt1993764_1.GenerateULong());
-            long num = (long)mt1993764_2.GenerateULong();
+            mt.Initialize(source);
+            var a = mt.GenerateULong();
+            mt.Initialize(a);
+            _ = (long)mt.GenerateULong();
             byte[] key = new byte[4096];
             for (int index1 = 0; index1 < key.Length; index1 += 8)
             {
-                byte[] bytes = BitConverter.GetBytes(SwapBytes(mt1993764_2.GenerateULong()));
+                byte[] bytes = BitConverter.GetBytes(SwapBytes(mt.GenerateULong()));
                 for (int index2 = index1; index2 < index1 + 8; ++index2)
                     key[index2] = bytes[index2 % 8];
             }
@@ -152,15 +152,15 @@ namespace DNToolKit.Packet
         {
             //todo: look into if i really need to instantiate two of these...
             //i think i can get by with only one static one
-            var mt1993764_1 = new MT19937_64();
-            mt1993764_1.Initialize(seed);
-            var mt1993764_2 = new MT19937_64();
-            mt1993764_2.Initialize(mt1993764_1.GenerateULong());
-            _ = (long)mt1993764_2.GenerateULong();
+
+            mt.Initialize(seed);
+            var a = mt.GenerateULong();
+            mt.Initialize(a);
+            _ = (long)mt.GenerateULong();
             byte[] newkey = new byte[length];
             for (int index1 = 0; index1 < length; index1 += 8)
             {
-                byte[] bytes = BitConverter.GetBytes(SwapBytes(mt1993764_2.GenerateULong()));
+                byte[] bytes = BitConverter.GetBytes(SwapBytes(mt.GenerateULong()));
                 for (int index2 = index1; index2 < index1 + 8; ++index2)
                     newkey[index2] = bytes[index2 % 8];
             }

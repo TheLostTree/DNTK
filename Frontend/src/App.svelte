@@ -41,10 +41,14 @@
         Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
+    :global(body){
+        color: #000;
+    }
     main {
         text-align: center;
         padding: 1em;
         margin: 0 auto;
+        /* color: #FFF; */
     }
 
     img {
