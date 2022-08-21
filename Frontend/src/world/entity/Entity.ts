@@ -8,6 +8,7 @@ import type {PropValue} from "../../messages/PropValue";
 import type {SceneEntityInfo} from "../../messages/SceneEntityInfo";
 import type {EvtCreateGadgetNotify} from "../../messages/EvtCreateGadgetNotify";
 import type {MPLevelEntityInfo} from "../../messages/MPLevelEntityInfo";
+import FriendlyNames from "../../resources/FriendlyNames.json";
 
 
 export class Entity {
@@ -17,6 +18,8 @@ export class Entity {
 
     PropList: Record<number, PropValue> = {};
     FightPropList: Record<number, number> = {};
+
+    name: string;
 
 
     //i think this is generally only in Gadget but meh
@@ -56,6 +59,11 @@ export class Entity {
     setFightProp(prop: FightProperties, value: number) {
         return this.FightPropList[prop] = value;
     }
+
+    getFriendlyName(): string{
+        return "Unknown"
+    }
+
 
     static isGadget(entity: Entity): entity is Gadget {
         return typeof (<Gadget>entity).Gadget !== "undefined"
@@ -125,6 +133,7 @@ export class Entity {
         let a = new MPLevel();
         a.EntityId = entityInfo.EntityId;
         a.AuthorityPeerId = entityInfo.AuthorityPeerId
+        return a;
     }
 
 }
@@ -133,21 +142,38 @@ export class MPLevel extends Entity {
     EntityType = ProtEntityType.PROT_ENTITY_TYPE_MP_LEVEL
     //this entity doesnt have anything special
     AuthorityPeerId:number;
+
+    getFriendlyName(): string{
+        return "World"
+
+    }
 }
 
 export class Avatar extends Entity {
     EntityType = ProtEntityType.PROT_ENTITY_TYPE_AVATAR
     Avatar: SceneAvatarInfo;
+
+    getFriendlyName(): string{
+        return FriendlyNames[this.Avatar.AvatarId] || this.Avatar.AvatarId.toString();
+    }
 }
 
 export class Monster extends Entity {
     EntityType = ProtEntityType.PROT_ENTITY_TYPE_MONSTER
     Monster: SceneMonsterInfo;
+
+    getFriendlyName(): string{
+        return FriendlyNames[this.Monster.MonsterId] || this.Monster.MonsterId.toString();
+    }
 }
 
 
 export class Gadget extends Entity {
     EntityType = ProtEntityType.PROT_ENTITY_TYPE_GADGET
     Gadget: SceneGadgetInfo;
+
+    getFriendlyName(): string{
+        return FriendlyNames[this.Gadget.GadgetId] || this.Gadget.GadgetId.toString();
+    }
 }
 

@@ -1,6 +1,5 @@
 import {Entity} from "./entity/Entity";
 import {VisionType} from "../messages/VisionType";
-import FriendlyNames from "../resources/FriendlyNames.json";
 
 export default class World {
 
@@ -15,27 +14,35 @@ export default class World {
         this.entityList.delete(EntityId);
     }
 
-    getOwner(entity: Entity){
+
+    //this isnt really working
+
+    getOwner(entityId: number){
+        const entity = this.entityList.get(entityId);
         if(!entity) return undefined
         if(Entity.isGadget(entity)){
-            return this.entityList.get(entity.OwnerId) || entity;
+            return this.entityList.get(entity.OwnerId);
         }
-        return entity
+        return undefined
     }
 
-    getFriendlyName(entity: Entity){
-        let id = 0;
-        if(Entity.isAvatar(entity)){
-            id = entity.Avatar.AvatarId;
+    getRootOwner(entityId: number){
+        
+        const entity = this.entityList.get(entityId);
+        
+        const newEntity = this.getOwner(entityId)
+
+        if(!newEntity) {
+            return entity
         }
-        if(Entity.isGadget(entity)){
-            id = entity.Gadget.GadgetId;
+        if(newEntity.OwnerId == entityId) {
+            return newEntity
         }
-        if(Entity.isMonster(entity)){
-            id = entity.Monster.MonsterId;
-        }
-        // console.log(`${id} : ${FriendlyNames[id]}`)
-        return FriendlyNames[id];
+
+
+        return this.getRootOwner(newEntity.EntityId)
+        
+
     }
 
 

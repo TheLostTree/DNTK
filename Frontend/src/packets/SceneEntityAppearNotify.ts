@@ -11,7 +11,10 @@ export default function handle(data: PacketNotifyDT<SceneEntityAppearNotify>){
     for(let entity of data.PacketData.EntityList){
 
         //we rely on sceneteam to update avatar entities
-        if(entity.EntityType == ProtEntityType.PROT_ENTITY_TYPE_AVATAR) continue;
+        if(entity.EntityType == ProtEntityType.PROT_ENTITY_TYPE_AVATAR) {
+            //set the avatar to active state
+            continue;
+        }
                 
         world.registerEntity(Entity.fromSceneEntity(entity), data.PacketData.AppearType)
     }

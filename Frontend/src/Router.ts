@@ -7,6 +7,8 @@ import EntityFightPropUpdateHandle from "./packets/EntityFightPropUpdateNotify"
 import EvtCreateGadgetHandle from "./packets/EvtCreateGadgetNotify";
 import SceneTeamHandle from "./packets/SceneTeamUpdateNotify";
 import EvtDestroyGadgetHandle from "./packets/EvtDestroyGadgetNotify";
+import PlayerEnterSceneInfoHandle from "./packets/PlayerEnterSceneInfoNotify";
+import AbilityInvokeHandle from "./packets/AbilityInvocationsNotify"
 
 
 export default class Router{
@@ -23,6 +25,8 @@ export default class Router{
         this.register("SceneTeamUpdateNotify", SceneTeamHandle)
         this.register("UnionCmdNotify", UnionInvokeHandle)
         this.register("EvtDestroyGadgetNotify", EvtDestroyGadgetHandle)
+        this.register("PlayerEnterSceneInfoNotify", PlayerEnterSceneInfoHandle)
+        this.register("AbilityInvocationsNotify", AbilityInvokeHandle)
     }
     public register(path: string, handler: (pkt: PacketNotifyData)=> void){
         this.routes[path] = handler;

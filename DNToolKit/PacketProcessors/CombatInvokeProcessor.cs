@@ -44,6 +44,10 @@ public class CombatInvokeProcessor
                     cumbat.CombatData = EvtBeingHitInfo.Parser.ParseFrom(invoke.CombatData);
                     // Log.Information("@{data}", cumbat.CombatData);
                     break;
+                case CombatTypeArgument.Unk2700Kpdnfkcmkpg:
+                    //healing packets
+                    cumbat.CombatData = new HealInvoke(Unk2700_BEINCMBJDAA_ClientReq.Parser.ParseFrom(invoke.CombatData));
+                    break;
                 default:
                     cumbat.CombatData = invoke.CombatData.ToBase64();
                     break;
@@ -59,5 +63,20 @@ public class CombatInvokeProcessor
         };
         return onionCmd;
         
+    }
+
+    private struct HealInvoke
+    {
+        public uint TargetId;
+        public uint SourceId;
+        public float HealedAmount;
+        public float ActualAmount;
+        public HealInvoke(Unk2700_BEINCMBJDAA_ClientReq indata)
+        {
+            this.ActualAmount = indata.Unk2700AEIDAJFHBBB;
+            this.HealedAmount = indata.Unk2700JLLFGAIOPGC;
+            this.TargetId = indata.TargetId;
+            this.SourceId = indata.SourceId;
+        }
     }
 }

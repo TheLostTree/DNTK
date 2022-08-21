@@ -145,7 +145,6 @@ public class PacketProcessor
 
         }
         
-        Log.Debug("hadfasfadsi");
 
         // SpinWait.SpinUntil(()=>Queue.IsEmpty);
     }

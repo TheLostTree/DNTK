@@ -16,7 +16,6 @@ export default function handle(data: PacketNotifyDT<SceneTeamUpdateNotify>) {
         {
             if (!world.entityList.get(ent.EntityId))
             {
-                console.log("slay! new avatar "+ ent.EntityId);
                 world.registerEntity(Entity.fromSceneEntity(ent.SceneEntityInfo), VisionType.VISION_TYPE_BORN);
             }
             newAvatars[ent.EntityId] =  world.entityList.get(ent.EntityId);
@@ -28,10 +27,10 @@ export default function handle(data: PacketNotifyDT<SceneTeamUpdateNotify>) {
         if(entity.EntityType == ProtEntityType.PROT_ENTITY_TYPE_AVATAR){
             if(!Object.keys(newAvatars).includes(entityID.toString())){
                 world.deregisterEntity(entityID, VisionType.VISION_TYPE_REMOVE)
-                console.log("slay! no avatar "+ entityID);
             }
         }
     }
-    console.log(Object.keys(newAvatars))
+    if(Object.values(newAvatars).length > 0)
+        console.log(`New Team! ${Object.values(newAvatars).map(e => e.getFriendlyName()).join(", ")}`)
 
 }

@@ -3,7 +3,7 @@
     import {backendSocket} from "./main";
     import ConsoleWindow from "./lib/ConsoleWindow.svelte";
     import UploadPcapButton from './lib/UploadPcapButton.svelte';
-    import DamageWindow from './lib/DamageWindow.svelte';
+    import DamageTable from './lib/DamageTable.svelte'; 
 
 
     function testReq(){
@@ -24,14 +24,16 @@
     <p>currently only by LostTree, and hopefully Algoinde eventually 👉👈</p><br>
 
     <p>i learned html in 3rd grade and never again pls don't judge</p> <br>
+    <DamageTable></DamageTable>
+
     <ConsoleWindow/>
 
-    <DamageWindow></DamageWindow>
-
     <UploadPcapButton/>
+
+
+    
     <br>
 
-    <button on:click={testReq}>test send</button>
 
 </main>
 

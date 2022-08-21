@@ -9,8 +9,15 @@ export default function handle(data: PacketNotifyDT<SceneEntityDisappearNotify>)
         const entity = world.entityList.get(entityId);
 
         //we rely on sceneteam to update avatar entities
-        if(entity?.EntityType == ProtEntityType.PROT_ENTITY_TYPE_AVATAR) continue;
-        world.deregisterEntity(entityId, data.PacketData.DisappearType)
+        if(entity?.EntityType == ProtEntityType.PROT_ENTITY_TYPE_AVATAR){
+            //set the avatar to an inactive state
+            continue;
+        };
+        //wait a bit before deleting it
+        setTimeout(() => {
+            world.deregisterEntity(entityId, data.PacketData.DisappearType)
+        }, 1000);
+        
     }
     // console.log(`Deregistered ${data.PacketData.EntityList.length} entities`)
 }
