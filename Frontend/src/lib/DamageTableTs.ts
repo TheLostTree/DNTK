@@ -1,0 +1,65 @@
+
+
+
+import { writable } from 'svelte/store';
+type row = {
+    Name: string;
+    TotalDamage: number;
+    TotalHealing: number;
+    CritPercent: number;
+}
+
+
+let attackers: Map<string, Attacker> = new Map();
+
+export function AddDamageToTable(data: CombatEvent){
+    const attacker = attackers.get(data.Attacker) || new Attacker(data.Attacker);
+    attacker.AddDamage(data);
+    attackers.set(data.Attacker, attacker);
+}
+
+let attackees = writable([]);
+
+
+function getRows(){
+    attackees.update(()=>{
+        return Array.from(attackers.values())
+    })
+    // console.log(b)
+}
+
+interface CombatEvent{
+    Attacker: string;
+    Damage: number;
+    Healing: number;
+    Crit: boolean;
+}
+
+class Attacker{
+    constructor(name :string){
+        this.Name = name;
+    }
+    Name: string;
+    Damage: number = 0;
+    Healing: number = 0;
+    Crits: number = 0;
+    TotalHits: number = 0;
+
+    AddDamage(data: CombatEvent){
+        this.Damage += data.Damage;
+        this.Healing += data.Healing;
+        this.TotalHits++;
+        if(!(this.Healing == 0))
+            if(data.Crit) this.Crits++;
+    }
+
+    GetRow(){
+        console.log(`${this.Name},${this.Crits} / ${this.TotalHits} = ${this.Crits / this.TotalHits}`)
+        return{
+            Name: this.Name,
+            TotalDamage: this.Damage,
+            TotalHealing: this.Healing,
+            CritPercent: this.Crits / this.TotalHits,
+        }
+    }
+}

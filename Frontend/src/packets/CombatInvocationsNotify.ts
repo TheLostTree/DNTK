@@ -22,7 +22,6 @@ export default function handle(data: PacketNotifyDT<CombatInvocationsNotify>) {
                 break;
             case CombatTypeArgument.COMBAT_TYPE_ARGUMENT_EVT_BEING_HIT:
                 //i only seemed to specially parse the clientside packet for this...
-                if (data.Sender == Sender.Client) continue;
                 handleHit(i.CombatData as EvtBeingHitInfo, data);
                 break;
             case CombatTypeArgument.COMBAT_TYPE_ARGUMENT_FACE_TO_DIR:
@@ -43,6 +42,7 @@ export default function handle(data: PacketNotifyDT<CombatInvocationsNotify>) {
 }
 
 function handleHit(data: EvtBeingHitInfo, packet: PacketNotifyDT<CombatInvocationsNotify>) {
+    if(packet.Sender === Sender.Client) return;
     let attackerEntity = world.getRootOwner(data.AttackResult.AttackerId) || world.entityList.get(data.AttackResult.AttackerId);
 
     if (data.AttackResult.AttackerId == 327155713) {

@@ -27,10 +27,28 @@ public class AbilityInvokeProcessor
     public static UnionCmdPacket.OnionCmd.Cmd? ProcessAbilityInvoke(byte[] bytes)
     {
 
-        List<ObilityInvokeAntree> invokes = new List<ObilityInvokeAntree>();
         var abilityInvocationsNotify = AbilityInvocationsNotify.Parser.ParseFrom(bytes);
-        foreach (var abilityInvokeEntry in abilityInvocationsNotify!.Invokes)
+
+        var invokes = ProcessEntries(abilityInvocationsNotify!.Invokes);
+
+        
+        //todo: rename
+        var onionCmd = new UnionCmdPacket.OnionCmd.Cmd();
+        onionCmd.MessageId = (uint)Opcode.AbilityInvocationsNotify;
+        onionCmd.Body = new ObilityInvokeNotify()
         {
+            Invokes = invokes.ToArray()
+        };
+        return onionCmd;
+    }
+
+    public static List<ObilityInvokeAntree> ProcessEntries(IEnumerable<AbilityInvokeEntry> invokeList)
+    {
+        List<ObilityInvokeAntree> invokes = new List<ObilityInvokeAntree>();
+
+        foreach (var abilityInvokeEntry in invokeList)
+        {
+            
             var th = new ObilityInvokeAntree()
             {
                 ArgumentType = abilityInvokeEntry.ArgumentType,
@@ -42,6 +60,8 @@ public class AbilityInvokeProcessor
                 EntityId = abilityInvokeEntry.EntityId,
                 AbilityData = null
             };
+            
+            
             switch (abilityInvokeEntry.ArgumentType)
             {
                 //todo: HANDLE ALL OF THESE AT LEAST(since gc handles them)
@@ -63,6 +83,16 @@ public class AbilityInvokeProcessor
                 case AbilityInvokeArgument.ActionCreateGadget:
                     th.AbilityData = AbilityActionCreateGadget.Parser.ParseFrom(abilityInvokeEntry.AbilityData);
                     break;
+                case AbilityInvokeArgument.MetaModifierDurabilityChange:
+                    th.AbilityData =
+                        AbilityMetaModifierDurabilityChange.Parser.ParseFrom(abilityInvokeEntry.AbilityData);
+                    break;
+                case AbilityInvokeArgument.MixinDoActionByElementReaction:
+                    th.AbilityData =
+                        AbilityMixinDoActionByElementReaction.Parser.ParseFrom(abilityInvokeEntry.AbilityData);
+                    break;
+                case AbilityInvokeArgument.MetaCommandModifierChangeRequest:
+                    break;
                 default:
                     //default
                     th.AbilityData = abilityInvokeEntry.AbilityData.ToBase64();
@@ -71,14 +101,6 @@ public class AbilityInvokeProcessor
             invokes.Add(th);
         }
 
-        
-        //todo: rename
-        var onionCmd = new UnionCmdPacket.OnionCmd.Cmd();
-        onionCmd.MessageId = (uint)Opcode.AbilityInvocationsNotify;
-        onionCmd.Body = new ObilityInvokeNotify()
-        {
-            Invokes = invokes.ToArray()
-        };
-        return onionCmd;
+        return invokes;
     }
 }

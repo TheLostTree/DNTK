@@ -49,4 +49,14 @@ import fs from "fs"
 fs.writeFileSync("../src/resources/FriendlyNames.json", JSON.stringify(final, null, 4));
 
 
+//turn final into csv
+let csv = "";
+for(let key in final){
+    csv += final[key] + "," + key + "\n"
+}
+
+
+fs.writeFileSync("./csv2.csv", csv)
+
+
 

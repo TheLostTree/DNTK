@@ -194,7 +194,9 @@ public class PacketProcessor
             if (type == Opcode.CombatInvocationsNotify)
             {
                 var list = CombatInvokeProcessor.ProcessCombatInvoke(packet.ProtobufBytes);
-                var fake = new FakeCINPacket()
+                
+                
+                var fake = new FakePacket<CombatInvokeProcessor.CumbatInvukeNotif>()
                 {
                     Metadata = packet.Metadata,
                     PacketType = Opcode.CombatInvocationsNotify,
@@ -208,7 +210,7 @@ public class PacketProcessor
             if (type == Opcode.AbilityInvocationsNotify)
             {
                 var list = AbilityInvokeProcessor.ProcessAbilityInvoke(packet.ProtobufBytes);
-                var fake = new FakeAINPacket()
+                var fake = new FakePacket<AbilityInvokeProcessor.ObilityInvokeNotify>()
                 {
                     Metadata = packet.Metadata,
                     PacketType = Opcode.AbilityInvocationsNotify,
@@ -219,6 +221,36 @@ public class PacketProcessor
                 return;
             }
 
+            if (type == Opcode.ClientAbilityInitFinishNotify)
+            {
+                var cap = ClientAbilityProcessor.HandleClientAbilityInitFinish(packet.ProtobufBytes);
+                var fake = new FakePacket<ClientAbilityProcessor.ClintAbilityInFin>()
+                {
+                    Metadata = packet.Metadata,
+                    PacketType = Opcode.ClientAbilityInitFinishNotify,
+                    Sender = packet.Sender,
+                    DummyPacketData = cap
+                };
+                Program.FrontendManager.AddGamePacket(fake);
+                return;
+            }
+            
+            if (type == Opcode.ClientAbilityChangeNotify)
+            {
+                var cap = ClientAbilityProcessor.HandleClientAbilityChange(packet.ProtobufBytes);
+                var fake = new FakePacket<ClientAbilityProcessor.ClintAbilityChaeg>()
+                {
+                    Metadata = packet.Metadata,
+                    PacketType = Opcode.ClientAbilityChangeNotify,
+                    Sender = packet.Sender,
+                    DummyPacketData = cap
+                };
+                Program.FrontendManager.AddGamePacket(fake);
+                return;
+            }
+            
+            
+            
             Program.FrontendManager.AddGamePacket(packet);
         }
         catch(Exception e)
@@ -228,45 +260,10 @@ public class PacketProcessor
 
 
     }
-
-    private class FakeCINPacket: Packet.Packet
+    
+    private class FakePacket<T>: Packet.Packet
     {
-        public CombatInvokeProcessor.CumbatInvukeNotif DummyPacketData;
-        public override object? GetObj(WsWrapper.WsType wsType)
-        {
-            if (wsType == WsWrapper.WsType.Iridium)
-            {
-
-                Dictionary<string, object> jsonobj = new();
-                jsonobj.Add("packetID", (int)PacketType);
-                jsonobj.Add("protoName", PacketType.ToString());
-                jsonobj.Add("object", DummyPacketData);
-                jsonobj.Add("packet", "");
-                jsonobj.Add("source", (int)Sender);
-
-                
-
-                return jsonobj;
-            }
-            if (wsType == WsWrapper.WsType.DNToolKit)
-            {
-                Dictionary<string, object> jsonobj = new();
-                jsonobj.Add("PacketHead", Metadata);
-                jsonobj.Add("PacketData", DummyPacketData);
-                jsonobj.Add("CmdID", PacketType.ToString());
-                jsonobj.Add("Sender", (int)Sender);
-
-                return jsonobj;
-            }
-
-
-            return null;
-        }
-    }
-
-    private class FakeAINPacket: Packet.Packet
-    {
-        public AbilityInvokeProcessor.ObilityInvokeNotify DummyPacketData;
+        public T DummyPacketData;
         public override object? GetObj(WsWrapper.WsType wsType)
         {
             if (wsType == WsWrapper.WsType.Iridium)

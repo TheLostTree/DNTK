@@ -22,6 +22,7 @@
   "dependencies": {
     "@sveltejs/svelte-virtual-list": "^3.0.1",
     "json-bigint": "^1.0.0",
+    "long": "^5.2.0",
     "ws": "^8.8.1"
   }
 }
