@@ -19,16 +19,16 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2472
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message TowerBriefDataNotify {
-  uint32 total_star_num = 11;
-  uint32 last_floor_index = 8;
-  uint32 schedule_start_time = 15;
-  uint32 next_schedule_change_time = 6;
-  bool is_finished_entrance_floor = 14;
-  uint32 last_level_index = 4;
-  uint32 tower_schedule_id = 5;
+	uint32 total_star_num = 11;
+	uint32 last_floor_index = 8;
+	uint32 schedule_start_time = 15;
+	uint32 next_schedule_change_time = 6;
+	bool is_finished_entrance_floor = 14;
+	uint32 last_level_index = 4;
+	uint32 tower_schedule_id = 5;
 }

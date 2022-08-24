@@ -21,7 +21,6 @@ import "Unk2700_BEGHDPPNMFM.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message StakePlayGalleryInfo {
-  repeated Unk2700_BEGHDPPNMFM record_list = 13;
+	repeated Unk2700_BEGHDPPNMFM record_list = 13;
 }

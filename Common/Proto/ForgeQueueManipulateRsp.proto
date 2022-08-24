@@ -22,14 +22,14 @@ import "ItemParam.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 656
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message ForgeQueueManipulateRsp {
-  ForgeQueueManipulateType manipulate_type = 4;
-  repeated ItemParam extra_output_item_list = 13;
-  repeated ItemParam return_item_list = 10;
-  int32 retcode = 1;
-  repeated ItemParam output_item_list = 9;
+	ForgeQueueManipulateType manipulate_type = 4;
+	repeated ItemParam extra_output_item_list = 13;
+	repeated ItemParam return_item_list = 10;
+	int32 retcode = 1;
+	repeated ItemParam output_item_list = 9;
 }

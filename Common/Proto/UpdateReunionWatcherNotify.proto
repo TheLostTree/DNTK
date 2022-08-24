@@ -21,11 +21,11 @@ import "ReunionWatcherInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5091
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message UpdateReunionWatcherNotify {
-  uint32 mission_id = 3;
-  ReunionWatcherInfo watcher_info = 10;
+	uint32 mission_id = 3;
+	ReunionWatcherInfo watcher_info = 10;
 }

@@ -21,13 +21,13 @@ import "Unk2700_KNGDOIDOFFB.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4805
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2700_EHAMOPKCIGI_ServerNotify {
-  uint32 gallery_id = 11;
-  Unk2700_KNGDOIDOFFB settle_info = 12;
-  uint32 Unk2700_HAOPLFPOLFM = 7;
-  bool is_new_record = 2;
+	uint32 gallery_id = 11;
+	Unk2700_KNGDOIDOFFB settle_info = 12;
+	uint32 Unk2700_HAOPLFPOLFM = 7;
+	bool is_new_record = 2;
 }

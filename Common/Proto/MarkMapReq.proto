@@ -21,20 +21,19 @@ import "MapMarkPoint.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 3466
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message MarkMapReq {
-  MapMarkPoint mark = 8;
-  MapMarkPoint old = 6;
-  Operation op = 9;
+	MapMarkPoint mark = 8;
+	MapMarkPoint old = 6;
+	Operation op = 9;
 
-  enum Operation {
-    OPERATION_ADD = 0;
-    OPERATION_MOD = 1;
-    OPERATION_DEL = 2;
-    OPERATION_GET = 3;
-  }
+	enum Operation {
+		OPERATION_ADD = 0;
+		OPERATION_MOD = 1;
+		OPERATION_DEL = 2;
+		OPERATION_GET = 3;
+	}
 }

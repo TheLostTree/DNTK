@@ -21,10 +21,9 @@ import "Unk2700_LBOAEFMECCP.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message HideAndSeekActivityDetailInfo {
-  repeated Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;
-  repeated uint32 chosen_hunter_skill_list = 4;
-  repeated uint32 unlock_map_list = 13;
-  repeated uint32 chosen_hider_skill_list = 6;
+	repeated Unk2700_LBOAEFMECCP Unk2700_JDMDOOHFNCA = 1;
+	repeated uint32 chosen_hunter_skill_list = 4;
+	repeated uint32 unlock_map_list = 13;
+	repeated uint32 chosen_hider_skill_list = 6;
 }

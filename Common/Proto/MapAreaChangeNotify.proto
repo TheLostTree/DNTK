@@ -21,10 +21,10 @@ import "MapAreaInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 3378
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message MapAreaChangeNotify {
-  repeated MapAreaInfo map_area_info_list = 3;
+	repeated MapAreaInfo map_area_info_list = 3;
 }

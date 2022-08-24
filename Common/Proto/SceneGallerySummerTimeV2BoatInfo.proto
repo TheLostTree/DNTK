@@ -19,10 +19,9 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message SceneGallerySummerTimeV2BoatInfo {
-  uint32 param_1 = 15;
-  uint32 param_3 = 3;
-  uint32 Unk2800_NGGPIECNHJA = 11;
-  uint32 param_2 = 7;
+	uint32 Unk2800_NGGPIECNHJA = 11;
+	uint32 param1 = 15;
+	uint32 param2 = 7;
+	uint32 param3 = 3;
 }

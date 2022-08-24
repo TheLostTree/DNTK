@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2831
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message CancelCityReputationRequestRsp {
-  uint32 city_id = 3;
-  int32 retcode = 2;
-  uint32 request_id = 12;
+	uint32 city_id = 3;
+	int32 retcode = 2;
+	uint32 request_id = 12;
 }

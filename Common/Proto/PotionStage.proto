@@ -21,11 +21,10 @@ import "Unk2700_JLHKOLGFAMI.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message PotionStage {
-  uint32 stage_id = 11;
-  repeated uint32 Unk2700_HFHCCJFDOKA = 2;
-  bool is_open = 15;
-  repeated Unk2700_JLHKOLGFAMI level_list = 14;
-  repeated uint32 Unk2700_LONIJGBDPIG = 13;
+	uint32 stage_id = 11;
+	repeated uint32 Unk2700_HFHCCJFDOKA = 2;
+	bool is_open = 15;
+	repeated Unk2700_JLHKOLGFAMI level_list = 14;
+	repeated uint32 Unk2700_LONIJGBDPIG = 13;
 }

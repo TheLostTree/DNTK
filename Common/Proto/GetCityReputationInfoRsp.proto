@@ -21,12 +21,12 @@ import "CityReputationInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2898
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message GetCityReputationInfoRsp {
-  uint32 city_id = 1;
-  int32 retcode = 4;
-  CityReputationInfo city_reputation_info = 9;
+	uint32 city_id = 1;
+	int32 retcode = 4;
+	CityReputationInfo city_reputation_info = 9;
 }

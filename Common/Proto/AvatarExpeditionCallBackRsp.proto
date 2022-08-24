@@ -21,11 +21,11 @@ import "AvatarExpeditionInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1726
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message AvatarExpeditionCallBackRsp {
-  map<uint64, AvatarExpeditionInfo> expedition_info_map = 9;
-  int32 retcode = 5;
+	map<uint64, AvatarExpeditionInfo> expedition_info_map = 9;
+	int32 retcode = 5;
 }

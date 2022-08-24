@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1711
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message AvatarChangeAnimHashReq {
-  uint32 anim_hash = 6;
-  uint64 avatar_guid = 3;
+	uint32 anim_hash = 6;
+	uint64 avatar_guid = 3;
 }

@@ -19,11 +19,10 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1000
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message DungeonRestartInviteReplyReq {
-  bool is_accept = 11;
+	bool is_accept = 11;
 }

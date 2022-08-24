@@ -21,11 +21,10 @@ import "Unk2700_JMPCGMBHJLG.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 6090
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message Unk2700_AMOEOCPOMGJ_ClientReq {
-  Unk2700_JMPCGMBHJLG Unk2700_KHPPLOGFMDE = 13;
+	Unk2700_JMPCGMBHJLG Unk2700_KHPPLOGFMDE = 13;
 }

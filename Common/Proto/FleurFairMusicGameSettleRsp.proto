@@ -19,13 +19,13 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2113
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message FleurFairMusicGameSettleRsp {
-  bool is_unlock_next_level = 4;
-  bool is_new_record = 12;
-  int32 retcode = 5;
-  uint32 music_basic_id = 9;
+	bool is_unlock_next_level = 4;
+	bool is_new_record = 12;
+	int32 retcode = 5;
+	uint32 music_basic_id = 9;
 }

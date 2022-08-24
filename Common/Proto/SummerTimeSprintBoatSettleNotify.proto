@@ -19,17 +19,17 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8651
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message SummerTimeSprintBoatSettleNotify {
-  uint32 total_num = 13;
-  uint32 group_id = 12;
-  bool is_success = 15;
-  uint32 collect_num = 6;
-  uint32 left_time = 8;
-  uint32 medal_level = 2;
-  uint32 score = 10;
-  bool is_new_record = 7;
+	uint32 total_num = 13;
+	uint32 group_id = 12;
+	bool is_success = 15;
+	uint32 collect_num = 6;
+	uint32 left_time = 8;
+	uint32 medal_level = 2;
+	uint32 score = 10;
+	bool is_new_record = 7;
 }

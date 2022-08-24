@@ -21,11 +21,11 @@ import "Unk2700_DIEGJDEIDKO.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8154
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2700_LLBCBPADBNO {
-  Unk2700_DIEGJDEIDKO explore_info = 12;
-  Unk2700_DIEGJDEIDKO battle_info = 4;
+	Unk2700_DIEGJDEIDKO explore_info = 12;
+	Unk2700_DIEGJDEIDKO battle_info = 4;
 }

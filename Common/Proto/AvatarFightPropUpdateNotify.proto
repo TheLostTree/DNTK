@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1221
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message AvatarFightPropUpdateNotify {
-  map<uint32, float> fight_prop_map = 15;
-  uint64 avatar_guid = 13;
+	map<uint32, float> fight_prop_map = 15;
+	uint64 avatar_guid = 13;
 }

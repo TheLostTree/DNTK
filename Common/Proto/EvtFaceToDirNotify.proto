@@ -22,12 +22,11 @@ import "ForwardType.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 390
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message EvtFaceToDirNotify {
-  ForwardType forward_type = 13;
-  EvtFaceToDirInfo evt_face_to_dir_info = 5;
+	ForwardType forward_type = 13;
+	EvtFaceToDirInfo evt_face_to_dir_info = 5;
 }

@@ -19,14 +19,14 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2848
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message GetCityReputationMapInfoRsp {
-  int32 retcode = 11;
-  bool is_new_hunting = 10;
-  bool is_new_request = 2;
-  repeated uint32 unlock_hunting_city_list = 9;
-  repeated uint32 reward_city_list = 3;
+	int32 retcode = 11;
+	bool is_new_hunting = 10;
+	bool is_new_request = 2;
+	repeated uint32 unlock_hunting_city_list = 9;
+	repeated uint32 reward_city_list = 3;
 }

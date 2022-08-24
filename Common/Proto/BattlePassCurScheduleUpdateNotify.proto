@@ -21,11 +21,11 @@ import "BattlePassSchedule.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2607
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message BattlePassCurScheduleUpdateNotify {
-  bool have_cur_schedule = 11;
-  BattlePassSchedule cur_schedule = 1;
+	bool have_cur_schedule = 11;
+	BattlePassSchedule cur_schedule = 1;
 }

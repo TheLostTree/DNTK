@@ -21,11 +21,10 @@ import "AbilityInvokeEntry.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1198
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message AbilityInvocationsNotify {
-  repeated AbilityInvokeEntry invokes = 2;
+	repeated AbilityInvokeEntry invokes = 2;
 }

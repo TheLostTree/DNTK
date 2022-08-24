@@ -21,13 +21,12 @@ import "Uint32Pair.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 972
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message DungeonEntryInfoReq {
-  uint32 point_id = 2;
-  uint32 scene_id = 9;
-  repeated Uint32Pair Unk2800_GGAMJDFELPH = 4;
+	uint32 point_id = 2;
+	uint32 scene_id = 9;
+	repeated Uint32Pair Unk2800_GGAMJDFELPH = 4;
 }

@@ -19,15 +19,15 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5598
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message GalleryBalloonShootNotify {
-  uint32 trigger_entity_id = 12;
-  uint32 gallery_id = 5;
-  uint32 combo = 14;
-  uint64 combo_disable_time = 6;
-  int32 add_score = 11;
-  uint32 cur_score = 13;
+	uint32 trigger_entity_id = 12;
+	uint32 gallery_id = 5;
+	uint32 combo = 14;
+	uint64 combo_disable_time = 6;
+	int32 add_score = 11;
+	uint32 cur_score = 13;
 }

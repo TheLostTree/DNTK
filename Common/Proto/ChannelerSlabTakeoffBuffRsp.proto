@@ -19,13 +19,13 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8237
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message ChannelerSlabTakeoffBuffRsp {
-  int32 retcode = 3;
-  bool is_mp = 13;
-  uint32 buff_id = 14;
-  uint32 slot_id = 8;
+	int32 retcode = 3;
+	bool is_mp = 13;
+	uint32 buff_id = 14;
+	uint32 slot_id = 8;
 }

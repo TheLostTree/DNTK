@@ -19,9 +19,8 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_BIFNFOGBPNM {
-  bool is_open = 5;
-  uint32 route_id = 9;
-  bool Unk2700_MMNILGLDHHD = 15;
+	bool is_open = 5;
+	uint32 route_id = 9;
+	bool Unk2700_MMNILGLDHHD = 15;
 }

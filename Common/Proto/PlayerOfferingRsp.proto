@@ -22,12 +22,12 @@ import "PlayerOfferingData.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2917
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message PlayerOfferingRsp {
-  repeated ItemParam item_list = 7;
-  int32 retcode = 4;
-  PlayerOfferingData offering_data = 10;
+	repeated ItemParam item_list = 7;
+	int32 retcode = 4;
+	PlayerOfferingData offering_data = 10;
 }

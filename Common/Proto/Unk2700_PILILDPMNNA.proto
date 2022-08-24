@@ -19,11 +19,10 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_PILILDPMNNA {
-  uint32 difficulty = 7;
-  repeated uint32 Unk2700_EGBDDLOBCDL = 4;
-  bool Unk2700_MMFHBHNKLDG = 9;
-  uint32 stage_id = 12;
-  uint32 Unk2700_PPEBOKBCPLE = 3;
+	uint32 difficulty = 7;
+	repeated uint32 Unk2700_EGBDDLOBCDL = 4;
+	bool Unk2700_MMFHBHNKLDG = 9;
+	uint32 stage_id = 12;
+	uint32 Unk2700_PPEBOKBCPLE = 3;
 }

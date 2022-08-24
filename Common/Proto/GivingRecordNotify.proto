@@ -21,10 +21,10 @@ import "GivingRecord.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 116
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message GivingRecordNotify {
-  repeated GivingRecord giving_record_list = 14;
+	repeated GivingRecord giving_record_list = 14;
 }

@@ -21,9 +21,8 @@ import "Unk2700_LHPELFJPPOD.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_GHONKKEGHGL {
-  bool is_open = 8;
-  repeated Unk2700_LHPELFJPPOD challenge_info_list = 9;
-  uint32 stage_id = 15;
+	bool is_open = 8;
+	repeated Unk2700_LHPELFJPPOD challenge_info_list = 9;
+	uint32 stage_id = 15;
 }

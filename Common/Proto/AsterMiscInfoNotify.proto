@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2036
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message AsterMiscInfoNotify {
-  uint32 aster_token = 2;
-  uint32 aster_credit = 15;
+	uint32 aster_token = 2;
+	uint32 aster_credit = 15;
 }

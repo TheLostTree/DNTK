@@ -21,10 +21,9 @@ import "Unk2800_FMAOEPEBKHB.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message SceneGalleryIslandPartyDownHillInfo {
-  uint32 Unk2800_LBPCDCHOOLJ = 14;
-  Unk2800_FMAOEPEBKHB Unk2800_ENJGEFBCLOL = 15;
-  uint32 Unk2800_BKEFLDCEBLF = 5;
-  uint32 coin = 13;
+	uint32 Unk2800_LBPCDCHOOLJ = 14;
+	Unk2800_FMAOEPEBKHB Unk2800_ENJGEFBCLOL = 15;
+	uint32 Unk2800_BKEFLDCEBLF = 5;
+	uint32 coin = 13;
 }

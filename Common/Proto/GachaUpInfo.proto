@@ -19,8 +19,7 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message GachaUpInfo {
-  uint32 item_parent_type = 7;
-  repeated uint32 item_id_list = 15;
+	uint32 item_parent_type = 7;
+	repeated uint32 item_id_list = 15;
 }

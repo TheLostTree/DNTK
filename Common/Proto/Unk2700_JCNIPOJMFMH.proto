@@ -22,10 +22,9 @@ import "Unk2700_LELADCCDNJH.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_JCNIPOJMFMH {
-  repeated Unk2700_EEPNCOAEKBM Unk2700_OCBDODAGPNF = 12;
-  repeated Unk2700_LELADCCDNJH level_list = 6;
-  repeated uint32 Unk2700_EGPCJLGGGLK = 10;
-  repeated Unk2700_EEPNCOAEKBM Unk2700_CPJMLMCOCLA = 13;
+	repeated Unk2700_EEPNCOAEKBM Unk2700_OCBDODAGPNF = 12;
+	repeated Unk2700_LELADCCDNJH level_list = 6;
+	repeated uint32 Unk2700_EGPCJLGGGLK = 10;
+	repeated Unk2700_EEPNCOAEKBM Unk2700_CPJMLMCOCLA = 13;
 }

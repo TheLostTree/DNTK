@@ -21,11 +21,10 @@ import "MaterialInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 640
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message DestroyMaterialReq {
-  repeated MaterialInfo material_list = 5;
+	repeated MaterialInfo material_list = 5;
 }

@@ -21,11 +21,11 @@ import "WidgetSlotData.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4254
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message GetWidgetSlotRsp {
-  repeated WidgetSlotData slot_list = 13;
-  int32 retcode = 9;
+	repeated WidgetSlotData slot_list = 13;
+	int32 retcode = 9;
 }

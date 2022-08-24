@@ -19,8 +19,7 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message FishInfo {
-  uint32 free_count = 11;
-  uint32 into_bag_count = 12;
+	uint32 free_count = 11;
+	uint32 into_bag_count = 12;
 }

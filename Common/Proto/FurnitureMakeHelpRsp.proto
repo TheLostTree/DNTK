@@ -21,11 +21,11 @@ import "FurnitureMakeHelpData.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4756
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message FurnitureMakeHelpRsp {
-  int32 retcode = 10;
-  repeated FurnitureMakeHelpData help_data_list = 6;
+	int32 retcode = 10;
+	repeated FurnitureMakeHelpData help_data_list = 6;
 }

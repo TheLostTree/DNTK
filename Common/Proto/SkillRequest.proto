@@ -19,7 +19,6 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message SkillRequest {
-  uint32 skill_depot_id = 1;
+	uint32 skill_depot_id = 1;
 }

@@ -21,13 +21,12 @@ import "DealAddFriendResultType.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4090
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message DealAddFriendRsp {
-  int32 retcode = 1;
-  uint32 target_uid = 5;
-  DealAddFriendResultType deal_add_friend_result = 6;
+	int32 retcode = 1;
+	uint32 target_uid = 5;
+	DealAddFriendResultType deal_add_friend_result = 6;
 }

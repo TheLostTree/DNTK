@@ -19,15 +19,15 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1701
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message AvatarUpgradeRsp {
-  uint32 cur_level = 6;
-  uint32 old_level = 13;
-  map<uint32, float> old_fight_prop_map = 10;
-  int32 retcode = 1;
-  map<uint32, float> cur_fight_prop_map = 4;
-  uint64 avatar_guid = 15;
+	uint32 cur_level = 6;
+	uint32 old_level = 13;
+	map<uint32, float> old_fight_prop_map = 10;
+	int32 retcode = 1;
+	map<uint32, float> cur_fight_prop_map = 4;
+	uint64 avatar_guid = 15;
 }

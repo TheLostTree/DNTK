@@ -21,14 +21,14 @@ import "CodexTypeData.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4201
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message ViewCodexRsp {
-  int32 retcode = 12;
-  repeated uint32 Unk2800_IPOCJIPGNEJ = 10;
-  repeated uint32 Unk2700_DFJJHFHHIHF = 3;
-  repeated CodexTypeData type_data_list = 9;
-  repeated uint32 Unk2800_OIPJCEPGJCF = 15;
+	int32 retcode = 12;
+	repeated uint32 Unk2800_IPOCJIPGNEJ = 10;
+	repeated uint32 Unk2700_DFJJHFHHIHF = 3;
+	repeated CodexTypeData type_data_list = 9;
+	repeated uint32 Unk2800_OIPJCEPGJCF = 15;
 }

@@ -21,10 +21,10 @@ import "PushTipsData.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2222
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message PushTipsAllDataNotify {
-  repeated PushTipsData push_tips_list = 4;
+	repeated PushTipsData push_tips_list = 4;
 }

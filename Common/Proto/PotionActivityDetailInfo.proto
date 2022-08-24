@@ -21,7 +21,6 @@ import "PotionStage.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message PotionActivityDetailInfo {
-  repeated PotionStage stage_list = 10;
+	repeated PotionStage stage_list = 10;
 }

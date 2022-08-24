@@ -22,12 +22,12 @@ import "ServerLogType.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 31
-// EnetChannelId: 1
+// EnetChannelId: 0
 // EnetIsReliable: true
+// IsAllowClient: true
 message ServerLogNotify {
-  string server_log = 7;
-  ServerLogType log_type = 9;
-  ServerLogLevel log_level = 15;
+	string server_log = 7;
+	ServerLogType log_type = 9;
+	ServerLogLevel log_level = 15;
 }

@@ -21,13 +21,13 @@ import "ItemParam.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2109
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message ActivityTakeWatcherRewardBatchRsp {
-  repeated uint32 watcher_id_list = 6;
-  int32 retcode = 15;
-  uint32 activity_id = 7;
-  repeated ItemParam item_list = 1;
+	repeated uint32 watcher_id_list = 6;
+	int32 retcode = 15;
+	uint32 activity_id = 7;
+	repeated ItemParam item_list = 1;
 }

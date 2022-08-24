@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5522
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2800_KOMBBIEEGCP {
-  uint32 gallery_id = 2;
-  uint32 coin = 9;
-  uint32 Unk2800_LBPCDCHOOLJ = 11;
+	uint32 gallery_id = 2;
+	uint32 coin = 9;
+	uint32 Unk2800_LBPCDCHOOLJ = 11;
 }

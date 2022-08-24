@@ -19,11 +19,10 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2800_CEAECGGBOKL {
-  uint32 Unk2800_KDLIIGEGDDH = 15;
-  uint32 Unk2800_ENMCNIPGGIA = 12;
-  uint32 Unk2800_DEIGAGPAJGK = 14;
-  uint32 dungeon_id = 4;
-  uint32 Unk2800_JKOGDAMMBIN = 13;
+	uint32 Unk2800_KDLIIGEGDDH = 15;
+	uint32 Unk2800_ENMCNIPGGIA = 12;
+	uint32 Unk2800_DEIGAGPAJGK = 14;
+	uint32 dungeon_id = 4;
+	uint32 Unk2800_JKOGDAMMBIN = 13;
 }

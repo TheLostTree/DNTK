@@ -21,12 +21,11 @@ import "ForgeQueueManipulateType.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 624
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message ForgeQueueManipulateReq {
-  uint32 forge_queue_id = 5;
-  ForgeQueueManipulateType manipulate_type = 13;
+	uint32 forge_queue_id = 5;
+	ForgeQueueManipulateType manipulate_type = 13;
 }

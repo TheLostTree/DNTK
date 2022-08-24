@@ -21,7 +21,6 @@ import "Unk2700_DJDEPPHEHCP.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_AAAMOFPACEA {
-  repeated Unk2700_DJDEPPHEHCP Unk2700_ILGPNAAFFEG = 6;
+	repeated Unk2700_DJDEPPHEHCP Unk2700_ILGPNAAFFEG = 6;
 }

@@ -21,13 +21,12 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 324
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message EvtAvatarSitDownNotify {
-  Vector position = 9;
-  uint32 entity_id = 4;
-  uint64 chair_id = 6;
+	Vector position = 9;
+	uint32 entity_id = 4;
+	uint64 chair_id = 6;
 }

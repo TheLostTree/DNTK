@@ -21,8 +21,7 @@ import "Unk2700_AAAMOFPACEA.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message MusicRecord {
-  repeated Unk2700_AAAMOFPACEA Unk2700_MBJFOAGKKDJ = 4;
-  uint32 Unk2700_DFIBAIILJHN = 13;
+	repeated Unk2700_AAAMOFPACEA Unk2700_MBJFOAGKKDJ = 4;
+	uint32 Unk2700_DFIBAIILJHN = 13;
 }

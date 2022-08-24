@@ -22,15 +22,15 @@ import "Unk2700_OHOKEEGPPBG.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4398
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message ScenePlayBattleResultNotify {
-  bool is_win = 1;
-  uint32 cost_time = 7;
-  uint32 play_type = 15;
-  uint32 play_id = 11;
-  repeated ScenePlayBattleSettlePlayerInfo settle_player_info_list = 4;
-  repeated Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;
+	bool is_win = 1;
+	uint32 cost_time = 7;
+	uint32 play_type = 15;
+	uint32 play_id = 11;
+	repeated ScenePlayBattleSettlePlayerInfo settle_player_info_list = 4;
+	repeated Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;
 }

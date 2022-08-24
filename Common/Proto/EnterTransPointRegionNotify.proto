@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 205
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message EnterTransPointRegionNotify {
-  uint32 scene_id = 8;
-  uint32 point_id = 6;
+	uint32 scene_id = 8;
+	uint32 point_id = 6;
 }

@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 250
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message EnterWorldAreaReq {
-  uint32 area_type = 8;
-  uint32 area_id = 1;
+	uint32 area_type = 8;
+	uint32 area_id = 1;
 }

@@ -21,8 +21,7 @@ import "Unk2700_IGJLOMCPLLE.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_KLPINMKOEPE {
-  uint32 room_id = 15;
-  repeated Unk2700_IGJLOMCPLLE Unk2700_ICMKKOMLHIH = 4;
+	uint32 room_id = 15;
+	repeated Unk2700_IGJLOMCPLLE Unk2700_ICMKKOMLHIH = 4;
 }

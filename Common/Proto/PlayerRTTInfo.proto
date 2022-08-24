@@ -19,8 +19,7 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message PlayerRTTInfo {
-  uint32 rtt = 2;
-  uint32 uid = 1;
+	uint32 rtt = 2;
+	uint32 uid = 1;
 }

@@ -19,13 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_PHGGAEDHLBN {
-  repeated uint32 Unk2700_ANHJAFDEACF = 1;
-  bool Unk2700_IBDCFAMBGOK = 14;
-  uint32 Unk2700_KENGEGJGAEL = 6;
-  uint32 Unk2700_DOIMMBJDALB = 4;
-  bool Unk2700_FKLBCNLBBNM = 3;
-  uint32 Unk2700_IFNFCNNBPIB = 10;
-  uint32 Unk2700_PBBPGFMNMNJ = 9;
+	repeated uint32 Unk2700_ANHJAFDEACF = 1;
+	bool Unk2700_IBDCFAMBGOK = 14;
+	uint32 Unk2700_KENGEGJGAEL = 6;
+	uint32 Unk2700_DOIMMBJDALB = 4;
+	bool Unk2700_FKLBCNLBBNM = 3;
+	uint32 Unk2700_IFNFCNNBPIB = 10;
+	uint32 Unk2700_PBBPGFMNMNJ = 9;
 }

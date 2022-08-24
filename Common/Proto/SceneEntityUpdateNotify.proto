@@ -22,12 +22,12 @@ import "VisionType.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 3412
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message SceneEntityUpdateNotify {
-  uint32 param = 10;
-  VisionType appear_type = 13;
-  repeated SceneEntityInfo entity_list = 5;
+	uint32 param = 10;
+	VisionType appear_type = 13;
+	repeated SceneEntityInfo entity_list = 5;
 }

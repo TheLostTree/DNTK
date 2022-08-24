@@ -21,12 +21,11 @@ import "TowerTeam.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message TowerCurLevelRecord {
-  repeated TowerTeam tower_team_list = 8;
-  bool is_empty = 6;
-  repeated uint32 buff_id_list = 4;
-  bool Unk2700_CBPNPEBMPOH = 2;
-  uint32 cur_level_index = 1;
-  uint32 cur_floor_id = 15;
+	repeated TowerTeam tower_team_list = 8;
+	bool is_empty = 6;
+	repeated uint32 buff_id_list = 4;
+	bool Unk2700_CBPNPEBMPOH = 2;
+	uint32 cur_level_index = 1;
+	uint32 cur_floor_id = 15;
 }

@@ -22,14 +22,14 @@ import "FleurFairGallerySettleInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5356
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message FleurFairStageSettleNotify {
-  uint32 stage_type = 10;
-  oneof detail {
-    FleurFairGallerySettleInfo gallery_settle_info = 13;
-    FleurFairBossSettleInfo boss_settle_info = 14;
-  }
+	uint32 stage_type = 10;
+	oneof detail {
+		FleurFairGallerySettleInfo gallery_settle_info = 13;
+		FleurFairBossSettleInfo boss_settle_info = 14;
+	}
 }

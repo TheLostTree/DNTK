@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4870
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message HomeKickPlayerReq {
-  uint32 target_uid = 12;
-  bool is_kick_all = 13;
+	uint32 target_uid = 12;
+	bool is_kick_all = 13;
 }

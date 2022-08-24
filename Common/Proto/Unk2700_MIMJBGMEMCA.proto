@@ -19,10 +19,9 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_MIMJBGMEMCA {
-  bool Unk2700_MMNILGLDHHD = 1;
-  uint32 Unk2700_LINCFMHPMDP = 2;
-  uint32 Unk2700_FACFKJKIBBO = 8;
-  bool Unk2700_PEDCFBJLHGP = 7;
+	bool Unk2700_MMNILGLDHHD = 1;
+	uint32 Unk2700_LINCFMHPMDP = 2;
+	uint32 Unk2700_FACFKJKIBBO = 8;
+	bool Unk2700_PEDCFBJLHGP = 7;
 }

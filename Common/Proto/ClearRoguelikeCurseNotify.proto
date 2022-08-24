@@ -19,13 +19,13 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8207
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message ClearRoguelikeCurseNotify {
-  map<uint32, uint32> clear_curse_map = 10;
-  bool is_clear_all = 11;
-  uint32 card_id = 8;
-  bool is_curse_all_clear = 1;
+	map<uint32, uint32> clear_curse_map = 10;
+	bool is_clear_all = 11;
+	uint32 card_id = 8;
+	bool is_curse_all_clear = 1;
 }

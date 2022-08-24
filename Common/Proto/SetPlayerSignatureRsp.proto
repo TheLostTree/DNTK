@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4005
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message SetPlayerSignatureRsp {
-  string signature = 1;
-  int32 retcode = 4;
+	string signature = 1;
+	int32 retcode = 4;
 }

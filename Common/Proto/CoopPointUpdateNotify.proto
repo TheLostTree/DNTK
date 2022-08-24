@@ -21,10 +21,10 @@ import "CoopPoint.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1991
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message CoopPointUpdateNotify {
-  CoopPoint coop_point = 13;
+	CoopPoint coop_point = 13;
 }

@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1768
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2800_KJEOLFNEOPF {
-  repeated uint64 avatar_team_guid_list = 14;
-  int32 retcode = 7;
-  uint64 cur_avatar_guid = 15;
+	repeated uint64 avatar_team_guid_list = 14;
+	int32 retcode = 7;
+	uint64 cur_avatar_guid = 15;
 }

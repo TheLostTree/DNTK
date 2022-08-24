@@ -21,11 +21,10 @@ import "UnionCmd.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message UnionCmdNotify {
-  repeated UnionCmd cmd_list = 1;
+	repeated UnionCmd cmd_list = 1;
 }

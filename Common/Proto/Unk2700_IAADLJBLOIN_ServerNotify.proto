@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4092
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2700_IAADLJBLOIN_ServerNotify {
-  bool is_open = 9;
-  uint32 Unk2700_JEKIGDDNCAB = 10;
+	bool is_open = 9;
+	uint32 Unk2700_JEKIGDDNCAB = 10;
 }

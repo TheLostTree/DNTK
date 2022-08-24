@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2298
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message WatcherChangeNotify {
-  repeated uint32 removed_watcher_list = 2;
-  repeated uint32 new_watcher_list = 15;
+	repeated uint32 removed_watcher_list = 2;
+	repeated uint32 new_watcher_list = 15;
 }

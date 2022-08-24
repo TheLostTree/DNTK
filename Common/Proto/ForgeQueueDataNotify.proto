@@ -21,12 +21,11 @@ import "ForgeQueueData.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 676
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message ForgeQueueDataNotify {
-  map<uint32, ForgeQueueData> forge_queue_map = 7;
-  repeated uint32 removed_forge_queue_list = 6;
+	map<uint32, ForgeQueueData> forge_queue_map = 7;
+	repeated uint32 removed_forge_queue_list = 6;
 }

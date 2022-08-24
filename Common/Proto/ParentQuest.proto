@@ -18,20 +18,21 @@ syntax = "proto3";
 
 import "ChildQuest.proto";
 import "ParentQuestRandomInfo.proto";
+import "Unk3000_ENLDIHLGNCK.proto";
 
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message ParentQuest {
-  ParentQuestRandomInfo random_info = 12;
-  uint32 quest_var_seq = 11;
-  repeated int32 quest_var = 14;
-  uint64 Unk2700_KHDDIJNOICK = 6;
-  bool is_random = 13;
-  uint32 parent_quest_id = 3;
-  bool is_finished = 7;
-  map<uint32, uint32> time_var_map = 8;
-  uint32 parent_quest_state = 1;
-  repeated ChildQuest child_quest_list = 9;
+	repeated int32 quest_var = 14;
+	map<uint32, uint32> time_var_map = 8;
+	uint32 parent_quest_state = 1;
+	bool is_finished = 7;
+	repeated Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;
+	ParentQuestRandomInfo random_info = 12;
+	uint32 parent_quest_id = 3;
+	bool is_random = 13;
+	uint64 Unk2700_KHDDIJNOICK = 6;
+	uint32 quest_var_seq = 11;
+	repeated ChildQuest child_quest_list = 9;
 }

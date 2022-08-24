@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5355
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message MultistagePlayEndNotify {
-  uint32 group_id = 5;
-  uint32 play_index = 13;
+	uint32 group_id = 5;
+	uint32 play_index = 13;
 }

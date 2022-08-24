@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4029
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message GetFriendShowNameCardInfoRsp {
-  int32 retcode = 15;
-  uint32 uid = 7;
-  repeated uint32 show_name_card_id_list = 10;
+	int32 retcode = 15;
+	uint32 uid = 7;
+	repeated uint32 show_name_card_id_list = 10;
 }

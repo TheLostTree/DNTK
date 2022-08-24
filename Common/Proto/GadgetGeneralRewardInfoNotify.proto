@@ -21,11 +21,11 @@ import "GadgetGeneralRewardInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 848
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message GadgetGeneralRewardInfoNotify {
-  uint32 entity_id = 13;
-  GadgetGeneralRewardInfo general_reward_info = 9;
+	uint32 entity_id = 13;
+	GadgetGeneralRewardInfo general_reward_info = 9;
 }

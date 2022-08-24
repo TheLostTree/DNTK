@@ -19,13 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8373
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message Unk2700_EELPPGCAKHL {
-  map<uint32, uint32> Unk2700_BMLBMGGBFJG = 15;
-  map<uint32, uint32> Unk2700_OBFPKFEGGIK = 14;
-  uint32 dungeon_id = 5;
+	map<uint32, uint32> Unk2700_BMLBMGGBFJG = 15;
+	map<uint32, uint32> Unk2700_OBFPKFEGGIK = 14;
+	uint32 dungeon_id = 5;
 }

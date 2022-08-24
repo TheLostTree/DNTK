@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5040
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message PullRecentChatReq {
-  uint32 pull_num = 6;
-  uint32 begin_sequence = 15;
+	uint32 pull_num = 6;
+	uint32 begin_sequence = 15;
 }

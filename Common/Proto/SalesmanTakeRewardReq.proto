@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2191
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message SalesmanTakeRewardReq {
-  uint32 position = 8;
-  uint32 schedule_id = 7;
+	uint32 position = 8;
+	uint32 schedule_id = 7;
 }

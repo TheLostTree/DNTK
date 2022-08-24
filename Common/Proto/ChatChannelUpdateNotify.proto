@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5025
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message ChatChannelUpdateNotify {
-  uint32 channel_id = 3;
-  bool is_create = 15;
+	uint32 channel_id = 3;
+	bool is_create = 15;
 }

@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2163
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2700_KNGFOEKOODA_ServerRsp {
-  uint32 activity_id = 4;
-  int32 retcode = 6;
-  uint32 schedule_id = 11;
+	uint32 activity_id = 4;
+	int32 retcode = 6;
+	uint32 schedule_id = 11;
 }

@@ -21,11 +21,10 @@ import "ActivityInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2060
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message ActivityInfoNotify {
-  ActivityInfo activity_info = 9;
+	ActivityInfo activity_info = 9;
 }

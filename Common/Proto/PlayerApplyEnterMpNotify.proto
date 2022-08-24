@@ -21,12 +21,12 @@ import "OnlinePlayerInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1826
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message PlayerApplyEnterMpNotify {
-  uint32 src_thread_index = 5;
-  uint32 src_app_id = 6;
-  OnlinePlayerInfo src_player_info = 2;
+	uint32 src_thread_index = 5;
+	uint32 src_app_id = 6;
+	OnlinePlayerInfo src_player_info = 2;
 }

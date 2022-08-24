@@ -21,14 +21,14 @@ import "ItemParam.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4125
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message OrderFinishNotify {
-  uint32 order_id = 3;
-  uint32 card_product_remain_days = 15;
-  repeated ItemParam item_list = 9;
-  uint32 add_mcoin = 7;
-  string product_id = 6;
+	uint32 order_id = 3;
+	uint32 card_product_remain_days = 15;
+	repeated ItemParam item_list = 9;
+	uint32 add_mcoin = 7;
+	string product_id = 6;
 }

@@ -19,17 +19,17 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8342
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2700_DGLIANMBMPA {
-  uint32 Unk2700_FHNECPGFPBK = 9;
-  uint32 Unk2700_OAKEBJPBNMA = 2;
-  bool is_new_record = 7;
-  bool is_success = 3;
-  uint32 gallery_id = 13;
-  uint32 remain_time = 4;
-  uint32 score = 11;
-  uint32 Unk2700_FCOMHLJGFLK = 15;
+	uint32 Unk2700_FHNECPGFPBK = 9;
+	uint32 Unk2700_OAKEBJPBNMA = 2;
+	bool is_new_record = 7;
+	bool is_success = 3;
+	uint32 gallery_id = 13;
+	uint32 remain_time = 4;
+	uint32 score = 11;
+	uint32 Unk2700_FCOMHLJGFLK = 15;
 }

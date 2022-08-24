@@ -19,14 +19,13 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1915
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message MarkTargetInvestigationMonsterNotify {
-  uint32 scene_id = 11;
-  uint32 monster_id = 4;
-  uint32 group_id = 5;
-  uint32 investigation_monster_id = 12;
+	uint32 scene_id = 11;
+	uint32 monster_id = 4;
+	uint32 group_id = 5;
+	uint32 investigation_monster_id = 12;
 }

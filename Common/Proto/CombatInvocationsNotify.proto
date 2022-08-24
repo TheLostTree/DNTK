@@ -21,11 +21,10 @@ import "CombatInvokeEntry.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 319
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message CombatInvocationsNotify {
-  repeated CombatInvokeEntry invoke_list = 14;
+	repeated CombatInvokeEntry invoke_list = 14;
 }

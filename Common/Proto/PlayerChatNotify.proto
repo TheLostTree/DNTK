@@ -21,11 +21,11 @@ import "ChatInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 3010
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message PlayerChatNotify {
-  ChatInfo chat_info = 3;
-  uint32 channel_id = 6;
+	ChatInfo chat_info = 3;
+	uint32 channel_id = 6;
 }

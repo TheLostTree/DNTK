@@ -21,8 +21,7 @@ import "Unk2700_OCDMIOKNHHH.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_BEGHDPPNMFM {
-  repeated Unk2700_OCDMIOKNHHH Unk2700_AOFJNJNBAAI = 14;
-  uint32 timestamp = 9;
+	repeated Unk2700_OCDMIOKNHHH Unk2700_AOFJNJNBAAI = 14;
+	uint32 timestamp = 9;
 }

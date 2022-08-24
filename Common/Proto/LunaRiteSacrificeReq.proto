@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8805
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message LunaRiteSacrificeReq {
-  uint32 area_id = 15;
-  uint32 index = 14;
+	uint32 area_id = 15;
+	uint32 index = 14;
 }

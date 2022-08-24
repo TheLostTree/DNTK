@@ -23,15 +23,14 @@ import "Unk2700_OPEBMJPOOBL.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 6326
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message Unk2700_LKPBBMPFPPE_ClientReq {
-  Unk2700_OPEBMJPOOBL Unk2700_KHBDAPGDOJA = 8;
-  uint64 Unk2700_CEPGMKAHHCD = 5;
-  DropSubfieldType Unk2700_MJNIHFCKJMN = 6;
-  bool Unk2700_CAOIKBJJFIH = 11;
-  Unk2700_CKMOPKMKCAO Unk2700_BFPCGJEDDFK = 13;
+	Unk2700_OPEBMJPOOBL Unk2700_KHBDAPGDOJA = 8;
+	uint64 Unk2700_CEPGMKAHHCD = 5;
+	DropSubfieldType Unk2700_MJNIHFCKJMN = 6;
+	bool Unk2700_CAOIKBJJFIH = 11;
+	Unk2700_CKMOPKMKCAO Unk2700_BFPCGJEDDFK = 13;
 }

@@ -21,11 +21,10 @@ import "PbNavMeshStatsInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2316
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message NavMeshStatsNotify {
-  repeated PbNavMeshStatsInfo infos = 4;
+	repeated PbNavMeshStatsInfo infos = 4;
 }

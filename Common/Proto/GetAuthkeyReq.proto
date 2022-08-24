@@ -19,13 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1490
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message GetAuthkeyReq {
-  string auth_appid = 14;
-  uint32 sign_type = 7;
-  uint32 authkey_ver = 13;
+	string auth_appid = 14;
+	uint32 sign_type = 7;
+	uint32 authkey_ver = 13;
 }

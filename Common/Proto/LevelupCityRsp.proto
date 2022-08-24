@@ -21,13 +21,13 @@ import "CityInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 287
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message LevelupCityRsp {
-  uint32 area_id = 9;
-  int32 retcode = 3;
-  uint32 scene_id = 4;
-  CityInfo city_info = 6;
+	uint32 area_id = 9;
+	int32 retcode = 3;
+	uint32 scene_id = 4;
+	CityInfo city_info = 6;
 }

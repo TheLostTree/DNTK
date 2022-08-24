@@ -19,9 +19,8 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message PlantFlowerAcceptFlowerResultInfo {
-  map<uint32, uint32> unaccept_flower_num_map = 4;
-  uint32 uid = 7;
-  map<uint32, uint32> accept_flower_num_map = 10;
+	map<uint32, uint32> unaccept_flower_num_map = 4;
+	uint32 uid = 7;
+	map<uint32, uint32> accept_flower_num_map = 10;
 }

@@ -22,14 +22,13 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 335
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message EvtDoSkillSuccNotify {
-  uint32 caster_id = 13;
-  ForwardType forward_type = 10;
-  Vector forward = 15;
-  uint32 skill_id = 7;
+	uint32 caster_id = 13;
+	ForwardType forward_type = 10;
+	Vector forward = 15;
+	uint32 skill_id = 7;
 }

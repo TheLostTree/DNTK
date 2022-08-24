@@ -2,11 +2,10 @@
 
     import EntityDamageView from "./EntityDamageView.svelte";
 
-    import { writable } from 'svelte/store';
+    import VirtualList from '@sveltejs/svelte-virtual-list';
 
-    import {getRows, attackees} from "./DamageTableTS";
+    import {attackees} from "./stores";
 
-    import App from "../App.svelte";
 
 
     $: rows = $attackees.map((attackee) => {
@@ -22,19 +21,9 @@
     
 </script>
 
-<table>
-    <tr>
-        <th>Name</th>
-        <th>Total Damage</th>
-        <th>Total Healing</th>
-        <th>Crit Percent</th>
-    </tr>
-    {#each rows as row}
-        <EntityDamageView {...row}/>
-    {/each}
-</table>
 
-<button on:click={getRows}>
-	Add a number
-</button>
+<VirtualList items={rows} let:item={row}>
+    <EntityDamageView {...row}/>
+</VirtualList>
+
 

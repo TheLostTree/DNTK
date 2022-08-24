@@ -19,9 +19,8 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message FleurFairMusicRecord {
-  uint32 max_combo = 1;
-  uint32 max_score = 11;
-  bool is_unlock = 12;
+	uint32 max_combo = 1;
+	uint32 max_score = 11;
+	bool is_unlock = 12;
 }

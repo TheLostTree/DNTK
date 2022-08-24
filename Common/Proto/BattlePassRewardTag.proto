@@ -21,9 +21,8 @@ import "BattlePassUnlockStatus.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message BattlePassRewardTag {
-  uint32 level = 4;
-  BattlePassUnlockStatus unlock_status = 2;
-  uint32 reward_id = 7;
+	uint32 level = 4;
+	BattlePassUnlockStatus unlock_status = 2;
+	uint32 reward_id = 7;
 }

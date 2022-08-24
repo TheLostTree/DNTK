@@ -21,7 +21,6 @@ import "Unk2700_JCBJHCFEONO.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message SeekFurnitureGalleryInfo {
-  repeated Unk2700_JCBJHCFEONO record_list = 5;
+	repeated Unk2700_JCBJHCFEONO record_list = 5;
 }

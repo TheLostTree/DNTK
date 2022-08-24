@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4197
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message PlayerGetForceQuitBanInfoRsp {
-  int32 retcode = 4;
-  uint32 match_id = 8;
-  uint32 expire_time = 13;
+	int32 retcode = 4;
+	uint32 match_id = 8;
+	uint32 expire_time = 13;
 }

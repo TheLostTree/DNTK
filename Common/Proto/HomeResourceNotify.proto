@@ -21,11 +21,11 @@ import "HomeResource.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4892
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message HomeResourceNotify {
-  HomeResource home_coin = 9;
-  HomeResource fetter_exp = 8;
+	HomeResource home_coin = 9;
+	HomeResource fetter_exp = 8;
 }

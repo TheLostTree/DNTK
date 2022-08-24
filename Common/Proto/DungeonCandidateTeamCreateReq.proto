@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 995
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message DungeonCandidateTeamCreateReq {
-  uint32 point_id = 7;
-  uint32 dungeon_id = 6;
+	uint32 point_id = 7;
+	uint32 dungeon_id = 6;
 }

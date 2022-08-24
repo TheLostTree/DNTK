@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 3990
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message MechanicusUnlockGearRsp {
-  int32 retcode = 3;
-  uint32 mechanicus_id = 8;
-  uint32 gear_id = 14;
+	int32 retcode = 3;
+	uint32 mechanicus_id = 8;
+	uint32 gear_id = 14;
 }

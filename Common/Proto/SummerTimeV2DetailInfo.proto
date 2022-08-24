@@ -22,11 +22,10 @@ import "Unk2800_CGPNLBNMPCM.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message SummerTimeV2DetailInfo {
-  repeated Unk2800_CGODFDDALAG Unk2800_PNBLCPIBKPO = 13;
-  uint32 Unk2800_HDEFJKGDNEH = 10;
-  bool is_content_closed = 4;
-  uint32 Unk2800_ELHBCNPKOJG = 5;
-  repeated Unk2800_CGPNLBNMPCM Unk2800_MPKLJJIEHIB = 15;
+	repeated Unk2800_CGODFDDALAG Unk2800_PNBLCPIBKPO = 13;
+	uint32 Unk2800_HDEFJKGDNEH = 10;
+	bool is_content_closed = 4;
+	uint32 Unk2800_ELHBCNPKOJG = 5;
+	repeated Unk2800_CGPNLBNMPCM Unk2800_MPKLJJIEHIB = 15;
 }

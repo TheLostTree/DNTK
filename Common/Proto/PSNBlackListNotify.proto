@@ -21,10 +21,10 @@ import "FriendBrief.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4040
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message PSNBlackListNotify {
-  repeated FriendBrief psn_blacklist = 11;
+	repeated FriendBrief psn_blacklist = 11;
 }

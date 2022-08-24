@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8281
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2700_NLJBCGILMIE {
-  int32 retcode = 4;
-  repeated uint32 item_id_list = 7;
+	int32 retcode = 4;
+	repeated uint32 item_id_list = 7;
 }

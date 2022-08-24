@@ -19,11 +19,10 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2800_FGFMMFAKDEL {
-  uint32 Unk2800_HKEDPPELJDD = 7;
-  bool Unk2800_FOGGAIHLNOP = 3;
-  bool Unk2800_NKKMCEKPKLA = 2;
-  uint32 gear_id = 11;
-  uint32 Unk2800_JJFDKELDLEM = 6;
+	uint32 Unk2800_HKEDPPELJDD = 7;
+	bool Unk2800_FOGGAIHLNOP = 3;
+	bool Unk2800_NKKMCEKPKLA = 2;
+	uint32 gear_id = 11;
+	uint32 Unk2800_JJFDKELDLEM = 6;
 }

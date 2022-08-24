@@ -19,8 +19,7 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message AbilityMetaModifierDurabilityChange {
-  float reduce_durability = 6;
-  float remain_durability = 15;
+	float reduce_durability = 6;
+	float remain_durability = 15;
 }

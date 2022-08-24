@@ -21,13 +21,13 @@ import "PropChangeReason.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1299
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message PlayerPropChangeReasonNotify {
-  uint32 prop_type = 6;
-  float old_value = 12;
-  PropChangeReason reason = 1;
-  float cur_value = 11;
+	uint32 prop_type = 6;
+	float old_value = 12;
+	PropChangeReason reason = 1;
+	float cur_value = 11;
 }

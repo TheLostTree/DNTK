@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1708
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message ChangeMpTeamAvatarReq {
-  uint64 cur_avatar_guid = 4;
-  repeated uint64 avatar_guid_list = 8;
+	uint64 cur_avatar_guid = 4;
+	repeated uint64 avatar_guid_list = 8;
 }

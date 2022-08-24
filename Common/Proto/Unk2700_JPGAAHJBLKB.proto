@@ -19,8 +19,7 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_JPGAAHJBLKB {
-  uint64 avatar_id = 3;
-  bool is_trial = 13;
+	uint64 avatar_id = 3;
+	bool is_trial = 13;
 }

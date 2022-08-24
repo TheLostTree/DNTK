@@ -21,13 +21,13 @@ import "Unk2700_CHLNIDHHGLE.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4811
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2700_NFGNGFLNOOJ_ServerNotify {
-  uint32 gallery_id = 1;
-  Unk2700_CHLNIDHHGLE settle_info = 5;
-  uint32 Unk2700_HAOPLFPOLFM = 6;
-  bool is_new_record = 4;
+	uint32 gallery_id = 1;
+	Unk2700_CHLNIDHHGLE settle_info = 5;
+	uint32 Unk2700_HAOPLFPOLFM = 6;
+	bool is_new_record = 4;
 }

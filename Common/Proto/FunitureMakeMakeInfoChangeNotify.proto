@@ -21,10 +21,10 @@ import "FurnitureMakeMakeInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4898
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message FunitureMakeMakeInfoChangeNotify {
-  FurnitureMakeMakeInfo make_info = 1;
+	FurnitureMakeMakeInfo make_info = 1;
 }

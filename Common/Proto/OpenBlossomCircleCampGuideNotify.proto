@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2703
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message OpenBlossomCircleCampGuideNotify {
-  uint32 refresh_id = 7;
-  repeated uint32 circle_camp_id_list = 11;
+	uint32 refresh_id = 7;
+	repeated uint32 circle_camp_id_list = 11;
 }

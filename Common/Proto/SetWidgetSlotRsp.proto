@@ -22,13 +22,13 @@ import "WidgetSlotTag.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4277
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message SetWidgetSlotRsp {
-  repeated WidgetSlotTag tag_list = 15;
-  int32 retcode = 6;
-  uint32 material_id = 1;
-  WidgetSlotOp op = 4;
+	repeated WidgetSlotTag tag_list = 15;
+	int32 retcode = 6;
+	uint32 material_id = 1;
+	WidgetSlotOp op = 4;
 }

@@ -21,10 +21,10 @@ import "RoguelikeRuneRecord.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8973
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message RoguelikeRuneRecordUpdateNotify {
-  repeated RoguelikeRuneRecord rune_record_list = 11;
+	repeated RoguelikeRuneRecord rune_record_list = 11;
 }

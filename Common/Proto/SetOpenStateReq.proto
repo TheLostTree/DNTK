@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 165
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message SetOpenStateReq {
-  uint32 key = 12;
-  uint32 value = 5;
+	uint32 key = 12;
+	uint32 value = 5;
 }

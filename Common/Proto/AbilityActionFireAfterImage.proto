@@ -21,7 +21,6 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message AbilityActionFireAfterImage {
-  Vector dir = 12;
+	Vector dir = 12;
 }

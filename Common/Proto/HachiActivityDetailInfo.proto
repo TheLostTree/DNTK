@@ -21,7 +21,6 @@ import "HachiStageData.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message HachiActivityDetailInfo {
-  map<uint32, HachiStageData> stage_map = 6;
+	map<uint32, HachiStageData> stage_map = 6;
 }

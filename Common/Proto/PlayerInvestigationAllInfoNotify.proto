@@ -22,11 +22,11 @@ import "InvestigationTarget.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1928
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message PlayerInvestigationAllInfoNotify {
-  repeated Investigation investigation_list = 15;
-  repeated InvestigationTarget investigation_target_list = 12;
+	repeated Investigation investigation_list = 15;
+	repeated InvestigationTarget investigation_target_list = 12;
 }

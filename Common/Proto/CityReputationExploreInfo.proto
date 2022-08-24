@@ -19,9 +19,8 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message CityReputationExploreInfo {
-  repeated uint32 taken_explore_reward_list = 2;
-  uint32 explore_percent = 14;
-  bool is_open = 15;
+	repeated uint32 taken_explore_reward_list = 2;
+	uint32 explore_percent = 14;
+	bool is_open = 15;
 }

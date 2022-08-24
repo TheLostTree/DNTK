@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4449
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message ScenePlayInviteResultNotify {
-  bool is_all_argee = 11;
-  uint32 play_id = 15;
+	bool is_all_argee = 11;
+	uint32 play_id = 15;
 }

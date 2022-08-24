@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4688
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message HomeAvatarTalkReq {
-  uint32 talk_id = 12;
-  uint32 avatar_id = 15;
+	uint32 talk_id = 12;
+	uint32 avatar_id = 15;
 }

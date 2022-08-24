@@ -19,9 +19,8 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2800_MBKLJLMLIKF {
-  uint32 stage_id = 13;
-  bool is_open = 14;
-  uint32 best_score = 4;
+	uint32 stage_id = 13;
+	bool is_open = 14;
+	uint32 best_score = 4;
 }

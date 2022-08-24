@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1603
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message ChangeTeamNameReq {
-  int32 team_id = 8;
-  string team_name = 9;
+	int32 team_id = 8;
+	string team_name = 9;
 }

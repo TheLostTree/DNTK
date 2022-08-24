@@ -21,11 +21,11 @@ import "FoundationInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 847
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message FoundationNotify {
-  FoundationInfo info = 7;
-  uint32 gadget_entity_id = 9;
+	FoundationInfo info = 7;
+	uint32 gadget_entity_id = 9;
 }

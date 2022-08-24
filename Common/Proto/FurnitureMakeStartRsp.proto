@@ -21,11 +21,11 @@ import "FurnitureMakeSlot.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4729
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message FurnitureMakeStartRsp {
-  FurnitureMakeSlot furniture_make_slot = 5;
-  int32 retcode = 8;
+	FurnitureMakeSlot furniture_make_slot = 5;
+	int32 retcode = 8;
 }

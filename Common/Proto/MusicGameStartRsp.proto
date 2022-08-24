@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8326
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message MusicGameStartRsp {
-  uint32 music_basic_id = 4;
-  int32 retcode = 1;
-  uint64 Unk2700_CEPGMKAHHCD = 15;
+	uint32 music_basic_id = 4;
+	int32 retcode = 1;
+	uint64 Unk2700_CEPGMKAHHCD = 15;
 }

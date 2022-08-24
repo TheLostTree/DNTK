@@ -19,15 +19,14 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5022
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message PrivateChatReq {
-  uint32 target_uid = 7;
-  oneof content {
-    string text = 3;
-    uint32 icon = 4;
-  }
+	uint32 target_uid = 7;
+	oneof content {
+		string text = 3;
+		uint32 icon = 4;
+	}
 }

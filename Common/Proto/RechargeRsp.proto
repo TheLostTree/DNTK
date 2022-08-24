@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4118
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message RechargeRsp {
-  int32 retcode = 12;
-  bool Unk2700_FGENAOBDIEA = 6;
-  string product_id = 2;
+	int32 retcode = 12;
+	bool Unk2700_FGENAOBDIEA = 6;
+	string product_id = 2;
 }

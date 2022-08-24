@@ -22,11 +22,10 @@ import "ItemParam.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message GachaItem {
-  ItemParam gacha_item_ = 7;
-  bool is_gacha_item_new = 6;
-  bool is_flash_card = 8;
-  repeated ItemParam token_item_list = 9;
-  repeated GachaTransferItem transfer_items = 12;
+	ItemParam gacha_item_ = 7;
+	bool is_gacha_item_new = 6;
+	bool is_flash_card = 8;
+	repeated ItemParam token_item_list = 9;
+	repeated GachaTransferItem transfer_items = 12;
 }

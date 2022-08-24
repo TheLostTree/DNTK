@@ -19,16 +19,15 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 257
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message ExecuteGroupTriggerReq {
-  string source_name = 15;
-  uint32 target_entity_id = 12;
-  int32 param_2 = 8;
-  uint32 source_entity_id = 4;
-  int32 param_3 = 10;
-  int32 param_1 = 9;
+	uint32 source_entity_id = 4;
+	string source_name = 15;
+	uint32 target_entity_id = 12;
+	int32 param1 = 9;
+	int32 param2 = 8;
+	int32 param3 = 10;
 }

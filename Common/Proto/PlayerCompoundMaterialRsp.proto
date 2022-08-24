@@ -21,11 +21,11 @@ import "CompoundQueueData.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 143
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message PlayerCompoundMaterialRsp {
-  CompoundQueueData compound_que_data = 5;
-  int32 retcode = 12;
+	CompoundQueueData compound_que_data = 5;
+	int32 retcode = 12;
 }

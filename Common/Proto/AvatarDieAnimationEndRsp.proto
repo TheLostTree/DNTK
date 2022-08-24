@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1694
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message AvatarDieAnimationEndRsp {
-  uint32 skill_id = 13;
-  int32 retcode = 14;
-  uint64 die_guid = 15;
+	uint32 skill_id = 13;
+	int32 retcode = 14;
+	uint64 die_guid = 15;
 }

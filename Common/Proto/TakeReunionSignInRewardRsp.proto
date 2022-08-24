@@ -21,11 +21,11 @@ import "ReunionSignInInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5072
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message TakeReunionSignInRewardRsp {
-  ReunionSignInInfo sign_in_info = 10;
-  int32 retcode = 5;
+	ReunionSignInInfo sign_in_info = 10;
+	int32 retcode = 5;
 }

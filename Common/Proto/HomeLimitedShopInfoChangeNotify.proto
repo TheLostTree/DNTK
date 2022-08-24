@@ -21,10 +21,10 @@ import "HomeLimitedShopGoods.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4790
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message HomeLimitedShopInfoChangeNotify {
-  repeated HomeLimitedShopGoods goods_list = 5;
+	repeated HomeLimitedShopGoods goods_list = 5;
 }

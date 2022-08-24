@@ -21,13 +21,12 @@ import "VehicleInteractType.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 865
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message VehicleInteractReq {
-  VehicleInteractType interact_type = 8;
-  uint32 pos = 12;
-  uint32 entity_id = 15;
+	VehicleInteractType interact_type = 8;
+	uint32 pos = 12;
+	uint32 entity_id = 15;
 }

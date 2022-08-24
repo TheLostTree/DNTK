@@ -21,13 +21,12 @@ import "ItemParam.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 639
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message WeaponUpgradeReq {
-  repeated uint64 food_weapon_guid_list = 1;
-  repeated ItemParam item_param_list = 15;
-  uint64 target_weapon_guid = 4;
+	repeated uint64 food_weapon_guid_list = 1;
+	repeated ItemParam item_param_list = 15;
+	uint64 target_weapon_guid = 4;
 }

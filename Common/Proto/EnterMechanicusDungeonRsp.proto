@@ -19,13 +19,13 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 3975
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message EnterMechanicusDungeonRsp {
-  uint32 wrong_uid = 12;
-  uint32 difficult_level = 13;
-  int32 retcode = 6;
-  uint32 dungeon_id = 11;
+	uint32 wrong_uid = 12;
+	uint32 difficult_level = 13;
+	int32 retcode = 6;
+	uint32 dungeon_id = 11;
 }

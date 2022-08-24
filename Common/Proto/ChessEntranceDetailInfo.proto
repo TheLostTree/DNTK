@@ -21,7 +21,6 @@ import "ChessEntranceInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message ChessEntranceDetailInfo {
-  repeated ChessEntranceInfo info_list = 4;
+	repeated ChessEntranceInfo info_list = 4;
 }

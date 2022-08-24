@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4107
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message CardProductRewardNotify {
-  uint32 hcoin = 6;
-  string product_id = 14;
-  uint32 remain_days = 1;
+	uint32 hcoin = 6;
+	string product_id = 14;
+	uint32 remain_days = 1;
 }

@@ -21,13 +21,13 @@ import "ArenaChallengeChildChallengeInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2030
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message ArenaChallengeFinishNotify {
-  uint32 arena_challenge_level = 13;
-  uint32 arena_challenge_id = 3;
-  repeated ArenaChallengeChildChallengeInfo child_challenge_list = 2;
-  bool is_success = 12;
+	uint32 arena_challenge_level = 13;
+	uint32 arena_challenge_id = 3;
+	repeated ArenaChallengeChildChallengeInfo child_challenge_list = 2;
+	bool is_success = 12;
 }

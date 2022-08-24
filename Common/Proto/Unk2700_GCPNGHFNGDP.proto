@@ -21,8 +21,7 @@ import "ItemParam.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_GCPNGHFNGDP {
-  repeated uint32 Unk2700_ANAEHLBDFIC = 1;
-  repeated ItemParam Unk2700_PMMJDKJHBIG = 7;
+	repeated uint32 Unk2700_ANAEHLBDFIC = 1;
+	repeated ItemParam Unk2700_PMMJDKJHBIG = 7;
 }

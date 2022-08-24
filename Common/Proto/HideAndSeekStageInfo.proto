@@ -22,12 +22,11 @@ import "HideAndSeekStageType.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message HideAndSeekStageInfo {
-  uint32 map_id = 8;
-  bool is_record_score = 3;
-  HideAndSeekStageType stage_type = 7;
-  map<uint32, HideAndSeekPlayerBattleInfo> battle_info_map = 2;
-  repeated uint32 hider_uid_list = 1;
-  uint32 hunter_uid = 10;
+	uint32 map_id = 8;
+	bool is_record_score = 3;
+	HideAndSeekStageType stage_type = 7;
+	map<uint32, HideAndSeekPlayerBattleInfo> battle_info_map = 2;
+	repeated uint32 hider_uid_list = 1;
+	uint32 hunter_uid = 10;
 }

@@ -21,14 +21,13 @@ import "SumoTeamData.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8313
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message SumoSaveTeamReq {
-  uint32 activity_id = 11;
-  uint32 stage_id = 13;
-  uint32 difficulty_id = 7;
-  repeated SumoTeamData team_list = 12;
+	uint32 activity_id = 11;
+	uint32 stage_id = 13;
+	uint32 difficulty_id = 7;
+	repeated SumoTeamData team_list = 12;
 }

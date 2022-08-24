@@ -19,13 +19,13 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5565
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2800_CHEDEMEDPPM {
-  uint32 point_id = 7;
-  uint32 coin = 15;
-  uint32 Unk2800_EOFOECJJMLJ = 3;
-  uint32 Unk2800_BAEEDEAADIA = 13;
+	uint32 point_id = 7;
+	uint32 coin = 15;
+	uint32 Unk2800_EOFOECJJMLJ = 3;
+	uint32 Unk2800_BAEEDEAADIA = 13;
 }

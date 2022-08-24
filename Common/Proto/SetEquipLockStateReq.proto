@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 666
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message SetEquipLockStateReq {
-  bool is_locked = 15;
-  uint64 target_equip_guid = 9;
+	bool is_locked = 15;
+	uint64 target_equip_guid = 9;
 }

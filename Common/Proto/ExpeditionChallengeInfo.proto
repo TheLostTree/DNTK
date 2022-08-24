@@ -19,9 +19,8 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message ExpeditionChallengeInfo {
-  bool is_finished = 5;
-  uint32 id = 11;
-  uint32 open_time = 9;
+	bool is_finished = 5;
+	uint32 id = 11;
+	uint32 open_time = 9;
 }

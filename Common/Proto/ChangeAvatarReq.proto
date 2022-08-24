@@ -21,14 +21,13 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1640
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message ChangeAvatarReq {
-  Vector move_pos = 15;
-  uint32 skill_id = 2;
-  uint64 guid = 7;
-  bool is_move = 10;
+	Vector move_pos = 15;
+	uint32 skill_id = 2;
+	uint64 guid = 7;
+	bool is_move = 10;
 }

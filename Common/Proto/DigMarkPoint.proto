@@ -21,9 +21,8 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message DigMarkPoint {
-  Vector pos = 1;
-  uint32 bundle_id = 13;
-  Vector rot = 3;
+	Vector pos = 1;
+	uint32 bundle_id = 13;
+	Vector rot = 3;
 }

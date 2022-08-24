@@ -21,11 +21,11 @@ import "MapMarkTipsInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 3327
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message GetMapMarkTipsRsp {
-  int32 retcode = 7;
-  repeated MapMarkTipsInfo mark_tips_list = 11;
+	int32 retcode = 7;
+	repeated MapMarkTipsInfo mark_tips_list = 11;
 }

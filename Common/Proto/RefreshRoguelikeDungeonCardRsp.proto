@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8349
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message RefreshRoguelikeDungeonCardRsp {
-  int32 retcode = 3;
-  repeated uint32 res_card_list = 9;
+	int32 retcode = 3;
+	repeated uint32 res_card_list = 9;
 }

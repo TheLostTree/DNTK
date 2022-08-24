@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1007
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message BigTalentPointConvertReq {
-  repeated uint64 item_guid_list = 6;
-  uint64 avatar_guid = 3;
+	repeated uint64 item_guid_list = 6;
+	uint64 avatar_guid = 3;
 }

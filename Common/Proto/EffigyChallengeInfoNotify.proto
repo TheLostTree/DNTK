@@ -19,13 +19,13 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2090
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message EffigyChallengeInfoNotify {
-  uint32 difficulty_id = 9;
-  repeated uint32 condition_id_list = 11;
-  uint32 challenge_score = 14;
-  uint32 challenge_id = 8;
+	uint32 difficulty_id = 9;
+	repeated uint32 condition_id_list = 11;
+	uint32 challenge_score = 14;
+	uint32 challenge_id = 8;
 }

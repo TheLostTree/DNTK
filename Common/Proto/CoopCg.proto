@@ -19,8 +19,7 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message CoopCg {
-  bool is_unlock = 14;
-  uint32 id = 8;
+	bool is_unlock = 14;
+	uint32 id = 8;
 }

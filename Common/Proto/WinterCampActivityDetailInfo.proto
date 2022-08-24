@@ -23,14 +23,13 @@ import "Unk2700_MBIDJDLLBNM.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message WinterCampActivityDetailInfo {
-  repeated Unk2700_MBIDJDLLBNM Unk2700_FBMHFJHDJNB = 9;
-  Unk2700_DIEGJDEIDKO battle_info = 10;
-  repeated uint32 Unk2700_GALHBPGEGNL = 8;
-  repeated uint32 Unk2700_DKCGOPBHJHA = 14;
-  repeated uint32 Unk2700_OOBOCEALLBE = 6;
-  bool is_content_closed = 15;
-  Unk2700_DIEGJDEIDKO explore_info = 11;
-  repeated ItemParam Unk2700_CFENLEBIKGG = 2;
+	repeated Unk2700_MBIDJDLLBNM Unk2700_FBMHFJHDJNB = 9;
+	Unk2700_DIEGJDEIDKO battle_info = 10;
+	repeated uint32 Unk2700_GALHBPGEGNL = 8;
+	repeated uint32 Unk2700_DKCGOPBHJHA = 14;
+	repeated uint32 Unk2700_OOBOCEALLBE = 6;
+	bool is_content_closed = 15;
+	Unk2700_DIEGJDEIDKO explore_info = 11;
+	repeated ItemParam Unk2700_CFENLEBIKGG = 2;
 }

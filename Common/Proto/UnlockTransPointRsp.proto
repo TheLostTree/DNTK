@@ -19,10 +19,10 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 3426
-// EnetChannelId: 1
+// EnetChannelId: 0
 // EnetIsReliable: true
+// IsAllowClient: true
 message UnlockTransPointRsp {
-  int32 retcode = 12;
+	int32 retcode = 12;
 }

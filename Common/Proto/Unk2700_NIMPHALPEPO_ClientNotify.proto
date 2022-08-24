@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 6236
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message Unk2700_NIMPHALPEPO_ClientNotify {
-  uint32 Unk2700_MKIMFKIGBCL = 13;
-  uint64 Unk2700_ONOOJBEABOE = 12;
+	uint32 Unk2700_MKIMFKIGBCL = 13;
+	uint64 Unk2700_ONOOJBEABOE = 12;
 }

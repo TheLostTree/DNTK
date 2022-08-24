@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8148
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message DoRoguelikeDungeonCardGachaReq {
-  uint32 dungeon_id = 13;
-  uint32 cell_id = 6;
+	uint32 dungeon_id = 13;
+	uint32 cell_id = 6;
 }

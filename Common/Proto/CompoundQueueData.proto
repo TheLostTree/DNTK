@@ -19,10 +19,9 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message CompoundQueueData {
-  uint32 output_count = 1;
-  uint32 compound_id = 4;
-  uint32 output_time = 14;
-  uint32 wait_count = 8;
+	uint32 output_count = 1;
+	uint32 compound_id = 4;
+	uint32 output_time = 14;
+	uint32 wait_count = 8;
 }

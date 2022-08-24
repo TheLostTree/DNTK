@@ -21,11 +21,11 @@ import "PotionStage.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8067
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2700_ODJKHILOILK {
-  int32 retcode = 11;
-  PotionStage Unk2700_BBEEMJECIAA = 14;
+	int32 retcode = 11;
+	PotionStage Unk2700_BBEEMJECIAA = 14;
 }

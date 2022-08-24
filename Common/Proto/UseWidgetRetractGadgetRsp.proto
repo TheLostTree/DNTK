@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4261
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message UseWidgetRetractGadgetRsp {
-  int32 retcode = 6;
-  uint32 entity_id = 14;
+	int32 retcode = 6;
+	uint32 entity_id = 14;
 }

@@ -22,15 +22,14 @@ import "WidgetCreatorInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4255
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message WidgetDoBagReq {
-  uint32 material_id = 9;
-  oneof op_info {
-    WidgetCreateLocationInfo location_info = 832;
-    WidgetCreatorInfo widget_creator_info = 1497;
-  }
+	uint32 material_id = 9;
+	oneof op_info {
+		WidgetCreateLocationInfo location_info = 832;
+		WidgetCreatorInfo widget_creator_info = 1497;
+	}
 }

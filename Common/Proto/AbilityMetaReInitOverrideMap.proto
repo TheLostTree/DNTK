@@ -21,7 +21,6 @@ import "AbilityScalarValueEntry.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message AbilityMetaReInitOverrideMap {
-  repeated AbilityScalarValueEntry override_map = 7;
+	repeated AbilityScalarValueEntry override_map = 7;
 }

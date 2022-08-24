@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 207
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message SceneInitFinishRsp {
-  int32 retcode = 13;
-  uint32 enter_scene_token = 8;
+	int32 retcode = 13;
+	uint32 enter_scene_token = 8;
 }

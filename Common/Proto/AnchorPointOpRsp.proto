@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4252
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message AnchorPointOpRsp {
-  int32 retcode = 5;
-  uint32 anchor_point_id = 12;
-  uint32 anchor_point_op_type = 4;
+	int32 retcode = 5;
+	uint32 anchor_point_id = 12;
+	uint32 anchor_point_op_type = 4;
 }

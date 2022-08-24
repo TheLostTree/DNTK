@@ -21,11 +21,11 @@ import "Unk2700_HIHKGMLLOGD.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8880
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2700_IEGOOOECBFH {
-  Unk2700_HIHKGMLLOGD Unk2700_BABEGIGEEIB = 13;
-  int32 retcode = 12;
+	Unk2700_HIHKGMLLOGD Unk2700_BABEGIGEEIB = 13;
+	int32 retcode = 12;
 }

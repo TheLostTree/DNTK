@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2159
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message ActivityTakeWatcherRewardBatchReq {
-  repeated uint32 watcher_id_list = 11;
-  uint32 activity_id = 3;
+	repeated uint32 watcher_id_list = 11;
+	uint32 activity_id = 3;
 }

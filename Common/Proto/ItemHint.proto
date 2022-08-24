@@ -19,10 +19,9 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message ItemHint {
-  uint32 item_id = 8;
-  bool is_new = 2;
-  uint32 count = 15;
-  uint64 guid = 4;
+	uint32 item_id = 8;
+	bool is_new = 2;
+	uint32 count = 15;
+	uint64 guid = 4;
 }

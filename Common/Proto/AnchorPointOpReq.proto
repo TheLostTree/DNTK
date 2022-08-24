@@ -19,18 +19,17 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4257
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message AnchorPointOpReq {
-  uint32 anchor_point_id = 9;
-  uint32 anchor_point_op_type = 12;
+	uint32 anchor_point_id = 9;
+	uint32 anchor_point_op_type = 12;
 
-  enum AnchorPointOpType {
-    ANCHOR_POINT_OP_TYPE_NONE = 0;
-    ANCHOR_POINT_OP_TYPE_TELEPORT = 1;
-    ANCHOR_POINT_OP_TYPE_REMOVE = 2;
-  }
+	enum AnchorPointOpType {
+		ANCHOR_POINT_OP_TYPE_NONE = 0;
+		ANCHOR_POINT_OP_TYPE_TELEPORT = 1;
+		ANCHOR_POINT_OP_TYPE_REMOVE = 2;
+	}
 }

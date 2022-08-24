@@ -21,11 +21,11 @@ import "AvatarTeam.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1706
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message AvatarTeamUpdateNotify {
-  map<uint32, AvatarTeam> avatar_team_map = 2;
-  repeated uint64 temp_avatar_guid_list = 13;
+	map<uint32, AvatarTeam> avatar_team_map = 2;
+	repeated uint64 temp_avatar_guid_list = 13;
 }

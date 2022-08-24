@@ -19,9 +19,8 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message MichiaeMatsuriStage {
-  bool is_open = 11;
-  uint32 open_time = 5;
-  uint32 stage_id = 12;
+	bool is_open = 11;
+	uint32 open_time = 5;
+	uint32 stage_id = 12;
 }

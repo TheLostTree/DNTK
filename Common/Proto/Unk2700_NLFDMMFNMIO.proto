@@ -22,10 +22,9 @@ import "Unk2700_PHGGAEDHLBN.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_NLFDMMFNMIO {
-  Unk2700_PHGGAEDHLBN Unk2700_JGFDODPBGFL = 1;
-  repeated Unk2700_KLPINMKOEPE Unk2700_AAGBIFHNNPP = 15;
-  uint32 dungeon_id = 3;
-  uint64 Unk2700_ONOOJBEABOE = 10;
+	Unk2700_PHGGAEDHLBN Unk2700_JGFDODPBGFL = 1;
+	repeated Unk2700_KLPINMKOEPE Unk2700_AAGBIFHNNPP = 15;
+	uint32 dungeon_id = 3;
+	uint64 Unk2700_ONOOJBEABOE = 10;
 }

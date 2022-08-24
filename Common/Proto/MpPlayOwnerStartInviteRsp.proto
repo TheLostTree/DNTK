@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1823
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message MpPlayOwnerStartInviteRsp {
-  int32 retcode = 14;
-  uint32 mp_play_id = 3;
-  bool is_skip_match = 9;
+	int32 retcode = 14;
+	uint32 mp_play_id = 3;
+	bool is_skip_match = 9;
 }

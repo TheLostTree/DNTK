@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 295
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message SceneDestroyEntityRsp {
-  int32 retcode = 14;
-  uint32 entity_id = 7;
+	int32 retcode = 14;
+	uint32 entity_id = 7;
 }

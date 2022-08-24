@@ -19,9 +19,8 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_EKDHFFHMNCD {
-  uint32 index = 2;
-  uint64 Unk2700_FALGECBMIHD = 14;
-  uint32 Unk2700_PBAFCLCIABF = 12;
+	uint32 index = 2;
+	uint64 Unk2700_FALGECBMIHD = 14;
+	uint32 Unk2700_PBAFCLCIABF = 12;
 }

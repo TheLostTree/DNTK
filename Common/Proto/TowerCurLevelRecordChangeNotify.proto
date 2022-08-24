@@ -21,10 +21,10 @@ import "TowerCurLevelRecord.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2412
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message TowerCurLevelRecordChangeNotify {
-  TowerCurLevelRecord cur_level_record = 10;
+	TowerCurLevelRecord cur_level_record = 10;
 }

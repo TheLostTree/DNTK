@@ -21,10 +21,9 @@ import "Unk2700_INMNHKOPCFB.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_EOHBLDIKPME {
-  uint32 map_id = 6;
-  Unk2700_INMNHKOPCFB Unk2700_JONOMFENDFP = 7;
-  repeated uint32 Unk2700_LDIGKKLLDOC = 3;
-  uint32 best_score = 8;
+	uint32 map_id = 6;
+	Unk2700_INMNHKOPCFB Unk2700_JONOMFENDFP = 7;
+	repeated uint32 Unk2700_LDIGKKLLDOC = 3;
+	uint32 best_score = 8;
 }

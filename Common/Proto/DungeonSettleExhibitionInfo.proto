@@ -22,8 +22,7 @@ import "OnlinePlayerInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message DungeonSettleExhibitionInfo {
-  OnlinePlayerInfo player_info = 3;
-  repeated ExhibitionDisplayInfo card_list = 13;
+	OnlinePlayerInfo player_info = 3;
+	repeated ExhibitionDisplayInfo card_list = 13;
 }

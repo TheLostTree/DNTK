@@ -19,15 +19,15 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8915
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message RogueSwitchAvatarRsp {
-  uint64 cur_avatar_guid = 4;
-  repeated uint64 backstage_avatar_guid_list = 8;
-  uint32 dungeon_id = 14;
-  uint32 cell_id = 3;
-  int32 retcode = 12;
-  repeated uint64 onstage_avatar_guid_list = 9;
+	uint64 cur_avatar_guid = 4;
+	repeated uint64 backstage_avatar_guid_list = 8;
+	uint32 dungeon_id = 14;
+	uint32 cell_id = 3;
+	int32 retcode = 12;
+	repeated uint64 onstage_avatar_guid_list = 9;
 }

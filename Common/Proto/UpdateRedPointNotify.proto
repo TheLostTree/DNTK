@@ -21,10 +21,10 @@ import "RedPointData.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 93
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message UpdateRedPointNotify {
-  repeated RedPointData red_point_list = 12;
+	repeated RedPointData red_point_list = 12;
 }

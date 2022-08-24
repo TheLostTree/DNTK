@@ -21,10 +21,10 @@ import "AsterMidDetailInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2031
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message AsterMidInfoNotify {
-  AsterMidDetailInfo info = 4;
+	AsterMidDetailInfo info = 4;
 }

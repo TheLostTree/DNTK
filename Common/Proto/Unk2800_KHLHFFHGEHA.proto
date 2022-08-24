@@ -21,14 +21,13 @@ import "Unk2800_FGFMMFAKDEL.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 21834
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message Unk2800_KHLHFFHGEHA {
-  bool is_success = 4;
-  bool Unk2800_ICNCEKIJNJA = 12;
-  repeated Unk2800_FGFMMFAKDEL Unk2800_EGJDBBGNMFI = 9;
-  uint32 level_id = 5;
+	bool is_success = 4;
+	bool Unk2800_ICNCEKIJNJA = 12;
+	repeated Unk2800_FGFMMFAKDEL Unk2800_EGJDBBGNMFI = 9;
+	uint32 level_id = 5;
 }

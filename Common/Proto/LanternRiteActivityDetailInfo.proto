@@ -23,12 +23,11 @@ import "Unk2700_MJGFEHOMKJE.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message LanternRiteActivityDetailInfo {
-  Unk2700_JCNIPOJMFMH Unk2700_ONOHODJPIGK = 13;
-  repeated Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;
-  Unk2700_MJGFEHOMKJE Unk2700_MPOCLGBFNAK = 8;
-  bool Unk2700_KGGCKHBIOED = 2;
-  bool is_content_closed = 14;
-  bool Unk2700_EOGEAIHJPFD = 6;
+	Unk2700_JCNIPOJMFMH Unk2700_ONOHODJPIGK = 13;
+	repeated Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;
+	Unk2700_MJGFEHOMKJE Unk2700_MPOCLGBFNAK = 8;
+	bool Unk2700_KGGCKHBIOED = 2;
+	bool is_content_closed = 14;
+	bool Unk2700_EOGEAIHJPFD = 6;
 }

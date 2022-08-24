@@ -22,12 +22,11 @@ import "ForwardType.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 372
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message EvtBeingHitNotify {
-  ForwardType forward_type = 6;
-  EvtBeingHitInfo being_hit_info = 3;
+	ForwardType forward_type = 6;
+	EvtBeingHitInfo being_hit_info = 3;
 }

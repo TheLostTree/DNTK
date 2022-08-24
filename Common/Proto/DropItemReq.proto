@@ -22,14 +22,13 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 699
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message DropItemReq {
-  Vector pos = 11;
-  StoreType store_type = 1;
-  uint32 count = 2;
-  uint64 guid = 13;
+	Vector pos = 11;
+	StoreType store_type = 1;
+	uint32 count = 2;
+	uint64 guid = 13;
 }

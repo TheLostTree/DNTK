@@ -22,15 +22,15 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4345
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message HuntingOngoingNotify {
-  HuntingPair hunting_pair = 15;
-  bool is_started = 8;
-  Vector next_position = 3;
-  uint32 finish_clue_count = 10;
-  bool is_final = 14;
-  uint32 fail_time = 7;
+	HuntingPair hunting_pair = 15;
+	bool is_started = 8;
+	Vector next_position = 3;
+	uint32 finish_clue_count = 10;
+	bool is_final = 14;
+	uint32 fail_time = 7;
 }

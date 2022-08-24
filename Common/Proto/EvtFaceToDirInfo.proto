@@ -21,8 +21,7 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message EvtFaceToDirInfo {
-  uint32 entity_id = 12;
-  Vector face_dir = 14;
+	uint32 entity_id = 12;
+	Vector face_dir = 14;
 }

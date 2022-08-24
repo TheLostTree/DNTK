@@ -21,13 +21,14 @@ import "Unk2700_NAPLFKNOECD.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 6276
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2700_FKCDCGCBIEA_ServerNotify {
-  uint32 play_type = 7;
-  bool Unk2700_ANBEGPCLAAO = 15;
-  string Unk2700_JEMDOAHDMBP = 9;
-  repeated Unk2700_NAPLFKNOECD var_list = 5;
+	repeated Unk2700_NAPLFKNOECD var_list = 5;
+	string Unk2700_JEMDOAHDMBP = 9;
+	bool Unk2700_ANBEGPCLAAO = 15;
+	uint32 play_type = 7;
+	bool Unk3000_JHAMNNJMOCI = 4;
 }

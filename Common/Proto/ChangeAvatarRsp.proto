@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1607
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message ChangeAvatarRsp {
-  uint32 skill_id = 3;
-  int32 retcode = 10;
-  uint64 cur_guid = 4;
+	uint32 skill_id = 3;
+	int32 retcode = 10;
+	uint64 cur_guid = 4;
 }

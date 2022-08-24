@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 3035
-// EnetChannelId: 1
+// EnetChannelId: 0
 // EnetIsReliable: true
 // IsAllowClient: true
 message UnlockTransPointReq {
-  uint32 point_id = 12;
-  uint32 scene_id = 10;
+	uint32 point_id = 12;
+	uint32 scene_id = 10;
 }

@@ -19,8 +19,7 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 enum Unk2700_OPEBMJPOOBL {
-  Unk2700_OPEBMJPOOBL_NONE = 0;
-  Unk2700_OPEBMJPOOBL_Unk2700_HONBFAOIDKK = 1;
+	Unk2700_OPEBMJPOOBL_NONE = 0;
+	Unk2700_OPEBMJPOOBL_Unk2700_HONBFAOIDKK = 1;
 }

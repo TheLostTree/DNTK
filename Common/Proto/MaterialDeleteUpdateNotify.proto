@@ -19,8 +19,9 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 700
 // EnetChannelId: 0
-// EnetIsReliable: true
-message MaterialDeleteUpdateNotify {}
+// EnetIsReliable: false
+// IsAllowClient: true
+message MaterialDeleteUpdateNotify {
+}

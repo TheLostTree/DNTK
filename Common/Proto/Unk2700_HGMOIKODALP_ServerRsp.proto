@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 6220
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2700_HGMOIKODALP_ServerRsp {
-  int32 retcode = 14;
-  uint64 Unk2700_ONOOJBEABOE = 11;
+	int32 retcode = 14;
+	uint64 Unk2700_ONOOJBEABOE = 11;
 }

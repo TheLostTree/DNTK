@@ -21,10 +21,9 @@ import "RoutePointChangeInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message SceneRouteChangeInfo {
-  bool is_forward = 12;
-  uint32 route_id = 15;
-  uint32 type = 4;
-  repeated RoutePointChangeInfo point_list = 1;
+	bool is_forward = 12;
+	uint32 route_id = 15;
+	uint32 type = 4;
+	repeated RoutePointChangeInfo point_list = 1;
 }

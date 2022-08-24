@@ -21,10 +21,10 @@ import "DigMarkPoint.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8109
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message DigActivityMarkPointChangeNotify {
-  repeated DigMarkPoint dig_mark_point_list = 11;
+	repeated DigMarkPoint dig_mark_point_list = 11;
 }

@@ -21,9 +21,8 @@ import "SpiceStage.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message SpiceActivityDetailInfo {
-  uint32 Unk2700_IGMHNDNGNPG = 15;
-  repeated SpiceStage spice_stage_list = 7;
-  uint32 Unk2700_KIAHJKGOLGO = 13;
+	uint32 Unk2700_IGMHNDNGNPG = 15;
+	repeated SpiceStage spice_stage_list = 7;
+	uint32 Unk2700_KIAHJKGOLGO = 13;
 }

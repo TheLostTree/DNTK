@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 253
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message SceneTransToPointRsp {
-  uint32 point_id = 14;
-  uint32 scene_id = 3;
-  int32 retcode = 8;
+	uint32 point_id = 14;
+	uint32 scene_id = 3;
+	int32 retcode = 8;
 }

@@ -22,9 +22,8 @@ import "MusicGameRecord.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message MusicGameActivityDetailInfo {
-  repeated MusicBriefInfo Unk2700_HMNHCPMFDCP = 4;
-  repeated MusicBriefInfo Unk2700_FOFAFGKAEJM = 7;
-  map<uint32, MusicGameRecord> music_game_record_map = 8;
+	repeated MusicBriefInfo Unk2700_HMNHCPMFDCP = 4;
+	repeated MusicBriefInfo Unk2700_FOFAFGKAEJM = 7;
+	map<uint32, MusicGameRecord> music_game_record_map = 8;
 }

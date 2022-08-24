@@ -22,14 +22,13 @@ import "Unk2700_LBPFDCBHCBL.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_GBPNAHCAKJE {
-  string Unk2700_OAKBDKKBFHP = 1;
-  string entity_id = 2;
-  string lang = 3;
-  string Unk2700_NDEJPMGPBAH = 4;
-  string region = 5;
-  uint32 uid = 6;
-  repeated Unk2700_EDNGHJGKEKC Unk2700_LHPECOEIIKL = 7;
-  repeated Unk2700_LBPFDCBHCBL Unk2700_LABLGMEOEFM = 8;
+	string Unk2700_OAKBDKKBFHP = 1;
+	string entity_id = 2;
+	string lang = 3;
+	string Unk2700_NDEJPMGPBAH = 4;
+	string region = 5;
+	uint32 uid = 6;
+	repeated Unk2700_EDNGHJGKEKC Unk2700_LHPECOEIIKL = 7;
+	repeated Unk2700_LBPFDCBHCBL Unk2700_LABLGMEOEFM = 8;
 }

@@ -19,8 +19,7 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_IMMPPANFEPP {
-  uint32 guid = 11;
-  uint32 Unk2700_MAABPJMPILD = 6;
+	uint32 guid = 11;
+	uint32 Unk2700_MAABPJMPILD = 6;
 }

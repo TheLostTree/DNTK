@@ -19,13 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1075
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message AvatarSkillUpgradeReq {
-  uint64 avatar_guid = 7;
-  uint32 old_level = 3;
-  uint32 avatar_skill_id = 4;
+	uint64 avatar_guid = 7;
+	uint32 old_level = 3;
+	uint32 avatar_skill_id = 4;
 }

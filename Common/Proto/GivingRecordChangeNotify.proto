@@ -21,11 +21,11 @@ import "GivingRecord.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 187
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message GivingRecordChangeNotify {
-  bool is_deactive = 11;
-  GivingRecord giving_record = 15;
+	bool is_deactive = 11;
+	GivingRecord giving_record = 15;
 }

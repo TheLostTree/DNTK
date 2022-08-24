@@ -21,11 +21,11 @@ import "FallPlayerBrief.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5521
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message GalleryFallScoreNotify {
-  uint32 gallery_id = 7;
-  map<uint32, FallPlayerBrief> uid_brief_map = 1;
+	uint32 gallery_id = 7;
+	map<uint32, FallPlayerBrief> uid_brief_map = 1;
 }

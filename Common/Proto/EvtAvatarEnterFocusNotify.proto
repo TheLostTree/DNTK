@@ -22,23 +22,22 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 304
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message EvtAvatarEnterFocusNotify {
-  uint32 entity_id = 1;
-  bool can_move = 10;
-  bool enter_holding_focus_shoot = 13;
-  bool Unk2700_GACKGHEHEIK = 6;
-  bool use_auto_focus = 5;
-  bool fast_focus = 3;
-  bool show_cross_hair = 12;
-  bool enter_normal_focus_shoot = 14;
-  ForwardType forward_type = 8;
-  Vector focus_forward = 7;
-  bool disable_anim = 9;
-  bool use_focus_sticky = 15;
-  bool use_gyro = 11;
+	uint32 entity_id = 1;
+	bool can_move = 10;
+	bool enter_holding_focus_shoot = 13;
+	bool Unk2700_GACKGHEHEIK = 6;
+	bool use_auto_focus = 5;
+	bool fast_focus = 3;
+	bool show_cross_hair = 12;
+	bool enter_normal_focus_shoot = 14;
+	ForwardType forward_type = 8;
+	Vector focus_forward = 7;
+	bool disable_anim = 9;
+	bool use_focus_sticky = 15;
+	bool use_gyro = 11;
 }

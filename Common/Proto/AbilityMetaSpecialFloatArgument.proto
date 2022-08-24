@@ -19,8 +19,7 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message AbilityMetaSpecialFloatArgument {
-  float argument_value = 14;
-  bool is_on = 10;
+	float argument_value = 14;
+	bool is_on = 10;
 }

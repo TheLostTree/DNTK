@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1957
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message SaveMainCoopRsp {
-  int32 retcode = 2;
-  repeated uint32 save_point_id_list = 15;
-  uint32 id = 14;
+	int32 retcode = 2;
+	repeated uint32 save_point_id_list = 15;
+	uint32 id = 14;
 }

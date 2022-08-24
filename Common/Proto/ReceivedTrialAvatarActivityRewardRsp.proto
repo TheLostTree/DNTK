@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2076
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message ReceivedTrialAvatarActivityRewardRsp {
-  uint32 activity_id = 13;
-  int32 retcode = 3;
-  uint32 trial_avatar_index_id = 9;
+	uint32 activity_id = 13;
+	int32 retcode = 3;
+	uint32 trial_avatar_index_id = 9;
 }

@@ -21,11 +21,11 @@ import "Birthday.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4097
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message SetPlayerBirthdayRsp {
-  Birthday birthday = 2;
-  int32 retcode = 5;
+	Birthday birthday = 2;
+	int32 retcode = 5;
 }

@@ -19,18 +19,17 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 881
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message UpdateAbilityCreatedMovingPlatformNotify {
-  uint32 entity_id = 4;
-  OpType op_type = 3;
+	uint32 entity_id = 4;
+	OpType op_type = 3;
 
-  enum OpType {
-    OP_TYPE_NONE = 0;
-    OP_TYPE_ACTIVATE = 1;
-    OP_TYPE_DEACTIVATE = 2;
-  }
+	enum OpType {
+		OP_TYPE_NONE = 0;
+		OP_TYPE_ACTIVATE = 1;
+		OP_TYPE_DEACTIVATE = 2;
+	}
 }

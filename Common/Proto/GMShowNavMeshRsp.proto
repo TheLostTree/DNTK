@@ -21,11 +21,11 @@ import "PBNavMeshTile.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2400
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message GMShowNavMeshRsp {
-  repeated PBNavMeshTile tiles = 11;
-  int32 retcode = 5;
+	repeated PBNavMeshTile tiles = 11;
+	int32 retcode = 5;
 }

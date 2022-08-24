@@ -19,14 +19,13 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8869
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message ChannelerSlabEnterLoopDungeonReq {
-  uint32 point_id = 9;
-  uint32 dungeon_index = 10;
-  repeated uint32 condition_id_list = 5;
-  uint32 difficulty_id = 12;
+	uint32 point_id = 9;
+	uint32 dungeon_index = 10;
+	repeated uint32 condition_id_list = 5;
+	uint32 difficulty_id = 12;
 }

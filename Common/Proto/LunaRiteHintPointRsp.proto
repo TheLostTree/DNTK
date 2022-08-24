@@ -22,14 +22,13 @@ import "LunaRiteHintStatusType.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8765
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message LunaRiteHintPointRsp {
-  LunaRiteHintStatusType hint_status = 4;
-  uint32 area_id = 5;
-  int32 retcode = 13;
-  repeated LunaRiteHintPoint hint_point = 9;
+	LunaRiteHintStatusType hint_status = 4;
+	uint32 area_id = 5;
+	int32 retcode = 13;
+	repeated LunaRiteHintPoint hint_point = 9;
 }

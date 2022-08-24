@@ -21,11 +21,11 @@ import "LunchBoxData.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4294
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message SetUpLunchBoxWidgetRsp {
-  LunchBoxData lunch_box_data = 3;
-  int32 retcode = 13;
+	LunchBoxData lunch_box_data = 3;
+	int32 retcode = 13;
 }

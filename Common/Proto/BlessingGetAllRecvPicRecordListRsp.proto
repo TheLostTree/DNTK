@@ -21,11 +21,11 @@ import "BlessingRecvPicRecord.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2083
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message BlessingGetAllRecvPicRecordListRsp {
-  repeated BlessingRecvPicRecord recv_pic_record_list = 15;
-  int32 retcode = 9;
+	repeated BlessingRecvPicRecord recv_pic_record_list = 15;
+	int32 retcode = 9;
 }

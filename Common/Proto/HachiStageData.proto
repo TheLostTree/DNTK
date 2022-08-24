@@ -19,10 +19,9 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message HachiStageData {
-  bool is_open = 8;
-  bool is_finished = 12;
-  uint32 open_time = 5;
-  uint32 stage_id = 14;
+	bool is_open = 8;
+	bool is_finished = 12;
+	uint32 open_time = 5;
+	uint32 stage_id = 14;
 }

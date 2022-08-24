@@ -21,15 +21,15 @@ import "CreateEntityInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 431
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message QuestCreateEntityRsp {
-  uint32 quest_id = 13;
-  int32 retcode = 8;
-  uint32 entity_id = 7;
-  CreateEntityInfo entity = 11;
-  uint32 parent_quest_id = 1;
-  bool is_rewind = 14;
+	uint32 quest_id = 13;
+	int32 retcode = 8;
+	uint32 entity_id = 7;
+	CreateEntityInfo entity = 11;
+	uint32 parent_quest_id = 1;
+	bool is_rewind = 14;
 }

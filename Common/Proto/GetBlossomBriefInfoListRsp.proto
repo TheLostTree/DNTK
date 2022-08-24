@@ -21,12 +21,11 @@ import "BlossomBriefInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2798
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message GetBlossomBriefInfoListRsp {
-  int32 retcode = 12;
-  repeated BlossomBriefInfo brief_info_list = 11;
+	int32 retcode = 12;
+	repeated BlossomBriefInfo brief_info_list = 11;
 }

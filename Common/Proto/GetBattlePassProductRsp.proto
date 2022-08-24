@@ -19,14 +19,14 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2649
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message GetBattlePassProductRsp {
-  int32 retcode = 14;
-  string price_tier = 6;
-  uint32 battle_pass_product_play_type = 2;
-  string product_id = 1;
-  uint32 cur_schedule_id = 11;
+	int32 retcode = 14;
+	string price_tier = 6;
+	uint32 battle_pass_product_play_type = 2;
+	string product_id = 1;
+	uint32 cur_schedule_id = 11;
 }

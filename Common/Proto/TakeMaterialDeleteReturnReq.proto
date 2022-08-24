@@ -21,11 +21,10 @@ import "MaterialDeleteReturnType.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 629
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message TakeMaterialDeleteReturnReq {
-  MaterialDeleteReturnType type = 8;
+	MaterialDeleteReturnType type = 8;
 }

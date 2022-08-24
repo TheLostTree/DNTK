@@ -21,9 +21,8 @@ import "Unk2700_CMOCCENBOLJ.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message RogueDiaryStage {
-  uint32 stage_id = 1;
-  Unk2700_CMOCCENBOLJ best_record = 12;
-  bool Unk2700_PEDCFBJLHGP = 10;
+	uint32 stage_id = 1;
+	Unk2700_CMOCCENBOLJ best_record = 12;
+	bool Unk2700_PEDCFBJLHGP = 10;
 }

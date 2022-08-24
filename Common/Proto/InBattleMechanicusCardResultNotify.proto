@@ -21,15 +21,15 @@ import "InBattleMechanicusCardInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5397
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message InBattleMechanicusCardResultNotify {
-  uint32 wait_seconds = 6;
-  uint32 group_id = 2;
-  repeated InBattleMechanicusCardInfo card_list = 9;
-  uint64 wait_begin_time_us = 7;
-  map<uint32, uint32> player_confirmed_card_map = 12;
-  uint32 play_index = 8;
+	uint32 wait_seconds = 6;
+	uint32 group_id = 2;
+	repeated InBattleMechanicusCardInfo card_list = 9;
+	uint64 wait_begin_time_us = 7;
+	map<uint32, uint32> player_confirmed_card_map = 12;
+	uint32 play_index = 8;
 }

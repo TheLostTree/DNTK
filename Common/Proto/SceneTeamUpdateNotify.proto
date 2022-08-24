@@ -21,11 +21,11 @@ import "SceneTeamAvatar.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1775
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message SceneTeamUpdateNotify {
-  repeated SceneTeamAvatar scene_team_avatar_list = 11;
-  bool is_in_mp = 15;
+	repeated SceneTeamAvatar scene_team_avatar_list = 11;
+	bool is_in_mp = 15;
 }

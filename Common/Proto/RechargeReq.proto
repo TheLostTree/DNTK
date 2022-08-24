@@ -24,14 +24,13 @@ import "ShopMcoinProduct.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4126
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message RechargeReq {
-  PlayProduct play_product = 10;
-  ShopCardProduct card_product = 8;
-  ShopMcoinProduct mcoin_product = 14;
-  ShopConcertProduct concert_product = 7;
+	PlayProduct play_product = 10;
+	ShopCardProduct card_product = 8;
+	ShopMcoinProduct mcoin_product = 14;
+	ShopConcertProduct concert_product = 7;
 }

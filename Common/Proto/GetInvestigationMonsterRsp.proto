@@ -21,13 +21,12 @@ import "InvestigationMonster.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1910
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message GetInvestigationMonsterRsp {
-  repeated InvestigationMonster monster_list = 10;
-  int32 retcode = 1;
-  bool Unk2700_DEMFDHNFBBJ = 2;
+	repeated InvestigationMonster monster_list = 10;
+	int32 retcode = 1;
+	bool Unk2700_DEMFDHNFBBJ = 2;
 }

@@ -21,11 +21,11 @@ import "RogueEffectRecord.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8222
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message RoguelikeEffectDataNotify {
-  repeated RogueEffectRecord curse_list = 7;
-  repeated RogueEffectRecord card_list = 4;
+	repeated RogueEffectRecord curse_list = 7;
+	repeated RogueEffectRecord card_list = 4;
 }

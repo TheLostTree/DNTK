@@ -21,11 +21,10 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message ShapeBox {
-  Vector center = 1;
-  Vector axis_0 = 2;
-  Vector axis_1 = 3;
-  Vector axis_2 = 4;
-  Vector extents = 5;
+	Vector center = 1;
+	Vector axis0 = 2;
+	Vector axis1 = 3;
+	Vector axis2 = 4;
+	Vector extents = 5;
 }

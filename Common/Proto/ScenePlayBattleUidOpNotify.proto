@@ -19,19 +19,19 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4447
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message ScenePlayBattleUidOpNotify {
-  uint32 op = 7;
-  repeated uint32 param_target_list = 9;
-  uint32 entity_id = 2;
-  string param_str = 3;
-  repeated uint32 uid_list = 6;
-  uint32 param_index = 11;
-  uint32 play_type = 8;
-  uint32 param_duration = 12;
-  repeated uint32 param_list = 15;
-  uint32 play_id = 5;
+	uint32 op = 7;
+	repeated uint32 param_target_list = 9;
+	uint32 entity_id = 2;
+	string param_str = 3;
+	repeated uint32 uid_list = 6;
+	uint32 param_index = 11;
+	uint32 play_type = 8;
+	uint32 param_duration = 12;
+	repeated uint32 param_list = 15;
+	uint32 play_id = 5;
 }

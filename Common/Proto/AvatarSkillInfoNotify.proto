@@ -21,11 +21,11 @@ import "AvatarSkillInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1090
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message AvatarSkillInfoNotify {
-  map<uint32, AvatarSkillInfo> skill_map = 11;
-  uint64 guid = 4;
+	map<uint32, AvatarSkillInfo> skill_map = 11;
+	uint64 guid = 4;
 }

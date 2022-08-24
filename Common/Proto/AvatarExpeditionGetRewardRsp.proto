@@ -22,13 +22,13 @@ import "ItemParam.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1784
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message AvatarExpeditionGetRewardRsp {
-  repeated ItemParam Unk2700_HBKHOBPGCLH = 9;
-  repeated ItemParam item_list = 8;
-  map<uint64, AvatarExpeditionInfo> expedition_info_map = 12;
-  int32 retcode = 2;
+	repeated ItemParam Unk2700_HBKHOBPGCLH = 9;
+	repeated ItemParam item_list = 8;
+	map<uint64, AvatarExpeditionInfo> expedition_info_map = 12;
+	int32 retcode = 2;
 }

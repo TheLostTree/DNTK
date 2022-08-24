@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2007
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message TakeEffigyRewardRsp {
-  int32 retcode = 15;
-  uint32 reward_index = 7;
+	int32 retcode = 15;
+	uint32 reward_index = 7;
 }

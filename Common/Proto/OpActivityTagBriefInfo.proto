@@ -19,9 +19,8 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message OpActivityTagBriefInfo {
-  uint32 config_id = 2;
-  bool has_reward = 3;
-  uint32 op_activity_type = 11;
+	uint32 config_id = 2;
+	bool has_reward = 3;
+	uint32 op_activity_type = 11;
 }

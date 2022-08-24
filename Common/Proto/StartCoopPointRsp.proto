@@ -21,13 +21,13 @@ import "MainCoop.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1964
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message StartCoopPointRsp {
-  bool is_start = 9;
-  MainCoop start_main_coop = 15;
-  uint32 coop_point = 13;
-  int32 retcode = 8;
+	bool is_start = 9;
+	MainCoop start_main_coop = 15;
+	uint32 coop_point = 13;
+	int32 retcode = 8;
 }

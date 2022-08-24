@@ -21,18 +21,17 @@ import "AISnapshotEntitySkillCycle.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message AISnapshotEntityData {
-  float tick_time = 5;
-  uint32 tactic = 2;
-  repeated AISnapshotEntitySkillCycle finished_skill_cycles = 9;
-  float moved_distance = 4;
-  uint32 ai_target_id = 13;
-  uint32 threat_target_id = 3;
-  uint32 threat_list_size = 1;
-  uint32 entity_id = 15;
-  map<uint32, uint32> hitting_avatars = 7;
-  float distance_to_player = 11;
-  uint32 attack_target_id = 10;
-  float real_time = 14;
+	float tick_time = 5;
+	uint32 tactic = 2;
+	repeated AISnapshotEntitySkillCycle finished_skill_cycles = 9;
+	float moved_distance = 4;
+	uint32 ai_target_id = 13;
+	uint32 threat_target_id = 3;
+	uint32 threat_list_size = 1;
+	uint32 entity_id = 15;
+	map<uint32, uint32> hitting_avatars = 7;
+	float distance_to_player = 11;
+	uint32 attack_target_id = 10;
+	float real_time = 14;
 }

@@ -21,17 +21,16 @@ import "ItemParam.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8414
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message Unk2700_IAAPADOAMIA {
-  uint32 Unk2700_HCKAMFPGMJN = 14;
-  uint32 Unk2700_CHHJBPDPICI = 7;
-  uint32 quest_id = 11;
-  repeated ItemParam item_list = 10;
-  bool Unk2700_AGFNJHAMDBD = 9;
-  repeated uint32 Unk2700_AJKDPJOKBED = 6;
-  uint32 Unk2700_OEDDPDJEEPC = 3;
+	uint32 Unk2700_HCKAMFPGMJN = 14;
+	uint32 Unk2700_CHHJBPDPICI = 7;
+	uint32 quest_id = 11;
+	repeated ItemParam item_list = 10;
+	bool Unk2700_AGFNJHAMDBD = 9;
+	repeated uint32 Unk2700_AJKDPJOKBED = 6;
+	uint32 Unk2700_OEDDPDJEEPC = 3;
 }

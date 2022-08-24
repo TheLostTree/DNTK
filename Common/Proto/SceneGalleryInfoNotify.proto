@@ -21,10 +21,10 @@ import "SceneGalleryInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5581
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message SceneGalleryInfoNotify {
-  SceneGalleryInfo gallery_info = 4;
+	SceneGalleryInfo gallery_info = 4;
 }

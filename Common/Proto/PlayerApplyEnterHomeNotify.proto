@@ -21,11 +21,11 @@ import "OnlinePlayerInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4533
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message PlayerApplyEnterHomeNotify {
-  OnlinePlayerInfo src_player_info = 9;
-  uint32 src_app_id = 10;
+	OnlinePlayerInfo src_player_info = 9;
+	uint32 src_app_id = 10;
 }

@@ -19,13 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 917
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message DungeonInterruptChallengeReq {
-  uint32 challenge_index = 14;
-  uint32 group_id = 13;
-  uint32 challenge_id = 11;
+	uint32 challenge_index = 14;
+	uint32 group_id = 13;
+	uint32 challenge_id = 11;
 }

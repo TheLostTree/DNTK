@@ -21,16 +21,15 @@ import "AbilityInvokeEntry.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1172
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message AbilityInvocationFixedNotify {
-  AbilityInvokeEntry invoke_6_th = 14;
-  AbilityInvokeEntry invoke_5_th = 8;
-  AbilityInvokeEntry invoke_4_th = 1;
-  AbilityInvokeEntry invoke_2_nd = 5;
-  AbilityInvokeEntry invoke_1_st = 10;
-  AbilityInvokeEntry invoke_3_rd = 12;
+	AbilityInvokeEntry invoke1_st = 10;
+	AbilityInvokeEntry invoke2_nd = 5;
+	AbilityInvokeEntry invoke3_rd = 12;
+	AbilityInvokeEntry invoke4_th = 1;
+	AbilityInvokeEntry invoke5_th = 8;
+	AbilityInvokeEntry invoke6_th = 14;
 }

@@ -21,16 +21,15 @@ import "MatchType.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4176
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message PlayerStartMatchReq {
-  MatchType match_type = 3;
-  uint32 mechanicus_difficult_level = 12;
-  repeated uint32 match_param_list = 11;
-  uint32 dungeon_id = 1;
-  uint32 mp_play_id = 15;
-  uint32 match_id = 6;
+	MatchType match_type = 3;
+	uint32 mechanicus_difficult_level = 12;
+	repeated uint32 match_param_list = 11;
+	uint32 dungeon_id = 1;
+	uint32 mp_play_id = 15;
+	uint32 match_id = 6;
 }

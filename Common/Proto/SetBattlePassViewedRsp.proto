@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2642
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message SetBattlePassViewedRsp {
-  uint32 schedule_id = 2;
-  int32 retcode = 3;
+	uint32 schedule_id = 2;
+	int32 retcode = 3;
 }

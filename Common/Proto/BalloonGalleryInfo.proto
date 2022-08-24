@@ -21,7 +21,6 @@ import "Unk2700_ONCHFHBBCBN.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message BalloonGalleryInfo {
-  repeated Unk2700_ONCHFHBBCBN record_list = 15;
+	repeated Unk2700_ONCHFHBBCBN record_list = 15;
 }

@@ -21,11 +21,10 @@ import "ItemParam.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8216
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message Unk2700_APOBKAEHMEL {
-  repeated ItemParam Unk2700_EENOCHNIAJL = 1;
+	repeated ItemParam Unk2700_EENOCHNIAJL = 1;
 }

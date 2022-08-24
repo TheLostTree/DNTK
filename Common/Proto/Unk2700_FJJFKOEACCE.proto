@@ -19,13 +19,13 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8450
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2700_FJJFKOEACCE {
-  uint32 Unk2700_EMPNNJKDMHE = 14;
-  map<uint32, uint32> Unk2700_DNMNEMKIELD = 6;
-  uint32 Unk2700_GKBGMLGFIBN = 2;
-  uint32 Unk2700_OGHMDKMIKBK = 13;
+	uint32 Unk2700_EMPNNJKDMHE = 14;
+	map<uint32, uint32> Unk2700_DNMNEMKIELD = 6;
+	uint32 Unk2700_GKBGMLGFIBN = 2;
+	uint32 Unk2700_OGHMDKMIKBK = 13;
 }

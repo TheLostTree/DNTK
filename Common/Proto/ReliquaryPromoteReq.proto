@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 627
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message ReliquaryPromoteReq {
-  uint64 item_guid = 10;
-  uint64 target_guid = 13;
+	uint64 item_guid = 10;
+	uint64 target_guid = 13;
 }

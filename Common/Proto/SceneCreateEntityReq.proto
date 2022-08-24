@@ -22,13 +22,12 @@ import "CreateReason.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 288
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message SceneCreateEntityReq {
-  CreateEntityInfo entity = 1;
-  bool is_destroy_when_disconnect = 10;
-  CreateReason reason = 3;
+	CreateEntityInfo entity = 1;
+	bool is_destroy_when_disconnect = 10;
+	CreateReason reason = 3;
 }

@@ -22,8 +22,7 @@ import "Unk2800_JIPMJPAKIKE.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message GearActivityDetailInfo {
-  repeated Unk2800_BPOJIIDEADD Unk2800_GBAPCBPMHNJ = 14;
-  Unk2800_JIPMJPAKIKE Unk2800_IHEHGOBCINC = 8;
+	repeated Unk2800_BPOJIIDEADD Unk2800_GBAPCBPMHNJ = 14;
+	Unk2800_JIPMJPAKIKE Unk2800_IHEHGOBCINC = 8;
 }

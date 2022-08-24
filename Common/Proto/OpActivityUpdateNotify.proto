@@ -21,10 +21,10 @@ import "OpActivityInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5135
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message OpActivityUpdateNotify {
-  OpActivityInfo op_activity_info = 6;
+	OpActivityInfo op_activity_info = 6;
 }

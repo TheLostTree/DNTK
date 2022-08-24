@@ -21,11 +21,11 @@ import "HomeCustomFurnitureInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4496
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message HomeEditCustomFurnitureRsp {
-  HomeCustomFurnitureInfo custom_furniture_info = 11;
-  int32 retcode = 14;
+	HomeCustomFurnitureInfo custom_furniture_info = 11;
+	int32 retcode = 14;
 }

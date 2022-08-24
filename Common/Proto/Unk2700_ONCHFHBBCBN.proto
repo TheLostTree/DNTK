@@ -21,10 +21,9 @@ import "Unk2700_OCDMIOKNHHH.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_ONCHFHBBCBN {
-  uint32 hit_count = 12;
-  uint32 score = 11;
-  Unk2700_OCDMIOKNHHH player_info = 5;
-  uint32 timestamp = 2;
+	uint32 hit_count = 12;
+	uint32 score = 11;
+	Unk2700_OCDMIOKNHHH player_info = 5;
+	uint32 timestamp = 2;
 }

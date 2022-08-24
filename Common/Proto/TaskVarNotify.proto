@@ -21,10 +21,10 @@ import "TaskVar.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 160
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message TaskVarNotify {
-  repeated TaskVar task_var_list = 7;
+	repeated TaskVar task_var_list = 7;
 }

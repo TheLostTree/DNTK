@@ -21,14 +21,13 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5802
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message FishCastRodReq {
-  uint32 bait_id = 14;
-  uint32 rod_id = 4;
-  uint32 rod_entity_id = 7;
-  Vector pos = 12;
+	uint32 bait_id = 14;
+	uint32 rod_id = 4;
+	uint32 rod_entity_id = 7;
+	Vector pos = 12;
 }

@@ -22,12 +22,12 @@ import "StoreType.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 672
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message PlayerStoreNotify {
-  repeated Item item_list = 15;
-  uint32 weight_limit = 8;
-  StoreType store_type = 2;
+	repeated Item item_list = 15;
+	uint32 weight_limit = 8;
+	StoreType store_type = 2;
 }

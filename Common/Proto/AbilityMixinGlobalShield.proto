@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message AbilityMixinGlobalShield {
-  bool is_create_effect = 4;
-  float sub_shield = 7;
-  float height_offset = 5;
-  uint32 avatar_id = 11;
-  float max_shield = 10;
-  string shield_effect_name = 2;
+	bool is_create_effect = 4;
+	float sub_shield = 7;
+	float height_offset = 5;
+	uint32 avatar_id = 11;
+	float max_shield = 10;
+	string shield_effect_name = 2;
 }

@@ -21,12 +21,12 @@ import "ItemParam.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4833
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message HomeAvatarRewardEventGetRsp {
-  repeated ItemParam item_list = 4;
-  int32 retcode = 14;
-  uint32 event_id = 8;
+	repeated ItemParam item_list = 4;
+	int32 retcode = 14;
+	uint32 event_id = 8;
 }

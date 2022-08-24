@@ -19,14 +19,13 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message CityReputationRequestInfo {
-  bool is_open = 2;
-  repeated RequestInfo request_info_list = 1;
+	bool is_open = 2;
+	repeated RequestInfo request_info_list = 1;
 
-  message RequestInfo {
-    uint32 request_id = 3;
-    uint32 quest_id = 9;
-    bool is_taken_reward = 6;
-  }
+	message RequestInfo {
+		uint32 request_id = 3;
+		uint32 quest_id = 9;
+		bool is_taken_reward = 6;
+	}
 }

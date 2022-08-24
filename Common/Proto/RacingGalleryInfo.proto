@@ -21,7 +21,6 @@ import "Unk2700_OJJNGIHDJEH.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message RacingGalleryInfo {
-  repeated Unk2700_OJJNGIHDJEH record_list = 7;
+	repeated Unk2700_OJJNGIHDJEH record_list = 7;
 }

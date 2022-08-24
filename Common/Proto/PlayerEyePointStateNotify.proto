@@ -23,23 +23,23 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 3051
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message PlayerEyePointStateNotify {
-  uint32 region_entity_id = 15;
-  Vector eye_point_pos = 1;
-  bool is_use_eye_point = 3;
-  uint32 region_config_id = 7;
-  uint32 region_shape = 12;
-  bool is_filter_stream_pos = 2;
-  int32 Unk2800_GBBMMIGJFCF = 5;
-  uint32 region_group_id = 4;
-  oneof region_size {
-    float sphere_radius = 255;
-    Vector cubic_size = 1823;
-    CylinderRegionSize cylinder_size = 1862;
-    PolygonRegionSize polygon_size = 877;
-  }
+	uint32 region_entity_id = 15;
+	Vector eye_point_pos = 1;
+	bool is_use_eye_point = 3;
+	uint32 region_config_id = 7;
+	uint32 region_shape = 12;
+	bool is_filter_stream_pos = 2;
+	int32 Unk2800_GBBMMIGJFCF = 5;
+	uint32 region_group_id = 4;
+	oneof region_size {
+		float sphere_radius = 255;
+		Vector cubic_size = 1823;
+		CylinderRegionSize cylinder_size = 1862;
+		PolygonRegionSize polygon_size = 877;
+	}
 }

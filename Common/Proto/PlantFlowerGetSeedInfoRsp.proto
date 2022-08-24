@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8764
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message PlantFlowerGetSeedInfoRsp {
-  int32 retcode = 15;
-  uint32 schedule_id = 12;
-  uint32 seed_reward_id = 5;
+	int32 retcode = 15;
+	uint32 schedule_id = 12;
+	uint32 seed_reward_id = 5;
 }

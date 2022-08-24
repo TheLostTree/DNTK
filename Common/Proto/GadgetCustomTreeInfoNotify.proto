@@ -21,11 +21,11 @@ import "CustomGadgetTreeInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 850
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message GadgetCustomTreeInfoNotify {
-  CustomGadgetTreeInfo custom_gadget_tree_info = 5;
-  uint32 gadget_entity_id = 12;
+	CustomGadgetTreeInfo custom_gadget_tree_info = 5;
+	uint32 gadget_entity_id = 12;
 }

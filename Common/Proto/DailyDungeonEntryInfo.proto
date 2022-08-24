@@ -21,10 +21,9 @@ import "DungeonEntryInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message DailyDungeonEntryInfo {
-  uint32 dungeon_entry_config_id = 12;
-  uint32 dungeon_entry_id = 15;
-  DungeonEntryInfo recommend_dungeon_entry_info = 1;
-  uint32 recommend_dungeon_id = 4;
+	uint32 dungeon_entry_config_id = 12;
+	uint32 dungeon_entry_id = 15;
+	DungeonEntryInfo recommend_dungeon_entry_info = 1;
+	uint32 recommend_dungeon_id = 4;
 }

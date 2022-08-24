@@ -21,10 +21,10 @@ import "MultistagePlayInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5372
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message MultistagePlayInfoNotify {
-  MultistagePlayInfo info = 13;
+	MultistagePlayInfo info = 13;
 }

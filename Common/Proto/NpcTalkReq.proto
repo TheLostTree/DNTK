@@ -19,13 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 572
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message NpcTalkReq {
-  uint32 entity_id = 8;
-  uint32 npc_entity_id = 9;
-  uint32 talk_id = 7;
+	uint32 entity_id = 8;
+	uint32 npc_entity_id = 9;
+	uint32 talk_id = 7;
 }

@@ -21,10 +21,10 @@ import "HomeAvatarTalkFinishInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4896
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message HomeAvatarTalkFinishInfoNotify {
-  repeated HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;
+	repeated HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;
 }

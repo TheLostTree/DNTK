@@ -21,8 +21,7 @@ import "ItemParam.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_OHOKEEGPPBG {
-  repeated ItemParam reward_item_list = 4;
-  uint32 uid = 3;
+	repeated ItemParam reward_item_list = 4;
+	uint32 uid = 3;
 }

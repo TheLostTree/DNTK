@@ -21,12 +21,12 @@ import "ActivityShopSheetInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 790
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message GetActivityShopSheetInfoRsp {
-  repeated ActivityShopSheetInfo sheet_info_list = 6;
-  uint32 shop_type = 8;
-  int32 retcode = 13;
+	repeated ActivityShopSheetInfo sheet_info_list = 6;
+	uint32 shop_type = 8;
+	int32 retcode = 13;
 }

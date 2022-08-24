@@ -21,11 +21,11 @@ import "HomeAvatarTalkFinishInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4464
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message HomeAvatarTalkRsp {
-  int32 retcode = 8;
-  HomeAvatarTalkFinishInfo avatar_talk_info = 3;
+	int32 retcode = 8;
+	HomeAvatarTalkFinishInfo avatar_talk_info = 3;
 }

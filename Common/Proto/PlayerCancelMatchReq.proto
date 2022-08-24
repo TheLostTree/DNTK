@@ -21,11 +21,10 @@ import "MatchType.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4157
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message PlayerCancelMatchReq {
-  MatchType match_type = 11;
+	MatchType match_type = 11;
 }

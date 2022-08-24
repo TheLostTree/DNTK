@@ -19,10 +19,9 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2800_JIPMJPAKIKE {
-  bool is_finished = 7;
-  uint32 Unk2800_MMPELBBNFOD = 10;
-  bool is_open = 5;
-  uint32 Unk2800_MGPEODNKEEC = 6;
+	bool is_finished = 7;
+	uint32 Unk2800_MMPELBBNFOD = 10;
+	bool is_open = 5;
+	uint32 Unk2800_MGPEODNKEEC = 6;
 }

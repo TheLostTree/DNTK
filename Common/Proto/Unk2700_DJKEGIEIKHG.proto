@@ -21,11 +21,10 @@ import "Unk2700_MOFABPNGIKP.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_DJKEGIEIKHG {
-  Unk2700_MOFABPNGIKP reason = 15;
-  bool Unk2700_MMNILGLDHHD = 11;
-  uint32 finish_time = 14;
-  uint32 Unk2700_BCCHNACPBME = 6;
-  uint32 level_id = 4;
+	Unk2700_MOFABPNGIKP reason = 15;
+	bool Unk2700_MMNILGLDHHD = 11;
+	uint32 finish_time = 14;
+	uint32 Unk2700_BCCHNACPBME = 6;
+	uint32 level_id = 4;
 }

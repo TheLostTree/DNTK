@@ -21,10 +21,10 @@ import "Quest.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 472
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message QuestListNotify {
-  repeated Quest quest_list = 1;
+	repeated Quest quest_list = 1;
 }

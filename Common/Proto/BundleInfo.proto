@@ -19,7 +19,6 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message BundleInfo {
-  repeated uint32 Unk2700_OGNEAEGHCPM = 13;
+	repeated uint32 Unk2700_OGNEAEGHCPM = 13;
 }

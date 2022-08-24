@@ -21,18 +21,18 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 233
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message ScenePlayerSoundNotify {
-  string sound_name = 4;
-  PlaySoundType play_type = 8;
-  Vector play_pos = 3;
+	string sound_name = 4;
+	PlaySoundType play_type = 8;
+	Vector play_pos = 3;
 
-  enum PlaySoundType {
-    PLAY_SOUND_TYPE_NONE = 0;
-    PLAY_SOUND_TYPE_START = 1;
-    PLAY_SOUND_TYPE_STOP = 2;
-  }
+	enum PlaySoundType {
+		PLAY_SOUND_TYPE_NONE = 0;
+		PLAY_SOUND_TYPE_START = 1;
+		PLAY_SOUND_TYPE_STOP = 2;
+	}
 }

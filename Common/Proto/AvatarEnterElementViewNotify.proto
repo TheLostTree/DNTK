@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 334
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message AvatarEnterElementViewNotify {
-  bool is_triggerd = 3;
-  uint32 avatar_entity_id = 12;
+	bool is_triggerd = 3;
+	uint32 avatar_entity_id = 12;
 }

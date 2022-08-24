@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 191
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message PlayerTimeNotify {
-  uint64 server_time = 5;
-  uint64 player_time = 11;
-  bool is_paused = 14;
+	uint64 server_time = 5;
+	uint64 player_time = 11;
+	bool is_paused = 14;
 }

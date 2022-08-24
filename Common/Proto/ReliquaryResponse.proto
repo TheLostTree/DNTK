@@ -21,8 +21,7 @@ import "Unk2700_GBBDJMDIDEI.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message ReliquaryResponse {
-  repeated Unk2700_GBBDJMDIDEI Unk2700_DMDHDIHGPFA = 8;
-  uint32 equip_type = 3;
+	repeated Unk2700_GBBDJMDIDEI Unk2700_DMDHDIHGPFA = 8;
+	uint32 equip_type = 3;
 }

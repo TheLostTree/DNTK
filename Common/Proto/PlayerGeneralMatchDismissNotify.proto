@@ -21,12 +21,12 @@ import "MatchReason.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4191
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message PlayerGeneralMatchDismissNotify {
-  repeated uint32 uid_list = 3;
-  MatchReason reason = 13;
-  uint32 match_id = 1;
+	repeated uint32 uid_list = 3;
+	MatchReason reason = 13;
+	uint32 match_id = 1;
 }

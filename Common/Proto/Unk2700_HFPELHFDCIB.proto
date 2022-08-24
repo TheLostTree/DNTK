@@ -21,8 +21,7 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_HFPELHFDCIB {
-  uint32 entity_id = 2;
-  Vector Unk2700_CMOMNFNGCGB = 13;
+	uint32 entity_id = 2;
+	Vector Unk2700_CMOMNFNGCGB = 13;
 }

@@ -21,10 +21,9 @@ import "Unk2700_PGFLJBBEBKG.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_DGDJKHJNLGO {
-  uint32 uid = 1;
-  repeated uint64 Unk2700_OEFLHAPAMFH = 2;
-  repeated uint64 Unk2700_OJNBAOCJBCH = 3;
-  repeated Unk2700_PGFLJBBEBKG Unk2700_GDDGEKHOLGL = 4;
+	uint32 uid = 1;
+	repeated uint64 Unk2700_OEFLHAPAMFH = 2;
+	repeated uint64 Unk2700_OJNBAOCJBCH = 3;
+	repeated Unk2700_PGFLJBBEBKG Unk2700_GDDGEKHOLGL = 4;
 }

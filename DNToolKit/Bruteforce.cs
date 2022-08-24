@@ -33,6 +33,9 @@ public class KeyBruteForcer
             
             var rand = new Random((int)(recvTime + offset));
             var clientSeed = rand.NextSafeUInt64();
+            
+            
+            
             var seed = serverKey ^ clientSeed;
             //yep i dont even know why i bothered
             var key = MTKey.PartialKey(seed, 8);

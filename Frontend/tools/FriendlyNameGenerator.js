@@ -1,10 +1,10 @@
-import TextMap from "./data/TextMapEN.json" assert { type: 'json' };;
+import TextMap from "./GenshinData/TextMap/TextMapEN.json" assert { type: 'json' };;
 //import every file from /data/*.json
 
-import AvatarExcel from "./data/AvatarExcelConfigData.json" assert { type: 'json' };;
-import GadgetExcel from "./data/GadgetExcelConfigData.json" assert { type: 'json' };;
-import MonsterExcel from "./data/MonsterExcelConfigData.json"assert { type: 'json' };;
-import NpcExcel from "./data/NpcExcelConfigData.json" assert { type: 'json' };;
+import AvatarExcel from "./GenshinData/ExcelBinOutput/AvatarExcelConfigData.json" assert { type: 'json' };;
+import GadgetExcel from "./GenshinData/ExcelBinOutput/GadgetExcelConfigData.json" assert { type: 'json' };;
+import MonsterExcel from "./GenshinData/ExcelBinOutput/MonsterExcelConfigData.json"assert { type: 'json' };;
+
 
 function getText(id){
     return TextMap[id.toString()];

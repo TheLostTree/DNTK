@@ -21,8 +21,7 @@ import "PhotoStage.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message PhotoActivityDetailInfo {
-  bool is_content_closed = 4;
-  repeated PhotoStage photo_stage_list = 12;
+	bool is_content_closed = 4;
+	repeated PhotoStage photo_stage_list = 12;
 }

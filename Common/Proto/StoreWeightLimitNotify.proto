@@ -21,15 +21,15 @@ import "StoreType.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 698
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message StoreWeightLimitNotify {
-  uint32 weapon_count_limit = 2;
-  StoreType store_type = 7;
-  uint32 material_count_limit = 4;
-  uint32 reliquary_count_limit = 6;
-  uint32 furniture_count_limit = 9;
-  uint32 weight_limit = 15;
+	uint32 weapon_count_limit = 2;
+	StoreType store_type = 7;
+	uint32 material_count_limit = 4;
+	uint32 reliquary_count_limit = 6;
+	uint32 furniture_count_limit = 9;
+	uint32 weight_limit = 15;
 }

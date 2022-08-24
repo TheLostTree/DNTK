@@ -21,11 +21,11 @@ import "HomeLimitedShopInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4796
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message HomeLimitedShopInfoRsp {
-  HomeLimitedShopInfo shop_info = 10;
-  int32 retcode = 7;
+	HomeLimitedShopInfo shop_info = 10;
+	int32 retcode = 7;
 }

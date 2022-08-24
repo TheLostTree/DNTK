@@ -29,19 +29,18 @@ import "WeekendDjinnInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message HomeBlockArrangementInfo {
-  bool is_unlocked = 1;
-  uint32 comfort_value = 2;
-  repeated HomeAnimalData deploy_animal_list = 4;
-  repeated Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;
-  repeated WeekendDjinnInfo weekend_djinn_info_list = 13;
-  repeated HomeFurnitureSuiteData furniture_suite_list = 15;
-  repeated HomeBlockFieldData field_list = 3;
-  repeated HomeNpcData deploy_npc_list = 11;
-  repeated HomeBlockDotPattern dot_pattern_list = 7;
-  repeated HomeFurnitureData persistent_furniture_list = 9;
-  repeated HomeFurnitureData deploy_furniure_list = 12;
-  uint32 block_id = 6;
-  repeated Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;
+	bool is_unlocked = 1;
+	uint32 comfort_value = 2;
+	repeated HomeAnimalData deploy_animal_list = 4;
+	repeated Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;
+	repeated WeekendDjinnInfo weekend_djinn_info_list = 13;
+	repeated HomeFurnitureSuiteData furniture_suite_list = 15;
+	repeated HomeBlockFieldData field_list = 3;
+	repeated HomeNpcData deploy_npc_list = 11;
+	repeated HomeBlockDotPattern dot_pattern_list = 7;
+	repeated HomeFurnitureData persistent_furniture_list = 9;
+	repeated HomeFurnitureData deploy_furniure_list = 12;
+	uint32 block_id = 6;
+	repeated Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;
 }

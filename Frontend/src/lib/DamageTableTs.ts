@@ -1,7 +1,4 @@
 
-
-
-import { writable } from 'svelte/store';
 type row = {
     Name: string;
     TotalDamage: number;
@@ -18,8 +15,7 @@ export function AddDamageToTable(data: CombatEvent){
     attackers.set(data.Attacker, attacker);
 }
 
-let attackees = writable([]);
-
+import {attackees} from './stores';
 
 function getRows(){
     attackees.update(()=>{
@@ -39,7 +35,9 @@ class Attacker{
     constructor(name :string){
         this.Name = name;
     }
-    Name: string;
+
+
+    Name = "";
     Damage: number = 0;
     Healing: number = 0;
     Crits: number = 0;

@@ -19,9 +19,8 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message ChannelerSlabOneofDungeon {
-  bool is_done = 8;
-  uint32 dungeon_id = 12;
-  uint32 reward_id = 13;
+	bool is_done = 8;
+	uint32 dungeon_id = 12;
+	uint32 reward_id = 13;
 }

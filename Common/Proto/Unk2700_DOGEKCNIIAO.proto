@@ -19,10 +19,9 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_DOGEKCNIIAO {
-  uint32 Unk2700_KJFBIFHFIBO = 6;
-  uint32 level = 13;
-  uint32 monster_id = 14;
-  repeated uint32 affix_list = 11;
+	uint32 Unk2700_KJFBIFHFIBO = 6;
+	uint32 level = 13;
+	uint32 monster_id = 14;
+	repeated uint32 affix_list = 11;
 }

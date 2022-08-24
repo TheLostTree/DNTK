@@ -22,12 +22,12 @@ import "Unk2700_KBBDJNLFAKD.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 6221
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2700_MMDCAFMGACC_ServerNotify {
-  Unk2700_ADGLMHECKKJ Unk2700_NBAIINBBBPK = 9;
-  repeated uint32 Unk2700_EIOPOPABBNC = 14;
-  Unk2700_KBBDJNLFAKD Unk2700_LGBODABIKLL = 15;
+	Unk2700_ADGLMHECKKJ Unk2700_NBAIINBBBPK = 9;
+	repeated uint32 Unk2700_EIOPOPABBNC = 14;
+	Unk2700_KBBDJNLFAKD Unk2700_LGBODABIKLL = 15;
 }

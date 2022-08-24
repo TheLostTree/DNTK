@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1448
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message ChangeMailStarNotify {
-  bool is_star = 14;
-  repeated uint32 mail_id_list = 2;
+	bool is_star = 14;
+	repeated uint32 mail_id_list = 2;
 }

@@ -21,10 +21,10 @@ import "BattlePassMission.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2618
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message BattlePassMissionUpdateNotify {
-  repeated BattlePassMission mission_list = 1;
+	repeated BattlePassMission mission_list = 1;
 }

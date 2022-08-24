@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4423
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message ScenePlayGuestReplyNotify {
-  uint32 play_id = 13;
-  uint32 guest_uid = 12;
-  bool is_agree = 3;
+	uint32 play_id = 13;
+	uint32 guest_uid = 12;
+	bool is_agree = 3;
 }

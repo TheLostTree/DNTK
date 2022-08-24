@@ -22,12 +22,12 @@ import "OnlinePlayerInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4195
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message PlayerApplyEnterMpAfterMatchAgreedNotify {
-  OnlinePlayerInfo src_player_info = 11;
-  uint32 matchserver_id = 10;
-  MatchType match_type = 3;
+	OnlinePlayerInfo src_player_info = 11;
+	uint32 matchserver_id = 10;
+	MatchType match_type = 3;
 }

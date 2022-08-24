@@ -21,13 +21,13 @@ import "HomeLimitedShopGoods.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4750
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message HomeLimitedShopBuyGoodsRsp {
-  repeated HomeLimitedShopGoods goods_list = 13;
-  int32 retcode = 14;
-  HomeLimitedShopGoods goods = 5;
-  uint32 buy_count = 8;
+	repeated HomeLimitedShopGoods goods_list = 13;
+	int32 retcode = 14;
+	HomeLimitedShopGoods goods = 5;
+	uint32 buy_count = 8;
 }

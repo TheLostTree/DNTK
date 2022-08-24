@@ -21,10 +21,9 @@ import "DungeonEntryInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2800_MHCFAGCKGIB {
-  uint32 scene_id = 12;
-  uint32 point_id = 6;
-  repeated DungeonEntryInfo dungeon_entry_list = 1;
-  uint32 recommend_dungeon_id = 8;
+	uint32 scene_id = 12;
+	uint32 point_id = 6;
+	repeated DungeonEntryInfo dungeon_entry_list = 1;
+	uint32 recommend_dungeon_id = 8;
 }

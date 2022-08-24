@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 296
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message CutSceneBeginNotify {
-  uint32 cutscene_id = 14;
-  bool is_wait_others = 9;
+	uint32 cutscene_id = 14;
+	bool is_wait_others = 9;
 }

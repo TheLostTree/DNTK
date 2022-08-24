@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 158
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message DailyTaskDataNotify {
-  uint32 score_reward_id = 11;
-  uint32 finished_num = 4;
-  bool is_taken_score_reward = 9;
+	uint32 score_reward_id = 11;
+	uint32 finished_num = 4;
+	bool is_taken_score_reward = 9;
 }

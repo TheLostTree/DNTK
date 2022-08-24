@@ -21,11 +21,11 @@ import "DungeonCandidateTeamPlayerLeaveReason.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 926
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message DungeonCandidateTeamPlayerLeaveNotify {
-  DungeonCandidateTeamPlayerLeaveReason reason = 3;
-  uint32 player_uid = 13;
+	DungeonCandidateTeamPlayerLeaveReason reason = 3;
+	uint32 player_uid = 13;
 }

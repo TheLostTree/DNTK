@@ -22,10 +22,9 @@ import "Unk2700_FMGGGEDNGGN.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_HJLFNKLPFBH {
-  Unk2700_FMGGGEDNGGN avatar = 2;
-  uint32 level = 14;
-  uint32 Unk2700_EGKOIPOHCHG = 13;
-  repeated Unk2700_AGIDJODJNEA Unk2700_JCKLLFKOFCG = 9;
+	Unk2700_FMGGGEDNGGN avatar = 2;
+	uint32 level = 14;
+	uint32 Unk2700_EGKOIPOHCHG = 13;
+	repeated Unk2700_AGIDJODJNEA Unk2700_JCKLLFKOFCG = 9;
 }

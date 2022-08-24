@@ -21,9 +21,8 @@ import "Unk2700_BIFNFOGBPNM.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message TanukiTravelActivityDetailInfo {
-  repeated Unk2700_BIFNFOGBPNM Unk2700_JBPFIDDPGME = 4;
-  bool is_content_closed = 11;
-  uint32 Unk2700_BHHCNOLMCJM = 10;
+	repeated Unk2700_BIFNFOGBPNM Unk2700_JBPFIDDPGME = 4;
+	bool is_content_closed = 11;
+	uint32 Unk2700_BHHCNOLMCJM = 10;
 }

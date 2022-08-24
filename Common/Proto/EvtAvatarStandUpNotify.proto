@@ -19,14 +19,13 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 356
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message EvtAvatarStandUpNotify {
-  uint64 chair_id = 11;
-  int32 perform_id = 6;
-  int32 direction = 1;
-  uint32 entity_id = 9;
+	uint64 chair_id = 11;
+	int32 perform_id = 6;
+	int32 direction = 1;
+	uint32 entity_id = 9;
 }

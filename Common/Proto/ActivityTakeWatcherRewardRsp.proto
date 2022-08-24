@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2034
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message ActivityTakeWatcherRewardRsp {
-  uint32 activity_id = 14;
-  uint32 watcher_id = 7;
-  int32 retcode = 9;
+	uint32 activity_id = 14;
+	uint32 watcher_id = 7;
+	int32 retcode = 9;
 }

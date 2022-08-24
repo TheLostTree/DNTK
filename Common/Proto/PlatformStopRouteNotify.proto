@@ -21,12 +21,12 @@ import "PlatformInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 266
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message PlatformStopRouteNotify {
-  uint32 scene_time = 9;
-  uint32 entity_id = 12;
-  PlatformInfo platform = 8;
+	uint32 scene_time = 9;
+	uint32 entity_id = 12;
+	PlatformInfo platform = 8;
 }

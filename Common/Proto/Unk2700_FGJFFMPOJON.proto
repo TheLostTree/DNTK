@@ -21,11 +21,10 @@ import "ProfilePicture.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_FGJFFMPOJON {
-  string nickname = 7;
-  string remark_name = 3;
-  ProfilePicture profile_picture = 11;
-  map<uint32, uint32> Unk2700_IFCNGIPPOAE = 9;
-  uint32 uid = 8;
+	string nickname = 7;
+	string remark_name = 3;
+	ProfilePicture profile_picture = 11;
+	map<uint32, uint32> Unk2700_IFCNGIPPOAE = 9;
+	uint32 uid = 8;
 }

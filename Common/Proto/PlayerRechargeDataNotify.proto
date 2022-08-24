@@ -21,11 +21,11 @@ import "ProductPriceTier.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4102
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message PlayerRechargeDataNotify {
-  uint32 card_product_remain_days = 12;
-  repeated ProductPriceTier product_price_tier_list = 11;
+	uint32 card_product_remain_days = 12;
+	repeated ProductPriceTier product_price_tier_list = 11;
 }

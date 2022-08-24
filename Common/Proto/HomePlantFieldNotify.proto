@@ -21,10 +21,10 @@ import "HomePlantFieldData.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4549
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message HomePlantFieldNotify {
-  HomePlantFieldData field = 13;
+	HomePlantFieldData field = 13;
 }

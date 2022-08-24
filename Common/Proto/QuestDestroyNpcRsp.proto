@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 465
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message QuestDestroyNpcRsp {
-  uint32 npc_id = 12;
-  uint32 parent_quest_id = 4;
-  int32 retcode = 5;
+	uint32 npc_id = 12;
+	uint32 parent_quest_id = 4;
+	int32 retcode = 5;
 }

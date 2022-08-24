@@ -21,13 +21,12 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4293
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message UseWidgetCreateGadgetReq {
-  Vector pos = 15;
-  Vector rot = 12;
-  uint32 material_id = 4;
+	Vector pos = 15;
+	Vector rot = 12;
+	uint32 material_id = 4;
 }

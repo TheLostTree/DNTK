@@ -21,11 +21,11 @@ import "HomeResource.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4645
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message HomeResourceTakeFetterExpRsp {
-  HomeResource fetter_exp = 4;
-  int32 retcode = 15;
+	HomeResource fetter_exp = 4;
+	int32 retcode = 15;
 }

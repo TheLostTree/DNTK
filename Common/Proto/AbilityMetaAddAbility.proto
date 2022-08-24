@@ -21,7 +21,6 @@ import "AbilityAppliedAbility.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message AbilityMetaAddAbility {
-  AbilityAppliedAbility ability = 12;
+	AbilityAppliedAbility ability = 12;
 }

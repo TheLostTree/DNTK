@@ -23,11 +23,10 @@ import "Unk2700_NAFAIMHFEFG.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message MichiaeMatsuriActivityDetailInfo {
-  repeated Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;
-  uint32 Unk2700_MAOAHHBCKIA = 13;
-  repeated uint32 Unk2700_BEHAAHHGCLK = 2;
-  repeated Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;
-  repeated MichiaeMatsuriStage stage_list = 14;
+	repeated Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;
+	uint32 Unk2700_MAOAHHBCKIA = 13;
+	repeated uint32 Unk2700_BEHAAHHGCLK = 2;
+	repeated Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;
+	repeated MichiaeMatsuriStage stage_list = 14;
 }

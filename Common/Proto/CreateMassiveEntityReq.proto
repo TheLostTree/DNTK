@@ -21,11 +21,10 @@ import "ClientMassiveEntity.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 342
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message CreateMassiveEntityReq {
-  repeated ClientMassiveEntity massive_entity_list = 1;
+	repeated ClientMassiveEntity massive_entity_list = 1;
 }

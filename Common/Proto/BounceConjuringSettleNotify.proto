@@ -21,13 +21,13 @@ import "BounceConjuringGallerySettleInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8084
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message BounceConjuringSettleNotify {
-  bool is_new_record = 14;
-  map<uint32, BounceConjuringGallerySettleInfo> settle_info_map = 4;
-  uint32 total_score = 2;
-  uint32 chapter_id = 13;
+	bool is_new_record = 14;
+	map<uint32, BounceConjuringGallerySettleInfo> settle_info_map = 4;
+	uint32 total_score = 2;
+	uint32 chapter_id = 13;
 }

@@ -22,11 +22,10 @@ import "Weapon.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Equip {
-  bool is_locked = 3;
-  oneof detail {
-    Reliquary reliquary = 1;
-    Weapon weapon = 2;
-  }
+	bool is_locked = 3;
+	oneof detail {
+		Reliquary reliquary = 1;
+		Weapon weapon = 2;
+	}
 }

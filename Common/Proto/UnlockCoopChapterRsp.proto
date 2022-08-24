@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1995
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message UnlockCoopChapterRsp {
-  uint32 chapter_id = 4;
-  int32 retcode = 6;
+	uint32 chapter_id = 4;
+	int32 retcode = 6;
 }

@@ -19,20 +19,20 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1148
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message ServerUpdateGlobalValueNotify {
-  uint32 entity_id = 9;
-  UpdateType update_type = 13;
-  float delta = 3;
-  uint32 key_hash = 10;
-  float value = 6;
+	uint32 entity_id = 9;
+	UpdateType update_type = 13;
+	float delta = 3;
+	uint32 key_hash = 10;
+	float value = 6;
 
-  enum UpdateType {
-    UPDATE_TYPE_INVALUE = 0;
-    UPDATE_TYPE_ADD = 1;
-    UPDATE_TYPE_SET = 2;
-  }
+	enum UpdateType {
+		UPDATE_TYPE_INVALUE = 0;
+		UPDATE_TYPE_ADD = 1;
+		UPDATE_TYPE_SET = 2;
+	}
 }

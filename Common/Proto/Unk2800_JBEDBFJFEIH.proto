@@ -19,8 +19,7 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2800_JBEDBFJFEIH {
-  uint32 equip_type = 9;
-  uint32 element_type = 12;
+	uint32 equip_type = 9;
+	uint32 element_type = 12;
 }

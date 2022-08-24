@@ -22,15 +22,15 @@ import "Unk2700_PKAPCOBGIJL.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8858
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2700_DCBEFDDECOJ {
-  repeated Unk2700_PKAPCOBGIJL Unk2700_INIBKFPMCFO = 8;
-  uint32 level_id = 1;
-  bool Unk2700_CBPNPEBMPOH = 15;
-  uint32 difficulty_id = 11;
-  repeated Unk2700_ADIGEBEIJBA Unk2700_EONPKLLJHPH = 3;
-  uint32 Unk2700_FIGHJIFINKI = 7;
+	repeated Unk2700_PKAPCOBGIJL Unk2700_INIBKFPMCFO = 8;
+	uint32 level_id = 1;
+	bool Unk2700_CBPNPEBMPOH = 15;
+	uint32 difficulty_id = 11;
+	repeated Unk2700_ADIGEBEIJBA Unk2700_EONPKLLJHPH = 3;
+	uint32 Unk2700_FIGHJIFINKI = 7;
 }

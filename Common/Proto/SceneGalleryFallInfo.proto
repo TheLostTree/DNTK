@@ -21,8 +21,7 @@ import "FallPlayerInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message SceneGalleryFallInfo {
-  map<uint32, FallPlayerInfo> scene_player_fall_info_map = 12;
-  uint32 end_time = 2;
+	map<uint32, FallPlayerInfo> scene_player_fall_info_map = 12;
+	uint32 end_time = 2;
 }

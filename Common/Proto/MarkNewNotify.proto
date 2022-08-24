@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1275
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message MarkNewNotify {
-  repeated uint32 id_list = 7;
-  uint32 mark_new_type = 11;
+	repeated uint32 id_list = 7;
+	uint32 mark_new_type = 11;
 }

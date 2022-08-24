@@ -21,8 +21,7 @@ import "Unk2700_HEMFKLPNNOM.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_KJDPNIKDKEJ {
-  Unk2700_HEMFKLPNNOM type = 8;
-  int32 value = 4;
+	Unk2700_HEMFKLPNNOM type = 8;
+	int32 value = 4;
 }

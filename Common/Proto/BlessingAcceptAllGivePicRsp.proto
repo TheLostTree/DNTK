@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2044
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message BlessingAcceptAllGivePicRsp {
-  int32 retcode = 11;
-  map<uint32, uint32> accept_pic_num_map = 14;
-  repeated uint32 accept_index_list = 5;
+	int32 retcode = 11;
+	map<uint32, uint32> accept_pic_num_map = 14;
+	repeated uint32 accept_index_list = 5;
 }

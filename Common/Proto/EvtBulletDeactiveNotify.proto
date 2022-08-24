@@ -22,13 +22,12 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 397
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message EvtBulletDeactiveNotify {
-  ForwardType forward_type = 6;
-  uint32 entity_id = 9;
-  Vector disappear_pos = 4;
+	ForwardType forward_type = 6;
+	uint32 entity_id = 9;
+	Vector disappear_pos = 4;
 }

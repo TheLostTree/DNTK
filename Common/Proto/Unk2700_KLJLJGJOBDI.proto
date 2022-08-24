@@ -21,10 +21,9 @@ import "Unk2700_NCNPNMFFONG.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_KLJLJGJOBDI {
-  uint32 Unk2700_CDDONJJMFCI = 8;
-  Unk2700_NCNPNMFFONG reason = 7;
-  uint32 final_score = 13;
-  uint32 Unk2700_FFCCLGIFGIP = 15;
+	uint32 Unk2700_CDDONJJMFCI = 8;
+	Unk2700_NCNPNMFFONG reason = 7;
+	uint32 final_score = 13;
+	uint32 Unk2700_FFCCLGIFGIP = 15;
 }

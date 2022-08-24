@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 254
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message SetSceneWeatherAreaReq {
-  uint32 weather_gadget_id = 13;
-  map<uint32, string> weather_value_map = 4;
+	uint32 weather_gadget_id = 13;
+	map<uint32, string> weather_value_map = 4;
 }

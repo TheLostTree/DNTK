@@ -21,14 +21,14 @@ import "ItemParam.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 653
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message WeaponUpgradeRsp {
-  uint32 cur_level = 7;
-  int32 retcode = 11;
-  uint32 old_level = 8;
-  repeated ItemParam item_param_list = 2;
-  uint64 target_weapon_guid = 6;
+	uint32 cur_level = 7;
+	int32 retcode = 11;
+	uint32 old_level = 8;
+	repeated ItemParam item_param_list = 2;
+	uint64 target_weapon_guid = 6;
 }

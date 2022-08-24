@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 157
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message TakePlayerLevelRewardRsp {
-  uint32 reward_id = 9;
-  int32 retcode = 13;
-  uint32 level = 6;
+	uint32 reward_id = 9;
+	int32 retcode = 13;
+	uint32 level = 6;
 }

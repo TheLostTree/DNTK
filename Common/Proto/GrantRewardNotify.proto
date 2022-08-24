@@ -21,10 +21,10 @@ import "Reward.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 663
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message GrantRewardNotify {
-  Reward reward = 6;
+	Reward reward = 6;
 }

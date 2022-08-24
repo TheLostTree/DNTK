@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 921
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message PlayerQuitDungeonRsp {
-  uint32 point_id = 11;
-  int32 retcode = 7;
+	uint32 point_id = 11;
+	int32 retcode = 7;
 }

@@ -21,11 +21,11 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 119
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message AddRandTaskInfoNotify {
-  uint32 rand_task_id = 5;
-  Vector pos = 13;
+	uint32 rand_task_id = 5;
+	Vector pos = 13;
 }

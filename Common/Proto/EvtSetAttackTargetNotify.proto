@@ -22,12 +22,11 @@ import "ForwardType.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 399
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message EvtSetAttackTargetNotify {
-  ForwardType forward_type = 1;
-  EvtSetAttackTargetInfo evt_set_attack_target_info = 11;
+	ForwardType forward_type = 1;
+	EvtSetAttackTargetInfo evt_set_attack_target_info = 11;
 }

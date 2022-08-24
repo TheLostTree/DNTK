@@ -21,14 +21,13 @@ import "ForwardType.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 381
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message EvtEntityStartDieEndNotify {
-  bool immediately = 15;
-  uint32 die_state_flag = 12;
-  uint32 entity_id = 8;
-  ForwardType forward_type = 11;
+	bool immediately = 15;
+	uint32 die_state_flag = 12;
+	uint32 entity_id = 8;
+	ForwardType forward_type = 11;
 }

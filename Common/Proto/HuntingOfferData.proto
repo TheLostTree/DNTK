@@ -22,9 +22,8 @@ import "HuntingPair.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message HuntingOfferData {
-  HuntingPair hunting_pair = 4;
-  uint32 city_id = 8;
-  HuntingOfferState state = 1;
+	HuntingPair hunting_pair = 4;
+	uint32 city_id = 8;
+	HuntingOfferState state = 1;
 }

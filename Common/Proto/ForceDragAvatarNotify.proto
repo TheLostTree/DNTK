@@ -21,15 +21,15 @@ import "MotionInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 3235
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message ForceDragAvatarNotify {
-  uint32 scene_time = 3;
-  uint64 delta_time_ms = 1;
-  uint32 entity_id = 2;
-  MotionInfo motion_info = 10;
-  bool is_first_valid = 8;
-  uint64 last_move_time_ms = 12;
+	uint32 scene_time = 3;
+	uint64 delta_time_ms = 1;
+	uint32 entity_id = 2;
+	MotionInfo motion_info = 10;
+	bool is_first_valid = 8;
+	uint64 last_move_time_ms = 12;
 }

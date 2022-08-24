@@ -22,13 +22,12 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 393
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message EvtAvatarExitFocusNotify {
-  Vector finish_forward = 12;
-  ForwardType forward_type = 11;
-  uint32 entity_id = 14;
+	Vector finish_forward = 12;
+	ForwardType forward_type = 11;
+	uint32 entity_id = 14;
 }

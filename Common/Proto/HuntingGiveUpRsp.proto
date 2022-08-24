@@ -21,11 +21,11 @@ import "HuntingPair.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4342
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message HuntingGiveUpRsp {
-  int32 retcode = 3;
-  HuntingPair hunting_pair = 4;
+	int32 retcode = 3;
+	HuntingPair hunting_pair = 4;
 }

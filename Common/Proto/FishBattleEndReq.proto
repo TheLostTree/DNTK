@@ -21,13 +21,12 @@ import "FishBattleResult.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5841
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message FishBattleEndReq {
-  uint32 max_bonus_time = 3;
-  FishBattleResult battle_result = 10;
-  bool is_always_bonus = 11;
+	uint32 max_bonus_time = 3;
+	FishBattleResult battle_result = 10;
+	bool is_always_bonus = 11;
 }

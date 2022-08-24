@@ -22,23 +22,23 @@ import "HideAndSeekSettleInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5317
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message HideAndSeekSettleNotify {
-  uint32 cost_time = 2;
-  repeated HideAndSeekSettleInfo settle_info_list = 8;
-  repeated uint32 winner_list = 15;
-  SettleReason reason = 4;
-  uint32 play_index = 13;
-  bool is_record_score = 6;
-  repeated ExhibitionDisplayInfo score_list = 9;
-  uint32 stage_type = 14;
+	uint32 cost_time = 2;
+	repeated HideAndSeekSettleInfo settle_info_list = 8;
+	repeated uint32 winner_list = 15;
+	SettleReason reason = 4;
+	uint32 play_index = 13;
+	bool is_record_score = 6;
+	repeated ExhibitionDisplayInfo score_list = 9;
+	uint32 stage_type = 14;
 
-  enum SettleReason {
-    SETTLE_REASON_TIME_OUT = 0;
-    SETTLE_REASON_PLAY_END = 1;
-    SETTLE_REASON_PLAYER_QUIT = 2;
-  }
+	enum SettleReason {
+		SETTLE_REASON_TIME_OUT = 0;
+		SETTLE_REASON_PLAY_END = 1;
+		SETTLE_REASON_PLAYER_QUIT = 2;
+	}
 }

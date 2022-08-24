@@ -19,9 +19,8 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message GachaStage {
-  uint32 stage_id = 15;
-  map<uint32, uint32> Unk2700_DNMNEMKIELD = 14;
-  bool is_open = 13;
+	uint32 stage_id = 15;
+	map<uint32, uint32> Unk2700_DNMNEMKIELD = 14;
+	bool is_open = 13;
 }

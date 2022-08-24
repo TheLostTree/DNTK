@@ -21,10 +21,10 @@ import "ScenePlayBattleInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4431
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message ScenePlayBattleInfoListNotify {
-  repeated ScenePlayBattleInfo battle_info_list = 12;
+	repeated ScenePlayBattleInfo battle_info_list = 12;
 }

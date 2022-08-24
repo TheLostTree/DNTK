@@ -21,7 +21,6 @@ import "Unk2700_CBMGMANEDNA.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_INMNHKOPCFB {
-  repeated Unk2700_CBMGMANEDNA info_list = 15;
+	repeated Unk2700_CBMGMANEDNA info_list = 15;
 }

@@ -21,10 +21,10 @@ import "AvatarSatiationData.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1693
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message AvatarSatiationDataNotify {
-  repeated AvatarSatiationData satiation_data_list = 6;
+	repeated AvatarSatiationData satiation_data_list = 6;
 }

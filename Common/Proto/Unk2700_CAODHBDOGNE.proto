@@ -21,20 +21,19 @@ import "Unk2700_BJJOMPDLNAL.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8597
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message Unk2700_CAODHBDOGNE {
-  uint32 stage_id = 12;
-  repeated uint32 Unk2700_HIMJICENGCC = 15;
-  uint32 time = 4;
-  uint32 Unk2700_COOCEOOMMKC = 5;
-  uint32 Unk2700_PPEBOKBCPLE = 6;
-  uint32 coin = 11;
-  uint32 difficulty = 8;
-  uint32 dungeon_id = 14;
-  repeated Unk2700_BJJOMPDLNAL Unk2700_AAGBIFHNNPP = 7;
-  repeated uint32 Unk2700_ALMOAMMNNGP = 10;
+	uint32 stage_id = 12;
+	repeated uint32 Unk2700_HIMJICENGCC = 15;
+	uint32 time = 4;
+	uint32 Unk2700_COOCEOOMMKC = 5;
+	uint32 Unk2700_PPEBOKBCPLE = 6;
+	uint32 coin = 11;
+	uint32 difficulty = 8;
+	uint32 dungeon_id = 14;
+	repeated Unk2700_BJJOMPDLNAL Unk2700_AAGBIFHNNPP = 7;
+	repeated uint32 Unk2700_ALMOAMMNNGP = 10;
 }

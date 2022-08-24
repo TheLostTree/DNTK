@@ -16,20 +16,20 @@
 
 syntax = "proto3";
 
-import "InterOpType.proto";
 import "InteractType.proto";
+import "InterOpType.proto";
 
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5222
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message MiracleRingDeliverItemRsp {
-  InteractType interact_type = 15;
-  int32 retcode = 11;
-  InterOpType op_type = 14;
-  uint32 gadget_id = 4;
-  uint32 gadget_entity_id = 9;
+	InteractType interact_type = 15;
+	int32 retcode = 11;
+	InterOpType op_type = 14;
+	uint32 gadget_id = 4;
+	uint32 gadget_entity_id = 9;
 }

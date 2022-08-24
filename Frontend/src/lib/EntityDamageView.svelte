@@ -5,9 +5,7 @@
     export let CritPercent: number;
 </script>
 
-<tr>
-    <td>{Name}</td>
-    <td>{TotalDamage.toFixed()}</td>
-    <td>{TotalHealing.toFixed()}</td>
-    <td>{CritPercent}</td>
-</tr>
+<div>{Name}</div>
+<div>{TotalDamage.toFixed()}</div>
+<div>{TotalHealing.toFixed()}</div>
+<div>{CritPercent}</div>

@@ -21,8 +21,7 @@ import "Unk2700_MIMJBGMEMCA.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_JACACCPGMGC {
-  repeated Unk2700_MIMJBGMEMCA Unk2700_IDGMODJPBGF = 11;
-  uint32 level_id = 14;
+	repeated Unk2700_MIMJBGMEMCA Unk2700_IDGMODJPBGF = 11;
+	uint32 level_id = 14;
 }

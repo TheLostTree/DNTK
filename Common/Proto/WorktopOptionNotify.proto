@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 835
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message WorktopOptionNotify {
-  uint32 gadget_entity_id = 11;
-  repeated uint32 option_list = 8;
+	uint32 gadget_entity_id = 11;
+	repeated uint32 option_list = 8;
 }

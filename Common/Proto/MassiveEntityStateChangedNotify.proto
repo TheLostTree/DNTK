@@ -21,11 +21,10 @@ import "MassiveEntityState.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 370
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message MassiveEntityStateChangedNotify {
-  repeated MassiveEntityState massive_entity_state_list = 4;
+	repeated MassiveEntityState massive_entity_state_list = 4;
 }

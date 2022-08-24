@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 970
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message DungeonSlipRevivePointActivateRsp {
-  uint32 slip_revive_point_id = 14;
-  int32 retcode = 4;
+	uint32 slip_revive_point_id = 14;
+	int32 retcode = 4;
 }

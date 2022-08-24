@@ -19,13 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8561
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message Unk2700_BKGPMAHMHIG {
-  bool Unk2700_PHGMKGEMCFF = 2;
-  uint32 level_id = 12;
-  uint32 card_id = 9;
+	bool Unk2700_PHGMKGEMCFF = 2;
+	uint32 level_id = 12;
+	uint32 card_id = 9;
 }

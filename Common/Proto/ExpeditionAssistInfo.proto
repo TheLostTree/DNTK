@@ -19,11 +19,10 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message ExpeditionAssistInfo {
-  string online_id = 14;
-  uint32 assist_time = 1;
-  uint32 costume_id = 6;
-  string target_nick_name = 4;
-  uint32 avatar_id = 12;
+	string online_id = 14;
+	uint32 assist_time = 1;
+	uint32 costume_id = 6;
+	string target_nick_name = 4;
+	uint32 avatar_id = 12;
 }

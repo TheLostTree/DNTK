@@ -19,8 +19,7 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message AsterLargeDetailInfo {
-  bool is_open = 3;
-  uint32 begin_time = 13;
+	bool is_open = 3;
+	uint32 begin_time = 13;
 }

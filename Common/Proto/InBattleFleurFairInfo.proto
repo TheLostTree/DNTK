@@ -19,11 +19,10 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message InBattleFleurFairInfo {
-  repeated uint32 gallery_id_list = 5;
-  uint32 gallery_stage_index = 6;
-  uint32 preview_stage_index = 8;
-  repeated uint32 ability_group_id_list = 2;
-  uint32 preview_display_duration = 12;
+	repeated uint32 gallery_id_list = 5;
+	uint32 gallery_stage_index = 6;
+	uint32 preview_stage_index = 8;
+	repeated uint32 ability_group_id_list = 2;
+	uint32 preview_display_duration = 12;
 }

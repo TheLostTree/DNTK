@@ -24,13 +24,12 @@ import "StakePlayGalleryInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_KPNPJPPHOKA {
-  uint32 group_id = 5;
-  oneof detail {
-    RacingGalleryInfo racing_gallery_info = 467;
-    BalloonGalleryInfo balloon_gallery_info = 1410;
-    StakePlayGalleryInfo stake_play_info = 347;
-    SeekFurnitureGalleryInfo seek_furniture_gallery_info = 1822;
-  }
+	uint32 group_id = 5;
+	oneof detail {
+		RacingGalleryInfo racing_gallery_info = 467;
+		BalloonGalleryInfo balloon_gallery_info = 1410;
+		StakePlayGalleryInfo stake_play_info = 347;
+		SeekFurnitureGalleryInfo seek_furniture_gallery_info = 1822;
+	}
 }

@@ -21,11 +21,9 @@ import "EntityMoveInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 279
-// EnetChannelId: 1
-// EnetIsReliable: false
-// IsAllowClient: true
+// EnetChannelId: 0
+// EnetIsReliable: true
 message SceneEntitiesMovesReq {
-  repeated EntityMoveInfo entity_move_info_list = 14;
+	repeated EntityMoveInfo entity_move_info_list = 14;
 }

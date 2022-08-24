@@ -21,14 +21,13 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 893
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message CreateVehicleReq {
-  Vector pos = 11;
-  uint32 vehicle_id = 2;
-  uint32 scene_point_id = 7;
-  Vector rot = 5;
+	Vector pos = 11;
+	uint32 vehicle_id = 2;
+	uint32 scene_point_id = 7;
+	Vector rot = 5;
 }

@@ -22,14 +22,14 @@ import "ItemParam.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4769
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message TakeFurnitureMakeRsp {
-  FurnitureMakeSlot furniture_make_slot = 8;
-  repeated ItemParam return_item_list = 2;
-  uint32 make_id = 6;
-  int32 retcode = 9;
-  repeated ItemParam output_item_list = 14;
+	FurnitureMakeSlot furniture_make_slot = 8;
+	repeated ItemParam return_item_list = 2;
+	uint32 make_id = 6;
+	int32 retcode = 9;
+	repeated ItemParam output_item_list = 14;
 }

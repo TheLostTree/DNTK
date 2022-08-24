@@ -19,10 +19,9 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_FEAENJPINFJ {
-  uint32 skill_id = 2;
-  bool is_unlock = 11;
-  uint32 Unk2700_LAPIBECMGOB = 1;
-  uint32 Unk2700_LKNCBOOJCGI = 14;
+	uint32 skill_id = 2;
+	bool is_unlock = 11;
+	uint32 Unk2700_LAPIBECMGOB = 1;
+	uint32 Unk2700_LKNCBOOJCGI = 14;
 }

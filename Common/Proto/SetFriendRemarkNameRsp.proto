@@ -19,13 +19,13 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4030
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message SetFriendRemarkNameRsp {
-  string remark_name = 13;
-  bool is_clear_remark = 3;
-  uint32 uid = 10;
-  int32 retcode = 1;
+	string remark_name = 13;
+	bool is_clear_remark = 3;
+	uint32 uid = 10;
+	int32 retcode = 1;
 }

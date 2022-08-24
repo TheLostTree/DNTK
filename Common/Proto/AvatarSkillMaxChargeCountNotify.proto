@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1003
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message AvatarSkillMaxChargeCountNotify {
-  uint32 skill_id = 6;
-  uint32 max_charge_count = 11;
-  uint64 avatar_guid = 7;
+	uint32 skill_id = 6;
+	uint32 max_charge_count = 11;
+	uint64 avatar_guid = 7;
 }

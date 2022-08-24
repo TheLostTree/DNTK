@@ -19,13 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 363
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message MonsterAlertChangeNotify {
-  uint32 avatar_entity_id = 15;
-  repeated uint32 monster_entity_list = 5;
-  uint32 is_alert = 13;
+	uint32 avatar_entity_id = 15;
+	repeated uint32 monster_entity_list = 5;
+	uint32 is_alert = 13;
 }

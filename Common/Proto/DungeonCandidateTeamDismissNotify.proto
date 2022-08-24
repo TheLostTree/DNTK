@@ -21,11 +21,11 @@ import "DungeonCandidateTeamDismissReason.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 963
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message DungeonCandidateTeamDismissNotify {
-  DungeonCandidateTeamDismissReason reason = 9;
-  uint32 player_uid = 12;
+	DungeonCandidateTeamDismissReason reason = 9;
+	uint32 player_uid = 12;
 }

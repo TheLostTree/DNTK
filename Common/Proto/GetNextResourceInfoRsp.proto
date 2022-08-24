@@ -21,12 +21,12 @@ import "ResVersionConfig.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 120
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message GetNextResourceInfoRsp {
-  string next_resource_url = 14;
-  ResVersionConfig next_res_version_config = 2;
-  int32 retcode = 12;
+	string next_resource_url = 14;
+	ResVersionConfig next_res_version_config = 2;
+	int32 retcode = 12;
 }

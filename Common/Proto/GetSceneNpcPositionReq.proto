@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 535
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message GetSceneNpcPositionReq {
-  repeated uint32 npc_id_list = 6;
-  uint32 scene_id = 8;
+	repeated uint32 npc_id_list = 6;
+	uint32 scene_id = 8;
 }

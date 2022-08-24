@@ -21,11 +21,11 @@ import "BlossomChestInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 890
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message BlossomChestInfoNotify {
-  uint32 entity_id = 9;
-  BlossomChestInfo blossom_chest_info = 3;
+	uint32 entity_id = 9;
+	BlossomChestInfo blossom_chest_info = 3;
 }

@@ -21,11 +21,11 @@ import "BuoyantCombatSettleInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8305
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message BuoyantCombatSettleNotify {
-  uint32 gallery_id = 8;
-  BuoyantCombatSettleInfo settle_info = 11;
+	uint32 gallery_id = 8;
+	BuoyantCombatSettleInfo settle_info = 11;
 }

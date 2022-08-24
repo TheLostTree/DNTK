@@ -19,17 +19,17 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4628
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message OtherPlayerEnterHomeNotify {
-  string nickname = 7;
-  Reason reason = 3;
+	string nickname = 7;
+	Reason reason = 3;
 
-  enum Reason {
-    REASON_INVALID = 0;
-    REASON_ENTER = 1;
-    REASON_LEAVE = 2;
-  }
+	enum Reason {
+		REASON_INVALID = 0;
+		REASON_ENTER = 1;
+		REASON_LEAVE = 2;
+	}
 }

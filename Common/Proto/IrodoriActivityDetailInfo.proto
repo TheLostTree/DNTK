@@ -24,10 +24,9 @@ import "Unk2700_JACACCPGMGC.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message IrodoriActivityDetailInfo {
-  repeated Unk2700_JACACCPGMGC Unk2700_KLDGOEPJGNC = 11;
-  Unk2700_GCPNGHFNGDP Unk2700_BFPBLJAAPAL = 6;
-  Unk2700_AIGECAPPCKK Unk2700_AGGJBDLONGC = 8;
-  Unk2700_AMJFIJNNGHC Unk2700_MCMCCIEFMPD = 14;
+	repeated Unk2700_JACACCPGMGC Unk2700_KLDGOEPJGNC = 11;
+	Unk2700_GCPNGHFNGDP Unk2700_BFPBLJAAPAL = 6;
+	Unk2700_AIGECAPPCKK Unk2700_AGGJBDLONGC = 8;
+	Unk2700_AMJFIJNNGHC Unk2700_MCMCCIEFMPD = 14;
 }

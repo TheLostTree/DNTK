@@ -19,13 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5331
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message InBattleMechanicusConfirmCardReq {
-  uint32 play_index = 6;
-  uint32 card_id = 1;
-  uint32 group_id = 3;
+	uint32 play_index = 6;
+	uint32 card_id = 1;
+	uint32 group_id = 3;
 }

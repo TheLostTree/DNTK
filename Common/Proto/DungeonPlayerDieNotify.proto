@@ -22,19 +22,19 @@ import "StrengthenPointData.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 931
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message DungeonPlayerDieNotify {
-  map<uint32, StrengthenPointData> strengthen_point_data_map = 15;
-  uint32 wait_time = 1;
-  uint32 dungeon_id = 9;
-  uint32 murderer_entity_id = 13;
-  PlayerDieType die_type = 3;
-  uint32 revive_count = 6;
-  oneof entity {
-    uint32 monster_id = 4;
-    uint32 gadget_id = 8;
-  }
+	map<uint32, StrengthenPointData> strengthen_point_data_map = 15;
+	uint32 wait_time = 1;
+	uint32 dungeon_id = 9;
+	uint32 murderer_entity_id = 13;
+	PlayerDieType die_type = 3;
+	uint32 revive_count = 6;
+	oneof entity {
+		uint32 monster_id = 4;
+		uint32 gadget_id = 8;
+	}
 }

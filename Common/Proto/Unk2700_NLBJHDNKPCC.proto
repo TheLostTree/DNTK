@@ -21,11 +21,11 @@ import "Unk2700_GPPKNKGDCHJ.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8626
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2700_NLBJHDNKPCC {
-  int32 retcode = 6;
-  repeated Unk2700_GPPKNKGDCHJ Unk2700_AAOHOIJEOEG = 14;
+	int32 retcode = 6;
+	repeated Unk2700_GPPKNKGDCHJ Unk2700_AAOHOIJEOEG = 14;
 }

@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8833
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2700_PFOLNOBIKFB {
-  bool Unk2700_PIDPNNOGBJB = 4;
-  bool Unk2700_DCGOILIDPNK = 3;
-  int32 retcode = 1;
+	bool Unk2700_PIDPNNOGBJB = 4;
+	bool Unk2700_DCGOILIDPNK = 3;
+	int32 retcode = 1;
 }

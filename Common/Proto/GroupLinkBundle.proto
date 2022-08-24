@@ -21,12 +21,11 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message GroupLinkBundle {
-  Vector center = 4;
-  bool is_activated = 12;
-  uint32 bundle_id = 3;
-  bool Unk2700_JKDNOPGKJAC = 14;
-  uint32 scene_id = 5;
-  uint32 radius = 1;
+	Vector center = 4;
+	bool is_activated = 12;
+	uint32 bundle_id = 3;
+	bool Unk2700_JKDNOPGKJAC = 14;
+	uint32 scene_id = 5;
+	uint32 radius = 1;
 }

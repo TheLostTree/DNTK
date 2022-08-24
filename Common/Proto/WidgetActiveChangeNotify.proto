@@ -21,10 +21,10 @@ import "WidgetSlotData.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4280
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message WidgetActiveChangeNotify {
-  repeated WidgetSlotData widget_data_list = 5;
+	repeated WidgetSlotData widget_data_list = 5;
 }

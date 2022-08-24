@@ -21,11 +21,11 @@ import "ReunionPrivilegeInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5087
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message GetReunionPrivilegeInfoRsp {
-  int32 retcode = 3;
-  ReunionPrivilegeInfo privilege_info = 1;
+	int32 retcode = 3;
+	ReunionPrivilegeInfo privilege_info = 1;
 }

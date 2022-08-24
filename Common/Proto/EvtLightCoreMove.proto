@@ -21,11 +21,10 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message EvtLightCoreMove {
-  Vector target_pos = 15;
-  float acelerate = 11;
-  uint32 entity_id = 5;
-  float max_absorb_time = 10;
-  float speed = 14;
+	Vector target_pos = 15;
+	float acelerate = 11;
+	uint32 entity_id = 5;
+	float max_absorb_time = 10;
+	float speed = 14;
 }

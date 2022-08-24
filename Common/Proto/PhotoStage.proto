@@ -21,11 +21,10 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message PhotoStage {
-  Vector center = 15;
-  uint32 open_time = 2;
-  bool Unk2700_DDOBNKLLLDF = 4;
-  uint32 Unk2700_CKGJEOOKFIF = 9;
-  bool is_open = 6;
+	Vector center = 15;
+	uint32 open_time = 2;
+	bool Unk2700_DDOBNKLLLDF = 4;
+	uint32 Unk2700_CKGJEOOKFIF = 9;
+	bool is_open = 6;
 }

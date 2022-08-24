@@ -19,15 +19,15 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8291
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message SumoDungeonSettleNotify {
-  uint32 final_score = 7;
-  uint32 difficulty_id = 14;
-  uint32 kill_elite_monster_num = 15;
-  uint32 stage_id = 12;
-  uint32 kill_monster_num = 4;
-  bool is_new_record = 5;
+	uint32 final_score = 7;
+	uint32 difficulty_id = 14;
+	uint32 kill_elite_monster_num = 15;
+	uint32 stage_id = 12;
+	uint32 kill_monster_num = 4;
+	bool is_new_record = 5;
 }

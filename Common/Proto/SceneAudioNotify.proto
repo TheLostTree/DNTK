@@ -19,15 +19,14 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 3166
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message SceneAudioNotify {
-  repeated float param_2 = 14;
-  int32 type = 3;
-  repeated string param_3 = 11;
-  uint32 source_uid = 6;
-  repeated uint32 param_1 = 4;
+	uint32 source_uid = 6;
+	int32 type = 3;
+	repeated uint32 param1 = 4;
+	repeated float param2 = 14;
+	repeated string param3 = 11;
 }

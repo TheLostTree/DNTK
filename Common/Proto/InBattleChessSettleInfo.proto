@@ -21,13 +21,12 @@ import "ExhibitionDisplayInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message InBattleChessSettleInfo {
-  bool is_success = 7;
-  uint32 chess_exp = 11;
-  uint32 chess_level = 13;
-  uint32 old_chess_level = 10;
-  repeated ExhibitionDisplayInfo score_list = 1;
-  uint64 scene_time_ms = 14;
-  uint32 old_chess_exp = 2;
+	bool is_success = 7;
+	uint32 chess_exp = 11;
+	uint32 chess_level = 13;
+	uint32 old_chess_level = 10;
+	repeated ExhibitionDisplayInfo score_list = 1;
+	uint64 scene_time_ms = 14;
+	uint32 old_chess_exp = 2;
 }

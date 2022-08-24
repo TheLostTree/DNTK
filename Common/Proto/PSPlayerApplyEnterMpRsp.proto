@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1842
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message PSPlayerApplyEnterMpRsp {
-  string target_psn_id = 2;
-  int32 retcode = 6;
-  uint32 param = 10;
+	string target_psn_id = 2;
+	int32 retcode = 6;
+	uint32 param = 10;
 }

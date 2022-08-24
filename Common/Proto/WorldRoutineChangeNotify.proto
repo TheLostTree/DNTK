@@ -21,11 +21,11 @@ import "WorldRoutineInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 3507
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message WorldRoutineChangeNotify {
-  WorldRoutineInfo routine_info = 3;
-  uint32 routine_type = 11;
+	WorldRoutineInfo routine_info = 3;
+	uint32 routine_type = 11;
 }

@@ -19,15 +19,15 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 458
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2700_LKFKCNJFGIF_ServerRsp {
-  uint32 quest_id = 4;
-  int32 retcode = 11;
-  repeated uint32 lacked_npc_list = 8;
-  repeated uint32 lacked_place_list = 5;
-  map<uint32, uint32> lacked_npc_map = 10;
-  map<uint32, uint32> lacked_place_map = 2;
+	uint32 quest_id = 4;
+	int32 retcode = 11;
+	repeated uint32 lacked_npc_list = 8;
+	repeated uint32 lacked_place_list = 5;
+	map<uint32, uint32> lacked_npc_map = 10;
+	map<uint32, uint32> lacked_place_map = 2;
 }

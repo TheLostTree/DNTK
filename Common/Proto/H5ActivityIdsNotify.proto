@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5675
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message H5ActivityIdsNotify {
-  uint32 client_red_dot_timestamp = 1;
-  map<uint32, uint32> h_5_activity_map = 12;
+	uint32 client_red_dot_timestamp = 1;
+	map<uint32, uint32> h5_activity_map = 12;
 }

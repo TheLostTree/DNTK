@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 180
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message AntiAddictNotify {
-  int32 msg_type = 6;
-  string msg = 3;
-  string level = 5;
+	int32 msg_type = 6;
+	string msg = 3;
+	string level = 5;
 }

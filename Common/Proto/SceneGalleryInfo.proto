@@ -39,40 +39,45 @@ import "SceneGallerySalvageEscortInfoInfo.proto";
 import "SceneGallerySalvagePreventInfo.proto";
 import "SceneGallerySummerTimeV2BoatInfo.proto";
 import "SceneGallerySumoInfo.proto";
+import "Unk3000_IKBGMGECDPG.proto";
+import "Unk3000_KEJDIJAEMKD.proto";
+import "Unk3000_MNBPHBIHKKI.proto";
 
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message SceneGalleryInfo {
-  uint32 end_time = 11;
-  uint32 pre_start_end_time = 15;
-  GalleryStageType stage = 5;
-  uint32 owner_uid = 9;
-  uint32 player_count = 1;
-  repeated SceneGalleryProgressInfo progress_info_list = 4;
-  uint32 gallery_id = 2;
-  oneof info {
-    SceneGalleryBalloonInfo balloon_info = 14;
-    SceneGalleryFallInfo fall_info = 7;
-    SceneGalleryFlowerInfo flower_info = 8;
-    SceneGalleryBulletInfo bullet_info = 13;
-    SceneGalleryBrokenFloorInfo broken_floor_info = 10;
-    SceneGalleryHideAndSeekInfo hide_and_seek_info = 6;
-    SceneGalleryBuoyantCombatInfo buoyant_combat_info = 1384;
-    SceneGalleryBounceConjuringInfo bounce_conjuring_info = 708;
-    SceneGalleryHandballInfo handball_info = 1997;
-    SceneGallerySumoInfo sumo_info = 811;
-    SceneGallerySalvagePreventInfo salvage_prevent_info = 1700;
-    SceneGallerySalvageEscortInfoInfo salvage_escort_info = 759;
-    SceneGalleryHomeBalloonInfo home_balloon_info = 1034;
-    SceneGalleryCrystalLinkInfo crystal_link_info = 2004;
-    SceneGalleryIrodoriMasterInfo irodori_master_info = 1953;
-    SceneGalleryLuminanceStoneChallengeInfo luminance_stone_challenge_info = 106;
-    SceneGalleryHomeSeekFurnitureInfo home_seek_furniture_info = 1456;
-    SceneGalleryIslandPartyDownHillInfo island_party_down_hill_info = 462;
-    SceneGallerySummerTimeV2BoatInfo summer_time_v_2_boat_info = 296;
-    SceneGalleryIslandPartyRaftInfo island_party_raft_info = 1805;
-    SceneGalleryIslandPartySailInfo island_party_sail_info = 1133;
-  }
+	uint32 end_time = 11;
+	uint32 pre_start_end_time = 15;
+	GalleryStageType stage = 5;
+	uint32 owner_uid = 9;
+	uint32 player_count = 1;
+	repeated SceneGalleryProgressInfo progress_info_list = 4;
+	uint32 gallery_id = 2;
+	oneof info {
+		SceneGalleryBalloonInfo balloon_info = 14;
+		SceneGalleryFallInfo fall_info = 7;
+		SceneGalleryFlowerInfo flower_info = 8;
+		SceneGalleryBulletInfo bullet_info = 13;
+		SceneGalleryBrokenFloorInfo broken_floor_info = 10;
+		SceneGalleryHideAndSeekInfo hide_and_seek_info = 6;
+		SceneGalleryBuoyantCombatInfo buoyant_combat_info = 1384;
+		SceneGalleryBounceConjuringInfo bounce_conjuring_info = 708;
+		SceneGalleryHandballInfo handball_info = 1997;
+		SceneGallerySumoInfo sumo_info = 811;
+		SceneGallerySalvagePreventInfo salvage_prevent_info = 1700;
+		SceneGallerySalvageEscortInfoInfo salvage_escort_info = 759;
+		SceneGalleryHomeBalloonInfo home_balloon_info = 1034;
+		SceneGalleryCrystalLinkInfo crystal_link_info = 2004;
+		SceneGalleryIrodoriMasterInfo irodori_master_info = 1953;
+		SceneGalleryLuminanceStoneChallengeInfo luminance_stone_challenge_info = 106;
+		SceneGalleryHomeSeekFurnitureInfo home_seek_furniture_info = 1456;
+		SceneGalleryIslandPartyDownHillInfo island_party_down_hill_info = 462;
+		SceneGallerySummerTimeV2BoatInfo summer_time_v2_boat_info = 296;
+		SceneGalleryIslandPartyRaftInfo island_party_raft_info = 1805;
+		SceneGalleryIslandPartySailInfo island_party_sail_info = 1133;
+		Unk3000_IKBGMGECDPG instable_spray_info = 1196;
+		Unk3000_KEJDIJAEMKD muqadas_potion_info = 865;
+		Unk3000_MNBPHBIHKKI treasure_seelie_info = 1525;
+	}
 }

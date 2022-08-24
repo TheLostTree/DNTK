@@ -19,13 +19,13 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2475
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message TowerEnterLevelRsp {
-  repeated uint32 tower_buff_id_list = 10;
-  int32 retcode = 1;
-  uint32 level_index = 14;
-  uint32 floor_id = 5;
+	repeated uint32 tower_buff_id_list = 10;
+	int32 retcode = 1;
+	uint32 level_index = 14;
+	uint32 floor_id = 5;
 }

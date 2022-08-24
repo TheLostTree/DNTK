@@ -21,11 +21,11 @@ import "Unk2700_AFOPONDCLKC.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8937
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2700_FIODAJPNBIK {
-  int32 retcode = 12;
-  repeated Unk2700_AFOPONDCLKC Unk2700_MAKCLMEGEBJ = 5;
+	int32 retcode = 12;
+	repeated Unk2700_AFOPONDCLKC Unk2700_MAKCLMEGEBJ = 5;
 }

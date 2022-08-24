@@ -21,8 +21,7 @@ import "DraftInviteFailReason.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message DraftInviteFailInfo {
-  uint32 uid = 8;
-  DraftInviteFailReason reason = 5;
+	uint32 uid = 8;
+	DraftInviteFailReason reason = 5;
 }

@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2178
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message BlessingRecvFriendPicNotify {
-  uint32 uid = 15;
-  uint32 pic_id = 5;
+	uint32 uid = 15;
+	uint32 pic_id = 5;
 }

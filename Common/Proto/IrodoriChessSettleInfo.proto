@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message IrodoriChessSettleInfo {
-  bool is_new_record = 5;
-  bool Unk2700_PFEDPLKKLGH = 2;
-  uint64 scene_time_ms = 1;
-  uint32 Unk2700_CDOKENJJJMH = 3;
-  bool is_perfect = 12;
-  uint32 kill_monster_num = 7;
+	bool is_new_record = 5;
+	bool Unk2700_PFEDPLKKLGH = 2;
+	uint64 scene_time_ms = 1;
+	uint32 Unk2700_CDOKENJJJMH = 3;
+	bool is_perfect = 12;
+	uint32 kill_monster_num = 7;
 }

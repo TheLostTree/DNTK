@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1951
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2700_CILGDLMHCNG_ServerNotify {
-  string Unk2700_GEBOKAMGEEB = 7;
-  uint32 chapter_id = 15;
+	string Unk2700_GEBOKAMGEEB = 7;
+	uint32 chapter_id = 15;
 }

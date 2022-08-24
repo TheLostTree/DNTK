@@ -21,10 +21,10 @@ import "Unk2700_NKIDCOKNPFF.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5364
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2700_GECHLGFKPOD_ServerNotify {
-  Unk2700_NKIDCOKNPFF player_info = 6;
+	Unk2700_NKIDCOKNPFF player_info = 6;
 }

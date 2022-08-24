@@ -21,10 +21,10 @@ import "MainCoop.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1976
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message AllCoopInfoNotify {
-  repeated MainCoop main_coop_list = 14;
+	repeated MainCoop main_coop_list = 14;
 }

@@ -21,11 +21,11 @@ import "Shop.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 798
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message GetShopRsp {
-  Shop shop = 11;
-  int32 retcode = 2;
+	Shop shop = 11;
+	int32 retcode = 2;
 }

@@ -21,10 +21,10 @@ import "SegmentInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 39
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message CheckSegmentCRCNotify {
-  repeated SegmentInfo info_list = 6;
+	repeated SegmentInfo info_list = 6;
 }

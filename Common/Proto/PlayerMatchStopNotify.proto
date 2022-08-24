@@ -21,11 +21,11 @@ import "MatchReason.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4181
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message PlayerMatchStopNotify {
-  MatchReason reason = 1;
-  uint32 host_uid = 12;
+	MatchReason reason = 1;
+	uint32 host_uid = 12;
 }

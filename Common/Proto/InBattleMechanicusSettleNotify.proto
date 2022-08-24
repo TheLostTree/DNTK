@@ -21,17 +21,17 @@ import "MultistageSettleWatcherInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5305
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message InBattleMechanicusSettleNotify {
-  uint32 group_id = 15;
-  uint64 scene_time_ms = 11;
-  uint32 difficulty_percentage = 6;
-  uint32 total_token = 7;
-  repeated MultistageSettleWatcherInfo watcher_list = 3;
-  uint32 real_token = 13;
-  bool is_success = 2;
-  uint32 play_index = 14;
+	uint32 group_id = 15;
+	uint64 scene_time_ms = 11;
+	uint32 difficulty_percentage = 6;
+	uint32 total_token = 7;
+	repeated MultistageSettleWatcherInfo watcher_list = 3;
+	uint32 real_token = 13;
+	bool is_success = 2;
+	uint32 play_index = 14;
 }

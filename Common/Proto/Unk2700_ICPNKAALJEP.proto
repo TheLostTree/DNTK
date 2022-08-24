@@ -21,8 +21,7 @@ import "Unk2700_KLJLJGJOBDI.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_ICPNKAALJEP {
-  bool is_new_record = 8;
-  Unk2700_KLJLJGJOBDI settle_info = 14;
+	bool is_new_record = 8;
+	Unk2700_KLJLJGJOBDI settle_info = 14;
 }

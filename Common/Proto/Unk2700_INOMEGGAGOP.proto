@@ -21,12 +21,12 @@ import "Unk2700_AIMMLILLOKB.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8132
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2700_INOMEGGAGOP {
-  repeated Unk2700_AIMMLILLOKB Unk2700_DFGCIBJFNBC = 5;
-  uint32 schedule_id = 10;
-  int32 retcode = 9;
+	repeated Unk2700_AIMMLILLOKB Unk2700_DFGCIBJFNBC = 5;
+	uint32 schedule_id = 10;
+	int32 retcode = 9;
 }

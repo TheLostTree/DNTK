@@ -21,11 +21,11 @@ import "Unk2700_JCOIDFNDHPB.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8186
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2700_IMHNKDHHGMA {
-  uint32 gallery_id = 10;
-  Unk2700_JCOIDFNDHPB settle_info = 13;
+	uint32 gallery_id = 10;
+	Unk2700_JCOIDFNDHPB settle_info = 13;
 }

@@ -22,13 +22,12 @@ import "Unk2700_PHGGAEDHLBN.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 6225
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message Unk2700_KHLJJPGOELG_ClientReq {
-  Unk2700_KLPINMKOEPE Unk2700_MDIJOHEFFHI = 5;
-  bool Unk2700_FHHLMJALLMN = 7;
-  Unk2700_PHGGAEDHLBN Unk2700_JGFDODPBGFL = 13;
+	Unk2700_KLPINMKOEPE Unk2700_MDIJOHEFFHI = 5;
+	bool Unk2700_FHHLMJALLMN = 7;
+	Unk2700_PHGGAEDHLBN Unk2700_JGFDODPBGFL = 13;
 }

@@ -19,9 +19,8 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_IOONEPPHCJP {
-  uint32 Unk2700_BPDFJJNJGAJ = 1;
-  uint32 Unk2700_KDJGDPDJHLL = 2;
-  map<uint32, uint32> Unk2700_HGBNIFAKOGI = 3;
+	uint32 Unk2700_BPDFJJNJGAJ = 1;
+	uint32 Unk2700_KDJGDPDJHLL = 2;
+	map<uint32, uint32> Unk2700_HGBNIFAKOGI = 3;
 }

@@ -22,12 +22,12 @@ import "Unk2700_MOFABPNGIKP.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4583
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2700_LNBBLNNPNBE_ServerNotify {
-  uint32 gallery_id = 15;
-  Unk2700_JCBJHCFEONO Unk2700_GIHGLFNAGJD = 5;
-  Unk2700_MOFABPNGIKP reason = 4;
+	uint32 gallery_id = 15;
+	Unk2700_JCBJHCFEONO Unk2700_GIHGLFNAGJD = 5;
+	Unk2700_MOFABPNGIKP reason = 4;
 }

@@ -19,10 +19,9 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_NAPLFKNOECD {
-  uint32 type = 15;
-  float Unk2700_KJGKBENCNKF = 11;
-  float value = 3;
-  float Unk2700_POGMHNNJKDM = 10;
+	uint32 type = 15;
+	float Unk2700_KJGKBENCNKF = 11;
+	float value = 3;
+	float Unk2700_POGMHNNJKDM = 10;
 }

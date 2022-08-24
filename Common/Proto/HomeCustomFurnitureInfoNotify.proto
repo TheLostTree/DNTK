@@ -21,12 +21,12 @@ import "HomeCustomFurnitureInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4712
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message HomeCustomFurnitureInfoNotify {
-  repeated uint32 delete_custom_furniture_list = 4;
-  map<uint32, uint32> used_sub_furniture_count_map = 15;
-  repeated HomeCustomFurnitureInfo custom_furniture_info_list = 11;
+	repeated uint32 delete_custom_furniture_list = 4;
+	map<uint32, uint32> used_sub_furniture_count_map = 15;
+	repeated HomeCustomFurnitureInfo custom_furniture_info_list = 11;
 }

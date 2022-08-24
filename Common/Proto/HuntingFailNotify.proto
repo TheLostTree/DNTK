@@ -21,10 +21,10 @@ import "HuntingPair.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4320
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message HuntingFailNotify {
-  HuntingPair hunting_pair = 12;
+	HuntingPair hunting_pair = 12;
 }

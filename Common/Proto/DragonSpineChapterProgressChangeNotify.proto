@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2065
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message DragonSpineChapterProgressChangeNotify {
-  uint32 schedule_id = 7;
-  uint32 chapter_id = 11;
-  uint32 cur_progress = 5;
+	uint32 schedule_id = 7;
+	uint32 chapter_id = 11;
+	uint32 cur_progress = 5;
 }

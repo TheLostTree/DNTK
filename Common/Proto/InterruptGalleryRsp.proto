@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5597
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message InterruptGalleryRsp {
-  int32 retcode = 12;
-  uint32 gallery_id = 9;
+	int32 retcode = 12;
+	uint32 gallery_id = 9;
 }

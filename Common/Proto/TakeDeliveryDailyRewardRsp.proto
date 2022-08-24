@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2162
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message TakeDeliveryDailyRewardRsp {
-  uint32 schedule_id = 5;
-  int32 retcode = 7;
+	uint32 schedule_id = 5;
+	int32 retcode = 7;
 }

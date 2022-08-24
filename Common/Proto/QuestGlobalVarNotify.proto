@@ -21,10 +21,10 @@ import "QuestGlobalVar.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 434
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message QuestGlobalVarNotify {
-  repeated QuestGlobalVar var_list = 1;
+	repeated QuestGlobalVar var_list = 1;
 }

@@ -21,13 +21,13 @@ import "ItemParam.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 2835
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message TakeCityReputationLevelRewardRsp {
-  uint32 city_id = 15;
-  int32 retcode = 11;
-  repeated ItemParam item_list = 13;
-  uint32 level = 9;
+	uint32 city_id = 15;
+	int32 retcode = 11;
+	repeated ItemParam item_list = 13;
+	uint32 level = 9;
 }

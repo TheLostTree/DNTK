@@ -19,15 +19,14 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1975
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message SaveMainCoopReq {
-  map<uint32, int32> normal_var_map = 15;
-  uint32 self_confidence = 2;
-  uint32 save_point_id = 1;
-  map<uint32, int32> temp_var_map = 8;
-  uint32 id = 3;
+	map<uint32, int32> normal_var_map = 15;
+	uint32 self_confidence = 2;
+	uint32 save_point_id = 1;
+	map<uint32, int32> temp_var_map = 8;
+	uint32 id = 3;
 }

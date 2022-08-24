@@ -22,15 +22,15 @@ import "ItemParam.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 188
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message PlayerCookRsp {
-  repeated ItemParam extral_item_list = 15;
-  uint32 cook_count = 12;
-  repeated ItemParam item_list = 11;
-  int32 retcode = 3;
-  uint32 qte_quality = 5;
-  CookRecipeData recipe_data = 7;
+	repeated ItemParam extral_item_list = 15;
+	uint32 cook_count = 12;
+	repeated ItemParam item_list = 11;
+	int32 retcode = 3;
+	uint32 qte_quality = 5;
+	CookRecipeData recipe_data = 7;
 }

@@ -21,10 +21,10 @@ import "ParentQuest.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 435
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message FinishedParentQuestNotify {
-  repeated ParentQuest parent_quest_list = 2;
+	repeated ParentQuest parent_quest_list = 2;
 }

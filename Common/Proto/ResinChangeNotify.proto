@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 642
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message ResinChangeNotify {
-  uint32 next_add_timestamp = 6;
-  uint32 cur_buy_count = 4;
-  uint32 cur_value = 12;
+	uint32 next_add_timestamp = 6;
+	uint32 cur_buy_count = 4;
+	uint32 cur_value = 12;
 }

@@ -21,11 +21,11 @@ import "ReunionBriefInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5085
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message ReunionActivateNotify {
-  bool is_activate = 9;
-  ReunionBriefInfo reunion_brief_info = 13;
+	bool is_activate = 9;
+	ReunionBriefInfo reunion_brief_info = 13;
 }

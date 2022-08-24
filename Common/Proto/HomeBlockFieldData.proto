@@ -22,11 +22,10 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message HomeBlockFieldData {
-  Vector rot = 15;
-  Vector pos = 4;
-  uint32 guid = 9;
-  uint32 furniture_id = 1;
-  repeated HomeBlockSubFieldData sub_field_list = 7;
+	Vector rot = 15;
+	Vector pos = 4;
+	uint32 guid = 9;
+	uint32 furniture_id = 1;
+	repeated HomeBlockSubFieldData sub_field_list = 7;
 }

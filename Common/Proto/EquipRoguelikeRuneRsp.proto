@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8705
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message EquipRoguelikeRuneRsp {
-  int32 retcode = 14;
-  repeated uint32 rune_list = 1;
+	int32 retcode = 14;
+	repeated uint32 rune_list = 1;
 }

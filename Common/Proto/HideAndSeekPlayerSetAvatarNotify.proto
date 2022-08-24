@@ -19,12 +19,12 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 5319
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message HideAndSeekPlayerSetAvatarNotify {
-  uint32 avatar_id = 2;
-  uint32 costume_id = 13;
-  uint32 uid = 5;
+	uint32 avatar_id = 2;
+	uint32 costume_id = 13;
+	uint32 uid = 5;
 }

@@ -19,9 +19,8 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message Unk2700_LHPELFJPPOD {
-  bool Unk2700_GHGIOMEHIAN = 13;
-  uint32 best_score = 7;
-  uint32 challenge_id = 3;
+	bool Unk2700_GHGIOMEHIAN = 13;
+	uint32 best_score = 7;
+	uint32 challenge_id = 3;
 }

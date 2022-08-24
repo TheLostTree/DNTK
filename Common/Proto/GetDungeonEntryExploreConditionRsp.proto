@@ -21,11 +21,11 @@ import "DungeonEntryCond.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 3269
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message GetDungeonEntryExploreConditionRsp {
-  DungeonEntryCond dungeon_entry_cond = 5;
-  int32 retcode = 3;
+	DungeonEntryCond dungeon_entry_cond = 5;
+	int32 retcode = 3;
 }

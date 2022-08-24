@@ -19,10 +19,9 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message SceneGalleryHomeSeekFurnitureInfo {
-  uint32 Unk2700_KDBENBBODGP = 6;
-  map<uint32, uint32> Unk2700_DDHOJHOICBL = 8;
-  uint32 Unk2700_LODFFCPFJLC = 12;
-  uint32 Unk2700_HLCIHCCGFFC = 9;
+	uint32 Unk2700_KDBENBBODGP = 6;
+	map<uint32, uint32> Unk2700_DDHOJHOICBL = 8;
+	uint32 Unk2700_LODFFCPFJLC = 12;
+	uint32 Unk2700_HLCIHCCGFFC = 9;
 }

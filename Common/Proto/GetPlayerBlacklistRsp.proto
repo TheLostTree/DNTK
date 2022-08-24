@@ -21,11 +21,11 @@ import "FriendBrief.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4091
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message GetPlayerBlacklistRsp {
-  int32 retcode = 2;
-  repeated FriendBrief blacklist = 3;
+	int32 retcode = 2;
+	repeated FriendBrief blacklist = 3;
 }

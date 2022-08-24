@@ -21,11 +21,10 @@ import "Unk2700_OPEBMJPOOBL.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 6320
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message Unk2700_IHLONDFBCOE_ClientReq {
-  Unk2700_OPEBMJPOOBL Unk2700_KHBDAPGDOJA = 13;
+	Unk2700_OPEBMJPOOBL Unk2700_KHBDAPGDOJA = 13;
 }

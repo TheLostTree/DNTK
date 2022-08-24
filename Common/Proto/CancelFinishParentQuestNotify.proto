@@ -19,10 +19,10 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 424
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message CancelFinishParentQuestNotify {
-  uint32 parent_quest_id = 6;
+	uint32 parent_quest_id = 6;
 }

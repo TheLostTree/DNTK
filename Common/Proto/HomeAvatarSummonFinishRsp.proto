@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4696
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message HomeAvatarSummonFinishRsp {
-  uint32 event_id = 8;
-  int32 retcode = 3;
+	uint32 event_id = 8;
+	int32 retcode = 3;
 }

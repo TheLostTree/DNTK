@@ -21,7 +21,6 @@ import "Unk2800_MBKLJLMLIKF.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message IslandPartyActivityDetailInfo {
-  repeated Unk2800_MBKLJLMLIKF Unk2800_PDBHCBCLFBM = 15;
+	repeated Unk2800_MBKLJLMLIKF Unk2800_PDBHCBCLFBM = 15;
 }

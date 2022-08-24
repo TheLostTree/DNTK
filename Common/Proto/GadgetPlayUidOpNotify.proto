@@ -19,15 +19,15 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 875
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message GadgetPlayUidOpNotify {
-  uint32 entity_id = 11;
-  repeated uint32 uid_list = 2;
-  uint32 play_type = 6;
-  string param_str = 1;
-  uint32 op = 7;
-  repeated uint32 param_list = 4;
+	uint32 entity_id = 11;
+	repeated uint32 uid_list = 2;
+	uint32 play_type = 6;
+	string param_str = 1;
+	uint32 op = 7;
+	repeated uint32 param_list = 4;
 }

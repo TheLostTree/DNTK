@@ -21,10 +21,10 @@ import "WidgetGadgetData.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4266
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message WidgetGadgetDataNotify {
-  WidgetGadgetData widget_gadget_data = 12;
+	WidgetGadgetData widget_gadget_data = 12;
 }

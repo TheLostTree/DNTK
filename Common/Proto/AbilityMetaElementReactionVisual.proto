@@ -19,10 +19,9 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message AbilityMetaElementReactionVisual {
-  int32 hit_index = 2;
-  uint32 element_source_type = 12;
-  uint32 element_reactor_type = 6;
-  uint32 element_reaction_type = 5;
+	int32 hit_index = 2;
+	uint32 element_source_type = 12;
+	uint32 element_reactor_type = 6;
+	uint32 element_reaction_type = 5;
 }

@@ -19,14 +19,13 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 333
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message Unk2700_BEINCMBJDAA_ClientReq {
-  uint32 target_id = 1;
-  float Unk2700_AEIDAJFHBBB = 5;
-  uint32 source_id = 13;
-  float Unk2700_JLLFGAIOPGC = 4;
+	uint32 target_id = 1;
+	float Unk2700_AEIDAJFHBBB = 5;
+	uint32 source_id = 13;
+	float Unk2700_JLLFGAIOPGC = 4;
 }

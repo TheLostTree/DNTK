@@ -19,12 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4093
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message SetNameCardRsp {
-  uint32 name_card_id = 11;
-  int32 retcode = 12;
+	uint32 name_card_id = 11;
+	int32 retcode = 12;
 }

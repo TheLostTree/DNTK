@@ -21,10 +21,10 @@ import "SceneEntityInfo.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1644
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message AvatarChangeCostumeNotify {
-  SceneEntityInfo entity_info = 7;
+	SceneEntityInfo entity_info = 7;
 }

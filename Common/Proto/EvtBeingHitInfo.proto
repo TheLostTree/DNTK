@@ -21,9 +21,8 @@ import "AttackResult.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 message EvtBeingHitInfo {
-  uint32 peer_id = 6;
-  AttackResult attack_result = 7;
-  uint32 frame_num = 4;
+	uint32 peer_id = 6;
+	AttackResult attack_result = 7;
+	uint32 frame_num = 4;
 }

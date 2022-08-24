@@ -19,9 +19,8 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 enum Unk2700_PIAFGFGHGHM {
-  Unk2700_PIAFGFGHGHM_Unk2700_LKEBMNKGKCP = 0;
-  Unk2700_PIAFGFGHGHM_Unk2700_PJHOMLBMENK = 1;
-  Unk2700_PIAFGFGHGHM_Unk2700_MPGMPAOGMCB = 2;
+	Unk2700_PIAFGFGHGHM_Unk2700_LKEBMNKGKCP = 0;
+	Unk2700_PIAFGFGHGHM_Unk2700_PJHOMLBMENK = 1;
+	Unk2700_PIAFGFGHGHM_Unk2700_MPGMPAOGMCB = 2;
 }

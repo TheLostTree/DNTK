@@ -21,11 +21,10 @@ import "EntityAbilityInvokeEntry.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 1103
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message ClientAbilitiesInitFinishCombineNotify {
-  repeated EntityAbilityInvokeEntry entity_invoke_list = 1;
+	repeated EntityAbilityInvokeEntry entity_invoke_list = 1;
 }

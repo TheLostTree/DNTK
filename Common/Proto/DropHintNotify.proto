@@ -21,11 +21,11 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 650
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message DropHintNotify {
-  Vector position = 7;
-  repeated uint32 item_id_list = 14;
+	Vector position = 7;
+	repeated uint32 item_id_list = 14;
 }

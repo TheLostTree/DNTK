@@ -21,11 +21,11 @@ import "Unk2700_IMMPPANFEPP.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 4641
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message Unk2700_KGHOJPDNMKK_ServerRsp {
-  int32 retcode = 13;
-  Unk2700_IMMPPANFEPP Unk2700_JJBKBKPEIBC = 14;
+	int32 retcode = 13;
+	Unk2700_IMMPPANFEPP Unk2700_JJBKBKPEIBC = 14;
 }

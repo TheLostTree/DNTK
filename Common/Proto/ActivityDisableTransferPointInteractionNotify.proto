@@ -21,11 +21,11 @@ import "Uint32Pair.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8982
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message ActivityDisableTransferPointInteractionNotify {
-  bool is_disable = 10;
-  Uint32Pair scene_point_pair = 5;
+	bool is_disable = 10;
+	Uint32Pair scene_point_pair = 5;
 }

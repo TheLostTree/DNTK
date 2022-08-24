@@ -19,10 +19,10 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 8681
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
+// IsAllowClient: true
 message TreasureMapHostInfoNotify {
-  repeated uint32 mp_challenge_region_list = 8;
+	repeated uint32 mp_challenge_region_list = 8;
 }

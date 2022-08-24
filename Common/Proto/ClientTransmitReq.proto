@@ -22,14 +22,13 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-
 // CmdId: 291
 // EnetChannelId: 0
-// EnetIsReliable: true
+// EnetIsReliable: false
 // IsAllowClient: true
 message ClientTransmitReq {
-  uint32 scene_id = 2;
-  TransmitReason reason = 14;
-  Vector pos = 1;
-  Vector rot = 9;
+	uint32 scene_id = 2;
+	TransmitReason reason = 14;
+	Vector pos = 1;
+	Vector rot = 9;
 }
