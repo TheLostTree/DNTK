@@ -39,7 +39,7 @@
 
 
 
-<button title="Upload PCAP" data-icon="open-in-app" on:click={uploadFile}>EHEHEHEEH</button>
+<button title="Upload PCAP" data-icon="open-in-app" on:click={uploadFile}>Upload PCAP</button>
 <input hidden type="file" bind:this={fileForm} bind:files accept=".pcap"/>
 
 

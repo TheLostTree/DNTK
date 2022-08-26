@@ -26,8 +26,9 @@
     <p>i learned html in 3rd grade and never again pls don't judge</p> <br>
     <DamageTable></DamageTable>
 
-    <ConsoleWindow/>
+    <!-- <ConsoleWindow/> -->
 
+    <br>
     <UploadPcapButton/>
 
 

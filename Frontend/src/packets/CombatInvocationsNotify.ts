@@ -82,7 +82,7 @@ function handleHit(data: EvtBeingHitInfo, packet: PacketNotifyDT<CombatInvocatio
         Attacker: ActualData.Attacker.toString(),
         Damage: ActualData.Damage,
         Healing: 0,
-        Crit: ActualData.IsCrit
+        Crit: data.AttackResult.IsCrit
     });
 
 

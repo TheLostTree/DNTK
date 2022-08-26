@@ -13,6 +13,7 @@ export function AddDamageToTable(data: CombatEvent){
     const attacker = attackers.get(data.Attacker) || new Attacker(data.Attacker);
     attacker.AddDamage(data);
     attackers.set(data.Attacker, attacker);
+    getRows();
 }
 
 import {attackees} from './stores';
@@ -22,6 +23,11 @@ function getRows(){
         return Array.from(attackers.values())
     })
     // console.log(b)
+}
+
+export function reset(){
+    attackers.clear();
+    getRows();
 }
 
 interface CombatEvent{
@@ -47,12 +53,13 @@ class Attacker{
         this.Damage += data.Damage;
         this.Healing += data.Healing;
         this.TotalHits++;
-        if(!(this.Healing == 0))
+        if((this.Healing == 0))
+            //just to make sure we dont count heals as crits
             if(data.Crit) this.Crits++;
     }
 
     GetRow(){
-        console.log(`${this.Name},${this.Crits} / ${this.TotalHits} = ${this.Crits / this.TotalHits}`)
+        // console.log(`${this.Name},${this.Crits} / ${this.TotalHits} = ${this.Crits / this.TotalHits}`)
         return{
             Name: this.Name,
             TotalDamage: this.Damage,
