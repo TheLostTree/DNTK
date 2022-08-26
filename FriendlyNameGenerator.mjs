@@ -1,4 +1,4 @@
-import TextMap from "./GenshinData/TextMap/TextMapEN.json" assert { type: 'json' };;
+import TextMap from "./Frontend/TextMapEN.json" assert { type: 'json' };;
 //import every file from /data/*.json
 
 import AvatarExcel from "./GenshinData/ExcelBinOutput/AvatarExcelConfigData.json" assert { type: 'json' };;

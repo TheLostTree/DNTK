@@ -133,8 +133,8 @@
 20040301,Geo Hypostasis: Gimel
 20040302,(Event) Geo Hypostasis - Gimel
 20040401,Hydro Hypostasis
-20040501,Cryo Hypostasis - Daleth
-20040601,Pyro Hypostasis: Ayin
+20040501,
+20040601,
 20050101,Oceanid
 20050102,Oceanid (Main Body)
 20050201,Oceanid Boar
@@ -148,7 +148,7 @@
 20050501,Oceanid Finch
 20050502,
 20050601,Oceanid Mallard
-20050602,Oceanid Mallard (Landwalker Version)
+20050602,
 20050603,
 20050701,Oceanid Ferret
 20050702,Oceanid Ferret (Enhanced)
@@ -156,14 +156,14 @@
 20050801,Oceanid Frog
 20050802,
 20050901,Oceanid Raptor
-20060101,Hydro Specter
-20060201,Geo Specter
-20060301,Anemo Specter
+20060101,
+20060201,
+20060301,
 20060401,
 20060501,
 20060601,
 20060701,
-20070101,Thunder Manifestation
+20070101,
 21010101,Hilichurl
 21010102,Hilichurl (Mechanicus)
 21010201,Hilichurl Fighter
@@ -184,13 +184,13 @@
 21011201,Rock Shield Hilichurl Guard
 21011202,Rock Shield Hilichurl Guard (Mechanicus)
 21011301,Cryo Hilichurl Grenadier
-21011302,Cryo Hilichurl Grenadier - Enhanced Attack
+21011302,
 21011401,Ice Shield Hilichurl Guard
 21011402,Ice Shield Hilichurl Guard (Mechanicus)
-21011403,Ice Shield Hilichurl Guard: Dragonspine Event
+21011403,
 21011501,Unusual Unarmed Hilichurl
-21011601,Electro Hilichurl Grenadier
-21011602,Electro Hilichurl Grenadier - Enhanced Attack
+21011601,
+21011602,
 21020101,Wooden Shieldwall Mitachurl
 21020102,Wooden Shieldwall Mitachurl (Mechanicus)
 21020201,Blazing Axe Mitachurl
@@ -204,11 +204,11 @@
 21020502,Stonehide Lawachurl (Mechanicus)
 21020601,Ice Shieldwall Mitachurl
 21020602,Ice Shieldwall Mitachurl (Mechanicus)
-21020701,Crackling Axe Mitachurl
-21020702,Crackling Axe Mitachurl (Mechanicus)
-21020703,Crackling Axe Mitachurl - Enhanced Attack
-21020801,Thunderhelm Lawachurl
-21020802,Thunderhelm Lawachurl (Mechanicus)
+21020701,
+21020702,
+21020703,
+21020801,
+21020802,
 21030101,Hydro Samachurl
 21030102,Hydro Samachurl (Mechanicus)
 21030103,Test_Movement Healing Hydro Samachurl
@@ -224,9 +224,9 @@
 21030403,Geo Samachurl (Mechanicus)
 21030501,Cryo Samachurl
 21030502,Cryo Samachurl (Mechanicus)
-21030601,Electro Samachurl
-21030602,Electro Samachurl (Mechanicus)
-21030603,Electro Samachurl - Enhanced Support
+21030601,
+21030602,
+21030603,
 22010101,Pyro Abyss Mage
 22010102,Test_Shield-Enhanced Pyro Abyss Mage
 22010103,Test_Teleport-Enhanced Pyro Abyss Mage
@@ -242,23 +242,23 @@
 22010303,Test_Teleport-Enhanced Hydro Abyss Mage
 22010304,Test_Attacking-Enhanced Hydro Abyss Mage
 22010305,Hydro Abyss Mage (Mechanicus)
-22010401,Electro Abyss Mage
-22010402,Electro Abyss Mage (Mechanicus)
-22010403,Electro Abyss Mage - Enhanced Shield
-22010404,Electro Abyss Mage - Enhanced Attack
+22010401,
+22010402,
+22010403,
+22010404,
 22020101,Abyss Herald: Wicked Torrents (Disappearing)
-22020102,Abyss Herald: Wicked Torrents (Permanent)
+22020102,
 22020103,
 22030101,Abyss Lector: Violet Lightning (Disappearing)
-22030102,Abyss Lector: Violet Lightning (Permanent)
+22030102,
 22030103,
 22030201,
 22030202,
-22040101,Rockfond Rifthound Whelp
-22040201,Thundercraven Rifthound Whelp
-22050101,Rockfond Rifthound
-22050201,Thundercraven Rifthound
-22060101,Golden Wolflord
+22040101,
+22040201,
+22050101,
+22050201,
+22060101,
 22070101,
 22070102,
 22070201,
@@ -278,8 +278,8 @@
 23030101,Fatui Electro Cicin Mage
 23030102,
 23040101,Fatui Cryo Cicin Mage
-23040102,Fatui Cryo Cicin Mage - Enhanced Attack
-23050101,Fatui Mirror Maiden
+23040102,
+23050101,
 24010101,Ruin Guard
 24010102,Ruin Guard (Mechanicus)
 24010108,
@@ -288,24 +288,24 @@
 24010202,Ruin Hunter (Mechanicus)
 24010301,Ruin Grader
 24010302,Ruin Grader (Mechanicus)
-24010303,Ruin Grader (Mining Version)
+24010303,
 24010304,
 24010401,
-24020101,Ruin Cruiser
-24020102,Ruin Cruiser (Weakened)
-24020103,Ruin Cruiser (Enhanced)
-24020201,Ruin Destroyer
-24020202,Ruin Destroyer (Weakened)
-24020203,Ruin Destroyer (Enhanced)
-24020301,Ruin Defender
-24020302,Ruin Defender (Weakened)
-24020303,Ruin Defender (Enhanced)
+24020101,
+24020102,
+24020103,
+24020201,
+24020202,
+24020203,
+24020301,
+24020302,
+24020303,
 24020304,
-24020401,Ruin Scout
-24020402,Ruin Scout (Weakened)
-24020403,Ruin Scout (Enhanced)
-24021101,Perpetual Mechanical Array
-24021102,Perpetual Mechanical Array (Inazuma Event-Only)
+24020401,
+24020402,
+24020403,
+24021101,
+24021102,
 24030101,
 24030201,
 25010101,Liuliu
@@ -341,37 +341,37 @@
 25040103,
 25050101,Millelith Soldier
 25050201,Millelith Sergeant
-25050301,Shogunate Infantry
-25050401,Shogunate Infantry Captain
+25050301,
+25050401,
 25050402,
-25050501,Sangonomiya Cohort
+25050501,
 25050502,
 25060101,
 25060102,
 25070101,
 25070201,
 25070202,
-25080101,Ronin
-25080201,Ronin: Sanzoku
+25080101,
+25080201,
 25080202,
-25080301,Ronin: Anbu
-25080401,Shogunate Samurai
+25080301,
+25080401,
 25080402,
 25080403,
 25080404,
-25090101,Marionette General
-25090102,Marionette General: Wind Bunshin
-25090103,Marionette General: Ice Bunshin
-25090104,Marionette General: Masked Bunshin
-25090201,Marionette General: Wind Bunshin (With Icon)
-25090301,Marionette General: Ice Bunshin (With Icon)
-25090401,Marionette General: Masked Bunshin (With Icon)
-25100101,Electro Kairagi
+25090101,
+25090102,
+25090103,
+25090104,
+25090201,
+25090301,
+25090401,
+25100101,
 25100102,
-25100201,Pyro Kairagi
-25100301,Thunderwraith Kairagi
+25100201,
+25100301,
 25100302,
-25100401,Flameghoul Kairagi
+25100401,
 25210101,
 25210102,
 25210103,
@@ -409,10 +409,10 @@
 25310301,
 26010101,Cryo Whopperflower
 26010102,Cryo Whopperflower (Dragonspine Event)
-26010103,Giant Cryo Whopperflower (2.3 Dragonspine Event)
+26010103,
 26010104,
 26010201,Pyro Whopperflower
-26010301,Electro Whopperflower
+26010301,
 26020101,Cryo Regisvine
 26020102,Cryo Regisvine (Dragonspine Event)
 26020201,Pyro Regisvine
@@ -422,12 +422,12 @@
 26040102,Geovishap: Pyro
 26040103,Geovishap: Cryo
 26040104,Geovishap: Electro
-26040105,Geovishap: Hydro (Mechanicus)
+26040105,
 26050101,Primo Geovishap: Hydro
 26050201,Primo Geovishap: Pyro
 26050301,Primo Geovishap: Cryo
 26050401,Primo Geovishap: Electro
-26050501,Primo Geovishap (Event)
+26050501,
 26050601,
 26050701,
 26050702,
@@ -455,16 +455,16 @@
 28010101,Golden Crab
 28010102,Sun Crab
 28010103,Ocean Crab
-28010104,General Crab
-28010105,Pale Red Crab
-28010106,Crab
+28010104,
+28010105,
+28010106,
 28010201,Blue Horned Lizard
 28010202,Red Horned Lizard
 28010203,Green Horned Lizard
 28010204,Sunset Loach
 28010205,Golden Loach
 28010206,Sunny Loach
-28010207,Pith Lizard
+28010207,
 28010208,
 28010301,Frog
 28010302,Mud Frog
@@ -495,8 +495,8 @@
 28020402,Forest-Patrol Hound
 28020403,Shiba
 28020404,Black-Back Hound
-28020405,Shiba
-28020406,Northland Hound (Dog Event Special, Extended LoS Range)
+28020405,
+28020406,
 28020407,
 28020408,
 28020409,
@@ -508,8 +508,8 @@
 28020505,Tiger-Striped Cat
 28020506,Sheriff Cat
 28020507,Black Cat
-28020508,Sapphire
-28020509,Gray Snow Cat (Dog Event Special, Extended LoS Range)
+28020508,
+28020509,
 28020510,
 28020511,
 28020512,
@@ -519,16 +519,16 @@
 28020603,Boot Weasel
 28020604,Masked Weasel
 28020605,
-28020701,Kitsune
-28020702,Kitsune (Dog Event Special, Extended LoS Range)
-28020801,Bake-Danuki
+28020701,
+28020702,
+28020801,
 28020802,
 28020803,
-28020901,Samurai Dog (Patrol)
-28020902,Samurai Dog (Combat)
+28020901,
+28020902,
 28020903,
 28030101,Azure Crane
-28030102,Violet Ibis
+28030102,
 28030103,
 28030201,Brownwing Falcon
 28030202,Umbertail Falcon
@@ -539,12 +539,12 @@
 28030303,Graywing Pigeon
 28030304,Crimsonflank Pigeon
 28030305,Black King Pigeon
-28030306,Duck
-28030307,White Pigeon
-28030308,Brightcrown Pigeon
-28030309,Graywing Pigeon
-28030310,Crimsonflank Pigeon
-28030311,Black King Pigeon
+28030306,
+28030307,
+28030308,
+28030309,
+28030310,
+28030311,
 28030313,
 28030401,Crimson Finch
 28030402,Golden Finch
@@ -562,32 +562,32 @@
 28040101,Black-Back Bass
 28040102,Blue-Fin Bass
 28040103,Golden Bass
-28040104,Black-Back Bass
-28040105,Black-Back Bass
-28040106,Blue-Fin Bass
-28040107,Golden Bass
+28040104,
+28040105,
+28040106,
+28040107,
 28040108,
-28040201,Medaka
-28040202,Glaze Medaka
-28040203,Sweet-Flower Medaka
-28040204,Aizen Medaka
-28040205,Dawncatcher
-28040206,Crystalfish
-28040301,Lunged Stickleback
-28040302,Betta
-28040303,Venomspine Fish
-28040304,Akai Maou
-28040305,Snowstrider
-28040401,Golden Koi
-28040402,Rusty Koi
-28040501,Brown Shirakodai
-28040502,Purple Shirakodai
-28040503,Tea-Colored Shirakodai
-28040504,Abiding Angelfish
-28040505,Raimei Angelfish
-28040506,Moonfin
-28040601,Pufferfish
-28040602,Bitter Pufferfish
+28040201,
+28040202,
+28040203,
+28040204,
+28040205,
+28040206,
+28040301,
+28040302,
+28040303,
+28040304,
+28040305,
+28040401,
+28040402,
+28040501,
+28040502,
+28040503,
+28040504,
+28040505,
+28040506,
+28040601,
+28040602,
 28040701,
 28040702,
 28040703,
@@ -600,16 +600,16 @@
 28050101,Anemo Crystalfly
 28050102,Geo Crystalfly
 28050103,Cryo Crystalfly
-28050104,Electro Crystalfly
+28050104,
 28050105,
 28050106,
 28050201,Amateur Weasel Thief
 28050202,Hoarder Weasel Thief
 28050203,Golden Weasel Thief
 28050204,
-28050211,Amateur Weasel Thief
-28050212,Hoarder Weasel Thief
-28050213,Golden Weasel Thief
+28050211,
+28050212,
+28050213,
 28050221,
 28050222,
 28050223,
@@ -634,83 +634,83 @@
 28061301,
 28061401,
 28061402,
-28210101,Domestic Golden Crab
-28210102,Domestic Sun Crab
-28210103,Domestic Ocean Crab
-28210104,Domestic General Crab
-28210105,Domestic Pale Red Crab
-28210201,Domestic Blue Horned Lizard
-28210202,Domestic Red Horned Lizard
-28210203,Domestic Green Horned Lizard
-28210204,Domestic Sunset Loach
-28210205,Domestic Golden Loach
-28210206,Domestic Sunny Loach
-28210207,Domestic Marrow Lizard
+28210101,
+28210102,
+28210103,
+28210104,
+28210105,
+28210201,
+28210202,
+28210203,
+28210204,
+28210205,
+28210206,
+28210207,
 28210208,
-28210301,Domestic Frog
-28210302,Domestic Mud Frog
-28210303,Domestic Blue Frog
+28210301,
+28210302,
+28210303,
 28210304,
-28210401,Domestic Adorned Unagi
+28210401,
 28210402,
-28210403,Domestic Red-Finned Unagi
-28220101,Domestic Snow Fox
-28220102,Domestic Crimson Fox
-28220201,Domestic Squirrel
-28220301,Domestic Forest Boar
-28220303,Domestic Snowboar
+28210403,
+28220101,
+28220102,
+28220201,
+28220301,
+28220303,
 28220313,
 28220314,
-28220401,Domestic Northland Hound
-28220402,Domestic Forest-Patrol Hound
-28220403,Domestic Shiba
-28220404,Domestic Black-Back Hound
-28220501,Domestic Sapphire
-28220502,Domestic Jade-Eyed Cat
-28220503,Domestic Gray Snow Cat
-28220504,Domestic Northland Cat
-28220505,Domestic Tiger-Striped Cat
-28220506,Domestic Sheriff Cat
-28220601,Domestic Snow Weasel
-28220602,Domestic Red-Tailed Weasel
-28220603,Domestic Boot Weasel
+28220401,
+28220402,
+28220403,
+28220404,
+28220501,
+28220502,
+28220503,
+28220504,
+28220505,
+28220506,
+28220601,
+28220602,
+28220603,
 28220605,
-28220701,Domestic Kitsune
-28220901,Domestic Samurai Dog
-28230101,Domestic Azure Crane
-28230102,Domestic Violet Ibis
-28230301,Domestic White Pigeon
-28230302,Domestic Brightcrown Pigeon
-28230303,Domestic Graywing Pigeon
-28230304,Domestic Crimsonflank Pigeon
-28230305,Domestic Black King Pigeon
-28230306,Domestic Crow
+28220701,
+28220901,
+28230101,
+28230102,
+28230301,
+28230302,
+28230303,
+28230304,
+28230305,
+28230306,
 28230313,
-28230401,Domestic Crimson Finch
-28230402,Domestic Golden Finch
-28230403,Domestic Snow Finch
-28230404,Domestic Emerald Finch
-28240201,Domestic Medaka
-28240202,Domestic Glaze Medaka
-28240203,Domestic Sweet-Flower Medaka
-28240204,Domestic Aizen Medaka
-28240205,Domestic Dawncatcher
-28240206,Domestic Crystalfish
-28240301,Domestic Lunged Stickleback
-28240302,Domestic Betta
-28240303,Domestic Venomspine Fish
-28240304,Domestic Akai Maou
-28240305,Domestic Snowstrider
-28240401,Domestic Golden Koi
-28240402,Domestic Rusty Koi
-28240501,Domestic Brown Shirakodai
-28240502,Domestic Purple Shirakodai
-28240503,Domestic Tea-Colored Shirakodai
-28240504,Domestic Abiding Angelfish
-28240505,Domestic Raimei Angelfish
-28240506,Domestic Moonfin
-28240601,Domestic Pufferfish
-28240602,Domestic Bitter Pufferfish
+28230401,
+28230402,
+28230403,
+28230404,
+28240201,
+28240202,
+28240203,
+28240204,
+28240205,
+28240206,
+28240301,
+28240302,
+28240303,
+28240304,
+28240305,
+28240401,
+28240402,
+28240501,
+28240502,
+28240503,
+28240504,
+28240505,
+28240506,
+28240601,
+28240602,
 28240701,
 28240702,
 28240801,
@@ -719,10 +719,10 @@
 28240804,
 28240901,
 28240902,
-28250101,Domestic Anemo Crystalfly
-28250102,Domestic Geo Crystalfly
-28250103,Domestic Cryo Crystalfly
-28250104,Domestic Electro Crystalfly
+28250101,
+28250102,
+28250103,
+28250104,
 28250105,
 28250106,
 28250301,
@@ -742,13 +742,13 @@
 29040102,Azhdaha
 29040103,Azhdaha
 29040104,Azhdaha
-29040111,Azhdaha
-29050101,Signora
-29050102,Crimson Witch of Embers
-29050103,Signora
-29050104,Crimson Witch of Embers
-29060101,Raiden Shogun
-29060102,Raiden Ei
+29040111,
+29050101,
+29050102,
+29050103,
+29050104,
+29060101,
+29060102,
 29060201,
 29060202,
 29060203,

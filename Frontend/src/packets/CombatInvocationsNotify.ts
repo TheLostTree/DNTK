@@ -107,7 +107,7 @@ function handleHeal(data: HealInvoke) {
     AddDamageToTable({
         Attacker: healerName.toString(),
         Damage: 0,
-        Healing: data.ActualAmount,
+        Healing: data.HealedAmount,
         Crit: false,
     });
 

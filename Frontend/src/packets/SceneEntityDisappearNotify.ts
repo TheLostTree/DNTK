@@ -16,7 +16,7 @@ export default function handle(data: PacketNotifyDT<SceneEntityDisappearNotify>)
         //wait a bit before deleting it
         setTimeout(() => {
             world.deregisterEntity(entityId, data.PacketData.DisappearType)
-        }, 1000);
+        }, 5000);
         
     }
     // console.log(`Deregistered ${data.PacketData.EntityList.length} entities`)

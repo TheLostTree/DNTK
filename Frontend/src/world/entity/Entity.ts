@@ -133,6 +133,7 @@ export class Entity {
         let a = new MPLevel();
         a.EntityId = entityInfo.EntityId;
         a.AuthorityPeerId = entityInfo.AuthorityPeerId
+        a.name = "MPLevel";
         return a;
     }
 
@@ -144,7 +145,7 @@ export class MPLevel extends Entity {
     AuthorityPeerId:number;
 
     getFriendlyName(): string{
-        return "World"
+        return "MPLevel"
 
     }
 }

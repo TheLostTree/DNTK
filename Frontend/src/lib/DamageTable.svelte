@@ -15,9 +15,11 @@
             let a= x.GetRow();
             // console.log(a)
             return a
-        }).sort((x, y)=>x.Damage <= y.Damage ? 1 : -1)
+        }).sort((x, y)=>x.TotalDamage <= y.TotalDamage ? 1 : -1)
 
-        console.log(a)
+        if(a.length < 4){
+            return [...a, ...Array(4-a.length).fill({Name: "N/A", TotalDamage: 0, TotalHealing: 0, CritPercent: 0})]
+        }
         return a;
 
     })();
@@ -53,26 +55,29 @@
 
 <style>
     .table {
-        width: 100%;
-        min-width: 100%;
         cursor: default;
         display: flex;
+        width: 100%;
         flex-direction: column;
         overflow: hidden;
         height: 100%;
+        /* align-items: center;
+        justify-content: center; */
+
     }
 
         
     .table .thead > * {
         text-align: left;
-        background: rgba(0,0,0,0.4);
-        border-right: 1px solid rgba(255,255,255,0.1);
+        background: rgba(81, 77, 77, 0.4);
+        border: 1px solid rgba(56, 52, 52, 0.782);
         font-size: 0.8em;
     }
     .table-host {
         flex-grow: 1;
-        overflow: hidden;
-        background: rgba(0,0,10,0.6);
+        display: flex;
+        /* align-items: center; */
+        /* background: rgb(256, 225, 225); */
     }
 
     .table .tbody {
@@ -81,15 +86,32 @@
         overflow: auto;
     }
 
+
+
     .table :global(.tr) {
         display: flex;
     }
-    .table :global(.tr > *) {
-        padding: 0.5rem 0.6rem;
-        cursor: pointer;
+    .table :global(.tr > .Attacker) {
+        flex-basis: 20rem;
         display: flex;
-        align-items: center;
-        flex-shrink: 0;
+        justify-content: center;
+    }
+
+    .table :global(.tr > .Damage) {
+        flex-basis: 7rem;
+        display: flex;
+        justify-content: center;
+    }
+    .table :global(.tr > .Healing) {
+        flex-basis: 9rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .table :global(.tr > .CritPerc) {
+        flex-basis: 4rem;
+        display: flex;
+        justify-content: center;
     }
 </style>
 

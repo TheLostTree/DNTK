@@ -30,6 +30,12 @@ export default function handle(data: PacketNotifyDT<SceneTeamUpdateNotify>) {
             }
         }
     }
+    if(!world.entityList.get(327155713)){
+        world.entityList.set(327155713, Entity.fromMPLevelEntityInfo({
+            EntityId: 327155713,
+            AuthorityPeerId: 1
+        }))
+    }
     if(Object.values(newAvatars).length > 0)
         console.log(`New Team! ${Object.values(newAvatars).map(e => e.getFriendlyName()).join(", ")}`)
 

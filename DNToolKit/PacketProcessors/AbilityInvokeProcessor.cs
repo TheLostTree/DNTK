@@ -91,11 +91,18 @@ public class AbilityInvokeProcessor
                     th.AbilityData =
                         AbilityMixinDoActionByElementReaction.Parser.ParseFrom(abilityInvokeEntry.AbilityData);
                     break;
-                case AbilityInvokeArgument.MetaCommandModifierChangeRequest:
-                    break;
                 default:
                     //default
-                    th.AbilityData = abilityInvokeEntry.AbilityData.ToBase64();
+                    try
+                    {
+                        //this is really common
+                        th.AbilityData = AbilityScalarValueEntry.Parser.ParseFrom(abilityInvokeEntry.AbilityData);
+                    }
+                    catch
+                    {
+                        th.AbilityData = abilityInvokeEntry.AbilityData.ToBase64();
+                        
+                    }
                     break;
             }
             invokes.Add(th);
