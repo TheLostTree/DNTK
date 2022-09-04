@@ -1,5 +1,6 @@
 ﻿ using DNToolKit.PacketProcessors;
  using DNToolKit.Sniffer;
+ using Serilog;
 
  namespace DNToolKit.Net;
 
@@ -53,7 +54,6 @@
          } while (recv != null);
          
          //not sure if i need this to copy it but im going to be safe
-         
          return recvList.ToArray();
      }
 

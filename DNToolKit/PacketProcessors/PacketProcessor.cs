@@ -165,7 +165,7 @@ public class PacketProcessor
             
             var type = packet.PacketType;
 
-            Log.Information($"{count++} {type}");
+            //Log.Information($"{count++} {type}");
 
             if (type == Opcode.GetPlayerTokenRsp)
             {

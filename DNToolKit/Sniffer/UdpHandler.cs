@@ -88,11 +88,6 @@ public class UdpHandler
         Client
     }
 
-    public void report()
-    {
-        Console.WriteLine(_processor.len());
-    }
-
     public void Close()
     {
         _client?.Stop();

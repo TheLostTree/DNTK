@@ -12,7 +12,7 @@ export default function handle(data: PacketNotifyDT<SceneEntityAppearNotify>){
 
         //we rely on sceneteam to update avatar entities
         if(entity.EntityType == ProtEntityType.PROT_ENTITY_TYPE_AVATAR) {
-            //set the avatar to active state
+            //todo:set the avatar to active state
             continue;
         }
                 

@@ -16,28 +16,33 @@ export default function handle(data: PacketNotifyDT<CombatInvocationsNotify>) {
     //entityfp update notify is for energy, and syncing values, not damage parsing
 
     for (let i of data.PacketData.InvokeList) {
-        switch (i.ArgumentType) {
-            case CombatTypeArgument.COMBAT_TYPE_ARGUMENT_ENTITY_MOVE:
-                handleMove(i.CombatData as EntityMoveInfo);
-                break;
-            case CombatTypeArgument.COMBAT_TYPE_ARGUMENT_EVT_BEING_HIT:
-                //i only seemed to specially parse the clientside packet for this...
-                handleHit(i.CombatData as EvtBeingHitInfo, data);
-                break;
-            case CombatTypeArgument.COMBAT_TYPE_ARGUMENT_FACE_TO_DIR:
-            case CombatTypeArgument.COMBAT_TYPE_ARGUMENT_SYNC_TRANSFORM:
-            case CombatTypeArgument.COMBAT_TYPE_ARGUMENT_ANIMATOR_PARAMETER_CHANGED:
-                break;
-            case CombatTypeArgument.COMBAT_TYPE_ARGUMENT_Unk2700_KPDNFKCMKPG:
-                handleHeal(i.CombatData as unknown as HealInvoke)
-                break;
-            //healing packet
-            case undefined:
-                // console.log(i.CombatData)
-                break;
-            default:
-            // console.log(CombatTypeArgument[i.ArgumentType])
-        }
+
+        //100ms timeout to allow for the entity to be registered just in case
+        //
+        setTimeout(()=>{
+            switch (i.ArgumentType) {
+                case CombatTypeArgument.COMBAT_TYPE_ARGUMENT_ENTITY_MOVE:
+                    handleMove(i.CombatData as EntityMoveInfo);
+                    break;
+                case CombatTypeArgument.COMBAT_TYPE_ARGUMENT_EVT_BEING_HIT:
+                    //i only seemed to specially parse the clientside packet for this...
+                    handleHit(i.CombatData as EvtBeingHitInfo, data);
+                    break;
+                case CombatTypeArgument.COMBAT_TYPE_ARGUMENT_FACE_TO_DIR:
+                case CombatTypeArgument.COMBAT_TYPE_ARGUMENT_SYNC_TRANSFORM:
+                case CombatTypeArgument.COMBAT_TYPE_ARGUMENT_ANIMATOR_PARAMETER_CHANGED:
+                    break;
+                case CombatTypeArgument.COMBAT_TYPE_ARGUMENT_Unk2700_KPDNFKCMKPG:
+                    handleHeal(i.CombatData as unknown as HealInvoke)
+                    break;
+                //healing packet
+                case undefined:
+                    // console.log(i.CombatData)
+                    break;
+                default:
+                // console.log(CombatTypeArgument[i.ArgumentType])
+            }
+        }, 100)
     }
 }
 
@@ -55,6 +60,9 @@ function handleHit(data: EvtBeingHitInfo, packet: PacketNotifyDT<CombatInvocatio
 
     const defenderEntity = world.entityList.get(data.AttackResult.DefenseId);
 
+    if(data.AttackResult.AbilityIdentifier.AbilityCasterId){
+        attackerEntity = world.getRootOwner(data.AttackResult.AbilityIdentifier.AbilityCasterId) || world.getRootOwner(data.AttackResult.AttackerId) || world.entityList.get(data.AttackResult.AttackerId);
+    }
     // const owner = world.getOwner(attackerEntity);
 
     let ActualData: ({
@@ -101,6 +109,7 @@ function handleHeal(data: HealInvoke) {
     const healee = world.entityList.get(data.TargetId);
 
 
+
     const healerName = healer ? healer.getFriendlyName() : data.SourceId;
     const healeeName = healee ? healee.getFriendlyName() : data.TargetId;
 
@@ -133,7 +142,8 @@ enum Element {
     Dendro = 3,
     Electro = 4,
     Cryo = 5,
-    unknown = 6,
+    //:skull:
+    Freeze = 6,
     Anemo = 7,
     Geo = 8,
 }

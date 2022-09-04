@@ -5,6 +5,7 @@
     import UploadPcapButton from './lib/UploadPcapButton.svelte';
     import DamageTable from './lib/DamageTable.svelte'; 
 
+    import DownloadLog from './lib/DownloadLog.svelte';
 
     function testReq(){
         backendSocket.send({
@@ -34,7 +35,7 @@
 
     
     <br>
-
+    <DownloadLog/>
 
 </main>
 

@@ -15,10 +15,6 @@ public class Sniffer
     private UdpHandler _udpHandler;
 
     private object lockObject = new();
-    
-    public Sniffer()
-    {
-    }
 
     public void OnPacketArrival(object sender, PacketCapture e)
     {
@@ -93,9 +89,6 @@ public class Sniffer
 
             Task.Delay(10000).Wait();
             Log.Information(DateTime.Now.ToString("hh:mm:ss t z"));
-
-            _udpHandler.report();
-
         }
     }
 

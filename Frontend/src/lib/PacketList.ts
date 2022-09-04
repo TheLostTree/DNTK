@@ -25,6 +25,7 @@ export default class PacketList{
 
             this.packetList = this.packetList.concat(packets);
         }else{
+            console.log("packets were out of order")
             this.packetList = this.packetList.concat(packets);
         
         

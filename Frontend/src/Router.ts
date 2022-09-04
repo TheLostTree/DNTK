@@ -9,8 +9,16 @@ import SceneTeamHandle from "./packets/SceneTeamUpdateNotify";
 import EvtDestroyGadgetHandle from "./packets/EvtDestroyGadgetNotify";
 import PlayerEnterSceneInfoHandle from "./packets/PlayerEnterSceneInfoNotify";
 import AbilityInvokeHandle from "./packets/AbilityInvocationsNotify"
+import { log } from "./main";
+import Base64 from "./b64";
 
-
+const doNotLog = [
+    "GetPlayerTokenReq",
+    "GetPlayerTokenRsp",
+    "PlayerLoginReq",
+    "PlayerLoginRsp",
+    "WindSeedClientNotify"
+]
 export default class Router{
     routes: Record<string, (pkt: PacketNotifyData)=> void> = {};
 
@@ -35,6 +43,30 @@ export default class Router{
     public handle(path: string, pkt: PacketNotifyData){
         if(this.routes[path]){
             this.routes[path](pkt);
+        }
+
+        let data = {
+            time: pkt.PacketHead.SentMs,
+            sender: pkt.Sender,
+            data: pkt.PacketData,
+            cmd: pkt.CmdID,
+        }
+        //DO NOT SHARE YOUR LOGS WITH SOMEONE ELSE IT MAY CONTAIN YOUR ACCOUNT TOKEN DATA
+        if(doNotLog.includes(pkt.CmdID)){
+            //these are only the ones i can remember off the top of my head
+            data.data = {_info: "REDACTED"}
+        }
+
+        this.AddToLog(JSON.stringify(data));
+
+    }
+
+    public AddToLog(data:string){   
+        if(typeof data === "string"){
+            log.push(Base64.encode(data));
+        }else{
+            console.log(data)
+            log.push(Base64.encode(JSON.stringify(data)));
         }
     }
 }

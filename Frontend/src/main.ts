@@ -17,9 +17,12 @@ const packetList = new PacketList();
 const router = new Router();
 const world = new World();
 
+const log = new Array<string>();
 
 
-export {world, packetList, backendSocket, router}
+
+
+export {world, packetList, backendSocket, router, log}
 
 backendSocket.on("PacketNotify", (data: PacketNotify) => {
     packetList.addPackets(data.data);

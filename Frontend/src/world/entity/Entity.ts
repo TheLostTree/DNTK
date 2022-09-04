@@ -137,6 +137,10 @@ export class Entity {
         return a;
     }
 
+    setMoveInfo(data: MotionInfo){
+        this.MotionInfo = data;
+    }
+
 }
 
 export class MPLevel extends Entity {
