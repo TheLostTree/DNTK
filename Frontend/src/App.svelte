@@ -23,8 +23,6 @@
     <h1>DNTK WIP FRONTEND</h1>
 
     <p>currently only by LostTree, and hopefully Algoinde eventually 👉👈</p><br>
-
-    <p>i learned html in 3rd grade and never again pls don't judge</p> <br>
     <DamageTable></DamageTable>
 
     <!-- <ConsoleWindow/> -->
