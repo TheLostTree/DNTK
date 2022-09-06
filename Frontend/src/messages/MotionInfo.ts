@@ -1,7 +1,7 @@
 /* eslint-disable */
 import type { Vector } from "./Vector";
 import type { MotionState } from "./MotionState";
-import type Long from "long";
+import Long from "long";
 
 export interface MotionInfo {
   Pos?: Vector;

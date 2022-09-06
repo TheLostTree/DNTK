@@ -1,12 +1,12 @@
 /* eslint-disable */
 import type { ForwardType } from "./ForwardType";
-import type Long from "long";
+import Long from "long";
 import type { Vector } from "./Vector";
 
 /**
  * CmdId: 307
  * EnetChannelId: 0
- * EnetIsReliable: true
+ * EnetIsReliable: false
  * IsAllowClient: true
  */
 export interface EvtCreateGadgetNotify {

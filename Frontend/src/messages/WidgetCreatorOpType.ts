@@ -1,7 +1,0 @@
-/* eslint-disable */
-export enum WidgetCreatorOpType {
-  WIDGET_CREATOR_OP_TYPE_NONE = 0,
-  WIDGET_CREATOR_OP_TYPE_RETRACT = 1,
-  WIDGET_CREATOR_OP_TYPE_RETRACT_AND_CREATE = 2,
-  UNRECOGNIZED = -1,
-}

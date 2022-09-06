@@ -1,7 +1,0 @@
-/* eslint-disable */
-export enum SealBattleType {
-  SEAL_BATTLE_TYPE_KEEP_ALIVE = 0,
-  SEAL_BATTLE_TYPE_KILL_MONSTER = 1,
-  SEAL_BATTLE_TYPE_ENERGY_CHARGE = 2,
-  UNRECOGNIZED = -1,
-}

@@ -6,7 +6,7 @@ import type { AvatarEnterSceneInfo } from "./AvatarEnterSceneInfo";
 /**
  * CmdId: 214
  * EnetChannelId: 0
- * EnetIsReliable: true
+ * EnetIsReliable: false
  * IsAllowClient: true
  */
 export interface PlayerEnterSceneInfoNotify {

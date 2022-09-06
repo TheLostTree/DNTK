@@ -2,7 +2,7 @@ import type {UnionCmdNotify} from "src/messages/UnionCmdNotify";
 import type {PacketNotifyDT} from "src/websocket/WSPacket";
 import {router} from "../main";
 
-//todo: fix in backend
+//todo: fix when update cmdids
 const AbilityInvokeCmdId = 1198;
 
 export default function handle(data: PacketNotifyDT<UnionCmdNotify>) {

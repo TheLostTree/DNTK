@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type Long from "long";
+import Long from "long";
 import type { Material } from "./Material";
 import type { Equip } from "./Equip";
 import type { Furniture } from "./Furniture";

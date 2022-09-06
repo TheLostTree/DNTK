@@ -3,6 +3,7 @@ import type { MonsterBornType } from "./MonsterBornType";
 import type { MonsterRoute } from "./MonsterRoute";
 import type { SceneWeaponInfo } from "./SceneWeaponInfo";
 import type { SceneFishInfo } from "./SceneFishInfo";
+import type { Unk3000GNOPDGELABH } from "./Unk3000_GNOPDGELABH";
 
 export interface SceneMonsterInfo {
   MonsterId?: number;
@@ -27,7 +28,9 @@ export interface SceneMonsterInfo {
   LevelRouteId?: number;
   InitPoseId?: number;
   Unk2800JEGLENPDPNI?: boolean;
+  Unk3000CCKJDCBDEKD?: number;
   FishInfo?: SceneFishInfo | undefined;
+  FishtankFishInfo?: Unk3000GNOPDGELABH | undefined;
 }
 
 export interface SceneMonsterInfo_SummonTagMapEntry {

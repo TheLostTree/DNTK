@@ -4,7 +4,8 @@ import type { VisionType } from "./VisionType";
 /**
  * CmdId: 203
  * EnetChannelId: 0
- * EnetIsReliable: true
+ * EnetIsReliable: false
+ * IsAllowClient: true
  */
 export interface SceneEntityDisappearNotify {
   Param?: number;

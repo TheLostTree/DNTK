@@ -2,7 +2,8 @@
 /**
  * CmdId: 1212
  * EnetChannelId: 0
- * EnetIsReliable: true
+ * EnetIsReliable: false
+ * IsAllowClient: true
  */
 export interface EntityFightPropNotify {
   EntityId?: number;

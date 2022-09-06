@@ -1,8 +1,0 @@
-/* eslint-disable */
-export enum HuntingOfferState {
-  HUNTING_OFFER_STATE_NONE = 0,
-  HUNTING_OFFER_STATE_STARTED = 1,
-  HUNTING_OFFER_STATE_UNSTARTED = 2,
-  HUNTING_OFFER_STATE_SUCC = 3,
-  UNRECOGNIZED = -1,
-}

@@ -22,6 +22,7 @@ import type { FishPoolInfo } from "./FishPoolInfo";
 import type { CustomGadgetTreeInfo } from "./CustomGadgetTreeInfo";
 import type { RoguelikeGadgetInfo } from "./RoguelikeGadgetInfo";
 import type { Unk2800FHMOLALLEEN } from "./Unk2800_FHMOLALLEEN";
+import type { Unk3000FANANGGCLOF } from "./Unk3000_FANANGGCLOF";
 
 export interface SceneGadgetInfo {
   GadgetId?: number;
@@ -62,4 +63,5 @@ export interface SceneGadgetInfo {
   CustomGadgetTreeInfo?: CustomGadgetTreeInfo | undefined;
   RoguelikeGadgetInfo?: RoguelikeGadgetInfo | undefined;
   NightCrowGadgetInfo?: Unk2800FHMOLALLEEN | undefined;
+  DeshretObeliskGadgetInfo?: Unk3000FANANGGCLOF | undefined;
 }

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type Long from "long";
+import Long from "long";
 import type { TrialAvatarInfo } from "./TrialAvatarInfo";
 import type { AvatarFetterInfo } from "./AvatarFetterInfo";
 import type { AvatarExpeditionState } from "./AvatarExpeditionState";

@@ -131,7 +131,7 @@ public class PacketProcessor
                             Log.Warning("Encrypted Packet got through lol");
                             // _sessionKey.TaskFlag().Wait();
                             //should be fine because we store the time 
-                            Queue.Enqueue(encryptedPacket);
+                            //Queue.Enqueue(encryptedPacket);
                         }
                         else
                         {

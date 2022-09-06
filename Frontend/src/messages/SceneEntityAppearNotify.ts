@@ -5,7 +5,8 @@ import type { SceneEntityInfo } from "./SceneEntityInfo";
 /**
  * CmdId: 221
  * EnetChannelId: 0
- * EnetIsReliable: true
+ * EnetIsReliable: false
+ * IsAllowClient: true
  */
 export interface SceneEntityAppearNotify {
   AppearType?: VisionType;

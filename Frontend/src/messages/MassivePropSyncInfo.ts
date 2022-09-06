@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type Long from "long";
+import Long from "long";
 import type { MassivePropParam } from "./MassivePropParam";
 
 export interface MassivePropSyncInfo {

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type Long from "long";
+import Long from "long";
 import type { SceneWeaponInfo } from "./SceneWeaponInfo";
 import type { CurVehicleInfo } from "./CurVehicleInfo";
 import type { AvatarExcelInfo } from "./AvatarExcelInfo";

@@ -1,8 +1,0 @@
-/* eslint-disable */
-export enum PlayerDieOption {
-  PLAYER_DIE_OPTION_OPT_NONE = 0,
-  PLAYER_DIE_OPTION_OPT_REPLAY = 1,
-  PLAYER_DIE_OPTION_OPT_CANCEL = 2,
-  PLAYER_DIE_OPTION_OPT_REVIVE = 3,
-  UNRECOGNIZED = -1,
-}

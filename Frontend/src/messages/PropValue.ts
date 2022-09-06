@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type Long from "long";
+import Long from "long";
 
 export interface PropValue {
   Type?: number;

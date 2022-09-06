@@ -4,7 +4,7 @@ import type { ForwardType } from "./ForwardType";
 /**
  * CmdId: 321
  * EnetChannelId: 0
- * EnetIsReliable: true
+ * EnetIsReliable: false
  * IsAllowClient: true
  */
 export interface EvtDestroyGadgetNotify {

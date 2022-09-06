@@ -45,6 +45,8 @@ export default class Router{
             this.routes[path](pkt);
         }
 
+        //todo: do special handling for ability invokes and combat invokes and unioncmdnotify to give the enums string values
+        //because ideally we dont require the user to know the cmdids/protobufs
         let data = {
             time: pkt.PacketHead.SentMs,
             sender: pkt.Sender,

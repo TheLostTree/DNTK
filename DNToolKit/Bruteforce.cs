@@ -43,6 +43,7 @@ public class KeyBruteForcer
             if (key[0] == keyPrefix[0] && key[1] == keyPrefix[1])
             {
                 Log.Debug("Seed Found!  {DATA}", seed);
+                Log.Debug("Params: @{testBuffer} : {senttime} : {serverKey}", testBuffer, senttime, serverKey);
                 return new MTKey(seed);
             }
         }

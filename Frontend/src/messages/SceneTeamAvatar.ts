@@ -1,7 +1,7 @@
 /* eslint-disable */
 import type { AbilitySyncStateInfo } from "./AbilitySyncStateInfo";
 import type { AvatarInfo } from "./AvatarInfo";
-import type Long from "long";
+import Long from "long";
 import type { SceneAvatarInfo } from "./SceneAvatarInfo";
 import type { SceneEntityInfo } from "./SceneEntityInfo";
 import type { AbilityControlBlock } from "./AbilityControlBlock";

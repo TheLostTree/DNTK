@@ -7,6 +7,8 @@ public class Config
     public string CaptureFolder;
     public string FrontendUrl;
     public string ClientPrivateRSA;
+
+    public Config() { }
     
     [JsonIgnore]
     public static Config Default = new Config()

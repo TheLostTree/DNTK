@@ -138,7 +138,6 @@ public class WsWrapper
         else
         {
             GamePacketQueue.Add(packet);
-
         }
     }
 

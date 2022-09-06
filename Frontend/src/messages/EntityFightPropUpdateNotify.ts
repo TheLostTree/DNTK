@@ -2,7 +2,8 @@
 /**
  * CmdId: 1235
  * EnetChannelId: 0
- * EnetIsReliable: true
+ * EnetIsReliable: false
+ * IsAllowClient: true
  */
 export interface EntityFightPropUpdateNotify {
   FightPropMap?: { [key: number]: number };

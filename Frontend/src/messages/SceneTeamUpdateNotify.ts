@@ -4,7 +4,8 @@ import type { SceneTeamAvatar } from "./SceneTeamAvatar";
 /**
  * CmdId: 1775
  * EnetChannelId: 0
- * EnetIsReliable: true
+ * EnetIsReliable: false
+ * IsAllowClient: true
  */
 export interface SceneTeamUpdateNotify {
   SceneTeamAvatarList?: SceneTeamAvatar[];

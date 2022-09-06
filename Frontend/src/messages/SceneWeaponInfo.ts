@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type Long from "long";
+import Long from "long";
 import type { AbilitySyncStateInfo } from "./AbilitySyncStateInfo";
 import type { EntityRendererChangedInfo } from "./EntityRendererChangedInfo";
 

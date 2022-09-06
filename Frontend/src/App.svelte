@@ -19,18 +19,26 @@
 </script>
 
 <main>
-    <img src={logo} alt="Svelte Logo" />
     <h1>DNTK WIP FRONTEND</h1>
-
     <p>currently only by LostTree, and hopefully Algoinde eventually 👉👈</p><br>
+    <p>this <i>is</i> my first svelte project so its kinda ugly and broken lol</p><br>
+
+    <pre>Usage:
+
+        1. Launch c# backend 
+        2. Launch the frontend 
+        3. Launch the game
+            (it MUST be the first login of the opened client;
+            close the game and reopen if you've already logged in once)
+
+        4. Play as normal
+        5. Observe the DamageTable update below
+        6. Hit "DownloadLog" to download a log.dntkap file that contains all the packets you've received
+        
+
+    </pre><br>
+    
     <DamageTable></DamageTable>
-
-    <!-- <ConsoleWindow/> -->
-
-    <br>
-    <UploadPcapButton/>
-
-
     
     <br>
     <DownloadLog/>
@@ -44,7 +52,7 @@
     }
 
     :global(body){
-        color: #000;
+        background-color: rgba(252, 215, 196, 0.2);
     }
     main {
         text-align: center;
@@ -52,14 +60,14 @@
         margin: 0 auto;
         /* color: #FFF; */
     }
-
-    img {
-        height: 16rem;
-        width: 16rem;
+    pre {
+        background-color: rgba(252, 215, 196, 0.5);
+        text-align: left;
     }
 
+
     h1 {
-        color: #ff3e00;
+        color: #492215;
         text-transform: uppercase;
         font-size: 4rem;
         font-weight: 100;

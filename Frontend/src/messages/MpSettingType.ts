@@ -1,7 +1,0 @@
-/* eslint-disable */
-export enum MpSettingType {
-  MP_SETTING_TYPE_NO_ENTER = 0,
-  MP_SETTING_TYPE_ENTER_FREELY = 1,
-  MP_SETTING_TYPE_ENTER_AFTER_APPLY = 2,
-  UNRECOGNIZED = -1,
-}
