@@ -91,18 +91,18 @@ public class AbilityInvokeProcessor
                     th.AbilityData =
                         AbilityMixinDoActionByElementReaction.Parser.ParseFrom(abilityInvokeEntry.AbilityData);
                     break;
+                case AbilityInvokeArgument.MetaTriggerElementReaction:
+                    th.AbilityData = AbilityMetaTriggerElementReaction.Parser.ParseFrom(abilityInvokeEntry.AbilityData);
+                    break;
+                case AbilityInvokeArgument.MetaAddNewAbility:
+                    th.AbilityData = AbilityMetaAddAbility.Parser.ParseFrom(abilityInvokeEntry.AbilityData);
+                    break;
+                case AbilityInvokeArgument.None:
+                    th.AbilityData = abilityInvokeEntry.AbilityData.ToBase64();
+                    break;
                 default:
                     //default
-                    try
-                    {
-                        //this is really common
-                        th.AbilityData = AbilityScalarValueEntry.Parser.ParseFrom(abilityInvokeEntry.AbilityData);
-                    }
-                    catch
-                    {
-                        th.AbilityData = abilityInvokeEntry.AbilityData.ToBase64();
-                        
-                    }
+                    th.AbilityData = abilityInvokeEntry.AbilityData.ToBase64();
                     break;
             }
             invokes.Add(th);

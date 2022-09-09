@@ -214,7 +214,7 @@ public class WsWrapper
             }
             finally
             {
-                await Task.Delay(200);
+                await Task.Delay(10);
             }
 
             
