@@ -18,20 +18,32 @@ public class Sniffer
 
     public void OnPacketArrival(object sender, PacketCapture e)
     {
+        //forward it to the pcap dumper as well
         Program.PcapDumper.PcapOnPacketArrival(sender, e);
+        
         _udpHandler.HandleRawCapture(e.GetPacket());
     }
 
-    public void Start()
+    public void Start(bool choose)
     {
         Log.Information("SharpPcap {0}, StartLiveCapture", (object)Pcap.SharpPcapVersion);
+        if (choose)
+        {
+            _pcapDevice = ChoosePcapDevice();
+        }
+        else
+        {
+            _pcapDevice = GetPcapDevice();
+        }
         SharpPcapCapturer();
+
         _udpHandler = new UdpHandler();
     }
     
     public void AddPcap(byte[] bytes)
     {
-
+        return;
+        //use cli for now please.
         lock (lockObject)
         {
             //i dont like this but the library calls for it...
@@ -77,24 +89,14 @@ public class Sniffer
 
                 count++;
                 _udpHandler.HandleRawCapture(rawCapture);
-                if (count == 50)
-                {
-                    count = 0;
-                    Task.Delay(70).Wait();
-                }
             }
-            File.WriteAllLines("./ihatelife.txt", a.ToArray());
             File.Delete(tempFilePathWithFileName);
-
-
-            Task.Delay(10000).Wait();
-            Log.Information(DateTime.Now.ToString("hh:mm:ss t z"));
         }
     }
 
     public void SharpPcapCapturer()
     {
-        _pcapDevice = GetPcapDevice();
+        
 
         _pcapDevice.OnPacketArrival += OnPacketArrival;
         //_pcapDevice.OnPacketArrival += Program.CaptureDumper.PcapOnPacketArrival;
@@ -116,11 +118,40 @@ public class Sniffer
         _pcapDevice.StopCapture();
         Log.Information("-- Capture stopped.");
         Log.Information(_pcapDevice.Statistics.ToString());
+        Program.PcapDumper.Close();
         _udpHandler.Close();
         Log.Information("Sniffer stopped...");
 
     }
 
+    private static LibPcapLiveDevice ChoosePcapDevice()
+    {
+        NetworkInterface[] networkInterfaces = NetworkInterface.GetAllNetworkInterfaces();
+        Console.WriteLine();
+        Console.WriteLine("The following devices are available on this machine:");
+        Console.WriteLine("----------------------------------------------------");
+        Console.WriteLine();
+        int b = 0;
+        var interfaces = PcapInterface.GetAllPcapInterfaces();
+        foreach (PcapInterface allPcapInterface in interfaces)
+        {
+            
+            Console.WriteLine("{0})\t{1} - {2}",b,allPcapInterface.Name, allPcapInterface.Description);
+            b++;
+        }
+        
+
+        int i = 0;
+        Console.WriteLine();
+        Console.Write("-- Please choose a device to capture: ");
+        i = int.Parse(Console.ReadLine());
+        
+
+ 
+
+        var device = interfaces[i];
+        return new LibPcapLiveDevice(device);
+    }
 
     // taken from devove's proj
     private static LibPcapLiveDevice GetPcapDevice()

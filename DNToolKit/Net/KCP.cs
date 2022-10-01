@@ -12,9 +12,7 @@
 
      private object lockObj = new();
      private PacketProcessor _processor;
-
-
-     private bool _running = false;
+     
      private UdpHandler.Sender user;
      
      public KCP(uint conv, uint token, UdpHandler.Sender user, PacketProcessor processor)
@@ -30,15 +28,11 @@
              return;
          });
          _processor = processor;
-         _running = true;
-
-         Task.Run(Loop);
      }
 
 
-     public byte[][] RecieveAll()
+     public void RecieveAll()
      {
-         List<byte[]> recvList = new();
 
          byte[]? recv;
          do
@@ -49,14 +43,19 @@
                  break;
              }
 
-             recvList.Add(recv);
+             _processor.AddPacket(recv,user);
 
          } while (recv != null);
          
-         //not sure if i need this to copy it but im going to be safe
-         return recvList.ToArray();
      }
 
+     public void Update()
+     {
+         lock (lockObj)
+         {
+             _ikcp.Update(Program.Now());
+         }
+     }
 
      private byte[]? Recv()
      {
@@ -86,30 +85,18 @@
              throw new Exception("KCP not initialized yet...");
          }
 
+         int retval;
          lock (lockObj)
          {
-             return _ikcp.Input(buff, 0, buff.Length);
+             retval =  _ikcp.Input(buff, 0, buff.Length);
          }
+
+         RecieveAll();
+         return retval;
 
      }
      
-     public void Stop()
-     {
-         _running = false;
-     }
-     public async Task Loop()
-     {
-         while (_running)
-         {
-             var recvArr = RecieveAll();
-             foreach (var packets in recvArr)
-             {
-                 _processor.AddPacket(packets, this.user);
-             }
-             await Task.Delay(1);
-
-         }
-     }
+     
 
  }
 

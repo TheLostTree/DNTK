@@ -25,18 +25,18 @@ public class UdpHandler
                 rawCapture.Data)
             .Extract<IPv4Packet>()
             .Extract<UdpPacket>();
-        
+
         var sender = udpPacket.DestinationPort is 22101 or 22102 ? Sender.Client : Sender.Server;
         var packetBytes = udpPacket.PayloadData;
-        
-        if(packetBytes.Length == 20)
+
+        if (packetBytes.Length == 20)
         {
             try
             {
                 var magic = packetBytes.GetUInt32(0, true);
                 var conv = packetBytes.GetUInt32(4, true);
                 var token = packetBytes.GetUInt32(8, true);
-                
+
                 switch (magic)
                 {
                     //todo: send handshake representation to frontend
@@ -46,22 +46,21 @@ public class UdpHandler
                         {
                             Log.Debug("Server Handshake : {Conv}, {Token}", conv, token);
                             _processor.Reset();
-                            _client?.Stop();
-                            _server?.Stop();
-                            _client = new KCP(conv, token,Sender.Client,_processor);
-                            _server = new KCP(conv, token,Sender.Server,_processor);
+                            _client = new KCP(conv, token, Sender.Client, _processor);
+                            _server = new KCP(conv, token, Sender.Server, _processor);
                         }
+
                         break;
                     case 0x194:
                         if (sender == Sender.Server) break;
                         if (_client is not null)
                         {
-                            //i will not stop the processor bc im really really sad rn
-                            
                             Log.Information($"{sender} disconnected");
+                            Log.Warning("Relaunch your client to continue capturing packets!");
                         }
+
                         break;
-                    case 0xFF:                                  
+                    case 0xFF:
                         break;
                     default:
                         //unhandled handshake
@@ -73,15 +72,19 @@ public class UdpHandler
             {
                 Log.Error("Handshake Error: {Error}", e.ToString());
             }
+
             return;
         }
-        
+
         if (_client is not null && _server is not null)
         {
             _ = Sender.Client == sender ? _client.Input(packetBytes) : _server.Input(packetBytes);
         }
-
+        //ignore bytes
+        
     }
+
+
     public enum Sender
     {
         Server,
@@ -90,8 +93,6 @@ public class UdpHandler
 
     public void Close()
     {
-        _client?.Stop();
-        _server?.Stop();
         _processor.Stop();
         Log.Information("UdpHandler stopped...");
     }

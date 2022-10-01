@@ -25,7 +25,7 @@ public class Program
 
     public static void Main(string[] args)
     {
-
+        
         
         Log.Logger = new LoggerConfiguration().MinimumLevel.Verbose().WriteTo.Console().CreateLogger();
         Log.Information("DNToolKit for v2.8");
@@ -40,7 +40,7 @@ public class Program
         }
         else
         {
-            Config = JsonConvert.DeserializeObject<Config>(File.ReadAllText(_configName))!;
+            Config = JsonConvert.DeserializeObject<Config>(File.ReadAllText(_configName));
             if (Config is null)
             {
                 Config = Config.Default;
@@ -59,7 +59,7 @@ public class Program
         //ugh figure out what to rename the sniffer namespace 
         
         FrontendManager = new FrontendManager();
-        Sniffer.Start();
+        Sniffer.Start(false);
         
 
         ProtobufFactory.Initialize();
@@ -68,11 +68,16 @@ public class Program
 
         //Capture.ParseFromBytes(File.ReadAllBytes("./Captures/"));
 
-        Console.CancelKeyPress  += Close;
+        Console.CancelKeyPress += Close;
         // AppDomain.CurrentDomain.ProcessExit += Close;
 
 
         tcs.Task.Wait();
+    }
+
+    public static uint Now()
+    {
+        return Convert.ToUInt32((DateTime.UtcNow.Ticks - DateTime.UnixEpoch.Ticks) / 10000000);
     }
 
     private static void Close(object? sender, ConsoleCancelEventArgs e)

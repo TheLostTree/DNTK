@@ -18,5 +18,16 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Common\Common.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Net\kcp.rs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Net\Utils.cs" />
+      <Compile Remove="Net\Segment.cs" />
+      <Compile Remove="Net\Pool.cs" />
+      <Compile Remove="Net\KCP2K.cs" />
     </ItemGroup>    
 </Project>

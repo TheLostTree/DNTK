@@ -9,26 +9,28 @@ public class PcapDumper
 {
     public string curFile;
 
-    public bool running = false;
     private FileStream stream;
     private CaptureFileWriterDevice CaptureFileWriter;
     
     public PcapDumper()
     {
         var dir = Directory.CreateDirectory(Program.Config.CaptureFolder);
-        running = true;
         curFile = getFileName();
         Log.Information("Writing new Capture to File {filename}", curFile);
 
         CaptureFileWriter = new CaptureFileWriterDevice(Path.Join(dir.FullName, curFile));
+    }
 
+    public void Close()
+    {
+        CaptureFileWriter.Close();
     }
 
 
 
     public void PcapOnPacketArrival(object sender, PacketCapture e)
     {
-        if(!CaptureFileWriter.Opened)CaptureFileWriter.Open();
+        if(!CaptureFileWriter.Opened) CaptureFileWriter.Open();
         CaptureFileWriter.Write(e.GetPacket());
     }
 
