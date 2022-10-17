@@ -28,7 +28,7 @@ public class Program
         
         
         Log.Logger = new LoggerConfiguration().MinimumLevel.Verbose().WriteTo.Console().CreateLogger();
-        Log.Information("DNToolKit for v2.8");
+        Log.Information("DNToolKit for v3.1");
         // var key = KeyBruteForcer.BruteForce(senttime: 1658814410247, serverKey: 4502709363913224634, testBuffer: new byte[] { 0x0B, 0xB9});
         //
         // return;
