@@ -15,8 +15,8 @@ public class Program
     public static Config Config = null!;
     public static Sniffer.Sniffer Sniffer = null!;
 
-    public static ushort GameMajorVersion = 2;
-    public static ushort GameMinorVersion = 8;
+    public static ushort GameMajorVersion = 3;
+    public static ushort GameMinorVersion = 3;
     
 
     private static string _configName = "./config.json";
