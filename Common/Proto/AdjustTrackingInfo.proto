@@ -16,14 +16,13 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message AdjustTrackingInfo {
-	string event_token = 9;
-	string adid = 4;
-	string idfa = 2;
-	string app_token = 14;
-	string gps_adid = 3;
-	string fire_adid = 13;
+  string Unk3300_CHCOHLGBHLB = 2;
+  string Unk3300_GAMLJPFKCGC = 9;
+  string Unk3300_ONNMBNODPIA = 4;
+  string Unk3300_MHDOPAMDMPL = 6;
+  string Unk3300_INAIEOMCIEM = 7;
+  string Unk3300_KLKFLIIOFKK = 3;
 }

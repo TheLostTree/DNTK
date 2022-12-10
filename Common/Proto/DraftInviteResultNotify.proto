@@ -16,14 +16,17 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 5473
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message DraftInviteResultNotify {
-	bool is_all_argee = 9;
-	uint32 draft_id = 13;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 5478;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  bool is_all_agree = 11;
+  uint32 draft_id = 12;
 }

@@ -19,17 +19,20 @@ syntax = "proto3";
 import "ForgeQueueManipulateType.proto";
 import "ItemParam.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 656
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message ForgeQueueManipulateRsp {
-	ForgeQueueManipulateType manipulate_type = 4;
-	repeated ItemParam extra_output_item_list = 13;
-	repeated ItemParam return_item_list = 10;
-	int32 retcode = 1;
-	repeated ItemParam output_item_list = 9;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 682;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  repeated ItemParam extra_output_item_list = 3;
+  ForgeQueueManipulateType manipulate_type = 12;
+  repeated ItemParam Unk3300_JDHFPCBOGFH = 4;
+  repeated ItemParam Unk3300_EOLDJAMHDHM = 14;
+  int32 retcode = 11;
 }

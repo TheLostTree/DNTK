@@ -16,14 +16,17 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 3203
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message SceneDataNotify {
-	repeated string level_config_name_list = 15;
-	repeated uint32 scene_tag_id_list = 8;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 3368;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  repeated uint32 scene_tag_id_list = 3;
+  repeated string level_config_name_list = 6;
 }

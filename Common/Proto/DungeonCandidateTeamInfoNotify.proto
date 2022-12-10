@@ -19,17 +19,20 @@ syntax = "proto3";
 import "DungeonCandidateTeamAvatar.proto";
 import "DungeonCandidateTeamPlayerState.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 927
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message DungeonCandidateTeamInfoNotify {
-	map<uint32, DungeonCandidateTeamPlayerState> player_state_map = 10;
-	uint32 dungeon_id = 9;
-	repeated uint32 ready_player_uid = 13;
-	uint32 match_type = 2;
-	repeated DungeonCandidateTeamAvatar avatar_list = 4;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 917;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  repeated uint32 ready_player_uid = 2;
+  uint32 match_type = 12;
+  uint32 dungeon_id = 8;
+  repeated DungeonCandidateTeamAvatar avatar_list = 1;
+  map<uint32, DungeonCandidateTeamPlayerState> player_state_map = 10;
 }

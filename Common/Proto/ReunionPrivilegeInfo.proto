@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message ReunionPrivilegeInfo {
-	uint32 cur_day_count = 7;
-	uint32 total_count = 10;
-	uint32 privilege_id = 4;
+  uint32 Unk3300_GJBEAFPMFAA = 14;
+  uint32 privilege_id = 2;
+  uint32 Unk3300_ALOLACFGMHI = 1;
 }

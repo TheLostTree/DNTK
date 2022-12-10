@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 enum GalleryStageType {
-	GALLERY_STAGE_TYPE_NONE = 0;
-	GALLERY_STAGE_TYPE_PRESTART = 1;
-	GALLERY_STAGE_TYPE_START = 2;
+  GALLERY_STAGE_TYPE_NONE = 0;
+  GALLERY_STAGE_TYPE_PRESTART = 1;
+  GALLERY_STAGE_TYPE_START = 2;
 }

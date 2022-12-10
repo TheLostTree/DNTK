@@ -18,10 +18,9 @@ syntax = "proto3";
 
 import "VectorPlane.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message PolygonRegionSize {
-	repeated VectorPlane point_list = 5;
-	float height = 9;
+  float height = 3;
+  repeated VectorPlane point_list = 9;
 }

@@ -20,21 +20,25 @@ import "ForwardType.proto";
 import "HitColliderType.proto";
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 348
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message EvtBulletHitNotify {
-	uint32 Unk2700_FEALLBIBHOL = 8;
-	Vector hit_point = 15;
-	Vector hit_normal = 11;
-	int32 hit_box_index = 9;
-	uint32 hit_entity_id = 3;
-	uint32 entity_id = 5;
-	uint32 forward_peer = 7;
-	ForwardType forward_type = 2;
-	HitColliderType hit_collider_type = 6;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 348;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  ForwardType forward_type = 2;
+  uint32 Unk3300_ELNFDKNGHFP = 4;
+  Vector hit_normal = 9;
+  uint32 Unk3300_KANAJBJHCLG = 6;
+  Vector hit_point = 8;
+  HitColliderType hit_collider_type = 10;
+  uint32 entity_id = 14;
+  uint32 forward_peer = 3;
+  int32 hit_box_index = 1;
 }

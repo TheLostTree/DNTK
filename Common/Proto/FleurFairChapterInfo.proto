@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message FleurFairChapterInfo {
-	uint32 open_time = 15;
-	uint32 chapter_id = 11;
+  uint32 chapter_id = 12;
+  uint32 open_time = 7;
 }

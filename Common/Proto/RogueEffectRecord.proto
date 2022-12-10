@@ -16,12 +16,11 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message RogueEffectRecord {
-	uint32 source_id = 6;
-	repeated uint32 extra_param_list = 9;
-	uint32 count = 10;
-	bool is_new = 5;
+  uint32 source_id = 9;
+  bool is_new = 8;
+  uint32 count = 3;
+  repeated uint32 extra_param_list = 15;
 }

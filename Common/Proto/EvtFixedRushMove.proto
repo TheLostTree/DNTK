@@ -18,15 +18,14 @@ syntax = "proto3";
 
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message EvtFixedRushMove {
-	uint32 entity_id = 15;
-	float speed = 3;
-	bool need_set_is_in_air = 7;
-	repeated uint32 animator_state_id_list = 2;
-	Vector target_pos = 9;
-	bool check_animator_state_on_exit_only = 6;
-	string override_collider = 13;
+  uint32 entity_id = 13;
+  string override_collider = 7;
+  Vector target_pos = 14;
+  bool Unk3300_BGOLPLHGGPO = 8;
+  repeated uint32 animator_state_id_list = 9;
+  bool Unk3300_BKEELCGOLLN = 12;
+  float speed = 10;
 }

@@ -16,14 +16,17 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 1845
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message PlayerSetOnlyMPWithPSPlayerRsp {
-	int32 retcode = 5;
-	bool is_only = 8;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 1818;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  bool is_only = 4;
+  int32 retcode = 11;
 }

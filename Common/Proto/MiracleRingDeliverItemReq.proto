@@ -19,17 +19,21 @@ syntax = "proto3";
 import "InterOpType.proto";
 import "ItemParam.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 5229
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message MiracleRingDeliverItemReq {
-	InterOpType op_type = 9;
-	repeated ItemParam item_param_list = 1;
-	repeated uint64 food_weapon_guid_list = 4;
-	uint32 gadget_id = 14;
-	uint32 gadget_entity_id = 5;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 5244;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  repeated ItemParam item_param_list = 3;
+  uint32 gadget_entity_id = 6;
+  uint32 gadget_id = 8;
+  repeated uint64 food_weapon_guid_list = 13;
+  InterOpType op_type = 15;
 }

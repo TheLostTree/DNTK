@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message FishingScore {
-	uint32 fishing_score_ = 2;
-	bool is_new_record = 4;
+  uint32 fishing_score = 11;
+  bool is_new_record = 10;
 }

@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message ChannelerSlabAssistInfo {
-	uint32 uid = 10;
-	uint32 avatar_level = 12;
-	uint32 avatar_id = 6;
+  uint32 avatar_level = 10;
+  uint32 uid = 11;
+  uint32 avatar_id = 6;
 }

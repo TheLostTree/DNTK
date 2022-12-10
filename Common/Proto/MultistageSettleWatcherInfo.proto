@@ -16,12 +16,11 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message MultistageSettleWatcherInfo {
-	uint32 total_progress = 13;
-	uint32 cur_progress = 5;
-	uint32 watcher_id = 7;
-	bool is_inverse = 12;
+  bool is_inverse = 3;
+  uint32 cur_progress = 6;
+  uint32 watcher_id = 5;
+  uint32 total_progress = 11;
 }

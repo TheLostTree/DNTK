@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message SumoAvatarInfo {
-	bool is_trial = 2;
-	uint64 avatar_id = 1;
+  bool is_trial = 9;
+  uint64 avatar_id = 13;
 }

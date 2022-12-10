@@ -16,9 +16,8 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message AbilityMetaSetAbilityTrigger {
-	uint32 trigger_ability_entity_id = 11;
+  uint32 trigger_ability_entity_id = 1;
 }

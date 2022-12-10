@@ -16,13 +16,16 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 4857
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message HomeUpdateFishFarmingInfoRsp {
-	int32 retcode = 4;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 4582;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  int32 retcode = 14;
 }

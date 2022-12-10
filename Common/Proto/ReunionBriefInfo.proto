@@ -16,19 +16,21 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
+import "ReunionPrivilegeInfo.proto";
+
 option csharp_namespace = "Common.Protobuf";
 
 message ReunionBriefInfo {
-	bool is_taken_first_gift = 8;
-	bool mission_has_reward = 9;
-	uint32 privilege_id = 5;
-	uint32 start_time = 7;
-	string version = 13;
-	bool sign_in_has_reward = 2;
-	uint32 first_gift_reward_id = 15;
-	uint32 mission_id = 10;
-	uint32 first_day_start_time = 3;
-	uint32 sign_in_config_id = 6;
-	uint32 finish_time = 12;
+  uint32 first_day_start_time = 1;
+  string version = 11;
+  uint32 mission_id = 6;
+  uint32 finish_time = 2;
+  bool Unk3300_OKGAAEDENEI = 13;
+  uint32 privilege_id = 5;
+  ReunionPrivilegeInfo privilege_info = 10;
+  uint32 start_time = 14;
+  uint32 first_gift_reward_id = 9;
+  bool Unk3300_ODKLPOMKKPD = 8;
+  bool Unk3300_MHHLEJIFFIM = 7;
+  uint32 sign_in_config_id = 12;
 }

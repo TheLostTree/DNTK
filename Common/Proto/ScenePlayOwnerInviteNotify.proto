@@ -16,15 +16,18 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 4371
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message ScenePlayOwnerInviteNotify {
-	uint32 invite_cd = 14;
-	uint32 play_id = 5;
-	bool is_remain_reward = 15;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 4393;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 invite_cd = 12;
+  uint32 play_id = 6;
+  bool is_remain_reward = 14;
 }

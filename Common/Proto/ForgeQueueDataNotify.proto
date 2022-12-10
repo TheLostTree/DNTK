@@ -18,14 +18,18 @@ syntax = "proto3";
 
 import "ForgeQueueData.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 676
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message ForgeQueueDataNotify {
-	map<uint32, ForgeQueueData> forge_queue_map = 7;
-	repeated uint32 removed_forge_queue_list = 6;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 695;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  map<uint32, ForgeQueueData> forge_queue_map = 1;
+  repeated uint32 removed_forge_queue_list = 15;
 }

@@ -16,12 +16,11 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message InBattleMechanicusBuildingInfo {
-	uint32 building_id = 8;
-	uint32 level = 7;
-	uint32 cost_points = 2;
-	uint32 refund_points = 11;
+  uint32 refund_points = 8;
+  uint32 cost_points = 15;
+  uint32 level = 13;
+  uint32 building_id = 3;
 }

@@ -16,12 +16,11 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message SceneGalleryLuminanceStoneChallengeInfo {
-	uint32 kill_monster_count = 5;
-	uint32 score = 3;
-	uint32 Unk2700_OFKHLGLOPCM = 2;
-	uint32 kill_special_monster_count = 6;
+  uint32 clean_mud_count = 12;
+  uint32 kill_special_monster_count = 3;
+  uint32 score = 4;
+  uint32 kill_monster_count = 8;
 }

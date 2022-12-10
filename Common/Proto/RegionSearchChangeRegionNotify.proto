@@ -16,20 +16,24 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 5618
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message RegionSearchChangeRegionNotify {
-	RegionEvent event = 1;
-	uint32 region_id = 10;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 5641;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
 
-	enum RegionEvent {
-		REGION_EVENT_NONE = 0;
-		REGION_EVENT_ENTER = 1;
-		REGION_EVENT_LEAVE = 2;
-	}
+  enum RegionEvent {
+    REGION_EVENT_NONE = 0;
+    REGION_EVENT_ENTER = 1;
+    REGION_EVENT_LEAVE = 2;
+  }
+
+  uint32 region_id = 6;
+  RegionEvent event = 11;
 }

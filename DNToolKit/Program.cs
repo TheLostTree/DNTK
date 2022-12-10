@@ -14,8 +14,8 @@ public class Program
     public static Config Config = null!;
     public static Sniffer.Sniffer Sniffer = null!;
 
-    public static ushort GameMajorVersion = 2;
-    public static ushort GameMinorVersion = 8;
+    public static ushort GameMajorVersion = 3;
+    public static ushort GameMinorVersion = 3;
     
 
     private static string _configName = "./config.json";
@@ -28,11 +28,11 @@ public class Program
         
         
         Log.Logger = new LoggerConfiguration().MinimumLevel.Verbose().WriteTo.Console().CreateLogger();
-        Log.Information("DNToolKit for v2.8");
+        Log.Information("DNToolKit for v{0}.{1}", GameMajorVersion, GameMinorVersion);
         // var key = KeyBruteForcer.BruteForce(senttime: 1658814410247, serverKey: 4502709363913224634, testBuffer: new byte[] { 0x0B, 0xB9});
         //
         // return;
-        
+
         if (!File.Exists(_configName))
         {
             File.WriteAllText(_configName,JsonConvert.SerializeObject(Config.Default));
@@ -46,6 +46,7 @@ public class Program
                 Config = Config.Default;
                 Log.Error("Invalid Config File! Using Default...");
             }
+            
         }
         
 

@@ -18,12 +18,11 @@ syntax = "proto3";
 
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message ParkourLevelInfo {
-	uint32 best_record = 12;
-	bool is_open = 9;
-	uint32 open_time = 7;
-	Vector pos = 2;
+  Vector pos = 2;
+  bool is_open = 7;
+  uint32 best_record = 14;
+  uint32 open_time = 4;
 }

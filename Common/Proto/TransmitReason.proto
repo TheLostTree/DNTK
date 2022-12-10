@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 enum TransmitReason {
-	TRANSMIT_REASON_NONE = 0;
-	TRANSMIT_REASON_QUEST = 1;
+  TRANSMIT_REASON_NONE = 0;
+  TRANSMIT_REASON_QUEST = 1;
 }

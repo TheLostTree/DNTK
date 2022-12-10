@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message SceneGalleryBulletInfo {
-	uint32 end_time = 1;
-	map<uint32, uint32> hit_count_map = 10;
+  map<uint32, uint32> hit_count_map = 2;
+  uint32 end_time = 13;
 }

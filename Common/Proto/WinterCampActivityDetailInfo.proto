@@ -17,19 +17,18 @@
 syntax = "proto3";
 
 import "ItemParam.proto";
-import "Unk2700_DIEGJDEIDKO.proto";
-import "Unk2700_MBIDJDLLBNM.proto";
+import "WinterCampRaceStageInfo.proto";
+import "WinterCampStageInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message WinterCampActivityDetailInfo {
-	repeated Unk2700_MBIDJDLLBNM Unk2700_FBMHFJHDJNB = 9;
-	Unk2700_DIEGJDEIDKO battle_info = 10;
-	repeated uint32 Unk2700_GALHBPGEGNL = 8;
-	repeated uint32 Unk2700_DKCGOPBHJHA = 14;
-	repeated uint32 Unk2700_OOBOCEALLBE = 6;
-	bool is_content_closed = 15;
-	Unk2700_DIEGJDEIDKO explore_info = 11;
-	repeated ItemParam Unk2700_CFENLEBIKGG = 2;
+  WinterCampStageInfo explore_info = 3;
+  repeated uint32 Unk3300_KCGKNJFGCFC = 4;
+  bool is_content_closed = 12;
+  repeated uint32 Unk3300_CMNIBPMOECO = 5;
+  repeated uint32 Unk3300_FHNNJJDGLOO = 6;
+  repeated ItemParam used_item_list = 14;
+  WinterCampStageInfo battle_info = 9;
+  repeated WinterCampRaceStageInfo race_info_list = 13;
 }

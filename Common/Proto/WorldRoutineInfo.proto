@@ -16,12 +16,11 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message WorldRoutineInfo {
-	uint32 progress = 4;
-	bool is_finished = 14;
-	uint32 finish_progress = 3;
-	uint32 routine_id = 11;
+  uint32 finish_progress = 1;
+  uint32 routine_id = 10;
+  uint32 progress = 7;
+  bool is_finished = 15;
 }

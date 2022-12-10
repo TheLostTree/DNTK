@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message BonusActivityInfo {
-	uint32 bonus_activity_id = 6;
-	uint32 state = 3;
+  uint32 bonus_activity_id = 14;
+  uint32 state = 8;
 }

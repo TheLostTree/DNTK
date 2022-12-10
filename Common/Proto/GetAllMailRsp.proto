@@ -18,16 +18,19 @@ syntax = "proto3";
 
 import "MailData.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 1475
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message GetAllMailRsp {
-	int32 retcode = 8;
-	repeated MailData mail_list = 14;
-	bool Unk2700_OPEHLDAGICF = 1;
-	bool is_truncated = 2;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 1439;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  repeated MailData mail_list = 15;
+  bool is_collected = 12;
+  int32 retcode = 1;
+  bool is_truncated = 8;
 }

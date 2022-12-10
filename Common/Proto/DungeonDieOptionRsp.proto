@@ -18,15 +18,18 @@ syntax = "proto3";
 
 import "PlayerDieOption.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 948
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message DungeonDieOptionRsp {
-	int32 retcode = 5;
-	uint32 revive_count = 10;
-	PlayerDieOption die_option = 6;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 948;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 revive_count = 2;
+  PlayerDieOption die_option = 7;
+  int32 retcode = 13;
 }

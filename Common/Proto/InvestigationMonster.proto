@@ -19,30 +19,29 @@ syntax = "proto3";
 import "Vector.proto";
 import "WeeklyBossResinDiscountInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message InvestigationMonster {
-	bool is_alive = 9;
-	uint32 refresh_interval = 3;
-	uint32 id = 13;
-	uint32 level = 5;
-	uint32 boss_chest_num = 1;
-	WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 12;
-	uint32 monster_id = 301;
-	Vector pos = 14;
-	uint32 resin = 8;
-	uint32 max_boss_chest_num = 4;
-	uint32 next_refresh_time = 11;
-	uint32 group_id = 285;
-	uint32 scene_id = 10;
-	bool is_area_locked = 15;
-	LockState lock_state = 2;
-	uint32 next_boss_chest_refresh_time = 7;
-	uint32 city_id = 6;
+  enum LockState {
+    LOCK_STATE_NONE = 0;
+    LOCK_STATE_QUEST = 1;
+  }
 
-	enum LockState {
-		LOCK_STATE_NONE = 0;
-		LOCK_STATE_QUEST = 1;
-	}
+  bool is_alive = 13;
+  Vector pos = 7;
+  uint32 scene_id = 12;
+  uint32 next_refresh_time = 8;
+  uint32 city_id = 14;
+  uint32 group_id = 1735;
+  uint32 Unk3300_ONLALCCKIEE = 1;
+  WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 3;
+  uint32 Unk3300_DKKOBDIEKPP = 6;
+  uint32 id = 9;
+  uint32 monster_id = 562;
+  LockState lock_state = 4;
+  uint32 Unk3300_JHLEHEOOGGB = 10;
+  bool is_area_locked = 5;
+  uint32 level = 2;
+  uint32 Unk3300_KNKFCOKMECI = 11;
+  uint32 resin = 15;
 }

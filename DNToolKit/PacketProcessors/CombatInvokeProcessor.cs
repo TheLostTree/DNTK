@@ -44,9 +44,9 @@ public class CombatInvokeProcessor
                     cumbat.CombatData = EvtBeingHitInfo.Parser.ParseFrom(invoke.CombatData);
                     // Log.Information("@{data}", cumbat.CombatData);
                     break;
-                case CombatTypeArgument.Unk2700Kpdnfkcmkpg:
+                case CombatTypeArgument.BeingHealedNtf:
                     //healing packets
-                    cumbat.CombatData = new HealInvoke(Unk2700_BEINCMBJDAA_ClientReq.Parser.ParseFrom(invoke.CombatData));
+                    cumbat.CombatData = new HealInvoke(EvtBeingHealedNotify.Parser.ParseFrom(invoke.CombatData));
                     break;
                 default:
                     cumbat.CombatData = invoke.CombatData.ToBase64();
@@ -71,10 +71,10 @@ public class CombatInvokeProcessor
         public uint SourceId;
         public float HealedAmount;
         public float ActualAmount;
-        public HealInvoke(Unk2700_BEINCMBJDAA_ClientReq indata)
+        public HealInvoke(EvtBeingHealedNotify indata)
         {
-            this.ActualAmount = indata.Unk2700AEIDAJFHBBB;
-            this.HealedAmount = indata.Unk2700JLLFGAIOPGC;
+            this.ActualAmount = indata.Unk3300ECNBKHHADDJ;
+            this.HealedAmount = indata.Unk3300LCLOFCCIJKH;
             this.TargetId = indata.TargetId;
             this.SourceId = indata.SourceId;
         }

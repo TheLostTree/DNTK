@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message MoonfinTrialLevelInfo {
-	uint32 best_record = 3;
-	uint32 open_time = 1;
+  uint32 best_record = 15;
+  uint32 open_time = 13;
 }

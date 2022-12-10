@@ -16,20 +16,23 @@
 
 syntax = "proto3";
 
-import "InteractType.proto";
 import "InterOpType.proto";
+import "InteractType.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 898
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message GadgetInteractRsp {
-	uint32 gadget_entity_id = 10;
-	InteractType interact_type = 2;
-	InterOpType op_type = 3;
-	int32 retcode = 7;
-	uint32 gadget_id = 15;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 830;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  InteractType interact_type = 2;
+  uint32 gadget_id = 11;
+  int32 retcode = 7;
+  uint32 gadget_entity_id = 1;
+  InterOpType op_type = 8;
 }

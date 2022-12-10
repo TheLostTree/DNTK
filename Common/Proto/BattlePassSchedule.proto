@@ -21,21 +21,20 @@ import "BattlePassProduct.proto";
 import "BattlePassRewardTag.proto";
 import "BattlePassUnlockStatus.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message BattlePassSchedule {
-	uint32 level = 14;
-	uint32 begin_time = 2;
-	uint32 end_time = 15;
-	uint32 point = 1;
-	BattlePassCycle cur_cycle = 4;
-	BattlePassUnlockStatus unlock_status = 7;
-	repeated BattlePassRewardTag reward_taken_list = 11;
-	uint32 cur_cycle_points = 10;
-	uint32 Unk2700_ODHAAHEPFAG = 12;
-	BattlePassProduct product_info = 13;
-	bool is_extra_paid_reward_taken = 6;
-	bool is_viewed = 3;
-	uint32 schedule_id = 9;
+  uint32 schedule_id = 5;
+  uint32 Unk3300_MAAJDKMIODC = 2;
+  uint32 level = 7;
+  bool Unk3300_KODFJENCJLE = 8;
+  uint32 Unk3300_ELMNFBOLEOA = 14;
+  bool Unk3300_KALOGHHMJJE = 12;
+  uint32 Unk3300_FILCIPPAHHL = 4;
+  BattlePassCycle cur_cycle = 11;
+  uint32 begin_time = 1;
+  BattlePassUnlockStatus unlock_status = 15;
+  BattlePassProduct product_info = 10;
+  uint32 end_time = 13;
+  repeated BattlePassRewardTag reward_taken_list = 3;
 }

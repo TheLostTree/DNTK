@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message BuoyantCombatDailyInfo {
-	uint32 start_time = 2;
-	uint32 best_score = 13;
+  uint32 best_score = 5;
+  uint32 start_time = 10;
 }

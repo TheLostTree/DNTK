@@ -16,12 +16,11 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message ResinCardData {
-	uint32 remain_reward_days = 3;
-	uint32 expire_time = 12;
-	uint32 last_daily_reward_time = 2;
-	uint32 config_id = 7;
+  uint32 last_daily_reward_time = 10;
+  uint32 config_id = 2;
+  uint32 expire_time = 13;
+  uint32 remain_reward_days = 11;
 }

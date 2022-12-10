@@ -16,14 +16,13 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message ChannelerSlabLoopDungeonInfo {
-	uint32 score = 7;
-	uint32 dungeon_index = 4;
-	uint32 open_time = 12;
-	bool is_first_pass_reward_taken = 9;
-	repeated uint32 last_condition_id_list = 14;
-	bool is_open = 1;
+  bool is_first_pass_reward_taken = 9;
+  uint32 score = 7;
+  repeated uint32 last_condition_id_list = 10;
+  uint32 dungeon_index = 1;
+  bool is_open = 4;
+  uint32 open_time = 13;
 }

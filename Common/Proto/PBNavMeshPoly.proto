@@ -16,18 +16,17 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message PBNavMeshPoly {
-	repeated EdgeType edge_types = 10;
-	int32 area = 6;
-	repeated int32 vects = 7;
+  enum EdgeType {
+    EDGE_TYPE_INNER = 0;
+    EDGE_TYPE_TILE_BOUND = 1;
+    EDGE_TYPE_TILE_BOUND_UNCONNECT = 2;
+    EDGE_TYPE_TILE_BOUND_OVERIDE = 3;
+  }
 
-	enum EdgeType {
-		EDGE_TYPE_INNER = 0;
-		EDGE_TYPE_TILE_BOUND = 1;
-		EDGE_TYPE_TILE_BOUND_UNCONNECT = 2;
-		EDGE_TYPE_Unk2700_BFOKBOEBPJF = 3;
-	}
+  int32 area = 14;
+  repeated int32 vects = 13;
+  repeated EdgeType edge_types = 5;
 }

@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message EntityConfigHashEntry {
-	uint32 job_id = 13;
-	int32 hash_value = 6;
-	uint32 entity_id = 11;
+  uint32 entity_id = 4;
+  int32 hash_value = 1;
+  uint32 job_id = 6;
 }

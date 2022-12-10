@@ -19,15 +19,18 @@ syntax = "proto3";
 import "PlayerLocationInfo.proto";
 import "VehicleLocationInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 248
-// EnetChannelId: 0
-// EnetIsReliable: true
-// IsAllowClient: true
 message ScenePlayerLocationNotify {
-	repeated VehicleLocationInfo vehicle_loc_list = 3;
-	uint32 scene_id = 9;
-	repeated PlayerLocationInfo player_loc_list = 14;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 248;
+  //   ENET_CHANNEL_ID = 1;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 scene_id = 11;
+  repeated VehicleLocationInfo vehicle_loc_list = 6;
+  repeated PlayerLocationInfo player_loc_list = 4;
 }

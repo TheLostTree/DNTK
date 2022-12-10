@@ -18,14 +18,17 @@ syntax = "proto3";
 
 import "BargainSnapshot.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 404
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message BargainStartNotify {
-	uint32 bargain_id = 4;
-	BargainSnapshot snapshot = 2;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 444;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 bargain_id = 11;
+  BargainSnapshot snapshot = 10;
 }

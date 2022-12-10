@@ -18,10 +18,9 @@ syntax = "proto3";
 
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message AbilityActionSummon {
-	Vector pos = 10;
-	Vector rot = 1;
+  Vector pos = 3;
+  Vector rot = 10;
 }

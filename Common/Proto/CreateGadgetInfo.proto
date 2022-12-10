@@ -18,15 +18,14 @@ syntax = "proto3";
 
 import "GadgetBornType.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message CreateGadgetInfo {
-	GadgetBornType born_type = 1;
-	Chest chest = 2;
+  message Chest {
+    uint32 chest_drop_id = 1;
+    bool is_show_cutscene = 2;
+  }
 
-	message Chest {
-		uint32 chest_drop_id = 1;
-		bool is_show_cutscene = 2;
-	}
+  GadgetBornType born_type = 1;
+  Chest chest = 2;
 }

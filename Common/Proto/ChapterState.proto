@@ -16,12 +16,11 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 enum ChapterState {
-	CHAPTER_STATE_INVALID = 0;
-	CHAPTER_STATE_UNABLE_TO_BEGIN = 1;
-	CHAPTER_STATE_BEGIN = 2;
-	CHAPTER_STATE_END = 3;
+  CHAPTER_STATE_INVALID = 0;
+  CHAPTER_STATE_UNABLE_TO_BEGIN = 1;
+  CHAPTER_STATE_BEGIN = 2;
+  CHAPTER_STATE_END = 3;
 }

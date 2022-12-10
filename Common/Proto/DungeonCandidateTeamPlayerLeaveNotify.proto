@@ -18,14 +18,17 @@ syntax = "proto3";
 
 import "DungeonCandidateTeamPlayerLeaveReason.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 926
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message DungeonCandidateTeamPlayerLeaveNotify {
-	DungeonCandidateTeamPlayerLeaveReason reason = 3;
-	uint32 player_uid = 13;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 972;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 player_uid = 7;
+  DungeonCandidateTeamPlayerLeaveReason reason = 1;
 }

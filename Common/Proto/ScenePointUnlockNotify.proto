@@ -16,17 +16,20 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 247
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message ScenePointUnlockNotify {
-	repeated uint32 point_list = 13;
-	uint32 scene_id = 6;
-	repeated uint32 unhide_point_list = 12;
-	repeated uint32 hide_point_list = 1;
-	repeated uint32 locked_point_list = 8;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 276;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  repeated uint32 Unk3300_PIGCABAAMMB = 10;
+  repeated uint32 Unk3300_FKANNCGJEFJ = 5;
+  uint32 scene_id = 11;
+  repeated uint32 point_list = 6;
+  repeated uint32 Unk3300_FGPKDGFLJOF = 1;
 }

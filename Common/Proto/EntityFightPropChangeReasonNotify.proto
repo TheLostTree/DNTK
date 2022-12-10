@@ -20,19 +20,22 @@ import "ChangeEnergyReason.proto";
 import "ChangeHpReason.proto";
 import "PropChangeReason.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 1203
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message EntityFightPropChangeReasonNotify {
-	repeated uint32 param_list = 10;
-	float prop_delta = 1;
-	ChangeHpReason change_hp_reason = 14;
-	PropChangeReason reason = 6;
-	uint32 entity_id = 5;
-	ChangeEnergyReason change_energy_reson = 15;
-	uint32 prop_type = 13;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 1261;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 prop_type = 5;
+  repeated uint32 param_list = 7;
+  uint32 entity_id = 8;
+  PropChangeReason reason = 2;
+  ChangeHpReason change_hp_reason = 9;
+  ChangeEnergyReason change_energy_reason = 12;
+  float prop_delta = 10;
 }

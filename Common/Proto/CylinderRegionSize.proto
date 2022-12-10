@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message CylinderRegionSize {
-	float radius = 8;
-	float height = 7;
+  float radius = 7;
+  float height = 15;
 }

@@ -173,9 +173,10 @@ public class PacketProcessor
                 _tokenReqSendTime.SetValue(packet.Metadata.SentMs);
 
                 var tokenRsp = packet.PacketData as GetPlayerTokenRsp;
-                if (tokenRsp?.EncryptedSeed is not null)
+                Log.Information("${@TokenRsp}", tokenRsp);
+                if (tokenRsp?.ServerRandKey is not null)
                 {
-                    var key = ClientPrivate.Decrypt(Convert.FromBase64String(tokenRsp.EncryptedSeed),
+                    var key = ClientPrivate.Decrypt(Convert.FromBase64String(tokenRsp.ServerRandKey),
                         RSAEncryptionPadding.Pkcs1);
                     _tokenRspServerKey.SetValue(key.GetUInt64(0, true));
                     _useSessionKey = true;

@@ -16,15 +16,18 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 2008
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message ActivityCoinInfoNotify {
-	uint32 schedule_id = 8;
-	uint32 activity_id = 10;
-	map<uint32, uint32> activity_coin_map = 2;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 2018;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 schedule_id = 8;
+  map<uint32, uint32> activity_coin_map = 2;
+  uint32 activity_id = 4;
 }

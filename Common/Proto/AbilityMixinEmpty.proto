@@ -16,9 +16,6 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-message AbilityMixinEmpty {
-	bool is_swim = 1;
-}
+message AbilityMixinEmpty {}

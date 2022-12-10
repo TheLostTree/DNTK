@@ -18,14 +18,17 @@ syntax = "proto3";
 
 import "AbilityControlBlock.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 1131
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message AbilityChangeNotify {
-	uint32 entity_id = 1;
-	AbilityControlBlock ability_control_block = 15;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 1127;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  AbilityControlBlock ability_control_block = 6;
+  uint32 entity_id = 10;
 }

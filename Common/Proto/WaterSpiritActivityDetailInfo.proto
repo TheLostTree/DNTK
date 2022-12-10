@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message WaterSpiritActivityDetailInfo {
-	map<uint32, uint32> search_time_map = 9;
-	uint32 region_search_id = 2;
-	uint32 mp_play_id = 15;
+  map<uint32, uint32> search_time_map = 13;
+  uint32 region_search_id = 4;
+  uint32 mp_play_id = 9;
 }

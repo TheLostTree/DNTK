@@ -18,17 +18,21 @@ syntax = "proto3";
 
 import "GachaInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 1598
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message GetGachaInfoRsp {
-	bool Unk2700_LEEPELHDING = 2;
-	int32 retcode = 10;
-	uint32 gacha_random = 9;
-	uint32 Unk2700_OJKKHDLEDCI = 5;
-	repeated GachaInfo gacha_info_list = 13;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 1530;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  int32 retcode = 14;
+  uint32 daily_gacha_times = 6;
+  repeated GachaInfo gacha_info_list = 10;
+  bool Unk3300_OHFMHIHJHPJ = 4;
+  uint32 gacha_random = 9;
+  bool Unk3300_HBILIAEIHNK = 3;
 }

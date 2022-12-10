@@ -18,9 +18,8 @@ syntax = "proto3";
 
 import "SumoDungeonAvatar.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message SumoDungeonTeam {
-	repeated SumoDungeonAvatar dungeon_avatar_list = 15;
+  repeated SumoDungeonAvatar dungeon_avatar_list = 11;
 }

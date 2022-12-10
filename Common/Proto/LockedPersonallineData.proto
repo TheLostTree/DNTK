@@ -16,19 +16,18 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message LockedPersonallineData {
-	LockReason lock_reason = 2;
-	uint32 personal_line_id = 13;
-	oneof param {
-		uint32 chapter_id = 3;
-		uint32 level = 1;
-	}
+  enum LockReason {
+    LOCK_REASON_LEVEL = 0;
+    LOCK_REASON_QUEST = 1;
+  }
 
-	enum LockReason {
-		LOCK_REASON_LEVEL = 0;
-		LOCK_REASON_QUEST = 1;
-	}
+  LockReason lock_reason = 13;
+  uint32 personal_line_id = 3;
+  oneof param {
+    uint32 chapter_id = 4;
+    uint32 level = 15;
+  }
 }

@@ -18,10 +18,9 @@ syntax = "proto3";
 
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message AsterMidCampInfo {
-	Vector pos = 3;
-	uint32 camp_id = 8;
+  Vector pos = 3;
+  uint32 camp_id = 15;
 }

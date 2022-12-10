@@ -16,30 +16,34 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 8892
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message MusicGameSettleReq {
-	repeated uint32 Unk2700_GDPKOANEDEB = 384;
-	uint32 Unk2700_NMHGADLANMM = 795;
-	repeated uint32 Unk2700_NNHGOCJLKFH = 4;
-	uint32 Unk2700_NCHHEJNFECG = 15;
-	uint32 score = 9;
-	uint64 Unk2700_CEPGMKAHHCD = 6;
-	uint32 Unk2700_MMHHGALFHGA = 13;
-	bool Unk2700_CBLIJHDFKHA = 422;
-	uint32 max_combo = 5;
-	uint32 Unk2700_FBLBGPHMLAL = 1058;
-	float speed = 409;
-	bool Unk2700_IOKPIKJDEHG = 3;
-	uint32 combo = 1;
-	uint32 music_basic_id = 7;
-	uint32 Unk2700_DIMBABOGNEM = 2;
-	uint32 Unk2700_IOMOHEKJJLJ = 1953;
-	uint32 correct_hit = 14;
-	bool Unk2700_LKJNLDJAGGL = 1285;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 8998;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  repeated uint32 Unk3300_MLLDAPCIDDO = 14;
+  repeated uint32 Unk3300_HHBCEPNLCLL = 1007;
+  bool Unk3300_DMLNKOLOAAH = 1984;
+  uint32 Unk3300_EBOJMGOCPLE = 82;
+  uint32 max_combo = 10;
+  bool is_save_score = 7;
+  float speed = 790;
+  uint32 Unk3300_MDHEJNFHBBI = 15;
+  uint32 score = 8;
+  bool Unk3300_BHIGAMNDFML = 291;
+  uint32 correct_hit = 11;
+  uint32 Unk3300_HEPJNCAOEMP = 1;
+  uint32 combo = 4;
+  uint32 Unk3300_IPODKENCAOK = 304;
+  uint64 ugc_guid = 3;
+  uint32 Unk3300_AHAGHAHGPLD = 12;
+  uint32 music_basic_id = 5;
+  uint32 Unk3300_GJMIIDIOOMM = 1951;
 }

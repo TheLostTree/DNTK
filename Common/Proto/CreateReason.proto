@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 enum CreateReason {
-	CREATE_REASON_NONE = 0;
-	CREATE_REASON_QUEST = 1;
-	CREATE_REASON_ENERGY = 2;
+  CREATE_REASON_NONE = 0;
+  CREATE_REASON_QUEST = 1;
+  CREATE_REASON_ENERGY = 2;
 }

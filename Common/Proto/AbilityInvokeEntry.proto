@@ -20,16 +20,16 @@ import "AbilityInvokeArgument.proto";
 import "AbilityInvokeEntryHead.proto";
 import "ForwardType.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message AbilityInvokeEntry {
-	AbilityInvokeArgument argument_type = 1;
-	AbilityInvokeEntryHead head = 2;
-	uint32 forward_peer = 4;
-	uint32 event_id = 12;
-	ForwardType forward_type = 3;
-	bytes ability_data = 15;
-	double total_tick_time = 14;
-	uint32 entity_id = 9;
+  ForwardType forward_type = 9;
+  uint32 event_id = 13;
+  uint32 entity_id = 7;
+  uint32 forward_peer = 14;
+  double total_tick_time = 10;
+  AbilityInvokeEntryHead head = 3;
+  bytes ability_data = 2;
+  AbilityInvokeArgument argument_type = 8;
+  bool is_ignore_auth = 12;
 }

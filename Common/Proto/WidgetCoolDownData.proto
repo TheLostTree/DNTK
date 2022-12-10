@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message WidgetCoolDownData {
-	bool is_success = 5;
-	uint64 cool_down_time = 4;
-	uint32 id = 15;
+  uint32 id = 2;
+  bool is_success = 13;
+  uint64 cool_down_time = 7;
 }

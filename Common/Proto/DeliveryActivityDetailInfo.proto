@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message DeliveryActivityDetailInfo {
-	uint32 day_index = 14;
-	bool is_taken_reward = 13;
-	repeated uint32 finished_delivery_quest_index = 4;
+  uint32 day_index = 1;
+  bool is_taken_reward = 11;
+  repeated uint32 finished_delivery_quest_index = 4;
 }

@@ -18,9 +18,8 @@ syntax = "proto3";
 
 import "FleurFairMusicRecord.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message FleurFairMusicGameInfo {
-	map<uint32, FleurFairMusicRecord> music_record_map = 10;
+  map<uint32, FleurFairMusicRecord> music_record_map = 6;
 }

@@ -16,12 +16,11 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message ChallengeRecord {
-	uint32 challenge_record_type = 14;
-	uint32 challenge_index = 15;
-	uint32 challenge_id = 1;
-	uint32 best_value = 8;
+  uint32 challenge_record_type = 2;
+  uint32 challenge_index = 3;
+  uint32 challenge_id = 9;
+  uint32 best_value = 4;
 }

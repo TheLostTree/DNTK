@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message AsterProgressDetailInfo {
-	uint32 last_auto_add_time = 3;
-	uint32 count = 1;
+  uint32 count = 4;
+  uint32 last_auto_add_time = 1;
 }

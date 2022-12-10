@@ -18,13 +18,12 @@ syntax = "proto3";
 
 import "InBattleMechanicusBuildingInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message InBattleMechanicusPlayerInfo {
-	uint32 pick_card_id = 5;
-	uint32 uid = 14;
-	repeated InBattleMechanicusBuildingInfo building_list = 4;
-	bool is_card_confirmed = 13;
-	uint32 building_points = 3;
+  uint32 uid = 13;
+  bool is_card_confirmed = 12;
+  uint32 building_points = 2;
+  repeated InBattleMechanicusBuildingInfo building_list = 5;
+  uint32 pick_card_id = 15;
 }

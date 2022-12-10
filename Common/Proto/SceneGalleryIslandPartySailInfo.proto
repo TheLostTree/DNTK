@@ -16,18 +16,17 @@
 
 syntax = "proto3";
 
-import "Unk2800_FMAOEPEBKHB.proto";
-import "Unk2800_IMLDGLIMODE.proto";
+import "GalleryStartSource.proto";
+import "IslandPartySailStage.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message SceneGalleryIslandPartySailInfo {
-	uint32 Unk2800_HKHENLCIFNN = 14;
-	uint32 Unk2800_NGPLGLLFGOG = 10;
-	Unk2800_FMAOEPEBKHB Unk2800_ENJGEFBCLOL = 1;
-	uint32 Unk2800_DNDKJOJCDBI = 11;
-	uint32 coin = 15;
-	Unk2800_IMLDGLIMODE stage = 12;
-	uint32 Unk2800_GMOCMEFBGIP = 8;
+  uint32 coin = 5;
+  uint32 Unk3300_HCJGDHEMBLM = 4;
+  uint32 Unk3300_MJHMCAPGBIK = 6;
+  uint32 Unk3300_PFCJODGNDCI = 3;
+  IslandPartySailStage stage = 14;
+  uint32 Unk3300_MJOIIJIBAHF = 10;
+  GalleryStartSource start_source = 13;
 }

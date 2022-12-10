@@ -16,16 +16,19 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 2139
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message SeaLampContributeItemRsp {
-	uint32 add_contribution = 7;
-	uint32 add_progress = 1;
-	uint32 total_contribution = 14;
-	int32 retcode = 6;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 2116;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  int32 retcode = 4;
+  uint32 Unk3300_AIINHBHNHOI = 11;
+  uint32 add_progress = 5;
+  uint32 Unk3300_LPHALOGLGAL = 9;
 }

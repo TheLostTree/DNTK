@@ -18,14 +18,18 @@ syntax = "proto3";
 
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 244
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message HitClientTrivialNotify {
-	Vector position = 11;
-	uint32 owner_entity_id = 12;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 238;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  uint32 owner_entity_id = 14;
+  Vector position = 1;
 }

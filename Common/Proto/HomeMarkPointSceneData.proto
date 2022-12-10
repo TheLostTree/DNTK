@@ -19,12 +19,12 @@ syntax = "proto3";
 import "HomeMarkPointFurnitureData.proto";
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message HomeMarkPointSceneData {
-	repeated HomeMarkPointFurnitureData furniture_list = 6;
-	uint32 module_id = 5;
-	uint32 scene_id = 2;
-	Vector teapot_spirit_pos = 4;
+  Vector Unk3300_ONJJJEPFKJI = 9;
+  uint32 scene_id = 6;
+  Vector Unk3300_HFNOINGPMJP = 11;
+  uint32 module_id = 8;
+  repeated HomeMarkPointFurnitureData furniture_list = 13;
 }

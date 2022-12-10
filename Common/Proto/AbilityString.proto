@@ -16,12 +16,11 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message AbilityString {
-	oneof type {
-		string str = 1;
-		uint32 hash = 2;
-	}
+  oneof type {
+    string str = 1;
+    uint32 hash = 2;
+  }
 }

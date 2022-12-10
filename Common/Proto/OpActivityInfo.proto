@@ -18,16 +18,15 @@ syntax = "proto3";
 
 import "BonusOpActivityInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message OpActivityInfo {
-	uint32 activity_id = 2;
-	uint32 end_time = 6;
-	uint32 begin_time = 5;
-	bool is_has_change = 1;
-	uint32 schedule_id = 13;
-	oneof detail {
-		BonusOpActivityInfo bonus_info = 12;
-	}
+  uint32 activity_id = 15;
+  uint32 schedule_id = 14;
+  uint32 end_time = 4;
+  uint32 begin_time = 13;
+  bool is_has_change = 7;
+  oneof detail {
+    BonusOpActivityInfo bonus_info = 6;
+  }
 }

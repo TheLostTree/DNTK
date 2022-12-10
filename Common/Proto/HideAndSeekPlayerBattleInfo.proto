@@ -16,12 +16,11 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message HideAndSeekPlayerBattleInfo {
-	uint32 costume_id = 3;
-	repeated uint32 skill_list = 15;
-	bool is_ready = 12;
-	uint32 avatar_id = 6;
+  bool is_ready = 12;
+  repeated uint32 skill_list = 11;
+  uint32 avatar_id = 15;
+  uint32 costume_id = 4;
 }

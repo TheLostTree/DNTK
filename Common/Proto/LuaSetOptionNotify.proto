@@ -16,19 +16,22 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 316
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message LuaSetOptionNotify {
-	string lua_set_param = 8;
-	LuaOptionType option_type = 10;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 323;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
 
-	enum LuaOptionType {
-		LUA_OPTION_TYPE_NONE = 0;
-		LUA_OPTION_TYPE_PLAYER_INPUT = 1;
-	}
+  enum LuaOptionType {
+    LUA_OPTION_TYPE_NONE = 0;
+    LUA_OPTION_TYPE_PLAYER_INPUT = 1;
+  }
+
+  string lua_set_param = 1;
+  LuaOptionType option_type = 7;
 }

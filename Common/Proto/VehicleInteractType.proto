@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 enum VehicleInteractType {
-	VEHICLE_INTERACT_TYPE_NONE = 0;
-	VEHICLE_INTERACT_TYPE_IN = 1;
-	VEHICLE_INTERACT_TYPE_OUT = 2;
+  VEHICLE_INTERACT_TYPE_NONE = 0;
+  VEHICLE_INTERACT_TYPE_IN = 1;
+  VEHICLE_INTERACT_TYPE_OUT = 2;
 }

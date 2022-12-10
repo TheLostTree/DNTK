@@ -18,14 +18,18 @@ syntax = "proto3";
 
 import "ChatInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 3185
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message PlayerChatReq {
-	uint32 channel_id = 13;
-	ChatInfo chat_info = 15;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 3305;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  uint32 channel_id = 3;
+  ChatInfo chat_info = 9;
 }

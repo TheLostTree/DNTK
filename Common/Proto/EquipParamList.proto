@@ -18,9 +18,8 @@ syntax = "proto3";
 
 import "EquipParam.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message EquipParamList {
-	repeated EquipParam item_list = 1;
+  repeated EquipParam item_list = 1;
 }

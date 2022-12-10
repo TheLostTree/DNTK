@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message FallPlayerBrief {
-	uint32 uid = 13;
-	bool is_ground = 5;
-	uint32 score = 10;
+  bool is_ground = 7;
+  uint32 uid = 2;
+  uint32 score = 12;
 }

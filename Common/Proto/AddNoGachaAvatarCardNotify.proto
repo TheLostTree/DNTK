@@ -18,19 +18,22 @@ syntax = "proto3";
 
 import "AddNoGachaAvatarCardTransferItem.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 1655
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message AddNoGachaAvatarCardNotify {
-	repeated AddNoGachaAvatarCardTransferItem transfer_item_list = 4;
-	uint32 initial_promote_level = 2;
-	uint32 avatar_id = 8;
-	bool is_transfer_to_item = 6;
-	uint32 reason = 9;
-	uint32 initial_level = 10;
-	uint32 item_id = 14;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 1610;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 reason = 9;
+  uint32 Unk3300_MGAPHPOLKKE = 7;
+  uint32 item_id = 2;
+  uint32 avatar_id = 4;
+  bool is_transfer_to_item = 14;
+  uint32 Unk3300_GPBINALMFDF = 8;
+  repeated AddNoGachaAvatarCardTransferItem transfer_item_list = 6;
 }

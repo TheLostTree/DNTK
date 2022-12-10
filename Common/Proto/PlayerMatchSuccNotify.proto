@@ -16,22 +16,27 @@
 
 syntax = "proto3";
 
+import "GCGMatchInfo.proto";
 import "GeneralMatchInfo.proto";
 import "MatchType.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 4179
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message PlayerMatchSuccNotify {
-	uint32 mechanicus_difficult_level = 1;
-	uint32 dungeon_id = 6;
-	MatchType match_type = 5;
-	uint32 mp_play_id = 15;
-	GeneralMatchInfo general_match_info = 7;
-	uint32 host_uid = 3;
-	uint32 confirm_end_time = 2;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 4194;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  GeneralMatchInfo general_match_info = 7;
+  uint32 dungeon_id = 3;
+  MatchType match_type = 15;
+  uint32 mechanicus_difficult_level = 5;
+  uint32 confirm_end_time = 13;
+  GCGMatchInfo gcg_match_info = 9;
+  uint32 mp_play_id = 11;
+  uint32 host_uid = 10;
 }

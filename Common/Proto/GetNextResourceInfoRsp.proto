@@ -18,15 +18,18 @@ syntax = "proto3";
 
 import "ResVersionConfig.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 120
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message GetNextResourceInfoRsp {
-	string next_resource_url = 14;
-	ResVersionConfig next_res_version_config = 2;
-	int32 retcode = 12;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 102;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  ResVersionConfig next_res_version_config = 6;
+  int32 retcode = 8;
+  string next_resource_url = 15;
 }

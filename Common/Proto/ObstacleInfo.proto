@@ -20,18 +20,17 @@ import "MathQuaternion.proto";
 import "Vector.proto";
 import "Vector3Int.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message ObstacleInfo {
-	MathQuaternion rotation = 4;
-	int32 obstacle_id = 2;
-	Vector center = 14;
-	ShapeType shape = 6;
-	Vector3Int extents = 12;
+  enum ShapeType {
+    SHAPE_TYPE_OBSTACLE_SHAPE_CAPSULE = 0;
+    SHAPE_TYPE_OBSTACLE_SHAPE_BOX = 1;
+  }
 
-	enum ShapeType {
-		SHAPE_TYPE_OBSTACLE_SHAPE_CAPSULE = 0;
-		SHAPE_TYPE_OBSTACLE_SHAPE_BOX = 1;
-	}
+  MathQuaternion rotation = 11;
+  ShapeType shape = 2;
+  Vector3Int extents = 4;
+  Vector center = 7;
+  int32 obstacle_id = 10;
 }

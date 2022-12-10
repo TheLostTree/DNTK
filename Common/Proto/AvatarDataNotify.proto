@@ -17,22 +17,27 @@
 syntax = "proto3";
 
 import "AvatarInfo.proto";
+import "AvatarRenameInfo.proto";
 import "AvatarTeam.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 1633
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message AvatarDataNotify {
-	repeated uint32 owned_costume_list = 11;
-	uint64 choose_avatar_guid = 8;
-	map<uint32, AvatarTeam> avatar_team_map = 7;
-	repeated uint32 Unk3000_NIGPICLBHMA = 9;
-	repeated uint64 temp_avatar_guid_list = 12;
-	repeated uint32 owned_flycloak_list = 1;
-	repeated AvatarInfo avatar_list = 6;
-	uint32 cur_avatar_team_id = 2;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 1607;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  repeated AvatarInfo avatar_list = 14;
+  repeated AvatarRenameInfo avatar_rename_list = 8;
+  uint32 cur_avatar_team_id = 7;
+  repeated uint32 Unk3300_HHKJBGKHIEJ = 6;
+  repeated uint64 temp_avatar_guid_list = 15;
+  uint64 choose_avatar_guid = 1;
+  map<uint32, AvatarTeam> avatar_team_map = 11;
+  repeated uint32 Unk3300_MDNLGGMGHAF = 5;
+  repeated uint32 backup_avatar_team_order_list = 3;
 }

@@ -16,12 +16,11 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message SceneGalleryProgressInfo {
-	repeated uint32 progress_stage_list = 8;
-	string key = 11;
-	uint32 progress = 5;
-	uint32 ui_form = 12;
+  string key = 3;
+  uint32 ui_form = 12;
+  repeated uint32 progress_stage_list = 7;
+  uint32 progress = 13;
 }

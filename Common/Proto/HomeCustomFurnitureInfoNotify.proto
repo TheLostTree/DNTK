@@ -18,15 +18,18 @@ syntax = "proto3";
 
 import "HomeCustomFurnitureInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 4712
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message HomeCustomFurnitureInfoNotify {
-	repeated uint32 delete_custom_furniture_list = 4;
-	map<uint32, uint32> used_sub_furniture_count_map = 15;
-	repeated HomeCustomFurnitureInfo custom_furniture_info_list = 11;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 4888;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  repeated uint32 delete_custom_furniture_list = 13;
+  repeated HomeCustomFurnitureInfo custom_furniture_info_list = 15;
+  map<uint32, uint32> used_sub_furniture_count_map = 3;
 }

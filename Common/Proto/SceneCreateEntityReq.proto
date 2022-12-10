@@ -19,15 +19,19 @@ syntax = "proto3";
 import "CreateEntityInfo.proto";
 import "CreateReason.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 288
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message SceneCreateEntityReq {
-	CreateEntityInfo entity = 1;
-	bool is_destroy_when_disconnect = 10;
-	CreateReason reason = 3;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 294;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  CreateReason reason = 4;
+  CreateEntityInfo entity = 8;
+  bool is_destroy_when_disconnect = 15;
 }

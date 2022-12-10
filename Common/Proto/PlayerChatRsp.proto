@@ -16,14 +16,17 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 3228
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message PlayerChatRsp {
-	uint32 chat_forbidden_endtime = 15;
-	int32 retcode = 2;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 3087;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 chat_forbidden_endtime = 8;
+  int32 retcode = 12;
 }

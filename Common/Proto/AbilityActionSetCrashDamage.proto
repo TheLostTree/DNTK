@@ -18,10 +18,9 @@ syntax = "proto3";
 
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message AbilityActionSetCrashDamage {
-	Vector hit_pos = 2;
-	float damage = 15;
+  float damage = 2;
+  Vector hit_pos = 8;
 }

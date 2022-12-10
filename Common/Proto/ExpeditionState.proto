@@ -16,13 +16,12 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 enum ExpeditionState {
-	EXPEDITION_STATE_NONE = 0;
-	EXPEDITION_STATE_STARTED = 1;
-	EXPEDITION_STATE_FINISHED = 2;
-	EXPEDITION_STATE_REWARDED = 3;
-	EXPEDITION_STATE_LOCKED = 4;
+  EXPEDITION_STATE_NONE = 0;
+  EXPEDITION_STATE_STARTED = 1;
+  EXPEDITION_STATE_FINISHED = 2;
+  EXPEDITION_STATE_REWARDED = 3;
+  EXPEDITION_STATE_LOCKED = 4;
 }

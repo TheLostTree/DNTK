@@ -19,15 +19,18 @@ syntax = "proto3";
 import "BattlePassMission.proto";
 import "BattlePassSchedule.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 2626
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message BattlePassAllDataNotify {
-	bool have_cur_schedule = 2;
-	repeated BattlePassMission mission_list = 4;
-	BattlePassSchedule cur_schedule = 1;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 2642;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  repeated BattlePassMission mission_list = 1;
+  BattlePassSchedule cur_schedule = 10;
+  bool have_cur_schedule = 3;
 }

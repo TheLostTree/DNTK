@@ -16,27 +16,30 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 1829
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message PlayerQuitFromMpNotify {
-	QuitReason reason = 11;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 1844;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
 
-	enum QuitReason {
-		QUIT_REASON_INVALID = 0;
-		QUIT_REASON_HOST_NO_OTHER_PLAYER = 1;
-		QUIT_REASON_KICK_BY_HOST = 2;
-		QUIT_REASON_BACK_TO_MY_WORLD = 3;
-		QUIT_REASON_KICK_BY_HOST_LOGOUT = 4;
-		QUIT_REASON_KICK_BY_HOST_BLOCK = 5;
-		QUIT_REASON_BE_BLOCKED = 6;
-		QUIT_REASON_KICK_BY_HOST_ENTER_HOME = 7;
-		QUIT_REASON_HOST_SCENE_INVALID = 8;
-		QUIT_REASON_KICK_BY_PLAY = 9;
-		QUIT_REASON_Unk2800_FDECHAHJFDA = 10;
-	}
+  enum QuitReason {
+    QUIT_REASON_INVALID = 0;
+    QUIT_REASON_HOST_NO_OTHER_PLAYER = 1;
+    QUIT_REASON_KICK_BY_HOST = 2;
+    QUIT_REASON_BACK_TO_MY_WORLD = 3;
+    QUIT_REASON_KICK_BY_HOST_LOGOUT = 4;
+    QUIT_REASON_KICK_BY_HOST_BLOCK = 5;
+    QUIT_REASON_BE_BLOCKED = 6;
+    QUIT_REASON_KICK_BY_HOST_ENTER_HOME = 7;
+    QUIT_REASON_HOST_SCENE_INVALID = 8;
+    QUIT_REASON_KICK_BY_PLAY = 9;
+    QUIT_REASON_KICK_BY_ISLAND_PARTY_GALLERY_START_FAILED = 10;
+  }
+
+  QuitReason reason = 2;
 }

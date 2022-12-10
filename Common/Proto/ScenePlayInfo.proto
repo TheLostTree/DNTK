@@ -16,12 +16,11 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message ScenePlayInfo {
-	uint32 entry_id = 15;
-	uint32 play_id = 11;
-	uint32 play_type = 3;
-	bool is_open = 9;
+  bool is_open = 14;
+  uint32 entry_id = 10;
+  uint32 play_id = 15;
+  uint32 play_type = 13;
 }

@@ -18,16 +18,20 @@ syntax = "proto3";
 
 import "QuestVarOp.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 447
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message QuestUpdateQuestVarReq {
-	uint32 parent_quest_id = 9;
-	repeated QuestVarOp quest_var_op_list = 4;
-	uint32 quest_id = 11;
-	uint32 parent_quest_var_seq = 1;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 476;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  uint32 parent_quest_var_seq = 7;
+  repeated QuestVarOp quest_var_op_list = 11;
+  uint32 quest_id = 5;
+  uint32 parent_quest_id = 2;
 }

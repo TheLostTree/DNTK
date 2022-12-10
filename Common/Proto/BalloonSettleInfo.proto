@@ -18,13 +18,12 @@ syntax = "proto3";
 
 import "OnlinePlayerInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message BalloonSettleInfo {
-	uint32 uid = 3;
-	uint32 shoot_count = 12;
-	uint32 max_combo = 9;
-	uint32 final_score = 7;
-	OnlinePlayerInfo player_info = 2;
+  OnlinePlayerInfo player_info = 8;
+  uint32 uid = 13;
+  uint32 final_score = 2;
+  uint32 max_combo = 7;
+  uint32 shoot_count = 14;
 }

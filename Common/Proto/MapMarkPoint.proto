@@ -20,15 +20,14 @@ import "MapMarkFromType.proto";
 import "MapMarkPointType.proto";
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message MapMarkPoint {
-	uint32 scene_id = 1;
-	string name = 2;
-	Vector pos = 3;
-	MapMarkPointType point_type = 4;
-	uint32 monster_id = 5;
-	MapMarkFromType from_type = 6;
-	uint32 quest_id = 7;
+  uint32 scene_id = 1;
+  string name = 2;
+  Vector pos = 3;
+  MapMarkPointType point_type = 4;
+  uint32 monster_id = 5;
+  MapMarkFromType from_type = 6;
+  uint32 quest_id = 7;
 }

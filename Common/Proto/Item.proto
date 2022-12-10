@@ -20,15 +20,14 @@ import "Equip.proto";
 import "Furniture.proto";
 import "Material.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message Item {
-	uint32 item_id = 1;
-	uint64 guid = 2;
-	oneof detail {
-		Material material = 5;
-		Equip equip = 6;
-		Furniture furniture = 7;
-	}
+  uint32 item_id = 1;
+  uint64 guid = 2;
+  oneof detail {
+    Material material = 5;
+    Equip equip = 6;
+    Furniture furniture = 7;
+  }
 }

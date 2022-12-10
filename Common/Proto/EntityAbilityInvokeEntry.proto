@@ -18,10 +18,9 @@ syntax = "proto3";
 
 import "AbilityInvokeEntry.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message EntityAbilityInvokeEntry {
-	uint32 entity_id = 8;
-	repeated AbilityInvokeEntry invokes = 1;
+  repeated AbilityInvokeEntry invokes = 14;
+  uint32 entity_id = 7;
 }

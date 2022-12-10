@@ -18,10 +18,9 @@ syntax = "proto3";
 
 import "PlaceInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message SceneGalleryHandballInfo {
-	PlaceInfo ball_place_info = 9;
-	bool is_have_ball = 15;
+  PlaceInfo ball_place_info = 6;
+  bool is_have_ball = 11;
 }

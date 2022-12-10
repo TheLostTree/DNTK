@@ -16,16 +16,19 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 448
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message QuestDestroyEntityRsp {
-	uint32 quest_id = 14;
-	uint32 scene_id = 9;
-	uint32 entity_id = 12;
-	int32 retcode = 1;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 448;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  int32 retcode = 3;
+  uint32 scene_id = 6;
+  uint32 entity_id = 8;
+  uint32 quest_id = 9;
 }

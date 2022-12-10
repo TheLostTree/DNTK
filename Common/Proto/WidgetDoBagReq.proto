@@ -19,17 +19,21 @@ syntax = "proto3";
 import "WidgetCreateLocationInfo.proto";
 import "WidgetCreatorInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 4255
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message WidgetDoBagReq {
-	uint32 material_id = 9;
-	oneof op_info {
-		WidgetCreateLocationInfo location_info = 832;
-		WidgetCreatorInfo widget_creator_info = 1497;
-	}
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 4269;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  uint32 material_id = 11;
+  oneof op_info {
+    WidgetCreateLocationInfo location_info = 434;
+    WidgetCreatorInfo widget_creator_info = 1338;
+  }
 }

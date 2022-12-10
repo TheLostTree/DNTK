@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message PushTipsData {
-	uint32 push_tips_id = 13;
-	uint32 state = 4;
+  uint32 push_tips_id = 4;
+  uint32 state = 7;
 }

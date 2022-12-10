@@ -18,13 +18,12 @@ syntax = "proto3";
 
 import "FleurFairPlayerStatInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message FleurFairBossSettleInfo {
-	uint32 reward_token_num = 15;
-	repeated FleurFairPlayerStatInfo stat_info_list = 1;
-	bool is_success = 10;
-	uint32 energy = 12;
-	uint32 cost_time = 8;
+  uint32 cost_time = 14;
+  repeated FleurFairPlayerStatInfo stat_info_list = 11;
+  uint32 energy = 4;
+  bool is_success = 2;
+  uint32 reward_token_num = 15;
 }

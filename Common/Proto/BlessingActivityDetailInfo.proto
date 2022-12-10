@@ -16,16 +16,15 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message BlessingActivityDetailInfo {
-	uint32 cur_day_scan_type = 9;
-	bool is_content_closed = 11;
-	map<uint32, uint32> pic_num_map = 15;
-	uint32 content_close_time = 2;
-	uint32 cur_day_scan_num = 4;
-	uint32 redeem_reward_num = 1;
-	bool is_activated = 13;
-	uint32 next_refresh_time = 6;
+  uint32 cur_day_scan_num = 10;
+  uint32 content_close_time = 8;
+  uint32 Unk3300_JLADHEKJPBP = 1;
+  uint32 next_refresh_time = 6;
+  bool is_activated = 5;
+  uint32 Unk3300_INOHLELBOAM = 7;
+  bool is_content_closed = 2;
+  map<uint32, uint32> pic_num_map = 11;
 }

@@ -18,13 +18,16 @@ syntax = "proto3";
 
 import "SceneEntityInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 1644
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message AvatarChangeCostumeNotify {
-	SceneEntityInfo entity_info = 7;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 1665;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  SceneEntityInfo entity_info = 11;
 }

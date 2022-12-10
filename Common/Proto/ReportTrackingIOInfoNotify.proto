@@ -16,17 +16,21 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 4129
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message ReportTrackingIOInfoNotify {
-	string rydevicetype = 12;
-	string deviceid = 1;
-	string client_tz = 13;
-	string appid = 14;
-	string mac = 15;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 4144;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  string Unk3300_KGGPDKGDELG = 13;
+  string Unk3300_DJHKHEFPCDK = 10;
+  string Unk3300_PIBFPDAMJLE = 6;
+  string Unk3300_CNPIGDOEJPB = 8;
+  string Unk3300_GEJJKDLGFPH = 3;
 }

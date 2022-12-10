@@ -18,15 +18,18 @@ syntax = "proto3";
 
 import "HomeAvatarRewardEventInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 4852
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message HomeAvatarRewardEventNotify {
-	bool is_event_trigger = 4;
-	HomeAvatarRewardEventInfo reward_event = 2;
-	repeated HomeAvatarRewardEventInfo pending_list = 8;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 4849;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  repeated HomeAvatarRewardEventInfo pending_list = 8;
+  HomeAvatarRewardEventInfo reward_event = 14;
+  bool is_event_trigger = 3;
 }

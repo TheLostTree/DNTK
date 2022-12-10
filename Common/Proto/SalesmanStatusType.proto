@@ -16,12 +16,11 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 enum SalesmanStatusType {
-	SALESMAN_STATUS_TYPE_NONE = 0;
-	SALESMAN_STATUS_TYPE_UNSTARTED = 1;
-	SALESMAN_STATUS_TYPE_STARTED = 2;
-	SALESMAN_STATUS_TYPE_DELIVERED = 3;
+  SALESMAN_STATUS_TYPE_NONE = 0;
+  SALESMAN_STATUS_TYPE_UNSTARTED = 1;
+  SALESMAN_STATUS_TYPE_STARTED = 2;
+  SALESMAN_STATUS_TYPE_DELIVERED = 3;
 }

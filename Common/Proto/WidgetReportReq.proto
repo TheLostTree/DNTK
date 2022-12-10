@@ -16,16 +16,21 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 4291
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message WidgetReportReq {
-	bool Unk2700_MFEHMLBNNAG = 5;
-	bool is_client_collect = 14;
-	bool is_clear_hint = 13;
-	uint32 material_id = 15;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 4258;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  uint32 weather_wizard_shield_value = 8;
+  bool Unk3300_APDFKKNKIJJ = 7;
+  bool Unk3300_BCAIBKDIHHF = 6;
+  uint32 material_id = 2;
+  bool Unk3300_EFBCLDDKMIM = 14;
 }

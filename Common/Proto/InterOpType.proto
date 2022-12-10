@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 enum InterOpType {
-	INTER_OP_TYPE_FINISH = 0;
-	INTER_OP_TYPE_START = 1;
+  INTER_OP_TYPE_FINISH = 0;
+  INTER_OP_TYPE_START = 1;
 }

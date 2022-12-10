@@ -16,12 +16,11 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message PbNavMeshStatsInfo {
-	int32 authority_ai_in_combat = 10;
-	int32 no_authority_ai_in_combat = 11;
-	int32 total_authority_ai = 8;
-	int32 total_no_authority_ai = 13;
+  int32 Unk3300_MOKPJBIPHNI = 8;
+  int32 Unk3300_IMLHLJAOBLF = 3;
+  int32 Unk3300_DHJKKJLKDHB = 15;
+  int32 Unk3300_EEONKADBJME = 13;
 }

@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 enum RogueEliteCellDifficultyType {
-	ROGUE_ELITE_CELL_DIFFICULTY_TYPE_NORMAL = 0;
-	ROGUE_ELITE_CELL_DIFFICULTY_TYPE_HARD = 1;
+  ROGUE_ELITE_CELL_DIFFICULTY_TYPE_NORMAL = 0;
+  ROGUE_ELITE_CELL_DIFFICULTY_TYPE_HARD = 1;
 }

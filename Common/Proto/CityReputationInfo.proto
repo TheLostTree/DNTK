@@ -21,17 +21,16 @@ import "CityReputationHuntInfo.proto";
 import "CityReputationQuestInfo.proto";
 import "CityReputationRequestInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message CityReputationInfo {
-	uint32 level = 4;
-	uint32 next_refresh_time = 3;
-	CityReputationHuntInfo hunt_info = 11;
-	repeated uint32 taken_level_reward_list = 2;
-	uint32 total_accept_request_num = 6;
-	CityReputationRequestInfo request_info = 5;
-	CityReputationQuestInfo quest_info = 9;
-	uint32 exp = 13;
-	CityReputationExploreInfo explore_info = 10;
+  uint32 exp = 8;
+  CityReputationQuestInfo quest_info = 9;
+  repeated uint32 taken_level_reward_list = 10;
+  CityReputationRequestInfo request_info = 5;
+  uint32 next_refresh_time = 11;
+  uint32 total_accept_request_num = 12;
+  CityReputationHuntInfo hunt_info = 15;
+  CityReputationExploreInfo explore_info = 3;
+  uint32 level = 2;
 }

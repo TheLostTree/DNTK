@@ -18,24 +18,22 @@ syntax = "proto3";
 
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message AbilityMixinWindSeedSpawner {
-	oneof cmd {
-		AddSignal add_signal = 2;
-		RefreshSeed refresh_seed = 15;
-		CatchSeed catch_seed = 11;
-	}
+  message AddSignal {}
 
-	message AddSignal {
-	}
+  message RefreshSeed {
+    repeated Vector pos_list = 10;
+  }
 
-	message RefreshSeed {
-		repeated Vector pos_list = 6;
-	}
+  message CatchSeed {
+    uint32 entity_id = 13;
+  }
 
-	message CatchSeed {
-		uint32 entity_id = 8;
-	}
+  oneof cmd {
+    AddSignal add_signal = 8;
+    RefreshSeed refresh_seed = 12;
+    CatchSeed catch_seed = 14;
+  }
 }

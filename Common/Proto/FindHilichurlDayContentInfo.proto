@@ -16,9 +16,8 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message FindHilichurlDayContentInfo {
-	uint32 start_time = 1;
+  uint32 start_time = 13;
 }

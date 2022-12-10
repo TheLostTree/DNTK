@@ -19,14 +19,18 @@ syntax = "proto3";
 import "EvtAnimatorStateChangedInfo.proto";
 import "ForwardType.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 331
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message EvtAnimatorStateChangedNotify {
-	ForwardType forward_type = 3;
-	EvtAnimatorStateChangedInfo evt_animator_state_changed_info = 10;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 327;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  ForwardType forward_type = 14;
+  EvtAnimatorStateChangedInfo evt_animator_state_changed_info = 2;
 }

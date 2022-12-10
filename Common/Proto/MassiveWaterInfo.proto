@@ -16,9 +16,8 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message MassiveWaterInfo {
-	int64 id = 1;
+  int64 id = 1;
 }

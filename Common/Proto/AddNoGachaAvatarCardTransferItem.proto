@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message AddNoGachaAvatarCardTransferItem {
-	uint32 count = 9;
-	uint32 item_id = 6;
-	bool is_new = 15;
+  uint32 count = 5;
+  bool is_new = 8;
+  uint32 item_id = 11;
 }

@@ -18,16 +18,20 @@ syntax = "proto3";
 
 import "DraftInviteFailInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 5435
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message DraftOwnerStartInviteRsp {
-	repeated DraftInviteFailInfo invite_fail_info_list = 15;
-	int32 retcode = 9;
-	uint32 wrong_uid = 3;
-	uint32 draft_id = 14;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 5419;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  repeated DraftInviteFailInfo invite_fail_info_list = 12;
+  uint32 draft_id = 4;
+  int32 retcode = 2;
+  uint32 wrong_uid = 6;
 }

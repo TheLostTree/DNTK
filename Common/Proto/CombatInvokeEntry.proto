@@ -19,11 +19,10 @@ syntax = "proto3";
 import "CombatTypeArgument.proto";
 import "ForwardType.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message CombatInvokeEntry {
-	bytes combat_data = 12;
-	ForwardType forward_type = 10;
-	CombatTypeArgument argument_type = 11;
+  ForwardType forward_type = 11;
+  CombatTypeArgument argument_type = 9;
+  bytes combat_data = 7;
 }

@@ -16,17 +16,16 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message ChessActivityDetailInfo {
-	uint32 level = 4;
-	bool is_teach_dungeon_finished = 9;
-	uint32 content_close_time = 14;
-	uint32 obtained_exp = 8;
-	bool is_content_closed = 5;
-	uint32 available_exp = 2;
-	uint32 exp = 13;
-	repeated uint32 finished_map_id_list = 1;
-	uint32 punish_over_time = 3;
+  uint32 punish_over_time = 9;
+  uint32 Unk3300_LPDDFGGKGBP = 4;
+  uint32 level = 14;
+  uint32 exp = 6;
+  uint32 Unk3300_HBGEGIPIANG = 15;
+  uint32 content_close_time = 1;
+  bool is_teach_dungeon_finished = 11;
+  bool is_content_closed = 5;
+  repeated uint32 finished_map_id_list = 13;
 }

@@ -18,13 +18,12 @@ syntax = "proto3";
 
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message AnchorPointData {
-	uint32 scene_id = 5;
-	uint32 anchor_point_id = 9;
-	uint32 end_time = 8;
-	Vector pos = 15;
-	Vector rot = 2;
+  uint32 scene_id = 3;
+  Vector rot = 4;
+  uint32 end_time = 8;
+  Vector pos = 11;
+  uint32 anchor_point_id = 9;
 }

@@ -18,12 +18,11 @@ syntax = "proto3";
 
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message ChannelerSlabCamp {
-	uint32 reward_id = 11;
-	Vector pos = 8;
-	uint32 buff_num = 7;
-	uint32 group_id = 3;
+  uint32 buff_num = 11;
+  uint32 reward_id = 9;
+  uint32 group_id = 8;
+  Vector pos = 15;
 }

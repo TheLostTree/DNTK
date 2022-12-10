@@ -16,13 +16,12 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message FlightDailyRecord {
-	uint32 group_id = 4;
-	bool is_touched = 1;
-	repeated uint32 watcher_id_list = 11;
-	uint32 best_score = 7;
-	uint32 start_time = 3;
+  uint32 best_score = 15;
+  uint32 group_id = 13;
+  bool is_touched = 5;
+  uint32 start_time = 6;
+  repeated uint32 watcher_id_list = 7;
 }

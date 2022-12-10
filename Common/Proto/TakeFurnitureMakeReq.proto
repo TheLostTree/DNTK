@@ -16,15 +16,19 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 4772
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message TakeFurnitureMakeReq {
-	uint32 index = 8;
-	bool is_fast_finish = 12;
-	uint32 make_id = 7;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 4506;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  uint32 index = 12;
+  bool is_fast_finish = 2;
+  uint32 make_id = 7;
 }

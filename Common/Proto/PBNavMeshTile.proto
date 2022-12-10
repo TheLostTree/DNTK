@@ -19,10 +19,9 @@ syntax = "proto3";
 import "PBNavMeshPoly.proto";
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message PBNavMeshTile {
-	repeated Vector vecs = 4;
-	repeated PBNavMeshPoly polys = 8;
+  repeated Vector vecs = 12;
+  repeated PBNavMeshPoly polys = 13;
 }

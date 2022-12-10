@@ -18,16 +18,19 @@ syntax = "proto3";
 
 import "SealBattleType.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 289
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message SealBattleBeginNotify {
-	uint32 seal_max_progress = 9;
-	uint32 seal_entity_id = 1;
-	uint32 seal_radius = 12;
-	SealBattleType battle_type = 14;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 226;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  SealBattleType battle_type = 10;
+  uint32 seal_entity_id = 7;
+  uint32 seal_max_progress = 13;
+  uint32 seal_radius = 5;
 }

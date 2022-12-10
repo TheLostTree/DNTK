@@ -16,12 +16,11 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message BalloonPlayerInfo {
-	uint32 uid = 15;
-	uint32 cur_score = 2;
-	uint32 combo_disable_time = 14;
-	uint32 combo = 11;
+  uint32 cur_score = 9;
+  uint32 combo = 11;
+  uint32 uid = 8;
+  uint32 combo_disable_time = 7;
 }

@@ -18,9 +18,8 @@ syntax = "proto3";
 
 import "AnimatorParameterValueInfoPair.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message AbilityMetaSetPoseParameter {
-	AnimatorParameterValueInfoPair value = 6;
+  AnimatorParameterValueInfoPair value = 7;
 }

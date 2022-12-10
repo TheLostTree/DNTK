@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message VectorPlane {
-	float x = 1;
-	float y = 2;
+  float x = 1;
+  float y = 2;
 }

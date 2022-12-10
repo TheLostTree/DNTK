@@ -18,16 +18,15 @@ syntax = "proto3";
 
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message EvtRushMoveInfo {
-	int32 state_name_hash = 11;
-	Vector rush_to_pos = 9;
-	Vector rush_attack_target_pos = 8;
-	uint32 entity_id = 4;
-	float time_range = 15;
-	Vector velocity = 6;
-	Vector pos = 2;
-	int32 face_angle_compact = 10;
+  Vector velocity = 8;
+  int32 state_name_hash = 4;
+  uint32 entity_id = 12;
+  Vector pos = 7;
+  int32 face_angle_compact = 1;
+  float time_range = 13;
+  Vector Unk3300_NEBMDDGPBON = 15;
+  Vector Unk3300_FGAPBJIPJFG = 5;
 }

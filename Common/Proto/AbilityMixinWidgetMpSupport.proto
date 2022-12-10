@@ -16,9 +16,8 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message AbilityMixinWidgetMpSupport {
-	uint32 target_entity_id = 9;
+  uint32 target_entity_id = 2;
 }

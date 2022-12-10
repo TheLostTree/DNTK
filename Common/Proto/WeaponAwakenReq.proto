@@ -16,15 +16,19 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 695
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message WeaponAwakenReq {
-	uint64 item_guid = 10;
-	map<uint32, uint32> affix_level_map = 7;
-	uint64 target_weapon_guid = 9;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 633;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  map<uint32, uint32> affix_level_map = 13;
+  uint64 target_weapon_guid = 5;
+  uint64 item_guid = 6;
 }

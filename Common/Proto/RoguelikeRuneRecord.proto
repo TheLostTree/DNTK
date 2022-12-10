@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message RoguelikeRuneRecord {
-	uint32 left_count = 14;
-	uint32 rune_id = 6;
-	uint32 max_count = 4;
+  uint32 rune_id = 10;
+  uint32 Unk3300_JLOLMLFAPHH = 1;
+  uint32 Unk3300_IGBOJLPPKON = 11;
 }

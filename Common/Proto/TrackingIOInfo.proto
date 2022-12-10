@@ -16,15 +16,14 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message TrackingIOInfo {
-	string rydevicetype = 11;
-	string mac = 6;
-	string deviceid = 9;
-	string client_tz = 5;
-	string current_caid = 7;
-	string cached_caid = 15;
-	string appid = 1;
+  string Unk3300_KGGPDKGDELG = 10;
+  string Unk3300_PIBFPDAMJLE = 12;
+  string Unk3300_NMDNLHLAKAM = 7;
+  string Unk3300_GEJJKDLGFPH = 5;
+  string Unk3300_CNPIGDOEJPB = 2;
+  string Unk3300_CCOGBICMHKG = 9;
+  string Unk3300_DJHKHEFPCDK = 1;
 }

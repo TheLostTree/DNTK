@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message CurVehicleInfo {
-	uint32 entity_id = 1;
-	uint32 pos = 2;
+  uint32 entity_id = 1;
+  uint32 pos = 2;
 }

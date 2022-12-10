@@ -20,16 +20,15 @@ import "FleurFairBalloonInfo.proto";
 import "FleurFairFallInfo.proto";
 import "FleurFairMusicGameInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message FleurFairMinigameInfo {
-	uint32 minigame_id = 13;
-	bool is_open = 8;
-	uint32 open_time = 15;
-	oneof detail {
-		FleurFairBalloonInfo balloon_info = 12;
-		FleurFairFallInfo fall_info = 11;
-		FleurFairMusicGameInfo music_info = 9;
-	}
+  uint32 minigame_id = 3;
+  bool is_open = 15;
+  uint32 open_time = 13;
+  oneof detail {
+    FleurFairBalloonInfo balloon_info = 1;
+    FleurFairFallInfo fall_info = 10;
+    FleurFairMusicGameInfo music_info = 14;
+  }
 }

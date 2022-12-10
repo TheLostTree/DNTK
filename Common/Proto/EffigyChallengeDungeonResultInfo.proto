@@ -16,13 +16,12 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message EffigyChallengeDungeonResultInfo {
-	uint32 challenge_score = 7;
-	bool is_in_time_limit = 8;
-	uint32 challenge_id = 6;
-	bool is_success = 15;
-	uint32 challenge_max_score = 13;
+  uint32 challenge_score = 12;
+  uint32 challenge_max_score = 8;
+  bool is_success = 2;
+  bool is_in_time_limit = 1;
+  uint32 challenge_id = 15;
 }

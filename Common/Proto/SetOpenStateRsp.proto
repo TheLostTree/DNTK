@@ -16,15 +16,18 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 104
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message SetOpenStateRsp {
-	uint32 key = 9;
-	int32 retcode = 14;
-	uint32 value = 15;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 144;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  int32 retcode = 4;
+  uint32 value = 5;
+  uint32 key = 12;
 }

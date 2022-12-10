@@ -16,14 +16,17 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 8466
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message CommonPlayerTipsNotify {
-	uint32 notify_type = 3;
-	repeated string text_map_id_list = 9;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 8167;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 notify_type = 15;
+  repeated string text_map_id_list = 8;
 }

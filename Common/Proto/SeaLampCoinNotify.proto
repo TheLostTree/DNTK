@@ -16,13 +16,16 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 2114
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message SeaLampCoinNotify {
-	uint32 sea_lamp_coin = 8;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 2188;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 sea_lamp_coin = 8;
 }

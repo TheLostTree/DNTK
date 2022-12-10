@@ -18,13 +18,16 @@ syntax = "proto3";
 
 import "ScenePlayBattleInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 4422
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message ScenePlayBattleInfoNotify {
-	ScenePlayBattleInfo battle_info = 11;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 4429;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  ScenePlayBattleInfo battle_info = 8;
 }

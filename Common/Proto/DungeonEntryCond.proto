@@ -18,10 +18,9 @@ syntax = "proto3";
 
 import "DungeonEntryBlockReason.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message DungeonEntryCond {
-	DungeonEntryBlockReason cond_reason = 7;
-	uint32 param1 = 8;
+  DungeonEntryBlockReason cond_reason = 2;
+  uint32 param1 = 1;
 }

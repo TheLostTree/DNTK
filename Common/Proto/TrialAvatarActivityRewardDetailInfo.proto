@@ -16,12 +16,11 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message TrialAvatarActivityRewardDetailInfo {
-	bool passed_dungeon = 2;
-	uint32 trial_avatar_index_id = 4;
-	bool received_reward = 5;
-	uint32 reward_id = 7;
+  uint32 trial_avatar_index_id = 4;
+  bool Unk3300_IFEPGCKHODL = 14;
+  bool Unk3300_NEJLGBBFDPH = 5;
+  uint32 reward_id = 11;
 }

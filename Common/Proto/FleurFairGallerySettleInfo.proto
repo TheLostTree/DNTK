@@ -16,13 +16,12 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message FleurFairGallerySettleInfo {
-	uint32 energy = 2;
-	uint32 gallery_stage_index = 11;
-	map<uint32, int32> energy_stat_map = 6;
-	uint32 gallery_stage_count = 9;
-	bool is_success = 1;
+  bool is_success = 8;
+  map<uint32, int32> energy_stat_map = 2;
+  uint32 energy = 3;
+  uint32 gallery_stage_index = 6;
+  uint32 gallery_stage_count = 15;
 }

@@ -18,12 +18,11 @@ syntax = "proto3";
 
 import "TowerLevelRecord.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message TowerFloorRecord {
-	uint32 floor_star_reward_progress = 15;
-	map<uint32, uint32> passed_level_map = 8;
-	uint32 floor_id = 12;
-	repeated TowerLevelRecord passed_level_record_list = 2;
+  map<uint32, uint32> passed_level_map = 11;
+  repeated TowerLevelRecord passed_level_record_list = 2;
+  uint32 floor_id = 12;
+  uint32 floor_star_reward_progress = 4;
 }

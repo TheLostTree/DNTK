@@ -16,19 +16,18 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message Investigation {
-	uint32 total_progress = 5;
-	State state = 2;
-	uint32 progress = 13;
-	uint32 id = 9;
+  enum State {
+    STATE_INVALID = 0;
+    STATE_IN_PROGRESS = 1;
+    STATE_COMPLETE = 2;
+    STATE_REWARD_TAKEN = 3;
+  }
 
-	enum State {
-		STATE_INVALID = 0;
-		STATE_IN_PROGRESS = 1;
-		STATE_COMPLETE = 2;
-		STATE_REWARD_TAKEN = 3;
-	}
+  uint32 total_progress = 5;
+  uint32 progress = 14;
+  uint32 id = 10;
+  State state = 6;
 }

@@ -18,15 +18,18 @@ syntax = "proto3";
 
 import "ForgeQueueData.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 641
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message ForgeGetQueueDataRsp {
-	map<uint32, ForgeQueueData> forge_queue_map = 2;
-	int32 retcode = 15;
-	uint32 max_queue_num = 6;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 667;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 max_queue_num = 4;
+  map<uint32, ForgeQueueData> forge_queue_map = 9;
+  int32 retcode = 15;
 }

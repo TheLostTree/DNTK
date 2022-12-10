@@ -16,17 +16,20 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 4362
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message ScenePlayOwnerCheckRsp {
-	repeated uint32 param_list = 8;
-	bool is_skip_match = 1;
-	uint32 play_id = 9;
-	uint32 wrong_uid = 5;
-	int32 retcode = 3;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 4406;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 wrong_uid = 1;
+  repeated uint32 param_list = 6;
+  int32 retcode = 7;
+  bool is_skip_match = 14;
+  uint32 play_id = 4;
 }

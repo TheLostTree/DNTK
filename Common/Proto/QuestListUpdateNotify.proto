@@ -18,13 +18,16 @@ syntax = "proto3";
 
 import "Quest.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 498
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message QuestListUpdateNotify {
-	repeated Quest quest_list = 6;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 430;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  repeated Quest quest_list = 7;
 }

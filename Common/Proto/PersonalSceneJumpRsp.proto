@@ -18,15 +18,18 @@ syntax = "proto3";
 
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 280
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message PersonalSceneJumpRsp {
-	uint32 dest_scene_id = 5;
-	int32 retcode = 8;
-	Vector dest_pos = 11;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 274;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 dest_scene_id = 3;
+  Vector dest_pos = 8;
+  int32 retcode = 7;
 }

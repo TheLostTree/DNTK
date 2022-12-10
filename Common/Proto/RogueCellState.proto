@@ -16,13 +16,12 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 enum RogueCellState {
-	ROGUE_CELL_STATE_NONE = 0;
-	ROGUE_CELL_STATE_BATTLE = 1;
-	ROGUE_CELL_STATE_SUCCESS = 2;
-	ROGUE_CELL_STATE_FINISH = 3;
-	ROGUE_CELL_STATE_Unk2200_KKHGKOBCFKJ = 4;
+  ROGUE_CELL_STATE_NONE = 0;
+  ROGUE_CELL_STATE_BATTLE = 1;
+  ROGUE_CELL_STATE_SUCCESS = 2;
+  ROGUE_CELL_STATE_FINISH = 3;
+  ROGUE_CELL_STATE_TAKEN_CHEST = 4;
 }

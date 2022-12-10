@@ -21,46 +21,50 @@ import "FeatureBlockInfo.proto";
 import "ResVersionConfig.proto";
 import "ShortAbilityHashPair.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 135
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message PlayerLoginRsp {
-	map<string, int32> ability_hash_map = 11;
-	bool is_audit = 1685;
-	bool is_new_player = 8;
-	ResVersionConfig res_version_config = 1969;
-	bool is_enable_client_hash_debug = 932;
-	string client_md5 = 1830;
-	uint32 client_data_version = 1;
-	string country_code = 1900;
-	bool is_relogin = 10;
-	bytes player_data = 13;
-	string game_biz = 5;
-	map<uint32, BlockInfo> block_info_map = 571;
-	string register_cps = 2040;
-	ResVersionConfig next_res_version_config = 1573;
-	bool is_transfer = 2018;
-	uint32 target_home_owner_uid = 553;
-	repeated ShortAbilityHashPair short_ability_hash_map = 250;
-	int32 ability_hash_code = 12;
-	bool is_sc_open = 1429;
-	uint32 client_silence_data_version = 6;
-	string birthday = 624;
-	bool is_use_ability_hash = 2;
-	string client_silence_version_suffix = 1299;
-	uint32 player_data_version = 7;
-	bool is_data_need_relogin = 951;
-	repeated FeatureBlockInfo feature_block_info_list = 1352;
-	string client_silence_md5 = 1746;
-	uint32 target_uid = 14;
-	double total_tick_time = 125;
-	uint64 login_rand = 4;
-	bytes sc_info = 2024;
-	string client_version_suffix = 1047;
-	string next_resource_url = 621;
-	int32 retcode = 15;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 119;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint64 login_rand = 9;
+  bytes Unk3300_DHCMDHHDLFF = 2;
+  string Unk3300_HMGCPAGLDHB = 16;
+  double total_tick_time = 530;
+  bool Unk3300_LLIJKLDBHNN = 5;
+  bool is_audit = 930;
+  string birthday = 1387;
+  bool Unk3300_HGFNECIJDLN = 13;
+  string client_silence_version_suffix = 908;
+  string client_version_suffix = 1845;
+  string next_resource_url = 1324;
+  bool Unk3300_EJKCNNDFAAI = 196;
+  repeated ShortAbilityHashPair short_ability_hash_map = 1373;
+  bool is_data_need_relogin = 1119;
+  ResVersionConfig res_version_config = 808;
+  uint32 client_silence_data_version = 1;
+  uint32 target_uid = 15;
+  string Unk3300_NEICPFBPNPD = 99;
+  bool Unk3300_CANONIPHMDI = 1522;
+  bool Unk3300_IIHDKKNJPGD = 8;
+  uint32 player_data_version = 14;
+  bytes Unk3300_MOPDDGHMKBD = 1888;
+  string country_code = 360;
+  ResVersionConfig next_res_version_config = 1688;
+  bool Unk3300_IADLIIMGDMC = 17;
+  map<uint32, BlockInfo> block_info_map = 2018;
+  bool is_transfer = 295;
+  uint32 target_home_owner_uid = 446;
+  string game_biz = 4;
+  map<string, int32> ability_hash_map = 3;
+  int32 ability_hash_code = 12;
+  uint32 client_data_version = 10;
+  string Unk3300_OPGDBOLKLJA = 1299;
+  int32 retcode = 7;
+  repeated FeatureBlockInfo feature_block_info_list = 138;
 }

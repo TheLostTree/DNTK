@@ -16,15 +16,14 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message SeaLampActivityDetailInfo {
-	uint32 phase_id = 14;
-	repeated uint32 taken_phase_reward_list = 1;
-	repeated uint32 taken_contribution_reward_list = 7;
-	uint32 progress = 8;
-	uint32 contribution = 15;
-	uint32 factor = 13;
-	uint32 days = 4;
+  repeated uint32 Unk3300_ODBFFAIIPMB = 2;
+  uint32 days = 6;
+  uint32 Unk3300_DGMGNJLHFMB = 8;
+  uint32 progress = 5;
+  repeated uint32 Unk3300_FGHDJJCLNFN = 14;
+  uint32 Unk3300_GBCCJMBPBBI = 11;
+  uint32 phase_id = 3;
 }

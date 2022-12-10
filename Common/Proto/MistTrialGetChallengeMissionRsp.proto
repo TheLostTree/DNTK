@@ -18,15 +18,18 @@ syntax = "proto3";
 
 import "MistTrialMissionInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 8508
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message MistTrialGetChallengeMissionRsp {
-	uint32 trial_id = 1;
-	repeated MistTrialMissionInfo mission_info_list = 15;
-	int32 retcode = 11;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 8193;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 trial_id = 6;
+  repeated MistTrialMissionInfo mission_info_list = 3;
+  int32 retcode = 7;
 }

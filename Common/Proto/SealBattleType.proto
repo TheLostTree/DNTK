@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 enum SealBattleType {
-	SEAL_BATTLE_TYPE_KEEP_ALIVE = 0;
-	SEAL_BATTLE_TYPE_KILL_MONSTER = 1;
-	SEAL_BATTLE_TYPE_ENERGY_CHARGE = 2;
+  SEAL_BATTLE_TYPE_KEEP_ALIVE = 0;
+  SEAL_BATTLE_TYPE_KILL_MONSTER = 1;
+  SEAL_BATTLE_TYPE_ENERGY_CHARGE = 2;
 }

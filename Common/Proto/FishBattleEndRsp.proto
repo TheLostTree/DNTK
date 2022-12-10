@@ -19,26 +19,29 @@ syntax = "proto3";
 import "FishBattleResult.proto";
 import "ItemParam.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 5842
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message FishBattleEndRsp {
-	bool is_got_reward = 10;
-	repeated ItemParam reward_item_list = 11;
-	repeated ItemParam talent_item_list = 13;
-	repeated ItemParam drop_item_list = 9;
-	int32 retcode = 7;
-	FishNoRewardReason no_reward_reason = 14;
-	FishBattleResult battle_result = 6;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 5845;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
 
-	enum FishNoRewardReason {
-		FISH_NO_REWARD_REASON_NONE = 0;
-		FISH_NO_REWARD_REASON_ACTIVITY_LIMIT = 1;
-		FISH_NO_REWARD_REASON_BAG_LIMIT = 2;
-		FISH_NO_REWARD_REASON_POOL_LIMIT = 3;
-	}
+  enum FishNoRewardReason {
+    FISH_NO_REWARD_REASON_NONE = 0;
+    FISH_NO_REWARD_REASON_ACTIVITY_LIMIT = 1;
+    FISH_NO_REWARD_REASON_BAG_LIMIT = 2;
+    FISH_NO_REWARD_REASON_POOL_LIMIT = 3;
+  }
+
+  FishBattleResult battle_result = 6;
+  FishNoRewardReason no_reward_reason = 2;
+  int32 retcode = 9;
+  repeated ItemParam Unk3300_ABBBGOBDJEC = 12;
+  bool is_got_reward = 8;
+  repeated ItemParam Unk3300_MDCKKPGNKGL = 1;
+  repeated ItemParam reward_item_list = 15;
 }

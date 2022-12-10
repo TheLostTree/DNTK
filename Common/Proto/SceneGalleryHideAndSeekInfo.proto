@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message SceneGalleryHideAndSeekInfo {
-	repeated uint32 visible_uid_list = 13;
-	repeated uint32 caught_uid_list = 4;
+  repeated uint32 Unk3300_LHMHALKDBBN = 10;
+  repeated uint32 Unk3300_CNLKMGFFAEC = 7;
 }

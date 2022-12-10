@@ -20,12 +20,11 @@ import "ChannelerSlabBuffInfo.proto";
 import "ChannelerSlabChallengeStage.proto";
 import "ChannelerSlabLoopDungeonStageInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message ChannelerSlabActivityDetailInfo {
-	ChannelerSlabBuffInfo buff_info = 1;
-	ChannelerSlabLoopDungeonStageInfo loop_dungeon_stage_info = 7;
-	repeated ChannelerSlabChallengeStage stage_list = 15;
-	uint32 play_end_time = 3;
+  ChannelerSlabLoopDungeonStageInfo loop_dungeon_stage_info = 2;
+  ChannelerSlabBuffInfo buff_info = 9;
+  repeated ChannelerSlabChallengeStage stage_list = 8;
+  uint32 play_end_time = 14;
 }

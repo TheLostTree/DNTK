@@ -18,13 +18,16 @@ syntax = "proto3";
 
 import "MainCoop.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 1968
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message MainCoopUpdateNotify {
-	repeated MainCoop main_coop_list = 5;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 1991;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  repeated MainCoop main_coop_list = 10;
 }

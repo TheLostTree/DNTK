@@ -18,15 +18,18 @@ syntax = "proto3";
 
 import "SceneRouteChangeInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 240
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message SceneRouteChangeNotify {
-	uint32 scene_id = 12;
-	uint32 scene_time = 11;
-	repeated SceneRouteChangeInfo route_list = 2;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 285;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 scene_time = 3;
+  repeated SceneRouteChangeInfo route_list = 4;
+  uint32 scene_id = 11;
 }

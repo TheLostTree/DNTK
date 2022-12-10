@@ -18,13 +18,16 @@ syntax = "proto3";
 
 import "WorldRoutineTypeInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 3525
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message WorldRoutineTypeRefreshNotify {
-	WorldRoutineTypeInfo world_routine_type = 7;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 3522;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  WorldRoutineTypeInfo world_routine_type = 1;
 }

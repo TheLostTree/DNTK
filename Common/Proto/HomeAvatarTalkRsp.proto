@@ -18,14 +18,17 @@ syntax = "proto3";
 
 import "HomeAvatarTalkFinishInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 4464
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message HomeAvatarTalkRsp {
-	int32 retcode = 8;
-	HomeAvatarTalkFinishInfo avatar_talk_info = 3;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 4718;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  int32 retcode = 10;
+  HomeAvatarTalkFinishInfo avatar_talk_info = 4;
 }

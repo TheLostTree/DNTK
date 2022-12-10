@@ -18,26 +18,29 @@ syntax = "proto3";
 
 import "ChapterState.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 405
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message ChapterStateNotify {
-	ChapterState chapter_state = 9;
-	NeedPlayerLevel need_player_level = 10;
-	NeedBeginTime need_begin_time = 1;
-	uint32 chapter_id = 2;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 442;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
 
-	message NeedPlayerLevel {
-		bool is_limit = 2;
-		uint32 config_need_player_level = 11;
-	}
+  message NeedPlayerLevel {
+    bool is_limit = 12;
+    uint32 config_need_player_level = 3;
+  }
 
-	message NeedBeginTime {
-		uint32 config_need_begin_time = 3;
-		bool is_limit = 7;
-	}
+  message NeedBeginTime {
+    bool is_limit = 4;
+    uint32 config_need_begin_time = 14;
+  }
+
+  uint32 chapter_id = 9;
+  NeedBeginTime need_begin_time = 13;
+  ChapterState chapter_state = 1;
+  NeedPlayerLevel need_player_level = 5;
 }

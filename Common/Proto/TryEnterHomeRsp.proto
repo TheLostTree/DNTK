@@ -16,15 +16,18 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 4653
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message TryEnterHomeRsp {
-	uint32 target_uid = 15;
-	int32 retcode = 4;
-	repeated uint32 param_list = 10;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 4796;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  repeated uint32 param_list = 11;
+  uint32 target_uid = 2;
+  int32 retcode = 4;
 }

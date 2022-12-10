@@ -16,15 +16,14 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message BuoyantCombatGallerySettleInfo {
-	uint32 gallery_level = 12;
-	uint32 final_score = 15;
-	uint32 kill_monster_count = 9;
-	uint32 kill_target_count = 1;
-	uint32 kill_special_monster_count = 4;
-	uint32 gallery_id = 2;
-	uint32 gallery_multiple = 11;
+  uint32 gallery_level = 11;
+  uint32 kill_monster_count = 1;
+  uint32 kill_special_monster_count = 9;
+  uint32 Unk3300_HLFHLPEKOML = 7;
+  uint32 gallery_id = 2;
+  uint32 Unk3300_KPCJBOOGEMG = 10;
+  uint32 final_score = 12;
 }

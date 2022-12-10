@@ -19,14 +19,18 @@ syntax = "proto3";
 import "EvtRushMoveInfo.proto";
 import "ForwardType.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 375
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message EvtRushMoveNotify {
-	ForwardType forward_type = 1;
-	EvtRushMoveInfo evt_rush_move_info = 15;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 339;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  EvtRushMoveInfo evt_rush_move_info = 1;
+  ForwardType forward_type = 10;
 }

@@ -16,21 +16,24 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 101
-// TargetService: 101
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message DebugNotify {
-	uint32 id = 1;
-	string name = 2;
-	Retcode retcode = 3;
+  // enum Enum {
+  //   option allow_alias = true;
+  //   ZREO = 0;
+  //   CMD_ID = 101;
+  //   TARGET_SERVICE = 101;
+  //   ENET_CHANNEL_ID = 2;
+  //   ENET_IS_RELIABLE = 1;
+  // }
 
-	enum Retcode {
-		RETCODE_SUCC = 0;
-		RETCODE_FAIL = 1;
-	}
+  enum Retcode {
+    RETCODE_SUCC = 0;
+    RETCODE_FAIL = 1;
+  }
+
+  uint32 id = 1;
+  string name = 2;
+  Retcode retcode = 3;
 }

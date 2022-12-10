@@ -18,15 +18,19 @@ syntax = "proto3";
 
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 1610
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message AvatarDieAnimationEndReq {
-	Vector reborn_pos = 3;
-	uint64 die_guid = 7;
-	uint32 skill_id = 8;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 1695;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  uint64 die_guid = 13;
+  Vector reborn_pos = 14;
+  uint32 skill_id = 9;
 }

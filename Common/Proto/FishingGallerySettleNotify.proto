@@ -18,15 +18,18 @@ syntax = "proto3";
 
 import "FishingGallerySettleInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 8780
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message FishingGallerySettleNotify {
-	uint32 gallery_id = 6;
-	uint32 level_id = 15;
-	FishingGallerySettleInfo settle_info = 13;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 8464;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 gallery_id = 5;
+  FishingGallerySettleInfo settle_info = 4;
+  uint32 level_id = 12;
 }

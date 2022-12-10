@@ -18,14 +18,17 @@ syntax = "proto3";
 
 import "MapAreaInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 3328
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message GetMapAreaRsp {
-	int32 retcode = 14;
-	repeated MapAreaInfo map_area_info_list = 9;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 3275;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  int32 retcode = 14;
+  repeated MapAreaInfo map_area_info_list = 12;
 }

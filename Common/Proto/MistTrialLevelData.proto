@@ -16,11 +16,15 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
+import "MistTrialBestAvatar.proto";
+
 option csharp_namespace = "Common.Protobuf";
 
 message MistTrialLevelData {
-	uint32 open_time = 1;
-	bool is_open = 12;
-	uint32 level_id = 7;
+  uint32 open_time = 10;
+  repeated MistTrialBestAvatar best_avatar_list = 3;
+  uint32 level_id = 14;
+  uint32 first_pass_time = 1;
+  MistTrialBestAvatar best_hit_avatar = 11;
+  bool is_open = 9;
 }

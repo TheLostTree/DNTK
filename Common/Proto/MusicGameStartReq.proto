@@ -16,15 +16,19 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 8406
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message MusicGameStartReq {
-	uint32 music_basic_id = 2;
-	bool Unk2700_IOKPIKJDEHG = 11;
-	uint64 Unk2700_CEPGMKAHHCD = 3;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 8820;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  uint32 music_basic_id = 11;
+  bool is_save_score = 12;
+  uint64 ugc_guid = 9;
 }

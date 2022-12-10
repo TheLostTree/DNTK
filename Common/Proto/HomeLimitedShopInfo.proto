@@ -18,14 +18,13 @@ syntax = "proto3";
 
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message HomeLimitedShopInfo {
-	fixed32 next_close_time = 9;
-	fixed32 next_guest_open_time = 11;
-	Vector djinn_rot = 7;
-	uint32 uid = 4;
-	fixed32 next_open_time = 6;
-	Vector djinn_pos = 2;
+  uint32 uid = 9;
+  uint32 Unk3300_FKGDIDFIBAA = 8;
+  Vector djinn_rot = 11;
+  uint32 Unk3300_DLIEFPNMGFC = 5;
+  Vector djinn_pos = 2;
+  uint32 Unk3300_NOJPDKDPPPA = 15;
 }

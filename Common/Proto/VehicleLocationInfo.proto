@@ -18,16 +18,15 @@ syntax = "proto3";
 
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message VehicleLocationInfo {
-	Vector rot = 14;
-	uint32 entity_id = 15;
-	float cur_hp = 11;
-	uint32 owner_uid = 5;
-	Vector pos = 1;
-	repeated uint32 uid_list = 3;
-	uint32 gadget_id = 13;
-	float max_hp = 6;
+  Vector rot = 5;
+  uint32 owner_uid = 11;
+  repeated uint32 uid_list = 4;
+  float Unk3300_MLICEAKLOIH = 2;
+  Vector pos = 9;
+  uint32 gadget_id = 1;
+  uint32 entity_id = 14;
+  float Unk3300_MNNMOCIIEAJ = 15;
 }

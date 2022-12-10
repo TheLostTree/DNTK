@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message FurnitureMakeHelpData {
-	uint32 times = 2;
-	uint32 uid = 13;
+  uint32 times = 12;
+  uint32 uid = 2;
 }

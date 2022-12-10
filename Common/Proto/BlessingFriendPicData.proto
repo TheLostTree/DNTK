@@ -18,15 +18,14 @@ syntax = "proto3";
 
 import "ProfilePicture.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message BlessingFriendPicData {
-	map<uint32, uint32> pic_num_map = 4;
-	uint32 avatar_id = 5;
-	string remark_name = 11;
-	string nickname = 14;
-	string signature = 1;
-	ProfilePicture profile_picture = 6;
-	uint32 uid = 9;
+  string remark_name = 8;
+  uint32 avatar_id = 4;
+  string signature = 13;
+  map<uint32, uint32> pic_num_map = 5;
+  uint32 uid = 15;
+  string nickname = 9;
+  ProfilePicture profile_picture = 7;
 }

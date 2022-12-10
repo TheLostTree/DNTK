@@ -16,9 +16,8 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message BonusOpActivityInfo {
-	uint32 left_bonus_count = 11;
+  uint32 left_bonus_count = 8;
 }

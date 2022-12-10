@@ -16,13 +16,12 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message TreasureMapBonusChallengeInfo {
-	bool is_done = 5;
-	uint32 config_id = 10;
-	bool is_active = 1;
-	map<uint32, bool> fragment_map = 12;
-	uint32 solution_id = 8;
+  bool is_done = 5;
+  uint32 solution_id = 15;
+  map<uint32, bool> fragment_map = 11;
+  bool is_active = 13;
+  uint32 config_id = 10;
 }

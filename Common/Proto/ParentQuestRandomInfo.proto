@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message ParentQuestRandomInfo {
-	repeated uint32 factor_list = 1;
-	uint32 template_id = 8;
-	uint32 entrance_id = 2;
+  repeated uint32 factor_list = 1;
+  uint32 entrance_id = 8;
+  uint32 template_id = 15;
 }

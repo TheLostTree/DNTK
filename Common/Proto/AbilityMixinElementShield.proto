@@ -16,14 +16,13 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message AbilityMixinElementShield {
-	float sub_shield = 10;
-	float shield = 8;
-	uint32 absorb_type = 1;
-	uint32 Unk2700_PBKBDDLNBEA = 4;
-	bool is_shield_broken = 9;
-	float max_shield = 12;
+  uint32 player_num = 9;
+  float shield = 5;
+  bool is_shield_broken = 8;
+  float sub_shield = 4;
+  float max_shield = 13;
+  uint32 absorb_type = 10;
 }

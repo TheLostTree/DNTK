@@ -16,15 +16,18 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 8043
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message ActivityTakeAllScoreRewardRsp {
-	repeated uint32 reward_config_list = 14;
-	int32 retcode = 15;
-	uint32 activity_id = 7;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 8043;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  repeated uint32 reward_config_list = 10;
+  int32 retcode = 9;
+  uint32 activity_id = 3;
 }

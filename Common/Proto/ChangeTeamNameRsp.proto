@@ -16,15 +16,18 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 1666
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message ChangeTeamNameRsp {
-	int32 retcode = 11;
-	string team_name = 2;
-	int32 team_id = 4;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 1696;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  int32 retcode = 2;
+  string team_name = 15;
+  int32 team_id = 5;
 }

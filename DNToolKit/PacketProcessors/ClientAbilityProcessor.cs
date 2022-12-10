@@ -25,7 +25,7 @@ public class ClientAbilityProcessor
         {
             EntityId = protob.EntityId,
             Invokes = invokes,
-            Unk2200FNAFDMAPLHP = protob.Unk2200FNAFDMAPLHP
+            IsInitHash = protob.IsInitHash
         };
 
     }
@@ -41,7 +41,7 @@ public class ClientAbilityProcessor
     {
         public uint EntityId;
         public List<AbilityInvokeProcessor.ObilityInvokeAntree> Invokes;
-        public bool Unk2200FNAFDMAPLHP;
+        public bool IsInitHash;
 
     }
 }

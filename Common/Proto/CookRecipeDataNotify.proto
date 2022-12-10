@@ -18,13 +18,16 @@ syntax = "proto3";
 
 import "CookRecipeData.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 106
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message CookRecipeDataNotify {
-	CookRecipeData recipe_data = 4;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 110;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  CookRecipeData recipe_data = 1;
 }

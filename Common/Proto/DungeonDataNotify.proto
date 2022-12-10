@@ -16,13 +16,16 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 982
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message DungeonDataNotify {
-	map<uint32, uint32> dungeon_data_map = 1;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 990;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  map<uint32, uint32> dungeon_data_map = 7;
 }

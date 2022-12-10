@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 enum WidgetCreatorOpType {
-	WIDGET_CREATOR_OP_TYPE_NONE = 0;
-	WIDGET_CREATOR_OP_TYPE_RETRACT = 1;
-	WIDGET_CREATOR_OP_TYPE_RETRACT_AND_CREATE = 2;
+  WIDGET_CREATOR_OP_TYPE_NONE = 0;
+  WIDGET_CREATOR_OP_TYPE_RETRACT = 1;
+  WIDGET_CREATOR_OP_TYPE_RETRACT_AND_CREATE = 2;
 }

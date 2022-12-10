@@ -19,17 +19,16 @@ syntax = "proto3";
 import "ExhibitionDisplayInfo.proto";
 import "OnlinePlayerInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message BounceConjuringGallerySettleInfo {
-	OnlinePlayerInfo player_info = 14;
-	uint32 destroyed_machine_count = 5;
-	uint32 fever_count = 6;
-	uint32 normal_hit_count = 4;
-	float damage = 11;
-	map<uint32, uint32> gadget_count_map = 15;
-	uint32 score = 12;
-	uint32 perfect_hit_count = 8;
-	repeated ExhibitionDisplayInfo card_list = 7;
+  uint32 Unk3300_PELHBJDMKAE = 6;
+  uint32 score = 15;
+  map<uint32, uint32> gadget_count_map = 3;
+  uint32 Unk3300_CNGOBOFDEOE = 11;
+  uint32 Unk3300_NKGFKLGDFAC = 1;
+  OnlinePlayerInfo player_info = 2;
+  float damage = 12;
+  uint32 Unk3300_BJHCDKNFDFN = 7;
+  repeated ExhibitionDisplayInfo card_list = 9;
 }

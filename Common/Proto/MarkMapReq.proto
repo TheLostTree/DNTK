@@ -18,22 +18,26 @@ syntax = "proto3";
 
 import "MapMarkPoint.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 3466
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message MarkMapReq {
-	MapMarkPoint mark = 8;
-	MapMarkPoint old = 6;
-	Operation op = 9;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 3282;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
 
-	enum Operation {
-		OPERATION_ADD = 0;
-		OPERATION_MOD = 1;
-		OPERATION_DEL = 2;
-		OPERATION_GET = 3;
-	}
+  enum Operation {
+    OPERATION_ADD = 0;
+    OPERATION_MOD = 1;
+    OPERATION_DEL = 2;
+    OPERATION_GET = 3;
+  }
+
+  Operation op = 3;
+  MapMarkPoint Unk3300_IEBKBPOBECB = 6;
+  MapMarkPoint Unk3300_BGFDGKONNBI = 13;
 }

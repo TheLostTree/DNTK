@@ -18,10 +18,9 @@ syntax = "proto3";
 
 import "CustomCommonNodeInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message HomeCustomFurnitureInfo {
-	repeated CustomCommonNodeInfo sub_furniture_list = 12;
-	uint32 guid = 6;
+  uint32 guid = 7;
+  repeated CustomCommonNodeInfo sub_furniture_list = 11;
 }

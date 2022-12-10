@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 enum MaterialDeleteReturnType {
-	MATERIAL_DELETE_RETURN_TYPE_BAG = 0;
-	MATERIAL_DELETE_RETURN_TYPE_SEED = 1;
+  MATERIAL_DELETE_RETURN_TYPE_BAG = 0;
+  MATERIAL_DELETE_RETURN_TYPE_SEED = 1;
 }

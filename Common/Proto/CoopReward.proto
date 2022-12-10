@@ -16,16 +16,15 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message CoopReward {
-	uint32 id = 5;
-	State state = 6;
+  enum State {
+    STATE_UNLOCK = 0;
+    STATE_LOCK = 1;
+    STATE_TAKEN = 2;
+  }
 
-	enum State {
-		STATE_UNLOCK = 0;
-		STATE_LOCK = 1;
-		STATE_TAKEN = 2;
-	}
+  uint32 id = 5;
+  State state = 6;
 }

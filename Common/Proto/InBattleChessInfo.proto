@@ -20,17 +20,16 @@ import "ChessCardInfo.proto";
 import "ChessMysteryInfo.proto";
 import "ChessPlayerInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message InBattleChessInfo {
-	repeated uint32 ban_card_tag_list = 2;
-	uint32 round = 4;
-	repeated ChessCardInfo selected_card_info_list = 9;
-	ChessMysteryInfo mystery_info = 1;
-	map<uint32, ChessPlayerInfo> player_info_map = 8;
-	uint32 max_escapable_monsters = 6;
-	uint32 escaped_monsters = 12;
-	uint32 total_round = 14;
-	uint32 left_monsters = 15;
+  uint32 round = 2;
+  ChessMysteryInfo mystery_info = 6;
+  map<uint32, ChessPlayerInfo> player_info_map = 15;
+  uint32 max_escapable_monsters = 7;
+  uint32 escaped_monsters = 11;
+  repeated ChessCardInfo selected_card_info_list = 4;
+  uint32 total_round = 13;
+  uint32 left_monsters = 5;
+  repeated uint32 ban_card_tag_list = 1;
 }

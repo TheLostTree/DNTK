@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message ArenaChallengeMonsterLevel {
-	uint32 arena_challenge_level = 7;
-	uint32 arena_challenge_id = 15;
+  uint32 Unk3300_DBHAGHMMLAI = 8;
+  uint32 Unk3300_FDFNFLAKONG = 15;
 }

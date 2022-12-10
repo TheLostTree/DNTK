@@ -16,15 +16,19 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 1073
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message ProudSkillUpgradeReq {
-	uint64 avatar_guid = 5;
-	uint32 old_proud_skill_level = 4;
-	uint32 proud_skill_id = 14;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 1078;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  uint64 avatar_guid = 13;
+  uint32 old_proud_skill_level = 3;
+  uint32 proud_skill_id = 2;
 }

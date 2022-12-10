@@ -18,14 +18,13 @@ syntax = "proto3";
 
 import "TowerFightRecordPair.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message TowerMonthlyCombatRecord {
-	TowerFightRecordPair most_kill_avatar_pair = 14;
-	TowerFightRecordPair most_cast_normal_skill_avatar_pair = 8;
-	repeated TowerFightRecordPair most_reveal_avatar_list = 6;
-	TowerFightRecordPair most_cast_energy_skill_avatar_pair = 4;
-	TowerFightRecordPair highest_dps_avatr_pair = 12;
-	TowerFightRecordPair most_take_damage_avatar_pair = 9;
+  repeated TowerFightRecordPair most_reveal_avatar_list = 3;
+  TowerFightRecordPair Unk3300_EIGEGOGFJND = 8;
+  TowerFightRecordPair Unk3300_OALLHJPBOHO = 2;
+  TowerFightRecordPair Unk3300_KMCLPHEDNCJ = 14;
+  TowerFightRecordPair Unk3300_KIKPMNPKLDG = 7;
+  TowerFightRecordPair Unk3300_CCFHOFCIEPF = 15;
 }

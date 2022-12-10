@@ -18,11 +18,10 @@ syntax = "proto3";
 
 import "AbilityString.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message AbilityMetaAddOrGetAbilityAndTrigger {
-	AbilityString ability_name = 13;
-	float trigger_argument = 3;
-	AbilityString ability_override = 8;
+  float trigger_argument = 4;
+  AbilityString ability_name = 12;
+  AbilityString ability_override = 13;
 }

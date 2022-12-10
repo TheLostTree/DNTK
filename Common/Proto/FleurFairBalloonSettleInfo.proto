@@ -18,10 +18,9 @@ syntax = "proto3";
 
 import "BalloonSettleInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message FleurFairBalloonSettleInfo {
-	BalloonSettleInfo settle_info = 10;
-	bool is_new_record = 7;
+  BalloonSettleInfo settle_info = 5;
+  bool is_new_record = 15;
 }

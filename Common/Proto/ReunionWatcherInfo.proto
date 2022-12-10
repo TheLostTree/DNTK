@@ -16,13 +16,12 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message ReunionWatcherInfo {
-	uint32 reward_unlock_time = 12;
-	uint32 watcher_id = 3;
-	uint32 total_progress = 4;
-	uint32 cur_progress = 11;
-	bool is_taken_reward = 14;
+  uint32 total_progress = 4;
+  uint32 reward_unlock_time = 1;
+  uint32 watcher_id = 9;
+  bool is_taken_reward = 12;
+  uint32 cur_progress = 10;
 }

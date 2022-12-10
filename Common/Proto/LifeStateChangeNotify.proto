@@ -19,19 +19,22 @@ syntax = "proto3";
 import "PlayerDieType.proto";
 import "ServerBuff.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 1298
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message LifeStateChangeNotify {
-	uint32 entity_id = 4;
-	repeated ServerBuff server_buff_list = 6;
-	string attack_tag = 7;
-	uint32 move_reliable_seq = 15;
-	PlayerDieType die_type = 14;
-	uint32 life_state = 5;
-	uint32 source_entity_id = 1;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 1230;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 move_reliable_seq = 7;
+  uint32 entity_id = 8;
+  uint32 life_state = 10;
+  repeated ServerBuff server_buff_list = 15;
+  uint32 source_entity_id = 11;
+  PlayerDieType die_type = 4;
+  string attack_tag = 13;
 }

@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message HomeFishFarmingInfo {
-	repeated uint32 fish_id_list = 11;
-	uint32 fishpond_guid = 14;
+  repeated uint32 fish_id_list = 13;
+  uint32 fishpond_guid = 5;
 }

@@ -16,14 +16,17 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 1815
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message MpPlayInviteResultNotify {
-	uint32 mp_play_id = 11;
-	bool all_argee = 10;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 1839;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  bool all_agree = 14;
+  uint32 mp_play_id = 2;
 }

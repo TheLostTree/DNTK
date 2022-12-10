@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message QueryFilter {
-	int32 type_id = 9;
-	int32 area_mask = 13;
+  int32 area_mask = 4;
+  int32 type_id = 3;
 }

@@ -16,14 +16,17 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 803
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message BossChestActivateNotify {
-	repeated uint32 qualify_uid_list = 1;
-	uint32 entity_id = 12;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 861;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 entity_id = 15;
+  repeated uint32 qualify_uid_list = 7;
 }

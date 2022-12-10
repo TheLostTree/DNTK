@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 enum DealAddFriendResultType {
-	DEAL_ADD_FRIEND_RESULT_TYPE_REJECT = 0;
-	DEAL_ADD_FRIEND_RESULT_TYPE_ACCEPT = 1;
+  DEAL_ADD_FRIEND_RESULT_TYPE_REJECT = 0;
+  DEAL_ADD_FRIEND_RESULT_TYPE_ACCEPT = 1;
 }

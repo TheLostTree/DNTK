@@ -16,12 +16,11 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message ReunionSignInInfo {
-	uint32 sign_in_count = 6;
-	repeated uint32 reward_day_list = 8;
-	uint32 config_id = 12;
-	uint32 last_sign_in_time = 11;
+  uint32 Unk3300_MNJELIDKMCF = 3;
+  repeated uint32 reward_day_list = 12;
+  uint32 config_id = 8;
+  uint32 Unk3300_NFNOKBNBLGE = 10;
 }

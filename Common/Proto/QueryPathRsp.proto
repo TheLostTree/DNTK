@@ -18,22 +18,25 @@ syntax = "proto3";
 
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 2398
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message QueryPathRsp {
-	int32 query_id = 12;
-	repeated Vector corners = 6;
-	PathStatusType query_status = 8;
-	int32 retcode = 1;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 2330;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
 
-	enum PathStatusType {
-		PATH_STATUS_TYPE_FAIL = 0;
-		PATH_STATUS_TYPE_SUCC = 1;
-		PATH_STATUS_TYPE_PARTIAL = 2;
-	}
+  enum PathStatusType {
+    PATH_STATUS_TYPE_FAIL = 0;
+    PATH_STATUS_TYPE_SUCC = 1;
+    PATH_STATUS_TYPE_PARTIAL = 2;
+  }
+
+  PathStatusType query_status = 3;
+  int32 retcode = 10;
+  int32 query_id = 8;
+  repeated Vector corners = 1;
 }

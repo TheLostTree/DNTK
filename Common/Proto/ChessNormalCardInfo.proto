@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message ChessNormalCardInfo {
-	uint32 card_id = 2;
-	uint32 cost_points = 15;
-	bool is_attach_curse = 6;
+  uint32 cost_points = 3;
+  uint32 card_id = 2;
+  bool is_attach_curse = 4;
 }

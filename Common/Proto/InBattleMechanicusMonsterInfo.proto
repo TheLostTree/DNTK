@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message InBattleMechanicusMonsterInfo {
-	uint32 monster_id = 1;
-	uint32 level = 14;
-	uint32 count = 13;
+  uint32 level = 10;
+  uint32 monster_id = 8;
+  uint32 count = 9;
 }

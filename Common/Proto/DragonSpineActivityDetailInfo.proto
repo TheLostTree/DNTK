@@ -18,15 +18,14 @@ syntax = "proto3";
 
 import "DragonSpineChapterInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message DragonSpineActivityDetailInfo {
-	bool is_content_closed = 10;
-	repeated DragonSpineChapterInfo chapter_info_list = 4;
-	uint32 weapon_enhance_level = 2;
-	uint32 content_finish_time = 15;
-	uint32 shimmering_essence = 13;
-	uint32 warm_essence = 11;
-	uint32 wondrous_essence = 7;
+  bool is_content_closed = 9;
+  uint32 Unk3300_FOHJDGCAKEK = 3;
+  uint32 Unk3300_PPABOFMIGNM = 10;
+  repeated DragonSpineChapterInfo chapter_info_list = 7;
+  uint32 Unk3300_NEOCMGJCEOJ = 4;
+  uint32 Unk3300_IMLKIJAOADF = 12;
+  uint32 weapon_enhance_level = 8;
 }

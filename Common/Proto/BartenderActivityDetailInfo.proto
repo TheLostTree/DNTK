@@ -16,17 +16,16 @@
 
 syntax = "proto3";
 
-import "Unk2700_KJODHFMHMNC.proto";
-import "Unk2700_LBIDBGLGKCJ.proto";
+import "BartenderLevelInfo.proto";
+import "BartenderTaskInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message BartenderActivityDetailInfo {
-	repeated uint32 Unk2700_BMOAIJMHPGA = 3;
-	bool Unk2700_JICAAEMPNBC = 13;
-	bool is_content_closed = 6;
-	repeated Unk2700_LBIDBGLGKCJ Unk2700_MEGOPKBEHOH = 5;
-	repeated uint32 Unk2700_AIKFMMLFIJI = 14;
-	repeated Unk2700_KJODHFMHMNC Unk2700_DAGGAECBDEG = 2;
+  bool is_content_closed = 15;
+  repeated BartenderLevelInfo unlock_level_list = 10;
+  repeated uint32 Unk3300_BPCBOANPBHF = 3;
+  repeated uint32 Unk3300_OGPLCBFDHCF = 6;
+  repeated BartenderTaskInfo unlock_task_list = 5;
+  bool is_develop_module_open = 9;
 }

@@ -18,16 +18,20 @@ syntax = "proto3";
 
 import "SumoTeamData.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 8313
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message SumoSaveTeamReq {
-	uint32 activity_id = 11;
-	uint32 stage_id = 13;
-	uint32 difficulty_id = 7;
-	repeated SumoTeamData team_list = 12;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 8022;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  uint32 difficulty_id = 6;
+  uint32 stage_id = 14;
+  uint32 activity_id = 1;
+  repeated SumoTeamData team_list = 2;
 }

@@ -16,12 +16,11 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 enum HuntingOfferState {
-	HUNTING_OFFER_STATE_NONE = 0;
-	HUNTING_OFFER_STATE_STARTED = 1;
-	HUNTING_OFFER_STATE_UNSTARTED = 2;
-	HUNTING_OFFER_STATE_SUCC = 3;
+  HUNTING_OFFER_STATE_NONE = 0;
+  HUNTING_OFFER_STATE_STARTED = 1;
+  HUNTING_OFFER_STATE_UNSTARTED = 2;
+  HUNTING_OFFER_STATE_SUCC = 3;
 }

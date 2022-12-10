@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 enum LunaRiteHintStatusType {
-	LUNA_RITE_HINT_STATUS_TYPE_DEFAULT = 0;
-	LUNA_RITE_HINT_STATUS_TYPE_NO_COUNT = 1;
-	LUNA_RITE_HINT_STATUS_TYPE_FINISH = 2;
+  LUNA_RITE_HINT_STATUS_TYPE_DEFAULT = 0;
+  LUNA_RITE_HINT_STATUS_TYPE_NO_COUNT = 1;
+  LUNA_RITE_HINT_STATUS_TYPE_FINISH = 2;
 }

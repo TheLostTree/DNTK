@@ -18,9 +18,8 @@ syntax = "proto3";
 
 import "TrialAvatarActivityRewardDetailInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message TrialAvatarActivityDetailInfo {
-	repeated TrialAvatarActivityRewardDetailInfo reward_info_list = 13;
+  repeated TrialAvatarActivityRewardDetailInfo reward_info_list = 11;
 }

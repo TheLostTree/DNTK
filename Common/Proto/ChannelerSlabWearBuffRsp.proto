@@ -16,16 +16,19 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 8600
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message ChannelerSlabWearBuffRsp {
-	uint32 buff_id = 15;
-	int32 retcode = 1;
-	bool is_mp = 9;
-	uint32 slot_id = 8;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 8285;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  bool is_mp = 7;
+  uint32 buff_id = 8;
+  uint32 slot_id = 11;
+  int32 retcode = 13;
 }

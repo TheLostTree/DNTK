@@ -16,17 +16,16 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message ClientLogBodyPing {
-	string xg = 1;
-	uint32 signal_level = 2;
-	uint32 ping = 3;
-	string servertype = 4;
-	string serverip = 5;
-	string serverport = 6;
-	uint32 pcount = 7;
-	uint32 plost = 8;
-	string dns = 9;
+  string xg = 1;
+  uint32 signal_level = 2;
+  uint32 ping = 3;
+  string servertype = 4;
+  string serverip = 5;
+  string serverport = 6;
+  uint32 pcount = 7;
+  uint32 plost = 8;
+  string dns = 9;
 }

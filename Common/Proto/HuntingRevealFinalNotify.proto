@@ -19,15 +19,18 @@ syntax = "proto3";
 import "HuntingPair.proto";
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 4344
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message HuntingRevealFinalNotify {
-	uint32 finished_group_id = 5;
-	HuntingPair hunting_pair = 11;
-	Vector final_position = 2;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 4312;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  Vector final_position = 3;
+  HuntingPair hunting_pair = 9;
+  uint32 finished_group_id = 14;
 }

@@ -16,13 +16,16 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 5314
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message ChessEscapedMonstersNotify {
-	uint32 escaped_monsters = 14;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 5341;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 escaped_monsters = 14;
 }

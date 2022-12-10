@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message CookRecipeData {
-	uint32 proficiency = 13;
-	uint32 recipe_id = 9;
+  uint32 proficiency = 8;
+  uint32 recipe_id = 14;
 }

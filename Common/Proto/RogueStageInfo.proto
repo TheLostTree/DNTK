@@ -16,26 +16,25 @@
 
 syntax = "proto3";
 
-import "RoguelikeRuneRecord.proto";
 import "RogueShowAvatarTeamInfo.proto";
+import "RoguelikeRuneRecord.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message RogueStageInfo {
-	RogueShowAvatarTeamInfo avatar_team = 2;
-	bool is_passed = 5;
-	uint32 stage_id = 7;
-	uint32 revise_monster_level = 205;
-	repeated RoguelikeRuneRecord rune_record_list = 6;
-	bool is_open = 1;
-	uint32 cur_level = 4;
-	uint32 cached_coin_c_num = 1409;
-	bool is_taken_reward = 11;
-	bool is_in_combat = 12;
-	uint32 cached_coin_b_num = 14;
-	uint32 explore_cell_num = 15;
-	uint32 coin_c_num = 8;
-	bool is_explored = 9;
-	uint32 max_passed_level = 3;
+  uint32 revise_monster_level = 1966;
+  bool is_passed = 11;
+  uint32 Unk3300_GGHMFKNHPAJ = 2;
+  RogueShowAvatarTeamInfo avatar_team = 8;
+  bool is_taken_reward = 9;
+  bool Unk3300_HMCJOLLKMMB = 14;
+  repeated RoguelikeRuneRecord rune_record_list = 5;
+  bool Unk3300_HMAELBBOFDN = 6;
+  uint32 Unk3300_CMMGKMMMOAL = 3;
+  bool is_open = 13;
+  uint32 stage_id = 7;
+  uint32 Unk3300_DABPFCPCNCB = 4;
+  uint32 cur_level = 12;
+  uint32 Unk3300_OHHBEPOICLI = 1;
+  uint32 Unk3300_HPKFHLLCJBM = 275;
 }

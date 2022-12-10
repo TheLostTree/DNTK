@@ -16,12 +16,11 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message AbilityMixinShieldBar {
-	uint32 Unk2700_PBKBDDLNBEA = 14;
-	float max_shield = 15;
-	float shield = 12;
-	uint32 element_type = 13;
+  float max_shield = 8;
+  float shield = 4;
+  uint32 player_num = 3;
+  uint32 element_type = 7;
 }

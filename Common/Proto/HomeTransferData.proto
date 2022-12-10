@@ -18,10 +18,9 @@ syntax = "proto3";
 
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message HomeTransferData {
-	uint32 guid = 15;
-	Vector spawn_pos = 7;
+  Vector spawn_pos = 1;
+  uint32 guid = 5;
 }

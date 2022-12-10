@@ -18,13 +18,12 @@ syntax = "proto3";
 
 import "LunaRiteHintStatusType.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message LunaRiteAreaInfo {
-	repeated uint32 sacrifice_list = 11;
-	LunaRiteHintStatusType hint_status = 7;
-	repeated uint32 sacrifice_reward_list = 4;
-	uint32 area_id = 8;
-	uint32 challenge_index = 6;
+  repeated uint32 sacrifice_reward_list = 11;
+  uint32 area_id = 15;
+  uint32 challenge_index = 1;
+  LunaRiteHintStatusType hint_status = 7;
+  repeated uint32 sacrifice_list = 14;
 }

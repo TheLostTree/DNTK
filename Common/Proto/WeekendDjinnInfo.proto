@@ -18,10 +18,9 @@ syntax = "proto3";
 
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message WeekendDjinnInfo {
-	Vector rot = 14;
-	Vector pos = 10;
+  Vector pos = 13;
+  Vector rot = 6;
 }

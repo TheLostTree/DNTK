@@ -18,14 +18,17 @@ syntax = "proto3";
 
 import "HomeResource.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 4892
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message HomeResourceNotify {
-	HomeResource home_coin = 9;
-	HomeResource fetter_exp = 8;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 4762;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  HomeResource fetter_exp = 7;
+  HomeResource home_coin = 5;
 }

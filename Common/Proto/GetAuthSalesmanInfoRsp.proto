@@ -16,15 +16,18 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 2004
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message GetAuthSalesmanInfoRsp {
-	uint32 day_reward_id = 5;
-	int32 retcode = 6;
-	uint32 schedule_id = 11;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 2087;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 schedule_id = 15;
+  int32 retcode = 8;
+  uint32 day_reward_id = 6;
 }

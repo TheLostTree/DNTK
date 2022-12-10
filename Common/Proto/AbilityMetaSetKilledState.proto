@@ -16,9 +16,8 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message AbilityMetaSetKilledState {
-	bool killed = 2;
+  bool killed = 5;
 }

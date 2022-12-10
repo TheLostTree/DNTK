@@ -18,17 +18,21 @@ syntax = "proto3";
 
 import "ReportReasonType.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 4024
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message PlayerReportReq {
-	ReportReasonType reason = 12;
-	string content = 8;
-	uint32 target_home_module_id = 5;
-	string target_home_module_name = 6;
-	uint32 target_uid = 14;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 4022;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  string target_home_module_name = 5;
+  uint32 target_uid = 10;
+  ReportReasonType reason = 7;
+  string content = 11;
+  uint32 target_home_module_id = 15;
 }

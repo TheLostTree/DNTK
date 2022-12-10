@@ -16,15 +16,19 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 649
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message ForgeStartReq {
-	uint32 avatar_id = 7;
-	uint32 forge_id = 4;
-	uint32 forge_count = 6;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 615;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  uint32 forge_id = 8;
+  uint32 avatar_id = 1;
+  uint32 forge_count = 10;
 }

@@ -18,14 +18,17 @@ syntax = "proto3";
 
 import "FleurFairFallSettleInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 2017
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message FleurFairFallSettleNotify {
-	uint32 minigame_id = 15;
-	map<uint32, FleurFairFallSettleInfo> settle_info_map = 11;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 2136;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 minigame_id = 2;
+  map<uint32, FleurFairFallSettleInfo> settle_info_map = 13;
 }

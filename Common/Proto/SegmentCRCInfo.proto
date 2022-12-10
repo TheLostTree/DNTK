@@ -16,13 +16,12 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message SegmentCRCInfo {
-	uint32 module = 13;
-	int32 retcode = 5;
-	uint32 size = 10;
-	string crc = 3;
-	uint32 offset = 11;
+  uint32 size = 6;
+  string crc = 8;
+  uint32 module = 4;
+  int32 retcode = 3;
+  uint32 offset = 9;
 }

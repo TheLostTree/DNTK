@@ -19,10 +19,9 @@ syntax = "proto3";
 import "FishInfo.proto";
 import "FishingScore.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message FishingGallerySettleInfo {
-	map<uint32, FishInfo> fish_map = 11;
-	repeated FishingScore fishing_score_list = 15;
+  repeated FishingScore fishing_score_list = 15;
+  map<uint32, FishInfo> fish_map = 10;
 }

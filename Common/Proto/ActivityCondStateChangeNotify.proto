@@ -18,18 +18,21 @@ syntax = "proto3";
 
 import "Uint32Pair.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 2140
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message ActivityCondStateChangeNotify {
-	repeated uint32 activated_sale_id_list = 9;
-	uint32 activity_id = 4;
-	uint32 schedule_id = 5;
-	repeated uint32 expire_cond_list = 11;
-	repeated Uint32Pair disable_transfer_point_interaction_list = 12;
-	repeated uint32 meet_cond_list = 1;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 2194;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 activity_id = 5;
+  uint32 schedule_id = 14;
+  repeated uint32 Unk3300_HKKNIHNBHAE = 1;
+  repeated uint32 Unk3300_BGNIBLKCPCA = 4;
+  repeated uint32 activated_sale_id_list = 8;
+  repeated Uint32Pair disable_transfer_point_interaction_list = 11;
 }

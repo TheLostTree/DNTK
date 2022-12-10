@@ -19,15 +19,18 @@ syntax = "proto3";
 import "BattlePassRewardTakeOption.proto";
 import "ItemParam.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 2631
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message TakeBattlePassRewardRsp {
-	repeated ItemParam item_list = 7;
-	int32 retcode = 13;
-	repeated BattlePassRewardTakeOption take_option_list = 9;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 2631;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  int32 retcode = 6;
+  repeated BattlePassRewardTakeOption take_option_list = 7;
+  repeated ItemParam item_list = 4;
 }

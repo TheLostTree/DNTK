@@ -16,9 +16,8 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message ChatEmojiCollectionData {
-	repeated uint32 emoji_id_list = 1;
+  repeated uint32 emoji_id_list = 1;
 }

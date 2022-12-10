@@ -21,18 +21,21 @@ import "WidgetCreateLocationInfo.proto";
 import "WidgetCreatorInfo.proto";
 import "WidgetThunderBirdFeatherInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 4299
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message QuickUseWidgetReq {
-	oneof param {
-		WidgetCreateLocationInfo location_info = 676;
-		WidgetCameraInfo camera_info = 478;
-		WidgetCreatorInfo creator_info = 812;
-		WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 1859;
-	}
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 4284;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+  oneof param {
+    WidgetCreateLocationInfo location_info = 1872;
+    WidgetCameraInfo camera_info = 1835;
+    WidgetCreatorInfo creator_info = 72;
+    WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 491;
+  }
 }

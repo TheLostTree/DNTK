@@ -18,10 +18,9 @@ syntax = "proto3";
 
 import "MapMarkTipsType.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message MapMarkTipsInfo {
-	MapMarkTipsType tips_type = 1;
-	repeated uint32 point_id_list = 2;
+  MapMarkTipsType tips_type = 1;
+  repeated uint32 point_id_list = 2;
 }

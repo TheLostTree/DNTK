@@ -16,14 +16,13 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message FurnitureMakeData {
-	uint32 index = 15;
-	uint32 dur_time = 1;
-	fixed32 begin_time = 11;
-	fixed32 accelerate_time = 6;
-	uint32 avatar_id = 2;
-	uint32 make_id = 5;
+  fixed32 begin_time = 1;
+  uint32 avatar_id = 5;
+  uint32 make_id = 10;
+  uint32 index = 6;
+  uint32 Unk3300_GDIBLADMJIC = 8;
+  uint32 Unk3300_GBDHFLEFJLG = 7;
 }

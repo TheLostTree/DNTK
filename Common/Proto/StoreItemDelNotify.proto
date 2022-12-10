@@ -18,14 +18,17 @@ syntax = "proto3";
 
 import "StoreType.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 635
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message StoreItemDelNotify {
-	repeated uint64 guid_list = 12;
-	StoreType store_type = 15;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 619;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  StoreType store_type = 6;
+  repeated uint64 guid_list = 8;
 }

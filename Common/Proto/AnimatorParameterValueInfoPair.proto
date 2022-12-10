@@ -18,10 +18,9 @@ syntax = "proto3";
 
 import "AnimatorParameterValueInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message AnimatorParameterValueInfoPair {
-	int32 name_id = 1;
-	AnimatorParameterValueInfo animator_para = 2;
+  int32 name_id = 1;
+  AnimatorParameterValueInfo animator_para = 2;
 }

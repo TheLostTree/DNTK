@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 enum LunaRiteHintPointType {
-	LUNA_RITE_HINT_POINT_TYPE_NONE = 0;
-	LUNA_RITE_HINT_POINT_TYPE_RUNE = 1;
-	LUNA_RITE_HINT_POINT_TYPE_CHEST = 2;
+  LUNA_RITE_HINT_POINT_TYPE_NONE = 0;
+  LUNA_RITE_HINT_POINT_TYPE_RUNE = 1;
+  LUNA_RITE_HINT_POINT_TYPE_CHEST = 2;
 }

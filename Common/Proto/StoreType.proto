@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 enum StoreType {
-	STORE_TYPE_NONE = 0;
-	STORE_TYPE_PACK = 1;
-	STORE_TYPE_DEPOT = 2;
+  STORE_TYPE_NONE = 0;
+  STORE_TYPE_PACK = 1;
+  STORE_TYPE_DEPOT = 2;
 }

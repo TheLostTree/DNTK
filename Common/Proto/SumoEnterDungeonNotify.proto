@@ -18,18 +18,21 @@ syntax = "proto3";
 
 import "SumoDungeonTeam.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 8013
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message SumoEnterDungeonNotify {
-	uint32 activity_id = 15;
-	repeated SumoDungeonTeam dungeon_team_list = 11;
-	uint32 no_switch_punish_time = 10;
-	uint32 next_valid_switch_time = 13;
-	uint32 stage_id = 7;
-	uint32 cur_team_index = 5;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 8297;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 Unk3300_DJBJACGHGDM = 15;
+  uint32 Unk3300_CBAMLHDMKJF = 7;
+  repeated SumoDungeonTeam dungeon_team_list = 14;
+  uint32 Unk3300_BNJBIGHIJOC = 5;
+  uint32 activity_id = 3;
+  uint32 stage_id = 11;
 }

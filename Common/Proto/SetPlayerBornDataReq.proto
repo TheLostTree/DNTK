@@ -16,14 +16,18 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 105
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message SetPlayerBornDataReq {
-	uint32 avatar_id = 2;
-	string nick_name = 13;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 142;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  string nick_name = 4;
+  uint32 avatar_id = 14;
 }

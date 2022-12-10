@@ -18,10 +18,9 @@ syntax = "proto3";
 
 import "MoonfinTrialLevelInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message MoonfinTrialActivityDetailInfo {
-	map<uint32, MoonfinTrialLevelInfo> level_info_map = 5;
-	uint32 special_fish_count = 11;
+  uint32 special_fish_count = 13;
+  map<uint32, MoonfinTrialLevelInfo> level_info_map = 5;
 }

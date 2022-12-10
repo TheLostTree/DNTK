@@ -18,15 +18,19 @@ syntax = "proto3";
 
 import "ItemParam.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 639
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message WeaponUpgradeReq {
-	repeated uint64 food_weapon_guid_list = 1;
-	repeated ItemParam item_param_list = 15;
-	uint64 target_weapon_guid = 4;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 616;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  repeated ItemParam item_param_list = 2;
+  repeated uint64 food_weapon_guid_list = 14;
+  uint64 target_weapon_guid = 3;
 }

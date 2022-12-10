@@ -16,12 +16,11 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message LuminanceStoneChallengeActivityDetailInfo {
-	uint32 best_score = 11;
-	bool is_content_closed = 6;
-	bool Unk2700_CKGMNLPDFCI = 12;
-	uint32 Unk2700_NNLBIAFMHPA = 15;
+  bool is_content_closed = 1;
+  uint32 current_stage_id = 2;
+  bool is_final_gallery_complete = 7;
+  uint32 best_score = 6;
 }

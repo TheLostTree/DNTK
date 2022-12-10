@@ -16,13 +16,12 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message AbilityMetaTriggerElementReaction {
-	int32 hit_index = 9;
-	uint32 element_source_type = 7;
-	uint32 element_reactor_type = 12;
-	uint32 trigger_entity_id = 2;
-	uint32 element_reaction_type = 1;
+  int32 hit_index = 7;
+  uint32 trigger_entity_id = 14;
+  uint32 Unk3300_PHKFGIHELFG = 13;
+  uint32 Unk3300_OGILJCJPHPB = 12;
+  uint32 Unk3300_DGBGNEHDODI = 2;
 }

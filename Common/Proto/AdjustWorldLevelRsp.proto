@@ -16,15 +16,18 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 138
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message AdjustWorldLevelRsp {
-	int32 retcode = 13;
-	uint32 cd_over_time = 15;
-	uint32 after_world_level = 14;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 131;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  int32 retcode = 1;
+  uint32 after_world_level = 11;
+  uint32 cd_over_time = 5;
 }

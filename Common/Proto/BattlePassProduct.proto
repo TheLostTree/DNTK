@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message BattlePassProduct {
-	string normal_product_id = 13;
-	string extra_product_id = 10;
-	string upgrade_product_id = 6;
+  string Unk3300_AOMGCJOGGED = 12;
+  string Unk3300_NHOAGMGNEIM = 9;
+  string Unk3300_NIEBADLADMK = 7;
 }

@@ -16,18 +16,21 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 5507
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message GalleryFallCatchNotify {
-	uint32 cur_score = 6;
-	uint32 time_cost = 11;
-	map<uint32, uint32> ball_catch_count_map = 15;
-	uint32 add_score = 1;
-	bool is_ground = 12;
-	uint32 gallery_id = 10;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 5600;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 add_score = 1;
+  uint32 gallery_id = 7;
+  uint32 cur_score = 11;
+  uint32 time_cost = 15;
+  bool is_ground = 8;
+  map<uint32, uint32> ball_catch_count_map = 14;
 }

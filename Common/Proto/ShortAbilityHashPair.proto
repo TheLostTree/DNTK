@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message ShortAbilityHashPair {
-	sfixed32 ability_config_hash = 15;
-	sfixed32 ability_name_hash = 1;
+  sfixed32 ability_name_hash = 6;
+  sfixed32 ability_config_hash = 15;
 }

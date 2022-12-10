@@ -18,13 +18,12 @@ syntax = "proto3";
 
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message EvtCompensatePosDiffInfo {
-	Vector cur_pos = 14;
-	uint32 entity_id = 11;
-	int32 face_angle_compact = 10;
-	uint32 cur_hash = 4;
-	uint32 normalized_time_compact = 3;
+  uint32 entity_id = 12;
+  uint32 normalized_time_compact = 5;
+  uint32 cur_hash = 7;
+  int32 face_angle_compact = 11;
+  Vector cur_pos = 6;
 }

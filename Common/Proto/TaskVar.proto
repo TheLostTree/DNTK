@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message TaskVar {
-	uint32 key = 8;
-	repeated int32 value_list = 6;
+  uint32 key = 2;
+  repeated int32 value_list = 7;
 }

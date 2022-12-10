@@ -16,16 +16,19 @@
 
 syntax = "proto3";
 
-import "ObstacleInfo.proto";
+import "GMObstacleInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 2329
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message GMShowObstacleRsp {
-	int32 retcode = 5;
-	repeated ObstacleInfo obstacles = 6;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 2320;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  repeated GMObstacleInfo obstacles = 8;
+  int32 retcode = 12;
 }

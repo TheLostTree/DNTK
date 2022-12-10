@@ -16,20 +16,19 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message Achievement {
-	uint32 finish_timestamp = 11;
-	Status status = 13;
-	uint32 cur_progress = 12;
-	uint32 id = 14;
-	uint32 total_progress = 8;
+  enum Status {
+    STATUS_INVALID = 0;
+    STATUS_UNFINISHED = 1;
+    STATUS_FINISHED = 2;
+    STATUS_REWARD_TAKEN = 3;
+  }
 
-	enum Status {
-		STATUS_INVALID = 0;
-		STATUS_UNFINISHED = 1;
-		STATUS_FINISHED = 2;
-		STATUS_REWARD_TAKEN = 3;
-	}
+  uint32 finish_timestamp = 8;
+  uint32 cur_progress = 11;
+  uint32 total_progress = 6;
+  uint32 id = 14;
+  Status status = 15;
 }

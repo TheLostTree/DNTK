@@ -18,15 +18,14 @@ syntax = "proto3";
 
 import "ChessNormalCardInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message ChessPlayerInfo {
-	uint32 uid = 5;
-	uint32 free_refresh_limit = 10;
-	repeated ChessNormalCardInfo candidate_card_info_list = 3;
-	uint32 building_points = 12;
-	uint32 candidate_index = 6;
-	uint32 free_refresh_count = 13;
-	uint32 refresh_cost = 7;
+  repeated ChessNormalCardInfo candidate_card_info_list = 1;
+  uint32 uid = 5;
+  uint32 Unk3300_AOCJHOKCDDM = 2;
+  uint32 Unk3300_GPNDNCCLHKE = 10;
+  uint32 building_points = 8;
+  uint32 Unk3300_PPFBGIDKCDJ = 12;
+  uint32 Unk3300_PPFPEAGBHLP = 13;
 }

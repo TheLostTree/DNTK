@@ -19,13 +19,12 @@ syntax = "proto3";
 import "Reliquary.proto";
 import "Weapon.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message ShowEquip {
-	uint32 item_id = 1;
-	oneof detail {
-		Reliquary reliquary = 2;
-		Weapon weapon = 3;
-	}
+  uint32 item_id = 1;
+  oneof detail {
+    Reliquary reliquary = 2;
+    Weapon weapon = 3;
+  }
 }

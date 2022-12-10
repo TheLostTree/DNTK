@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message RoutePointChangeInfo {
-	float wait_time = 6;
-	float target_velocity = 14;
-	uint32 point_index = 11;
+  float target_velocity = 12;
+  float wait_time = 14;
+  uint32 point_index = 4;
 }

@@ -16,9 +16,8 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message LunchBoxData {
-	map<uint32, uint32> slot_material_map = 3;
+  map<uint32, uint32> slot_material_map = 4;
 }

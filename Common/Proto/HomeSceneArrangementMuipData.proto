@@ -18,12 +18,11 @@ syntax = "proto3";
 
 import "HomeBlockArrangementMuipData.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message HomeSceneArrangementMuipData {
-	uint32 module_id = 1;
-	uint32 scene_id = 2;
-	bool is_room = 3;
-	repeated HomeBlockArrangementMuipData block_data_list = 4;
+  uint32 module_id = 1;
+  uint32 scene_id = 2;
+  bool is_room = 3;
+  repeated HomeBlockArrangementMuipData block_data_list = 4;
 }

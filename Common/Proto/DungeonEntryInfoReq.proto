@@ -18,15 +18,19 @@ syntax = "proto3";
 
 import "Uint32Pair.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 972
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message DungeonEntryInfoReq {
-	uint32 point_id = 2;
-	uint32 scene_id = 9;
-	repeated Uint32Pair Unk2800_GGAMJDFELPH = 4;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 979;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  uint32 scene_id = 2;
+  repeated Uint32Pair scene_point_id_list = 3;
+  uint32 point_id = 14;
 }

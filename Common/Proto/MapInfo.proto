@@ -18,13 +18,12 @@ syntax = "proto3";
 
 import "CellInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message MapInfo {
-	int32 minx = 1;
-	int32 maxx = 2;
-	int32 minz = 3;
-	int32 maxz = 4;
-	repeated CellInfo cells = 5;
+  int32 minx = 1;
+  int32 maxx = 2;
+  int32 minz = 3;
+  int32 maxz = 4;
+  repeated CellInfo cells = 5;
 }

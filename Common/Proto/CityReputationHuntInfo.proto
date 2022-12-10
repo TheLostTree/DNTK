@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message CityReputationHuntInfo {
-	bool is_open = 6;
-	uint32 cur_week_finish_num = 15;
-	bool has_reward = 5;
+  uint32 cur_week_finish_num = 1;
+  bool is_open = 7;
+  bool has_reward = 15;
 }

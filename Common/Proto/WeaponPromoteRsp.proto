@@ -16,16 +16,19 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 665
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message WeaponPromoteRsp {
-	uint64 target_weapon_guid = 3;
-	uint32 old_promote_level = 7;
-	uint32 cur_promote_level = 12;
-	int32 retcode = 4;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 689;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 Unk3300_GGFCIPAKKDP = 4;
+  uint64 target_weapon_guid = 11;
+  uint32 Unk3300_MBEBIACJNBB = 5;
+  int32 retcode = 8;
 }

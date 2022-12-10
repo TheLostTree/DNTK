@@ -16,13 +16,12 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message AbilityArgument {
-	oneof arg {
-		uint32 int_arg = 5;
-		float float_arg = 15;
-		string str_arg = 11;
-	}
+  oneof arg {
+    uint32 int_arg = 14;
+    float float_arg = 7;
+    string str_arg = 9;
+  }
 }

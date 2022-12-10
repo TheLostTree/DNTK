@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message PlayProduct {
-	string product_id = 1;
-	string price_tier = 2;
-	uint32 schedule_id = 3;
+  string product_id = 1;
+  string price_tier = 2;
+  uint32 schedule_id = 3;
 }

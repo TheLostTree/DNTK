@@ -18,12 +18,11 @@ syntax = "proto3";
 
 import "ProfilePicture.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message PlantFlowerFriendFlowerWishData {
-	ProfilePicture profile_picture = 3;
-	uint32 uid = 5;
-	string nickname = 14;
-	map<uint32, uint32> flower_num_map = 12;
+  uint32 uid = 5;
+  map<uint32, uint32> flower_num_map = 11;
+  ProfilePicture profile_picture = 8;
+  string nickname = 15;
 }

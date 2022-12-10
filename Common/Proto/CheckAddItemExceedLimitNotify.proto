@@ -16,23 +16,27 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 692
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message CheckAddItemExceedLimitNotify {
-	bool is_drop = 5;
-	repeated uint32 exceeded_item_type_list = 10;
-	repeated uint32 exceeded_item_list = 12;
-	ItemExceedLimitMsgType msg_type = 4;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 697;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
 
-	enum ItemExceedLimitMsgType {
-		ITEM_EXCEED_LIMIT_MSG_TYPE_DEFAULT = 0;
-		ITEM_EXCEED_LIMIT_MSG_TYPE_TEXT = 1;
-		ITEM_EXCEED_LIMIT_MSG_TYPE_DIALOG = 2;
-		ITEM_EXCEED_LIMIT_MSG_TYPE_Unk2700_BONLGEEEBBF = 3;
-	}
+  enum ItemExceedLimitMsgType {
+    ITEM_EXCEED_LIMIT_MSG_TYPE_DEFAULT = 0;
+    ITEM_EXCEED_LIMIT_MSG_TYPE_TEXT = 1;
+    ITEM_EXCEED_LIMIT_MSG_TYPE_DIALOG = 2;
+    ITEM_EXCEED_LIMIT_MSG_TYPE_DIALOG_NONBLOCK = 3;
+  }
+
+  repeated uint32 Unk3300_PKJMEJKAPBI = 4;
+  repeated uint32 Unk3300_GPDPCJLHBDE = 11;
+  uint32 reason = 9;
+  bool is_drop = 14;
+  ItemExceedLimitMsgType msg_type = 6;
 }

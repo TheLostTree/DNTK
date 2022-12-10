@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message HomeAvatarTalkFinishInfo {
-	uint32 avatar_id = 9;
-	repeated uint32 finish_talk_id_list = 3;
+  repeated uint32 finish_talk_id_list = 4;
+  uint32 avatar_id = 2;
 }

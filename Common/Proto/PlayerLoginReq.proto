@@ -19,54 +19,58 @@ syntax = "proto3";
 import "AdjustTrackingInfo.proto";
 import "TrackingIOInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 112
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message PlayerLoginReq {
-	uint32 language_type = 6;
-	uint32 reg_platform = 615;
-	TrackingIOInfo tracking_io_info = 1660;
-	uint32 account_type = 13;
-	string token = 15;
-	bytes extra_bin_data = 1458;
-	uint32 channel_id = 1314;
-	uint32 client_data_version = 688;
-	string account_uid = 2;
-	string client_version = 12;
-	string Unk2700_NGKCNPKKIKB = 772;
-	string country_code = 2000;
-	string psn_id = 1268;
-	uint32 Unk2700_GPPBEMDGEHH = 431;
-	string device_name = 9;
-	string cps = 1163;
-	uint64 login_rand = 3;
-	uint32 target_home_param = 984;
-	AdjustTrackingInfo adjust_tracking_info = 1816;
-	bool is_transfer = 908;
-	uint32 tag = 1787;
-	bool is_guest = 5;
-	bytes environment_error_code = 2026;
-	string online_id = 903;
-	bool is_editor = 8;
-	string checksum_client_version = 861;
-	bytes security_cmd_reply = 1995;
-	string Unk2700_JNDKPBBCACB = 1213;
-	string birthday = 1652;
-	string device_uuid = 4;
-	uint32 client_token = 1546;
-	uint32 sub_channel_id = 23;
-	uint32 target_uid = 11;
-	string device_info = 1;
-	string client_verison_hash = 1707;
-	string checksum = 1532;
-	uint32 platform_type = 14;
-	uint32 target_home_owner_uid = 1864;
-	uint32 cloud_client_ip = 1335;
-	uint32 gm_uid = 612;
-	string system_version = 10;
-	string platform = 7;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 156;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  string device_uuid = 5;
+  uint32 target_uid = 10;
+  bytes extra_bin_data = 2046;
+  string platform = 4;
+  string Unk3300_LNPPCJMBOMN = 1334;
+  uint32 channel_id = 1565;
+  string Unk3300_EJBMMPBPDBE = 2040;
+  uint32 language_type = 11;
+  uint32 client_data_version = 847;
+  uint32 Unk3300_FDNAJOFMOAK = 7;
+  string Unk3300_BBAABEHNFOE = 868;
+  string online_id = 577;
+  uint32 Unk3300_PMGFBMJNNCL = 82;
+  string Unk3300_EAMDLGIILGK = 12;
+  string birthday = 875;
+  uint32 tag = 525;
+  string account_uid = 14;
+  string Unk3300_NALKBABGLDG = 15;
+  uint32 Unk3300_IADFJHNFKIB = 1458;
+  bool is_editor = 1;
+  string token = 8;
+  uint32 reg_platform = 424;
+  string Unk3300_CHDCMLIBMPO = 581;
+  uint32 Unk3300_OOBHAIIIPHH = 85;
+  uint32 Unk3300_NDLANBEIGEG = 1320;
+  string country_code = 104;
+  uint32 Unk3300_PIPLDEAPMMN = 1790;
+  TrackingIOInfo tracking_io_info = 1713;
+  bool is_transfer = 624;
+  string Unk3300_BIAKNIALBFJ = 828;
+  string client_version = 2;
+  bool is_guest = 13;
+  string Unk3300_OBJKBHMKJGM = 6;
+  uint32 target_home_owner_uid = 899;
+  string psn_id = 1146;
+  bytes Unk3300_ILHAIPDJIMH = 874;
+  uint32 Unk3300_OFFHPAFIFGD = 1028;
+  uint64 login_rand = 9;
+  AdjustTrackingInfo adjust_tracking_info = 64;
+  bytes Unk3300_FCDEBMBICIJ = 256;
+  uint32 platform_type = 3;
+  string Unk3300_CFLCCIICKDE = 1983;
 }

@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message PlayerRoutineInfo {
-	uint32 routine_type = 8;
-	uint32 finished_num = 15;
+  uint32 routine_type = 5;
+  uint32 finished_num = 9;
 }

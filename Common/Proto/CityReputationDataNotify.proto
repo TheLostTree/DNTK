@@ -18,13 +18,16 @@ syntax = "proto3";
 
 import "CityReputationSimpleInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 2805
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message CityReputationDataNotify {
-	repeated CityReputationSimpleInfo simple_info_list = 7;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 2842;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  repeated CityReputationSimpleInfo simple_info_list = 13;
 }

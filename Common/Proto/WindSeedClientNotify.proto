@@ -18,33 +18,36 @@ syntax = "proto3";
 
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 1199
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message WindSeedClientNotify {
-	oneof notify {
-		RefreshNotify refresh_notify = 14;
-		AddWindBulletNotify add_wind_bullet_notify = 6;
-		AreaNotify area_notify = 4;
-	}
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 1157;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
 
-	message RefreshNotify {
-		uint32 refresh_num = 9;
-	}
+  message RefreshNotify {
+    uint32 refresh_num = 7;
+  }
 
-	message AddWindBulletNotify {
-		Vector seed_pos = 6;
-		uint32 catch_player_uid = 8;
-		uint32 seed_entity_id = 7;
-	}
+  message AddWindBulletNotify {
+    Vector seed_pos = 14;
+    uint32 Unk3300_CKIKKCAFJBC = 7;
+    uint32 Unk3300_MPDFAPBDJAH = 11;
+  }
 
-	message AreaNotify {
-		bytes area_code = 5;
-		uint32 area_id = 10;
-		uint32 area_type = 7;
-	}
+  message AreaNotify {
+    uint32 area_id = 12;
+    bytes area_code = 10;
+    uint32 area_type = 13;
+  }
+
+  oneof notify {
+    RefreshNotify refresh_notify = 14;
+    AddWindBulletNotify add_wind_bullet_notify = 7;
+    AreaNotify area_notify = 5;
+  }
 }

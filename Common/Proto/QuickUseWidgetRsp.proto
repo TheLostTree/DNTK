@@ -20,19 +20,22 @@ import "ClientCollectorData.proto";
 import "OneofGatherPointDetectorData.proto";
 import "SkyCrystalDetectorQuickUseResult.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 4270
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message QuickUseWidgetRsp {
-	uint32 material_id = 6;
-	int32 retcode = 5;
-	oneof param {
-		OneofGatherPointDetectorData detector_data = 3;
-		ClientCollectorData client_collector_data = 15;
-		SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 168922;
-	}
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 4265;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 material_id = 11;
+  int32 retcode = 12;
+  oneof param {
+    OneofGatherPointDetectorData detector_data = 14;
+    ClientCollectorData client_collector_data = 10;
+    SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 172322;
+  }
 }

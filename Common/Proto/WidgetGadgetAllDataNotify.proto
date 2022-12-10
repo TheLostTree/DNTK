@@ -18,13 +18,16 @@ syntax = "proto3";
 
 import "WidgetGadgetData.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 4284
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message WidgetGadgetAllDataNotify {
-	repeated WidgetGadgetData widget_gadget_data = 13;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 4288;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  repeated WidgetGadgetData widget_gadget_data = 1;
 }

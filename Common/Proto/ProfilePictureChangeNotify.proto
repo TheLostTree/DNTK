@@ -18,13 +18,17 @@ syntax = "proto3";
 
 import "ProfilePicture.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 4016
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message ProfilePictureChangeNotify {
-	ProfilePicture profile_picture = 12;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 4023;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  ProfilePicture profile_picture = 12;
 }

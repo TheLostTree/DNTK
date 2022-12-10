@@ -18,13 +18,16 @@ syntax = "proto3";
 
 import "AvatarExpeditionInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 1771
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message AvatarExpeditionDataNotify {
-	map<uint64, AvatarExpeditionInfo> expedition_info_map = 6;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 1632;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  map<uint64, AvatarExpeditionInfo> expedition_info_map = 15;
 }

@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message ExhibitionDisplayInfo {
-	uint32 id = 1;
-	uint32 param = 2;
-	uint32 detail_param = 3;
+  uint32 id = 1;
+  uint32 param = 2;
+  uint32 detail_param = 3;
 }

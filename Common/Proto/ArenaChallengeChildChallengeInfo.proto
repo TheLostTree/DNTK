@@ -16,13 +16,12 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message ArenaChallengeChildChallengeInfo {
-	uint32 challenge_id = 12;
-	uint32 challenge_type = 5;
-	uint32 challenge_index = 4;
-	bool is_success = 7;
-	bool is_settled = 11;
+  uint32 challenge_id = 11;
+  uint32 challenge_index = 4;
+  uint32 challenge_type = 12;
+  bool is_settled = 2;
+  bool is_success = 14;
 }

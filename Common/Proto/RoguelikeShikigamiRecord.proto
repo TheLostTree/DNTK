@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message RoguelikeShikigamiRecord {
-	uint32 id = 6;
-	uint32 level = 3;
+  uint32 id = 2;
+  uint32 level = 10;
 }

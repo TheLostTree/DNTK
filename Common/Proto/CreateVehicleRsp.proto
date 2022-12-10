@@ -16,15 +16,18 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 827
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message CreateVehicleRsp {
-	int32 retcode = 10;
-	uint32 vehicle_id = 9;
-	uint32 entity_id = 11;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 817;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 entity_id = 5;
+  uint32 vehicle_id = 8;
+  int32 retcode = 2;
 }

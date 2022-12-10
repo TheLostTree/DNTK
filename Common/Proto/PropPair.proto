@@ -18,10 +18,9 @@ syntax = "proto3";
 
 import "PropValue.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message PropPair {
-	uint32 type = 1;
-	PropValue prop_value = 2;
+  uint32 type = 1;
+  PropValue prop_value = 2;
 }

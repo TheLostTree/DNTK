@@ -16,15 +16,18 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 681
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message WearEquipRsp {
-	int32 retcode = 5;
-	uint64 equip_guid = 1;
-	uint64 avatar_guid = 7;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 625;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  int32 retcode = 3;
+  uint64 equip_guid = 1;
+  uint64 avatar_guid = 14;
 }

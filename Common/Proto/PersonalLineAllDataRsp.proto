@@ -18,18 +18,21 @@ syntax = "proto3";
 
 import "LockedPersonallineData.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 476
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message PersonalLineAllDataRsp {
-	uint32 cur_finished_daily_task_count = 5;
-	repeated uint32 can_be_unlocked_personal_line_list = 13;
-	int32 retcode = 15;
-	repeated uint32 ongoing_personal_line_list = 8;
-	uint32 legendary_key_count = 11;
-	repeated LockedPersonallineData locked_personal_line_list = 10;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 495;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 cur_finished_daily_task_count = 12;
+  repeated LockedPersonallineData locked_personal_line_list = 10;
+  int32 retcode = 2;
+  repeated uint32 Unk3300_BHLEGLEICFJ = 1;
+  repeated uint32 Unk3300_BGCIGNEGBIN = 6;
+  uint32 legendary_key_count = 5;
 }

@@ -18,14 +18,17 @@ syntax = "proto3";
 
 import "HomeFishFarmingInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 4678
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message HomeGetFishFarmingInfoRsp {
-	repeated HomeFishFarmingInfo fish_farming_info_list = 7;
-	int32 retcode = 4;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 4567;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  int32 retcode = 15;
+  repeated HomeFishFarmingInfo fish_farming_info_list = 12;
 }

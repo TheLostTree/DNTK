@@ -18,13 +18,12 @@ syntax = "proto3";
 
 import "ProfilePicture.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message CrucibleBattleUidInfo {
-	ProfilePicture profile_picture = 15;
-	uint32 uid = 4;
-	string nickname = 5;
-	string online_id = 13;
-	uint32 icon = 11;
+  ProfilePicture profile_picture = 8;
+  uint32 uid = 14;
+  uint32 icon = 4;
+  string online_id = 13;
+  string nickname = 3;
 }

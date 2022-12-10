@@ -18,13 +18,17 @@ syntax = "proto3";
 
 import "LunchBoxData.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 4272
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message SetUpLunchBoxWidgetReq {
-	LunchBoxData lunch_box_data = 6;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 4267;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  LunchBoxData lunch_box_data = 7;
 }

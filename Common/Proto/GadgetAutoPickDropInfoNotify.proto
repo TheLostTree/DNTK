@@ -18,13 +18,16 @@ syntax = "proto3";
 
 import "Item.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 897
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message GadgetAutoPickDropInfoNotify {
-	repeated Item item_list = 11;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 899;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  repeated Item item_list = 15;
 }

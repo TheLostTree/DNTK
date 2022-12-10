@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message AbilityMixinWindZone {
-	repeated uint32 entity_ids = 13;
-	repeated uint32 zone_id_list = 10;
+  repeated uint32 Unk3300_OJPFAIGIBLG = 3;
+  repeated uint32 Unk3300_DJELBGDEDBH = 12;
 }

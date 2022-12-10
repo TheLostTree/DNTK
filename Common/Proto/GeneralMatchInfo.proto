@@ -18,11 +18,10 @@ syntax = "proto3";
 
 import "MatchPlayerInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message GeneralMatchInfo {
-	uint32 match_param = 1;
-	uint32 match_id = 9;
-	repeated MatchPlayerInfo player_list = 5;
+  uint32 match_id = 8;
+  uint32 match_param = 3;
+  repeated MatchPlayerInfo player_list = 12;
 }

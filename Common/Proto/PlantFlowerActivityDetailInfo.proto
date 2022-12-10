@@ -16,14 +16,13 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message PlantFlowerActivityDetailInfo {
-	bool is_content_closed = 3;
-	map<uint32, uint32> wish_flower_num_map = 10;
-	uint32 today_seed_reward_id = 11;
-	uint32 day_index = 1;
-	bool is_today_has_awarded = 13;
-	map<uint32, uint32> used_flower_num_map = 7;
+  uint32 day_index = 1;
+  uint32 today_seed_reward_id = 15;
+  bool is_content_closed = 3;
+  map<uint32, uint32> Unk3300_EPMKDFOBLFK = 9;
+  map<uint32, uint32> Unk3300_ELAIBMDIBFJ = 5;
+  bool is_today_has_awarded = 8;
 }

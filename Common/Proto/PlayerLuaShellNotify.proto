@@ -16,18 +16,21 @@
 
 syntax = "proto3";
 
-import "Unk2700_JOEPIGNPDGH.proto";
+import "LuaShellType.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 133
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message PlayerLuaShellNotify {
-	Unk2700_JOEPIGNPDGH Unk2700_JJMHFFHNJJO = 7;
-	uint32 id = 5;
-	bytes lua_shell = 12;
-	uint32 use_type = 10;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 166;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 id = 8;
+  LuaShellType shell_type = 1;
+  bytes lua_shell = 4;
+  uint32 use_type = 2;
 }

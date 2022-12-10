@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message UnionCmd {
-	bytes body = 14;
-	uint32 message_id = 8;
+  bytes body = 3;
+  uint32 message_id = 4;
 }

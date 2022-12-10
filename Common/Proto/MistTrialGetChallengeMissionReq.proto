@@ -16,13 +16,17 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 8893
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message MistTrialGetChallengeMissionReq {
-	uint32 trial_id = 9;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 8048;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  uint32 trial_id = 12;
 }

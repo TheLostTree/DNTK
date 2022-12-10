@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 enum WidgetSlotOp {
-	WIDGET_SLOT_OP_ATTACH = 0;
-	WIDGET_SLOT_OP_DETACH = 1;
+  WIDGET_SLOT_OP_ATTACH = 0;
+  WIDGET_SLOT_OP_DETACH = 1;
 }

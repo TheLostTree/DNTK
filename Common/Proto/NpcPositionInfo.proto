@@ -18,10 +18,9 @@ syntax = "proto3";
 
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message NpcPositionInfo {
-	uint32 npc_id = 1;
-	Vector pos = 2;
+  uint32 npc_id = 1;
+  Vector pos = 2;
 }

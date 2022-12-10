@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message ModifierDurability {
-	float reduce_ratio = 1;
-	float remaining_durability = 2;
+  float reduce_ratio = 1;
+  float remaining_durability = 2;
 }

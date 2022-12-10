@@ -16,33 +16,36 @@
 
 syntax = "proto3";
 
+import "ChallengeFinishType.proto";
 import "ChannelerSlabLoopDungeonResultInfo.proto";
 import "CustomDungeonResultInfo.proto";
 import "EffigyChallengeDungeonResultInfo.proto";
 import "PotionDungeonResultInfo.proto";
 import "StrengthenPointData.proto";
-import "Unk2700_FHOKHHBGPEG.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 939
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message DungeonChallengeFinishNotify {
-	map<uint32, StrengthenPointData> strengthen_point_data_map = 13;
-	Unk2700_FHOKHHBGPEG Unk2700_ONCDLPDHFAB = 9;
-	bool is_new_record = 10;
-	uint32 challenge_record_type = 7;
-	uint32 time_cost = 4;
-	uint32 current_value = 15;
-	bool is_success = 3;
-	uint32 challenge_index = 5;
-	oneof detail {
-		ChannelerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 1521;
-		EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 1627;
-		PotionDungeonResultInfo potion_dungeon_result_info = 1824;
-		CustomDungeonResultInfo custom_dungeon_result_info = 1664;
-	}
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 916;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  bool is_new_record = 9;
+  uint32 current_value = 5;
+  ChallengeFinishType finish_type = 3;
+  map<uint32, StrengthenPointData> strengthen_point_data_map = 11;
+  uint32 challenge_record_type = 2;
+  bool is_success = 8;
+  uint32 challenge_index = 12;
+  uint32 time_cost = 7;
+  oneof detail {
+    ChannelerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 1545;
+    EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 76;
+    PotionDungeonResultInfo potion_dungeon_result_info = 216;
+    CustomDungeonResultInfo custom_dungeon_result_info = 1678;
+  }
 }

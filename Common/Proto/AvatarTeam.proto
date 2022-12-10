@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message AvatarTeam {
-	repeated uint64 avatar_guid_list = 7;
-	string team_name = 14;
+  repeated uint64 avatar_guid_list = 13;
+  string team_name = 4;
 }

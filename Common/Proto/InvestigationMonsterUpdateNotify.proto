@@ -18,13 +18,16 @@ syntax = "proto3";
 
 import "InvestigationMonster.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 1906
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message InvestigationMonsterUpdateNotify {
-	InvestigationMonster investigation_monster = 5;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 1910;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  InvestigationMonster investigation_monster = 6;
 }

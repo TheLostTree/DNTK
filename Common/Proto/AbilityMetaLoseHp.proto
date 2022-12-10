@@ -16,9 +16,8 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message AbilityMetaLoseHp {
-	uint32 lose_hp_config_idx = 10;
+  uint32 lose_hp_config_idx = 15;
 }

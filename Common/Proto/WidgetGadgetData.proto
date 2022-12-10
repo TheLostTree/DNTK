@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message WidgetGadgetData {
-	repeated uint32 gadget_entity_id_list = 1;
-	uint32 gadget_id = 8;
+  repeated uint32 gadget_entity_id_list = 6;
+  uint32 gadget_id = 2;
 }

@@ -16,12 +16,11 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message ActivityWatcherInfo {
-	bool is_taken_reward = 8;
-	uint32 cur_progress = 2;
-	uint32 total_progress = 4;
-	uint32 watcher_id = 5;
+  bool is_taken_reward = 2;
+  uint32 total_progress = 1;
+  uint32 cur_progress = 8;
+  uint32 watcher_id = 14;
 }

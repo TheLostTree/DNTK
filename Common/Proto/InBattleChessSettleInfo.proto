@@ -18,15 +18,14 @@ syntax = "proto3";
 
 import "ExhibitionDisplayInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message InBattleChessSettleInfo {
-	bool is_success = 7;
-	uint32 chess_exp = 11;
-	uint32 chess_level = 13;
-	uint32 old_chess_level = 10;
-	repeated ExhibitionDisplayInfo score_list = 1;
-	uint64 scene_time_ms = 14;
-	uint32 old_chess_exp = 2;
+  uint32 Unk3300_LPANFEBFJOJ = 5;
+  uint64 scene_time_ms = 8;
+  uint32 Unk3300_NKHDFHAPNCN = 13;
+  bool is_success = 6;
+  uint32 Unk3300_EMNLLDJHMEI = 1;
+  repeated ExhibitionDisplayInfo score_list = 4;
+  uint32 Unk3300_IPGILJCBABK = 2;
 }

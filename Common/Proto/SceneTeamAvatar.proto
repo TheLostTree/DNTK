@@ -23,24 +23,23 @@ import "SceneAvatarInfo.proto";
 import "SceneEntityInfo.proto";
 import "ServerBuff.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message SceneTeamAvatar {
-	AbilitySyncStateInfo avatar_ability_info = 5;
-	AvatarInfo avatar_info = 8;
-	bool is_on_scene = 152;
-	uint32 entity_id = 9;
-	uint64 avatar_guid = 15;
-	uint32 scene_id = 1;
-	uint32 weapon_entity_id = 7;
-	SceneAvatarInfo scene_avatar_info = 3;
-	uint64 weapon_guid = 4;
-	AbilitySyncStateInfo weapon_ability_info = 11;
-	SceneEntityInfo scene_entity_info = 12;
-	uint32 player_uid = 14;
-	bool is_reconnect = 6;
-	AbilityControlBlock ability_control_block = 2;
-	bool is_player_cur_avatar = 13;
-	repeated ServerBuff server_buff_list = 10;
+  SceneAvatarInfo scene_avatar_info = 14;
+  AvatarInfo avatar_info = 15;
+  uint32 entity_id = 10;
+  AbilitySyncStateInfo Unk3300_EMAGOKCPPKN = 6;
+  AbilityControlBlock ability_control_block = 2;
+  bool Unk3300_ONCNAJBJGKM = 8;
+  AbilitySyncStateInfo Unk3300_FCDDPFADNAI = 4;
+  uint64 weapon_guid = 12;
+  uint32 player_uid = 1;
+  SceneEntityInfo scene_entity_info = 11;
+  uint32 weapon_entity_id = 5;
+  uint32 scene_id = 9;
+  bool Unk3300_ILECHHKDIEM = 625;
+  uint64 avatar_guid = 3;
+  bool Unk3300_GENGJLPJCCN = 13;
+  repeated ServerBuff server_buff_list = 7;
 }

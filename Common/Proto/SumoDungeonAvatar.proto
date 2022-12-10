@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message SumoDungeonAvatar {
-	uint64 avatar_guid = 11;
-	bool is_alive = 13;
-	bool is_trial = 4;
+  bool is_alive = 13;
+  bool is_trial = 4;
+  uint64 avatar_guid = 10;
 }

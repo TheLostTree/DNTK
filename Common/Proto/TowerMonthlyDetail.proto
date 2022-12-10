@@ -19,10 +19,9 @@ syntax = "proto3";
 import "TowerMonthlyBrief.proto";
 import "TowerMonthlyCombatRecord.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message TowerMonthlyDetail {
-	TowerMonthlyCombatRecord monthly_combat_record = 2;
-	TowerMonthlyBrief monthly_brief = 12;
+  TowerMonthlyCombatRecord monthly_combat_record = 15;
+  TowerMonthlyBrief monthly_brief = 4;
 }

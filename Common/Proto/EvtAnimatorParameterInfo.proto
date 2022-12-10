@@ -18,12 +18,11 @@ syntax = "proto3";
 
 import "AnimatorParameterValueInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message EvtAnimatorParameterInfo {
-	uint32 entity_id = 4;
-	bool is_server_cache = 5;
-	AnimatorParameterValueInfo value = 7;
-	int32 name_id = 15;
+  int32 name_id = 10;
+  AnimatorParameterValueInfo value = 7;
+  uint32 entity_id = 14;
+  bool is_server_cache = 9;
 }

@@ -16,12 +16,11 @@
 
 syntax = "proto3";
 
-import "Unk2700_CCEOEOHLAPK.proto";
+import "SkyCrystalDetectorData.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message SkyCrystalDetectorQuickUseResult {
-	Unk2700_CCEOEOHLAPK Unk2700_COIELIGEACL = 9;
-	int32 retcode = 8;
+  int32 retcode = 2;
+  SkyCrystalDetectorData sky_crystal_detector_data = 4;
 }

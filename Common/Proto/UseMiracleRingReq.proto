@@ -18,21 +18,25 @@ syntax = "proto3";
 
 import "Vector.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 5226
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message UseMiracleRingReq {
-	uint32 miracle_ring_op_type = 13;
-	Vector pos = 8;
-	Vector rot = 7;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 5242;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
 
-	enum MiracleRingOpType {
-		MIRACLE_RING_OP_TYPE_NONE = 0;
-		MIRACLE_RING_OP_TYPE_PLACE = 1;
-		MIRACLE_RING_OP_TYPE_RETRACT = 2;
-	}
+  enum MiracleRingOpType {
+    MIRACLE_RING_OP_TYPE_NONE = 0;
+    MIRACLE_RING_OP_TYPE_PLACE = 1;
+    MIRACLE_RING_OP_TYPE_RETRACT = 2;
+  }
+
+  Vector rot = 14;
+  Vector pos = 13;
+  uint32 miracle_ring_op_type = 5;
 }

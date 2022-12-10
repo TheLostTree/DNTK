@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message HomeVerifyFurnitureData {
-	repeated uint32 type = 7;
-	uint32 id = 5;
-	uint32 num = 9;
+  repeated uint32 type = 12;
+  uint32 num = 7;
+  uint32 id = 13;
 }

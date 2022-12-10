@@ -16,11 +16,10 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 enum MonsterBornType {
-	MONSTER_BORN_TYPE_NONE = 0;
-	MONSTER_BORN_TYPE_DEFAULT = 1;
-	MONSTER_BORN_TYPE_RANDOM = 2;
+  MONSTER_BORN_TYPE_NONE = 0;
+  MONSTER_BORN_TYPE_DEFAULT = 1;
+  MONSTER_BORN_TYPE_RANDOM = 2;
 }

@@ -19,17 +19,20 @@ syntax = "proto3";
 import "FleurFairBossSettleInfo.proto";
 import "FleurFairGallerySettleInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 5356
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message FleurFairStageSettleNotify {
-	uint32 stage_type = 10;
-	oneof detail {
-		FleurFairGallerySettleInfo gallery_settle_info = 13;
-		FleurFairBossSettleInfo boss_settle_info = 14;
-	}
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 5382;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 stage_type = 7;
+  oneof detail {
+    FleurFairGallerySettleInfo gallery_settle_info = 1;
+    FleurFairBossSettleInfo boss_settle_info = 12;
+  }
 }

@@ -16,10 +16,9 @@
 
 syntax = "proto3";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
 message TowerFightRecordPair {
-	uint32 avatar_id = 1;
-	uint32 data = 3;
+  uint32 avatar_id = 12;
+  uint32 data = 1;
 }

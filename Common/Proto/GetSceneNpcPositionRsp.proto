@@ -18,15 +18,18 @@ syntax = "proto3";
 
 import "NpcPositionInfo.proto";
 
-option java_package = "org.sorapointa.proto";
 option csharp_namespace = "Common.Protobuf";
 
-// CmdId: 507
-// EnetChannelId: 0
-// EnetIsReliable: false
-// IsAllowClient: true
 message GetSceneNpcPositionRsp {
-	int32 retcode = 10;
-	repeated NpcPositionInfo npc_info_list = 14;
-	uint32 scene_id = 4;
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 600;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 scene_id = 1;
+  repeated NpcPositionInfo npc_info_list = 2;
+  int32 retcode = 5;
 }
