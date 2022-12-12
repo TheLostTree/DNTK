@@ -17,8 +17,9 @@ public class KeyBruteForcer
     /// Tries to guess the seed based on our arguments
     /// </summary>
     /// <param name="testBuffer">Key test buffer</param>
-    /// <param name="senttime">Client timestamp from tokenreq header</param>
+    /// <param name="ts">Client timestamp from tokenreq header</param>
     /// <param name="serverKey">Server random key from tokenrsp</param>
+    /// <param name="depth">How much seeds to generate with same random gen</param>
     /// <returns></returns>
     public static MTKey? Guess(byte[] testBuffer, long ts, ulong serverKey, int depth) {
         // First line of defense
