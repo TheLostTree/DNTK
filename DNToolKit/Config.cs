@@ -4,10 +4,10 @@ namespace DNToolKit;
 
 public class Config
 {
-    public string CaptureFolder;
-    public string FrontendUrl;
-    public string ClientPrivateRsa;
-    public bool ChooseSniffDevice;
+    public string CaptureFolder = null!;
+    public string FrontendUrl = null!;
+    public string ClientPrivateRsa = null!;
+    public bool ChooseSniffDevice = false;
 
     public Config()
     {

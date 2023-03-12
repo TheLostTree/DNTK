@@ -1,8 +1,8 @@
 ﻿using System.Security.Cryptography;
 using Common;
 using Common.Protobuf;
-using DNToolKit.Packet;
-using DNToolKit.Sniffer;
+using DNToolKit.Net;
+using DNToolKit.Protocol;
 using Serilog;
 
 namespace DNToolKit.PacketProcessors;
@@ -18,14 +18,14 @@ public class PacketProcessor
     private ulong? _tokenRspServerKey;
 
     private byte _timesBFed;
-
     private long _count;
+    private DNToolKit _toolKit;
+    
 
-    public PacketProcessor()
+    public PacketProcessor(DNToolKit toolKit, string clientRsa)
     {
-        //todo: take from a file
-        ClientPrivate.FromXmlString(Program.Config.ClientPrivateRsa);
-
+        ClientPrivate.FromXmlString(clientRsa);
+        _toolKit = toolKit;
         _timesBFed = 0;
     }
 
@@ -85,17 +85,12 @@ public class PacketProcessor
             }
             else if (_sessionKey is null)
             {
-                //we may need to bruteforce
                 Log.Warning("Encrypted Packet got through lol");
-                // _sessionKey.TaskFlag().Wait();
-                //should be fine because we store the time 
-                //Queue.Enqueue(encryptedPacket);
             }
             else
             {
                 Log.Warning("There was a false positive with the bruteforcer somehow? Invalidating old key maybe a reconnect!");
                 _sessionKey = null;
-                // Log.Information("@{slay}", encryptedPacket.Data);
             }
         }
     }
@@ -108,7 +103,7 @@ public class PacketProcessor
         {
             //this is SO UGLY
 
-            var packet = new Packet.Packet(encryptedPacket.Data) { Sender = encryptedPacket.Sender };
+            var packet = new Packet(encryptedPacket.Data) { Sender = encryptedPacket.Sender };
 
             var type = packet.PacketType;
 
@@ -121,6 +116,7 @@ public class PacketProcessor
 
                 var tokenRsp = packet.PacketData as GetPlayerTokenRsp;
                 Log.Information("${@TokenRsp}", tokenRsp);
+                
                 if (tokenRsp?.ServerRandKey is not null)
                 {
                     var key = ClientPrivate.Decrypt(Convert.FromBase64String(tokenRsp.ServerRandKey),
@@ -134,10 +130,8 @@ public class PacketProcessor
                 }
             }
 
-            Program.FrontendManager.AddGamePacket(packet);
-            
-            
-            
+            //todo: send packet
+            _toolKit.AddGamePacket(packet);
             
             
         }
@@ -145,5 +139,6 @@ public class PacketProcessor
         {
             Log.Error(e.ToString());
         }
+        
     }
 }

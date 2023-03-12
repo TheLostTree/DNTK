@@ -2,6 +2,8 @@
 
 using System.Text;
 using Common;
+using DNToolKit.Listeners;
+using DNToolKit.Protocol;
 using Fleck;
 using Serilog;
 
@@ -10,14 +12,14 @@ namespace DNToolKit.Frontend;
 
 //i could honestly make this a static class but adding more keywords is annoying
 
-public class FrontendManager
+public class FrontendManager : IPacketListener
 {
 
     private readonly Dictionary<IWebSocketConnectionInfo, WsWrapper> _webSocketConnections = new();
 
     private readonly WebSocketServer _server;
 
-    public void AddGamePacket(Packet.Packet packet)
+    public void OnPacket(Packet packet)
     {
         foreach (var webSocketConnection in _webSocketConnections)
         {
@@ -25,7 +27,7 @@ public class FrontendManager
         }
     }
 
-    public FrontendManager()
+    public FrontendManager(string wsurl)
     {
         FleckLog.LogAction = (level, message, _) => {
             switch(level) {
@@ -45,7 +47,7 @@ public class FrontendManager
         };
         
         
-        _server = new WebSocketServer(Program.Config.FrontendUrl);
+        _server = new WebSocketServer(wsurl);
 
         _server.Start(socket =>
         {
@@ -53,15 +55,12 @@ public class FrontendManager
             {
                 _webSocketConnections.Add(socket.ConnectionInfo, new WsWrapper(this)
                 {
-                    Type = WsWrapper.WsType.DnToolKit,
                     Socket = socket
                 });
-                _webSocketConnections[socket.ConnectionInfo].Start();
                 Log.Information("New connection to ws");
             };
             socket.OnClose = () =>
             {
-                _webSocketConnections[socket.ConnectionInfo].Stop();
                 _webSocketConnections.Remove(socket.ConnectionInfo);
             };
             socket.OnMessage = (message) => { WebSocketReqHandler.HandleReq(message, _webSocketConnections[socket.ConnectionInfo]); };
@@ -79,7 +78,7 @@ public class FrontendManager
                     Console.WriteLine("weird?");
                 }
                 webSocketConnection.Value.Socket?.Send(data);
-                Console.WriteLine(data);
+                // Console.WriteLine(data);
 
             }
             catch(Exception e)
@@ -102,27 +101,14 @@ public class FrontendManager
 
 public class WsWrapper
 {
-    public enum WsType
-    {
-        Iridium,
-        DnToolKit
-    }
-    private bool _running = false;
 
-    public WsType Type;
     public IWebSocketConnection? Socket;
 
     private readonly FrontendManager _frontendManager;
-    public readonly List<Packet.Packet> GamePacketQueue = new();
     
 
-    public void Start()
-    {
-        _running = true;
-        Task.Run(FrontendUpdate);
-    }
 
-    public void AddGamePacket(Packet.Packet packet)
+    public void AddGamePacket(Packet packet)
     {
         // Console.WriteLine(packet);
         StringBuilder builder = new StringBuilder("""
@@ -138,30 +124,6 @@ public class WsWrapper
     public WsWrapper(FrontendManager frontendManager)
     {
         _frontendManager = frontendManager;
-    }
-
-    public void Stop()
-    {
-        _running = false;
-    }
-    
-    private async Task FrontendUpdate()
-    {
-        while (_running)
-        {
-            if(GamePacketQueue.Count < 1)
-            {
-                await Task.Delay(10);
-                continue;
-            }
-
-
-            
-
-
-            await Task.Delay(10);
-            
-        }
     }
 
 }

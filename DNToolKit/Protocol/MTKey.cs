@@ -4,9 +4,7 @@
 // cryptography routines. Truly awful. I wonder if the developers suffered from terminal stupidity.
 //- ysfreedom devs
 
-using System.Runtime.InteropServices;
-
-namespace DNToolKit.Packet
+namespace DNToolKit.Protocol
 {
     //thank you so much ysfreedom i am in NOWAY rewriting this bullshit
     //also thanks to whoever wrote consoleapp2.exe
@@ -25,7 +23,7 @@ namespace DNToolKit.Packet
         public MtKey(byte[] buffer)
         {
             if (buffer.Length != Len)
-                throw new ArgumentException("Key must be 4096 bytes", "buffer");
+                throw new ArgumentException("Key must be 4096 bytes", nameof(buffer));
             Bytes = buffer.ToArray();
         }
 
@@ -50,98 +48,20 @@ namespace DNToolKit.Packet
         {
             return new MtKey(Convert.FromBase64String(text));
         }
-
-        public static void MersenneKeyGen(byte[] buf, ulong seed)
-        {
-
-            //this doesnt feel right lol
-            ulong[] state = new ulong[624];
-            ulong v7 = 1, v9 = 0x137, v3;
-            state[0] = seed;
-
-            ulong[] pv1 = state;
-            int pv1Idx = 0;
-            do
-            {
-                pv1Idx++;
-                seed = (seed ^ seed >> 0x3e) * 0x5851f42d4c957f2d + v7;
-                v7++;
-                pv1[pv1Idx] = seed;
-                v9--;
-            } while (v9 != 0);
-
-            int v5 = 0;
-            int pv6Idx = 2;
-            do
-            {
-                int v8 = (v5 + 0x138) % 0x270;
-                if (v8 == 0x138)
-                {
-                    v7 = 0x138;
-                    pv1Idx = 0x9c;
-                    do
-                    {
-                        v3 = ((uint)state[pv1Idx - 0x9b] ^ (uint)state[pv1Idx - 0x9c]) & 0x7fffffff ^ state[pv1Idx - 0x9c];
-                        state[pv1Idx + 0x9c] = (ulong)(int)-((uint)v3 & 1) & 0xb5026f5aa96619e9 ^ v3 >> 1 ^ state[pv1Idx];
-                        v7--;
-                        pv1Idx++;
-                    } while (v7 != 0);
-                }
-                else if (v8 == 0)
-                {
-                    v7 = 0x9c;
-                    pv1Idx = 0x1d4;
-                    do
-                    {
-                        v3 = ((uint)state[pv1Idx - 0x9b] ^ (uint)state[pv1Idx - 0x9c]) & 0x7fffffff ^ state[pv1Idx - 0x9c];
-                        state[pv1Idx - 0x1d4] = (ulong)(int)-((uint)v3 & 1) & 0xb5026f5aa96619e9 ^ v3 >> 1 ^ state[pv1Idx];
-                        v7--;
-                        pv1Idx++;
-                    } while (v7 != 0);
-
-                    v7 = 0x9b;
-                    pv1Idx = 0;
-                    do
-                    {
-                        v3 = ((uint)state[pv1Idx + 0x1d5] ^ (uint)state[pv1Idx + 0x1d4]) & 0x7fffffff ^ state[pv1Idx + 0x1d4];
-                        state[pv1Idx + 0x9c] = (ulong)(int)-((uint)v3 & 1) & 0xb5026f5aa96619e9 ^ v3 >> 1 ^ state[pv1Idx];
-                        v7--;
-                        pv1Idx++;
-                    } while (v7 != 0);
-                }
-
-                v5++;
-                v3 = state[v8] ^ state[v8] >> 0x1d & 0x555555555;
-                v3 = v3 ^ (v3 & 0x38eb3ffff6d3) << 0x11;
-                ulong v2 = v3 ^ (v3 & 0xffffffffffffbf77) << 0x25;
-                ulong v4 = v2 >> 0x2b ^ v2;
-                buf[pv6Idx + 5] = (byte)v4;
-                buf[pv6Idx - 2] = (byte)(v2 >> 0x38);
-                buf[pv6Idx - 1] = (byte)(v2 >> 0x30);
-                buf[pv6Idx + 0] = (byte)(v2 >> 0x28);
-                buf[pv6Idx + 1] = (byte)(v2 >> 0x20);
-                buf[pv6Idx + 2] = (byte)(v3 >> 0x18);
-                buf[pv6Idx + 3] = (byte)(v4 >> 0x10);
-                buf[pv6Idx + 4] = (byte)(v4 >> 0x08);
-                pv6Idx = pv6Idx + 8;
-            } while (v5 < 0x200);
-
-        }
-
     }
     public class MiHoYoKeyGenerator
     {
-        private static readonly Mt1993764 _mt = new Mt1993764();
+        private static readonly Mt1993764 Mt = new Mt1993764();
         public static byte[] GenerateKey(ulong source)
         {
-            _mt.Initialize(source);
-            var a = _mt.GenerateULong();
-            _mt.Initialize(a);
-            _ = (long)_mt.GenerateULong();
+            Mt.Initialize(source);
+            var a = Mt.GenerateULong();
+            Mt.Initialize(a);
+            _ = (long)Mt.GenerateULong();
             byte[] key = new byte[4096];
             for (int index1 = 0; index1 < key.Length; index1 += 8)
             {
-                byte[] bytes = BitConverter.GetBytes(SwapBytes(_mt.GenerateULong()));
+                byte[] bytes = BitConverter.GetBytes(SwapBytes(Mt.GenerateULong()));
                 for (int index2 = index1; index2 < index1 + 8; ++index2)
                     key[index2] = bytes[index2 % 8];
             }
@@ -150,17 +70,14 @@ namespace DNToolKit.Packet
 
         public static byte[] PartialKey(ulong seed, int length)
         {
-            //todo: look into if i really need to instantiate two of these...
-            //i think i can get by with only one static one
-
-            _mt.Initialize(seed);
-            var a = _mt.GenerateULong();
-            _mt.Initialize(a);
-            _ = (long)_mt.GenerateULong();
+            Mt.Initialize(seed);
+            var a = Mt.GenerateULong();
+            Mt.Initialize(a);
+            _ = (long)Mt.GenerateULong();
             byte[] newkey = new byte[length];
             for (int index1 = 0; index1 < length; index1 += 8)
             {
-                byte[] bytes = BitConverter.GetBytes(SwapBytes(_mt.GenerateULong()));
+                byte[] bytes = BitConverter.GetBytes(SwapBytes(Mt.GenerateULong()));
                 for (int index2 = index1; index2 < index1 + 8; ++index2)
                     newkey[index2] = bytes[index2 % 8];
             }

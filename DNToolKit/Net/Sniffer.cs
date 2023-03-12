@@ -1,27 +1,41 @@
 ﻿using System.Net.NetworkInformation;
+using DNToolKit.Listeners;
 using PacketDotNet;
 using Serilog;
 using SharpPcap;
 using SharpPcap.LibPcap;
 
-namespace DNToolKit.Sniffer;
+namespace DNToolKit.Net;
 
-public class Sniffer
+public class Sniffer 
 {
 
     private LibPcapLiveDevice _pcapDevice = null!;
     private UdpHandler _udpHandler = null!;
 
-
     private LinkLayers _l;
+    public DNToolKit ToolKit;
+    public List<IPcapListener> PcapListeners = new ();
+
+
 
     public void OnPacketArrival(object sender, PacketCapture e)
     {
-        //forward it to the pcap dumper as well
-        Program.PcapDumper.PcapOnPacketArrival(sender, e);
-        
-        _udpHandler.HandleRawCapture(e.GetPacket(), _l);
+        foreach (var pcapListener in PcapListeners)
+        {
+            pcapListener.OnPcap(e.GetPacket(), _l);
+        }
     }
+
+
+
+    public Sniffer(DNToolKit toolKit, string clientRsa)
+    {
+        ToolKit = toolKit;
+        _udpHandler = new UdpHandler(toolKit, clientRsa);
+        PcapListeners.Add(_udpHandler);
+    }
+
 
     public void Start(bool choose)
     {
@@ -37,8 +51,6 @@ public class Sniffer
             (_pcapDevice, _l) = GetPcapDevice();
         }
         SharpPcapCapturer();
-
-        _udpHandler = new UdpHandler();
     }
 
     public void SharpPcapCapturer()
@@ -62,7 +74,6 @@ public class Sniffer
         _pcapDevice.StopCapture();
         Log.Information("-- Capture stopped");
         Log.Information(_pcapDevice.Statistics.ToString()!);
-        Program.PcapDumper.Close();
         _udpHandler.Close();
         Log.Information("Sniffer stopped...");
 
@@ -137,4 +148,6 @@ public class Sniffer
         }
         throw new InvalidOperationException("No ethernet pcap supported devices found, are you running as a user with access to adapters (root on Linux)?");
     }
+
+
 }

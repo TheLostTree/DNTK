@@ -1,17 +1,9 @@
-﻿using System.Text;
-using System.Text.Json.Nodes;
-using System.Text.Json.Serialization;
-using Common;
+﻿using Common;
 using Common.Protobuf;
-using DNToolKit.Frontend;
-using DNToolKit.Sniffer;
+using DNToolKit.Net;
 using Google.Protobuf;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Bson;
-using Serilog;
-using JsonSerializer = System.Text.Json.JsonSerializer;
 
-namespace DNToolKit.Packet;
+namespace DNToolKit.Protocol;
 
 public class Packet
 {

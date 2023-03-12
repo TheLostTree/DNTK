@@ -1,12 +1,14 @@
-﻿using DNToolKit.Net;
+﻿using DNToolKit.Listeners;
 using DNToolKit.PacketProcessors;
+using DNToolKit.Protocol;
+using DNToolKit.Protocol.KCP;
 using PacketDotNet;
 using Serilog;
 using SharpPcap;
 
-namespace DNToolKit.Sniffer;
+namespace DNToolKit.Net;
 
-public class UdpHandler
+public class UdpHandler : IPcapListener
 {
     //todo: maybe sync the kcp update
     private Kcp? _client;
@@ -14,12 +16,12 @@ public class UdpHandler
     private readonly PacketProcessor _processor;
 
     
-    public UdpHandler()
+    public UdpHandler(DNToolKit toolKit, string clientRsa)
     {
-        _processor = new PacketProcessor();
+        _processor = new PacketProcessor(toolKit, clientRsa);
     }
 
-    public void HandleRawCapture(RawCapture rawCapture, LinkLayers t)
+    public void OnPcap(RawCapture rawCapture, LinkLayers t)
     {
         UdpPacket udpPacket;
         if (t == LinkLayers.Ethernet)

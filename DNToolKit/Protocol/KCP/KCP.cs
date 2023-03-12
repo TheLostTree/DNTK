@@ -1,7 +1,7 @@
-﻿ using DNToolKit.PacketProcessors;
- using DNToolKit.Sniffer;
+﻿using DNToolKit.Net;
+using DNToolKit.PacketProcessors;
 
- namespace DNToolKit.Net;
+namespace DNToolKit.Protocol.KCP;
 
 // add more wrapper methods as necessary
  public class Kcp

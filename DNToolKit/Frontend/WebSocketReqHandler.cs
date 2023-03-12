@@ -1,16 +1,15 @@
-﻿using DNToolKit.Frontend;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Serilog;
 
-namespace DNToolKit;
+namespace DNToolKit.Frontend;
 
 public class WebSocketReqHandler
 {
     private class WsPacket
     {
-        public string Cmd;
-        public object Data;
+        public string Cmd = null!;
+        public object Data = null!;
     }
 
     //todo: actually just make classes for everything instead of using jObject
@@ -32,7 +31,6 @@ public class WebSocketReqHandler
                         if (data.ToLower() == "iridium")
                         {
                             Log.Debug("Setting socket {F} to type Iridium", webSocket.Socket!.ConnectionInfo.ClientPort);
-                            webSocket.Type = WsWrapper.WsType.Iridium;
                         }
                     }
                     var str = JsonConvert.SerializeObject(new WsPacket()

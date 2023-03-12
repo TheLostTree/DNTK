@@ -1,6 +1,6 @@
-﻿using DNToolKit.Sniffer;
+﻿using DNToolKit.Net;
 
-namespace DNToolKit.Packet;
+namespace DNToolKit.Protocol;
 
 public class EncryptedPacket
 {

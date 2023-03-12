@@ -1,8 +1,8 @@
-﻿using Serilog;
+﻿
 
 //ehhhhh using this is just less moving bins later
 
-namespace DNToolKit.Packet
+namespace DNToolKit.Protocol
 {
 
     public static class KeyRecovery
