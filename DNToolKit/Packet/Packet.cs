@@ -66,11 +66,11 @@ public class Packet
     {
         var res = String.Format("""
 {{
-    "packetId": {0},
+    "packetID": {0},
     "protoName": "{1}",
-    "object", {2},
-    "packet", "{3}",
-    "source", {4}
+    "object": {2},
+    "packet": "{3}",
+    "source": {4}
 }}
 """, (int)PacketType,PacketType.ToString(), JsonFormatter.Default.Format(PacketData), Convert.ToBase64String(ProtobufBytes),(int)Sender);
 

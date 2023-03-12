@@ -68,20 +68,23 @@ public class FrontendManager
         });
     }
 
-    public void SendWsPacket(string data, WsWrapper.WsType wsType)
+    public void SendWsPacket(string data)
     {
         foreach (var webSocketConnection in _webSocketConnections)
         {
-            if (webSocketConnection.Value.Type == wsType)
+            try
             {
-                try
+                if (webSocketConnection.Value.Socket is null)
                 {
-                    webSocketConnection.Value.Socket?.Send(data);
+                    Console.WriteLine("weird?");
                 }
-                catch(Exception e)
-                {
-                    Log.Error(e.ToString());
-                }
+                webSocketConnection.Value.Socket?.Send(data);
+                Console.WriteLine(data);
+
+            }
+            catch(Exception e)
+            {
+                Log.Error(e.ToString());
             }
         }
     }
@@ -128,12 +131,8 @@ public class WsWrapper
     "data": [
 """);
         builder.Append(packet).Append("]}");
-            
-        // Log.Debug("{a}",builder);
-        Console.WriteLine("yes?");
 
-        GamePacketQueue.Clear();
-        _frontendManager.SendWsPacket(builder.ToString(), Type);
+        _frontendManager.SendWsPacket(builder.ToString());
     }
     
     public WsWrapper(FrontendManager frontendManager)

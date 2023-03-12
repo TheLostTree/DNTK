@@ -23,7 +23,7 @@ public class KeyBruteForcer
     {
         if (File.Exists("./OLDSEEDS.txt"))
         {
-            PrevSeeds = File.ReadAllLines("./").Select(x => long.Parse(x)).ToList();
+            PrevSeeds = File.ReadAllLines("./OLDSEEDS.txt").Select(x => long.Parse(x)).ToList();
         }
     }
     //todo: store prev seeds in a file somewhere
