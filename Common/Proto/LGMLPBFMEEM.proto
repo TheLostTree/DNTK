@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: LGMLPBFMEEM
+// CmdId: 7529
+message LGMLPBFMEEM {
+    uint32 LKFDEJMGHMP = 10;
+}
+

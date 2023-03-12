@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "OJNKFDIOAFA.proto";
+
+// Name: FOLNGHHMFKC
+// CmdId: 7577
+message FOLNGHHMFKC {
+    OJNKFDIOAFA BHBNFMDDKOF = 9;
+}
+

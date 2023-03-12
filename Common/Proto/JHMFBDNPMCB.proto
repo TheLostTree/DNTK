@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: JHMFBDNPMCB
+// CmdId: 7079
+message JHMFBDNPMCB {
+    int32 retcode = 3;
+}
+

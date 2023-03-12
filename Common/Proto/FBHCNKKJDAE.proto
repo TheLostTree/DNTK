@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "Vector.proto";
+
+// Name: FBHCNKKJDAE
+message FBHCNKKJDAE {
+    Vector rot = 14;
+    Vector pos = 6;
+    uint32 room_id = 1;
+}
+

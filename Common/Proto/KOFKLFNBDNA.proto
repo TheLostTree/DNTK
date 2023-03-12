@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "AJCFJJFJJMB.proto";
+
+// Name: KOFKLFNBDNA
+message KOFKLFNBDNA {
+    AJCFJJFJJMB IFKMBMKEMAB = 5;
+    uint32 MBNBANOPFPL = 13;
+    uint32 IHNDAGJJMJK = 8;
+}
+

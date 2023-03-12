@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "AFKACLJCCHI.proto";
+import "DAEEOGCBCCK.proto";
+import "OHKODCEMCAE.proto";
+
+// Name: KBEAIPPOPPC
+message SeaLampV3DetailInfo {
+    AFKACLJCCHI OMIGMFKNCIK = 15;
+    DAEEOGCBCCK KJDPMHAHBOA = 12;
+    OHKODCEMCAE NLHOPBFKEKD = 1;
+}
+

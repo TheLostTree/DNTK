@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: IHPDNJGHHFE
+// CmdId: 21123
+message DuelHeartSelectDifficultyReq {
+    uint32 difficulty = 8;
+}
+

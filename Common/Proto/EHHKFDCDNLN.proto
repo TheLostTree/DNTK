@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "AJKKNJIKCJA.proto";
+
+// Name: EHHKFDCDNLN
+message EHHKFDCDNLN {
+    uint32 NLPMDCHEHPB = 2;
+    uint32 PDMJFKNGIOL = 4;
+    uint32 end_time = 8;
+    AJKKNJIKCJA FELJLGEOIBB = 5;
+    repeated uint32 entity_id_list = 13;
+}
+

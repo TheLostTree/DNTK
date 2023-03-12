@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: CCOGDLMGCID
+// CmdId: 20738
+message CCOGDLMGCID {
+    int32 retcode = 14;
+}
+

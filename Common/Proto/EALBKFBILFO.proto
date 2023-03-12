@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: EALBKFBILFO
+message EALBKFBILFO {
+    uint32 level_id = 3;
+    bool is_open = 15;
+    uint32 max_score = 8;
+}
+

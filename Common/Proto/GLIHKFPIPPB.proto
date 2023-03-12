@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: GLIHKFPIPPB
+// CmdId: 7641
+message GLIHKFPIPPB {
+}
+

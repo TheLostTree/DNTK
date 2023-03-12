@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: PGNCAPGIGEI
+// CmdId: 21442
+message DuelHeartEnterDungeonRsp {
+    int32 retcode = 11;
+}
+

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: LJKPHEIEJNN
+// CmdId: 7479
+message LJKPHEIEJNN {
+    uint32 level = 14;
+}
+

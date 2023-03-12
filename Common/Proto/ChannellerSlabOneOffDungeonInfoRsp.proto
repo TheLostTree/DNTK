@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: LJMFKHMECBB
+// CmdId: 8403
+message ChannellerSlabOneOffDungeonInfoRsp {
+    int32 retcode = 10;
+    repeated uint32 scheme_buff_id_list = 7;
+}
+

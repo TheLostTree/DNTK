@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "AbilityString.proto";
+
+// Name: HBMJGKJKIGL
+message HBMJGKJKIGL {
+    float value = 9;
+    AbilityString key = 8;
+}
+

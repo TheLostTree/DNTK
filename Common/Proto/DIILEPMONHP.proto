@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: DIILEPMONHP
+message DIILEPMONHP {
+    uint32 IHBMNLFHKBB = 2;
+}
+

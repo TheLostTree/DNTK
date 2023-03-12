@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: GEPDIGHICEA
+// CmdId: 23846
+message DuelHeartRestartDungeonRsp {
+    int32 retcode = 4;
+}
+

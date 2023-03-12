@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: ICNAKHAOKCB
+// CmdId: 7757
+message ICNAKHAOKCB {
+    bool CGPNOOAGBFK = 4;
+    uint32 level_id = 9;
+    bool PEKLJFNMPPE = 8;
+    uint32 element_type = 14;
+    uint32 point_id = 2;
+    uint32 avatar_id = 11;
+    uint32 FMEICLMBOBF = 12;
+}
+

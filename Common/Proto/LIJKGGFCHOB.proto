@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: LIJKGGFCHOB
+message LIJKGGFCHOB {
+    string product_id = 1;
+    string price_tier = 2;
+    uint32 JOIANPCEKPB = 3;
+    uint32 GOJEILKOHBH = 4;
+    uint32 CGACGBLLNGP = 5;
+    uint32 KCHMFBKCLKO = 6;
+    bool is_audit = 7;
+}
+

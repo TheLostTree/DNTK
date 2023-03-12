@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "CANJOFHONKD.proto";
+
+// Name: NNFHPDEKDGK
+// CmdId: 7332
+message NNFHPDEKDGK {
+    uint32 next_refresh_time = 11;
+    repeated CANJOFHONKD challenge_info_list = 9;
+    bool EOKOEHJNONA = 13;
+}
+

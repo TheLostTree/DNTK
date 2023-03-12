@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "Vector.proto";
+
+// Name: GMEEJFOELBO
+message GMEEJFOELBO {
+    Vector FFLCDJCOGIM = 7;
+    Vector forward = 5;
+}
+

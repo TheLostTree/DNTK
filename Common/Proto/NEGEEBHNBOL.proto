@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: NEGEEBHNBOL
+message NEGEEBHNBOL {
+    repeated int32 param_list = 1;
+}
+

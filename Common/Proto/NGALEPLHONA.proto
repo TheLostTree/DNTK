@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: NGALEPLHONA
+enum NGALEPLHONA {
+    NGALEPLHONA_DBLCHAMKCGF = 0;
+    NGALEPLHONA_DIAGFFMHHMP = 1;
+    NGALEPLHONA_IHOPNFPNIFL = 2;
+}
+

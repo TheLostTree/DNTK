@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "Uint32Pair.proto";
+
+// Name: JFDLFELGAEJ
+message JFDLFELGAEJ {
+    uint32 card_guid = 6;
+    repeated Uint32Pair FHMGOBDDINB = 12;
+}
+

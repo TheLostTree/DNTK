@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: GFHJPIAOAIJ
+message GFHJPIAOAIJ {
+    uint32 value = 1;
+}
+

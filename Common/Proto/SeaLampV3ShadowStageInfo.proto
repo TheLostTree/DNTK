@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "SeaLampV3ShadowLevelInfo.proto";
+
+// Name: ONKNDCHIGIA
+message SeaLampV3ShadowStageInfo {
+    bool is_open = 6;
+    uint32 stage_id = 5;
+    repeated SeaLampV3ShadowLevelInfo level_info_list = 11;
+}
+

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: CGAALOLONHA
+// CmdId: 23995
+message LanV3BoatInterruptSettleStageReq {
+}
+

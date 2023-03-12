@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "MCJFKEKAFGO.proto";
+
+// Name: EOLLJLFBEKA
+message EOLLJLFBEKA {
+    uint32 NACBICBMNFJ = 8;
+    bool is_new_record = 13;
+    uint32 final_score = 1;
+    uint32 LFGKBLLGBBO = 6;
+    MCJFKEKAFGO reason = 11;
+}
+

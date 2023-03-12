@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: DOMPLMOALGE
+message DOMPLMOALGE {
+    uint32 difficulty = 4;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "HomeBlueprintBriefMuipData.proto";
+
+// Name: EJHACOJGDIE
+message EJHACOJGDIE {
+    repeated HomeBlueprintBriefMuipData brief_list = 1;
+    repeated string KAPDFFECINM = 2;
+}
+

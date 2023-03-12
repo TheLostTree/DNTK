@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "MFAFMALBKAP.proto";
+import "MGMABEOADJL.proto";
+
+// Name: GANOMONNDGB
+// CmdId: 7188
+message GANOMONNDGB {
+    repeated uint32 AOPCHLEHOKA = 1;
+    repeated uint32 AADGGKDCBGL = 14;
+    repeated MFAFMALBKAP card_list = 13;
+    repeated uint32 DKJNKKKPBAM = 10;
+    repeated MGMABEOADJL FOAANHMGCOK = 9;
+    uint32 GLDIDBNHPKK = 11;
+}
+

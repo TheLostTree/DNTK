@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: MIMGLIBHAPO
+// CmdId: 1768
+message MIMGLIBHAPO {
+    uint64 cur_avatar_guid = 12;
+    repeated uint64 avatar_team_guid_list = 13;
+}
+

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: MBAAFHPBLEP
+message MBAAFHPBLEP {
+    uint32 FPCJCINAGGB = 7;
+}
+

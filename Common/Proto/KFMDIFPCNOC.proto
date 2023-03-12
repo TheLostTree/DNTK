@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: KFMDIFPCNOC
+message KFMDIFPCNOC {
+    uint32 FELIKNNDJDG = 6;
+    bool is_finished = 2;
+    uint32 BHLDOAAKIGA = 13;
+    bool is_open = 5;
+}
+

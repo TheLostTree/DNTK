@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: MONAENEBFNP
+// CmdId: 7928
+message MONAENEBFNP {
+    uint32 FMEICLMBOBF = 2;
+    int32 retcode = 8;
+}
+

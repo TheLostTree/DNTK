@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: JFEFPEIFIKM
+message JFEFPEIFIKM {
+    uint32 HFFGJLPCDJJ = 4;
+    uint32 NFDOJPPKIND = 12;
+    int32 MCBLHOKILEK = 14;
+    uint32 NLGFIILKOAO = 10;
+}
+

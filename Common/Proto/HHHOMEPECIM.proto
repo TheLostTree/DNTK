@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "NIELIIFHJCO.proto";
+
+// Name: HHHOMEPECIM
+// CmdId: 7539
+message HHHOMEPECIM {
+    uint32 level_id = 15;
+    NIELIIFHJCO PPHCMNDNEBE = 8;
+    uint32 config_id = 11;
+    int32 retcode = 1;
+}
+

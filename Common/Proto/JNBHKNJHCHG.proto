@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: JNBHKNJHCHG
+message JNBHKNJHCHG {
+    uint32 MOBFAPLOPOL = 15;
+    uint32 FLOBIIACNND = 12;
+    uint32 BABLJMJPGEK = 1;
+}
+

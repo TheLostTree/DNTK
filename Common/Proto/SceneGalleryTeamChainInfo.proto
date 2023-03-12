@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: KBJEDGGLFMN
+message SceneGalleryTeamChainInfo {
+    uint32 BBGFINCJACC = 2;
+    uint32 LONKBFIBJOL = 14;
+    uint32 FCDILAKFBIJ = 5;
+    uint32 MOIHGLFBLPI = 10;
+    uint32 ACPFEHKCGGB = 13;
+}
+

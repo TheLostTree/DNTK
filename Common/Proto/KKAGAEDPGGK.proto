@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: KKAGAEDPGGK
+message KKAGAEDPGGK {
+    string HBCIEPELAKP = 1;
+    string PFDENLGHKKG = 2;
+    string JIIPGPJDHEA = 9;
+}
+

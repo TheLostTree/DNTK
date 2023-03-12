@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: PAIKIGMLFHE
+// CmdId: 22157
+message PAIKIGMLFHE {
+    int32 retcode = 3;
+}
+

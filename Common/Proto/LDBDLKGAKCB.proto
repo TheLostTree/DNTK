@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: LDBDLKGAKCB
+// CmdId: 22413
+message LDBDLKGAKCB {
+    uint32 JNBMKEFPJIC = 162;
+    bool is_save_score = 9;
+    uint32 BFAIDHEKEOD = 1640;
+    uint32 OJIACEJOFJF = 1480;
+    uint32 max_combo = 10;
+    uint32 music_basic_id = 7;
+    uint32 combo = 14;
+    repeated uint32 DGMDAOAENMJ = 756;
+    bool JIIDBCILMEP = 184;
+    repeated uint32 NNIJFEMDAIM = 15;
+    uint32 HPAMHHMILKM = 11;
+    float speed = 1401;
+    uint32 score = 1;
+    uint32 correct_hit = 3;
+    bool AECNMHLOMBH = 726;
+    uint32 NDOFNFADKJH = 8;
+    uint32 APJPLBOJEGN = 4;
+    uint64 ugc_guid = 5;
+}
+

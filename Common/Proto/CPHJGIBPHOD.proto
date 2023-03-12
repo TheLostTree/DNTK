@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "Vector.proto";
+
+// Name: CPHJGIBPHOD
+message CPHJGIBPHOD {
+    uint32 entity_id = 7;
+    Vector face_dir = 10;
+    Vector velocity = 6;
+    Vector pos = 4;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: OFLLNPACMJD
+message DuelHeartLevelDifficultyInfo {
+    uint32 cost_time = 2;
+    bool is_open = 10;
+    uint32 difficulty = 6;
+}
+

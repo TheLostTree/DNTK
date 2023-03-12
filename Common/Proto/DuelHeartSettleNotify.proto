@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: BBILHMJOINA
+// CmdId: 24743
+message DuelHeartSettleNotify {
+    uint32 cost_time = 7;
+    bool is_new_record = 4;
+    bool is_succ = 9;
+}
+

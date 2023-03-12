@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: OJJNFPAMLKF
+// CmdId: 21227
+message LanV3BoatGameStartSingleRsp {
+    int32 retcode = 10;
+}
+

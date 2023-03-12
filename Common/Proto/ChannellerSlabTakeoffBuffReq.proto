@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: BNDBBLFOHEF
+// CmdId: 8271
+message ChannellerSlabTakeoffBuffReq {
+    uint32 buff_id = 9;
+    bool is_mp = 3;
+    uint32 slot_id = 13;
+}
+

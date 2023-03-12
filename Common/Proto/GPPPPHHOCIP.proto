@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: GPPPPHHOCIP
+message GPPPPHHOCIP {
+    int64 value = 1;
+}
+

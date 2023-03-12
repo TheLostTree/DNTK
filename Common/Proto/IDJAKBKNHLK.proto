@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "GalleryStopReason.proto";
+
+// Name: IDJAKBKNHLK
+message IDJAKBKNHLK {
+    GalleryStopReason reason = 11;
+}
+

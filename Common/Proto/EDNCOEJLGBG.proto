@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: EDNCOEJLGBG
+message EDNCOEJLGBG {
+    uint32 monster_id = 15;
+    repeated uint32 affix_list = 9;
+    uint32 level = 11;
+}
+

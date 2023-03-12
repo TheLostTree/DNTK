@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "KJMKJAIFNEC.proto";
+
+// Name: HJNJFLOPJOP
+message HJNJFLOPJOP {
+    bool IACPFHDIBAH = 1;
+    repeated KJMKJAIFNEC FIAKFNFDPFP = 999;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "IHINMBHNLHL.proto";
+
+// Name: LDJBCPLPPHB
+message LDJBCPLPPHB {
+    repeated IHINMBHNLHL JJGOFGMNPLE = 1;
+    string name = 2;
+}
+

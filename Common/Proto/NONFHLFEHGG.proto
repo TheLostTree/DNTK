@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: NONFHLFEHGG
+message NONFHLFEHGG {
+    // Name: ELEPIOAFKEG
+    message ELEPIOAFKEG {
+        repeated int32 BBJIIDDFHLG = 1;
+        repeated int32 EJEHHFKDCAM = 2;
+        string GOJOJFDCBAM = 3;
+        string OBOMLFGJAJK = 4;
+        repeated string APFLGIBEFOJ = 6;
+    }
+
+    repeated ELEPIOAFKEG IGGBLCHJFGF = 1;
+}
+

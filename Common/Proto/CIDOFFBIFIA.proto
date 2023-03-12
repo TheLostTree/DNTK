@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "HHACKKBLLHO.proto";
+
+// Name: CIDOFFBIFIA
+message CIDOFFBIFIA {
+    uint32 controller_id = 14;
+    uint32 JCMACGJEEAD = 3;
+    oneof detail {
+        string BDBMFCIHJPL = 12;
+        HHACKKBLLHO IEOMECODBLG = 7;
+    }
+}
+

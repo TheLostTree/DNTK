@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: OODONDJKIEL
+// CmdId: 7245
+message OODONDJKIEL {
+    uint32 AHAIAIPGFDN = 2;
+    int32 retcode = 3;
+    uint32 LKFDEJMGHMP = 7;
+}
+

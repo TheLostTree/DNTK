@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "OJGKLIEIMFL.proto";
+
+// Name: IJPMGNKJINC
+message IJPMGNKJINC {
+    string name = 1;
+    OJGKLIEIMFL PNFIHGPGNKD = 2;
+}
+

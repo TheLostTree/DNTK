@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "DDFMGAHMONA.proto";
+import "JMBJHKIMDFC.proto";
+
+// Name: HEIHACODPGK
+message HEIHACODPGK {
+    uint32 APFPGJODBFO = 110;
+    bool BCMHGOOECGK = 4;
+    repeated uint32 HNODLJLIHGP = 1827;
+    bool OGOCIGOAJLB = 873;
+    bool KJPCJKHINJD = 13;
+    uint32 FMMECOPACKC = 1940;
+    uint32 OIEGFIJOFGL = 988;
+    repeated DDFMGAHMONA BLDGMNNDGFJ = 8;
+    bool DJHFHGKEDHP = 802;
+    bool MJIFKEIJGIG = 2;
+    uint32 OKNOAHLOFEL = 10;
+    repeated uint32 unlock_strategy_list = 5;
+    repeated uint32 LLLPHCOGFBG = 9;
+    repeated uint32 AFILOLELHFA = 11;
+    uint32 JIIPBLOOFHC = 14;
+    uint32 store_round = 15;
+    bool NCMAKPOPMOM = 1781;
+    repeated uint32 EFLHJPMLAPF = 12;
+    bool BNAAILOMLOA = 6;
+    JMBJHKIMDFC IDPGDFJJMFF = 1;
+    bool ALKLDMIEONO = 7;
+    map<uint32, bool> NNAOPIMFFNF = 3;
+}
+

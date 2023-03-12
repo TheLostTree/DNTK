@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: ADMIOIMGPLK
+message ADMIOIMGPLK {
+    uint32 difficulty = 12;
+}
+

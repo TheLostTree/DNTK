@@ -40,11 +40,11 @@ public class CombatInvokeProcessor
                 case CombatTypeArgument.EntityMove:
                     cumbat.CombatData = EntityMoveInfo.Parser.ParseFrom(invoke.CombatData);
                     break;
-                case CombatTypeArgument.EvtBeingHit:
+                case CombatTypeArgument.CombatEvtBeingHit:
                     cumbat.CombatData = EvtBeingHitInfo.Parser.ParseFrom(invoke.CombatData);
                     // Log.Information("@{data}", cumbat.CombatData);
                     break;
-                case CombatTypeArgument.BeingHealedNtf:
+                case CombatTypeArgument.CombatBeingHealedNtf:
                     //healing packets
                     cumbat.CombatData = new HealInvoke(EvtBeingHealedNotify.Parser.ParseFrom(invoke.CombatData));
                     break;
@@ -73,8 +73,8 @@ public class CombatInvokeProcessor
         public float ActualAmount;
         public HealInvoke(EvtBeingHealedNotify indata)
         {
-            this.ActualAmount = indata.Unk3300ECNBKHHADDJ;
-            this.HealedAmount = indata.Unk3300LCLOFCCIJKH;
+            this.ActualAmount = indata.JHONBPIGLCI;
+            this.HealedAmount = indata.PNLNNJHIJFC;
             this.TargetId = indata.TargetId;
             this.SourceId = indata.SourceId;
         }

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "CKLBEJHMHKG.proto";
+
+// Name: LCHKFOGFJNP
+message LCHKFOGFJNP {
+    repeated CKLBEJHMHKG ONICDCIHMNJ = 14;
+    repeated CKLBEJHMHKG PKOFIKOAFIC = 4;
+}
+

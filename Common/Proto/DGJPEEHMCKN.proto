@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: DGJPEEHMCKN
+// CmdId: 23251
+message DGJPEEHMCKN {
+    int32 retcode = 9;
+}
+

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: DIGLBMAEMML
+message DIGLBMAEMML {
+    repeated uint32 card_list = 9;
+}
+

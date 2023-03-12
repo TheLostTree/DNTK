@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "HBEFCJKDDIN.proto";
+
+// Name: AGBDLCMHIPB
+message AGBDLCMHIPB {
+    repeated uint32 NANIIOABNOG = 10;
+    repeated uint32 PIEMKNGALPB = 3;
+    repeated HBEFCJKDDIN FALMAMOMDAG = 7;
+}
+

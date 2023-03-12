@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: LEDHFKADLOP
+// CmdId: 23997
+message LanV3ShadowFinishLevelRsp {
+    int32 retcode = 7;
+}
+

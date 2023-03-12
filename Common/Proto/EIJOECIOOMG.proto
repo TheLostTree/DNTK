@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: EIJOECIOOMG
+message EIJOECIOOMG {
+    uint32 element_type = 10;
+    float GGFHOCCBOOK = 15;
+    uint32 IGDJFFNHDNC = 14;
+    float BLBHOEGPKOF = 7;
+}
+

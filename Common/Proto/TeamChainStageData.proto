@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: JNCBMFIIBGA
+message TeamChainStageData {
+    uint32 stage_id = 2;
+    bool is_open = 13;
+    uint32 best_score = 1;
+}
+

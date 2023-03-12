@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: DIIIIGIADBO
+message DIIIIGIADBO {
+    float KNPCMENHBEF = 11;
+}
+

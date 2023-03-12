@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "OJEEKAIOFBO.proto";
+
+// Name: JMBJHKIMDFC
+message JMBJHKIMDFC {
+    map<uint32, OJEEKAIOFBO> MHKGBAKJPDP = 3;
+}
+

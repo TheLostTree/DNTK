@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "ItemParam.proto";
+
+// Name: OJEEKAIOFBO
+message OJEEKAIOFBO {
+    uint32 trader_id = 9;
+    repeated ItemParam MEKHDALGJJL = 3;
+}
+

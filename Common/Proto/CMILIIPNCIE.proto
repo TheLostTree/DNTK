@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: CMILIIPNCIE
+message CMILIIPNCIE {
+    uint32 score = 6;
+    uint32 open_time = 1;
+    uint32 dungeon_index = 5;
+    bool is_open = 2;
+    repeated uint32 PGFJHIDMAPG = 15;
+    bool is_first_pass_reward_taken = 4;
+}
+

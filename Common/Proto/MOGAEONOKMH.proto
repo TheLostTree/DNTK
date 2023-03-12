@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: MOGAEONOKMH
+// CmdId: 7506
+message MOGAEONOKMH {
+    uint32 level = 12;
+    int32 retcode = 7;
+}
+

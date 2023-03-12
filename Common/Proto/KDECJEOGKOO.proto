@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "ExhibitionDisplayInfo.proto";
+import "ProfilePicture.proto";
+
+// Name: KDECJEOGKOO
+message KDECJEOGKOO {
+    uint32 uid = 5;
+    uint32 head_image = 14;
+    repeated ExhibitionDisplayInfo card_list = 10;
+    ProfilePicture profile_picture = 1;
+    string nickname = 6;
+    string online_id = 12;
+}
+

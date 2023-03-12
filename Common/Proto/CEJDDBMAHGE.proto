@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "Vector.proto";
+
+// Name: CEJDDBMAHGE
+message CEJDDBMAHGE {
+    uint32 room_id = 3;
+    Vector rot = 12;
+    Vector pos = 1;
+}
+

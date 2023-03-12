@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "IGCNJKHEEOA.proto";
+import "OJNKFDIOAFA.proto";
+
+// Name: FFHGPFHLKPI
+// CmdId: 7528
+message FFHGPFHLKPI {
+    repeated IGCNJKHEEOA level_list = 8;
+    repeated uint32 AEPLPNNGLPG = 2;
+    repeated OJNKFDIOAFA HKLDJONNBOA = 6;
+}
+

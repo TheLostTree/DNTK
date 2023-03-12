@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: EAHMNIJJAGF
+// CmdId: 7431
+message EAHMNIJJAGF {
+    uint32 card_id = 12;
+    uint32 face_type = 6;
+}
+

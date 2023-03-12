@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "Vector.proto";
+
+// Name: MFCBPCBFGOH
+message MFCBPCBFGOH {
+    uint32 furniture_id = 1;
+    Vector spawn_pos = 2;
+    Vector MGHIMMEFBDI = 3;
+}
+

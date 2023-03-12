@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "Uint32Pair.proto";
+
+// Name: MJMMGKPBGGH
+message MJMMGKPBGGH {
+    repeated Uint32Pair FHMGOBDDINB = 9;
+    uint32 card_id = 5;
+}
+

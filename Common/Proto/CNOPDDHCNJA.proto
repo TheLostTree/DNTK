@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: CNOPDDHCNJA
+message CNOPDDHCNJA {
+    float BBGFHEIICOB = 13;
+    float NIJAKGLOOAD = 12;
+}
+

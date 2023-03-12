@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: LGCELPOKEDF
+message LGCELPOKEDF {
+    double value = 1;
+}
+

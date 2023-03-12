@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "KJMKJAIFNEC.proto";
+
+// Name: MHJKJDBPKDF
+message MHJKJDBPKDF {
+    // Name: JMKNPJIEDDA
+    enum JMKNPJIEDDA {
+        JMKNPJIEDDA_HFHCHIIGNAI = 0;
+        JMKNPJIEDDA_EDPGDBFDCGO = 1;
+        JMKNPJIEDDA_HLDBHJLDGCA = 2;
+    }
+
+    bool IACPFHDIBAH = 33;
+    JMKNPJIEDDA HIMHCNCCOLL = 34;
+    repeated KJMKJAIFNEC FIAKFNFDPFP = 999;
+}
+

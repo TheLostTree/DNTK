@@ -19,12 +19,30 @@ public class UdpHandler
         _processor = new PacketProcessor();
     }
 
-    public void HandleRawCapture(RawCapture rawCapture)
+    public void HandleRawCapture(RawCapture rawCapture, LinkLayers t)
     {
-        var udpPacket = PacketDotNet.Packet.ParsePacket(LinkLayers.Ethernet,
-                rawCapture.Data)
-            .Extract<IPv4Packet>()
-            .Extract<UdpPacket>();
+        UdpPacket udpPacket;
+        if (t == LinkLayers.Ethernet)
+        {
+            udpPacket= PacketDotNet.Packet.ParsePacket(LinkLayers.Ethernet,
+                    rawCapture.Data)
+                .Extract<IPv4Packet>()
+                .Extract<UdpPacket>();
+        }
+        else if (t == LinkLayers.RawLegacy)
+        {
+            udpPacket= PacketDotNet.Packet.ParsePacket(LinkLayers.RawLegacy,
+                    rawCapture.Data)
+                .Extract<IPv4Packet>()
+                .Extract<UdpPacket>();
+        }
+        else
+        {
+            Log.Warning("unknown linklayer type for {D}",t.ToString() );
+            return;
+            // add more fallbacks (for example the router one for srl?
+        }
+        
 
         var sender = udpPacket.DestinationPort is 22101 or 22102 ? Sender.Client : Sender.Server;
         var packetBytes = udpPacket.PayloadData;

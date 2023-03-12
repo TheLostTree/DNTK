@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "DOINBFHLBHP.proto";
+
+// Name: AOHEFFCPELI
+message AOHEFFCPELI {
+    uint32 controller_id = 11;
+    uint64 begin_time = 5;
+    uint64 OAKPHGNDJLO = 12;
+    DOINBFHLBHP JFFMMIKBICI = 14;
+}
+

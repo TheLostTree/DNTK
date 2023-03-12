@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "KJMKJAIFNEC.proto";
+
+// Name: KBIMCEMNOCC
+message KBIMCEMNOCC {
+    // Name: FJOAHKNBJCL
+    enum FJOAHKNBJCL {
+        FJOAHKNBJCL_OCNDIOHNMBI = 0;
+        FJOAHKNBJCL_PCDEOGGODDP = 1;
+        FJOAHKNBJCL_CAAJDLBAINN = 2;
+    }
+
+    // Name: ADFONKAMCHE
+    enum ADFONKAMCHE {
+        ADFONKAMCHE_JCHKEPKJELB = 0;
+        ADFONKAMCHE_COKMGJBCJHC = 1;
+        ADFONKAMCHE_CHBEBILDJGO = 2;
+    }
+
+    FJOAHKNBJCL NIGGPLGKNKN = 1;
+    bool LEINHBBGDBB = 2;
+    ADFONKAMCHE KBCBIAEENNH = 6;
+    bool BEDCKCJIMDD = 5;
+    bool IACPFHDIBAH = 3;
+    bool OJCDDGPOHHB = 10;
+    repeated KJMKJAIFNEC FIAKFNFDPFP = 999;
+}
+

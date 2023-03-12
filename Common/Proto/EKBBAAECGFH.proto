@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "ExhibitionDisplayInfo.proto";
+import "KDECJEOGKOO.proto";
+
+// Name: EKBBAAECGFH
+// CmdId: 6538
+message EKBBAAECGFH {
+    uint32 duration = 11;
+    uint32 begin_time = 10;
+    repeated ExhibitionDisplayInfo score_list = 13;
+    bool is_single = 9;
+    uint32 play_index = 2;
+    uint32 stage_type = 14;
+    bool AGPJPHOBGEP = 15;
+    repeated KDECJEOGKOO settle_info_list = 7;
+    repeated uint32 HJEBIONDCIL = 4;
+}
+

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: LIKPGKGOHGB
+// CmdId: 20042
+message LIKPGKGOHGB {
+    uint32 stage_id = 5;
+    uint32 finish_time = 15;
+    uint32 gallery_id = 4;
+    uint32 LEDKDCJIDNE = 6;
+    bool is_succ = 11;
+    bool is_new_record = 13;
+    bool BMPCEOKKBEA = 7;
+}
+

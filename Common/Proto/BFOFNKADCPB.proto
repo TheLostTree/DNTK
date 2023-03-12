@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: BFOFNKADCPB
+// CmdId: 21951
+message BFOFNKADCPB {
+    int32 retcode = 5;
+}
+

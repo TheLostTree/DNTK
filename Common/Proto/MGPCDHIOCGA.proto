@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: MGPCDHIOCGA
+message MGPCDHIOCGA {
+    uint32 job_id = 8;
+    int32 hash_value = 3;
+    uint32 entity_id = 10;
+}
+

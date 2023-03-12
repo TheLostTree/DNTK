@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: PNKNAMMJIDF
+// CmdId: 23386
+message DuelHeartCgEndNotify {
+}
+

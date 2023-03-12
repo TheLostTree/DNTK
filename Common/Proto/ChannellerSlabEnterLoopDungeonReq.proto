@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: EFPEOHBIMPK
+// CmdId: 8287
+message ChannellerSlabEnterLoopDungeonReq {
+    uint32 difficulty_id = 9;
+    uint32 point_id = 3;
+    repeated uint32 condition_id_list = 10;
+    uint32 dungeon_index = 4;
+}
+

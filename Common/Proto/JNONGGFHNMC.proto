@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "KIMICJIEGDD.proto";
+import "NHIJPCNBKJE.proto";
+
+// Name: JNONGGFHNMC
+message JNONGGFHNMC {
+    string name = 1;
+    string FEDIANCDPPE = 2;
+    bool NNODEKCPMPJ = 3;
+    string LFFPKIEJOLH = 4;
+    bool DMOGKFBJKLC = 5;
+    repeated NHIJPCNBKJE PNFIHGPGNKD = 6;
+    KIMICJIEGDD FFDAHCPMGAI = 7;
+}
+

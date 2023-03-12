@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: IGKIPAJDMNO
+message IGKIPAJDMNO {
+    uint32 FLALLOBJHNC = 9;
+    uint32 block_id = 7;
+}
+

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "SeaLampV3ShadowStageInfo.proto";
+
+// Name: DAEEOGCBCCK
+message DAEEOGCBCCK {
+    repeated SeaLampV3ShadowStageInfo stage_info_list = 15;
+}
+

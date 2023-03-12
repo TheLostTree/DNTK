@@ -1,27 +1,14 @@
-// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
-// Copyright (C) 2022  Sorapointa Team
-//
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Affero General Public License as
-// published by the Free Software Foundation, either version 3 of the
-// License, or (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU Affero General Public License for more details.
-//
-// You should have received a copy of the GNU Affero General Public License
-// along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 syntax = "proto3";
 
 option csharp_namespace = "Common.Protobuf";
 
+
+// Name: JACLPLPBKCK
 message InBattleFleurFairInfo {
-  uint32 gallery_stage_index = 7;
-  uint32 preview_display_duration = 11;
-  repeated uint32 Unk3300_NNPMBFGJELL = 15;
-  uint32 preview_stage_index = 9;
-  repeated uint32 Unk3300_IJBKKLGOMIE = 14;
+    uint32 PLINGHKFANK = 11;
+    uint32 OEHEMHPFFBO = 8;
+    uint32 JAPOOOOHCEN = 3;
+    repeated uint32 KJDOAOPPGPL = 2;
+    repeated uint32 HNMODIBEKGK = 6;
 }
+

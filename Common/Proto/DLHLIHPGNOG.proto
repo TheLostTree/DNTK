@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: DLHLIHPGNOG
+message DLHLIHPGNOG {
+    uint32 apply_entity_id = 15;
+}
+

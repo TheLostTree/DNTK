@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: FKGPKKHNDLC
+enum FKGPKKHNDLC {
+    FKGPKKHNDLC_PEHAONPAPHA = 0;
+    FKGPKKHNDLC_CHABMNAEKCD = 1;
+    FKGPKKHNDLC_GOBKCHDGKAF = 2;
+    FKGPKKHNDLC_FMEOFKEAIAB = 3;
+    FKGPKKHNDLC_PJLEFNKKKIL = 4;
+}
+

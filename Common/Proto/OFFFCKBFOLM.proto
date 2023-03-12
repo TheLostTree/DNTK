@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: OFFFCKBFOLM
+message OFFFCKBFOLM {
+    uint32 MCLFONHPHKE = 10;
+}
+

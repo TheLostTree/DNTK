@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "PAHEIEEOIED.proto";
+
+// Name: JFGOFCIOKNH
+message JFGOFCIOKNH {
+    float FHDDGGPLFPD = 8;
+    map<uint32, uint32> MKHMMEIPADF = 6;
+    uint32 KJJGPALBKOB = 1;
+    float DCKCABDEPFP = 2;
+    uint32 OALLIFFNAKN = 5;
+    uint32 attack_target_id = 14;
+    float MKHJHACMPLF = 13;
+    uint32 entity_id = 15;
+    uint32 IBJGGELGJGJ = 3;
+    float BFEJHJADGKJ = 10;
+    uint32 EPPLJDKOOGO = 7;
+    repeated PAHEIEEOIED IMOFBLMDLIM = 11;
+}
+

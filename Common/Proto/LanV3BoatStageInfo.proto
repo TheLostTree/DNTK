@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: JGFHBJKGCLJ
+message LanV3BoatStageInfo {
+    uint32 map_id = 2;
+    bool is_single = 4;
+    uint32 match_id = 6;
+    repeated uint32 player_uid_list = 7;
+}
+

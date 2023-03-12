@@ -1,21 +1,8 @@
-// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
-// Copyright (C) 2022  Sorapointa Team
-//
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Affero General Public License as
-// published by the Free Software Foundation, either version 3 of the
-// License, or (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU Affero General Public License for more details.
-//
-// You should have received a copy of the GNU Affero General Public License
-// along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 syntax = "proto3";
 
+option csharp_namespace = "Common.Protobuf";
+
+import "AOHEFFCPELI.proto";
 import "GCGMsgAddCards.proto";
 import "GCGMsgAddDice.proto";
 import "GCGMsgCardUpdate.proto";
@@ -32,12 +19,10 @@ import "GCGMsgModifyRemove.proto";
 import "GCGMsgMoveCard.proto";
 import "GCGMsgNewCard.proto";
 import "GCGMsgNoDamageSkillResult.proto";
-import "GCGMsgOpTimer.proto";
+import "GCGMsgPass.proto";
+import "GCGMsgPhaseContinue.proto";
 import "GCGMsgPVEIntentionChange.proto";
 import "GCGMsgPVEIntentionInfo.proto";
-import "GCGMsgPass.proto";
-import "GCGMsgPhaseChange.proto";
-import "GCGMsgPhaseContinue.proto";
 import "GCGMsgReactionBegin.proto";
 import "GCGMsgReactionEnd.proto";
 import "GCGMsgRemoveCards.proto";
@@ -46,48 +31,49 @@ import "GCGMsgSelectOnStageByEffect.proto";
 import "GCGMsgSkillLimitsChange.proto";
 import "GCGMsgSkillResult.proto";
 import "GCGMsgTokenChange.proto";
-import "GCGMsgUpdateController.proto";
 import "GCGMsgUseSkill.proto";
 import "GCGMsgUseSkillEnd.proto";
 import "GCGMsgWaitingListChange.proto";
+import "GIHCLFFDKLE.proto";
+import "LNDLOPKJALI.proto";
 
-option csharp_namespace = "Common.Protobuf";
-
+// Name: NDDAOOGOECF
 message GCGMessage {
-  oneof message {
-    GCGMsgTokenChange token_change = 2;
-    GCGMsgPhaseChange phase_change = 10;
-    GCGMsgAddCards add_cards = 5;
-    GCGMsgRemoveCards remove_cards = 12;
-    GCGMsgSelectOnStage select_on_stage = 6;
-    GCGMsgDiceRoll dice_roll = 14;
-    GCGMsgDiceReroll dice_reroll = 15;
-    GCGMsgPass pass = 8;
-    GCGMsgCharDie char_die = 4;
-    GCGMsgSkillResult skill_result = 3;
-    GCGMsgCostDice cost_dice = 13;
-    GCGMsgAddDice add_dice = 7;
-    GCGMsgMoveCard move_card = 11;
-    GCGMsgUseSkill use_skill = 1;
-    GCGMsgNewCard new_card = 296;
-    GCGMsgUpdateController update_controller = 1111;
-    GCGMsgModifyAdd modify_add = 1733;
-    GCGMsgModifyRemove modify_remove = 2014;
-    GCGMsgUseSkillEnd use_skill_end = 1368;
-    GCGMsgDuelDataChange duel_data_change = 1791;
-    GCGMsgClientPerform client_perform = 1677;
-    GCGMsgGameOver game_over = 632;
-    GCGMsgOpTimer op_timer = 154;
-    GCGMsgWaitingListChange waiting_list_change = 1991;
-    GCGMsgCardUpdate card_update = 1702;
-    GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 1737;
-    GCGMsgCostRevise cost_revise = 468;
-    GCGMsgPhaseContinue phase_continue = 1157;
-    GCGMsgPVEIntentionInfo pve_intention_info = 850;
-    GCGMsgPVEIntentionChange pve_intention_change = 1268;
-    GCGMsgSkillLimitsChange skill_limits_change = 710;
-    GCGMsgNoDamageSkillResult no_damage_skill_result = 773;
-    GCGMsgReactionBegin reaction_begin = 243;
-    GCGMsgReactionEnd reaction_end = 1172;
-  }
+    oneof message {
+        GCGMsgTokenChange token_change = 6;
+        LNDLOPKJALI phase_change = 2;
+        GCGMsgAddCards add_cards = 14;
+        GCGMsgRemoveCards remove_cards = 10;
+        GCGMsgSelectOnStage select_on_stage = 8;
+        GCGMsgDiceRoll dice_roll = 13;
+        GCGMsgDiceReroll dice_reroll = 15;
+        GCGMsgPass pass = 11;
+        GCGMsgCharDie char_die = 3;
+        GCGMsgSkillResult skill_result = 5;
+        GCGMsgCostDice cost_dice = 4;
+        GCGMsgAddDice add_dice = 1;
+        GCGMsgMoveCard move_card = 12;
+        GCGMsgUseSkill use_skill = 7;
+        GCGMsgNewCard new_card = 1698;
+        GIHCLFFDKLE update_controller = 2016;
+        GCGMsgModifyAdd modify_add = 555;
+        GCGMsgModifyRemove modify_remove = 1901;
+        GCGMsgUseSkillEnd use_skill_end = 1067;
+        GCGMsgDuelDataChange duel_data_change = 686;
+        GCGMsgClientPerform client_perform = 1743;
+        GCGMsgGameOver game_over = 1766;
+        AOHEFFCPELI op_timer = 167;
+        GCGMsgWaitingListChange waiting_list_change = 891;
+        GCGMsgCardUpdate card_update = 1549;
+        GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 1093;
+        GCGMsgCostRevise cost_revise = 1422;
+        GCGMsgPhaseContinue phase_continue = 624;
+        GCGMsgPVEIntentionInfo pve_intention_info = 65;
+        GCGMsgPVEIntentionChange pve_intention_change = 1571;
+        GCGMsgSkillLimitsChange skill_limits_change = 1013;
+        GCGMsgNoDamageSkillResult no_damage_skill_result = 1753;
+        GCGMsgReactionBegin reaction_begin = 1386;
+        GCGMsgReactionEnd reaction_end = 1304;
+    }
 }
+

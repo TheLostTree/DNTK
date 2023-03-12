@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "Vector.proto";
+
+// Name: DAMDPHBCAKI
+message DAMDPHBCAKI {
+    Vector pos = 11;
+    Vector rot = 8;
+}
+

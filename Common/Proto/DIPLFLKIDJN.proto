@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: DIPLFLKIDJN
+// CmdId: 7269
+message DIPLFLKIDJN {
+    string FFBNANJHIEH = 15;
+}
+

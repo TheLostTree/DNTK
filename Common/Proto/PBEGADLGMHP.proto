@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: PBEGADLGMHP
+message PBEGADLGMHP {
+    repeated uint32 data = 8;
+}
+

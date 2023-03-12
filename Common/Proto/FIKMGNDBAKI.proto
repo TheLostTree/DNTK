@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: FIKMGNDBAKI
+message FIKMGNDBAKI {
+    // Name: FJBBJCKKNEA
+    message FJBBJCKKNEA {
+        repeated int32 BBJIIDDFHLG = 1;
+        string NDCHHAHMBNA = 2;
+        int32 HMCFGEMMPNJ = 3;
+        int32 KPACNJFMKHM = 4;
+    }
+
+    repeated FJBBJCKKNEA KLKNLLJFNLG = 1;
+}
+

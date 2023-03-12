@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "EEGMCCNFBHE.proto";
+import "LAFGBFLAEGH.proto";
+
+// Name: OLFCEKMONGF
+message OLFCEKMONGF {
+    string name = 1;
+    repeated LAFGBFLAEGH value = 2;
+    EEGMCCNFBHE PNFIHGPGNKD = 3;
+}
+

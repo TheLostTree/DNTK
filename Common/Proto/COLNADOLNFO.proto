@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: COLNADOLNFO
+message COLNADOLNFO {
+    uint32 apply_entity_id = 14;
+}
+

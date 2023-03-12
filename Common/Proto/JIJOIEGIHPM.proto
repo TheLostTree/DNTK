@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "ADLNAMCMMNP.proto";
+
+// Name: JIJOIEGIHPM
+message JIJOIEGIHPM {
+    repeated ADLNAMCMMNP IDIDBDBCJKK = 1;
+}
+

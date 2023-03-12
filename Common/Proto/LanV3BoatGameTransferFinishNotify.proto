@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: DDKDGNHFPFL
+// CmdId: 20763
+message LanV3BoatGameTransferFinishNotify {
+    bool is_reenter = 15;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "ExhibitionDisplayInfo.proto";
+import "OnlinePlayerInfo.proto";
+
+// Name: DPACDAIBBIL
+message DPACDAIBBIL {
+    repeated ExhibitionDisplayInfo card_list = 13;
+    OnlinePlayerInfo player_info = 4;
+}
+

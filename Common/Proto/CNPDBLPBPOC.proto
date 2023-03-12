@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "DOCPAPKDBBK.proto";
+import "JNONGGFHNMC.proto";
+import "KIMICJIEGDD.proto";
+import "LDIGAAFIGJA.proto";
+import "NHIJPCNBKJE.proto";
+
+// Name: CNPDBLPBPOC
+message CNPDBLPBPOC {
+    string name = 1;
+    repeated JNONGGFHNMC NMOFGFHGPAI = 2;
+    repeated NHIJPCNBKJE PNFIHGPGNKD = 3;
+    string version = 4;
+    DOCPAPKDBBK KOHHOLKLCNH = 5;
+    repeated LDIGAAFIGJA FINKLGOFBLJ = 6;
+    KIMICJIEGDD FFDAHCPMGAI = 7;
+}
+

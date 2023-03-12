@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: FHCMHOPJELB
+message FHCMHOPJELB {
+    uint32 next_refresh_time = 1;
+    uint32 MEKKKFKHOPD = 14;
+    uint32 JECDNACMJKP = 3;
+}
+

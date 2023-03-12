@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: FMMFNKAIMMA
+// CmdId: 7916
+message FMMFNKAIMMA {
+    uint32 EJKLKNPMHMC = 8;
+    uint32 card_id = 9;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: DGEBNIILIFA
+// CmdId: 21567
+message DGEBNIILIFA {
+    uint32 IHCMMNBKCFH = 1;
+    uint32 schedule_id = 9;
+}
+

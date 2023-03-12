@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: MNFJFJANFEH
+message MNFJFJANFEH {
+    uint32 best_score = 13;
+    bool KHCOGGPJNML = 15;
+    uint32 challenge_id = 11;
+}
+

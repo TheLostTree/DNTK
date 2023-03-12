@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "Vector.proto";
+
+// Name: FFBGCLGOCDG
+message FFBGCLGOCDG {
+    uint32 BEPDAGJHGNK = 7;
+    Vector HOHCJADGKFD = 6;
+    uint32 EBMAEIDEILG = 9;
+    uint32 entity_id = 2;
+}
+

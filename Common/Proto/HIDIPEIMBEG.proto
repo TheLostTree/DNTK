@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: HIDIPEIMBEG
+// CmdId: 24166
+message HIDIPEIMBEG {
+    int32 retcode = 3;
+}
+

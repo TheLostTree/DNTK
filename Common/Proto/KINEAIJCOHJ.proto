@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "VintagePresentLevelData.proto";
+
+// Name: KINEAIJCOHJ
+message KINEAIJCOHJ {
+    bool is_open = 4;
+    uint32 open_time = 1;
+    uint32 stage_id = 8;
+    bool is_finish = 14;
+    map<uint32, VintagePresentLevelData> EMOJAOJMOJG = 2;
+}
+

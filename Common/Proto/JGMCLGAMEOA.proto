@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: JGMCLGAMEOA
+// CmdId: 7060
+message JGMCLGAMEOA {
+    // Name: AIFELBCMNGE
+    enum AIFELBCMNGE {
+        AIFELBCMNGE_NONDINLCGFO = 0;
+        AIFELBCMNGE_CGAFAKMGIBO = 1;
+        AIFELBCMNGE_NINOFNAFKHO = 2;
+        AIFELBCMNGE_GOIPCFPLOLG = 3;
+        AIFELBCMNGE_JJNMPNGFHOI = 4;
+        AIFELBCMNGE_MEPDCLLKNPN = 5;
+    }
+
+    AIFELBCMNGE reason = 6;
+}
+

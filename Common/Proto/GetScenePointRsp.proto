@@ -1,42 +1,23 @@
-// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
-// Copyright (C) 2022  Sorapointa Team
-//
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Affero General Public License as
-// published by the Free Software Foundation, either version 3 of the
-// License, or (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU Affero General Public License for more details.
-//
-// You should have received a copy of the GNU Affero General Public License
-// along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 syntax = "proto3";
 
 option csharp_namespace = "Common.Protobuf";
 
-message GetScenePointRsp {
-  // enum CmdId {
-  //   option allow_alias = true;
-  //   NONE = 0;
-  //   CMD_ID = 225;
-  //   ENET_CHANNEL_ID = 0;
-  //   ENET_IS_RELIABLE = 1;
-  // }
 
-  repeated uint32 Unk3300_NFDMMIOFECO = 9;
-  repeated uint32 Unk3300_FKANNCGJEFJ = 15;
-  int32 retcode = 13;
-  repeated uint32 Unk3300_FGPKDGFLJOF = 3;
-  repeated uint32 Unk3300_PIGCABAAMMB = 10;
-  repeated uint32 Unk3300_NAPMOOABHLJ = 1;
-  repeated uint32 Unk3300_JFBPMPADAPA = 11;
-  repeated uint32 Unk3300_IJJGKIAMEJA = 6;
-  repeated uint32 Unk3300_JCGMJCEODCM = 7;
-  uint32 belong_uid = 12;
-  repeated uint32 Unk3300_GEDEFAIHKMH = 2;
-  uint32 scene_id = 8;
+// Name: ODCLFBBMOFA
+// CmdId: 229
+message GetScenePointRsp {
+    repeated uint32 LHGAOJELAMA = 3;
+    repeated uint32 FKDLJELPPOJ = 13;
+    int32 retcode = 2;
+    repeated uint32 hide_point_list = 12;
+    repeated uint32 LLLIACPHNEH = 7;
+    uint32 belong_uid = 8;
+    repeated uint32 KBGDANIJLFK = 11;
+    repeated uint32 LEAMLBEEBMN = 14;
+    bool PGBKOMBKBKG = 5;
+    repeated uint32 JOMDNANCHND = 10;
+    repeated uint32 HJLALADBFAC = 15;
+    uint32 scene_id = 6;
+    repeated uint32 unlocked_point_list = 4;
 }
+

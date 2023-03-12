@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "IrodoriChessEntranceDetailInfo.proto";
+
+// Name: MCOPOAMEGCP
+message MCOPOAMEGCP {
+    repeated uint32 CNDHCLDMGJP = 7;
+    uint32 map_id = 4;
+    uint32 best_score = 9;
+    IrodoriChessEntranceDetailInfo entrance_detail_info = 13;
+}
+

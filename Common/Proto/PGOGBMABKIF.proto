@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: PGOGBMABKIF
+message PGOGBMABKIF {
+    string LGNKLEPOPJI = 1;
+    bytes value = 2;
+}
+

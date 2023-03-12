@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: MDIPGMFKKDN
+// CmdId: 7890
+message MDIPGMFKKDN {
+    uint32 confirm_end_time = 10;
+    uint32 EGKHACMKHMD = 5;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "NOFNBENGFPJ.proto";
+
+// Name: BLNOFHFAMDO
+// CmdId: 7347
+message BLNOFHFAMDO {
+    int32 retcode = 9;
+    repeated NOFNBENGFPJ OADJMAAKKAK = 13;
+}
+

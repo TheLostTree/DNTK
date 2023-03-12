@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "NIELIIFHJCO.proto";
+
+// Name: CDPJBKBLFEG
+// CmdId: 7535
+message CDPJBKBLFEG {
+    uint32 level_id = 14;
+    uint32 config_id = 3;
+    NIELIIFHJCO PPHCMNDNEBE = 9;
+}
+

@@ -1,23 +1,10 @@
-// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
-// Copyright (C) 2022  Sorapointa Team
-//
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Affero General Public License as
-// published by the Free Software Foundation, either version 3 of the
-// License, or (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU Affero General Public License for more details.
-//
-// You should have received a copy of the GNU Affero General Public License
-// along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
 
 import "ActivityPushTipsData.proto";
 import "ActivityWatcherInfo.proto";
+import "AMFOFAPEHGM.proto";
 import "ArenaChallengeActivityDetailInfo.proto";
 import "AsterActivityDetailInfo.proto";
 import "BartenderActivityDetailInfo.proto";
@@ -35,10 +22,12 @@ import "CrystalLinkActivityDetailInfo.proto";
 import "DeliveryActivityDetailInfo.proto";
 import "DigActivityDetailInfo.proto";
 import "DragonSpineActivityDetailInfo.proto";
+import "DuelHeartDetailInfo.proto";
 import "EchoShellDetailInfo.proto";
 import "EffigyActivityDetailInfo.proto";
 import "EffigyChallengeV2DetailInfo.proto";
 import "ExpeditionActivityDetailInfo.proto";
+import "FHPFPENBEIB.proto";
 import "FindHilichurlDetailInfo.proto";
 import "FleurFairActivityDetailInfo.proto";
 import "FlightActivityDetailInfo.proto";
@@ -52,6 +41,7 @@ import "InstableSprayDetailInfo.proto";
 import "IrodoriActivityDetailInfo.proto";
 import "IslandPartyDetailInfo.proto";
 import "LanternRiteActivityDetailInfo.proto";
+import "LHPBALCGMJH.proto";
 import "LuminanceStoneChallengeActivityDetailInfo.proto";
 import "LunaRiteDetailInfo.proto";
 import "MichiaeMatsuriActivityDetailInfo.proto";
@@ -59,6 +49,7 @@ import "MistTrialActivityDetailInfo.proto";
 import "MoonfinTrialActivityDetailInfo.proto";
 import "MuqadasPotionActivityDetailInfo.proto";
 import "MusicGameActivityDetailInfo.proto";
+import "NFHMNCKJOEI.proto";
 import "PhotoActivityDetailInfo.proto";
 import "PlantFlowerActivityDetailInfo.proto";
 import "PotionActivityDetailInfo.proto";
@@ -68,11 +59,13 @@ import "RoguelikeDungeonActivityDetailInfo.proto";
 import "SalesmanActivityDetailInfo.proto";
 import "SeaLampActivityDetailInfo.proto";
 import "SeaLampActivityInfo.proto";
+import "SeaLampV3DetailInfo.proto";
 import "SpiceActivityDetailInfo.proto";
 import "SummerTimeDetailInfo.proto";
 import "SummerTimeV2DetailInfo.proto";
 import "SumoActivityDetailInfo.proto";
 import "TanukiTravelActivityDetailInfo.proto";
+import "TeamChainDetailInfo.proto";
 import "TreasureMapActivityDetailInfo.proto";
 import "TreasureSeelieActivityDetailInfo.proto";
 import "TrialAvatarActivityDetailInfo.proto";
@@ -82,95 +75,103 @@ import "WaterSpiritActivityDetailInfo.proto";
 import "WindFieldDetailInfo.proto";
 import "WinterCampActivityDetailInfo.proto";
 
-option csharp_namespace = "Common.Protobuf";
-
+// Name: EIPLHBCKIIO
 message ActivityInfo {
-  bool Unk3300_MJNPGEKLOCG = 360;
-  bool is_finished = 8;
-  uint32 cur_score = 1268;
-  uint32 schedule_id = 7;
-  uint32 Unk3300_JAEALAIOOID = 1870;
-  bool Unk3300_ICNJJKDHPCH = 14;
-  repeated uint32 Unk3300_BGNIBLKCPCA = 11;
-  bool Unk3300_NEPKLLBJFKK = 1645;
-  repeated ActivityWatcherInfo watcher_info_list = 6;
-  repeated ActivityPushTipsData activity_push_tips_data_list = 1867;
-  uint32 activity_id = 13;
-  repeated uint32 taken_reward_list = 1889;
-  uint32 Unk3300_GCEAKEMMJEA = 697;
-  map<uint32, uint32> activity_coin_map = 36;
-  uint32 first_day_start_time = 786;
-  bool Unk3300_ABJKLALKLDG = 1486;
-  uint32 Unk3300_DMILOONBELH = 3;
-  bool Unk3300_CBCEHLJJOGI = 1375;
-  uint32 begin_time = 1;
-  bool Unk3300_MDBDPIBEGGH = 12;
-  map<uint32, uint32> wish_gift_num_map = 939;
-  uint32 end_time = 10;
-  repeated uint32 Unk3300_HKKNIHNBHAE = 5;
-  oneof detail {
-    SeaLampActivityDetailInfo sam_lamp_info = 2;
-    CrucibleActivityDetailInfo crucible_info = 15;
-    SalesmanActivityDetailInfo salesman_info = 9;
-    TrialAvatarActivityDetailInfo trial_avatar_info = 4;
-    DeliveryActivityDetailInfo delivery_info = 1141;
-    AsterActivityDetailInfo aster_info = 1977;
-    FlightActivityDetailInfo flight_info = 2011;
-    DragonSpineActivityDetailInfo dragon_spine_info = 1310;
-    EffigyActivityDetailInfo effigy_info = 1374;
-    TreasureMapActivityDetailInfo treasure_map_info = 1925;
-    BlessingActivityDetailInfo blessing_info = 1962;
-    SeaLampActivityInfo sea_lamp_info = 247;
-    ExpeditionActivityDetailInfo expedition_info = 1752;
-    ArenaChallengeActivityDetailInfo arena_challenge_info = 538;
-    FleurFairActivityDetailInfo fleur_fair_info = 1447;
-    WaterSpiritActivityDetailInfo water_spirit_info = 635;
-    ChannelerSlabActivityDetailInfo channeler_slab_info = 846;
-    MistTrialActivityDetailInfo mist_trial_activity_info = 432;
-    HideAndSeekActivityDetailInfo hide_and_seek_info = 839;
-    FindHilichurlDetailInfo find_hilichurl_info = 378;
-    SummerTimeDetailInfo summer_time_info = 1910;
-    BuoyantCombatDetailInfo buoyant_combat_info = 686;
-    EchoShellDetailInfo echo_shell_info = 1162;
-    BounceConjuringActivityDetailInfo bounce_conjuring_info = 922;
-    BlitzRushActivityDetailInfo blitz_rush_info = 64;
-    ChessActivityDetailInfo chess_info = 1006;
-    SumoActivityDetailInfo sumo_info = 505;
-    MoonfinTrialActivityDetailInfo moonfin_trial_info = 766;
-    LunaRiteDetailInfo luna_rite_info = 1545;
-    PlantFlowerActivityDetailInfo plant_flower_info = 1274;
-    MusicGameActivityDetailInfo music_game_info = 1989;
-    RoguelikeDungeonActivityDetailInfo roguelike_dungeon_info = 970;
-    DigActivityDetailInfo dig_info = 1862;
-    HachiActivityDetailInfo hachi_info = 511;
-    WinterCampActivityDetailInfo winter_camp_info = 699;
-    PotionActivityDetailInfo potion_info = 1567;
-    TanukiTravelActivityDetailInfo tanuki_travel_activity_info = 1348;
-    LanternRiteActivityDetailInfo lantern_rite_activity_info = 237;
-    MichiaeMatsuriActivityDetailInfo michiae_matsuri_info = 1839;
-    BartenderActivityDetailInfo bartender_info = 551;
-    UgcActivityDetailInfo ugc_info = 1182;
-    CrystalLinkActivityDetailInfo crystal_link_info = 812;
-    IrodoriActivityDetailInfo irodori_info = 1056;
-    PhotoActivityDetailInfo photo_info = 1822;
-    SpiceActivityDetailInfo spice_info = 789;
-    GachaActivityDetailInfo gacha_info = 1297;
-    LuminanceStoneChallengeActivityDetailInfo luminance_stone_challenge_info = 444;
-    RogueDiaryActivityDetailInfo rogue_diary_info = 560;
-    SummerTimeV2DetailInfo summer_time_v2_info = 411;
-    IslandPartyDetailInfo island_party_info = 740;
-    GearActivityDetailInfo gear_info = 1482;
-    GravenInnocenceDetailInfo graven_innocence_info = 1928;
-    InstableSprayDetailInfo instable_spray_info = 1145;
-    MuqadasPotionActivityDetailInfo muqadas_potion_info = 1662;
-    TreasureSeelieActivityDetailInfo treasure_seelie_info = 1032;
-    RockBoardExploreDetailInfo rock_board_explore_info = 1265;
-    VintageActivityDetailInfo vintage_info = 1308;
-    WindFieldDetailInfo wind_field_info = 468;
-    FungusFighterDetailInfo fungus_fighter_info = 1757;
-    CharAmusementDetailInfo char_amusement_info = 621;
-    EffigyChallengeV2DetailInfo effigy_challenge_info = 233;
-    CoinCollectDetailInfo coin_collect_info = 2002;
-    BrickBreakerDetailInfo brick_breaker_info = 1522;
-  }
+    uint32 ANGGLPJEBLE = 438;
+    uint32 schedule_id = 14;
+    bool FLFGIDFALEK = 15;
+    uint32 LPOCNCICJHM = 485;
+    map<uint32, uint32> activity_coin_map = 703;
+    repeated uint32 PAGIONJOCJN = 2;
+    uint32 end_time = 4;
+    bool GLOONPBGOHM = 1331;
+    repeated ActivityPushTipsData activity_push_tips_data_list = 1827;
+    repeated uint32 LGCJBENHFOB = 13;
+    bool is_finished = 6;
+    repeated uint32 EOPFKDBBOII = 894;
+    repeated ActivityWatcherInfo watcher_info_list = 8;
+    uint32 KMOFHMKLGHD = 5;
+    uint32 activity_id = 7;
+    bool CJDFLBKBNPL = 10;
+    map<uint32, uint32> wish_gift_num_map = 1459;
+    bool OEBHLKFBCOG = 696;
+    bool LGKOJCGDGBH = 1736;
+    uint32 begin_time = 9;
+    repeated uint32 DDBJAKPEPLC = 778;
+    uint32 first_day_start_time = 1677;
+    uint32 cur_score = 1005;
+    bool EFJOLIOFLBG = 514;
+    oneof detail {
+        SeaLampActivityDetailInfo sam_lamp_info = 1;
+        CrucibleActivityDetailInfo crucible_info = 11;
+        SalesmanActivityDetailInfo salesman_info = 3;
+        TrialAvatarActivityDetailInfo trial_avatar_info = 12;
+        DeliveryActivityDetailInfo delivery_info = 1972;
+        AsterActivityDetailInfo aster_info = 306;
+        FlightActivityDetailInfo flight_info = 1872;
+        DragonSpineActivityDetailInfo dragon_spine_info = 593;
+        EffigyActivityDetailInfo effigy_info = 2044;
+        TreasureMapActivityDetailInfo treasure_map_info = 876;
+        BlessingActivityDetailInfo blessing_info = 742;
+        SeaLampActivityInfo sea_lamp_info = 1685;
+        ExpeditionActivityDetailInfo expedition_info = 1399;
+        ArenaChallengeActivityDetailInfo arena_challenge_info = 1235;
+        FleurFairActivityDetailInfo fleur_fair_info = 581;
+        WaterSpiritActivityDetailInfo water_spirit_info = 1127;
+        ChannelerSlabActivityDetailInfo challneler_slab_info = 599;
+        MistTrialActivityDetailInfo mist_trial_activity_info = 645;
+        HideAndSeekActivityDetailInfo hide_and_seek_info = 794;
+        FindHilichurlDetailInfo find_hilichurl_info = 1344;
+        SummerTimeDetailInfo summer_time_info = 1058;
+        BuoyantCombatDetailInfo buoyant_combat_info = 771;
+        EchoShellDetailInfo echo_shell_info = 1632;
+        BounceConjuringActivityDetailInfo bounce_conjuring_info = 1554;
+        BlitzRushActivityDetailInfo blitz_rush_info = 1341;
+        ChessActivityDetailInfo chess_info = 664;
+        SumoActivityDetailInfo sumo_info = 1666;
+        MoonfinTrialActivityDetailInfo moonfin_trial_info = 333;
+        LunaRiteDetailInfo luna_rite_info = 119;
+        PlantFlowerActivityDetailInfo plant_flower_info = 349;
+        MusicGameActivityDetailInfo music_game_info = 1966;
+        RoguelikeDungeonActivityDetailInfo roguelike_dungoen_info = 2034;
+        DigActivityDetailInfo dig_info = 1410;
+        HachiActivityDetailInfo hachi_info = 1603;
+        WinterCampActivityDetailInfo winter_camp_info = 1225;
+        PotionActivityDetailInfo potion_info = 1447;
+        TanukiTravelActivityDetailInfo tanuki_travel_activity_info = 1327;
+        LanternRiteActivityDetailInfo lantern_rite_activity_info = 1662;
+        MichiaeMatsuriActivityDetailInfo michiae_matsuri_info = 1451;
+        BartenderActivityDetailInfo bartender_info = 2037;
+        UgcActivityDetailInfo ugc_info = 1207;
+        CrystalLinkActivityDetailInfo crystal_link_info = 1163;
+        IrodoriActivityDetailInfo irodori_info = 839;
+        PhotoActivityDetailInfo photo_info = 1500;
+        SpiceActivityDetailInfo spice_info = 1583;
+        GachaActivityDetailInfo gacha_info = 579;
+        LuminanceStoneChallengeActivityDetailInfo luminance_stone_challenge_info = 1523;
+        RogueDiaryActivityDetailInfo rogue_diary_info = 1180;
+        SummerTimeV2DetailInfo summer_time_v2_info = 1764;
+        IslandPartyDetailInfo island_party_info = 185;
+        GearActivityDetailInfo gear_info = 1537;
+        GravenInnocenceDetailInfo graven_innocence_info = 2019;
+        InstableSprayDetailInfo instable_spray_info = 1876;
+        MuqadasPotionActivityDetailInfo muqadas_potion_info = 1402;
+        TreasureSeelieActivityDetailInfo treasure_seelie_info = 1443;
+        RockBoardExploreDetailInfo rock_board_explore_info = 154;
+        VintageActivityDetailInfo vintage_info = 236;
+        WindFieldDetailInfo wind_field_info = 620;
+        FungusFighterDetailInfo fungus_fighter_info = 1477;
+        CharAmusementDetailInfo char_amusement_info = 1356;
+        EffigyChallengeV2DetailInfo effigy_challenge_info = 261;
+        CoinCollectDetailInfo coin_collect_info = 1411;
+        BrickBreakerDetailInfo brick_breaker_info = 846;
+        DuelHeartDetailInfo duel_heart_info = 127;
+        SeaLampV3DetailInfo sea_lamp_v3_info = 738;
+        TeamChainDetailInfo team_chain_info = 686;
+        FHPFPENBEIB electrohercules_battle_info = 540;
+        LHPBALCGMJH gcg_festival_info = 1645;
+        NFHMNCKJOEI fleur_fair_v2_info = 97;
+        AMFOFAPEHGM fungus_fighter_v2_info = 549;
+    }
 }
+

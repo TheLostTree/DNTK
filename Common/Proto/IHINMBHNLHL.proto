@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: IHINMBHNLHL
+message IHINMBHNLHL {
+    string type = 1;
+    string content = 2;
+    uint32 IMLBHGHMNAJ = 3;
+}
+

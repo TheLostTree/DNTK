@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: BPKANGBPPDO
+// CmdId: 22336
+message DuelHeartSelectDifficultyRsp {
+    int32 retcode = 5;
+}
+

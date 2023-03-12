@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: OFAIBAHEPPN
+// CmdId: 7762
+message OFAIBAHEPPN {
+    uint32 MBNLNOFPLLA = 10;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: CHEEIFOPCKI
+message ElectroherculesBattleLevelInfo {
+    uint32 level_id = 4;
+    uint32 min_finish_time = 5;
+    bool is_finish = 6;
+}
+

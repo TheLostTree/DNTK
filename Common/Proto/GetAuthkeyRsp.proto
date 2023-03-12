@@ -1,36 +1,16 @@
-// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
-// Copyright (C) 2022  Sorapointa Team
-//
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Affero General Public License as
-// published by the Free Software Foundation, either version 3 of the
-// License, or (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU Affero General Public License for more details.
-//
-// You should have received a copy of the GNU Affero General Public License
-// along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 syntax = "proto3";
 
 option csharp_namespace = "Common.Protobuf";
 
-message GetAuthkeyRsp {
-  // enum CmdId {
-  //   option allow_alias = true;
-  //   NONE = 0;
-  //   CMD_ID = 1478;
-  //   ENET_CHANNEL_ID = 0;
-  //   ENET_IS_RELIABLE = 1;
-  // }
 
-  int32 retcode = 8;
-  string authkey = 6;
-  uint32 Unk3300_DODLFCNOAMB = 13;
-  uint32 Unk3300_FGBHHPOKCJH = 3;
-  string auth_appid = 7;
-  string game_biz = 1;
+// Name: MGGIDNNDFCP
+// CmdId: 1465
+message GetAuthkeyRsp {
+    uint32 BILPDHGPPPO = 1;
+    int32 retcode = 7;
+    string authkey = 2;
+    string auth_appid = 15;
+    string game_biz = 3;
+    uint32 FHPGCOBFIOE = 13;
 }
+

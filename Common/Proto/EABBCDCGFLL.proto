@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "AbilityAppliedAbility.proto";
+
+// Name: EABBCDCGFLL
+message EABBCDCGFLL {
+    AbilityAppliedAbility LICDLAICHAJ = 8;
+}
+

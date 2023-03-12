@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: EANAJADAGJP
+// CmdId: 8875
+message ChannellerSlabTakeoffBuffRsp {
+    uint32 buff_id = 3;
+    bool is_mp = 9;
+    int32 retcode = 14;
+    uint32 slot_id = 13;
+}
+

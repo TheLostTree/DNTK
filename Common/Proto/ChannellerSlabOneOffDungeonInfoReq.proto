@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: OIFAMINIMPJ
+// CmdId: 8079
+message ChannellerSlabOneOffDungeonInfoReq {
+}
+

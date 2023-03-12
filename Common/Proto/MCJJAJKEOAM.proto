@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "ClientInputType.proto";
+import "NPMJFJMFAPP.proto";
+
+// Name: MCJJAJKEOAM
+message MCJJAJKEOAM {
+    repeated ClientInputType AONMOAFKMLK = 8;
+    repeated NPMJFJMFAPP level_list = 6;
+    repeated ClientInputType ADGFILCKAMB = 1;
+    repeated uint32 GONHBOGJBPL = 11;
+}
+

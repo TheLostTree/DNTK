@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "BreakoutAction.proto";
+
+// Name: INJEGNBKGCB
+message INJEGNBKGCB {
+    BreakoutAction NOAJNAPDEMN = 14;
+}
+

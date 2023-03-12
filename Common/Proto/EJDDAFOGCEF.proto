@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "JJOOJEHEFDC.proto";
+
+// Name: EJDDAFOGCEF
+message EJDDAFOGCEF {
+    repeated JJOOJEHEFDC level_info_list = 8;
+}
+

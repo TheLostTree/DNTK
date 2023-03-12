@@ -14,84 +14,33 @@ public class Sniffer
     private LibPcapLiveDevice _pcapDevice;
     private UdpHandler _udpHandler;
 
-    private object lockObject = new();
+
+    private LinkLayers l;
 
     public void OnPacketArrival(object sender, PacketCapture e)
     {
         //forward it to the pcap dumper as well
         Program.PcapDumper.PcapOnPacketArrival(sender, e);
         
-        _udpHandler.HandleRawCapture(e.GetPacket());
+        _udpHandler.HandleRawCapture(e.GetPacket(), l);
     }
 
     public void Start(bool choose)
     {
-        Log.Information("SharpPcap {0}, StartLiveCapture", (object)Pcap.SharpPcapVersion);
+        Log.Information("SharpPcap {Version}, StartLiveCapture", (object)Pcap.SharpPcapVersion);
+        l = LinkLayers.Ethernet;
         if (choose)
         {
-            _pcapDevice = ChoosePcapDevice();
+            //todo: 
+            (_pcapDevice, l) = ChoosePcapDevice();
         }
         else
         {
-            _pcapDevice = GetPcapDevice();
+            (_pcapDevice, l) = GetPcapDevice();
         }
         SharpPcapCapturer();
 
         _udpHandler = new UdpHandler();
-    }
-    
-    public void AddPcap(byte[] bytes)
-    {
-        return;
-        //use cli for now please.
-        lock (lockObject)
-        {
-            //i dont like this but the library calls for it...
-
-            string tempFilePathWithFileName = Path.GetTempFileName( );
-            File.WriteAllBytes(tempFilePathWithFileName, bytes);
-            var pcap = new CaptureFileReaderDevice(tempFilePathWithFileName);
-
-            Log.Information(DateTime.Now.ToString("hh:mm:ss t z"));
-            List<RawCapture> bs = new();
-        
-            pcap.OnPacketArrival += delegate(object sender, PacketCapture capture)
-            {
-                bs.Add(capture.GetPacket());
-            };
-            
-            pcap.Open();
-            pcap.Filter = "udp portrange 22101-22102";
-
-            //this returns when EOF
-            pcap.Capture();
-            pcap.Close();
-            //i guessed this lmfao
-            bs.Sort((x, y)=>x.Timeval.Date.Ticks < y.Timeval.Date.Ticks ? -1 : 1);
-
-            var a = new List<string>();
-
-            var count = 0;
-            foreach (var rawCapture in bs)
-            {
-                
-                //slay
-                a.Add($"{rawCapture.Timeval.Date.Ticks}");
-
-                var udpPacket = PacketDotNet.Packet.ParsePacket(LinkLayers.Ethernet,
-                        rawCapture.Data)
-                    .Extract<IPv4Packet>()
-                    .Extract<UdpPacket>();
-                var packetBytes = udpPacket.PayloadData;
-                
-                
-                a.Add($"{Convert.ToHexString(packetBytes)}");
-
-                count++;
-                _udpHandler.HandleRawCapture(rawCapture);
-            }
-            File.Delete(tempFilePathWithFileName);
-        }
     }
 
     public void SharpPcapCapturer()
@@ -107,24 +56,21 @@ public class Sniffer
         _pcapDevice.StartCapture();
 
 
-        Log.Information("-- Listening on {0} {1}", (object)_pcapDevice.Name, (object)_pcapDevice.Description);
-
-
-
+        Log.Information("-- Listening on {Name} {Description}", (object)_pcapDevice.Name, (object)_pcapDevice.Description);
     }
     
     public void Close()
     {
         _pcapDevice.StopCapture();
-        Log.Information("-- Capture stopped.");
-        Log.Information(_pcapDevice.Statistics.ToString());
+        Log.Information("-- Capture stopped");
+        Log.Information(_pcapDevice.Statistics.ToString()!);
         Program.PcapDumper.Close();
         _udpHandler.Close();
         Log.Information("Sniffer stopped...");
 
     }
 
-    private static LibPcapLiveDevice ChoosePcapDevice()
+    private static (LibPcapLiveDevice, LinkLayers) ChoosePcapDevice()
     {
         NetworkInterface[] networkInterfaces = NetworkInterface.GetAllNetworkInterfaces();
         Console.WriteLine();
@@ -149,12 +95,16 @@ public class Sniffer
 
  
 
-        var device = interfaces[i];
-        return new LibPcapLiveDevice(device);
+        var device = new LibPcapLiveDevice(interfaces[i]);
+        device.Open();
+        
+        
+        
+        return (device, device.LinkType);
     }
 
     // taken from devove's proj
-    private static LibPcapLiveDevice GetPcapDevice()
+    private static (LibPcapLiveDevice, LinkLayers) GetPcapDevice()
     {
         NetworkInterface[] networkInterfaces = NetworkInterface.GetAllNetworkInterfaces();
         foreach (PcapInterface allPcapInterface in PcapInterface.GetAllPcapInterfaces())
@@ -179,8 +129,12 @@ public class Sniffer
                     Console.WriteLine(ex);
                     continue;
                 }
-                if (linkType == LinkLayers.Ethernet)
-                    return device;
+                
+                if (linkType == LinkLayers.Ethernet || linkType == LinkLayers.RawLegacy)
+                    return (device, linkType);
+
+                Console.WriteLine(device.Description);
+                Console.WriteLine(linkType);
             }
         }
         throw new InvalidOperationException("No ethernet pcap supported devices found, are you running as a user with access to adapters (root on Linux)?");

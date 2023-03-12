@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: BAEHNHHABBK
+message ChannelerSlabOneoffDungeon {
+    uint32 dungeon_id = 12;
+    uint32 reward_id = 14;
+    bool is_done = 4;
+}
+

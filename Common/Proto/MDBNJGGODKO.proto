@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: MDBNJGGODKO
+// CmdId: 7814
+message MDBNJGGODKO {
+    uint32 face_type = 7;
+    uint32 card_id = 6;
+}
+

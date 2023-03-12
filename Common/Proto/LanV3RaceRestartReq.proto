@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: LCHCJOGHCDD
+// CmdId: 21466
+message LanV3RaceRestartReq {
+    uint32 gallery_id = 1;
+}
+

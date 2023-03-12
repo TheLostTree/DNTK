@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: EEPLFBFNDIE
+message EEPLFBFNDIE {
+    string LEKMNPDEDGH = 1;
+    string PEEPLIAKJNL = 2;
+    uint32 JACDOGHEFOI = 3;
+    string CHPDLCDEEBO = 4;
+    string FDDNIAJPEJI = 5;
+    string product_id = 6;
+    string channel_id = 7;
+    string OOIOMFDNKGF = 8;
+    string BFLNFEHHENN = 9;
+    string HKKIPCNNKKJ = 10;
+    string device_uuid = 11;
+    string KCPDKLENJKN = 12;
+    string ALHMNHKFNIJ = 13;
+    string HDKHDOLLMAM = 14;
+}
+

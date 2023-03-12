@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: GPCKNDGKBBD
+message GPCKNDGKBBD {
+    uint64 begin_time = 8;
+    uint32 controller_id = 14;
+    uint64 OAKPHGNDJLO = 9;
+}
+

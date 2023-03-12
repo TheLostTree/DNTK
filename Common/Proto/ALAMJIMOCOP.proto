@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: ALAMJIMOCOP
+message ALAMJIMOCOP {
+    uint32 open_time = 6;
+    bool is_open = 2;
+    uint32 BHLDOAAKIGA = 13;
+    bool is_finished = 8;
+    uint32 FELIKNNDJDG = 3;
+    uint32 level_id = 11;
+}
+

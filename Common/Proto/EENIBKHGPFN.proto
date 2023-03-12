@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "UgcType.proto";
+
+// Name: EENIBKHGPFN
+// CmdId: 6325
+message EENIBKHGPFN {
+    uint64 ugc_guid = 5;
+    int32 retcode = 12;
+    UgcType ugc_type = 6;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "AGFJDCJANKA.proto";
+
+// Name: FHPFPENBEIB
+message FHPFPENBEIB {
+    bool GHMGBHANDLN = 5;
+    repeated AGFJDCJANKA stage_info_list = 12;
+}
+

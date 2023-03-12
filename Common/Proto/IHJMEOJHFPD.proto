@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: IHJMEOJHFPD
+enum IHJMEOJHFPD {
+    IHJMEOJHFPD_HLNMINHPJOC = 0;
+}
+

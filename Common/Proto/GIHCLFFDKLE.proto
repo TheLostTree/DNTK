@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "Uint32Pair.proto";
+
+// Name: GIHCLFFDKLE
+message GIHCLFFDKLE {
+    repeated Uint32Pair PAAKNMDNEGJ = 5;
+}
+

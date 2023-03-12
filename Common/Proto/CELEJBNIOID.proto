@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: CELEJBNIOID
+// CmdId: 23473
+message CELEJBNIOID {
+    int32 retcode = 11;
+}
+

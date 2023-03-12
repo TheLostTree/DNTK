@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "ItemParam.proto";
+
+// Name: AIOCEOMJKII
+message AIOCEOMJKII {
+    repeated uint32 OIIEOJDNKJG = 11;
+    repeated ItemParam KHFBDFLDPKM = 4;
+}
+

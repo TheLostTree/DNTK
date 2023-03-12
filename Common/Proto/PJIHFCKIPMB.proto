@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: PJIHFCKIPMB
+// CmdId: 24509
+message PJIHFCKIPMB {
+}
+

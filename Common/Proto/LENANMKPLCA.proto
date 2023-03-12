@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "KJMKJAIFNEC.proto";
+
+// Name: LENANMKPLCA
+message LENANMKPLCA {
+    // Name: IIBKDJKBCPK
+    enum IIBKDJKBCPK {
+        IIBKDJKBCPK_DUMMY = 0;
+        IIBKDJKBCPK_BBEBFCMEOPN = 1;
+        IIBKDJKBCPK_KGNPPFNFLKE = 2;
+        IIBKDJKBCPK_NAAHPHCADOP = 3;
+    }
+
+    string PJKHGCDLOAA = 1;
+    string CNGONKMIGLD = 8;
+    bool BLLHLMOCKOC = 10;
+    bool NJPGFINGBNI = 20;
+    bool OCNKPMAFAPG = 27;
+    IIBKDJKBCPK NFEKMPGDPIE = 9;
+    string CNDHCPDIIAB = 11;
+    bool MBNCECJOLBF = 16;
+    bool JGGMAKLEBHK = 17;
+    bool GOPJCBEAOKC = 18;
+    bool CEFOPOICFAK = 42;
+    bool IACPFHDIBAH = 23;
+    bool DMMFOGEANDO = 31;
+    string IJJOEINNAOG = 36;
+    string ICPODOGGPOC = 37;
+    string JAOIPGPCMLM = 39;
+    string MMPADGOKMFB = 40;
+    string ALIKCIHGMAF = 41;
+    repeated KJMKJAIFNEC FIAKFNFDPFP = 999;
+}
+

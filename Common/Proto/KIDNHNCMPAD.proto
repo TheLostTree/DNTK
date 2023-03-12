@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: KIDNHNCMPAD
+// CmdId: 7877
+message KIDNHNCMPAD {
+    int32 retcode = 4;
+}
+

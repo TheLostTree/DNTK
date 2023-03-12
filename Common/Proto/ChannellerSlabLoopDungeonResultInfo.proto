@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: PNOJAMMOOGN
+message ChannellerSlabLoopDungeonResultInfo {
+    bool is_in_time_limit = 9;
+    bool is_success = 12;
+    uint32 challenge_score = 7;
+    uint32 challenge_max_score = 11;
+    uint32 dungeon_index = 2;
+}
+

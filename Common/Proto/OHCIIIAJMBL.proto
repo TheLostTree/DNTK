@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: OHCIIIAJMBL
+message OHCIIIAJMBL {
+    uint32 BGNPOHJEBKA = 14;
+    map<uint32, uint32> DOBMECNALEP = 11;
+    uint32 JKEPCIPFGLD = 7;
+}
+

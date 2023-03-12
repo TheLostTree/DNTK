@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: OLAHPIKKKOM
+message OLAHPIKKKOM {
+    float IHKHEPAGNFD = 1;
+    bool ABCENJAFGOF = 2;
+    uint32 fungus_id = 8;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "HHACKKBLLHO.proto";
+
+// Name: INEIPAMELIP
+// CmdId: 7287
+message INEIPAMELIP {
+    HHACKKBLLHO IEOMECODBLG = 4;
+    int32 retcode = 13;
+}
+

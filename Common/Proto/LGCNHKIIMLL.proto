@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "Vector.proto";
+
+// Name: LGCNHKIIMLL
+message LGCNHKIIMLL {
+    Vector pos = 14;
+    Vector rot = 3;
+}
+

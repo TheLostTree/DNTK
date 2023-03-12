@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "BACEMJKBMHN.proto";
+import "CGDHNAGKLLP.proto";
+import "DAMDPHBCAKI.proto";
+import "DJBLPMPKGKO.proto";
+import "FCEGEHJMIMC.proto";
+import "FNLKKMKJIDF.proto";
+import "NALOPCHENIP.proto";
+import "NICMKPJLHMI.proto";
+import "OHILLFINBBI.proto";
+
+// Name: NABBLDGHGBP
+message NABBLDGHGBP {
+    repeated DJBLPMPKGKO OEBFPJCALAB = 10;
+    bool DIDPHACGMIM = 4;
+    repeated FCEGEHJMIMC BMCCFHCOONP = 5;
+    repeated NALOPCHENIP LNHPBBENFJB = 9;
+    uint32 FLOONDGBJDK = 7;
+    repeated NICMKPJLHMI BKDJHPLLNNM = 14;
+    repeated CGDHNAGKLLP field_list = 13;
+    repeated FNLKKMKJIDF KJEANMCBDHD = 12;
+    repeated OHILLFINBBI IAHAOPPBBMB = 3;
+    uint32 block_id = 1;
+    repeated DAMDPHBCAKI AFJJIMFLFEM = 2;
+    repeated BACEMJKBMHN LNMMCOKJCDD = 11;
+    repeated NICMKPJLHMI LJANEFIBHEJ = 15;
+}
+

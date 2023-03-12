@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: NDNDILMJBOP
+// CmdId: 24887
+message LanV3BoatGameStartSingleReq {
+}
+

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "Vector.proto";
+
+// Name: CIMFCKOOJEG
+message CIMFCKOOJEG {
+    Vector JKBNDOPLHCE = 15;
+}
+

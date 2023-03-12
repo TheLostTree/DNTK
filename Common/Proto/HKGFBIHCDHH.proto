@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: HKGFBIHCDHH
+// CmdId: 7677
+message HKGFBIHCDHH {
+    uint32 AHAIAIPGFDN = 10;
+}
+

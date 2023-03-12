@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: LLOKNKLJFHI
+message LLOKNKLJFHI {
+    bool is_open = 12;
+    uint32 best_score = 4;
+    uint32 stage_id = 10;
+    bool is_finish = 13;
+}
+

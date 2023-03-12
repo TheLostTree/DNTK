@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "CMILIIPNCIE.proto";
+
+// Name: HALOLKMILLH
+message HALOLKMILLH {
+    repeated CMILIIPNCIE HKPHDELIAPJ = 5;
+    uint32 open_time = 14;
+    repeated uint32 taken_reward_index_list = 2;
+    uint32 last_difficulty_id = 8;
+    bool is_open = 10;
+}
+

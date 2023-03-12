@@ -20,44 +20,42 @@ public class PacketProcessor
 
     private static readonly RSA ClientPrivate = RSA.Create();
     private MTKey? _key;
-    private ValueFlag<MTKey> _sessionKey = new();
-
+    private MTKey? _sessionKey;
     private bool _useSessionKey = false;
-    private ValueFlag<ulong> _tokenReqSendTime = new ValueFlag<ulong>();
-    private ValueFlag<ulong> _tokenRspServerKey = new ValueFlag<ulong>();
-
-    private Thread _workingThread;
+    
+    private ulong? _tokenReqSendTime;
+    private ulong? _tokenRspServerKey;
+    
+    
+    //investigate if i even need a separate working thread
+    // private Thread _workingThread;
 
     private byte _timesBFed;
-    bool _running;
+    // bool _running;
 
     private long count = 0;
 
-    public int len()
-    {
-        return Queue.Count;
-    }
+
 
     public PacketProcessor()
     {
-        _running = true;
         //todo: take from a file
         ClientPrivate.FromXmlString(Program.Config.ClientPrivateRSA);
 
-         _workingThread = new Thread(Work)
-         {
-             Name = "PacketProcessor",
-         };
-        _workingThread.Start();
+        //  _workingThread = new Thread(Work)
+        //  {
+        //      Name = "PacketProcessor",
+        //  };
+        // _workingThread.Start();
         _timesBFed = 0;
     }
 
     public void Reset()
     {
         Queue.Clear();
-        _tokenRspServerKey = new ValueFlag<ulong>();
-        _tokenReqSendTime = new ValueFlag<ulong>();
-        _sessionKey = new ValueFlag<MTKey>();
+        _tokenRspServerKey = null;
+        _tokenReqSendTime = null;
+        _sessionKey = null;
         _useSessionKey = false;
         _key = null;
         _timesBFed = 0;
@@ -66,20 +64,20 @@ public class PacketProcessor
 
     public void AddPacket(byte[] data, UdpHandler.Sender sender)
     {
-        if (!_workingThread.IsAlive) _workingThread.Start();
-        // Werk(new EncryptedPacket(data, sender));
-        Queue.Enqueue(new EncryptedPacket(data, sender));
+        // if (!_workingThread.IsAlive) _workingThread.Start();
+        Werk(new EncryptedPacket(data, sender));
+        // Queue.Enqueue(new EncryptedPacket(data, sender));
     }
 
     public void Stop()
     {
         
-        if (_workingThread.IsAlive)
-        {
-            _running = false;
-            _workingThread.Join();
-            // if(!_workingThread.Join(10000)) _workingThread.Interrupt();
-        }
+        // if (_workingThread.IsAlive)
+        // {
+        //     _running = false;
+        //     _workingThread.Join();
+        //     // if(!_workingThread.Join(10000)) _workingThread.Interrupt();
+        // }
 
         Log.Information("PacketProcessor stopped...");
         Log.Information($"{Queue.Count} packets leftover...");
@@ -96,18 +94,20 @@ public class PacketProcessor
             }
             else
             {
-                if (!_sessionKey.HasBeenSet())
+                if (_sessionKey is null)
                 {
                     Log.Debug("Bruteforcing Key...");
                     //Program.TestBF((long)tokenReqSendTime, tokenRspServerKey, item);
                     _timesBFed++;
-                    Task.WaitAll(new Task[] { _tokenReqSendTime.TaskFlag(), _tokenRspServerKey.TaskFlag() });
-                    _sessionKey.SetValue(KeyBruteForcer.BruteForce(item, (long)_tokenReqSendTime.Value,
-                        _tokenRspServerKey.Value));
+                    if (_tokenReqSendTime.HasValue && _tokenRspServerKey.HasValue)
+                    {
+                        _sessionKey = KeyBruteForcer.BruteForce(item, (long)_tokenReqSendTime.Value, _tokenRspServerKey.Value);
+                    }
+
                 }
 
-                if (!_sessionKey.HasBeenSet()) Log.Warning("something went wrong!");
-                _sessionKey.Value?.Crypt(item);
+                if (_sessionKey is null) Log.Warning("something went wrong!");
+                _sessionKey?.Crypt(item);
 
                 if (_timesBFed > 10)
                 {
@@ -121,7 +121,7 @@ public class PacketProcessor
             {
                 ParsePacketFromData(encryptedPacket);
             }
-            else if (!_sessionKey.HasBeenSet())
+            else if (_sessionKey is null)
             {
                 //we may need to bruteforce
                 Log.Warning("Encrypted Packet got through lol");
@@ -131,28 +131,13 @@ public class PacketProcessor
             }
             else
             {
-                Log.Warning("There was a false positive with the bruteforcer somehow");
-                Log.Information("@{slay}", encryptedPacket.Data);
+                Log.Warning("There was a false positive with the bruteforcer somehow? Invalidating old key maybe a reconnect!");
+                _sessionKey = null;
+                // Log.Information("@{slay}", encryptedPacket.Data);
             }
         }
     }
 
-    private void Work()
-    {
-        while (_running)
-        {
-            while (Queue.TryDequeue(out var encryptedPacket))
-            {
-                // File.AppendAllText("./ihatelifept2.txt", $"{encryptedPacket}\n");
-                Werk(encryptedPacket);
-            }
-
-            Thread.Sleep(50);
-            // Log.Debug("hi");
-        }
-
-        // SpinWait.SpinUntil(()=>Queue.IsEmpty);
-    }
 
     private void ParsePacketFromData(EncryptedPacket encryptedPacket)
     {
@@ -170,7 +155,7 @@ public class PacketProcessor
             if (type == Opcode.GetPlayerTokenRsp)
             {
                 //ideally we do it based on tokenreq but unless your ping is like 3000 we should be fine
-                _tokenReqSendTime.SetValue(packet.Metadata.SentMs);
+                _tokenReqSendTime = (packet.Metadata.SentMs);
 
                 var tokenRsp = packet.PacketData as GetPlayerTokenRsp;
                 Log.Information("${@TokenRsp}", tokenRsp);
@@ -178,7 +163,7 @@ public class PacketProcessor
                 {
                     var key = ClientPrivate.Decrypt(Convert.FromBase64String(tokenRsp.ServerRandKey),
                         RSAEncryptionPadding.Pkcs1);
-                    _tokenRspServerKey.SetValue(key.GetUInt64(0, true));
+                    _tokenRspServerKey = (key.GetUInt64(0, true));
                     _useSessionKey = true;
                 }
                 else
@@ -187,72 +172,69 @@ public class PacketProcessor
                 }
             }
 
-            ;
-
-            if (type == Opcode.UnionCmdNotify)
+            //todo: massively fix this code lol
+            switch (type)
             {
-                UnionCmdProcessor.ProcessUnion(packet);
-                return;
-            }
-
-            if (type == Opcode.CombatInvocationsNotify)
-            {
-                var list = CombatInvokeProcessor.ProcessCombatInvoke(packet.ProtobufBytes);
-
-                var fake = new FakePacket<CombatInvokeProcessor.CumbatInvukeNotif>()
+                case Opcode.UnionCmdNotify:
+                    UnionCmdProcessor.ProcessUnion(packet);
+                    return;
+                case Opcode.CombatInvocationsNotify:
                 {
-                    Metadata = packet.Metadata,
-                    PacketType = Opcode.CombatInvocationsNotify,
-                    Sender = packet.Sender,
-                    DummyPacketData = list.Body as CombatInvokeProcessor.CumbatInvukeNotif
-                };
-                Program.FrontendManager.AddGamePacket(fake);
-                return;
-            }
+                    var list = CombatInvokeProcessor.ProcessCombatInvoke(packet.ProtobufBytes);
 
-            if (type == Opcode.AbilityInvocationsNotify)
-            {
-                var list = AbilityInvokeProcessor.ProcessAbilityInvoke(packet.ProtobufBytes);
-                var fake = new FakePacket<AbilityInvokeProcessor.ObilityInvokeNotify>()
+                    var fake = new FakePacket<CombatInvokeProcessor.CumbatInvukeNotif>()
+                    {
+                        Metadata = packet.Metadata,
+                        PacketType = Opcode.CombatInvocationsNotify,
+                        Sender = packet.Sender,
+                        DummyPacketData = list.Body as CombatInvokeProcessor.CumbatInvukeNotif
+                    };
+                    Program.FrontendManager.AddGamePacket(fake);
+                    return;
+                }
+                case Opcode.AbilityInvocationsNotify:
                 {
-                    Metadata = packet.Metadata,
-                    PacketType = Opcode.AbilityInvocationsNotify,
-                    Sender = packet.Sender,
-                    DummyPacketData = list.Body as AbilityInvokeProcessor.ObilityInvokeNotify
-                };
-                Program.FrontendManager.AddGamePacket(fake);
-                return;
-            }
-
-            if (type == Opcode.ClientAbilityInitFinishNotify)
-            {
-                var cap = ClientAbilityProcessor.HandleClientAbilityInitFinish(packet.ProtobufBytes);
-                var fake = new FakePacket<ClientAbilityProcessor.ClintAbilityInFin>()
+                    var list = AbilityInvokeProcessor.ProcessAbilityInvoke(packet.ProtobufBytes);
+                    var fake = new FakePacket<object>()
+                    {
+                        Metadata = packet.Metadata,
+                        PacketType = Opcode.AbilityInvocationsNotify,
+                        Sender = packet.Sender,
+                        DummyPacketData = list.Body
+                    };
+                    Program.FrontendManager.AddGamePacket(fake);
+                    return;
+                }
+                case Opcode.ClientAbilityInitFinishNotify:
                 {
-                    Metadata = packet.Metadata,
-                    PacketType = Opcode.ClientAbilityInitFinishNotify,
-                    Sender = packet.Sender,
-                    DummyPacketData = cap
-                };
-                Program.FrontendManager.AddGamePacket(fake);
-                return;
-            }
-
-            if (type == Opcode.ClientAbilityChangeNotify)
-            {
-                var cap = ClientAbilityProcessor.HandleClientAbilityChange(packet.ProtobufBytes);
-                var fake = new FakePacket<ClientAbilityProcessor.ClintAbilityChaeg>()
+                    var cap = ClientAbilityProcessor.HandleClientAbilityInitFinish(packet.ProtobufBytes);
+                    var fake = new FakePacket<ClientAbilityProcessor.ClintAbilityInFin>()
+                    {
+                        Metadata = packet.Metadata,
+                        PacketType = Opcode.ClientAbilityInitFinishNotify,
+                        Sender = packet.Sender,
+                        DummyPacketData = cap
+                    };
+                    Program.FrontendManager.AddGamePacket(fake);
+                    return;
+                }
+                case Opcode.ClientAbilityChangeNotify:
                 {
-                    Metadata = packet.Metadata,
-                    PacketType = Opcode.ClientAbilityChangeNotify,
-                    Sender = packet.Sender,
-                    DummyPacketData = cap
-                };
-                Program.FrontendManager.AddGamePacket(fake);
-                return;
+                    var cap = ClientAbilityProcessor.HandleClientAbilityChange(packet.ProtobufBytes);
+                    var fake = new FakePacket<ClientAbilityProcessor.ClintAbilityChaeg>()
+                    {
+                        Metadata = packet.Metadata,
+                        PacketType = Opcode.ClientAbilityChangeNotify,
+                        Sender = packet.Sender,
+                        DummyPacketData = cap
+                    };
+                    Program.FrontendManager.AddGamePacket(fake);
+                    return;
+                }
+                default:
+                    Program.FrontendManager.AddGamePacket(packet);
+                    break;
             }
-
-            Program.FrontendManager.AddGamePacket(packet);
         }
         catch (Exception e)
         {

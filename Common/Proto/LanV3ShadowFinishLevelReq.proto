@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: KNMALDDNDBH
+// CmdId: 23065
+message LanV3ShadowFinishLevelReq {
+    uint32 finish_time = 1;
+    uint32 level_id = 5;
+}
+

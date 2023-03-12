@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "NGALEPLHONA.proto";
+
+// Name: MBBEKGNLKBH
+message MBBEKGNLKBH {
+    NGALEPLHONA change_type = 6;
+    uint32 NJKLOCOLJLE = 4;
+}
+

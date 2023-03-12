@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: NCLIOJCMIHH
+// CmdId: 8036
+message ChannellerSlabOneOffDungeonInfoNotify {
+    repeated uint32 scheme_buff_id_list = 7;
+}
+

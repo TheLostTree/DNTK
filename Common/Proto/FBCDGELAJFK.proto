@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: FBCDGELAJFK
+// CmdId: 23503
+message FBCDGELAJFK {
+    uint32 pos_id = 14;
+}
+

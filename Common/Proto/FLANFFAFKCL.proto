@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: FLANFFAFKCL
+// CmdId: 7668
+message FLANFFAFKCL {
+    int32 retcode = 10;
+    uint32 JCMACGJEEAD = 14;
+}
+

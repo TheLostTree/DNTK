@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "MassivePropSyncInfo.proto";
+
+// Name: BNEFMGJODCK
+message BNEFMGJODCK {
+    repeated MassivePropSyncInfo massive_prop_list = 15;
+    bool DJDLPJELAMM = 6;
+    repeated int64 GBOKAEHCOHK = 13;
+}
+

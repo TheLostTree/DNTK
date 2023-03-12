@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: GMGIEHFGOKN
+message GMGIEHFGOKN {
+    float BNJHFOKEHJM = 9;
+    bool LFOEOBPGJGK = 2;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: CANJOFHONKD
+message CANJOFHONKD {
+    uint32 OKEIPKBLLMC = 2;
+    uint32 npc_id = 10;
+    bool is_finished = 7;
+}
+

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: HJLPAPJNFHA
+message HJLPAPJNFHA {
+    float GGFHOCCBOOK = 5;
+    float BLBHOEGPKOF = 1;
+    uint32 IGDJFFNHDNC = 8;
+    uint32 JHEGACBDILG = 15;
+    bool GIBJNMFOALE = 9;
+    float LMPPEKDJNIN = 7;
+}
+

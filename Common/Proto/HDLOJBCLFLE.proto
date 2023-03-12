@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "LDJBCPLPPHB.proto";
+import "MBIEJKBJKCH.proto";
+
+// Name: HDLOJBCLFLE
+message HDLOJBCLFLE {
+    string HHHAFMBFDFC = 1;
+    string entity_id = 2;
+    string DMBKJKNPKBC = 3;
+    string HLICLJPPEFN = 4;
+    string JLFDINHJDBI = 5;
+    uint32 uid = 6;
+    repeated LDJBCPLPPHB EOEGNOCDJLA = 7;
+    repeated MBIEJKBJKCH AAALFDDINJL = 8;
+}
+

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "FMOEOCJBOPN.proto";
+import "JIPFDPOBPNH.proto";
+
+// Name: BCMHCFICCDD
+message BCMHCFICCDD {
+    uint32 ALGDJMPAHDO = 5;
+    repeated JIPFDPOBPNH OAKDHABOPJD = 2;
+    uint32 platform_type = 9;
+    uint32 OEAEACPKCNP = 7;
+    FMOEOCJBOPN AECBJKLBGFK = 3;
+    uint32 DELFEGPPGMK = 1;
+}
+

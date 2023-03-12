@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: GPGFDJBDCNJ
+message GPGFDJBDCNJ {
+    bool CPHLLIDLHPJ = 12;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "Vector.proto";
+
+// Name: GBALDJBOBPH
+message GBALDJBOBPH {
+    Vector pos = 11;
+    Vector rot = 6;
+}
+

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: EFOPJPGBHNM
+// CmdId: 8430
+message ChannellerSlabCheckEnterLoopDungeonRsp {
+    int32 retcode = 10;
+}
+

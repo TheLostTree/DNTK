@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "KJMKJAIFNEC.proto";
+
+// Name: BCBBHHGCGAN
+message BCBBHHGCGAN {
+    bool DFNCAJFEECB = 1;
+    bool HDBFKHFIDPO = 2;
+    bool IACPFHDIBAH = 3;
+    bool DKJELDNIBFH = 7;
+    repeated KJMKJAIFNEC FIAKFNFDPFP = 999;
+}
+

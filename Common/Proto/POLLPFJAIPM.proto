@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "MNFJFJANFEH.proto";
+
+// Name: POLLPFJAIPM
+message POLLPFJAIPM {
+    bool is_open = 7;
+    uint32 stage_id = 10;
+    repeated MNFJFJANFEH challenge_info_list = 9;
+}
+

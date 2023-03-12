@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: OEBAGLDBNCO
+message OEBAGLDBNCO {
+    oneof AJGBLKAAKJD {
+        uint32 DGHNIPJNJFO = 3;
+        float GONGPCHIPEN = 5;
+        string CBGKCJJOMKN = 14;
+    }
+}
+

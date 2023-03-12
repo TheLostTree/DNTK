@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: LHNEFELJGOO
+// CmdId: 6159
+message LHNEFELJGOO {
+    bool GPDMAGPFCDC = 9;
+}
+

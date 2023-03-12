@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: NMIPDNNMELF
+message NMIPDNNMELF {
+    uint32 IHIJMKGJJPC = 5;
+    bool is_open = 10;
+    bool has_reward = 4;
+}
+

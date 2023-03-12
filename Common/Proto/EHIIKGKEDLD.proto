@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: EHIIKGKEDLD
+message EHIIKGKEDLD {
+    uint32 LDFHLKGLBEE = 1;
+    uint32 PLGLKDOKFOO = 15;
+}
+

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+import "JFGOFCIOKNH.proto";
+
+// Name: CFAGNNLICOC
+message CFAGNNLICOC {
+    repeated JFGOFCIOKNH IDJDIDMDCAC = 9;
+}
+

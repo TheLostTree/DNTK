@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: ONIKMEGNJAK
+message ONIKMEGNJAK {
+    repeated uint32 ECNNODOGJIA = 3;
+    uint32 controller_id = 10;
+}
+

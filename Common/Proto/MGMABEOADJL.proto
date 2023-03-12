@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "Common.Protobuf";
+
+
+// Name: MGMABEOADJL
+message MGMABEOADJL {
+    uint32 LKFDEJMGHMP = 5;
+    bool BBNOFLCPEBA = 15;
+    repeated uint32 EEEPDLHPFBA = 14;
+    uint32 id = 8;
+    string name = 7;
+    repeated uint32 card_list = 9;
+    uint32 MBNLNOFPLLA = 11;
+    uint32 create_time = 12;
+}
+
