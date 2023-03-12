@@ -11,7 +11,23 @@ public static class RandomSafeUInt64
 
 public class KeyBruteForcer
 {
-    public static List<long> prevSeeds = new();
+
+    
+    public static void StoreOldSeeds()
+    {
+        // var ugh = String.Join("\n", );
+        File.WriteAllLines("./OLDSEEDS.txt", PrevSeeds.Select(x => x.ToString()));
+    }
+
+    public static void LoadOldSeeds()
+    {
+        if (File.Exists("./OLDSEEDS.txt"))
+        {
+            PrevSeeds = File.ReadAllLines("./").Select(x => long.Parse(x)).ToList();
+        }
+    }
+    //todo: store prev seeds in a file somewhere
+    public static List<long> PrevSeeds = new();
 
     /// <summary>
     /// Tries to guess the seed based on our arguments
@@ -21,7 +37,7 @@ public class KeyBruteForcer
     /// <param name="serverKey">Server random key from tokenrsp</param>
     /// <param name="depth">How much seeds to generate with same random gen</param>
     /// <returns></returns>
-    public static MTKey? Guess(byte[] testBuffer, long ts, ulong serverKey, int depth) {
+    public static MtKey? Guess(byte[] testBuffer, long ts, ulong serverKey, int depth) {
         // First line of defense
         var keyPrefix = new byte[] { (byte)(testBuffer[0] ^ 0x45), (byte)(testBuffer[1] ^ 0x67) };
         // Just to be extra sure, if generating keys for too long, keyPrefix alone check could pass false positives
@@ -34,11 +50,11 @@ public class KeyBruteForcer
             var clientSeed = rand.NextSafeUInt64();
             var seed = serverKey ^ clientSeed;
             
-            var key = MTKey.PartialKey(seed, 8);
+            var key = MtKey.PartialKey(seed, 8);
             if (key[0] == keyPrefix[0] && key[1] == keyPrefix[1])
             {
                 // If prefix is OK, let's check against suffix just to be sure
-                var full = new MTKey(seed);
+                var full = new MtKey(seed);
                 if (full.Bytes[(testBuffer.Length - 2) % 4096] == keySuffix[0] && full.Bytes[(testBuffer.Length - 1) % 4096] == keySuffix[1])
                 {
                     Log.Debug("Seed found!  {DATA}", seed);
@@ -57,10 +73,10 @@ public class KeyBruteForcer
     /// <param name="senttime">get this from tokenreq header</param>
     /// <param name="serverKey">get this from tokenrsp</param>
     /// <returns></returns>
-    public static MTKey? BruteForce(byte[] testBuffer, long senttime, ulong serverKey)
+    public static MtKey? BruteForce(byte[] testBuffer, long senttime, ulong serverKey)
     {
         // Check against already guessed seeds
-        foreach (var oldSeed in prevSeeds) {
+        foreach (var oldSeed in PrevSeeds) {
             var key = Guess(testBuffer, oldSeed, serverKey, 1000);
             if (key != null) { // Guess is correct
                 return key;
@@ -74,7 +90,7 @@ public class KeyBruteForcer
             long offset = count % 2 == 1 ? -1 *(count / 2) : count / 2;
             var key = Guess(testBuffer, senttime + offset, serverKey, 1000);
             if (key != null) { // Guess is correct
-                prevSeeds.Add(senttime + offset); // Save ts of static random
+                PrevSeeds.Add(senttime + offset); // Save ts of static random
                 return key;
             }
         }

@@ -1,6 +1,4 @@
-﻿using System.Collections.Concurrent;
-using System.Net.NetworkInformation;
-using System.Text;
+﻿using System.Net.NetworkInformation;
 using PacketDotNet;
 using Serilog;
 using SharpPcap;
@@ -11,32 +9,32 @@ namespace DNToolKit.Sniffer;
 public class Sniffer
 {
 
-    private LibPcapLiveDevice _pcapDevice;
-    private UdpHandler _udpHandler;
+    private LibPcapLiveDevice _pcapDevice = null!;
+    private UdpHandler _udpHandler = null!;
 
 
-    private LinkLayers l;
+    private LinkLayers _l;
 
     public void OnPacketArrival(object sender, PacketCapture e)
     {
         //forward it to the pcap dumper as well
         Program.PcapDumper.PcapOnPacketArrival(sender, e);
         
-        _udpHandler.HandleRawCapture(e.GetPacket(), l);
+        _udpHandler.HandleRawCapture(e.GetPacket(), _l);
     }
 
     public void Start(bool choose)
     {
         Log.Information("SharpPcap {Version}, StartLiveCapture", (object)Pcap.SharpPcapVersion);
-        l = LinkLayers.Ethernet;
+        _l = LinkLayers.Ethernet;
         if (choose)
         {
             //todo: 
-            (_pcapDevice, l) = ChoosePcapDevice();
+            (_pcapDevice, _l) = ChoosePcapDevice();
         }
         else
         {
-            (_pcapDevice, l) = GetPcapDevice();
+            (_pcapDevice, _l) = GetPcapDevice();
         }
         SharpPcapCapturer();
 

@@ -1,8 +1,4 @@
-﻿using Fleck;
-using Common;
-using DNToolKit.Frontend;
-using DNToolKit.Frontend.Models;
-using Google.Protobuf;
+﻿using DNToolKit.Frontend;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Serilog;
@@ -11,10 +7,10 @@ namespace DNToolKit;
 
 public class WebSocketReqHandler
 {
-    private class WSPacket
+    private class WsPacket
     {
-        public string cmd;
-        public object data;
+        public string Cmd;
+        public object Data;
     }
 
     //todo: actually just make classes for everything instead of using jObject
@@ -39,11 +35,11 @@ public class WebSocketReqHandler
                             webSocket.Type = WsWrapper.WsType.Iridium;
                         }
                     }
-                    var str = JsonConvert.SerializeObject(new WSPacket()
+                    var str = JsonConvert.SerializeObject(new WsPacket()
                     {
-                        cmd = "ConnectRsp",
+                        Cmd = "ConnectRsp",
                         //todo: this is for iridium compatability
-                        data = new Dictionary<string, int>() { { "retcode", 0 } }
+                        Data = new Dictionary<string, int>() { { "retcode", 0 } }
                     });
 
                     webSocket.Socket?.Send(str);
@@ -54,11 +50,12 @@ public class WebSocketReqHandler
         catch (Exception e)
         {
             Log.Error(e.ToString());
-            webSocket.Socket?.Send(JsonConvert.SerializeObject(new WSPacket()
+            webSocket.Socket?.Send(JsonConvert.SerializeObject(new WsPacket()
             {
-                cmd = "ErrorNotify",
-                data = e.ToString()
+                Cmd = "ErrorNotify",
+                Data = e.ToString()
             }));
         }
     }
+    
 }

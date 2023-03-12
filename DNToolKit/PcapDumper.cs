@@ -7,35 +7,35 @@ namespace DNToolKit;
 
 public class PcapDumper
 {
-    public string curFile;
+    public string CurFile;
 
-    private FileStream stream;
-    private CaptureFileWriterDevice CaptureFileWriter;
+    private FileStream _stream;
+    private readonly CaptureFileWriterDevice _captureFileWriter;
     
     public PcapDumper()
     {
         var dir = Directory.CreateDirectory(Program.Config.CaptureFolder);
-        curFile = getFileName();
-        Log.Information("Writing new Capture to File {filename}", curFile);
+        CurFile = GetFileName();
+        Log.Information("Writing new Capture to File {filename}", CurFile);
 
-        CaptureFileWriter = new CaptureFileWriterDevice(Path.Join(dir.FullName, curFile));
+        _captureFileWriter = new CaptureFileWriterDevice(Path.Join(dir.FullName, CurFile));
     }
 
     public void Close()
     {
-        CaptureFileWriter.Close();
+        _captureFileWriter.Close();
     }
 
 
 
     public void PcapOnPacketArrival(object sender, PacketCapture e)
     {
-        if(!CaptureFileWriter.Opened) CaptureFileWriter.Open();
-        CaptureFileWriter.Write(e.GetPacket());
+        if(!_captureFileWriter.Opened) _captureFileWriter.Open();
+        _captureFileWriter.Write(e.GetPacket());
     }
 
 
-    private string getFileName()
+    private string GetFileName()
     {
         return $"{Program.GameMajorVersion}.{Program.GameMinorVersion}_{DateTime.Now:M-dd-yyyy_hh-mm-ss}.pcap";
     }

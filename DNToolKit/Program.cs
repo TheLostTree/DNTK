@@ -16,11 +16,11 @@ public class Program
     public static Sniffer.Sniffer Sniffer = null!;
 
     public static ushort GameMajorVersion = 3;
-    public static ushort GameMinorVersion = 3;
+    public static ushort GameMinorVersion = 5;
     
 
-    private static string _configName = "./config.json";
-    private static TaskCompletionSource tcs = new TaskCompletionSource();
+    private static readonly string _configName = "./config.json";
+    private static readonly TaskCompletionSource _tcs = new TaskCompletionSource();
 
     public static PcapDumper PcapDumper;
 
@@ -30,6 +30,7 @@ public class Program
         
         Log.Logger = new LoggerConfiguration().MinimumLevel.Verbose().WriteTo.Console().CreateLogger();
         Log.Information("DNToolKit for v{a}.{n}", GameMajorVersion, GameMinorVersion);
+        KeyBruteForcer.LoadOldSeeds();
         // var key = KeyBruteForcer.BruteForce(senttime: 1658814410247, serverKey: 4502709363913224634, testBuffer: new byte[] { 0x0B, 0xB9});
         //
         // return;
@@ -70,11 +71,9 @@ public class Program
         //Capture.ParseFromBytes(File.ReadAllBytes("./Captures/"));
 
         Console.CancelKeyPress += Close;
-        // AppDomain.CurrentDomain.ProcessExit += Close;
 
-        var f = new GetAllActivatedBargainDataReq();
 
-        tcs.Task.Wait();
+        _tcs.Task.Wait();
     }
 
     public static uint Now()
@@ -92,7 +91,9 @@ public class Program
     {
         Sniffer.Close();
         FrontendManager.Close();
+        KeyBruteForcer.StoreOldSeeds();
         Log.Information("Finished cleaning up...");    
-        tcs.SetResult();
+        
+        _tcs.SetResult();
     }
 }

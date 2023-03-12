@@ -61,47 +61,20 @@ public class Packet
         }
     }
 
-    public Packet()
+
+    public override string ToString()
     {
-        
-    }
+        var res = String.Format("""
+{{
+    "packetId": {0},
+    "protoName": "{1}",
+    "object", {2},
+    "packet", "{3}",
+    "source", {4}
+}}
+""", (int)PacketType,PacketType.ToString(), JsonFormatter.Default.Format(PacketData), Convert.ToBase64String(ProtobufBytes),(int)Sender);
 
-    public virtual object? GetObj(WsWrapper.WsType wsType)
-    {
-
-        try
-        {
-            if (wsType == WsWrapper.WsType.Iridium)
-            {
-
-                Dictionary<string, object> jsonobj = new();
-                jsonobj.Add("packetID", (int)PacketType);
-                jsonobj.Add("protoName", PacketType.ToString());
-                jsonobj.Add("object", PacketData);
-                jsonobj.Add("packet", Convert.ToBase64String(ProtobufBytes));
-                jsonobj.Add("source", (int)Sender);
-
-                
-
-                return jsonobj;
-            }
-            else
-            {
-                Dictionary<string, object> jsonobj = new();
-                jsonobj.Add("PacketHead", Metadata);
-                jsonobj.Add("PacketData", PacketData);
-                jsonobj.Add("CmdID", PacketType.ToString());
-                jsonobj.Add("Sender", (int)Sender);
-
-                return jsonobj;
-            }
-        }
-        catch (Exception e)
-        {
-            Log.Error(e.ToString());
-        }
-
-        return null;
+        return res;
     }
 }
 

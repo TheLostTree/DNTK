@@ -9,9 +9,9 @@ namespace DNToolKit.Sniffer;
 public class UdpHandler
 {
     //todo: maybe sync the kcp update
-    private KCP? _client;
-    private KCP? _server;
-    private PacketProcessor _processor;
+    private Kcp? _client;
+    private Kcp? _server;
+    private readonly PacketProcessor _processor;
 
     
     public UdpHandler()
@@ -49,57 +49,50 @@ public class UdpHandler
 
         if (packetBytes.Length == 20)
         {
-            try
+            var magic = packetBytes.GetUInt32(0, true);
+            var conv = packetBytes.GetUInt32(4, true);
+            var token = packetBytes.GetUInt32(8, true);
+
+            switch (magic)
             {
-                var magic = packetBytes.GetUInt32(0, true);
-                var conv = packetBytes.GetUInt32(4, true);
-                var token = packetBytes.GetUInt32(8, true);
+                //todo: send handshake representation to frontend
+                case 0x145:
 
-                switch (magic)
-                {
-                    //todo: send handshake representation to frontend
-                    case 0x145:
+                    if (sender == Sender.Server)
+                    {
+                        Log.Debug("Server Handshake : {Conv}, {Token}", conv, token);
+                        _processor.Reset();
+                        _client = new Kcp(conv, token, Sender.Client, _processor);
+                        _server = new Kcp(conv, token, Sender.Server, _processor);
+                    }
 
-                        if (sender == Sender.Server)
-                        {
-                            Log.Debug("Server Handshake : {Conv}, {Token}", conv, token);
-                            _processor.Reset();
-                            _client = new KCP(conv, token, Sender.Client, _processor);
-                            _server = new KCP(conv, token, Sender.Server, _processor);
-                        }
+                    break;
+                case 0x194:
+                    if (sender == Sender.Server) break;
+                    if (_client is not null)
+                    {
+                        Log.Information($"{sender} disconnected");
+                        Log.Warning("Relaunch your client to continue capturing packets!");
+                    }
 
-                        break;
-                    case 0x194:
-                        if (sender == Sender.Server) break;
-                        if (_client is not null)
-                        {
-                            Log.Information($"{sender} disconnected");
-                            Log.Warning("Relaunch your client to continue capturing packets!");
-                        }
+                    break;
+                case 0xFF:
+                    break;
+                default:
+                    //unhandled handshake
+                    Log.Error("Unhandled Handshake {MagicBytes}", magic);
+                    break;
 
-                        break;
-                    case 0xFF:
-                        break;
-                    default:
-                        //unhandled handshake
-                        Log.Error("Unhandled Handshake {MagicBytes}", magic);
-                        break;
-                }
-            }
-            catch (Exception e)
-            {
-                Log.Error("Handshake Error: {Error}", e.ToString());
+                    return;
             }
 
-            return;
+            
+            //ignore bytes
         }
-
         if (_client is not null && _server is not null)
         {
             _ = Sender.Client == sender ? _client.Input(packetBytes) : _server.Input(packetBytes);
         }
-        //ignore bytes
-        
     }
 
 
@@ -111,7 +104,6 @@ public class UdpHandler
 
     public void Close()
     {
-        _processor.Stop();
         Log.Information("UdpHandler stopped...");
     }
 }

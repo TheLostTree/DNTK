@@ -1,17 +1,14 @@
-﻿namespace DNToolKit.Net;
+﻿// ReSharper disable All 
+// lol!
+namespace DNToolKit.Net;
 
 using System.Diagnostics;
 using System.Net;
 
-// ReSharper disable InconsistentNaming
-// ReSharper disable IdentifierTypo
-// ReSharper disable RedundantDefaultMemberInitializer
-// ReSharper disable NotAccessedField.Local
-// ReSharper disable ArrangeTypeMemberModifiers
 
 
-//please use a lock for most of these functions
-//its 100% not thread safe i think
+// theoretically unnecessary to keep the entire kcp file since like about 80% of the code here is for sending packets (lol)
+
 #pragma warning disable CS8600
 #pragma warning disable CS0414
 
@@ -157,8 +154,8 @@ public class IKCP
 
     }
 
-    UInt32 conv_ = 0;
-    UInt32 token_ = 0;
+    readonly UInt32 conv_ = 0;
+    readonly UInt32 token_ = 0;
     UInt32 mtu_ = 0;
     UInt32 mss_ = 0;
     UInt32 state_ = 0;
@@ -196,20 +193,20 @@ public class IKCP
     UInt32 updated_ = 0;
     UInt32 ts_probe_ = 0;
     UInt32 probe_wait_ = 0;
-    UInt32 dead_link_ = 0;
+    readonly UInt32 dead_link_ = 0;
     UInt32 incr_ = 0;
 
-    LinkedList<Segment> snd_queue_;
-    LinkedList<Segment> rcv_queue_;
-    LinkedList<Segment> snd_buf_;
-    LinkedList<Segment> rcv_buf_;
+    readonly LinkedList<Segment> snd_queue_;
+    readonly LinkedList<Segment> rcv_queue_;
+    readonly LinkedList<Segment> snd_buf_;
+    readonly LinkedList<Segment> rcv_buf_;
 
     UInt32[] acklist_;
     UInt32 ackcount_ = 0;
     UInt32 ackblock_ = 0;
 
     byte[] buffer_;
-    object user_;
+    readonly object user_;
 
     Int32 fastresend_ = 0;
     Int32 nocwnd_ = 0;
@@ -1170,3 +1167,4 @@ public class IKCP
         // Console.WriteLine(mask + String.Format(format, args));
     }
 }
+// ReSharper restore All

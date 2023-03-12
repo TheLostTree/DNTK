@@ -1,9 +1,8 @@
 ﻿// using System.Text.Json;
 
+using System.Text;
 using Common;
-using DNToolKit.Frontend.Models;
 using Fleck;
-using Newtonsoft.Json;
 using Serilog;
 
 namespace DNToolKit.Frontend;
@@ -14,9 +13,7 @@ namespace DNToolKit.Frontend;
 public class FrontendManager
 {
 
-    private Dictionary<IWebSocketConnectionInfo, WsWrapper> _webSocketConnections = new();
-
-    public readonly HashSet<Opcode> GlobalPacketList = new HashSet<Opcode>();
+    private readonly Dictionary<IWebSocketConnectionInfo, WsWrapper> _webSocketConnections = new();
 
     private readonly WebSocketServer _server;
 
@@ -24,16 +21,13 @@ public class FrontendManager
     {
         foreach (var webSocketConnection in _webSocketConnections)
         {
-            if (webSocketConnection.Value.FilterOverride || webSocketConnection.Value.Wants(packet.PacketType))
-            {
-                webSocketConnection.Value.AddGamePacket(packet);
-            }
+            webSocketConnection.Value.AddGamePacket(packet);
         }
     }
 
     public FrontendManager()
     {
-        FleckLog.LogAction = (level, message, ex) => {
+        FleckLog.LogAction = (level, message, _) => {
             switch(level) {
                 case LogLevel.Debug:
                     // Log.Debug(message);
@@ -49,6 +43,8 @@ public class FrontendManager
                     break;
             }
         };
+        
+        
         _server = new WebSocketServer(Program.Config.FrontendUrl);
 
         _server.Start(socket =>
@@ -57,17 +53,16 @@ public class FrontendManager
             {
                 _webSocketConnections.Add(socket.ConnectionInfo, new WsWrapper(this)
                 {
-                    Type = WsWrapper.WsType.DNToolKit,
+                    Type = WsWrapper.WsType.DnToolKit,
                     Socket = socket
                 });
                 _webSocketConnections[socket.ConnectionInfo].Start();
-                Log.Information("{amount} connections to ws", _webSocketConnections.Count);
+                Log.Information("New connection to ws");
             };
             socket.OnClose = () =>
             {
                 _webSocketConnections[socket.ConnectionInfo].Stop();
                 _webSocketConnections.Remove(socket.ConnectionInfo);
-                Log.Information("{amount} connections to ws left", _webSocketConnections.Count);
             };
             socket.OnMessage = (message) => { WebSocketReqHandler.HandleReq(message, _webSocketConnections[socket.ConnectionInfo]); };
         });
@@ -79,12 +74,9 @@ public class FrontendManager
         {
             if (webSocketConnection.Value.Type == wsType)
             {
-                //Log.Debug("Sending data to socket {a} of type {type}", webSocketConnection.Key.ClientPort, wsType );
                 try
                 {
                     webSocketConnection.Value.Socket?.Send(data);
-                    //Log.Debug(data);
-
                 }
                 catch(Exception e)
                 {
@@ -110,15 +102,13 @@ public class WsWrapper
     public enum WsType
     {
         Iridium,
-        DNToolKit
+        DnToolKit
     }
     private bool _running = false;
 
     public WsType Type;
     public IWebSocketConnection? Socket;
 
-    private List<Opcode> _whitelist = new List<Opcode>();
-    public bool FilterOverride = true;
     private readonly FrontendManager _frontendManager;
     public readonly List<Packet.Packet> GamePacketQueue = new();
     
@@ -129,30 +119,23 @@ public class WsWrapper
         Task.Run(FrontendUpdate);
     }
 
-    public void AddGamePacket(Packet.Packet? packet)
+    public void AddGamePacket(Packet.Packet packet)
     {
-        if (packet is null)
-        {
-            Log.Warning("bro wtf");
-        }
-        else
-        {
-            GamePacketQueue.Add(packet);
-        }
-    }
+        // Console.WriteLine(packet);
+        StringBuilder builder = new StringBuilder("""
+{
+    "cmd": "PacketNotify",
+    "data": [
+""");
+        builder.Append(packet).Append("]}");
+            
+        // Log.Debug("{a}",builder);
+        Console.WriteLine("yes?");
 
-    public bool Wants(Opcode opcode)
-    {
-        return _whitelist.Contains(opcode);
+        GamePacketQueue.Clear();
+        _frontendManager.SendWsPacket(builder.ToString(), Type);
     }
-
-    public void SetWhitelist(List<Opcode> newWhitelist)
-    {
-        _whitelist = newWhitelist;
-        // todo: add a global list of packets to grab so we can cut down on parsing
-        // _frontendManager.UpdateGlobalFilter(newFilter);
-
-    }
+    
     public WsWrapper(FrontendManager frontendManager)
     {
         _frontendManager = frontendManager;
@@ -167,56 +150,17 @@ public class WsWrapper
     {
         while (_running)
         {
-            try
-            {
-                if (GamePacketQueue.Count < 2) continue;
-                //mot quite ideal?
-
-                var copy = GamePacketQueue.ToArray().Where(x => x is not null);
-                GamePacketQueue.Clear();
-
-                //theres a wierd object reference not set to an instance of an object thing here? try to fixo?
-                var data2 = new List<object>();
-                foreach (var packet in copy)
-                {
-                    try
-                    {
-                        var obj = packet.GetObj(Type);
-                        if (obj is not null)
-                        {
-                            data2.Add(obj);
-                        }
-                        else
-                        {
-                            Log.Warning("packet.GetObj was null wtf?");
-                        }
-                    }
-                    catch (Exception e)
-                    {
-                        Log.Error(e.ToString());
-                        Log.Warning($"{packet.PacketType} failed!");
-                    }
-                }
-
-                //data2.Sort();
-
-                var jsonObj = new PacketNotify()
-                {
-                    cmd = "PacketNotify",
-                    data = data2
-                };
-                var data = JsonConvert.SerializeObject(jsonObj);
-                _frontendManager.SendWsPacket(data, Type);
-            }
-            catch (Exception e)
-            {
-                Log.Error(e.ToString());
-            }
-            finally
+            if(GamePacketQueue.Count < 1)
             {
                 await Task.Delay(10);
+                continue;
             }
 
+
+            
+
+
+            await Task.Delay(10);
             
         }
     }
