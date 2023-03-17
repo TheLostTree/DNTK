@@ -16,14 +16,25 @@ public class KeyBruteForcer
     public static void StoreOldSeeds()
     {
         // var ugh = String.Join("\n", );
-        File.WriteAllLines("./OLDSEEDS.txt", PrevSeeds.Select(x => x.ToString()));
+        
+        File.WriteAllLines("./OLDSEEDS.txt", PrevSeeds.Select(x => $"{DateTime.UtcNow.ToBinary()}⇒{x.ToString()}"));
     }
 
     public static void LoadOldSeeds()
     {
         if (File.Exists("./OLDSEEDS.txt"))
         {
-            PrevSeeds = File.ReadAllLines("./OLDSEEDS.txt").Select(x => long.Parse(x)).ToList();
+            PrevSeeds = File.ReadAllLines("./OLDSEEDS.txt").Select(x => x.Split("⇒").Select(y=>long.Parse(y))).Select(
+                x =>
+                {
+                    var longs = x.ToArray();
+                    DateTime t = DateTime.FromBinary(longs[0]);
+                    if (t.Subtract(DateTime.Now).TotalDays > 1)
+                    {
+                        return -1;
+                    }
+                    return longs[1];
+                }).Where(x=>x != -1).ToList();
         }
     }
     //todo: store prev seeds in a file somewhere

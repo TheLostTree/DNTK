@@ -10,8 +10,7 @@ namespace DNToolKit;
 
 public class Program
 {
-
-    public static DNToolKit toolKit = null!;
+    private static DNToolKit toolKit = new DNToolKit();
 
     public static ushort GameMajorVersion = 3;
     public static ushort GameMinorVersion = 5;
@@ -26,10 +25,9 @@ public class Program
         
         Log.Logger = new LoggerConfiguration().MinimumLevel.Verbose().WriteTo.Console().CreateLogger();
         Log.Information("DNToolKit for v{Major}.{Minor}", GameMajorVersion, GameMinorVersion);
-
-        toolKit = new DNToolKit();
+        
+        
         frontendManager = new FrontendManager(toolKit.Config.FrontendUrl);
-
         toolKit.AddPacketListener(frontendManager);
 
         

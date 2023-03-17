@@ -11,7 +11,6 @@ public class Sniffer
 {
 
     private LibPcapLiveDevice _pcapDevice = null!;
-    private UdpHandler _udpHandler = null!;
 
     private LinkLayers _l;
     public DNToolKit ToolKit;
@@ -29,11 +28,9 @@ public class Sniffer
 
 
 
-    public Sniffer(DNToolKit toolKit, string clientRsa)
+    public Sniffer(DNToolKit toolKit)
     {
         ToolKit = toolKit;
-        _udpHandler = new UdpHandler(toolKit, clientRsa);
-        PcapListeners.Add(_udpHandler);
     }
 
 
@@ -74,7 +71,6 @@ public class Sniffer
         _pcapDevice.StopCapture();
         Log.Information("-- Capture stopped");
         Log.Information(_pcapDevice.Statistics.ToString()!);
-        _udpHandler.Close();
         Log.Information("Sniffer stopped...");
 
     }

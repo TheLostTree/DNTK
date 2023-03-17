@@ -13,12 +13,12 @@ public class UdpHandler : IPcapListener
     //todo: maybe sync the kcp update
     private Kcp? _client;
     private Kcp? _server;
-    private readonly PacketProcessor _processor;
+    private DNToolKit _toolKit;
 
     
-    public UdpHandler(DNToolKit toolKit, string clientRsa)
+    public UdpHandler(DNToolKit toolKit)
     {
-        _processor = new PacketProcessor(toolKit, clientRsa);
+        _toolKit = toolKit;
     }
 
     public void OnPcap(RawCapture rawCapture, LinkLayers t)
@@ -63,9 +63,9 @@ public class UdpHandler : IPcapListener
                     if (sender == Sender.Server)
                     {
                         Log.Debug("Server Handshake : {Conv}, {Token}", conv, token);
-                        _processor.Reset();
-                        _client = new Kcp(conv, token, Sender.Client, _processor);
-                        _server = new Kcp(conv, token, Sender.Server, _processor);
+                        _toolKit.Processor.Reset();
+                        _client = new Kcp(conv, token, Sender.Client, onKcpPacket);
+                        _server = new Kcp(conv, token, Sender.Server, onKcpPacket);
                     }
 
                     break;
@@ -74,7 +74,6 @@ public class UdpHandler : IPcapListener
                     if (_client is not null)
                     {
                         Log.Information($"{sender} disconnected");
-                        Log.Warning("Relaunch your client to continue capturing packets!");
                     }
 
                     break;
@@ -84,8 +83,6 @@ public class UdpHandler : IPcapListener
                     //unhandled handshake
                     Log.Error("Unhandled Handshake {MagicBytes}", magic);
                     break;
-
-                    return;
             }
 
             
@@ -97,15 +94,15 @@ public class UdpHandler : IPcapListener
         }
     }
 
+    private void onKcpPacket(byte[] data, Sender sender)
+    {
+        _toolKit.Processor.AddPacket(data, sender);
+    }
+
 
     public enum Sender
     {
         Server,
         Client
-    }
-
-    public void Close()
-    {
-        Log.Information("UdpHandler stopped...");
     }
 }

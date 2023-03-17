@@ -73,13 +73,7 @@ public class FrontendManager : IPacketListener
         {
             try
             {
-                if (webSocketConnection.Value.Socket is null)
-                {
-                    Console.WriteLine("weird?");
-                }
                 webSocketConnection.Value.Socket?.Send(data);
-                // Console.WriteLine(data);
-
             }
             catch(Exception e)
             {

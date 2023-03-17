@@ -2,6 +2,7 @@
 using DNToolKit.Frontend;
 using DNToolKit.Listeners;
 using DNToolKit.Net;
+using DNToolKit.PacketProcessors;
 using DNToolKit.Protocol;
 using Newtonsoft.Json;
 using Serilog;
@@ -16,6 +17,10 @@ public class DNToolKit
     static DNToolKit(){KeyBruteForcer.LoadOldSeeds();}
     public readonly Config Config;
     public readonly Sniffer Sniffer;
+    public readonly UdpHandler UdpHandler;
+    public readonly PacketProcessor Processor;
+
+    
     private List<IPacketListener> PacketListeners = new ();
 
     
@@ -29,7 +34,10 @@ public class DNToolKit
     public DNToolKit()
     {
         Config = LoadConfig();
-        Sniffer = new Sniffer(this, Config.ClientPrivateRsa);
+        Sniffer = new Sniffer(this);
+        UdpHandler = new UdpHandler(this);
+        AddPcapListener(UdpHandler);
+        Processor = new PacketProcessor(this, Config.ClientPrivateRsa);
     }
 
     public void Start()
