@@ -1,7 +1,6 @@
 ﻿using System.Net.NetworkInformation;
 using DNToolKit.Listeners;
 using PacketDotNet;
-using Serilog;
 using SharpPcap;
 using SharpPcap.LibPcap;
 
@@ -36,7 +35,7 @@ public class Sniffer
 
     public void Start(bool choose)
     {
-        Log.Information("SharpPcap {Version}, StartLiveCapture", (object)Pcap.SharpPcapVersion);
+        ToolKit.LogAction(LogLevel.Info, $"SharpPcap {Pcap.SharpPcapVersion}, StartLiveCapture");
         _l = LinkLayers.Ethernet;
         if (choose)
         {
@@ -63,20 +62,21 @@ public class Sniffer
         _pcapDevice.StartCapture();
 
 
-        Log.Information("-- Listening on {Name} {Description}", (object)_pcapDevice.Name, (object)_pcapDevice.Description);
+        ToolKit.LogAction(LogLevel.Info, String.Format("-- Listening on {Name} {Description}", _pcapDevice.Name, _pcapDevice.Description));
     }
     
     public void Close()
     {
         _pcapDevice.StopCapture();
-        Log.Information("-- Capture stopped");
-        Log.Information(_pcapDevice.Statistics.ToString()!);
-        Log.Information("Sniffer stopped...");
+        ToolKit.LogAction(LogLevel.Info, "-- Capture stopped");
+        ToolKit.LogAction(LogLevel.Info, _pcapDevice.Statistics.ToString()!);
+        ToolKit.LogAction(LogLevel.Info, "Sniffer stopped...");
 
     }
 
     private static (LibPcapLiveDevice, LinkLayers) ChoosePcapDevice()
     {
+        //todo: maybe not this lol
         NetworkInterface[] networkInterfaces = NetworkInterface.GetAllNetworkInterfaces();
         Console.WriteLine();
         Console.WriteLine("The following devices are available on this machine:");

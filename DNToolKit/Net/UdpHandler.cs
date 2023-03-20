@@ -1,9 +1,6 @@
 ﻿using DNToolKit.Listeners;
-using DNToolKit.PacketProcessors;
-using DNToolKit.Protocol;
 using DNToolKit.Protocol.KCP;
 using PacketDotNet;
-using Serilog;
 using SharpPcap;
 
 namespace DNToolKit.Net;
@@ -40,7 +37,7 @@ public class UdpHandler : IPcapListener
         }
         else
         {
-            Log.Warning("unknown linklayer type for {D}",t.ToString() );
+            _toolKit.LogAction(LogLevel.Warn, $"unknown linklayer type for {t.ToString()}");
             return;
             // add more fallbacks (for example the router one for srl?
         }
@@ -62,7 +59,8 @@ public class UdpHandler : IPcapListener
 
                     if (sender == Sender.Server)
                     {
-                        Log.Debug("Server Handshake : {Conv}, {Token}", conv, token);
+                        _toolKit.LogAction(LogLevel.Debug,
+                            String.Format("Server Handshake : {Conv}, {Token}", conv, token));
                         _toolKit.Processor.Reset();
                         _client = new Kcp(conv, token, Sender.Client, onKcpPacket);
                         _server = new Kcp(conv, token, Sender.Server, onKcpPacket);
@@ -73,7 +71,7 @@ public class UdpHandler : IPcapListener
                     if (sender == Sender.Server) break;
                     if (_client is not null)
                     {
-                        Log.Information($"{sender} disconnected");
+                        _toolKit.LogAction(LogLevel.Info, $"{sender} disconnected");
                     }
 
                     break;
@@ -81,8 +79,10 @@ public class UdpHandler : IPcapListener
                     break;
                 default:
                     //unhandled handshake
-                    Log.Error("Unhandled Handshake {MagicBytes}", magic);
+                    // Log.Error("Unhandled Handshake {MagicBytes}", magic);
+                    _toolKit.LogAction(LogLevel.Error, String.Format("Unhandled Handshake {MagicBytes}", magic));
                     break;
+                
             }
 
             

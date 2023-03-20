@@ -3,7 +3,7 @@ using Common;
 using Common.Protobuf;
 using DNToolKit.Net;
 using DNToolKit.Protocol;
-using Serilog;
+
 
 namespace DNToolKit.PacketProcessors;
 
@@ -21,6 +21,9 @@ public class PacketProcessor
     private long _count;
     private DNToolKit _toolKit;
     
+    
+    
+    
 
     public PacketProcessor(DNToolKit toolKit, string clientRsa)
     {
@@ -28,6 +31,7 @@ public class PacketProcessor
         _toolKit = toolKit;
         _timesBFed = 0;
     }
+    
 
     public void Reset()
     {
@@ -58,7 +62,7 @@ public class PacketProcessor
             {
                 if (_sessionKey is null)
                 {
-                    Log.Debug("Bruteforcing Key...");
+                    _toolKit.LogAction(LogLevel.Debug, "Bruteforcing Key...");
                     //Program.TestBF((long)tokenReqSendTime, tokenRspServerKey, item);
                     _timesBFed++;
                     if (_tokenReqSendTime.HasValue && _tokenRspServerKey.HasValue)
@@ -68,14 +72,15 @@ public class PacketProcessor
 
                 }
 
-                if (_sessionKey is null) Log.Warning("something went wrong!");
+                if (_sessionKey is null)
+                {
+                    _toolKit.LogAction(LogLevel.Warn, "something went wrong!");
+                }
                 _sessionKey?.Crypt(item);
 
                 if (_timesBFed > 10)
                 {
-                    Log.Error(
-                        "Brute forcing has failed many times, so make sure you login on a freshly launched client. Or something else could have happened idk");
-                    Program.Stop();
+                    _toolKit.Close();
                 }
             }
 
@@ -85,11 +90,11 @@ public class PacketProcessor
             }
             else if (_sessionKey is null)
             {
-                Log.Warning("Encrypted Packet got through lol");
+                // Log.Warning("Encrypted Packet got through lol");
             }
             else
             {
-                Log.Warning("There was a false positive with the bruteforcer somehow? Invalidating old key maybe a reconnect!");
+                _toolKit.LogAction(LogLevel.Debug, "Invalidating old key... maybe a reconnect?");
                 _sessionKey = null;
             }
         }
@@ -107,7 +112,8 @@ public class PacketProcessor
 
             var type = packet.PacketType;
 
-            Log.Information($"{_count++} {type}");
+            var str = packet.Sender == UdpHandler.Sender.Client ? "C2S" : "S2C";
+            _toolKit.LogAction(LogLevel.Info, $"{_count++} | {str} | {type}");
 
             if (type == Opcode.GetPlayerTokenRsp)
             {
@@ -115,7 +121,6 @@ public class PacketProcessor
                 _tokenReqSendTime = (packet.Metadata.SentMs);
 
                 var tokenRsp = packet.PacketData as GetPlayerTokenRsp;
-                Log.Information("${@TokenRsp}", tokenRsp);
                 
                 if (tokenRsp?.ServerRandKey is not null)
                 {
@@ -126,7 +131,7 @@ public class PacketProcessor
                 }
                 else
                 {
-                    Log.Warning("failed to get serverSeed");
+                    _toolKit.LogAction(LogLevel.Warn, "failed to get serverSeed");
                 }
             }
 
@@ -137,7 +142,7 @@ public class PacketProcessor
         }
         catch (Exception e)
         {
-            Log.Error(e.ToString());
+            _toolKit.LogAction(LogLevel.Error, e.ToString());
         }
         
     }

@@ -42,14 +42,6 @@ namespace DNToolKit.Protocol.KCP;
          
      }
 
-     public void Update()
-     {
-         lock (_lockObj)
-         {
-             _ikcp.Update(Program.Now());
-         }
-     }
-
      private byte[]? Recv()
      {
          if (_ikcp == null)

@@ -1,5 +1,4 @@
 ﻿using DNToolKit.Protocol;
-using Serilog;
 
 namespace DNToolKit;
 
@@ -15,8 +14,6 @@ public class KeyBruteForcer
     
     public static void StoreOldSeeds()
     {
-        // var ugh = String.Join("\n", );
-        
         File.WriteAllLines("./OLDSEEDS.txt", PrevSeeds.Select(x => $"{DateTime.UtcNow.ToBinary()}⇒{x.ToString()}"));
     }
 
@@ -37,20 +34,13 @@ public class KeyBruteForcer
                 }).Where(x=>x != -1).ToList();
         }
     }
-    //todo: store prev seeds in a file somewhere
     public static List<long> PrevSeeds = new();
 
-    /// <summary>
-    /// Tries to guess the seed based on our arguments
-    /// </summary>
-    /// <param name="testBuffer">Key test buffer</param>
-    /// <param name="ts">Client timestamp from tokenreq header</param>
-    /// <param name="serverKey">Server random key from tokenrsp</param>
-    /// <param name="depth">How much seeds to generate with same random gen</param>
-    /// <returns></returns>
+    
     public static MtKey? Guess(byte[] testBuffer, long ts, ulong serverKey, int depth) {
         // First line of defense
         var keyPrefix = new byte[] { (byte)(testBuffer[0] ^ 0x45), (byte)(testBuffer[1] ^ 0x67) };
+        
         // Just to be extra sure, if generating keys for too long, keyPrefix alone check could pass false positives
         // Though for normal use case it's surely overkill
         var keySuffix = new byte[] { (byte)(testBuffer[testBuffer.Length - 2] ^ 0x89), (byte)(testBuffer[testBuffer.Length - 1] ^ 0xAB) };
@@ -68,8 +58,8 @@ public class KeyBruteForcer
                 var full = new MtKey(seed);
                 if (full.Bytes[(testBuffer.Length - 2) % 4096] == keySuffix[0] && full.Bytes[(testBuffer.Length - 1) % 4096] == keySuffix[1])
                 {
-                    Log.Debug("Seed found!  {DATA}", seed);
-                    Log.Debug("Params: @{testBuffer} : {ts} : {serverKey} : x{i}", testBuffer, ts, serverKey, i);
+                    // Log.Debug("Seed found!  {DATA}", seed);
+                    // Log.Debug("Params: @{testBuffer} : {ts} : {serverKey} : x{i}", testBuffer, ts, serverKey, i);
                     return full;
                 }
             }
@@ -107,7 +97,7 @@ public class KeyBruteForcer
         }
 
         // If we still haven't returned the correct key, that's sad
-        Log.Error($"Cannot find seed! @{testBuffer} : {senttime} : {serverKey}");
+        // Log.Error($"Cannot find seed! @{testBuffer} : {senttime} : {serverKey}");
         return null;
     }
 }

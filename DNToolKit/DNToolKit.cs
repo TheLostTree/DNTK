@@ -10,6 +10,14 @@ using SharpPcap;
 
 namespace DNToolKit;
 
+public enum LogLevel
+{
+    Debug,
+    Info,
+    Warn,
+    Error
+}
+
 public class DNToolKit
 {
     private const string ConfigName = "./config.json";
@@ -19,6 +27,8 @@ public class DNToolKit
     public readonly Sniffer Sniffer;
     public readonly UdpHandler UdpHandler;
     public readonly PacketProcessor Processor;
+
+    public Action<LogLevel, string> LogAction;
 
     
     private List<IPacketListener> PacketListeners = new ();
