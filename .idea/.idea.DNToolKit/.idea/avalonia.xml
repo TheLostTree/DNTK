@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="DPSMeter/DPSMeter/Views/MainView.axaml" value="DPSMeter/DPSMeter.Desktop/DPSMeter.Desktop.csproj" />
+        <entry key="DPSMeter/DPSMeter/Views/MainWindow.axaml" value="DPSMeter/DPSMeter.Desktop/DPSMeter.Desktop.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

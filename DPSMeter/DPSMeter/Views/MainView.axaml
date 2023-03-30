@@ -3,11 +3,13 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:vm="clr-namespace:DPSMeter.ViewModels"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="DPSMeter.Views.MainView"
-             x:DataType="vm:MainViewModel">
+             x:DataType="vm:MainViewModel"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450">
   <Design.DataContext>
-    <!-- This only sets the DataContext for the previewer in an IDE,
+
+
+      <!-- This only sets the DataContext for the previewer in an IDE,
          to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
     <vm:MainViewModel />
   </Design.DataContext>
