@@ -1,6 +1,5 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using Serilog;
 
 namespace DNToolKit.Frontend;
 
@@ -30,7 +29,7 @@ public class WebSocketReqHandler
                     {
                         if (data.ToLower() == "iridium")
                         {
-                            Log.Debug("Setting socket {F} to type Iridium", webSocket.Socket!.ConnectionInfo.ClientPort);
+                            // Log.Debug("Setting socket {F} to type Iridium", webSocket.Socket!.ConnectionInfo.ClientPort);
                         }
                     }
                     var str = JsonConvert.SerializeObject(new WsPacket()
@@ -47,7 +46,7 @@ public class WebSocketReqHandler
         }
         catch (Exception e)
         {
-            Log.Error(e.ToString());
+            // Log.Error(e.ToString());
             webSocket.Socket?.Send(JsonConvert.SerializeObject(new WsPacket()
             {
                 Cmd = "ErrorNotify",

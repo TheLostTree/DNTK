@@ -9,10 +9,10 @@ namespace DNToolKit.Protocol.KCP;
      private readonly IKCP _ikcp;
      private readonly object _lockObj = new();
      
-     private readonly PacketProcessor _processor;
+     private readonly Action<byte[], UdpHandler.Sender> _onKcpPacket;
      private readonly UdpHandler.Sender _user;
      
-     public Kcp(uint conv, uint token, UdpHandler.Sender user, PacketProcessor processor)
+     public Kcp(uint conv, uint token, UdpHandler.Sender user, Action<byte[], UdpHandler.Sender> onKcpPacket)
      {
          
          _ikcp = new IKCP(conv, token, user);
@@ -22,7 +22,7 @@ namespace DNToolKit.Protocol.KCP;
          _ikcp.SetOutput((_, _, _) =>
          {
          });
-         _processor = processor;
+         _onKcpPacket = onKcpPacket;
      }
 
 
@@ -37,17 +37,9 @@ namespace DNToolKit.Protocol.KCP;
              {
                  break;
              }
-             _processor.AddPacket(recv,_user);
+             _onKcpPacket(recv,_user);
          } while (true);
          
-     }
-
-     public void Update()
-     {
-         lock (_lockObj)
-         {
-             _ikcp.Update(Program.Now());
-         }
      }
 
      private byte[]? Recv()

@@ -56,15 +56,13 @@ public class Packet
 
     public override string ToString()
     {
-        var res = String.Format("""
-{{
-    "packetID": {0},
-    "protoName": "{1}",
-    "object": {2},
-    "packet": "{3}",
-    "source": {4}
-}}
-""", (int)PacketType,PacketType.ToString(), JsonFormatter.Default.Format(PacketData), Convert.ToBase64String(ProtobufBytes),(int)Sender);
+        var res =
+            $"{{\n \"packetID\": {(int)PacketType},\n" +
+                $"\"protoName\": \"{PacketType.ToString()}\",\n" +
+                $"\"object\": {JsonFormatter.Default.Format(PacketData)},\n" +
+                $"\"packet\": \"{Convert.ToBase64String(ProtobufBytes)}\",\n" +
+                $"\"source\": {(int)Sender} \n" +
+            $"}}";
 
         return res;
     }

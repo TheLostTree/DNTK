@@ -1,9 +1,6 @@
 ﻿using DNToolKit.Listeners;
-using DNToolKit.PacketProcessors;
-using DNToolKit.Protocol;
 using DNToolKit.Protocol.KCP;
 using PacketDotNet;
-using Serilog;
 using SharpPcap;
 
 namespace DNToolKit.Net;
@@ -13,12 +10,12 @@ public class UdpHandler : IPcapListener
     //todo: maybe sync the kcp update
     private Kcp? _client;
     private Kcp? _server;
-    private readonly PacketProcessor _processor;
+    private DNToolKit _toolKit;
 
     
-    public UdpHandler(DNToolKit toolKit, string clientRsa)
+    public UdpHandler(DNToolKit toolKit)
     {
-        _processor = new PacketProcessor(toolKit, clientRsa);
+        _toolKit = toolKit;
     }
 
     public void OnPcap(RawCapture rawCapture, LinkLayers t)
@@ -40,7 +37,7 @@ public class UdpHandler : IPcapListener
         }
         else
         {
-            Log.Warning("unknown linklayer type for {D}",t.ToString() );
+            _toolKit.LogAction(LogLevel.Warn, $"unknown linklayer type for {t.ToString()}");
             return;
             // add more fallbacks (for example the router one for srl?
         }
@@ -62,10 +59,11 @@ public class UdpHandler : IPcapListener
 
                     if (sender == Sender.Server)
                     {
-                        Log.Debug("Server Handshake : {Conv}, {Token}", conv, token);
-                        _processor.Reset();
-                        _client = new Kcp(conv, token, Sender.Client, _processor);
-                        _server = new Kcp(conv, token, Sender.Server, _processor);
+                        _toolKit.LogAction(LogLevel.Debug,
+                            String.Format("Server Handshake : {Conv}, {Token}", conv, token));
+                        _toolKit.Processor.Reset();
+                        _client = new Kcp(conv, token, Sender.Client, onKcpPacket);
+                        _server = new Kcp(conv, token, Sender.Server, onKcpPacket);
                     }
 
                     break;
@@ -73,8 +71,7 @@ public class UdpHandler : IPcapListener
                     if (sender == Sender.Server) break;
                     if (_client is not null)
                     {
-                        Log.Information($"{sender} disconnected");
-                        Log.Warning("Relaunch your client to continue capturing packets!");
+                        _toolKit.LogAction(LogLevel.Info, $"{sender} disconnected");
                     }
 
                     break;
@@ -82,10 +79,10 @@ public class UdpHandler : IPcapListener
                     break;
                 default:
                     //unhandled handshake
-                    Log.Error("Unhandled Handshake {MagicBytes}", magic);
+                    // Log.Error("Unhandled Handshake {MagicBytes}", magic);
+                    _toolKit.LogAction(LogLevel.Error, String.Format("Unhandled Handshake {MagicBytes}", magic));
                     break;
-
-                    return;
+                
             }
 
             
@@ -97,15 +94,15 @@ public class UdpHandler : IPcapListener
         }
     }
 
+    private void onKcpPacket(byte[] data, Sender sender)
+    {
+        _toolKit.Processor.AddPacket(data, sender);
+    }
+
 
     public enum Sender
     {
         Server,
         Client
-    }
-
-    public void Close()
-    {
-        Log.Information("UdpHandler stopped...");
     }
 }

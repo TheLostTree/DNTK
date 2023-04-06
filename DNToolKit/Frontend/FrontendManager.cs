@@ -5,7 +5,6 @@ using Common;
 using DNToolKit.Listeners;
 using DNToolKit.Protocol;
 using Fleck;
-using Serilog;
 
 namespace DNToolKit.Frontend;
 
@@ -30,20 +29,7 @@ public class FrontendManager : IPacketListener
     public FrontendManager(string wsurl)
     {
         FleckLog.LogAction = (level, message, _) => {
-            switch(level) {
-                case LogLevel.Debug:
-                    // Log.Debug(message);
-                    break;
-                case LogLevel.Error:
-                    Log.Error(message);
-                    break;
-                case LogLevel.Warn:
-                    Log.Warning(message);
-                    break;
-                default:
-                    Log.Information(message);
-                    break;
-            }
+    //do not log.
         };
         
         
@@ -57,7 +43,7 @@ public class FrontendManager : IPacketListener
                 {
                     Socket = socket
                 });
-                Log.Information("New connection to ws");
+                // Log.Information("New connection to ws");
             };
             socket.OnClose = () =>
             {
@@ -73,17 +59,11 @@ public class FrontendManager : IPacketListener
         {
             try
             {
-                if (webSocketConnection.Value.Socket is null)
-                {
-                    Console.WriteLine("weird?");
-                }
                 webSocketConnection.Value.Socket?.Send(data);
-                // Console.WriteLine(data);
-
             }
             catch(Exception e)
             {
-                Log.Error(e.ToString());
+                // Log.Error(e.ToString());
             }
         }
     }
@@ -94,7 +74,7 @@ public class FrontendManager : IPacketListener
         {
             webSocketConnection.Value.Socket?.Close();
         }
-        Log.Information("Frontend Closed...");
+        // Log.Information("Frontend Closed...");
     }
     
 }
@@ -111,11 +91,7 @@ public class WsWrapper
     public void AddGamePacket(Packet packet)
     {
         // Console.WriteLine(packet);
-        StringBuilder builder = new StringBuilder("""
-{
-    "cmd": "PacketNotify",
-    "data": [
-""");
+        StringBuilder builder = new StringBuilder("{{\"cmd\": \"PacketNotify\",\"data\": [");
         builder.Append(packet).Append("]}");
 
         _frontendManager.SendWsPacket(builder.ToString());
