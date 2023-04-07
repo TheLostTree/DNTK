@@ -1,6 +1,9 @@
 # DNTK (DNToolKit)
 This is the C# backend for DNTK (i also dont really know what the name is an acronym of tbh)
 
+# Thanks
+Big thanks to [OnePieceFreak3](https://github.com/onepiecefreak3) for refactoring my questionable code
+
 
 # RSAKey
 You need to bring your own RSA Key(extracted from the client) if the one in this repo does not work.
@@ -12,7 +15,7 @@ if the default network interface is not the right one, you can toggle the choose
 
 
 
-config,json is regenerated on first launch
+config.json is regenerated on first launch
 
 
 
@@ -23,10 +26,6 @@ Currently it is updated for version 3.6 of SomeAnimeGame
 
 
 TODO:
- move away from requiring serilog as a dependency for logging inside the actual logic, but add 
-a logger to the dntk class that can be configured to use serilog 
-
-
-also make sure i rethink some log messages (some stuff really doesnt need to be inf)
+determine proper rsa keyid support (for cn)
 
 (if i get dmca'd yall will have to drg your own protos into the solution smh)
