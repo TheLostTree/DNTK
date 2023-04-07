@@ -127,18 +127,5 @@ namespace DNToolKit.AnimeGame
         {
             return new AnimeGamePacket((Opcode)cmdId, meta, data) { Sender = sender };
         }
-
-        public override string ToString()
-        {
-            return $$"""
-                   {
-                       "packetID": {{(int)PacketType}},
-                       "protoName": "{{PacketType}}",
-                       "object": {{JsonFormatter.Default.Format(ProtoBuf)}},
-                       "packet": "{{Convert.ToBase64String(ProtoBufBytes)}}",
-                       "source": {{Sender}}
-                   }
-                   """;
-        }
     }
 }
