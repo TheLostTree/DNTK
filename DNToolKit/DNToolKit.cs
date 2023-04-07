@@ -1,101 +1,95 @@
-﻿using Common;
-using DNToolKit.Frontend;
-using DNToolKit.Listeners;
+﻿using DNToolKit.AnimeGame;
+using DNToolKit.Configuration.Models;
 using DNToolKit.Net;
-using DNToolKit.PacketProcessors;
-using DNToolKit.Protocol;
-using Newtonsoft.Json;
-using Serilog;
-using SharpPcap;
 
-namespace DNToolKit;
-
-public enum LogLevel
+namespace DNToolKit
 {
-    Debug,
-    Info,
-    Warn,
-    Error
-}
-
-public class DNToolKit
-{
-    private const string ConfigName = "./config.json";
-
-    static DNToolKit(){KeyBruteForcer.LoadOldSeeds();}
-    public readonly Config Config;
-    public readonly Sniffer Sniffer;
-    public readonly UdpHandler UdpHandler;
-    public readonly PacketProcessor Processor;
-
-    public Action<LogLevel, string> LogAction;
-
-    
-    private List<IPacketListener> PacketListeners = new ();
-
-    
-    
-    public void AddPcapListener(IPcapListener listener)
+    /// <summary>
+    /// The main entry point to record packets from the anime game.
+    /// </summary>
+    public class DNToolKit
     {
-        Sniffer.PcapListeners.Add(listener);
-    }    
+        private const string PCapFilter_ = "udp portrange 22101-22102";
 
+        private readonly PCapSniffer _sniffer;
+        private readonly AnimeGamePacketHandler _packetHandler;
 
-    public DNToolKit()
-    {
-        Config = LoadConfig();
-        Sniffer = new Sniffer(this);
-        UdpHandler = new UdpHandler(this);
-        AddPcapListener(UdpHandler);
-        Processor = new PacketProcessor(this, Config.ClientPrivateRsa);
-    }
+        private readonly CancellationTokenSource _cts;
 
-    public void Start()
-    {
-        Sniffer.Start(Config.ChooseSniffDevice);
-        
-    }
+        /// <summary>
+        /// The event to record every packet received without prior filtering.
+        /// </summary>
+        public event EventHandler<AnimeGamePacket>? PacketReceived;
 
-    public void Close()
-    {
-        KeyBruteForcer.StoreOldSeeds();
-        Sniffer.Close();
-    }
-
-
-    public void AddGamePacket(Packet p)
-    {
-        foreach (var packetListener in PacketListeners)
+        /// <summary>
+        /// Creates a new instance of <see cref="DNToolKit"/>.
+        /// </summary>
+        /// <param name="config">The <see cref="SniffConfig"/> to setup the packet sniffing internally.</param>
+        public DNToolKit(SniffConfig config)
         {
-            packetListener.OnPacket(p);
+            _sniffer = new PCapSniffer(PCapFilter_);
+            _packetHandler = new AnimeGamePacketHandler(_sniffer, config);
+
+            _cts = new CancellationTokenSource();
+
+            _packetHandler.PacketReceived += PacketHandler_PacketReceived;
+            _packetHandler.KeyNotRecovered += PacketHandler_KeyNotRecovered;
         }
-    }
 
-    public void AddPacketListener(IPacketListener listener)
-    {
-        PacketListeners.Add(listener);
-    }
-    
-    
-
-
-    public static Config LoadConfig()
-    {
-        if (!File.Exists(ConfigName))
+        /// <summary>
+        /// Runs the async sniffing process indefinitely.
+        /// </summary>
+        /// <remarks>Invoke <see cref="Close"/> to stop sniffing packets.</remarks>
+        public async Task RunAsync()
         {
-            File.WriteAllText(ConfigName,JsonConvert.SerializeObject(Config.Default));
-            return Config.Default;
+            await Task.Run(_packetHandler.Initialize);
+
+            _sniffer.Start();
+
+            await Task.Delay(Timeout.Infinite, _cts.Token);
         }
-        else
-        {
-            var config = JsonConvert.DeserializeObject<Config>(File.ReadAllText(ConfigName));
-            if (config is null)
-            {
-                config = Config.Default;
-                Log.Error("Invalid Config File! Using Default...");
-            }
 
-            return config;
+        /// <summary>
+        /// Stop all sniffing processes and cancel the <see cref="Task"/> run by <see cref="RunAsync"/>.
+        /// </summary>
+        public void Close()
+        {
+            _cts.Cancel();
+
+            _packetHandler.PacketReceived -= PacketHandler_PacketReceived;
+            _packetHandler.KeyNotRecovered -= PacketHandler_KeyNotRecovered;
+
+            _sniffer.Close();
+            _packetHandler.Close();
+        }
+
+        /// <summary>
+        /// Passes on the packet from <see cref="AnimeGamePacketHandler"/> to <see cref="PacketReceived"/>.
+        /// </summary>
+        /// <param name="sender">The sender object.</param>
+        /// <param name="packet">The <see cref="AnimeGamePacket"/> to pass on.</param>
+        private void PacketHandler_PacketReceived(object? sender, AnimeGamePacket packet)
+        {
+            OnPacketReceived(packet);
+        }
+
+        /// <summary>
+        /// Closes the <see cref="DNToolKit"/>.
+        /// </summary>
+        /// <param name="sender">The sender object.</param>
+        /// <param name="e">The default <see cref="EventArgs"/></param>
+        private void PacketHandler_KeyNotRecovered(object? sender, EventArgs e)
+        {
+            Close();
+        }
+
+        /// <summary>
+        /// Passes on the <see cref="AnimeGamePacket"/> to <see cref="PacketReceived"/>.
+        /// </summary>
+        /// <param name="packet">The <see cref="AnimeGamePacket"/> to pass on.</param>
+        private void OnPacketReceived(AnimeGamePacket packet)
+        {
+            PacketReceived?.Invoke(this, packet);
         }
     }
 }

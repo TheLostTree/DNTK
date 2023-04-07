@@ -1,108 +1,110 @@
-﻿using DNToolKit.Listeners;
-using DNToolKit.Protocol.KCP;
+﻿using DNToolKit.Net.Events;
 using PacketDotNet;
-using SharpPcap;
+using Serilog;
 
-namespace DNToolKit.Net;
-
-public class UdpHandler : IPcapListener
+namespace DNToolKit.Net
 {
-    //todo: maybe sync the kcp update
-    private Kcp? _client;
-    private Kcp? _server;
-    private DNToolKit _toolKit;
-
-    
-    public UdpHandler(DNToolKit toolKit)
+    /// <summary>
+    /// A handler that processes UDP packages from a <see cref="PCapSniffer"/>.
+    /// </summary>
+    public abstract class UdpHandler : IDisposable
     {
-        _toolKit = toolKit;
-    }
+        private PCapSniffer? _sniffer;
 
-    public void OnPcap(RawCapture rawCapture, LinkLayers t)
-    {
-        UdpPacket udpPacket;
-        if (t == LinkLayers.Ethernet)
+        /// <summary>
+        /// Declares, if this instance was already disposed.
+        /// </summary>
+        public bool IsDisposed { get; private set; }
+
+        /// <summary>
+        /// Create a new instance of <see cref="UdpHandler"/>.
+        /// </summary>
+        /// <param name="sniffer">The <see cref="PCapSniffer"/> to receive network packets from.</param>
+        public UdpHandler(PCapSniffer sniffer)
         {
-            udpPacket= PacketDotNet.Packet.ParsePacket(LinkLayers.Ethernet,
-                    rawCapture.Data)
-                .Extract<IPv4Packet>()
-                .Extract<UdpPacket>();
+            _sniffer = sniffer;
+            _sniffer.PacketReceived += PacketReceived;
         }
-        else if (t == LinkLayers.RawLegacy)
+
+        /// <summary>
+        /// Closes this instance.
+        /// </summary>
+        public void Close()
         {
-            udpPacket= PacketDotNet.Packet.ParsePacket(LinkLayers.RawLegacy,
-                    rawCapture.Data)
-                .Extract<IPv4Packet>()
-                .Extract<UdpPacket>();
+            Dispose();
         }
-        else
+
+        /// <summary>
+        /// Disposes this instance.
+        /// </summary>
+        public void Dispose()
         {
-            _toolKit.LogAction(LogLevel.Warn, $"unknown linklayer type for {t.ToString()}");
-            return;
-            // add more fallbacks (for example the router one for srl?
-        }
-        
+            AssertDisposed();
 
-        var sender = udpPacket.DestinationPort is 22101 or 22102 ? Sender.Client : Sender.Server;
-        var packetBytes = udpPacket.PayloadData;
+            DisposeInternal();
 
-        if (packetBytes.Length == 20)
-        {
-            var magic = packetBytes.GetUInt32(0, true);
-            var conv = packetBytes.GetUInt32(4, true);
-            var token = packetBytes.GetUInt32(8, true);
-
-            switch (magic)
+            if (_sniffer != null)
             {
-                //todo: send handshake representation to frontend
-                case 0x145:
-
-                    if (sender == Sender.Server)
-                    {
-                        _toolKit.LogAction(LogLevel.Debug,
-                            String.Format("Server Handshake : {Conv}, {Token}", conv, token));
-                        _toolKit.Processor.Reset();
-                        _client = new Kcp(conv, token, Sender.Client, onKcpPacket);
-                        _server = new Kcp(conv, token, Sender.Server, onKcpPacket);
-                    }
-
-                    break;
-                case 0x194:
-                    if (sender == Sender.Server) break;
-                    if (_client is not null)
-                    {
-                        _toolKit.LogAction(LogLevel.Info, $"{sender} disconnected");
-                    }
-
-                    break;
-                case 0xFF:
-                    break;
-                default:
-                    //unhandled handshake
-                    // Log.Error("Unhandled Handshake {MagicBytes}", magic);
-                    _toolKit.LogAction(LogLevel.Error, String.Format("Unhandled Handshake {MagicBytes}", magic));
-                    break;
-                
+                _sniffer.PacketReceived -= PacketReceived;
+                _sniffer = null;
             }
 
-            
-            //ignore bytes
+            IsDisposed = true;
         }
-        if (_client is not null && _server is not null)
+
+        /// <summary>
+        /// Dispose dependencies and resources of inheriting instances.
+        /// </summary>
+        protected virtual void DisposeInternal() { }
+
+        /// <summary>
+        /// Process the extracted <see cref="UdpPacket"/>.
+        /// </summary>
+        /// <param name="packet">The <see cref="UdpPacket"/> to process.</param>
+        protected abstract void ProcessUdpPacket(UdpPacket packet);
+
+        /// <summary>
+        /// Delegate to receive sniff and extract the underlying <see cref="UdpPacket"/>.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void PacketReceived(object? sender, PacketReceivedEventArgs e)
         {
-            _ = Sender.Client == sender ? _client.Input(packetBytes) : _server.Input(packetBytes);
+            AssertDisposed();
+
+            switch (e.LinkLayers)
+            {
+                case LinkLayers.Ethernet:
+                case LinkLayers.RawLegacy:
+                    var udpPacket = ExtractUdpPacket(e.RawCapture.Data, e.LinkLayers);
+                    ProcessUdpPacket(udpPacket);
+                    return;
+
+                default:
+                    Log.Warning("unknown link layer {LinkLayers}", e.LinkLayers);
+                    return;
+            }
         }
-    }
 
-    private void onKcpPacket(byte[] data, Sender sender)
-    {
-        _toolKit.Processor.AddPacket(data, sender);
-    }
+        /// <summary>
+        /// Assert, if this instance is disposed.
+        /// </summary>
+        /// <exception cref="ObjectDisposedException">If this instance is disposed.</exception>
+        private void AssertDisposed()
+        {
+            if (IsDisposed)
+                throw new ObjectDisposedException(nameof(UdpHandler));
+        }
 
-
-    public enum Sender
-    {
-        Server,
-        Client
+        /// <summary>
+        /// Extract the <see cref="UdpPacket"/> from the sniffed traffic.
+        /// </summary>
+        /// <param name="data">The data to extract the <see cref="UdpPacket"/>from.</param>
+        /// <param name="layers">The link layers from which the traffic was received.</param>
+        /// <returns>The extracted <see cref="UdpPacket"/>.</returns>
+        private UdpPacket ExtractUdpPacket(byte[] data, LinkLayers layers)
+        {
+            return Packet.ParsePacket(layers, data).Extract<IPv4Packet>().Extract<UdpPacket>();
+        }
     }
 }
