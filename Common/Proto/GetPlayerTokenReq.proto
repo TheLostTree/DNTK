@@ -1,31 +1,31 @@
 syntax = "proto3";
 
-option csharp_namespace = "Common.Protobuf";
+option java_package = "catgirl.kirara.moe";
 
 
-// Name: JOOGNGFNALJ
-// CmdId: 167
+// CmdId: 190
+// Name: MOPMEMHOLIK
 message GetPlayerTokenReq {
-    uint32 channel_id = 3;
-    uint32 account_type = 2;
-    string account_token = 13;
-    string birthday = 41;
-    string client_ip_str = 8;
-    bool is_guest = 10;
-    string online_id = 14;
-    string client_rand_key = 2038;
-    uint32 BGELCCHCJDG = 1806;
-    string account_uid = 7;
-    string psn_id = 15;
-    string HBEOMFDDEPG = 11;
-    string DDBJAFAFLNP = 1053;
-    uint32 uid = 1;
-    uint32 DMBKJKNPKBC = 1662;
-    uint32 sub_channel_id = 4;
-    uint32 platform_type = 12;
-    string EDGJFDAKLKN = 9;
-    string country_code = 6;
-    uint32 GHBLLEHOHNP = 5;
-    uint32 key_id = 915;
+    uint32 KDIHPMJOCPG = 7;
+    string client_ip_str = 5;
+    uint32 platform_type = 3;
+    string account_token = 12;
+    uint32 JGDGPILDCHJ = 576;
+    string online_id = 8;
+    string account_uid = 15;
+    string KIIHGMPJKDJ = 6;
+    string birthday = 713;
+    string psn_id = 1;
+    uint32 IEPOFPNOOKD = 176;
+    uint32 channel_id = 4;
+    uint32 uid = 14;
+    bool is_guest = 13;
+    string OOABKBBNBKL = 963;
+    uint32 key_id = 970;
+    uint32 CIJNPHDIOND = 2;
+    string country_code = 9;
+    uint32 CJHEEAGCFJG = 10;
+    string IDMEOEHPCGF = 11;
+    string client_rand_key = 831;
 }
 

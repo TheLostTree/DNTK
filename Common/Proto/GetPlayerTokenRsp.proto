@@ -1,43 +1,43 @@
 syntax = "proto3";
 
-option csharp_namespace = "Common.Protobuf";
+option java_package = "catgirl.kirara.moe";
 
 import "StopServerInfo.proto";
 
-// Name: IDKFAIPPJEI
-// CmdId: 175
+// CmdId: 196
+// Name: OLEDCBIOIBM
 message GetPlayerTokenRsp {
-    uint32 uid = 15;
-    bool BMOLHAGDMHP = 1113;
-    uint32 tag = 1419;
-    bytes security_cmd_buffer = 9;
-    string token = 1;
-    string client_version_random_key = 185;
-    string country_code = 1406;
-    uint32 gm_uid = 14;
-    uint32 key_id = 687;
-    repeated uint32 finish_collection_id_list = 184;
-    uint64 secret_key_seed = 8;
-    uint32 sub_channel_id = 11;
-    uint32 channel_id = 1757;
+    string birthday = 1258;
+    string msg = 11;
+    string sign = 907;
+    bytes JLOPICGGPBP = 9;
+    uint32 CIJNPHDIOND = 12;
+    uint32 KDIHPMJOCPG = 834;
+    uint32 platform_type = 1;
+    uint32 channel_id = 1156;
+    int32 retcode = 10;
+    string account_uid = 4;
+    uint32 IEPOFPNOOKD = 1572;
+    string token = 15;
+    uint32 key_id = 1470;
+    uint32 LFPHHMGKIIP = 1474;
+    string server_rand_key = 1291;
+    bool MPKKNNFFINM = 1058;
+    bool is_proficient_player = 14;
+    uint32 tag = 1489;
+    uint32 uid = 13;
+    uint64 secret_key_seed = 5;
+    string country_code = 446;
+    StopServerInfo stop_server = 1928;
     bool is_guest = 2;
-    uint32 account_type = 207;
-    string sign = 531;
-    bool IPMOMIJILHF = 723;
-    string psn_id = 445;
-    uint32 platform_type = 6;
-    string server_rand_key = 1937;
-    bytes extra_bin_data = 4;
-    string msg = 13;
-    bool is_proficient_player = 10;
-    int32 retcode = 5;
-    string secret_key = 7;
-    string account_uid = 3;
-    uint32 BGELCCHCJDG = 1043;
-    uint32 LBCGKJHALNG = 12;
-    string client_ip_str = 1563;
-    uint32 reg_platform = 751;
-    string birthday = 1398;
-    StopServerInfo stop_server = 628;
+    uint32 JJNLKCNPOLA = 7;
+    bool EHGCBOCIJPA = 1881;
+    uint32 FGAKKMHIKHF = 6;
+    string client_version_random_key = 238;
+    string secret_key = 3;
+    bytes security_cmd_buffer = 8;
+    repeated uint32 finish_collection_id_list = 785;
+    string psn_id = 1146;
+    string client_ip_str = 265;
 }
 

@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option csharp_namespace = "Common.Protobuf";
+option java_package = "catgirl.kirara.moe";
 
 
-// Name: HJLECMBBPOF
+// Name: EEDNKCDNPIP
 message StopServerInfo {
     uint32 stop_begin_time = 1;
     uint32 stop_end_time = 2;
