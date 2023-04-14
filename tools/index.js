@@ -65,7 +65,7 @@ function copyProtos(){
     includes.forEach(proto => {
         const protocontents = fs.readFileSync(`${proto_source}/${proto}`, 'utf8');
         //replace "syntax = "proto3";" with ""syntax = "proto3";\noption csharp_namespace = "Common";""
-        const protocontents_new = protocontents.replace(/syntax\s=\s"proto3";/, `syntax = "proto3";\noption csharp_namespace = "Common";`)
+        const protocontents_new = protocontents.replace(/syntax\s=\s"proto3";/, `syntax = "proto3";\noption csharp_namespace = "Common.Protobuf";`)
 
 
         fs.writeFileSync("./Common/Proto/"+proto, protocontents_new)
