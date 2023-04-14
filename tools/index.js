@@ -73,5 +73,5 @@ function copyProtos(){
 }
 
 
-// createOpcodeCsFile();
+createOpcodeCsFile();
 copyProtos();
