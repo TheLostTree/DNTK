@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SceneTeamAvatar.proto";
+
+// CmdId: 1646
+// Name: MJFGNJJDJDN
+message SceneTeamUpdateNotify {
+    repeated SceneTeamAvatar scene_team_avatar_list = 7;
+    bool is_in_mp = 4;
+}
+

@@ -1,0 +1,11 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: ADDCBCDDJIL
+message DeshretObeliskGadgetInfo {
+    repeated uint32 argument_list = 1;
+}
+

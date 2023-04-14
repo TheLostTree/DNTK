@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AnimatorParameterValueInfo.proto";
+
+// Name: GHMDEHIIAJD
+message AnimatorParameterValueInfoPair {
+    int32 name_id = 1;
+    AnimatorParameterValueInfo animator_para = 2;
+}
+

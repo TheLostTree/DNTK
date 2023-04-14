@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+import "RoutePoint.proto";
+
+// Name: IHCFDBEPNMD
+message MonsterRoute {
+    repeated RoutePoint route_points = 1;
+    uint32 speed_level = 2;
+    uint32 route_type = 3;
+    float arrive_range = 4;
+}
+

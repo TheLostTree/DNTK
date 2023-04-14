@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: JAOECAEBGJO
+message ServantInfo {
+    uint32 LEIGNAKFGHF = 1;
+    uint32 IMHGJAOKPNI = 2;
+}
+

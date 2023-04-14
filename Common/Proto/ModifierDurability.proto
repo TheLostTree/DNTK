@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: DKJFENEJIFH
+message ModifierDurability {
+    float HGJMHAFDFOC = 1;
+    float AFFIDFJHCFM = 2;
+}
+

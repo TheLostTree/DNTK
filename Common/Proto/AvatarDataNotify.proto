@@ -1,0 +1,23 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AvatarInfo.proto";
+import "AvatarRenameInfo.proto";
+import "AvatarTeam.proto";
+
+// CmdId: 1778
+// Name: JDMOIGGFIIE
+message AvatarDataNotify {
+    repeated uint32 owned_flycloak_list = 3;
+    uint64 choose_avatar_guid = 8;
+    repeated uint32 backup_avatar_team_order_list = 15;
+    repeated uint64 temp_avatar_guid_list = 6;
+    repeated AvatarRenameInfo avatar_rename_list = 10;
+    map<uint32, AvatarTeam> avatar_team_map = 11;
+    uint32 cur_avatar_team_id = 4;
+    repeated uint32 owned_costume_list = 12;
+    repeated AvatarInfo avatar_list = 1;
+}
+

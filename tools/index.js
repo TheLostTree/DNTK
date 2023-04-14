@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 
-const proto_path = `no`;
+const proto_path = process.argv[2];
 /**
  * assuming directory structure is like this:
  * /raw
@@ -28,19 +28,17 @@ function copyProtos(){
         // "PacketHead.proto",
         "GetPlayerTokenReq.proto",
         "GetPlayerTokenRsp.proto",
-        // "AvatarDataNotify.proto",
-        // "AvatarFightPropNotify.proto",
-        // "AvatarFightPropUpdateNotify.proto",
-        // "CombatInvocationsNotify.proto",
-        // "PlayerEnterSceneInfoNotify.proto",
-        // "UnionCmdNotify.proto",
-        // "AbilityInvocationsNotify.proto",
-        // "SceneTeamUpdateNotify.proto",
-        // "SceneEntityDisappearNotify.proto",
-        // "SceneEntityAppearNotify.proto",
-        // "PlayerEnterSceneNotify.proto",    
-        // "BattlePassAllDataNotify.proto",
-        // "AntiAddictNotify.proto",
+        "AvatarDataNotify.proto",
+        "AvatarFightPropNotify.proto",
+        "AvatarFightPropUpdateNotify.proto",
+        "CombatInvocationsNotify.proto",
+        "PlayerEnterSceneInfoNotify.proto",
+        "UnionCmdNotify.proto",
+        "AbilityInvocationsNotify.proto",
+        "SceneTeamUpdateNotify.proto",
+        "SceneEntityDisappearNotify.proto",
+        "SceneEntityAppearNotify.proto",
+        "PlayerEnterSceneNotify.proto",    
     ]
 
     const includes = []
@@ -65,7 +63,12 @@ function copyProtos(){
     }
     //copy dependencies + protolist to ./protos
     includes.forEach(proto => {
-        fs.writeFileSync("./Common/Proto/"+proto, fs.readFileSync(`${proto_source}/${proto}`, 'utf8'))
+        const protocontents = fs.readFileSync(`${proto_source}/${proto}`, 'utf8');
+        //replace "syntax = "proto3";" with ""syntax = "proto3";\noption csharp_namespace = "Common";""
+        const protocontents_new = protocontents.replace(/syntax\s=\s"proto3";/, `syntax = "proto3";\noption csharp_namespace = "Common";`)
+
+
+        fs.writeFileSync("./Common/Proto/"+proto, protocontents_new)
     })
 }
 

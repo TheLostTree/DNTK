@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SceneEntityInfo.proto";
+import "VisionType.proto";
+
+// CmdId: 256
+// Name: GIGOIBLMDHA
+message SceneEntityAppearNotify {
+    VisionType appear_type = 13;
+    repeated SceneEntityInfo entity_list = 6;
+    uint32 param = 15;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AbilitySyncStateInfo.proto";
+
+// Name: MCHJIPMJGJP
+message MPLevelEntityInfo {
+    AbilitySyncStateInfo ability_info = 15;
+    uint32 authority_peer_id = 10;
+    uint32 entity_id = 11;
+}
+

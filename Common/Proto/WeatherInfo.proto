@@ -1,0 +1,11 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: BPMBJDCDKEL
+message WeatherInfo {
+    uint32 weather_area_id = 1;
+}
+

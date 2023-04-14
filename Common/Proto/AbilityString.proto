@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: CPMJBNHKIEA
+message AbilityString {
+    oneof type {
+        string str = 1;
+        uint32 hash = 2;
+    }
+}
+

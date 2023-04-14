@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: KKFEDHALJFH
+message Vector {
+    float x = 1;
+    float y = 2;
+    float z = 3;
+}
+

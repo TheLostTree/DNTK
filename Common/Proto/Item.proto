@@ -1,0 +1,20 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Equip.proto";
+import "Furniture.proto";
+import "Material.proto";
+
+// Name: FKONGMBBBAN
+message Item {
+    uint32 item_id = 1;
+    uint64 guid = 2;
+    oneof detail {
+        Material material = 5;
+        Equip equip = 6;
+        Furniture furniture = 7;
+    }
+}
+

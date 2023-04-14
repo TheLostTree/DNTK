@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Item.proto";
+import "TrialAvatarGrantRecord.proto";
+
+// Name: NDCPPFJKBFD
+message TrialAvatarInfo {
+    uint32 trial_avatar_id = 1;
+    repeated Item item_list = 2;
+    TrialAvatarGrantRecord grant_record = 3;
+}
+

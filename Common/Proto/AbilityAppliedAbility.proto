@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AbilityScalarValueEntry.proto";
+import "AbilityString.proto";
+
+// Name: GEIBGHJFKCH
+message AbilityAppliedAbility {
+    AbilityString ability_name = 1;
+    AbilityString ability_override = 2;
+    repeated AbilityScalarValueEntry override_map = 3;
+    uint32 instanced_ability_id = 4;
+}
+

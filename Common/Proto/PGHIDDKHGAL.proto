@@ -1,0 +1,11 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: PGHIDDKHGAL
+message PGHIDDKHGAL {
+    uint32 CDMINANDFKE = 1;
+}
+

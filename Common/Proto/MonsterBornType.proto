@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: PKKAPIFAEHB
+enum MonsterBornType {
+    MONSTER_BORN_NONE = 0;
+    MONSTER_BORN_DEFAULT = 1;
+    MONSTER_BORN_RANDOM = 2;
+}
+

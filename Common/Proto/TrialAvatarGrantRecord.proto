@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: NMHLLNINEFA
+message TrialAvatarGrantRecord {
+    uint32 CJJJCOPJEDA = 1;
+    uint32 NHBDGGGMKDE = 2;
+}
+

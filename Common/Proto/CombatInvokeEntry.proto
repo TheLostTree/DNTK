@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CombatTypeArgument.proto";
+import "ForwardType.proto";
+
+// Name: OGHJCNJDGOP
+message CombatInvokeEntry {
+    CombatTypeArgument argument_type = 2;
+    ForwardType forward_type = 10;
+    bytes combat_data = 7;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+import "RoutePoint.proto";
+
+// Name: CBIFHKIFHEE
+message Route {
+    repeated RoutePoint route_points = 1;
+    uint32 route_type = 2;
+}
+

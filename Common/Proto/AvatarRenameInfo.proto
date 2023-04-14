@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: ANPKECIJOAF
+message AvatarRenameInfo {
+    string avatar_name = 14;
+    uint32 avatar_id = 5;
+}
+

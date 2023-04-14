@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: MFJBPEPMJOH
+message AvatarTeam {
+    repeated uint64 avatar_guid_list = 15;
+    string team_name = 2;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+import "UnionCmd.proto";
+
+// CmdId: 75
+// Name: HOFJCCFFMBO
+message UnionCmdNotify {
+    repeated UnionCmd cmd_list = 2;
+}
+

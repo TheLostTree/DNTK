@@ -1,0 +1,32 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AbilityControlBlock.proto";
+import "AbilitySyncStateInfo.proto";
+import "AvatarInfo.proto";
+import "SceneAvatarInfo.proto";
+import "SceneEntityInfo.proto";
+import "ServerBuff.proto";
+
+// Name: PAMMJHFBDPG
+message SceneTeamAvatar {
+    uint32 weapon_entity_id = 8;
+    uint32 player_uid = 6;
+    bool is_on_scene = 10;
+    uint64 weapon_guid = 1;
+    repeated ServerBuff server_buff_list = 7;
+    bool FMFEBGBJAMB = 11;
+    uint32 entity_id = 13;
+    AbilitySyncStateInfo weapon_ability_info = 3;
+    AbilityControlBlock ability_control_block = 9;
+    AvatarInfo avatar_info = 5;
+    AbilitySyncStateInfo avatar_ability_info = 14;
+    bool is_player_cur_avatar = 593;
+    SceneAvatarInfo scene_avatar_info = 2;
+    SceneEntityInfo scene_entity_info = 12;
+    uint32 scene_id = 15;
+    uint64 avatar_guid = 4;
+}
+

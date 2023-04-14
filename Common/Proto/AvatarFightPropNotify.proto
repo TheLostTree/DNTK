@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1216
+// Name: CFPMGGHGBFL
+message AvatarFightPropNotify {
+    map<uint32, float> fight_prop_map = 13;
+    uint64 avatar_guid = 8;
+}
+

@@ -1,0 +1,11 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: OFGJAIBKPKJ
+message StatueGadgetInfo {
+    repeated uint32 opened_statue_uid_list = 1;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CombatInvokeEntry.proto";
+
+// CmdId: 345
+// Name: CPPOJNOOJKB
+message CombatInvocationsNotify {
+    repeated CombatInvokeEntry invoke_list = 13;
+}
+

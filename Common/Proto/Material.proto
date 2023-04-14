@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MaterialDeleteInfo.proto";
+
+// Name: GPJLHPAJOKK
+message Material {
+    uint32 count = 1;
+    MaterialDeleteInfo delete_info = 2;
+}
+

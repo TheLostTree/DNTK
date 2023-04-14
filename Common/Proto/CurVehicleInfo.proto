@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: LLBAHDBLEPH
+message CurVehicleInfo {
+    uint32 entity_id = 1;
+    uint32 pos = 2;
+    uint32 gadget_id = 3;
+    Vector DNJIMMEONNI = 4;
+    uint32 PDEPBDNGIAB = 5;
+    Vector MAKPDIBNPAP = 6;
+}
+

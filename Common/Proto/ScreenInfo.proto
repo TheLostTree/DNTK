@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: CJACJEAEACK
+message ScreenInfo {
+    uint32 live_id = 1;
+    uint32 projector_entity_id = 2;
+}
+

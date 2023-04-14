@@ -1,0 +1,20 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GadgetCrucibleInfo.proto";
+
+// Name: OJOGHGHFEEP
+message GadgetPlayInfo {
+    uint32 play_type = 1;
+    uint32 duration = 2;
+    repeated uint32 progress_stage_list = 3;
+    uint32 start_cd = 4;
+    uint32 start_time = 5;
+    uint32 progress = 6;
+    oneof play_info {
+        GadgetCrucibleInfo crucible_info = 21;
+    }
+}
+

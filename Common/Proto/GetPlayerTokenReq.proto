@@ -1,4 +1,5 @@
 syntax = "proto3";
+option csharp_namespace = "Common";
 
 option java_package = "catgirl.kirara.moe";
 

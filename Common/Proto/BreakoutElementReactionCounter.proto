@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: FIPDDEKMPLK
+message BreakoutElementReactionCounter {
+    uint32 element_reaction = 1;
+    uint32 count = 2;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AbilityInvokeEntry.proto";
+
+// CmdId: 1196
+// Name: NHHOLCBCDGJ
+message AbilityInvocationsNotify {
+    repeated AbilityInvokeEntry invokes = 15;
+}
+

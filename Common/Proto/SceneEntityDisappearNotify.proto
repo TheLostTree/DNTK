@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+import "VisionType.proto";
+
+// CmdId: 241
+// Name: EBBFDEDKBNO
+message SceneEntityDisappearNotify {
+    VisionType disappear_type = 3;
+    uint32 param = 5;
+    repeated uint32 entity_list = 4;
+}
+

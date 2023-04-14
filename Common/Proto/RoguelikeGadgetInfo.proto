@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: AAFJPKBFECB
+message RoguelikeGadgetInfo {
+    uint32 cell_config_id = 1;
+    uint32 cell_type = 2;
+    uint32 cell_state = 3;
+    uint32 cell_id = 4;
+}
+

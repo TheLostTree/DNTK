@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MassivePropParam.proto";
+
+// Name: MNKOCGLGJNP
+message MassivePropSyncInfo {
+    int64 id = 1;
+    repeated MassivePropParam prop_list = 2;
+}
+

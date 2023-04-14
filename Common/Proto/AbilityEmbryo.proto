@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: ENCLMIKCGEE
+message AbilityEmbryo {
+    uint32 ability_id = 1;
+    fixed32 ability_name_hash = 2;
+    fixed32 ability_override_name_hash = 3;
+}
+

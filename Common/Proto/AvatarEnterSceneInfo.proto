@@ -1,0 +1,20 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AbilitySyncStateInfo.proto";
+import "ServerBuff.proto";
+
+// Name: DJHMOLBEJAA
+message AvatarEnterSceneInfo {
+    uint32 weapon_entity_id = 14;
+    AbilitySyncStateInfo weapon_ability_info = 2;
+    uint64 avatar_guid = 8;
+    uint64 weapon_guid = 12;
+    uint32 avatar_entity_id = 4;
+    repeated ServerBuff server_buff_list = 11;
+    AbilitySyncStateInfo avatar_ability_info = 5;
+    repeated uint32 buff_id_list = 15;
+}
+

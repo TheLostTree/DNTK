@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CustomCommonNodeInfo.proto";
+
+// Name: BJGMHMHDCGE
+message CustomGadgetTreeInfo {
+    repeated CustomCommonNodeInfo node_list = 1;
+}
+

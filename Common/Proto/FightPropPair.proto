@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: FAOKBIKHFGB
+message FightPropPair {
+    uint32 prop_type = 1;
+    float prop_value = 2;
+}
+

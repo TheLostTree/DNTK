@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: CJDBELBDBLI
+message VehicleMember {
+    uint32 uid = 1;
+    uint64 avatar_guid = 2;
+    uint32 pos = 3;
+}
+

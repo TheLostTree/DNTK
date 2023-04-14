@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LPFPMFAHFBC
+message EntityClientData {
+    uint32 wind_change_scene_time = 1;
+    float windmill_sync_angle = 2;
+    int32 wind_change_target_level = 3;
+}
+
