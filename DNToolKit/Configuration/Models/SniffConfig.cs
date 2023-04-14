@@ -26,5 +26,11 @@ namespace DNToolKit.Configuration.Models
         /// Declares, if packets should be loaded from <see cref="PacketRecordPath"/>.
         /// </summary>
         public bool LoadPackets { get; set; } = true;
+
+        /// <summary>
+        /// Declares, if the user would like to manually set which network interface to listen from.
+        /// (Useful for if the default doesn't work for you)
+        /// </summary>
+        public bool ChooseInterface { get; set; } = false;
     }
 }

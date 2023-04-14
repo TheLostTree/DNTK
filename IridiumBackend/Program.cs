@@ -4,7 +4,7 @@ using IridiumBackend.Frontend;
 using Serilog;
 
 const ushort GameMajorVersion = 3;
-const ushort GameMinorVersion = 5;
+const ushort GameMinorVersion = 6;
 
 Log.Logger = new LoggerConfiguration().MinimumLevel.Verbose().WriteTo.Console().CreateLogger();
 Log.Information("DNToolKit for v{Major}.{Minor}", GameMajorVersion, GameMinorVersion);

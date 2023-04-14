@@ -27,7 +27,7 @@ namespace DNToolKit
         /// <param name="config">The <see cref="SniffConfig"/> to setup the packet sniffing internally.</param>
         public DNToolKit(SniffConfig config)
         {
-            _sniffer = new PCapSniffer(PCapFilter_);
+            _sniffer = new PCapSniffer(config.ChooseInterface,PCapFilter_);
             _packetHandler = new AnimeGamePacketHandler(_sniffer, config);
 
             _cts = new CancellationTokenSource();

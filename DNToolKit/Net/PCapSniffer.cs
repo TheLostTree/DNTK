@@ -22,6 +22,8 @@ namespace DNToolKit.Net
         /// </summary>
         public bool IsDisposed { get; private set; }
 
+        private bool choose;
+
         /// <summary>
         /// The event to pass on network packets.
         /// </summary>
@@ -30,10 +32,12 @@ namespace DNToolKit.Net
         /// <summary>
         /// Creates a new instance of <see cref="PCapSniffer"/>.
         /// </summary>
+        /// <param name="choose">Whether or not the network interface will be automatically determined, or manually chosen.</param>
         /// <param name="filterExpression">The filter to setup the sniffer.</param>
         /// <remarks>Refer to https://www.tcpdump.org/manpages/pcap-filter.7.html for valid filter expression syntax.</remarks>
-        public PCapSniffer(string? filterExpression = null)
+        public PCapSniffer(bool choose, string? filterExpression = null)
         {
+            this.choose = choose;
             _filterExpression = filterExpression;
         }
 
@@ -50,7 +54,8 @@ namespace DNToolKit.Net
 
             Log.Information("SharpPcap {Version}, StartLiveCapture", (object)Pcap.SharpPcapVersion);
 
-            (_pCapDevice, _layers) = GetPcapDevice();
+            
+            (_pCapDevice, _layers) = choose ? ChoosePcapDevice():GetPcapDevice();
             if (_pCapDevice == null)
                 throw new InvalidOperationException("No PCap device found.");
 
@@ -153,6 +158,39 @@ namespace DNToolKit.Net
             }
 
             throw new InvalidOperationException("No ethernet PCap supported devices found, are you running as a user with access to adapters (root on Linux)?");
+        }
+        private static (LibPcapLiveDevice, LinkLayers) ChoosePcapDevice()
+        {
+            //todo: maybe not this lol
+            NetworkInterface[] networkInterfaces = NetworkInterface.GetAllNetworkInterfaces();
+            Console.WriteLine();
+            Console.WriteLine("The following devices are available on this machine:");
+            Console.WriteLine("----------------------------------------------------");
+            Console.WriteLine();
+            int b = 0;
+            var interfaces = PcapInterface.GetAllPcapInterfaces();
+            foreach (PcapInterface allPcapInterface in interfaces)
+            {
+            
+                Console.WriteLine("{0})\t{1} - {2}",b,allPcapInterface.Name, allPcapInterface.Description);
+                b++;
+            }
+        
+
+            int i = 0;
+            Console.WriteLine();
+            Console.Write("-- Please choose a device to capture: ");
+            i = int.Parse(Console.ReadLine());
+        
+
+ 
+
+            var device = new LibPcapLiveDevice(interfaces[i]);
+            device.Open();
+        
+        
+        
+            return (device, device.LinkType);
         }
 
         /// <summary>

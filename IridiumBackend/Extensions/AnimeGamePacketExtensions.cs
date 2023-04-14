@@ -7,13 +7,15 @@ namespace IridiumBackend.Extensions
     {
         public static string ToWebSocketMessage(this AnimeGamePacket packet)
         {
+            // if there is no type parser, todo: probably avoid this
+            var s = packet.ProtoBuf is null ? "\"backend is missing .proto\"" : JsonFormatter.Default.Format(packet.ProtoBuf);
             return $$"""
                    {
                        "packetID": {{(int)packet.PacketType}},
                        "protoName": "{{packet.PacketType}}",
-                       "object": {{JsonFormatter.Default.Format(packet.ProtoBuf)}},
+                       "object": {{s}},
                        "packet": "{{Convert.ToBase64String(packet.ProtoBufBytes)}}",
-                       "source": {{packet.Sender}}
+                       "source": {{(int)packet.Sender}}
                    }
                    """;
         }
