@@ -12,12 +12,13 @@ namespace DNToolKit.AnimeGame
     /// <summary>
     /// Handles the flow and cryptography of <see cref="AnimeGamePacket"/>s for raw messages.
     /// </summary>
-    class AnimeGamePacketProcessor
+    class AnimeGamePacketProcessor : IDisposable
+
     {
         private static readonly RSA ClientPrivate = RSA.Create();
 
         private readonly SniffConfig _config;
-        private readonly AnimeGamePacketRecorder _packetRecorder;
+        private AnimeGamePacketRecorder _packetRecorder;
 
         private MtKey? _key;
         private MtKey? _sessionKey;
@@ -69,7 +70,7 @@ namespace DNToolKit.AnimeGame
         /// </summary>
         public void Initialize()
         {
-            if (!_config.LoadPackets) 
+            if (!_config.LoadPackets)
                 return;
 
             foreach (var packet in _packetRecorder.ReadMessages())
@@ -83,7 +84,9 @@ namespace DNToolKit.AnimeGame
         /// <param name="sender">The sender of the raw message.</param>
         /// <param name="keyReceived">If the key for decryption could be received or recovered. Is only <see langword="false"/>, if the <see cref="GetPlayerTokenRsp"/> was not sufficient to recover a key.</param>
         /// <remarks>This method starts the event invocation chain that exposes <see cref="AnimeGamePacket"/>s publicly.</remarks>
-        public void Process(byte[] data, Sender sender, out bool keyReceived)
+        public void Process(byte[] data,
+            Sender sender,
+            out bool keyReceived)
         {
             keyReceived = true;
 
@@ -106,9 +109,13 @@ namespace DNToolKit.AnimeGame
                         Log.Warning("Did not receive server key yet.");
                     else
                     {
-                        _sessionKey = KeyBruteForcer.BruteForce(data, (long)_tokenReqSendTime.Value, _tokenRspServerKey.Value);
+                        _sessionKey =
+                            KeyBruteForcer.BruteForce(data,
+                                (long)_tokenReqSendTime.Value,
+                                _tokenRspServerKey.Value);
                         if (_sessionKey == null)
-                            Log.Error($"Cannot find seed. (@{data} : {_tokenReqSendTime.Value} : {_tokenRspServerKey.Value}");
+                            Log.Error(
+                                $"Cannot find seed. (@{data} : {_tokenReqSendTime.Value} : {_tokenRspServerKey.Value}");
                     }
                 }
 
@@ -116,7 +123,9 @@ namespace DNToolKit.AnimeGame
 
                 if (_countBruteForce > 10)
                 {
-                    Log.Error("Brute forcing has failed {Count} times, so make sure you login on a freshly launched client.", _countBruteForce);
+                    Log.Error(
+                        "Brute forcing has failed {Count} times, so make sure you login on a freshly launched client.",
+                        _countBruteForce);
                     keyReceived = false;
 
                     return;
@@ -125,7 +134,8 @@ namespace DNToolKit.AnimeGame
 
             if (data.GetUInt16(0) == 0x4567)
             {
-                var packet = ParsePacket(data, sender);
+                var packet = ParsePacket(data,
+                    sender);
                 if (packet != null)
                 {
                     if (_config.PersistPackets)
@@ -151,17 +161,20 @@ namespace DNToolKit.AnimeGame
         /// <param name="data">The raw message to parse.</param>
         /// <param name="sender">The sender of the raw message.</param>
         /// <returns>The parsed <see cref="AnimeGamePacket"/>. Otherwise <see langword="null"/>.</returns>
-        private AnimeGamePacket? ParsePacket(byte[] data, Sender sender)
+        private AnimeGamePacket? ParsePacket(byte[] data,
+            Sender sender)
         {
             // Parse the packet
             AnimeGamePacket packet;
             try
             {
-                packet = AnimeGamePacket.Parse(data, sender);
+                packet = AnimeGamePacket.Parse(data,
+                    sender);
             }
             catch (Exception e)
             {
-                Log.Fatal(e, "Could not parse anime game packet.");
+                Log.Fatal(e,
+                    "Could not parse anime game packet.");
                 return null;
             }
 
@@ -175,13 +188,15 @@ namespace DNToolKit.AnimeGame
             _tokenReqSendTime = packet.Metadata?.SentMs;
 
             var tokenRsp = packet.ProtoBuf as GetPlayerTokenRsp;
-            Log.Information("{TokenRsp}", tokenRsp);
+            Log.Information("{TokenRsp}",
+                tokenRsp);
 
             if (tokenRsp?.ServerRandKey is null)
                 Log.Warning("Failed to receive random server key.");
             else
             {
-                var key = ClientPrivate.Decrypt(Convert.FromBase64String(tokenRsp.ServerRandKey), RSAEncryptionPadding.Pkcs1);
+                var key = ClientPrivate.Decrypt(Convert.FromBase64String(tokenRsp.ServerRandKey),
+                    RSAEncryptionPadding.Pkcs1);
 
                 _tokenRspServerKey = key.GetUInt64(0);
                 _useSessionKey = true;
@@ -196,7 +211,15 @@ namespace DNToolKit.AnimeGame
         /// <param name="packet">The <see cref="AnimeGamePacket"/> to üass on.</param>
         private void OnPacketReceived(AnimeGamePacket packet)
         {
-            PacketProcessed?.Invoke(this, packet);
+            PacketProcessed?.Invoke(this,
+                packet);
+        }
+
+        public void Dispose()
+        {
+            _packetRecorder = null!;
+            //not ideal lol
+            GC.Collect();
         }
     }
 }

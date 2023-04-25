@@ -23,6 +23,12 @@ namespace DNToolKit.AnimeGame
             _persistStream = !File.Exists(persistPath) ? File.Create(persistPath) : File.Open(persistPath, FileMode.Open);
         }
 
+        ~AnimeGamePacketRecorder()
+        {
+            _persistStream?.Flush();
+            _persistStream?.Close();
+        }
+
         /// <summary>
         /// Persists an <see cref="AnimeGamePacket"/> to the end of the recording file.
         /// </summary>

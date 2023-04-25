@@ -15,7 +15,7 @@ namespace DNToolKit.Configuration
         /// <param name="configPath">The path to load the configuration from.</param>
         /// <returns>The loaded <typeparamref name="TConfig"/> or its empty implementation.</returns>
         public static TConfig LoadConfig<TConfig>(string? configPath = null)
-            where TConfig : Config, new()
+            where TConfig : new()
         {
             if (string.IsNullOrEmpty(configPath))
                 return new TConfig();

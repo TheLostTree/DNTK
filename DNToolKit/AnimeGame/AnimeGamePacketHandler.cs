@@ -47,6 +47,11 @@ namespace DNToolKit.AnimeGame
             _processor.Initialize();
         }
 
+        public void Close()
+        {
+            _processor.Dispose();
+        }
+
         /// <inheritdoc cref="UdpHandler.ProcessUdpPacket"/>
         protected override void ProcessUdpPacket(UdpPacket packet)
         {
