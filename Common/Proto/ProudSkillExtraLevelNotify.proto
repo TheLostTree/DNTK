@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1099
+// Name: FHFLCAHNFCP
+message ProudSkillExtraLevelNotify {
+    uint64 avatar_guid = 15;
+    uint32 CBAGHCLLOCO = 10;
+    uint32 KPPFFPBNNAC = 3;
+    uint32 LDLMAGLNLEA = 4;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FriendBrief.proto";
+
+// CmdId: 4024
+// Name: FCLOOKLKLCE
+message PSNFriendListNotify {
+    repeated FriendBrief psn_friend_list = 15;
+}
+

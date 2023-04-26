@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGBossChallengeData.proto";
+
+// CmdId: 7570
+// Name: DGEJKCHBLLK
+message GCGBossChallengeUpdateNotify {
+    GCGBossChallengeData boss_challenge = 4;
+}
+

@@ -1,0 +1,22 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ExhibitionDisplayInfo.proto";
+import "LanV3BoatSettleInfo.proto";
+
+// CmdId: 6598
+// Name: OIOFGAJIDIH
+message LanV3BoatSettleNotify {
+    uint32 duration = 13;
+    uint32 begin_time = 5;
+    repeated LanV3BoatSettleInfo settle_info_list = 15;
+    repeated ExhibitionDisplayInfo score_list = 11;
+    bool is_single = 14;
+    uint32 stage_type = 12;
+    uint32 play_index = 1;
+    repeated uint32 winner_uid_list = 3;
+    bool is_gallery_succ = 7;
+}
+

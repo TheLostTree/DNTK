@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2009
+// Name: KAKMMNAPDNE
+message SelectEffigyChallengeConditionReq {
+    uint32 difficulty_id = 4;
+    uint32 challenge_id = 1;
+    repeated uint32 condition_id_list = 15;
+}
+

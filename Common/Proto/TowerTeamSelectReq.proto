@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "TowerTeam.proto";
+
+// CmdId: 2456
+// Name: KJFKGBBOLFJ
+message TowerTeamSelectReq {
+    uint32 floor_id = 14;
+    repeated TowerTeam tower_team_list = 5;
+}
+

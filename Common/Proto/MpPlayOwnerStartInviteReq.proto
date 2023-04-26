@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1825
+// Name: JBCLIDOMFGE
+message MpPlayOwnerStartInviteReq {
+    uint32 mp_play_id = 2;
+    bool is_skip_match = 15;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "BlossomScheduleInfo.proto";
+
+// CmdId: 2716
+// Name: GCPJBEOOFLA
+message WorldOwnerBlossomScheduleInfoNotify {
+    BlossomScheduleInfo schedule_info = 6;
+}
+

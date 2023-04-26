@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 7599
+// Name: CPPJDDNMEJM
+message GCGDSCardFaceUpdateNotify {
+    uint32 face_type = 7;
+    uint32 card_id = 9;
+}
+

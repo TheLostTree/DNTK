@@ -1,0 +1,11 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 24158
+// Name: PGOFLLNHMHB
+message LanV3BoatInterruptSettleStageReq {
+}
+

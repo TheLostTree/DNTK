@@ -1,0 +1,32 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeAnimalData.proto";
+import "HomeBlockDotPattern.proto";
+import "HomeBlockFieldData.proto";
+import "HomeFurnitureCustomSuiteData.proto";
+import "HomeFurnitureData.proto";
+import "HomeFurnitureGroupData.proto";
+import "HomeFurnitureSuiteData.proto";
+import "HomeNpcData.proto";
+import "WeekendDjinnInfo.proto";
+
+// Name: IHLEOGKOHJH
+message HomeBlockArrangementInfo {
+    uint32 comfort_value = 2;
+    bool is_unlocked = 3;
+    repeated HomeFurnitureSuiteData furniture_suite_list = 6;
+    repeated HomeAnimalData deploy_animal_list = 4;
+    repeated WeekendDjinnInfo weekend_djinn_info_list = 1;
+    repeated HomeFurnitureGroupData furniture_group_list = 11;
+    repeated HomeBlockFieldData field_list = 5;
+    repeated HomeBlockDotPattern dot_pattern_list = 15;
+    repeated HomeFurnitureCustomSuiteData furniture_custom_suite_list = 12;
+    repeated HomeNpcData deploy_npc_list = 9;
+    uint32 block_id = 10;
+    repeated HomeFurnitureData NOLOJAIDCGA = 13;
+    repeated HomeFurnitureData CIKCBEBJEIK = 8;
+}
+

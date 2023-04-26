@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ItemParam.proto";
+
+// Name: IPKPGFHHFFA
+message ScenePlayBattleSettleRewardInfo {
+    uint32 uid = 6;
+    repeated ItemParam reward_item_list = 9;
+}
+

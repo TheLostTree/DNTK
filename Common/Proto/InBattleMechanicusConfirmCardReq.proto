@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5359
+// Name: MOKKBHCLKCA
+message InBattleMechanicusConfirmCardReq {
+    uint32 card_id = 12;
+    uint32 play_index = 10;
+    uint32 group_id = 14;
+}
+

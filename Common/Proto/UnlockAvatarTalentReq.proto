@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1090
+// Name: EIIEBEFANNG
+message UnlockAvatarTalentReq {
+    uint32 talent_id = 4;
+    uint64 avatar_guid = 3;
+}
+

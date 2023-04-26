@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "OpActivityInfo.proto";
+
+// CmdId: 5189
+// Name: NDKAKLBNOPA
+message OpActivityDataNotify {
+    repeated OpActivityInfo op_activity_info_list = 6;
+}
+

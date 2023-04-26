@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ProfilePicture.proto";
+
+// Name: AMLIKODMAOK
+message FleurFairPlayerStatInfo {
+    uint32 stat_id = 1;
+    string online_id = 13;
+    uint32 head_image = 4;
+    string nick_name = 14;
+    uint32 uid = 11;
+    ProfilePicture profile_picture = 3;
+    int32 param = 15;
+}
+

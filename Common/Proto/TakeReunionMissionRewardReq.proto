@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5071
+// Name: LLAHGFMLLBE
+message TakeReunionMissionRewardReq {
+    uint32 reward_id = 8;
+    uint32 reward_index = 4;
+    uint32 mission_id = 9;
+}
+

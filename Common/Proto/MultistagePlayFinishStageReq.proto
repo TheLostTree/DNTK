@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5396
+// Name: EBPGPLPPIJE
+message MultistagePlayFinishStageReq {
+    uint32 group_id = 9;
+    uint32 play_index = 10;
+}
+

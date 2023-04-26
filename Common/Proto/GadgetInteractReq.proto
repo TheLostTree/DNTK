@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "InterOpType.proto";
+import "ResinCostType.proto";
+
+// CmdId: 890
+// Name: CEEALLJALGP
+message GadgetInteractReq {
+    ResinCostType resin_cost_type = 5;
+    bool is_use_condense_resin = 8;
+    InterOpType op_type = 9;
+    uint32 ui_interact_id = 12;
+    uint32 gadget_id = 7;
+    uint32 gadget_entity_id = 1;
+}
+

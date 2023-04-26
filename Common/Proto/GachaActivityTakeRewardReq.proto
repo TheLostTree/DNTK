@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8311
+// Name: EILNIKEFBEA
+message GachaActivityTakeRewardReq {
+    map<uint32, uint32> robot_num_map = 6;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2756
+// Name: NGMKEEFBKHD
+message BlossomChestCreateNotify {
+    uint32 refresh_id = 15;
+    uint32 circle_camp_id = 2;
+}
+

@@ -1,0 +1,20 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MultistageSettleWatcherInfo.proto";
+
+// CmdId: 5375
+// Name: MIICNJBEKFM
+message InBattleMechanicusSettleNotify {
+    uint32 EDEPJBIHFEB = 3;
+    uint32 MPDLHJGFMFK = 4;
+    uint32 GIAMAGCEFII = 6;
+    uint32 group_id = 10;
+    bool is_success = 12;
+    uint32 play_index = 2;
+    uint64 scene_time_ms = 9;
+    repeated MultistageSettleWatcherInfo watcher_list = 14;
+}
+

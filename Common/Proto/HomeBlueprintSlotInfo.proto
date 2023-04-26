@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: BBNFFMPCCDO
+message HomeBlueprintSlotInfo {
+    uint32 module_id = 3;
+    bool is_allow_copy = 8;
+    uint32 create_time = 15;
+    uint32 slot_id = 10;
+    uint32 scene_id = 13;
+    string share_code = 11;
+    bool IEPNMCGOGEN = 7;
+    uint32 block_id = 5;
+}
+

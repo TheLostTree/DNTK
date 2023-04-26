@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ItemParam.proto";
+
+// CmdId: 668
+// Name: NEPCOPEDHAI
+message CalcWeaponUpgradeReturnItemsRsp {
+    int32 retcode = 4;
+    repeated ItemParam item_param_list = 11;
+    uint64 target_weapon_guid = 6;
+}
+

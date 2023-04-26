@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2476
+// Name: PPJMEAOLGHN
+message TowerDailyRewardProgressChangeNotify {
+    uint32 NKMMGNAGOOA = 4;
+    uint32 GMMJNDFMHAM = 3;
+}
+

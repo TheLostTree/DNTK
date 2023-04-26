@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5320
+// Name: ELLGJMJANOH
+message BrickBreakerPlayerSetAvatarNotify {
+    repeated uint32 avatar_id_list = 15;
+    repeated uint32 costume_id_list = 1;
+    uint32 uid = 11;
+}
+

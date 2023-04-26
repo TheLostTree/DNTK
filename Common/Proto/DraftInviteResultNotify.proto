@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5492
+// Name: GNBEGCCEKHA
+message DraftInviteResultNotify {
+    bool is_all_argee = 8;
+    uint32 draft_id = 12;
+}
+

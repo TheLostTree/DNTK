@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2175
+// Name: NDDGJOOBBEK
+message TreasureMapCurrencyNotify {
+    uint32 currency_num = 8;
+}
+

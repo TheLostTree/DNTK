@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CrystalLinkAvatarInfo.proto";
+import "CrystalLinkBuffInfo.proto";
+
+// Name: CBHAJLMEILM
+message CrystalLinkTeamInfo {
+    repeated CrystalLinkBuffInfo buff_info_list = 6;
+    repeated CrystalLinkAvatarInfo avatar_info_list = 8;
+}
+

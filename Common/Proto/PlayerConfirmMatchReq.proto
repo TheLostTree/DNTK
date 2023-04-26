@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MatchType.proto";
+
+// CmdId: 4172
+// Name: EIOHIEKLPLD
+message PlayerConfirmMatchReq {
+    MatchType match_type = 7;
+    bool is_agreed = 10;
+}
+

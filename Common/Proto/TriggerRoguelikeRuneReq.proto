@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8307
+// Name: BBLLCOADDPM
+message TriggerRoguelikeRuneReq {
+    uint32 rune_id = 6;
+}
+

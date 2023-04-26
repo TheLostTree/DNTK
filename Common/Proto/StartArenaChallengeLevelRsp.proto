@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2021
+// Name: LDINKLGLFFD
+message StartArenaChallengeLevelRsp {
+    uint32 GELFIDPMHLJ = 14;
+    uint32 FCLFLMPGIKN = 4;
+    int32 retcode = 2;
+    uint32 gadget_entity_id = 7;
+}
+

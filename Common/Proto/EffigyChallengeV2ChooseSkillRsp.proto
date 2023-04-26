@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 20946
+// Name: EDMCDCINNDL
+message EffigyChallengeV2ChooseSkillRsp {
+    uint32 level_id = 7;
+    int32 retcode = 14;
+    uint32 challenge_mode_skill_no = 9;
+}
+

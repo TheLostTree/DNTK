@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 841
+// Name: OHBOCHMIMFN
+message BossChestActivateNotify {
+    repeated uint32 qualify_uid_list = 8;
+    uint32 entity_id = 12;
+}
+

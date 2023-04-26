@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5226
+// Name: OKIOCBFIBFG
+message MiracleRingDropResultNotify {
+    int32 JJMPKOPPOFI = 5;
+    uint32 IMOIJDCCEOP = 13;
+}
+

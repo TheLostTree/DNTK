@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: FOGOFNJIKON
+message ReunionPrivilegeInfo {
+    uint32 privilege_id = 14;
+    uint32 JHDBADNLDEJ = 5;
+    uint32 BPDNAIHEOHE = 13;
+}
+

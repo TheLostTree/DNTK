@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "RogueDiaryAvatar.proto";
+
+// CmdId: 8965
+// Name: JEMHCOBPNJO
+message RogueFinishRepairReq {
+    repeated RogueDiaryAvatar chosen_avatar_list = 3;
+    repeated uint32 chosen_card_list = 5;
+}
+

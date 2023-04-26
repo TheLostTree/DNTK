@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: CFHDBJENNAP
+enum ShapeType {
+    OBSTACLE_SHAPE_CAPSULE = 0;
+    OBSTACLE_SHAPE_BOX = 1;
+}
+

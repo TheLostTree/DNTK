@@ -1,0 +1,25 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeBlockArrangementInfo.proto";
+import "HomeFurnitureData.proto";
+import "Vector.proto";
+
+// Name: FCINIPEMLPE
+message HomeSceneArrangementInfo {
+    repeated HomeFurnitureData DMALLBPIKFC = 12;
+    uint32 tmp_version = 7;
+    uint32 comfort_value = 5;
+    repeated HomeBlockArrangementInfo block_arrangement_info_list = 15;
+    uint32 scene_id = 9;
+    Vector FGMCFDMLGEB = 13;
+    bool is_set_born_pos = 11;
+    HomeFurnitureData main_house = 4;
+    uint32 bgm_id = 6;
+    Vector PCIJFOPGEDO = 3;
+    Vector born_pos = 2;
+    repeated HomeFurnitureData NIHPFMMOMDA = 8;
+}
+

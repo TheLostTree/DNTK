@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GalleryStartSource.proto";
+
+// Name: KNMKAEFKFON
+message SceneGalleryIslandPartyDownHillInfo {
+    GalleryStartSource start_source = 5;
+    uint32 max_kill_monster_count = 11;
+    uint32 coin = 2;
+    uint32 total_kill_monster_count = 8;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4771
+// Name: ILKBNHAABKN
+message HomeKickPlayerRsp {
+    bool is_kick_all = 5;
+    int32 retcode = 15;
+    uint32 target_uid = 7;
+}
+

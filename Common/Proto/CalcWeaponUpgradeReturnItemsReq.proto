@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ItemParam.proto";
+
+// CmdId: 627
+// Name: ENAGFOOLFAD
+message CalcWeaponUpgradeReturnItemsReq {
+    repeated ItemParam item_param_list = 13;
+    uint64 target_weapon_guid = 1;
+    repeated uint64 food_weapon_guid_list = 4;
+}
+

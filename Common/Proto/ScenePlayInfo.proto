@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: IHELPFGLMOP
+message ScenePlayInfo {
+    uint32 entry_id = 8;
+    uint32 play_type = 2;
+    bool is_open = 5;
+    uint32 play_id = 9;
+}
+

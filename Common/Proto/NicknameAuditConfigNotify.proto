@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 131
+// Name: CJCKPFAEMNM
+message NicknameAuditConfigNotify {
+    uint32 submit_limit = 15;
+    bool is_open = 7;
+}
+

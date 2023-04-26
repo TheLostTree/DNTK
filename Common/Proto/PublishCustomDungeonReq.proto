@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 6221
+// Name: BBINENEFGJC
+message PublishCustomDungeonReq {
+    repeated uint32 tag_list = 12;
+    uint64 dungeon_guid = 6;
+}
+

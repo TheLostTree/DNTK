@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: OHBLLAGJHLI
+message MusicGameRecord {
+    bool is_unlock = 9;
+    uint32 max_score = 6;
+    uint32 max_combo = 5;
+}
+

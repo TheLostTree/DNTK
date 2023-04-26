@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "InstableSprayStageInfo.proto";
+
+// Name: KNCGAPIGLJB
+message InstableSprayDetailInfo {
+    repeated InstableSprayStageInfo stage_info_list = 2;
+}
+

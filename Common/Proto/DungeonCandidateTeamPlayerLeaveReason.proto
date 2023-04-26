@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: DEOBNPJKPKC
+enum DungeonCandidateTeamPlayerLeaveReason {
+    DUNGEON_CANDIDATE_TPLR_NORMAL = 0;
+    DUNGEON_CANDIDATE_TPLR_DIE = 1;
+    DUNGEON_CANDIDATE_TPLR_BE_KICK = 2;
+    DUNGEON_CANDIDATE_DISCONNECT = 3;
+}
+

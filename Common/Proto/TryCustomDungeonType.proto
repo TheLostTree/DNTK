@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: HOOINALOANB
+enum TryCustomDungeonType {
+    TRY_CUSTOM_DUNGEON_NONE = 0;
+    TRY_CUSTOM_DUNGEON_ROOM = 1;
+    TRY_CUSTOM_DUNGEON_ALL = 2;
+    TRY_CUSTOM_DUNGEON_OFFICIAL_PLAY = 3;
+}
+

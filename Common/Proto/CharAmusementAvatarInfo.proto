@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: KEBACJLDGHN
+message CharAmusementAvatarInfo {
+    repeated uint32 avatar_id_list = 3;
+    uint32 punish_time = 11;
+    uint32 uid = 8;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: PKBOCMLKJDJ
+message FleurFairDungeonSectionInfo {
+    uint32 open_time = 6;
+    bool is_open = 9;
+    uint32 section_id = 11;
+}
+

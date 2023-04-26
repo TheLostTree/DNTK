@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4894
+// Name: FPIIONNKFOD
+message HomeDeleteBlueprintRsp {
+    uint32 slot_id = 1;
+    int32 retcode = 12;
+}
+

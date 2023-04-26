@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "EvtBeingHitInfo.proto";
+import "ForwardType.proto";
+
+// CmdId: 390
+// Name: ONHPIKEFGMA
+message EvtBeingHitNotify {
+    EvtBeingHitInfo being_hit_info = 14;
+    ForwardType forward_type = 9;
+}
+

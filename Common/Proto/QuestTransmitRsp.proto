@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 483
+// Name: MFFLCFKINNA
+message QuestTransmitRsp {
+    uint32 quest_id = 5;
+    int32 retcode = 3;
+    uint32 point_id = 15;
+}
+

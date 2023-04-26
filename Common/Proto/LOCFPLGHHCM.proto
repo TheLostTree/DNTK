@@ -1,0 +1,11 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LOCFPLGHHCM
+message LOCFPLGHHCM {
+    float NDOPKKCFNNL = 13;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 804
+// Name: CDNLKOIGGDG
+message NightCrowGadgetObservationMatchReq {
+    uint32 target_gadget_state = 4;
+    uint32 gadget_entity_id = 3;
+}
+

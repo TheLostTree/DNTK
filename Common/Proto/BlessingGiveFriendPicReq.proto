@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2045
+// Name: LHMBOGKCLGB
+message BlessingGiveFriendPicReq {
+    uint32 uid = 6;
+    uint32 pic_id = 15;
+}
+

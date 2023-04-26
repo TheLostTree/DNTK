@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGSettleOption.proto";
+
+// CmdId: 7356
+// Name: IMOLJDDINMH
+message GCGSettleOptionRsp {
+    int32 retcode = 8;
+    GCGSettleOption option = 15;
+}
+

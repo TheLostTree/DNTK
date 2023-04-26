@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "LuminanceStoneChallengeSettleInfo.proto";
+
+// CmdId: 8785
+// Name: FNJHPEKAFEF
+message LuminanceStoneChallengeSettleNotify {
+    uint32 gallery_id = 1;
+    LuminanceStoneChallengeSettleInfo settle_info = 2;
+}
+

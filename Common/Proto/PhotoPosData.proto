@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: IECLMFCIPAE
+message PhotoPosData {
+    bool is_view = 4;
+    uint32 open_time = 13;
+    Vector center = 8;
+    uint32 pos_id = 5;
+    bool is_open = 6;
+}
+

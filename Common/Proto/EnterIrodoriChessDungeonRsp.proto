@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8056
+// Name: JKPJHJGEJHJ
+message EnterIrodoriChessDungeonRsp {
+    int32 retcode = 7;
+    bool is_hard_map = 10;
+    uint32 level_id = 4;
+}
+

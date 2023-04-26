@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeBlockSubFieldData.proto";
+import "Vector.proto";
+
+// Name: MFENNMEPMCI
+message HomeBlockFieldData {
+    Vector pos = 14;
+    Vector rot = 5;
+    uint32 furniture_id = 4;
+    uint32 guid = 9;
+    repeated HomeBlockSubFieldData sub_field_list = 6;
+}
+

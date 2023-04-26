@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2239
+// Name: OONPHCCDMBF
+message PushTipsReadFinishRsp {
+    uint32 push_tips_id = 2;
+    int32 retcode = 5;
+}
+

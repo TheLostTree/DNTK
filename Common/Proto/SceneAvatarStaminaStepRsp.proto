@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// CmdId: 259
+// Name: PGDKDGKKGBF
+message SceneAvatarStaminaStepRsp {
+    bool use_client_rot = 9;
+    Vector rot = 12;
+    int32 retcode = 11;
+}
+

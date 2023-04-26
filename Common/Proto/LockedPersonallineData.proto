@@ -1,0 +1,22 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: HHBEOGDHPOE
+message LockedPersonallineData {
+    // Name: KMFLDPIJABG
+    enum LockReason {
+        LEVEL = 0;
+        QUEST = 1;
+    }
+
+    uint32 personal_line_id = 7;
+    LockReason lock_reason = 4;
+    oneof param {
+        uint32 chapter_id = 8;
+        uint32 level = 12;
+    }
+}
+

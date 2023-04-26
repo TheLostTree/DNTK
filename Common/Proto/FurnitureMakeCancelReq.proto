@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4826
+// Name: GHCLAJCOLDE
+message FurnitureMakeCancelReq {
+    uint32 make_id = 5;
+    uint32 index = 10;
+}
+

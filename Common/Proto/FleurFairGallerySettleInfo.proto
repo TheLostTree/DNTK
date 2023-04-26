@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: BGNNHOLIAAL
+message FleurFairGallerySettleInfo {
+    uint32 MEACAEHGMKJ = 4;
+    bool is_success = 7;
+    uint32 energy = 3;
+    uint32 DDGOJCJLFAM = 5;
+    map<uint32, int32> energy_stat_map = 15;
+}
+

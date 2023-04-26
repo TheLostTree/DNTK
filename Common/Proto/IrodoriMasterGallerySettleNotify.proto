@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "IrodoriMasterGallerySettleInfo.proto";
+
+// CmdId: 8390
+// Name: FEOHDNPHBJI
+message IrodoriMasterGallerySettleNotify {
+    IrodoriMasterGallerySettleInfo settle_info = 13;
+    uint32 gallery_id = 8;
+}
+

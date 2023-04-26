@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: PAKMJACDBEJ
+message SceneGalleryIrodoriMasterInfo {
+    bool is_cg_viewed = 5;
+    uint32 difficulty = 6;
+    uint32 level_id = 9;
+}
+

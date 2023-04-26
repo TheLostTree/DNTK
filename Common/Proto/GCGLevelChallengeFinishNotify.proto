@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 7969
+// Name: MFDDLCKFKBA
+message GCGLevelChallengeFinishNotify {
+    repeated uint32 finished_challenge_id_list = 14;
+    uint32 level_id = 12;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8163
+// Name: AHLJANOBIMN
+message TriggerRoguelikeRuneRsp {
+    uint32 rune_id = 5;
+    uint32 available_count = 2;
+    int32 retcode = 13;
+}
+

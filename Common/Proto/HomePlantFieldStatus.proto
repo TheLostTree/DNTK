@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: GEHIKODGKMC
+enum HomePlantFieldStatus {
+    HOME_FIELD_STATUE_NONE = 0;
+    HOME_FIELD_STATUE_SEED = 1;
+    HOME_FIELD_STATUE_SPROUT = 2;
+    HOME_FIELD_STATUE_GATHER = 3;
+}
+

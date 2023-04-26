@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: HCADHBGHFOC
+message GCGPlayerGCGState {
+    bool GFNDMEBDCIK = 5;
+    uint32 uid = 2;
+    bool CHBHOPHJBPM = 12;
+}
+

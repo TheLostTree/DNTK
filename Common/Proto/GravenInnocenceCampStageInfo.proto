@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: OEFOJJFBCEB
+message GravenInnocenceCampStageInfo {
+    bool is_open = 11;
+    bool is_finished = 2;
+    uint32 level_id = 14;
+    uint32 stage_id = 5;
+}
+

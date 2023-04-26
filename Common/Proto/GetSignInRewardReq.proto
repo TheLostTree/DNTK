@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2516
+// Name: LHLPCMDFKPK
+message GetSignInRewardReq {
+    uint32 reward_day = 13;
+    uint32 schedule_id = 6;
+}
+

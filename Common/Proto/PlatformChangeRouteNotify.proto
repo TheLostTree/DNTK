@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "PlatformInfo.proto";
+
+// CmdId: 219
+// Name: OMOJHMPFPPG
+message PlatformChangeRouteNotify {
+    PlatformInfo platform = 9;
+    uint32 entity_id = 15;
+    uint32 scene_time = 7;
+}
+

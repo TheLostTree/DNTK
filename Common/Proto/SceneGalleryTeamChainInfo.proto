@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: EHOILOJKKCF
+message SceneGalleryTeamChainInfo {
+    uint32 NCABJMDBENP = 14;
+    uint32 NCHHCEPECEO = 12;
+    uint32 BIFFDDIOLOP = 4;
+    uint32 HNAMFOFOMBN = 6;
+    uint32 HKGMKGOGFEM = 10;
+}
+

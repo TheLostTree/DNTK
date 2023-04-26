@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CreateEntityInfo.proto";
+
+// CmdId: 298
+// Name: NMFKFALELHO
+message SceneCreateEntityRsp {
+    int32 retcode = 4;
+    CreateEntityInfo entity = 14;
+    uint32 entity_id = 3;
+}
+

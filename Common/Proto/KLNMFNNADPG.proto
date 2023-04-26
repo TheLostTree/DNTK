@@ -1,0 +1,22 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "QueryFilter.proto";
+import "Vector.proto";
+import "Vector3Int.proto";
+
+// CmdId: 2324
+// Name: KLNMFNNADPG
+message KLNMFNNADPG {
+    Vector destination_pos = 14;
+    uint32 scene_id = 13;
+    Vector3Int FOJHBGHIMDG = 15;
+    QueryFilter filter = 10;
+    int32 uid = 9;
+    Vector3Int LCOAPOJGMKL = 8;
+    int32 query_id = 12;
+    Vector source_pos = 4;
+}
+

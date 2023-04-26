@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 6267
+// Name: KGCAIOJAIEF
+message PlayerDeathZoneNotify {
+    uint32 cur_death_zone_id = 6;
+}
+

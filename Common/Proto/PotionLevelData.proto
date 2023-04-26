@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: DPHIHINLIHH
+message PotionLevelData {
+    uint32 score = 13;
+    uint32 mode_id = 15;
+    uint32 level_id = 7;
+    uint32 difficulty_level = 10;
+}
+

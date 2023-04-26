@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8859
+// Name: HBKDABDOFEG
+message WinterCampTakeBattleRewardRsp {
+    uint32 id = 11;
+    int32 retcode = 13;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5046
+// Name: JBJMMPEKFJA
+message PrivateChatRsp {
+    int32 retcode = 7;
+    uint32 chat_forbidden_endtime = 9;
+}
+

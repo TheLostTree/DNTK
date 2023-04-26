@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Uint32Pair.proto";
+
+// Name: GAFAFJOLEAO
+message GCGPlayCardCostInfo {
+    uint32 card_id = 5;
+    repeated Uint32Pair cost_map = 6;
+}
+

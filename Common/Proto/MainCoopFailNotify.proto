@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1953
+// Name: AOBLCPCFAPG
+message MainCoopFailNotify {
+    uint32 chapter_id = 2;
+    string textmap_id = 8;
+}
+

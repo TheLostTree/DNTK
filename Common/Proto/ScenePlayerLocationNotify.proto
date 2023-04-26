@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "PlayerLocationInfo.proto";
+import "VehicleLocationInfo.proto";
+
+// CmdId: 212
+// Name: HCKDLDDBGEN
+message ScenePlayerLocationNotify {
+    uint32 scene_id = 14;
+    repeated PlayerLocationInfo player_loc_list = 3;
+    repeated VehicleLocationInfo vehicle_loc_list = 7;
+}
+

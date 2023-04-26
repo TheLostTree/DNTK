@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGSkillPreviewCardInfo.proto";
+
+// Name: JBPEBKINOLD
+message GCGSkillPreviewExtraInfo {
+    repeated GCGSkillPreviewCardInfo FLOOBAAJGAL = 1;
+    repeated GCGSkillPreviewCardInfo NKKHNKBCOAG = 14;
+}
+

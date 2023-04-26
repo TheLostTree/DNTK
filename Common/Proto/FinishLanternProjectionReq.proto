@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8958
+// Name: JHPGPCBHJIB
+message FinishLanternProjectionReq {
+    uint32 finish_time = 3;
+    uint32 level_id = 15;
+}
+

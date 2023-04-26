@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 686
+// Name: AGLHKLJCGPJ
+message WeaponPromoteRsp {
+    uint64 target_weapon_guid = 4;
+    uint32 BDLCGNNPHLJ = 3;
+    uint32 AKLAKDIDLBE = 9;
+    int32 retcode = 6;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8436
+// Name: FHPIDHMKKPM
+message UpgradeRoguelikeShikigamiReq {
+    uint32 upgrade_level = 3;
+    uint32 shikigami_group_id = 6;
+}
+

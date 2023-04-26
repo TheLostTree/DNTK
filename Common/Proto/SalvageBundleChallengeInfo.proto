@@ -1,0 +1,11 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: JGPAGHCFBOP
+message SalvageBundleChallengeInfo {
+    repeated uint32 finished_bundle_list = 10;
+}
+

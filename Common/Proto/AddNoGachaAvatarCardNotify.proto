@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AddNoGachaAvatarCardTransferItem.proto";
+
+// CmdId: 1764
+// Name: EJAJCEIMPGO
+message AddNoGachaAvatarCardNotify {
+    uint32 reason = 15;
+    repeated AddNoGachaAvatarCardTransferItem transfer_item_list = 12;
+    uint32 JDADDHJIBLE = 5;
+    uint32 item_id = 2;
+    uint32 avatar_id = 4;
+    uint32 DJLDIADKNCF = 14;
+    bool is_transfer_to_item = 3;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4446
+// Name: HPLHIFNNMEO
+message ScenePlayOwnerCheckReq {
+    uint32 play_id = 11;
+    bool is_skip_match = 4;
+}
+

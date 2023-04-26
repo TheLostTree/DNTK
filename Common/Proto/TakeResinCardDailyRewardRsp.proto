@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ItemParam.proto";
+
+// CmdId: 4120
+// Name: PGFAKNBIEFO
+message TakeResinCardDailyRewardRsp {
+    uint32 product_config_id = 14;
+    int32 retcode = 1;
+    repeated ItemParam item_vec = 12;
+}
+

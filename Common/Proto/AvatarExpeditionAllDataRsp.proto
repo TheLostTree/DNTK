@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AvatarExpeditionInfo.proto";
+
+// CmdId: 1683
+// Name: BFEGBKILMIB
+message AvatarExpeditionAllDataRsp {
+    map<uint64, AvatarExpeditionInfo> expedition_info_map = 11;
+    uint32 expedition_count_limit = 12;
+    repeated uint32 open_expedition_list = 9;
+    int32 retcode = 5;
+}
+

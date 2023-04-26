@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4078
+// Name: KDJMJHKMJJM
+message DeleteFriendRsp {
+    int32 retcode = 10;
+    uint32 target_uid = 9;
+}
+

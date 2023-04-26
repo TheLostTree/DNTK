@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 21251
+// Name: BGPMNHLOLAE
+message TreasureSeelieCollectOrbsNotify {
+    uint32 current_num = 7;
+    uint32 total_num = 13;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 242
+// Name: JDHNOBLAFGE
+message SceneTransToPointReq {
+    uint32 scene_id = 12;
+    uint32 point_id = 7;
+}
+

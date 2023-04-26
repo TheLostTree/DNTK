@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5516
+// Name: JGEBAOBIIFH
+message GalleryFallCatchNotify {
+    uint32 gallery_id = 10;
+    map<uint32, uint32> ball_catch_count_map = 3;
+    uint32 time_cost = 7;
+    bool is_ground = 5;
+    uint32 add_score = 11;
+    uint32 cur_score = 2;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FireworksLaunchParamType.proto";
+
+// Name: IOEPCLGOKPD
+message FireworksLaunchParam {
+    int32 value = 3;
+    FireworksLaunchParamType type = 5;
+}
+

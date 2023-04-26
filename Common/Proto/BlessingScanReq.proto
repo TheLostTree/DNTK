@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2074
+// Name: POEACIEHMGO
+message BlessingScanReq {
+    uint32 entity_id = 3;
+}
+

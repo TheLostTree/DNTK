@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: ALCABPLHONH
+message HomeLimitedShopInfo {
+    fixed32 KILKJHNKDJB = 15;
+    uint32 uid = 2;
+    Vector PCIJFOPGEDO = 14;
+    fixed32 HEEGDABINMD = 8;
+    Vector NPFLGEPMDHD = 6;
+    fixed32 MBAMOPJCAHC = 13;
+}
+

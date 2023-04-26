@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5823
+// Name: MNEBPDHDDLM
+message FishBiteRsp {
+    int32 retcode = 11;
+}
+

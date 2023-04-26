@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 935
+// Name: IEFAELAKCAL
+message DungeonCandidateTeamInviteReq {
+    repeated uint32 player_uids = 4;
+}
+

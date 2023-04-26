@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "EvtFaceToDirInfo.proto";
+import "ForwardType.proto";
+
+// CmdId: 372
+// Name: KBNHHFJKOBM
+message EvtFaceToDirNotify {
+    EvtFaceToDirInfo evt_face_to_dir_info = 9;
+    ForwardType forward_type = 12;
+}
+

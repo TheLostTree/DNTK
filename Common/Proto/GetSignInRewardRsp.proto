@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SignInInfo.proto";
+
+// CmdId: 2556
+// Name: BNHLBKBEKCN
+message GetSignInRewardRsp {
+    int32 retcode = 2;
+    SignInInfo sign_in_info = 1;
+}
+

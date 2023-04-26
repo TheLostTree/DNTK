@@ -1,0 +1,11 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: BGFLLGLOJJP
+enum MapMarkTipsType {
+    MARK_TIPS_DUNGEON_ELEMENT_TRIAL = 0;
+}
+

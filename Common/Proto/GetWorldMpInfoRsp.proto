@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3353
+// Name: LAMDJJOGEDA
+message GetWorldMpInfoRsp {
+    int32 retcode = 13;
+    bool is_in_mp_mode = 9;
+    uint32 quit_mp_valid_time = 11;
+}
+

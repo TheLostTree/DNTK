@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: MENLENKDBJH
+message FleurFairV2PhotoPosData {
+    bool is_open = 15;
+    Vector center = 6;
+    uint32 pos_id = 11;
+    uint32 open_time = 2;
+    bool is_view = 7;
+}
+

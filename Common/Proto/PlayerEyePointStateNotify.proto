@@ -1,0 +1,28 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CylinderRegionSize.proto";
+import "PolygonRegionSize.proto";
+import "Vector.proto";
+
+// CmdId: 3222
+// Name: CDIJDIKAMLC
+message PlayerEyePointStateNotify {
+    bool EBMNNMLGDFM = 13;
+    uint32 BMCPCINJEAI = 5;
+    uint32 JEJEJCACLMD = 1;
+    uint32 DAJKMINBALI = 14;
+    Vector eye_point_pos = 7;
+    bool EMOONDLNHJK = 6;
+    int32 fix_lod_level = 9;
+    uint32 KLHMJNPKGJP = 4;
+    oneof region_size {
+        float sphere_radius = 1292;
+        Vector cubic_size = 362;
+        CylinderRegionSize cylinder_size = 208;
+        PolygonRegionSize polygon_size = 886;
+    }
+}
+

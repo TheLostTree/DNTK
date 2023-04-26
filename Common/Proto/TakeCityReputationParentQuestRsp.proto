@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ItemParam.proto";
+
+// CmdId: 2841
+// Name: LEIJECOECHD
+message TakeCityReputationParentQuestRsp {
+    repeated uint32 parent_quest_list = 14;
+    int32 retcode = 12;
+    repeated ItemParam item_list = 7;
+    uint32 city_id = 11;
+}
+

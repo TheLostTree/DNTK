@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 150
+// Name: IMAKIKFJHOM
+message PlayerCookReq {
+    uint32 AIBLNBAFJOL = 13;
+    uint32 assist_avatar = 1;
+    uint32 EHPKNEPMOAO = 6;
+    uint32 recipe_id = 7;
+}
+

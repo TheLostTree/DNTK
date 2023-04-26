@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4428
+// Name: MNKBGNBGOCE
+message ScenePlayBattleInterruptNotify {
+    uint32 interrupt_state = 9;
+    uint32 play_id = 2;
+    uint32 play_type = 8;
+}
+

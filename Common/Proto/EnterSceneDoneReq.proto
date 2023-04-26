@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 225
+// Name: HOKKMGGHCFD
+message EnterSceneDoneReq {
+    uint32 enter_scene_token = 4;
+}
+

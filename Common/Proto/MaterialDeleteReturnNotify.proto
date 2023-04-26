@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MaterialDeleteReturnType.proto";
+
+// CmdId: 634
+// Name: DMMFDIDGIIO
+message MaterialDeleteReturnNotify {
+    map<uint32, uint32> DCCFDJCFDMO = 14;
+    MaterialDeleteReturnType type = 9;
+    map<uint32, uint32> HJCFPDMMNFK = 10;
+}
+

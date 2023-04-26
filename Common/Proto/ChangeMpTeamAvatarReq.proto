@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1698
+// Name: HCJFKLALPGP
+message ChangeMpTeamAvatarReq {
+    uint64 cur_avatar_guid = 12;
+    repeated uint64 avatar_guid_list = 9;
+}
+

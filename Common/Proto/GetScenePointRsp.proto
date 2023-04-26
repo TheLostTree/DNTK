@@ -1,0 +1,24 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 299
+// Name: GKBGCPGCPAE
+message GetScenePointRsp {
+    uint32 scene_id = 3;
+    repeated uint32 JECOFNNDAJP = 9;
+    repeated uint32 ELNACLNNKIO = 14;
+    uint32 belong_uid = 4;
+    repeated uint32 GNNBFLNNODN = 11;
+    repeated uint32 OLIIBIKADBB = 2;
+    repeated uint32 CBNONONIPKH = 1;
+    repeated uint32 MLBGHEBJAOH = 7;
+    bool BJLCFHHIGJD = 10;
+    repeated uint32 BHLFAJLFEGC = 13;
+    repeated uint32 MNOLEGHOAOB = 8;
+    int32 retcode = 6;
+    repeated uint32 unlocked_point_list = 12;
+}
+

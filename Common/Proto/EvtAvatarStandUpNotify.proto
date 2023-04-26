@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 373
+// Name: HKNJGMEMBOD
+message EvtAvatarStandUpNotify {
+    uint64 chair_id = 15;
+    int32 GFBDIAMIIJD = 13;
+    int32 NEAMEEDBKHM = 14;
+    uint32 entity_id = 11;
+}
+

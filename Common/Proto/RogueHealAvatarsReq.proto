@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8236
+// Name: BCNIMOKNOOJ
+message RogueHealAvatarsReq {
+    uint32 dungeon_id = 14;
+    uint32 cell_id = 5;
+}
+

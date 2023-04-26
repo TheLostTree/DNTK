@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "IrodoriChessMysteryInfo.proto";
+
+// Name: NDOLJFAEGKP
+message InBattleIrodoriChessInfo {
+    uint32 KHNEENKECBK = 7;
+    uint32 left_monsters = 11;
+    repeated uint32 selected_card_id_list = 14;
+    IrodoriChessMysteryInfo mystery_info = 5;
+    uint32 FABNMNFMJFG = 12;
+}
+

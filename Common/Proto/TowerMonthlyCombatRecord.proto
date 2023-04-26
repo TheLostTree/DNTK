@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "TowerFightRecordPair.proto";
+
+// Name: GJPDGEBHLIF
+message TowerMonthlyCombatRecord {
+    TowerFightRecordPair JLHGMJPELLK = 8;
+    TowerFightRecordPair BIOKNHKMKOP = 3;
+    TowerFightRecordPair IFNNKJGBCMO = 13;
+    TowerFightRecordPair FDAPFMFBAAE = 14;
+    TowerFightRecordPair DGEHFCNNEBL = 10;
+    repeated TowerFightRecordPair most_reveal_avatar_list = 7;
+}
+

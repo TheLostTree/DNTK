@@ -1,0 +1,23 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1112
+// Name: PMHDPEOJPNM
+message ServerUpdateGlobalValueNotify {
+    // Name: CFLHPGFIDBE
+    enum UpdateType {
+        INVALUE = 0;
+        ADD = 1;
+        SET = 2;
+    }
+
+    uint32 entity_id = 15;
+    float delta = 6;
+    uint32 key_hash = 14;
+    float value = 5;
+    UpdateType update_type = 2;
+}
+

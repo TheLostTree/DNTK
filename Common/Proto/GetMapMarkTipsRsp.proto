@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MapMarkTipsInfo.proto";
+
+// CmdId: 3030
+// Name: IKGNAMEPGKE
+message GetMapMarkTipsRsp {
+    repeated MapMarkTipsInfo mark_tips_list = 12;
+    int32 retcode = 14;
+}
+

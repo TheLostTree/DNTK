@@ -1,0 +1,23 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// CmdId: 1182
+// Name: PJPCHDNKAEC
+message PerformOperationNotify {
+    // Name: DPGKAGJABPH
+    enum OperateType {
+        OPERATE_TYPE_NONE = 0;
+        OPERATE_TYPE_EFFECT = 1;
+    }
+
+    Vector pos = 4;
+    OperateType operate_type = 11;
+    Vector rot = 1;
+    uint32 index = 5;
+    uint32 entity_id = 3;
+}
+

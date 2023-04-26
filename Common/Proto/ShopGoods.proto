@@ -1,0 +1,31 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ItemParam.proto";
+
+// Name: NMLPHHIHIOK
+message ShopGoods {
+    uint32 OLFIOBININC = 1;
+    uint32 EOMGIGFFCLI = 736;
+    ItemParam goods_item = 7;
+    uint32 IBKPPFBAOBH = 9;
+    uint32 JGCLNJKOALJ = 1201;
+    uint32 LAKDFDKCMKC = 11;
+    uint32 ONDHAANEFIK = 1493;
+    uint32 begin_time = 14;
+    repeated uint32 pre_goods_id_list = 6;
+    uint32 IAKCJHEJHOG = 15;
+    uint32 LBPDCMBFNEC = 2;
+    uint32 bought_num = 3;
+    uint32 GNENHCFPFCP = 688;
+    uint32 BKONLAFGBFC = 10;
+    uint32 end_time = 4;
+    uint32 MLKHDJPCJLG = 12;
+    repeated ItemParam cost_item_list = 13;
+    uint32 HLDEGIEBMBI = 617;
+    uint32 LDBIHGCDGNP = 8;
+    uint32 next_refresh_time = 5;
+}
+

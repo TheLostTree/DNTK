@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// CmdId: 5209
+// Name: NDABEMEEAOE
+message UseMiracleRingReq {
+    Vector rot = 14;
+    Vector pos = 6;
+    uint32 miracle_ring_op_type = 11;
+}
+

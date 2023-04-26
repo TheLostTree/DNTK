@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2889
+// Name: GOAICJCIDHN
+message TakeCityReputationLevelRewardReq {
+    uint32 city_id = 7;
+    uint32 level = 1;
+}
+

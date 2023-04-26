@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Uint32Pair.proto";
+
+// CmdId: 990
+// Name: HDLLHMGLKOB
+message DungeonEntryInfoReq {
+    repeated Uint32Pair scene_point_id_list = 14;
+    uint32 scene_id = 3;
+    uint32 point_id = 2;
+}
+

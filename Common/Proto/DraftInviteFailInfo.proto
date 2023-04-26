@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "DraftInviteFailReason.proto";
+
+// Name: IDIMLLGFJMM
+message DraftInviteFailInfo {
+    DraftInviteFailReason reason = 4;
+    uint32 uid = 5;
+}
+

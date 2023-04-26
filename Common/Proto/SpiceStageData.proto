@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: OEJGBFFFNMP
+message SpiceStageData {
+    uint32 stage_id = 13;
+    bool is_open = 11;
+    uint32 success_times = 10;
+}
+

@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 22145
+// Name: EHJMPKIGAFP
+message ElectroherculesBattleSettleNotify {
+    uint32 diffculty = 2;
+    bool LIEHECKPKDA = 6;
+    bool is_new_record = 7;
+    bool is_succ = 15;
+    uint32 finish_time = 8;
+    uint32 stage_id = 5;
+    uint32 gallery_id = 14;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4126
+// Name: NMJIDCKCBHG
+message OrderDisplayNotify {
+    uint32 order_id = 8;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GMObstacleInfo.proto";
+
+// CmdId: 2364
+// Name: HNBLPFHLMEH
+message GMShowObstacleRsp {
+    int32 retcode = 15;
+    repeated GMObstacleInfo obstacles = 5;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: DBHBCEGMAHL
+message CityReputationQuestInfo {
+    bool is_open = 8;
+    repeated uint32 GOGAJPFNDDD = 4;
+    repeated uint32 JMFHFJELJLK = 9;
+}
+

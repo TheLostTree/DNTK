@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LMBNPEALNMF
+message LMBNPEALNMF {
+    uint32 IAPDLOALCDH = 5;
+    repeated uint32 BOOENGOOJGN = 9;
+    uint32 KLPIHHBCMBP = 13;
+    uint32 BNFLIGNODHB = 8;
+    uint32 DCFMMEHPHOG = 1;
+    uint32 phase = 11;
+}
+

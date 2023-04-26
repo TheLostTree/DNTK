@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGSkillPreviewInfo.proto";
+
+// Name: MCLJHOMLDCC
+message GCGSkillPreviewPlayCardInfo {
+    uint32 GKHNAEEAAOA = 4;
+    GCGSkillPreviewInfo play_card_info = 13;
+    uint32 JGMIHIGGIDB = 7;
+}
+

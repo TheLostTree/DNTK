@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "WinterCampFriendWishData.proto";
+
+// CmdId: 8651
+// Name: EJHNOAFBMKF
+message WinterCampGetFriendWishListRsp {
+    int32 retcode = 9;
+    repeated WinterCampFriendWishData wish_data_list = 5;
+}
+

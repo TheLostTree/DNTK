@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3496
+// Name: NGMLGBCAPIA
+message StopReminderNotify {
+    uint32 reminder_id = 2;
+}
+

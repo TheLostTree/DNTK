@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ActivityScheduleInfo.proto";
+
+// CmdId: 2182
+// Name: NOLJHGCNFBG
+message GetActivityScheduleRsp {
+    repeated ActivityScheduleInfo activity_schedule_list = 9;
+    uint32 remain_fly_sea_lamp_num = 1;
+    int32 retcode = 15;
+}
+

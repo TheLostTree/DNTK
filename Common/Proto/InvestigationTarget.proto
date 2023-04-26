@@ -1,0 +1,23 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: PANKLPDCNBE
+message InvestigationTarget {
+    // Name: OJMGAAEJHAD
+    enum State {
+        INVALID = 0;
+        IN_PROGRESS = 1;
+        COMPLETE = 2;
+        REWARD_TAKEN = 3;
+    }
+
+    uint32 investigation_id = 3;
+    uint32 total_progress = 5;
+    uint32 progress = 15;
+    uint32 quest_id = 4;
+    State state = 9;
+}
+

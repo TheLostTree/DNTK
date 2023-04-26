@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CrystalLinkTeamInfo.proto";
+
+// Name: EBANBNPAEGF
+message CrystalLinkLevelInfo {
+    uint32 level_id = 12;
+    bool is_open = 14;
+    repeated CrystalLinkTeamInfo team_info_list = 15;
+    uint32 best_score = 13;
+}
+

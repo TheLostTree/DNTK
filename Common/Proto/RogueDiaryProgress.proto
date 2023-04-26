@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: BGALNOFJNKP
+message RogueDiaryProgress {
+    bool is_enter_dungeon = 4;
+    uint32 stage_id = 1;
+    repeated uint32 optional_card_list = 5;
+    uint32 difficulty = 3;
+    uint32 cur_round = 8;
+}
+

@@ -1,0 +1,78 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGMsgAddCards.proto";
+import "GCGMsgAddDice.proto";
+import "GCGMsgCardUpdate.proto";
+import "GCGMsgClientPerform.proto";
+import "GCGMsgCostDice.proto";
+import "GCGMsgCostRevise.proto";
+import "GCGMsgDiceReroll.proto";
+import "GCGMsgDiceRoll.proto";
+import "GCGMsgDuelDataChange.proto";
+import "GCGMsgGameOver.proto";
+import "GCGMsgModifyAdd.proto";
+import "GCGMsgModifyRemove.proto";
+import "GCGMsgMoveCard.proto";
+import "GCGMsgNewCard.proto";
+import "GCGMsgNoDamageSkillResult.proto";
+import "GCGMsgOpTimer.proto";
+import "GCGMsgPass.proto";
+import "GCGMsgPhaseChange.proto";
+import "GCGMsgPhaseContinue.proto";
+import "GCGMsgPVEIntentionChange.proto";
+import "GCGMsgPVEIntentionInfo.proto";
+import "GCGMsgReactionBegin.proto";
+import "GCGMsgReactionEnd.proto";
+import "GCGMsgRemoveCards.proto";
+import "GCGMsgSelectOnStage.proto";
+import "GCGMsgSelectOnStageByEffect.proto";
+import "GCGMsgSkillLimitsChange.proto";
+import "GCGMsgSkillResult.proto";
+import "GCGMsgTokenChange.proto";
+import "GCGMsgUpdateController.proto";
+import "GCGMsgUseSkill.proto";
+import "GCGMsgUseSkillEnd.proto";
+import "GCGMsgWaitingListChange.proto";
+
+// Name: ABLCJAJAPCO
+message GCGMessage {
+    oneof message {
+        GCGMsgTokenChange token_change = 9;
+        GCGMsgPhaseChange phase_change = 2;
+        GCGMsgAddCards add_cards = 7;
+        GCGMsgRemoveCards remove_cards = 8;
+        GCGMsgSelectOnStage select_on_stage = 12;
+        GCGMsgDiceRoll dice_roll = 15;
+        GCGMsgDiceReroll dice_reroll = 5;
+        GCGMsgPass pass = 4;
+        GCGMsgSkillResult skill_result = 1;
+        GCGMsgCostDice cost_dice = 11;
+        GCGMsgAddDice add_dice = 10;
+        GCGMsgMoveCard move_card = 14;
+        GCGMsgUseSkill use_skill = 6;
+        GCGMsgNewCard new_card = 1986;
+        GCGMsgUpdateController update_controller = 948;
+        GCGMsgModifyAdd modify_add = 761;
+        GCGMsgModifyRemove modify_remove = 1863;
+        GCGMsgUseSkillEnd use_skill_end = 1956;
+        GCGMsgDuelDataChange duel_data_change = 1834;
+        GCGMsgClientPerform client_perform = 1305;
+        GCGMsgGameOver game_over = 1760;
+        GCGMsgOpTimer op_timer = 1132;
+        GCGMsgWaitingListChange waiting_list_change = 1429;
+        GCGMsgCardUpdate card_update = 1809;
+        GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 436;
+        GCGMsgCostRevise cost_revise = 197;
+        GCGMsgPhaseContinue phase_continue = 54;
+        GCGMsgPVEIntentionInfo pve_intention_info = 930;
+        GCGMsgPVEIntentionChange pve_intention_change = 1306;
+        GCGMsgSkillLimitsChange skill_limits_change = 1718;
+        GCGMsgNoDamageSkillResult no_damage_skill_result = 458;
+        GCGMsgReactionBegin reaction_begin = 1867;
+        GCGMsgReactionEnd reaction_end = 1440;
+    }
+}
+

@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1012
+// Name: NFAINKJCGNM
+message AvatarSkillUpgradeRsp {
+    uint32 avatar_skill_id = 7;
+    uint64 avatar_guid = 13;
+    uint32 old_level = 1;
+    int32 retcode = 6;
+    uint32 cur_level = 11;
+}
+

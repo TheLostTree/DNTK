@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 677
+// Name: KANJNJOOJNO
+message WeaponPromoteReq {
+    uint64 target_weapon_guid = 7;
+}
+

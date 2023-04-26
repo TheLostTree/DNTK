@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2191
+// Name: KJCIKMJNKDL
+message TakeEffigyFirstPassRewardRsp {
+    uint32 challenge_id = 10;
+    int32 retcode = 3;
+}
+

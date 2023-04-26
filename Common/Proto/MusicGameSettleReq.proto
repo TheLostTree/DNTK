@@ -1,0 +1,29 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8512
+// Name: HKPCJMACGEA
+message MusicGameSettleReq {
+    uint32 score = 15;
+    uint32 LFBNPBMNLKD = 7;
+    uint32 max_combo = 2;
+    uint32 HDOIBKCMFPK = 1291;
+    uint32 correct_hit = 9;
+    bool JBDMHEJEGIB = 23;
+    uint32 PDAEMLNANJB = 599;
+    bool JGNMPPLDBON = 878;
+    uint64 ugc_guid = 8;
+    bool is_save_score = 6;
+    uint32 AHGFEMANIFF = 1415;
+    uint32 CNAJIGJCBAA = 12;
+    uint32 NGCEDFEHHIM = 5;
+    float speed = 161;
+    uint32 combo = 1;
+    uint32 music_basic_id = 14;
+    repeated uint32 DLGEHGGHDAI = 491;
+    repeated uint32 IENNECCNIFA = 4;
+}
+

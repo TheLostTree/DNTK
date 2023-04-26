@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FoundationInfo.proto";
+
+// CmdId: 882
+// Name: PJLEOOFMGND
+message FoundationNotify {
+    uint32 gadget_entity_id = 9;
+    FoundationInfo info = 11;
+}
+

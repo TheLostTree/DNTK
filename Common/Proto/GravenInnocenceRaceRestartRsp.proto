@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 20494
+// Name: CPEODACPOJJ
+message GravenInnocenceRaceRestartRsp {
+    int32 retcode = 15;
+    uint32 gallery_id = 5;
+}
+

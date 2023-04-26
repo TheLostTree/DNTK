@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8047
+// Name: POHNNONJGLA
+message SumoDungeonSettleNotify {
+    uint32 stage_id = 15;
+    uint32 difficulty_id = 3;
+    bool is_new_record = 5;
+    uint32 DPLOCABFHKK = 14;
+    uint32 KFACNCAIMAM = 1;
+    uint32 final_score = 7;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: BECOGAKOLEB
+enum IslandPartySailStage {
+    ISLAND_PARTY_SAIL_STAGE_NONE = 0;
+    ISLAND_PARTY_SAIL_STAGE_SAIL = 1;
+    ISLAND_PARTY_SAIL_STAGE_BATTLE = 2;
+}
+

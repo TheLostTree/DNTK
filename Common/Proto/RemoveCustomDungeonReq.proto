@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 6223
+// Name: ABKMBPBDLIE
+message RemoveCustomDungeonReq {
+    uint64 dungeon_guid = 11;
+}
+

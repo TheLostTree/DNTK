@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8322
+// Name: NNLIGIGADKL
+message RoguelikeResourceBonusPropUpdateNotify {
+    float bonus_resource_prop = 12;
+}
+

@@ -1,0 +1,50 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "BlockInfo.proto";
+import "FeatureBlockInfo.proto";
+import "ResVersionConfig.proto";
+import "ShortAbilityHashPair.proto";
+
+// CmdId: 176
+// Name: DKIPBAAHKJM
+message PlayerLoginRsp {
+    int32 ability_hash_code = 4;
+    bytes sc_info = 858;
+    string country_code = 286;
+    repeated ShortAbilityHashPair short_ability_hash_map = 401;
+    string client_version_suffix = 309;
+    string client_silence_md5 = 1149;
+    bool is_data_need_relogin = 1063;
+    bool HKINPODGHHH = 2;
+    ResVersionConfig res_version_config = 1241;
+    bool is_sc_open = 242;
+    uint32 DCFPMMCBEAD = 6;
+    map<string, int32> ability_hash_map = 11;
+    bool is_transfer = 1162;
+    uint32 client_data_version = 10;
+    repeated FeatureBlockInfo feature_block_info_list = 1613;
+    double total_tick_time = 1940;
+    string client_silence_version_suffix = 889;
+    ResVersionConfig next_res_version_config = 670;
+    bool FCJHOMPHEON = 741;
+    string register_cps = 1152;
+    int32 retcode = 5;
+    string game_biz = 3;
+    bool is_use_ability_hash = 15;
+    bool FLEDDLEFFLK = 1257;
+    uint64 login_rand = 1;
+    string birthday = 1129;
+    bool is_audit = 461;
+    string client_md5 = 625;
+    bool BJLCFHHIGJD = 8;
+    uint32 client_silence_data_version = 9;
+    uint32 FMOKLFNAOOK = 892;
+    bytes JLDGJOPFALG = 7;
+    string next_resource_url = 300;
+    uint32 target_uid = 12;
+    map<uint32, BlockInfo> block_info_map = 771;
+}
+

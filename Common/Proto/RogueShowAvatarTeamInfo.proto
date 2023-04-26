@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "RogueAvatarInfo.proto";
+
+// Name: EKLAJOBKPEA
+message RogueShowAvatarTeamInfo {
+    repeated RogueAvatarInfo avatar_list = 12;
+}
+

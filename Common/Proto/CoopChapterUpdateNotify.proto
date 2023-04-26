@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CoopChapter.proto";
+
+// CmdId: 1972
+// Name: NDCJPJIIHNC
+message CoopChapterUpdateNotify {
+    repeated CoopChapter chapter_list = 12;
+}
+

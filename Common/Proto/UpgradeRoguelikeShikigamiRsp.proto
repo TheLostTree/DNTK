@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8968
+// Name: HGEHGJECBJC
+message UpgradeRoguelikeShikigamiRsp {
+    int32 retcode = 12;
+    uint32 shikigami_group_id = 8;
+    uint32 cur_level = 5;
+}
+

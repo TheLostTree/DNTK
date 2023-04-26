@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2289
+// Name: IAOFCGMOHPH
+message WatcherEventNotify {
+    uint32 add_progress = 3;
+    uint32 watcher_id = 12;
+}
+

@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8113
+// Name: BBCEMDKAKBJ
+message WinterCampTriathlonSettleNotify {
+    uint32 GECADCEGKJD = 10;
+    bool is_new_record = 11;
+    bool is_success = 9;
+    uint32 JCFJLLKLHFO = 2;
+    uint32 gallery_id = 8;
+    uint32 CHOECMNPHGG = 12;
+    uint32 PBPGCOCLFIM = 3;
+    uint32 score = 5;
+}
+

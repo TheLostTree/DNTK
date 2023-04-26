@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: BMCLBPGLLAJ
+message StrengthenPointData {
+    uint32 LGCKEPNPDJK = 15;
+    uint32 ILBMGBIEENL = 8;
+}
+

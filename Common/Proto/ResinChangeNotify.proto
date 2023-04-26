@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 688
+// Name: LFGMKMAGMCE
+message ResinChangeNotify {
+    uint32 MBEMEOGMKNM = 4;
+    uint32 LADLACBKFMK = 8;
+    uint32 cur_value = 6;
+}
+

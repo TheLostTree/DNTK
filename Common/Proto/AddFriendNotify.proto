@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FriendBrief.proto";
+
+// CmdId: 4077
+// Name: MECIFMHPFCN
+message AddFriendNotify {
+    uint32 target_uid = 13;
+    FriendBrief target_friend_brief = 6;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4681
+// Name: FMABBJFJENA
+message HomeTransferReq {
+    bool EIEPKFHNILM = 5;
+    uint32 guid = 1;
+    bool OJAFECKPAJE = 10;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8794
+// Name: HOBKGBOCPMM
+message LunaRiteGroupBundleRegisterNotify {
+    uint32 group_link_bundle_id = 1;
+}
+

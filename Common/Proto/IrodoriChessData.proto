@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "IrodoriChessLevelData.proto";
+
+// Name: IKJLIFMCKLB
+message IrodoriChessData {
+    repeated IrodoriChessLevelData level_data_list = 10;
+    bool is_open = 14;
+}
+

@@ -1,0 +1,23 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: POKCKIOHOAI
+message SceneGalleryFungusFighterV2Info {
+    // Name: NEKANOJJFGN
+    message NEKANOJJFGN {
+        uint64 BHHFMKMEFOA = 10;
+        bool is_alive = 11;
+        uint32 fungus_id = 2;
+    }
+
+    uint64 NBEIMJIGHIN = 10;
+    uint32 PFEJLBFPMGF = 13;
+    string transaction = 11;
+    uint32 HMEKPCPLCDG = 8;
+    float LOMKEBDNAGJ = 9;
+    repeated NEKANOJJFGN LPAONJMNHCP = 7;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: FBHFFNGNGGF
+enum GCGSkillHpChangeType {
+    GCG_SKILL_HP_CHANGE_NONE = 0;
+    GCG_SKILL_HP_CHANGE_DAMAGE = 1;
+    GCG_SKILL_HP_CHANGE_HEAL = 2;
+}
+

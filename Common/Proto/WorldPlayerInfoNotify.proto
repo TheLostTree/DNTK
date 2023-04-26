@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "OnlinePlayerInfo.proto";
+import "PlayerWidgetInfo.proto";
+
+// CmdId: 3437
+// Name: CIFLDELJBNL
+message WorldPlayerInfoNotify {
+    repeated PlayerWidgetInfo player_widget_info_list = 3;
+    repeated OnlinePlayerInfo player_info_list = 10;
+    repeated uint32 player_uid_list = 6;
+}
+

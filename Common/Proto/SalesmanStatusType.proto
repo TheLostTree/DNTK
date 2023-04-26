@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: CNCIMIAOHLE
+enum SalesmanStatusType {
+    SALESMAN_STATUS_NONE = 0;
+    SALESMAN_STATUS_UNSTARTED = 1;
+    SALESMAN_STATUS_STARTED = 2;
+    SALESMAN_STATUS_DELIVERED = 3;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5577
+// Name: IKHEGGGJEPN
+message GalleryIslandPartyDownHillInfoNotify {
+    uint32 coin = 1;
+    uint32 total_kill_monster_count = 11;
+    uint32 gallery_id = 2;
+}
+

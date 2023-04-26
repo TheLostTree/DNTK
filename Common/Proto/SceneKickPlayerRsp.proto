@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 260
+// Name: GMGFBJCMMKD
+message SceneKickPlayerRsp {
+    uint32 target_uid = 8;
+    int32 retcode = 6;
+}
+

@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SumoTeamData.proto";
+
+// CmdId: 8280
+// Name: IDFGDEOPGLI
+message SumoSelectTeamAndEnterDungeonRsp {
+    uint32 activity_id = 7;
+    uint32 difficulty_id = 10;
+    int32 retcode = 1;
+    uint32 stage_id = 5;
+    repeated SumoTeamData team_list = 15;
+}
+

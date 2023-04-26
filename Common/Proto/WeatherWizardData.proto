@@ -1,0 +1,11 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LPNDMALNLNP
+message WeatherWizardData {
+    uint32 shield_value = 7;
+}
+

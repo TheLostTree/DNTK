@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MatchReason.proto";
+
+// CmdId: 4181
+// Name: MMJGJFFKNII
+message PlayerGeneralMatchDismissNotify {
+    repeated uint32 uid_list = 10;
+    uint32 match_id = 13;
+    MatchReason reason = 6;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ReunionPrivilegeInfo.proto";
+
+// CmdId: 5075
+// Name: CFNBMCMLMPE
+message GetReunionPrivilegeInfoRsp {
+    ReunionPrivilegeInfo privilege_info = 2;
+    int32 retcode = 9;
+}
+

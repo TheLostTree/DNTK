@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3941
+// Name: PJJDGNBPCIO
+message MechanicusUnlockGearReq {
+    uint32 mechanicus_id = 8;
+    uint32 gear_id = 15;
+}
+

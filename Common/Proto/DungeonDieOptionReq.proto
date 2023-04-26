@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "PlayerDieOption.proto";
+
+// CmdId: 978
+// Name: MMLHGEBMPLF
+message DungeonDieOptionReq {
+    PlayerDieOption die_option = 1;
+    bool is_quit_immediately = 11;
+}
+

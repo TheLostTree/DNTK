@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8128
+// Name: NKACBDDGFOO
+message MusicGameStartRsp {
+    int32 retcode = 11;
+    uint32 music_basic_id = 9;
+    uint64 ugc_guid = 4;
+}
+

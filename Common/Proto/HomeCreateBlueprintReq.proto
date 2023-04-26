@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeSceneArrangementInfo.proto";
+
+// CmdId: 4806
+// Name: BIIGHBNLEOI
+message HomeCreateBlueprintReq {
+    uint32 gen_share_code_count = 9;
+    string server_share_code = 4;
+    uint32 slot_id = 6;
+    HomeSceneArrangementInfo scene_arrangement_info = 13;
+}
+

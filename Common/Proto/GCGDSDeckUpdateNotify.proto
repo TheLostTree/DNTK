@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 7159
+// Name: MEIHMKNEJPJ
+message GCGDSDeckUpdateNotify {
+    bool is_valid = 2;
+    uint32 deck_id = 15;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: HKIDINMGFBN
+message TrialAvatarActivityRewardDetailInfo {
+    uint32 reward_id = 8;
+    bool AOLLLBPODHH = 7;
+    bool ODMFBOGNBNK = 5;
+    uint32 trial_avatar_index_id = 1;
+}
+

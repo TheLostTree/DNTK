@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Reliquary.proto";
+import "Weapon.proto";
+
+// Name: KPPGCJMONCN
+message ShowEquip {
+    uint32 item_id = 1;
+    oneof detail {
+        Reliquary reliquary = 2;
+        Weapon weapon = 3;
+    }
+}
+

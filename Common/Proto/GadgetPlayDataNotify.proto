@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 859
+// Name: CMGHDEALCOM
+message GadgetPlayDataNotify {
+    uint32 play_type = 9;
+    uint32 entity_id = 1;
+    uint32 progress = 5;
+}
+

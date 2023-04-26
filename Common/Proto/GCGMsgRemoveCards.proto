@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGReason.proto";
+import "GCGZoneType.proto";
+
+// Name: DCPHOAIFBHC
+message GCGMsgRemoveCards {
+    uint32 controller_id = 4;
+    GCGZoneType zone = 5;
+    GCGReason reason = 1;
+    repeated uint32 card_guid_list = 10;
+}
+

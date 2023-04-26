@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGActionType.proto";
+import "GCGMessage.proto";
+
+// Name: JODIOENNDOF
+message GCGMessagePack {
+    GCGActionType action_type = 12;
+    uint32 JFLANONHNDG = 6;
+    repeated GCGMessage msg_list = 9;
+    uint32 controller_id = 3;
+}
+

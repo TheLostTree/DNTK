@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 21832
+// Name: DEMMHAIDKNK
+message VintageMarketStartStorePlayRsp {
+    int32 retcode = 7;
+    uint32 store_round = 8;
+    uint32 HCINPOEALAH = 10;
+    uint32 BPKMLMJPAMG = 2;
+}
+

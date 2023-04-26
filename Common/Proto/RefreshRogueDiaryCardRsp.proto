@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8688
+// Name: CEPDNEKPAOC
+message RefreshRogueDiaryCardRsp {
+    int32 retcode = 6;
+    repeated uint32 rand_card_list = 7;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 424
+// Name: OAOLFJEABPH
+message QuestRenameAvatarReq {
+    uint32 rename_id = 1;
+    string avatar_name = 11;
+    bool is_check = 14;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AiSyncInfo.proto";
+
+// CmdId: 357
+// Name: BOKDCFPDBFM
+message EntityAiSyncNotify {
+    repeated uint32 local_avatar_alerted_monster_list = 7;
+    repeated AiSyncInfo info_list = 3;
+}
+

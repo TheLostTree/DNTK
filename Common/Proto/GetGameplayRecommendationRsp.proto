@@ -1,0 +1,21 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GameplayRecommendationElementReliquaryResponse.proto";
+import "GameplayRecommendationReliquaryResponse.proto";
+import "GameplayRecommendationSkillResponse.proto";
+
+// CmdId: 102
+// Name: DLPNPDBPINP
+message GetGameplayRecommendationRsp {
+    int32 retcode = 8;
+    uint32 avatar_id = 11;
+    oneof detail {
+        GameplayRecommendationSkillResponse skill_response = 645;
+        GameplayRecommendationReliquaryResponse reliquary_response = 1180;
+        GameplayRecommendationElementReliquaryResponse element_reliquary_response = 1053;
+    }
+}
+

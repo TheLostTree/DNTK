@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2068
+// Name: FNLIIEOFBGI
+message FleurFairMusicGameSettleRsp {
+    uint32 music_basic_id = 1;
+    bool is_new_record = 8;
+    int32 retcode = 5;
+    bool is_unlock_next_level = 6;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: GAPHHKJNLCG
+message RoutePointChangeInfo {
+    float target_velocity = 5;
+    uint32 point_index = 7;
+    float wait_time = 15;
+}
+

@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: ANAPBNFGFEN
+message ANAPBNFGFEN {
+    float ABCOOEOHDFM = 9;
+    string PMCAJBKAGMP = 10;
+    uint32 avatar_id = 15;
+    bool PONEAMFFEEF = 13;
+    float FOMFKNOIEHD = 12;
+    float NFODLGCLNPJ = 7;
+}
+

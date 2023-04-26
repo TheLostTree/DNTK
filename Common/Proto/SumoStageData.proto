@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SumoTeamData.proto";
+
+// Name: DNOFKJHOKJA
+message SumoStageData {
+    repeated SumoTeamData team_list = 14;
+    bool is_open = 1;
+    uint32 max_score = 15;
+    uint32 open_time = 10;
+    uint32 stage_id = 13;
+}
+

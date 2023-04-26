@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ItemParam.proto";
+
+// CmdId: 2481
+// Name: KGDJCGBBNBK
+message TowerLevelEndNotify {
+    uint32 NFPEACBMIHL = 9;
+    bool is_success = 11;
+    repeated ItemParam reward_item_list = 1;
+    uint32 NMFAPIENEMG = 2;
+    repeated uint32 finished_star_cond_list = 6;
+}
+

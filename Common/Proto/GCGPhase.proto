@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGPhaseType.proto";
+
+// Name: MMACGCFHLKE
+message GCGPhase {
+    map<uint32, uint32> allow_controller_map = 14;
+    GCGPhaseType phase_type = 10;
+}
+

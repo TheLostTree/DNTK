@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1678
+// Name: LOGCABMLHCM
+message ChangeAvatarRsp {
+    int32 retcode = 8;
+    uint32 skill_id = 6;
+    uint64 cur_guid = 7;
+}
+

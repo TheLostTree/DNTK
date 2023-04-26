@@ -1,0 +1,27 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: ABBABGECCOD
+enum GCGReason {
+    GCG_REASON_DEFAULT = 0;
+    GCG_REASON_EFFECT = 1;
+    GCG_REASON_COST = 2;
+    GCG_REASON_GM = 3;
+    GCG_REASON_ATTACK = 4;
+    GCG_REASON_REBOOT = 5;
+    GCG_REASON_PLAY_CARD = 6;
+    GCG_REASON_QUICKLY_ONSTAGE = 7;
+    GCG_REASON_REMOVE_AFTER_DIE = 8;
+    GCG_REASON_INIT = 9;
+    GCG_REASON_EFFECT_DAMAGE = 10;
+    GCG_REASON_EFFECT_HEAL = 11;
+    GCG_REASON_EFFECT_REVIVE = 12;
+    GCG_REASON_INIT_ONSTAGE = 13;
+    GCG_REASON_DIE_ONSTAGE = 14;
+    GCG_REASON_SELECT_ONSTAGE = 15;
+    GCG_REASON_CHARACTER_DIE = 16;
+}
+

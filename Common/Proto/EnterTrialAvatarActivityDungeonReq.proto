@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2061
+// Name: PIOBLFIEPEK
+message EnterTrialAvatarActivityDungeonReq {
+    uint32 trial_avatar_index_id = 2;
+    uint32 enter_point_id = 12;
+    uint32 activity_id = 9;
+}
+

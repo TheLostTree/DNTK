@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: GFLKMONOFNG
+message TowerLevelStarCondData {
+    uint32 KIGONGLABHC = 2;
+    uint32 DLEMDNGLGAP = 4;
+    bool FGBFALDMDAB = 3;
+    bool KPLBFMBGPAP = 9;
+}
+

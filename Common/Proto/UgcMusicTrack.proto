@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "UgcMusicNote.proto";
+
+// Name: CJOAFEMFMBF
+message UgcMusicTrack {
+    repeated UgcMusicNote music_note_list = 15;
+}
+

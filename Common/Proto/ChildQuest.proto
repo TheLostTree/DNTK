@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: KPLGIKMFFHI
+message ChildQuest {
+    uint32 quest_id = 1;
+    uint32 quest_config_id = 3;
+    uint32 state = 2;
+}
+

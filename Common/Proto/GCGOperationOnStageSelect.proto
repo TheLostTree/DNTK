@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: BEGBKFKGADM
+message GCGOperationOnStageSelect {
+    repeated uint32 cost_dice_index_list = 11;
+    uint32 card_guid = 7;
+}
+

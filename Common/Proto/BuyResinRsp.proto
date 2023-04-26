@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 645
+// Name: MAMGPDIODOE
+message BuyResinRsp {
+    uint32 cur_value = 9;
+    int32 retcode = 13;
+}
+

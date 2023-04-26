@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MailData.proto";
+
+// CmdId: 1499
+// Name: GOLFMOPNENJ
+message GetAllMailResultNotify {
+    uint32 CDLABECFBPJ = 7;
+    repeated MailData mail_list = 5;
+    bool is_collected = 12;
+    uint32 GAAHHONLFPA = 8;
+    int32 retcode = 2;
+    string transaction = 10;
+}
+

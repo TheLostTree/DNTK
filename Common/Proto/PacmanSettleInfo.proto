@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FEEHAOJCNCG.proto";
+
+// Name: EMLPIPHPEBM
+message PacmanSettleInfo {
+    uint32 final_score = 1;
+    uint32 FJBKBMHJMMM = 9;
+    FEEHAOJCNCG reason = 13;
+    bool is_new_record = 3;
+    uint32 BKECHEIMCGP = 5;
+}
+

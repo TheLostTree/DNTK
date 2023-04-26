@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 541
+// Name: JDLKAEHAJGH
+message MeetNpcReq {
+    uint32 npc_id = 12;
+}
+

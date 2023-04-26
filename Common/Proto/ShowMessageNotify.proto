@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MsgParam.proto";
+import "SvrMsgId.proto";
+
+// CmdId: 76
+// Name: OOCFBKKPCBC
+message ShowMessageNotify {
+    repeated MsgParam params = 8;
+    SvrMsgId msg_id = 2;
+}
+

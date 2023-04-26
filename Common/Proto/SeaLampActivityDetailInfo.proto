@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: FCOCOOFJEJP
+message SeaLampActivityDetailInfo {
+    uint32 days = 9;
+    uint32 MAPMOKKMHJI = 6;
+    repeated uint32 LKPONGIDNOA = 11;
+    uint32 BCAAGPKKOMF = 8;
+    uint32 progress = 13;
+    uint32 phase_id = 15;
+    repeated uint32 BLOHENDAHOL = 5;
+}
+

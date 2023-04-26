@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 7511
+// Name: LMLBLFPAGIK
+message GCGDSDeckUnlockNotify {
+    uint32 deck_id = 11;
+}
+

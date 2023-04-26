@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "DragonSpineChapterInfo.proto";
+
+// Name: CILDCKHECNN
+message DragonSpineActivityDetailInfo {
+    bool is_content_closed = 12;
+    uint32 NILJOOOPIFO = 1;
+    uint32 FKEHKLEBJOD = 9;
+    repeated DragonSpineChapterInfo chapter_info_list = 3;
+    uint32 LGLLMPAPONN = 11;
+    uint32 EDDLIDNEOHG = 10;
+    uint32 weapon_enhance_level = 7;
+}
+

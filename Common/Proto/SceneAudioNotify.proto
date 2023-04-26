@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3231
+// Name: NNDJOINBKAB
+message SceneAudioNotify {
+    int32 type = 9;
+    uint32 source_uid = 11;
+    repeated float param2 = 6;
+    repeated string param3 = 5;
+    repeated uint32 param1 = 8;
+}
+

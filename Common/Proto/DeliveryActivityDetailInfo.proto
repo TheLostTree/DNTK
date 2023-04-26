@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: KCLDPAAOLOE
+message DeliveryActivityDetailInfo {
+    bool is_taken_reward = 3;
+    uint32 day_index = 5;
+    repeated uint32 finished_delivery_quest_index = 14;
+}
+

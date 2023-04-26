@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: KPMMLJKDLKH
+message RoguelikeRuneRecord {
+    uint32 FNOMMOAFCHG = 11;
+    uint32 rune_id = 10;
+    uint32 EGIKJBIOOCF = 15;
+}
+

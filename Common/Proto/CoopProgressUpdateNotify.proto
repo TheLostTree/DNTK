@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1998
+// Name: ACJGGIPDPDP
+message CoopProgressUpdateNotify {
+    uint32 cur_coop_point = 8;
+    bool is_have_progress = 5;
+}
+

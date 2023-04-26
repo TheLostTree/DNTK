@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8229
+// Name: GAHJJDLCPKI
+message RogueDungeonPlayerCellChangeNotify {
+    uint32 cell_id = 2;
+    uint32 old_cell_id = 15;
+}
+

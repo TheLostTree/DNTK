@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: DPDLJODAKKL
+enum ChallengeFinishType {
+    CHALLENGE_FINISH_TYPE_NONE = 0;
+    CHALLENGE_FINISH_TYPE_FAIL = 1;
+    CHALLENGE_FINISH_TYPE_SUCC = 2;
+    CHALLENGE_FINISH_TYPE_PAUSE = 3;
+}
+

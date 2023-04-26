@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ToTheMoonObstacleInfo.proto";
+
+// CmdId: 6156
+// Name: HINNHENMOBF
+message ToTheMoonAddObstacleReq {
+    ToTheMoonObstacleInfo obstacle = 14;
+    uint32 scene_id = 7;
+    int32 query_id = 12;
+    bool use_edge = 10;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1680
+// Name: BHDFBGFEGPC
+message DelBackupAvatarTeamReq {
+    uint32 backup_avatar_team_id = 10;
+}
+

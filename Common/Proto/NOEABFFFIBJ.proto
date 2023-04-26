@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 23303
+// Name: NOEABFFFIBJ
+message NOEABFFFIBJ {
+    uint32 level_id = 6;
+    bool OBIIGFOOFIK = 5;
+}
+

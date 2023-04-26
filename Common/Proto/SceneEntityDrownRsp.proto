@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 250
+// Name: JJIPJFEGDJG
+message SceneEntityDrownRsp {
+    uint32 entity_id = 4;
+    int32 retcode = 11;
+}
+

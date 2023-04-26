@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GroupLinkBundle.proto";
+
+// CmdId: 5765
+// Name: NLPPFFGOIED
+message NLPPFFGOIED {
+    GroupLinkBundle bundle = 7;
+}
+

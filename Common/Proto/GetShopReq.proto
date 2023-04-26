@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 790
+// Name: ACJLEMECHMH
+message GetShopReq {
+    uint32 shop_type = 11;
+}
+

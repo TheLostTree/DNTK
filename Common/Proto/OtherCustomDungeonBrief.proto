@@ -1,0 +1,25 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CustomDungeonAbstract.proto";
+import "CustomDungeonSetting.proto";
+import "CustomDungeonSocial.proto";
+import "SocialDetail.proto";
+
+// Name: PIPBKPPGDHE
+message OtherCustomDungeonBrief {
+    CustomDungeonSetting setting = 11;
+    CustomDungeonSocial social = 1;
+    SocialDetail creator_detail = 3;
+    uint32 battle_min_cost_time = 9;
+    repeated uint32 tag_list = 6;
+    CustomDungeonAbstract abstract = 7;
+    bool DODBAMEJAFH = 5;
+    bool OBLLPOAMFKN = 4;
+    uint64 dungeon_guid = 10;
+    uint32 dungeon_id = 2;
+    bool is_psn_platform = 12;
+}
+

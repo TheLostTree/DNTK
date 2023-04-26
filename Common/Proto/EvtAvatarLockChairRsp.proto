@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// CmdId: 332
+// Name: HMMIAOJNLAE
+message EvtAvatarLockChairRsp {
+    int32 retcode = 10;
+    uint64 chair_id = 11;
+    Vector position = 5;
+    uint32 entity_id = 8;
+}
+

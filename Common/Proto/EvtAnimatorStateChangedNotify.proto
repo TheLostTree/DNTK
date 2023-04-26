@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "EvtAnimatorStateChangedInfo.proto";
+import "ForwardType.proto";
+
+// CmdId: 359
+// Name: KEMOOLMMMCH
+message EvtAnimatorStateChangedNotify {
+    EvtAnimatorStateChangedInfo evt_animator_state_changed_info = 11;
+    ForwardType forward_type = 15;
+}
+

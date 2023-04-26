@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeSceneArrangementInfo.proto";
+
+// CmdId: 4461
+// Name: OIACCGHPIPD
+message HomeUpdateArrangementInfoReq {
+    HomeSceneArrangementInfo scene_arrangement_info = 15;
+}
+

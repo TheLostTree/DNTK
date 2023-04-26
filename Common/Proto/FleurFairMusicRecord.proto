@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: IMGLNGHDKNK
+message FleurFairMusicRecord {
+    uint32 max_score = 2;
+    bool is_unlock = 6;
+    uint32 max_combo = 13;
+}
+

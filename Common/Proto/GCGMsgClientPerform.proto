@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGClientPerformType.proto";
+
+// Name: BMOEPBEFEGI
+message GCGMsgClientPerform {
+    GCGClientPerformType perform_type = 9;
+    repeated uint32 param_list = 5;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: PCBLIOLCMAE
+enum VehicleInteractType {
+    VEHICLE_INTERACT_NONE = 0;
+    VEHICLE_INTERACT_IN = 1;
+    VEHICLE_INTERACT_OUT = 2;
+}
+

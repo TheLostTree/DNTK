@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2116
+// Name: FNHJEINKLFH
+message ActivityBannerClearRsp {
+    int32 retcode = 4;
+    uint32 activity_id = 11;
+    uint32 schedule_id = 3;
+}
+

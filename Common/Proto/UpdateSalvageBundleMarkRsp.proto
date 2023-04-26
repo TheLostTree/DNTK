@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8139
+// Name: BLGBAPGBLAC
+message UpdateSalvageBundleMarkRsp {
+    int32 retcode = 13;
+    uint32 stage_id = 8;
+    uint32 challenge_type = 1;
+}
+

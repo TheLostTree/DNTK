@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "TreasureMapBonusChallengeInfo.proto";
+
+// CmdId: 2149
+// Name: LIFDCBKIHNJ
+message TreasureMapBonusChallengeNotify {
+    TreasureMapBonusChallengeInfo info = 13;
+}
+

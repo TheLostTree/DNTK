@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 7510
+// Name: HEDBOGHMAEH
+message GCGClientSettleRsp {
+    uint32 close_time = 4;
+    int32 retcode = 7;
+}
+

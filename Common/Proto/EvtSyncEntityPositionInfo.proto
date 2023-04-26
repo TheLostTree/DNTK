@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: CGNPHHILJGD
+message EvtSyncEntityPositionInfo {
+    uint32 EJAOGEAEKOH = 7;
+    uint32 entity_id = 12;
+    Vector pos = 3;
+    uint32 KGFANECJKDG = 2;
+    int32 face_angle_compact = 13;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGSkillLimitsInfo.proto";
+
+// Name: EMNFBILMFFH
+message GCGCardSkillLimitsInfo {
+    repeated GCGSkillLimitsInfo skill_limits_list = 5;
+    uint32 card_guid = 2;
+}
+

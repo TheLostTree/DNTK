@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "BargainSnapshot.proto";
+
+// CmdId: 481
+// Name: ICLLOANFNEB
+message GetAllActivatedBargainDataRsp {
+    int32 retcode = 10;
+    repeated BargainSnapshot snapshot_list = 8;
+}
+

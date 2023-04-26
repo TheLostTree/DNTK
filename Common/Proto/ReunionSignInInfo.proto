@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: ENJILBPPCGP
+message ReunionSignInInfo {
+    uint32 GANAIGKNLOD = 7;
+    repeated uint32 reward_day_list = 9;
+    uint32 config_id = 13;
+    uint32 ODCICMMHNOH = 10;
+}
+

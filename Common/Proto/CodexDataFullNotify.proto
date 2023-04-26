@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CodexTypeData.proto";
+
+// CmdId: 4202
+// Name: DEOFNLAMNKE
+message CodexDataFullNotify {
+    uint32 IAELPGINMBN = 15;
+    repeated CodexTypeData type_data_list = 13;
+    repeated uint32 recent_viewed_pushtips_list = 14;
+    uint32 PDEMHIKAFGI = 7;
+}
+

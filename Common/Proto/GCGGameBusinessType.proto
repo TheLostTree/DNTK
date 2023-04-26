@@ -1,0 +1,23 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: KPEEEJLJLCI
+enum GCGGameBusinessType {
+    GCG_GAME_NONE = 0;
+    GCG_GAME_GM = 1;
+    GCG_GAME_MATCH = 2;
+    GCG_GAME_PVP = 3;
+    GCG_GAME_TAVERN_CHALLENGE = 4;
+    GCG_GAME_CONST_CHALLENGE = 5;
+    GCG_GAME_WORLD_CHALLENGE = 6;
+    GCG_GAME_BOSS_CHALLENGE = 7;
+    GCG_GAME_WEEK_CHALLENGE = 8;
+    GCG_GAME_BREAK_CHALLENGE = 9;
+    GCG_GAME_QUEST = 10;
+    GCG_GAME_GUIDE_GROUP = 11;
+    GCG_GAME_OTHER = 12;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 128
+// Name: EMGCHDJIFIO
+message PlayerTimeNotify {
+    uint64 server_time = 2;
+    bool is_paused = 5;
+    uint64 player_time = 15;
+}
+

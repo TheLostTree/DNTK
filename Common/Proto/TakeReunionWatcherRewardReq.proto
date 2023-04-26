@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5092
+// Name: KFHFIDANCLO
+message TakeReunionWatcherRewardReq {
+    uint32 mission_id = 12;
+    uint32 watcher_id = 10;
+}
+

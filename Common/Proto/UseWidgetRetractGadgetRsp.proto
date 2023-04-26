@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4256
+// Name: PJPIJGLENEK
+message UseWidgetRetractGadgetRsp {
+    uint32 entity_id = 12;
+    int32 retcode = 6;
+}
+

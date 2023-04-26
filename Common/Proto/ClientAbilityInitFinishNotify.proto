@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AbilityInvokeEntry.proto";
+
+// CmdId: 1176
+// Name: BKDFGPLGGGB
+message ClientAbilityInitFinishNotify {
+    repeated AbilityInvokeEntry invokes = 6;
+    uint32 entity_id = 4;
+}
+

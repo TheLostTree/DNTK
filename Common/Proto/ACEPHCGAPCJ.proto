@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 21598
+// Name: ACEPHCGAPCJ
+message ACEPHCGAPCJ {
+    int32 retcode = 2;
+}
+

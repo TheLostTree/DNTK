@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LEOINEGNPCH
+message EffigyChallengeV2SettleInfo {
+    uint32 AAJHMCMOPPK = 6;
+    bool BJEHPHPGLFG = 5;
+    uint32 challenge_mode_difficulty = 7;
+    bool PBHJDAKBIDJ = 12;
+    uint32 DHPALCOAOJL = 14;
+    uint32 JMPHBGFNOHF = 3;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4045
+// Name: GFHNELKHBCP
+message UpdatePlayerShowNameCardListRsp {
+    int32 retcode = 1;
+    repeated uint32 show_name_card_id_list = 5;
+}
+

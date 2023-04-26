@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: CGBMNFJOEMP
+message FurnitureMakeHelpData {
+    uint32 uid = 1;
+    uint32 times = 15;
+}
+

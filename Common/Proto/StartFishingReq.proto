@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5817
+// Name: NCJBDCHGKCH
+message StartFishingReq {
+    uint32 fish_pool_id = 4;
+    uint32 rod_entity_id = 11;
+}
+

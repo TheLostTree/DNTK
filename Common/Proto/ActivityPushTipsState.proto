@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: FHPBGAOJEJH
+enum ActivityPushTipsState {
+    ACTIVITY_PUSH_TIPS_STATE_NONE = 0;
+    ACTIVITY_PUSH_TIPS_STATE_START = 1;
+    ACTIVITY_PUSH_TIPS_STATE_READ = 2;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2194
+// Name: NEONMHEFOKM
+message DragonSpineChapterProgressChangeNotify {
+    uint32 cur_progress = 7;
+    uint32 schedule_id = 3;
+    uint32 chapter_id = 10;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2617
+// Name: PPDFLNOGDEB
+message BattlePassMissionDelNotify {
+    repeated uint32 del_mission_id_list = 1;
+}
+

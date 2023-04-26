@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1986
+// Name: FHDOFENPBOB
+message UnlockCoopChapterRsp {
+    int32 retcode = 1;
+    uint32 chapter_id = 8;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "DynamicLayerNodes.proto";
+
+// Name: LAEELAKKFLC
+message DynamicNodes {
+    repeated DynamicLayerNodes nodes = 10;
+}
+

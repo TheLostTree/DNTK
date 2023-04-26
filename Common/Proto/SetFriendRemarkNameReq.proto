@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4088
+// Name: ECLPOFDBAGI
+message SetFriendRemarkNameReq {
+    uint32 uid = 1;
+    string remark_name = 4;
+}
+

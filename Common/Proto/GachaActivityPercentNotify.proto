@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8789
+// Name: KMNMBAGFKAL
+message GachaActivityPercentNotify {
+    uint32 DIOALIGJPGO = 10;
+    uint32 JCGMHLOPOHG = 4;
+    map<uint32, uint32> target_num_map = 3;
+    uint32 FFAGKNPEDBJ = 2;
+}
+

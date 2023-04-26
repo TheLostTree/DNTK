@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "InvestigationTarget.proto";
+
+// CmdId: 1927
+// Name: LKMFLLAFCCF
+message PlayerInvestigationTargetNotify {
+    repeated InvestigationTarget investigation_target_list = 6;
+}
+

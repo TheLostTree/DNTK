@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1092
+// Name: MBFICLFHELI
+message ProudSkillUpgradeReq {
+    uint32 proud_skill_id = 10;
+    uint32 old_proud_skill_level = 3;
+    uint64 avatar_guid = 13;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: CEHPFLBDBKB
+message LanternRiteFireworksReformFactorInfo {
+    uint32 factor_id = 11;
+    uint32 factor_value = 4;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 20710
+// Name: BNMCJLNLNCG
+message EndCoinCollectPlaySingleModeReq {
+    uint32 multistage_play_index = 7;
+}
+

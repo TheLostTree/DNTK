@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AvatarTeam.proto";
+
+// CmdId: 1799
+// Name: BBFCJICAALL
+message AvatarTeamAllDataNotify {
+    repeated uint32 backup_avatar_team_order_list = 12;
+    repeated uint64 temp_avatar_guid_list = 5;
+    map<uint32, AvatarTeam> avatar_team_map = 7;
+}
+

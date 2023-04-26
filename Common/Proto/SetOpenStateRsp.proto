@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 151
+// Name: MIMCCLIKMIJ
+message SetOpenStateRsp {
+    uint32 value = 4;
+    uint32 key = 7;
+    int32 retcode = 8;
+}
+

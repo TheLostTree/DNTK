@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 457
+// Name: KMIACMOIKNM
+message SubmitInferenceWordReq {
+    uint32 page_id = 14;
+    uint32 word_id = 3;
+}
+

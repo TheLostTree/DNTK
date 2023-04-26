@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: BOECFEKFEJL
+enum SalvageEscortStopReason {
+    SALVAGE_ESCORT_STOP_NONE = 0;
+    SALVAGE_ESCORT_STOP_SUCCESS = 1;
+    SALVAGE_ESCORT_STOP_DUMP = 2;
+    SALVAGE_ESCORT_STOP_TIME = 3;
+    SALVAGE_ESCORT_STOP_INTERRUPT = 4;
+    SALVAGE_ESCORT_STOP_LEAVE = 5;
+    SALVAGE_ESCORT_STOP_FULL = 6;
+}
+

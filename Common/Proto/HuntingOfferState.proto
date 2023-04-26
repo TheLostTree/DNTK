@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: OLEMKEOPABD
+enum HuntingOfferState {
+    HUNTING_OFFER_STATE_NONE = 0;
+    HUNTING_OFFER_STATE_STARTED = 1;
+    HUNTING_OFFER_STATE_UNSTARTED = 2;
+    HUNTING_OFFER_STATE_SUCC = 3;
+}
+

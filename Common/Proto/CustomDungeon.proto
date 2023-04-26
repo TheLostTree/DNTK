@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CustomDungeonRoom.proto";
+import "CustomDungeonSetting.proto";
+
+// Name: KJILDIJGJEN
+message CustomDungeon {
+    repeated CustomDungeonRoom room_list = 3;
+    CustomDungeonSetting setting = 7;
+    uint64 dungeon_guid = 6;
+    uint32 dungeon_id = 4;
+}
+

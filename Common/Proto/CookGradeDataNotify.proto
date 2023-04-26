@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 135
+// Name: GNMHOBIGNDL
+message CookGradeDataNotify {
+    uint32 grade = 7;
+}
+

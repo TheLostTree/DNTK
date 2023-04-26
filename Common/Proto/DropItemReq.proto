@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "StoreType.proto";
+import "Vector.proto";
+
+// CmdId: 663
+// Name: PCBLPPLABOH
+message DropItemReq {
+    Vector pos = 14;
+    uint64 guid = 13;
+    uint32 count = 5;
+    StoreType store_type = 9;
+}
+

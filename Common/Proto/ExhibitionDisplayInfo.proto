@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LJLCOKBCBOG
+message ExhibitionDisplayInfo {
+    uint32 id = 1;
+    uint32 param = 2;
+    uint32 detail_param = 3;
+}
+

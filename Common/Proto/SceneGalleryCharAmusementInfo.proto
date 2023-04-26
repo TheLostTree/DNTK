@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LFPDIANNOJB
+message SceneGalleryCharAmusementInfo {
+    uint32 max_score = 8;
+    bool is_last_level = 15;
+    bool is_finish = 2;
+    bool is_success = 13;
+    uint32 cur_score = 14;
+}
+

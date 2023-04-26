@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "WidgetCreateLocationInfo.proto";
+import "WidgetCreatorOpType.proto";
+
+// Name: LNBOOJAPOBI
+message WidgetCreatorInfo {
+    WidgetCreateLocationInfo location_info = 12;
+    WidgetCreatorOpType op_type = 5;
+    uint32 entity_id = 8;
+}
+

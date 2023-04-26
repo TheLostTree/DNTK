@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: ENJJIEDLOJI
+message SceneGalleryBuoyantCombatInfo {
+    uint32 score = 11;
+    uint32 kill_monster_count = 2;
+    uint32 kill_special_monster_count = 9;
+}
+

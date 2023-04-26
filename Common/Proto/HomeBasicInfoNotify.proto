@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeBasicInfo.proto";
+
+// CmdId: 4727
+// Name: IIHAAPIDLAD
+message HomeBasicInfoNotify {
+    HomeBasicInfo basic_info = 14;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "IrodoriMasterLevelDetailInfo.proto";
+
+// Name: JJLGNKEIECC
+message IrodoriMasterLevelInfo {
+    repeated IrodoriMasterLevelDetailInfo detail_info = 7;
+    uint32 level_id = 4;
+}
+

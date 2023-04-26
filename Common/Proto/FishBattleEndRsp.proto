@@ -1,0 +1,28 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FishBattleResult.proto";
+import "ItemParam.proto";
+
+// CmdId: 5821
+// Name: IKIGLFPJABI
+message FishBattleEndRsp {
+    // Name: BAOFMDDOHHC
+    enum FishNoRewardReason {
+        FISH_NO_REWARD_NONE = 0;
+        FISH_NO_REWARD_ACTIVITY_LIMIT = 1;
+        FISH_NO_REWARD_BAG_LIMIT = 2;
+        FISH_NO_REWARD_POOL_LIMIT = 3;
+    }
+
+    bool is_got_reward = 7;
+    FishNoRewardReason no_reward_reason = 10;
+    repeated ItemParam reward_item_list = 9;
+    repeated ItemParam EGKGIDNNNLG = 13;
+    repeated ItemParam GJCMOFAMKLA = 4;
+    int32 retcode = 11;
+    FishBattleResult battle_result = 12;
+}
+

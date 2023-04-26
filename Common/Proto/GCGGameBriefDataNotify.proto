@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGGameBriefData.proto";
+
+// CmdId: 7068
+// Name: JKLHNBADGCE
+message GCGGameBriefDataNotify {
+    bool is_new_game = 2;
+    GCGGameBriefData gcg_brief_data = 13;
+}
+

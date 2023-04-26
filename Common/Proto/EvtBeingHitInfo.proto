@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AttackResult.proto";
+
+// Name: CHCBEEGOBEN
+message EvtBeingHitInfo {
+    uint32 peer_id = 10;
+    AttackResult attack_result = 15;
+    uint32 frame_num = 5;
+}
+

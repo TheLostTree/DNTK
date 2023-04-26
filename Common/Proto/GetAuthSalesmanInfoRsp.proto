@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2010
+// Name: HINEJJLGENI
+message GetAuthSalesmanInfoRsp {
+    uint32 day_reward_id = 4;
+    uint32 schedule_id = 13;
+    int32 retcode = 10;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8644
+// Name: PGOHFGDLCFG
+message PhotoActivityFinishRsp {
+    uint32 pos_id = 9;
+    int32 retcode = 7;
+}
+

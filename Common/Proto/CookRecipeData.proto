@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: OAOOLKPAOFH
+message CookRecipeData {
+    uint32 recipe_id = 8;
+    uint32 proficiency = 2;
+}
+

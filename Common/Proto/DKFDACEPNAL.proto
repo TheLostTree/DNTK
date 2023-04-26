@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: DKFDACEPNAL
+message DKFDACEPNAL {
+    repeated uint32 PJIFOALHIHM = 8;
+    uint32 level_id = 5;
+    uint32 FKPECBDMBFD = 15;
+    repeated uint32 PLPFFBIBHPB = 14;
+}
+

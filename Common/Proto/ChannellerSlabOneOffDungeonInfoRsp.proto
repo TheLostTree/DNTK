@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8872
+// Name: GEHFBCEJOOE
+message ChannellerSlabOneOffDungeonInfoRsp {
+    repeated uint32 scheme_buff_id_list = 1;
+    int32 retcode = 2;
+}
+

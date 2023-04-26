@@ -1,0 +1,21 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGSkillLimitsInfo.proto";
+import "GCGToken.proto";
+
+// Name: FEFAEBDNOFD
+message GCGCard {
+    uint32 guid = 10;
+    repeated uint32 tag_list = 2;
+    bool is_show = 7;
+    uint32 id = 1;
+    repeated GCGSkillLimitsInfo skill_limits_list = 14;
+    repeated GCGToken token_list = 8;
+    uint32 controller_id = 9;
+    uint32 face_type = 3;
+    repeated uint32 skill_id_list = 11;
+}
+

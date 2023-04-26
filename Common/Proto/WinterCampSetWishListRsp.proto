@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8598
+// Name: JIGIEEIOHCF
+message WinterCampSetWishListRsp {
+    int32 retcode = 8;
+    repeated uint32 item_id_list = 1;
+}
+

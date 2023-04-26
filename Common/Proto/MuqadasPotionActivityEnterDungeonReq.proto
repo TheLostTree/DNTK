@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 24826
+// Name: CNOPNEPFGHG
+message MuqadasPotionActivityEnterDungeonReq {
+    uint32 level_id = 14;
+}
+

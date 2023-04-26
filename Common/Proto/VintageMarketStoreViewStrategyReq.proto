@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 20229
+// Name: EIJDIBHELFI
+message VintageMarketStoreViewStrategyReq {
+    uint32 strategy_id = 4;
+    repeated uint32 strategy_list = 1;
+}
+

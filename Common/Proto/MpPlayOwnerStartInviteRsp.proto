@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1843
+// Name: KGBGGHNFNAN
+message MpPlayOwnerStartInviteRsp {
+    bool is_skip_match = 11;
+    int32 retcode = 15;
+    uint32 mp_play_id = 4;
+}
+

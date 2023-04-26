@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SocialDetail.proto";
+
+// CmdId: 4063
+// Name: JKGBNOFHLLC
+message GetPlayerSocialDetailRsp {
+    SocialDetail detail_data = 2;
+    int32 retcode = 13;
+}
+

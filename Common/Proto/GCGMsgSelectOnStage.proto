@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGReason.proto";
+
+// Name: BIAEHIPFJNC
+message GCGMsgSelectOnStage {
+    uint32 controller_id = 9;
+    GCGReason reason = 12;
+    uint32 card_guid = 15;
+}
+

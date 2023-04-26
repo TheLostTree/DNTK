@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2171
+// Name: KPIGNOHEMPD
+message SeaLampFlyLampRsp {
+    uint32 item_num = 3;
+    int32 retcode = 10;
+    uint32 item_id = 12;
+}
+

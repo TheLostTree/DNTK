@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1078
+// Name: PPGGAIJGNKM
+message AvatarSkillUpgradeReq {
+    uint64 avatar_guid = 14;
+    uint32 avatar_skill_id = 7;
+    uint32 old_level = 15;
+}
+

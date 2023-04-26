@@ -1,0 +1,22 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ABJDNCBDEKI.proto";
+import "AKFPAANICKG.proto";
+import "BEAMFIKPMLE.proto";
+import "JILBANAJEEF.proto";
+import "JNMLLBGCBOB.proto";
+import "PIHDFMDILLF.proto";
+
+// Name: BGAMHAGFENK
+message AkaFesDetailInfo {
+    BEAMFIKPMLE PKMBJHHFJDE = 1;
+    JNMLLBGCBOB PEDJMDFFCDA = 7;
+    AKFPAANICKG APNDPJFFEGL = 5;
+    ABJDNCBDEKI ONJNLIGNPIC = 15;
+    PIHDFMDILLF HGEMLFAGBEL = 8;
+    JILBANAJEEF potion_info = 13;
+}
+

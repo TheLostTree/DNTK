@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ItemParam.proto";
+
+// Name: DIJFLLLNCPM
+message VintageMarketTraderInfo {
+    repeated ItemParam available_item_list = 3;
+    uint32 trader_id = 2;
+}
+

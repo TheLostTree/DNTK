@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 675
+// Name: OEBALMOAHFM
+message TakeoffEquipReq {
+    uint64 avatar_guid = 12;
+    uint32 slot = 4;
+}
+

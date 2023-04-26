@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 7065
+// Name: BMGDLELMDOL
+message GCGDSDeckSaveRsp {
+    bool is_valid = 15;
+    fixed32 create_time = 13;
+    uint32 deck_id = 12;
+    int32 retcode = 14;
+}
+

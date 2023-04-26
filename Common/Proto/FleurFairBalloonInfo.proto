@@ -1,0 +1,11 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: NDMNFHFIDMB
+message FleurFairBalloonInfo {
+    uint32 best_score = 10;
+}
+

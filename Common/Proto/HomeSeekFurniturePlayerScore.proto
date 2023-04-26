@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeGroupPlayerInfo.proto";
+
+// Name: PJIPFEBDAFF
+message HomeSeekFurniturePlayerScore {
+    HomeGroupPlayerInfo player_info = 6;
+    uint32 score = 10;
+}
+

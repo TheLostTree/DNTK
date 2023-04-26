@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3976
+// Name: EKHNMCNAMGN
+message MechanicusCoinNotify {
+    uint32 mechanicus_id = 2;
+    uint32 coin = 14;
+}
+

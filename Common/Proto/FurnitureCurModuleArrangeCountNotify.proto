@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Uint32Pair.proto";
+
+// CmdId: 4746
+// Name: MILAOMEDEKI
+message FurnitureCurModuleArrangeCountNotify {
+    repeated Uint32Pair furniture_arrange_count_list = 9;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGSkillHpChangeType.proto";
+
+// Name: EFHAHCEGCJB
+message GCGSkillPreviewHpInfo {
+    GCGSkillHpChangeType change_type = 5;
+    uint32 hp_change_value = 10;
+}
+

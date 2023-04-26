@@ -1,0 +1,37 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GachaUpInfo.proto";
+
+// Name: INCDGNIDDAE
+message GachaInfo {
+    uint32 FBILBJNNIKE = 578;
+    uint32 BIPHOPJBNHC = 9;
+    uint32 FBIDPNFLBJL = 7;
+    string OMGFPIJPPGH = 3;
+    uint32 PELOHDIKFAM = 316;
+    uint32 begin_time = 1;
+    uint32 DINELKJLAPI = 4;
+    uint32 end_time = 10;
+    uint32 JICLMBKMGCG = 12;
+    string PEFGGCAMAJE = 908;
+    uint32 OKKJEHDBIHK = 11;
+    uint32 schedule_id = 13;
+    uint32 KKDFKKEMEBA = 2003;
+    string JAHGGIJLMCD = 883;
+    string FGLBHLDAFAM = 15;
+    repeated GachaUpInfo gacha_up_info_list = 771;
+    string LAMBGJLFDCN = 8;
+    string AMGOIFHFKIE = 1371;
+    repeated uint32 LANKFGHJJEB = 793;
+    bool is_new_wish = 1748;
+    uint32 gacha_type = 6;
+    uint32 DKCIEKFPMCG = 5;
+    uint32 EAGFIDHCDPD = 14;
+    uint32 KDFPKENAIOJ = 1986;
+    repeated uint32 LIBFHKDFHLG = 565;
+    string DACBIMFIOFO = 2;
+}
+

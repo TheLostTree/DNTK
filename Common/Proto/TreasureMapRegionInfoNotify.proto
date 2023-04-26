@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "TreasureMapRegionInfo.proto";
+
+// CmdId: 2117
+// Name: IBCJOBLIEGP
+message TreasureMapRegionInfoNotify {
+    TreasureMapRegionInfo region_info = 1;
+}
+

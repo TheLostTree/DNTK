@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: JAOONNODHDP
+message EvtSyncSkillAnchorPosition {
+    uint32 entity_id = 10;
+    Vector skill_anchor_position = 9;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4857
+// Name: ECPIDCALIPC
+message UnlockedFurnitureSuiteDataNotify {
+    repeated uint32 furniture_suite_id_list = 14;
+    bool is_all = 13;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 7107
+// Name: BDPPKOHGFGE
+message GCGApplyInviteBattleRsp {
+    int32 retcode = 1;
+    uint32 punish_end_time = 10;
+}
+

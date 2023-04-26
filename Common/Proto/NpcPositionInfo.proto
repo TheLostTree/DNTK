@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: EOPMENBFLCI
+message NpcPositionInfo {
+    uint32 npc_id = 1;
+    Vector pos = 2;
+}
+

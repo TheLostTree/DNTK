@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ItemParam.proto";
+
+// CmdId: 651
+// Name: LKOLNMJMDCE
+message ReliquaryUpgradeReq {
+    repeated uint64 food_reliquary_guid_list = 9;
+    repeated ItemParam item_param_list = 3;
+    uint64 target_reliquary_guid = 2;
+}
+

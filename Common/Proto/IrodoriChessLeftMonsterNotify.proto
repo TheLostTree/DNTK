@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5360
+// Name: GNALOFPIHJC
+message IrodoriChessLeftMonsterNotify {
+    uint32 left_monsters = 4;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 629
+// Name: MINLPCIDJLK
+message ForgeStartReq {
+    uint32 avatar_id = 7;
+    uint32 forge_count = 9;
+    uint32 forge_id = 8;
+}
+

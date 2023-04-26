@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 500
+// Name: BMLLLCEODOK
+message AssociateInferenceWordRsp {
+    int32 retcode = 3;
+    uint32 BHNIGBDOGPG = 10;
+    uint32 FDBFNNDGPBB = 1;
+    uint32 page_id = 2;
+}
+

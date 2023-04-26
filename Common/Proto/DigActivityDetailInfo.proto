@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "DigMarkPoint.proto";
+
+// Name: FNCKFCDNOCF
+message DigActivityDetailInfo {
+    repeated uint32 stage_id_list = 3;
+    uint32 stage_id = 4;
+    repeated DigMarkPoint dig_mark_point_list = 5;
+}
+

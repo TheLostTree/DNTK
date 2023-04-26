@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "RoutePointChangeInfo.proto";
+
+// Name: KKDALGHGFLA
+message SceneRouteChangeInfo {
+    uint32 route_id = 3;
+    repeated RoutePointChangeInfo point_list = 6;
+    uint32 type = 2;
+    bool is_forward = 14;
+}
+

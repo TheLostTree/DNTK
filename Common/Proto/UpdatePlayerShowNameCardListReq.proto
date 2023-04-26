@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4040
+// Name: DIECLABFMCB
+message UpdatePlayerShowNameCardListReq {
+    repeated uint32 show_name_card_id_list = 11;
+}
+

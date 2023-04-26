@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: FONAIIICBPA
+message FlightDailyRecord {
+    repeated uint32 watcher_id_list = 13;
+    uint32 best_score = 12;
+    bool is_touched = 11;
+    uint32 start_time = 4;
+    uint32 group_id = 14;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1821
+// Name: IFCMJCBNEIP
+message PSPlayerApplyEnterMpRsp {
+    uint32 param = 7;
+    string target_psn_id = 10;
+    int32 retcode = 12;
+}
+

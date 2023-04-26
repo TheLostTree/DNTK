@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 169
+// Name: IOFEFMEPAFP
+message ItemGivingRsp {
+    uint32 giving_group_id = 9;
+    int32 retcode = 6;
+    uint32 giving_id = 2;
+}
+

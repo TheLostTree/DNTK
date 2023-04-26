@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GivingRecord.proto";
+
+// CmdId: 124
+// Name: JKNNMPIHGJG
+message GivingRecordChangeNotify {
+    GivingRecord giving_record = 11;
+    bool is_deactive = 7;
+}
+

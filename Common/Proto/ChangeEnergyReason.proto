@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: ELGOIMEMBFO
+enum ChangeEnergyReason {
+    CHANGE_ENERGY_NONE = 0;
+    CHANGE_ENERGY_SKILL_START = 1;
+}
+

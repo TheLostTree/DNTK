@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ChannelerSlabChallengeStage.proto";
+import "ChannellerSlabBuffInfo.proto";
+import "ChannellerSlabLoopDungeonStageInfo.proto";
+
+// Name: CALILMNFCND
+message ChannelerSlabActivityDetailInfo {
+    ChannellerSlabBuffInfo buff_info = 8;
+    ChannellerSlabLoopDungeonStageInfo loop_dungeon_stage_info = 12;
+    repeated ChannelerSlabChallengeStage stage_list = 14;
+    uint32 play_end_time = 11;
+}
+

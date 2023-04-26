@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1000
+// Name: BIDBJCMBNDI
+message DungeonRestartInviteNotify {
+    uint32 point_id = 7;
+    uint32 player_uid = 9;
+    uint32 cd = 15;
+    uint32 dungeon_id = 6;
+}
+

@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "DealAddFriendResultType.proto";
+
+// CmdId: 4072
+// Name: KOFDKPBCFJE
+message DealAddFriendRsp {
+    DealAddFriendResultType deal_add_friend_result = 7;
+    int32 retcode = 8;
+    uint32 target_uid = 1;
+}
+

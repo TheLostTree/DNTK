@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ChessCardInfo.proto";
+
+// CmdId: 5347
+// Name: MOHONANDFPN
+message ChessSelectedCardsNotify {
+    repeated ChessCardInfo selected_card_info_list = 6;
+}
+

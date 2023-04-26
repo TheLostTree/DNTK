@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 187
+// Name: GFCPGINLENH
+message PlayerGameTimeByLuaNotify {
+    uint32 sim_speed = 3;
+    uint32 game_time = 8;
+    uint32 uid = 4;
+}
+

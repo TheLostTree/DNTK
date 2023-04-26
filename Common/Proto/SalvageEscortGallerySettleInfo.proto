@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SalvageEscortStopReason.proto";
+
+// Name: AAGAOBLAFOD
+message SalvageEscortGallerySettleInfo {
+    uint32 time_remain = 8;
+    SalvageEscortStopReason reason = 9;
+}
+

@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "IrodoriChessEntranceDetailInfo.proto";
+
+// Name: KGEBMHPKFMN
+message IrodoriChessMapData {
+    uint32 best_score = 2;
+    repeated uint32 equiped_card_list = 11;
+    uint32 map_id = 1;
+    IrodoriChessEntranceDetailInfo entrance_detail_info = 14;
+}
+

@@ -1,0 +1,11 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: DBDCBIBLLAE
+message LunchBoxData {
+    map<uint32, uint32> slot_material_map = 10;
+}
+

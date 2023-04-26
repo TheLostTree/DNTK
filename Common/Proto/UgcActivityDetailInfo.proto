@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "OfficialCustomDungeon.proto";
+
+// Name: EIJPLHGOBPC
+message UgcActivityDetailInfo {
+    bool ACDJAAHCMNO = 1;
+    bool LCJDIJCIGEF = 11;
+    uint32 custom_dungeon_group_id = 12;
+    repeated OfficialCustomDungeon official_custom_dungeon_list = 9;
+}
+

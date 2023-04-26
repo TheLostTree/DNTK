@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ExhibitionDisplayInfo.proto";
+
+// Name: BAMNPKKJOKG
+message InBattleChessSettleInfo {
+    uint32 OEGOGJACMFM = 10;
+    bool is_success = 14;
+    uint64 scene_time_ms = 2;
+    uint32 JAAMDPPLIKM = 13;
+    uint32 PBGBDOFPHDN = 8;
+    repeated ExhibitionDisplayInfo score_list = 12;
+    uint32 OMOKCHKJJKC = 5;
+}
+

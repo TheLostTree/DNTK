@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "PushTipsData.proto";
+
+// CmdId: 2286
+// Name: PPKBEMFOPPL
+message PushTipsChangeNotify {
+    repeated PushTipsData push_tips_list = 13;
+}
+

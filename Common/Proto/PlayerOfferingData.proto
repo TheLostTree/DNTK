@@ -1,0 +1,20 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "LPGAFDIGHDF.proto";
+
+// Name: LLHKAHKDALN
+message PlayerOfferingData {
+    bool is_first_interact = 6;
+    repeated uint32 taken_level_reward_list = 13;
+    map<uint32, uint32> JDBDDFJCFMK = 9;
+    bool is_new_max_level = 7;
+    uint32 offering_id = 1;
+    uint32 level = 12;
+    oneof detail {
+        LPGAFDIGHDF offering_pari_detail_data = 1777;
+    }
+}
+

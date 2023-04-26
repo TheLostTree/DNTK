@@ -1,0 +1,34 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "VintageMarketDealInfo.proto";
+import "VintageMarketStoreInfo.proto";
+
+// Name: LDPIJPEGAHL
+message VintageMarketInfo {
+    VintageMarketDealInfo deal_info = 7;
+    uint32 IMIPPLHMKHE = 2047;
+    bool IJCFOLFJOMB = 4;
+    bool HDKNAEMIHNM = 1;
+    bool DMELHENKHMM = 13;
+    repeated uint32 unlock_strategy_list = 6;
+    repeated uint32 BPBPNGMGGAG = 9;
+    uint32 LBNGJLNFDIG = 1444;
+    repeated uint32 AOLKLKEJGKK = 5;
+    uint32 DJGLDCABOKM = 1546;
+    repeated uint32 MACIEIECBAD = 1471;
+    map<uint32, bool> bargain_info_map = 8;
+    uint32 MKFNMHLNHNM = 12;
+    repeated uint32 FOGLEAIAPIA = 11;
+    bool PGFPCNHBPCL = 1863;
+    bool ILLOKJKHLHL = 1274;
+    bool BIOFCLPENKF = 3;
+    repeated VintageMarketStoreInfo open_store_list = 14;
+    bool LAICGEHFGOJ = 10;
+    uint32 GPHBPEOJNNI = 15;
+    bool CMOLCBGECOL = 940;
+    uint32 store_round = 2;
+}
+

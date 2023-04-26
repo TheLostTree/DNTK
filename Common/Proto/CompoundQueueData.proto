@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: IJBDFMLMJMF
+message CompoundQueueData {
+    uint32 BIBEPDEFKDP = 1;
+    uint32 compound_id = 2;
+    uint32 CIBCKFAJLEF = 5;
+    uint32 GOMEGAHKEMD = 15;
+}
+

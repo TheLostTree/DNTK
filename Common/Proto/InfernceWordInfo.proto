@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: FKGOBJOHHBL
+message InfernceWordInfo {
+    bool MDPDECFIPAN = 11;
+    uint32 unlock_by_word_id = 1;
+    uint32 word_id = 10;
+    bool DJFAOPBHEAL = 4;
+    bool OPBALHEMOEE = 3;
+}
+

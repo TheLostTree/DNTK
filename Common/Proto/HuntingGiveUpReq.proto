@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HuntingPair.proto";
+
+// CmdId: 4331
+// Name: JHEACIJKAJD
+message HuntingGiveUpReq {
+    HuntingPair hunting_pair = 10;
+}
+

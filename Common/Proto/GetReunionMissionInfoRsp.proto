@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ReunionMissionInfo.proto";
+
+// CmdId: 5073
+// Name: OKJHIHCODGB
+message GetReunionMissionInfoRsp {
+    ReunionMissionInfo mission_info = 8;
+    int32 retcode = 1;
+}
+

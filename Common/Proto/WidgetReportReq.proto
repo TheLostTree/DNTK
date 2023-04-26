@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4281
+// Name: JIHGKNPOAND
+message WidgetReportReq {
+    bool MDJNBGFKEBO = 15;
+    uint32 material_id = 10;
+    bool BKCPLOBJILI = 2;
+    bool KCMEGDBFCAH = 9;
+    uint32 weather_wizard_shield_value = 14;
+}
+

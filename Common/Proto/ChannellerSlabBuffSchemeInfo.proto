@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: JKCIENNAJJO
+message ChannellerSlabBuffSchemeInfo {
+    uint32 AHDJLGHLNEB = 10;
+    uint32 GNFANIBDDEO = 14;
+    map<uint32, uint32> slot_map = 2;
+}
+

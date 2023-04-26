@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AranaraCollectionState.proto";
+
+// CmdId: 6366
+// Name: EEHLGKBAOJJ
+message AddAranaraCollectionNotify {
+    uint32 collection_type = 2;
+    AranaraCollectionState IJBFIKCDABD = 10;
+    AranaraCollectionState CIEAPDGLPOL = 4;
+    uint32 collection_id = 3;
+}
+

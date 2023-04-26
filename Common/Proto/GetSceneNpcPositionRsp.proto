@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "NpcPositionInfo.proto";
+
+// CmdId: 516
+// Name: DCJOFPGCGPJ
+message GetSceneNpcPositionRsp {
+    int32 retcode = 9;
+    repeated NpcPositionInfo npc_info_list = 14;
+    uint32 scene_id = 11;
+}
+

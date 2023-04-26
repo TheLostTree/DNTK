@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ActivityFriendGiftWishData.proto";
+
+// CmdId: 8073
+// Name: KCFIMDHNONF
+message ActivityGetFriendGiftWishListRsp {
+    int32 retcode = 9;
+    repeated ActivityFriendGiftWishData friend_gift_wish_list = 3;
+    uint32 schedule_id = 8;
+}
+

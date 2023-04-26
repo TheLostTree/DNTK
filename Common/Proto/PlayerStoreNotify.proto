@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Item.proto";
+import "StoreType.proto";
+
+// CmdId: 690
+// Name: NFFEDBEJOIE
+message PlayerStoreNotify {
+    repeated Item item_list = 9;
+    uint32 weight_limit = 11;
+    StoreType store_type = 5;
+}
+

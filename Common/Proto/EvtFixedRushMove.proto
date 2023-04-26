@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: PGJNDMMFOOD
+message EvtFixedRushMove {
+    bool PMHJPLEMFAD = 9;
+    string override_collider = 1;
+    repeated uint32 animator_state_id_list = 12;
+    uint32 entity_id = 11;
+    float speed = 4;
+    Vector target_pos = 2;
+    bool FPFCJFPALLI = 5;
+}
+

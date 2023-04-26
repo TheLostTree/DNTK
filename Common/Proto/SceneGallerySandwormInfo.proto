@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "KAGFENNNCEA.proto";
+
+// Name: POFAIABAJGK
+message SceneGallerySandwormInfo {
+    uint32 DIOMMEDEGJI = 3;
+    uint32 energy = 14;
+    KAGFENNNCEA ODCPDKBPANB = 9;
+    bool NJGKBGOPNKD = 1;
+}
+

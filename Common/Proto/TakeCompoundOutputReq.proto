@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 106
+// Name: KILNDKJNGBJ
+message TakeCompoundOutputReq {
+    uint32 compound_group_id = 1;
+    uint32 compound_id = 13;
+}
+

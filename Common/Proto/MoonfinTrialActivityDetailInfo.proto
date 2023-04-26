@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MoonfinTrialLevelInfo.proto";
+
+// Name: DKAEABLIHPL
+message MoonfinTrialActivityDetailInfo {
+    map<uint32, MoonfinTrialLevelInfo> level_info_map = 5;
+    uint32 special_fish_count = 3;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8010
+// Name: PGHAGBMLCDD
+message EnterIrodoriChessDungeonReq {
+    uint32 level_id = 15;
+    bool is_hard_map = 3;
+}
+

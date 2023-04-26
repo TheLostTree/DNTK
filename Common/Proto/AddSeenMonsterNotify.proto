@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 202
+// Name: GOPJCGHFBNM
+message AddSeenMonsterNotify {
+    repeated uint32 monster_id_list = 2;
+}
+

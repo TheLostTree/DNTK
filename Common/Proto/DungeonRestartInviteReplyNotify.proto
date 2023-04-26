@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 924
+// Name: IOJGGLKDBNN
+message DungeonRestartInviteReplyNotify {
+    bool is_accept = 2;
+    uint32 player_uid = 11;
+}
+

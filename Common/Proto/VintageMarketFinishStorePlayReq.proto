@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "VintageMarketStoreOpInfo.proto";
+
+// CmdId: 21144
+// Name: PGJFHOOLDEE
+message VintageMarketFinishStorePlayReq {
+    uint32 store_round = 3;
+    repeated VintageMarketStoreOpInfo store_op_list = 9;
+}
+

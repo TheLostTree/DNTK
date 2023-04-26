@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: IBJHFINBAHB
+message ChannelerSlabCamp {
+    uint32 buff_num = 5;
+    uint32 group_id = 10;
+    uint32 reward_id = 8;
+    Vector pos = 11;
+}
+

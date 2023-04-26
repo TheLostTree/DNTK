@@ -1,0 +1,56 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AdjustTrackingInfo.proto";
+import "TrackingIOInfo.proto";
+
+// CmdId: 189
+// Name: CLFNBHKDFFH
+message PlayerLoginReq {
+    uint32 sub_channel_id = 909;
+    uint32 PNJNCCNPILL = 2033;
+    string token = 8;
+    bool is_guest = 6;
+    string JKPKMFPELKK = 778;
+    string online_id = 1781;
+    AdjustTrackingInfo adjust_tracking_info = 2010;
+    uint64 login_rand = 12;
+    TrackingIOInfo tracking_io_info = 498;
+    uint32 language_type = 7;
+    uint32 CJHEEAGCFJG = 2015;
+    uint32 FGAKKMHIKHF = 829;
+    string system_version = 2;
+    string cps = 1352;
+    string account_uid = 4;
+    uint32 target_uid = 14;
+    string security_library_md5 = 254;
+    string country_code = 936;
+    uint32 FIDMBJJPBEH = 832;
+    string checksum = 1953;
+    string device_info = 11;
+    bytes JLOPICGGPBP = 978;
+    string checksum_client_version = 823;
+    uint32 ECJMGOCEABB = 1650;
+    string client_version = 3;
+    string psn_id = 1125;
+    bool is_editor = 10;
+    bytes environment_error_code = 922;
+    string platform = 1;
+    uint32 channel_id = 913;
+    bool is_transfer = 1382;
+    string client_verison_hash  = 1519;
+    string device_name = 9;
+    uint32 FMOKLFNAOOK = 1173;
+    uint32 tag = 1897;
+    uint32 account_type = 5;
+    uint32 client_data_version = 1098;
+    string DABNCDNACJK = 587;
+    string device_uuid = 13;
+    uint32 platform_type = 15;
+    bytes security_cmd_reply = 1959;
+    uint32 reg_platform = 1187;
+    string birthday = 1256;
+}
+

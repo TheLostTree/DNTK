@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "BrickBreakerActivityStageInfo.proto";
+import "BrickBreakerLevelInfo.proto";
+
+// Name: CFOLMMAAAAJ
+message BrickBreakerDetailInfo {
+    map<uint32, uint32> skill_info_map = 4;
+    repeated BrickBreakerLevelInfo PPDAPEHFPAN = 3;
+    repeated BrickBreakerLevelInfo OKBIGBHBHDP = 6;
+    repeated BrickBreakerActivityStageInfo stage_info_list = 13;
+}
+

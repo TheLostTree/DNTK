@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 7507
+// Name: JNMOJGGBJCK
+message GCGTCTavernInfoNotify {
+    bool PIBHPPGGFAH = 9;
+    uint32 avatar_id = 6;
+    uint32 level_id = 7;
+    uint32 point_id = 1;
+    bool ANNJEIOGNGA = 14;
+    uint32 element_type = 12;
+    uint32 character_id = 10;
+}
+

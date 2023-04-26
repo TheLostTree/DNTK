@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: GMIMOGNEPNK
+message CustomDungeonSetting {
+    repeated uint32 open_room_list = 8;
+    uint32 KBJFGOHNOEO = 10;
+    uint32 APHEOMDKFLK = 1;
+    bool DEAPGFHKJIJ = 3;
+    bool NDCFHNKKAJL = 4;
+    uint32 EIAAHAGFACH = 11;
+    uint32 DOPLLKGMNLN = 5;
+}
+

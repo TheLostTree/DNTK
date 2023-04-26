@@ -1,0 +1,23 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MathQuaternion.proto";
+import "Vector.proto";
+
+// Name: BEOFHEJKBNP
+message ToTheMoonObstacleInfo {
+    // Name: MNENMABCJHH
+    enum ShapeType {
+        OBSTACLE_SHAPE_CAPSULE = 0;
+        OBSTACLE_SHAPE_BOX = 1;
+    }
+
+    int32 handle_id = 8;
+    Vector center = 4;
+    Vector half_extents = 10;
+    MathQuaternion rotation = 14;
+    ShapeType type = 2;
+}
+

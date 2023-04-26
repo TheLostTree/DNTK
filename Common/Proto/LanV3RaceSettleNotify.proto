@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 20675
+// Name: MCAGOHGNOLF
+message LanV3RaceSettleNotify {
+    uint32 level_id = 13;
+    uint32 gallery_id = 2;
+    uint32 MFJBNDHNNMO = 15;
+    uint32 JCFJLLKLHFO = 3;
+    uint32 score = 5;
+    bool is_new_record = 9;
+    uint32 IFECDFBGBAA = 7;
+    bool is_success = 14;
+}
+

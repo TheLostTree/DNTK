@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8180
+// Name: OFJAFPNOOOH
+message PlantFlowerSetFlowerWishRsp {
+    int32 retcode = 8;
+    uint32 schedule_id = 6;
+}
+

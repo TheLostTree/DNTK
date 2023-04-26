@@ -1,0 +1,20 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5616
+// Name: CDKILDCCGII
+message RegionSearchChangeRegionNotify {
+    // Name: PMMIIFMHPDP
+    enum RegionEvent {
+        REGION_EVENT_NONE = 0;
+        REGION_EVENT_ENTER = 1;
+        REGION_EVENT_LEAVE = 2;
+    }
+
+    uint32 region_id = 13;
+    RegionEvent event = 1;
+}
+

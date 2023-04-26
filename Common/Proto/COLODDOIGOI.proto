@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: COLODDOIGOI
+message COLODDOIGOI {
+    Vector KHIIBCMCNMA = 7;
+    uint32 entity_id = 5;
+    Vector target_pos = 6;
+}
+

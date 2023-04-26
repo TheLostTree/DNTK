@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ResVersionConfig.proto";
+
+// CmdId: 136
+// Name: GFGCMBGAMGO
+message GetNextResourceInfoRsp {
+    ResVersionConfig next_res_version_config = 14;
+    string next_resource_url = 12;
+    int32 retcode = 15;
+}
+

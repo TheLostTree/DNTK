@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: ANBGDIAABLH
+message QuestVarOp {
+    uint32 index = 5;
+    bool is_add = 11;
+    int32 value = 12;
+}
+

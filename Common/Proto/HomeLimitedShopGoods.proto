@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ItemParam.proto";
+
+// Name: AANGCNPKJIH
+message HomeLimitedShopGoods {
+    uint32 BKONLAFGBFC = 7;
+    uint32 OLFIOBININC = 4;
+    uint32 LAKDFDKCMKC = 11;
+    repeated ItemParam cost_item_list = 1;
+    ItemParam goods_item = 5;
+    uint32 bought_num = 3;
+}
+

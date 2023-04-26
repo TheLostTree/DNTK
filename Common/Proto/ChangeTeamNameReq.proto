@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1613
+// Name: HAGAEOHPAKD
+message ChangeTeamNameReq {
+    int32 team_id = 11;
+    string team_name = 12;
+}
+

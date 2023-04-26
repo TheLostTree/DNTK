@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5582
+// Name: CCEHPMIELPE
+message GalleryCrystalLinkKillMonsterNotify {
+    uint32 score = 4;
+    uint32 gallery_id = 15;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4593
+// Name: PAAMBEAFLAG
+message HomeGetArrangementInfoReq {
+    repeated uint32 scene_id_list = 10;
+}
+

@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ToTheMoonObstacleInfo.proto";
+
+// CmdId: 6163
+// Name: AOEDIDDNEHH
+message ToTheMoonObstaclesModifyNotify {
+    repeated ToTheMoonObstacleInfo add_obstacles = 8;
+    uint32 scene_id = 15;
+    repeated int32 remove_obstacle_ids = 7;
+    bool use_edge = 2;
+}
+

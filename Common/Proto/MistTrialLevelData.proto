@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MistTrialBestAvatar.proto";
+
+// Name: MNHBJMJPKAP
+message MistTrialLevelData {
+    repeated MistTrialBestAvatar best_avatar_list = 12;
+    uint32 first_pass_time = 9;
+    bool is_open = 10;
+    MistTrialBestAvatar best_hit_avatar = 14;
+    uint32 level_id = 15;
+    uint32 open_time = 8;
+}
+

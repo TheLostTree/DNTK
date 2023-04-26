@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 22436
+// Name: FMOLJCKDEDF
+message RestartCoinCollectPlaySingleModeReq {
+    uint32 level_id = 11;
+    uint32 multistage_play_index = 1;
+}
+

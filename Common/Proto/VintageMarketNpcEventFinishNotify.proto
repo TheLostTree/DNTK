@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 24538
+// Name: JPIAPNHEEOI
+message VintageMarketNpcEventFinishNotify {
+    uint32 MFMAKKFFAHP = 2;
+    uint32 FCOMCAIMCGG = 6;
+    repeated uint32 unlock_strategy_list = 15;
+}
+

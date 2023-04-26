@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGEndReason.proto";
+
+// Name: IAKOPEJNCLO
+message GCGMsgGameOver {
+    GCGEndReason end_reason = 11;
+    uint32 win_controller_id = 4;
+}
+

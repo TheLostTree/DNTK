@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "EquipParam.proto";
+import "MaterialDeleteInfo.proto";
+
+// Name: PNGOGFIBMGO
+message MailItem {
+    EquipParam equip_param = 1;
+    MaterialDeleteInfo delete_info = 2;
+}
+

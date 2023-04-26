@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: MDGLDNMDCHA
+message H5ActivityInfo {
+    uint32 OBINALNIFGI = 9;
+    string prefab_path = 10;
+    uint32 begin_time = 11;
+    uint32 EKOKDKCNOOA = 13;
+    uint32 end_time = 2;
+    uint32 content_close_time = 3;
+    bool is_entrance_open = 12;
+    string url = 1;
+}
+

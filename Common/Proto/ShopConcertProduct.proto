@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: JAJEHOIAKLD
+message ShopConcertProduct {
+    string product_id = 1;
+    string price_tier = 2;
+    uint32 obtain_count = 3;
+    uint32 obtain_limit = 4;
+    uint32 begin_time = 5;
+    uint32 end_time = 6;
+    uint32 buy_times = 7;
+}
+

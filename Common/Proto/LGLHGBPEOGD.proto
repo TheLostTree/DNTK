@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 20971
+// Name: LGLHGBPEOGD
+message LGLHGBPEOGD {
+    uint32 level_id = 15;
+    uint32 NIKGAFDFHCD = 12;
+}
+

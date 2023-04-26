@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4044
+// Name: HMPANOFIBOG
+message UpdatePS4FriendListRsp {
+    int32 retcode = 12;
+    repeated string psn_id_list = 5;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ChessEntranceDetailInfo.proto";
+
+// Name: LDNECEOOOOI
+message ChessMysteryInfo {
+    map<uint32, ChessEntranceDetailInfo> detail_info_map = 13;
+    map<uint32, uint32> entrance_point_map = 4;
+    repeated uint32 exit_point_id_list = 10;
+}
+

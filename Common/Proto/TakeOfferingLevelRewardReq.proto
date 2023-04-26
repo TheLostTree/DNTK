@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2905
+// Name: GJGKKOGPPJC
+message TakeOfferingLevelRewardReq {
+    uint32 offering_id = 5;
+    uint32 level = 9;
+}
+

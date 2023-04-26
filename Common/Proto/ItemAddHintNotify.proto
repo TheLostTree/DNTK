@@ -1,0 +1,21 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ItemHint.proto";
+import "Vector.proto";
+
+// CmdId: 616
+// Name: IBLPBENLBJI
+message ItemAddHintNotify {
+    repeated ItemHint item_list = 12;
+    Vector position = 9;
+    repeated ItemHint overflow_transformed_item_list = 15;
+    uint32 quest_id = 6;
+    bool OCIEEDOLGDB = 3;
+    bool ENCLFHLBLLA = 8;
+    bool JPDJLIPKABJ = 13;
+    uint32 reason = 11;
+}
+

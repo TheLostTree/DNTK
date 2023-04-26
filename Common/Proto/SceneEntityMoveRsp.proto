@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MotionInfo.proto";
+
+// CmdId: 292
+// Name: DMMGIENKIKO
+message SceneEntityMoveRsp {
+    uint32 scene_time = 2;
+    int32 retcode = 8;
+    uint32 reliable_seq = 9;
+    MotionInfo fail_motion = 15;
+    uint32 entity_id = 14;
+}
+

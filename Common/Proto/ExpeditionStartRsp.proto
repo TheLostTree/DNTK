@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2058
+// Name: OEOALPJFLGC
+message ExpeditionStartRsp {
+    uint32 GOMIFKCFNKJ = 11;
+    uint32 PIHIMOCPPFO = 2;
+    uint32 path_id = 14;
+    int32 retcode = 8;
+    repeated uint32 avatar_id_list = 5;
+}
+

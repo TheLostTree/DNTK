@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Quest.proto";
+
+// CmdId: 490
+// Name: EEHKLPMFHGC
+message QuestListNotify {
+    repeated Quest quest_list = 4;
+}
+

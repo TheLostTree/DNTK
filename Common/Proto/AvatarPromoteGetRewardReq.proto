@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1700
+// Name: JLLHOHBNJPM
+message AvatarPromoteGetRewardReq {
+    uint64 avatar_guid = 3;
+    uint32 promote_level = 4;
+}
+

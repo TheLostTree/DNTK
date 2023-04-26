@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ItemParam.proto";
+
+// Name: MPAOCFBKIBK
+message IrodoriFlowerData {
+    repeated uint32 finished_theme_list = 12;
+    repeated ItemParam used_flower_list = 6;
+}
+

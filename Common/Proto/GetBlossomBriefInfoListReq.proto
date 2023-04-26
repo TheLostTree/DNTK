@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2790
+// Name: ENHLMPMFMBG
+message GetBlossomBriefInfoListReq {
+    repeated uint32 city_id_list = 4;
+}
+

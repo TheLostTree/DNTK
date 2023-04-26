@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FishInfo.proto";
+import "FishingScore.proto";
+
+// Name: LACBAJJCDMG
+message FishingGallerySettleInfo {
+    repeated FishingScore fishing_score_list = 15;
+    map<uint32, FishInfo> fish_map = 14;
+}
+

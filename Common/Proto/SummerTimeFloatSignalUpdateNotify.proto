@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// CmdId: 8618
+// Name: ACHNGCDDBMA
+message SummerTimeFloatSignalUpdateNotify {
+    bool is_transfer_anchor = 6;
+    uint32 float_signal_id = 4;
+    Vector position = 7;
+}
+

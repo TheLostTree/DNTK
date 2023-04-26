@@ -1,0 +1,25 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AbilityAttachedModifier.proto";
+import "AbilityString.proto";
+import "ModifierAction.proto";
+import "ModifierProperty.proto";
+
+// Name: MPIOJLNOMAC
+message AbilityMetaModifierChange {
+    uint32 server_buff_uid = 13;
+    bool JAODDPOBICJ = 4;
+    repeated ModifierProperty properties = 11;
+    int32 modifier_local_id = 5;
+    AbilityString parent_ability_override = 6;
+    bool KJPKHNFAEDC = 14;
+    bool is_attached_parent_ability = 1;
+    AbilityAttachedModifier attached_instanced_modifier = 12;
+    ModifierAction action = 3;
+    uint32 apply_entity_id = 8;
+    AbilityString parent_ability_name = 15;
+}
+

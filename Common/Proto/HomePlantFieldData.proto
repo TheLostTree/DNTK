@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomePlantSubFieldData.proto";
+import "Vector.proto";
+
+// Name: OHEONJCMMOF
+message HomePlantFieldData {
+    uint32 field_guid = 1;
+    uint32 furniture_id = 8;
+    uint32 scene_id = 9;
+    repeated HomePlantSubFieldData sub_field_list = 11;
+    Vector spawn_pos = 13;
+}
+

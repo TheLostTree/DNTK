@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GadgetBornType.proto";
+
+// Name: DMLOGFGNFCA
+message CreateGadgetInfo {
+    // Name: ACFOEFOCAOB
+    message Chest {
+        uint32 chest_drop_id = 1;
+        bool is_show_cutscene = 2;
+    }
+
+    GadgetBornType born_type = 1;
+    Chest chest = 2;
+}
+

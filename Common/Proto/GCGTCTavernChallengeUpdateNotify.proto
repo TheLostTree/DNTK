@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGTCTavernChallengeData.proto";
+
+// CmdId: 7281
+// Name: OAKJEBNHJKG
+message GCGTCTavernChallengeUpdateNotify {
+    GCGTCTavernChallengeData tavern_challenge = 3;
+}
+

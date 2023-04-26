@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGReason.proto";
+
+// Name: HALCGPHPNPL
+message GCGMsgTokenChange {
+    uint32 KOECFICGDOI = 8;
+    uint32 card_guid = 13;
+    uint32 NBCLHDEBGGP = 1;
+    GCGReason reason = 11;
+    uint32 BKHAKDNDMIO = 14;
+}
+

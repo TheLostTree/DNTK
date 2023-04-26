@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ProfilePicture.proto";
+
+// Name: IOGDNKFIGHK
+message GCGPlayerBriefData {
+    string nick_name = 7;
+    string psn_id = 14;
+    repeated uint32 card_id_list = 6;
+    uint32 uid = 12;
+    map<uint32, uint32> card_face_map = 3;
+    ProfilePicture profile_picture = 2;
+    string online_id = 11;
+    uint32 controller_id = 15;
+}
+

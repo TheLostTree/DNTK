@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AnchorPointData.proto";
+
+// CmdId: 4259
+// Name: CMPCAGNBCLB
+message AnchorPointDataNotify {
+    repeated AnchorPointData anchor_point_list = 11;
+    uint32 next_usable_time = 1;
+}
+

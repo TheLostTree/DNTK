@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5099
+// Name: EFPHCPGCPAI
+message TakeReunionFirstGiftRewardRsp {
+    int32 reward_id = 11;
+    int32 retcode = 9;
+}
+

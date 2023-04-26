@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ItemParam.proto";
+
+// CmdId: 2876
+// Name: JEBBKCGCPPP
+message TakeCityReputationLevelRewardRsp {
+    uint32 city_id = 4;
+    int32 retcode = 13;
+    uint32 level = 9;
+    repeated ItemParam item_list = 10;
+}
+

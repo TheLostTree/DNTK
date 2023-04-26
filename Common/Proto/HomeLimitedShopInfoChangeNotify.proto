@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeLimitedShopGoods.proto";
+
+// CmdId: 4751
+// Name: GJGLKOMDLJP
+message HomeLimitedShopInfoChangeNotify {
+    repeated HomeLimitedShopGoods goods_list = 2;
+}
+

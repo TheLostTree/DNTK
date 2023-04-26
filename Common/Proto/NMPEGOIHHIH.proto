@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGDuel.proto";
+import "GCGMessagePack.proto";
+
+// CmdId: 7486
+// Name: NMPEGOIHHIH
+message NMPEGOIHHIH {
+    repeated GCGMessagePack msg_pack_list = 4;
+    GCGDuel duel = 5;
+    int32 retcode = 15;
+}
+

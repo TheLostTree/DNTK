@@ -1,0 +1,25 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MAGCLOOBFPI.proto";
+import "ReunionPrivilegeInfo.proto";
+
+// Name: OKHLKNPBBHN
+message ReunionBriefInfo {
+    uint32 first_gift_reward_id = 2;
+    uint32 finish_time = 3;
+    uint32 start_time = 8;
+    bool HBKGGJHLDGI = 9;
+    bool GHIPMPFNFJK = 1;
+    uint32 first_day_start_time = 11;
+    string version = 12;
+    ReunionPrivilegeInfo privilege_info = 7;
+    repeated MAGCLOOBFPI ACBAPFHKIMM = 6;
+    uint32 sign_in_config_id = 13;
+    uint32 privilege_id = 14;
+    bool JBCJPJECCNA = 4;
+    uint32 mission_id = 15;
+}
+

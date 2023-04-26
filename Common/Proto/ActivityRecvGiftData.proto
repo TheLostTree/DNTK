@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ProfilePicture.proto";
+
+// Name: MEGDKCPJCHP
+message ActivityRecvGiftData {
+    ProfilePicture profile_picture = 4;
+    uint32 uid = 10;
+    string remark_name = 1;
+    map<uint32, uint32> gift_num_map = 2;
+    string nickname = 14;
+}
+

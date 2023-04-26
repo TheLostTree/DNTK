@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1824
+// Name: NGHOBFHEIMD
+message MpPlayOwnerCheckRsp {
+    uint32 wrong_uid = 13;
+    uint32 mp_play_id = 1;
+    bool is_skip_match = 7;
+    int32 retcode = 4;
+}
+

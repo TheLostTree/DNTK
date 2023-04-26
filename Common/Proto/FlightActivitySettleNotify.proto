@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2118
+// Name: CCFNOMPGAMF
+message FlightActivitySettleNotify {
+    uint32 group_id = 8;
+    uint32 LKOGKCCJBFE = 14;
+    uint32 left_time = 10;
+    uint32 score = 5;
+    uint32 total_num = 1;
+    bool is_new_record = 9;
+    uint32 HPCCAIMDMDN = 12;
+    bool is_success = 6;
+}
+

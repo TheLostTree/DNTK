@@ -1,0 +1,11 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: ILFHJOCEDHJ
+message ILFHJOCEDHJ {
+    uint32 BGHILBMNPCK = 4;
+}
+

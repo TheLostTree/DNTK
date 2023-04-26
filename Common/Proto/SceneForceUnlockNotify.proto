@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 270
+// Name: GCIGDCCBENG
+message SceneForceUnlockNotify {
+    bool is_add = 2;
+    repeated uint32 force_id_list = 7;
+}
+

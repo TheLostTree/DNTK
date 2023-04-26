@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 401
+// Name: DHBGNGAMFCK
+message QuestRenameAvatarRsp {
+    uint32 rename_id = 10;
+    bool is_check = 8;
+    string avatar_name = 5;
+    int32 retcode = 14;
+}
+

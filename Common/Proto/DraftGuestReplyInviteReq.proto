@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5456
+// Name: LNHGNIBIDBK
+message DraftGuestReplyInviteReq {
+    bool is_agree = 2;
+    uint32 draft_id = 5;
+}
+

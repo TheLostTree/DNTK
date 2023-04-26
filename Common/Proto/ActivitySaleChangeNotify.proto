@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2174
+// Name: CKHBPAAGBOH
+message ActivitySaleChangeNotify {
+    bool is_close = 9;
+    uint32 sale_id = 3;
+}
+

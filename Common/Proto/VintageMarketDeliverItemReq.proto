@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ItemParam.proto";
+
+// CmdId: 21795
+// Name: NKHKFPKDMOK
+message VintageMarketDeliverItemReq {
+    uint32 trader_id = 7;
+    repeated ItemParam deliver_item_list = 15;
+}
+

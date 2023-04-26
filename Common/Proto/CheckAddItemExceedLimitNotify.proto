@@ -1,0 +1,24 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 647
+// Name: GGFMFJKHFOP
+message CheckAddItemExceedLimitNotify {
+    // Name: EIBIGOBHMLH
+    enum ItemExceedLimitMsgType {
+        ITEM_EXCEED_LIMIT_MSG_DEFAULT = 0;
+        ITEM_EXCEED_LIMIT_MSG_TEXT = 1;
+        ITEM_EXCEED_LIMIT_MSG_DIALOG = 2;
+        ITEM_EXCEED_LIMIT_MSG_DIALOG_NONBLOCK = 3;
+    }
+
+    ItemExceedLimitMsgType msg_type = 8;
+    repeated uint32 IEKDCIFFABE = 7;
+    bool is_drop = 14;
+    uint32 reason = 4;
+    repeated uint32 DKMOFJKMINH = 15;
+}
+

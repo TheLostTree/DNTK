@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "TowerFloorRecord.proto";
+
+// CmdId: 2496
+// Name: ONJNAGDHCDM
+message TowerFloorRecordChangeNotify {
+    bool is_finished_entrance_floor = 4;
+    repeated TowerFloorRecord tower_floor_record_list = 13;
+}
+

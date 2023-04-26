@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "TeamChainChooseAvatarInfo.proto";
+
+// Name: CEELJPLNFKF
+message TeamChainChooseTeamInfo {
+    repeated TeamChainChooseAvatarInfo avatar_info_list = 15;
+    repeated uint32 skill_no_list = 8;
+}
+

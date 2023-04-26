@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 222
+// Name: KKHJMDINBOL
+message SealBattleProgressNotify {
+    uint32 seal_entity_id = 4;
+    uint32 NILJHJLDIPH = 12;
+    uint32 OPPGKAGCJBJ = 9;
+    uint32 progress = 2;
+    uint32 end_time = 6;
+}
+

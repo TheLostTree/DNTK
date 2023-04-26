@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGBossChallengeData.proto";
+import "GCGLevelData.proto";
+
+// CmdId: 7023
+// Name: EDEMNOENLJO
+message GCGLevelChallengeNotify {
+    repeated GCGLevelData level_list = 13;
+    repeated uint32 unlock_world_challenge_list = 5;
+    repeated GCGBossChallengeData unlock_boss_challenge_list = 4;
+}
+

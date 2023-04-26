@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AvatarRenameInfo.proto";
+
+// CmdId: 1783
+// Name: AGIMMGIIAEO
+message AvatarRenameInfoNotify {
+    repeated AvatarRenameInfo avatar_rename_list = 14;
+}
+

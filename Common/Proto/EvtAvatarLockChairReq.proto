@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// CmdId: 369
+// Name: AMHAGIPKAMI
+message EvtAvatarLockChairReq {
+    Vector position = 3;
+    uint64 chair_id = 7;
+}
+

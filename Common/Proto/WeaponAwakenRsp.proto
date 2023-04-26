@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 670
+// Name: BODKGGEKPHH
+message WeaponAwakenRsp {
+    map<uint32, uint32> MCLMGECDMHI = 11;
+    int32 retcode = 9;
+    map<uint32, uint32> KKDIFJGIAMN = 14;
+    uint32 target_weapon_awaken_level = 4;
+    uint64 avatar_guid = 7;
+    uint64 target_weapon_guid = 13;
+}
+

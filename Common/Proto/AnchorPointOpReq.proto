@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4299
+// Name: GOHHKGPBDKF
+message AnchorPointOpReq {
+    uint32 anchor_point_op_type = 7;
+    uint32 anchor_point_id = 3;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3338
+// Name: ALONGGGLLHP
+message SceneWeatherForcastReq {
+    uint32 weather_area_id = 2;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 99
+// Name: IEJMFHELPOE
+message ClientReportNotify {
+    string report_value = 8;
+    string report_type = 5;
+}
+

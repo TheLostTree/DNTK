@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 200
+// Name: DLCLAJOMIKL
+message TakePlayerLevelRewardRsp {
+    int32 retcode = 1;
+    uint32 reward_id = 4;
+    uint32 level = 5;
+}
+

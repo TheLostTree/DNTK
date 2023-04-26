@@ -1,0 +1,11 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: KNCIONFEMPE
+message MassiveWaterInfo {
+    int64 id = 1;
+}
+

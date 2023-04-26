@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8596
+// Name: HDGLOCPPIII
+message RogueHealAvatarsRsp {
+    int32 retcode = 6;
+    uint32 cell_id = 2;
+    uint32 dungeon_id = 10;
+}
+

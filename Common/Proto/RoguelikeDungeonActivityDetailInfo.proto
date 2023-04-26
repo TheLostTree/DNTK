@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "RoguelikeShikigamiRecord.proto";
+import "RogueStageInfo.proto";
+
+// Name: JMNNFOLFPPF
+message RoguelikeDungeonActivityDetailInfo {
+    repeated uint32 rune_list = 13;
+    bool is_content_closed = 2;
+    uint32 content_close_time = 1;
+    repeated RogueStageInfo stage_list = 14;
+    repeated RoguelikeShikigamiRecord shikigami_list = 3;
+    repeated uint32 equipped_rune_list = 7;
+}
+

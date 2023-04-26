@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 596
+// Name: BFJDBEKGICD
+message NpcTalkRsp {
+    uint32 entity_id = 5;
+    uint32 cur_talk_id = 3;
+    int32 retcode = 12;
+    uint32 npc_entity_id = 8;
+}
+

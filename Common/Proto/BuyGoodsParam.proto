@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ShopGoods.proto";
+
+// Name: HIDBGEPIKMB
+message BuyGoodsParam {
+    ShopGoods goods = 12;
+    uint32 buy_count = 13;
+}
+

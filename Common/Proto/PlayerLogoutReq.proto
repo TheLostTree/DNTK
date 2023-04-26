@@ -1,0 +1,25 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 116
+// Name: CIJAANKJLEF
+message PlayerLogoutReq {
+    // Name: CEMGHMFDNGO
+    enum Reason {
+        DISCONNECT = 0;
+        CLIENT_REQ = 1;
+        TIMEOUT = 2;
+        ADMIN_REQ = 3;
+        SERVER_CLOSE = 4;
+        GM_CLEAR = 5;
+        PLAYER_TRANSFER = 6;
+        CLIENT_CHECKSUM_INVALID = 7;
+        REASON_MUIP_MOVE_SAVE_WAIT = 8;
+    }
+
+    Reason reason = 4;
+}
+

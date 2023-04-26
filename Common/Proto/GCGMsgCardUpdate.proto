@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGCard.proto";
+
+// Name: JBFOKFOHFML
+message GCGMsgCardUpdate {
+    GCGCard card = 4;
+}
+

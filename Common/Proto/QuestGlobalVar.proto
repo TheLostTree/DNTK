@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: PINICBEFNME
+message QuestGlobalVar {
+    int32 value = 6;
+    uint32 key = 4;
+}
+

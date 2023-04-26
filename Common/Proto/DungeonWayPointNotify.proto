@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 941
+// Name: CPLBEGFODJM
+message DungeonWayPointNotify {
+    repeated uint32 active_way_point_list = 13;
+    bool is_add = 14;
+}
+

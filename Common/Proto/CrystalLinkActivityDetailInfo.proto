@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CrystalLinkLevelInfo.proto";
+
+// Name: DGLJAIHGONO
+message CrystalLinkActivityDetailInfo {
+    uint32 difficulty_id = 6;
+    repeated CrystalLinkLevelInfo level_info_list = 11;
+}
+

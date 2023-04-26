@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2200
+// Name: LKPBOMLAPJJ
+message EffigyChallengeResultNotify {
+    uint32 challenge_max_score = 13;
+    bool is_success = 1;
+    uint32 challenge_id = 3;
+    uint32 challenge_score = 12;
+}
+

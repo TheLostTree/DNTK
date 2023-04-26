@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3007
+// Name: MKDGFMGJAEI
+message ChangeWorldToSingleModeRsp {
+    uint32 quit_mp_valid_time = 1;
+    int32 retcode = 13;
+}
+

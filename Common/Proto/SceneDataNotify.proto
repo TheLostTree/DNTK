@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3320
+// Name: DJGPJPKMBDO
+message SceneDataNotify {
+    repeated string level_config_name_list = 15;
+    repeated uint32 scene_tag_id_list = 10;
+}
+

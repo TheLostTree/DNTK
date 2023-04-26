@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: POIEKHBPNJL
+message SeaLampV3ShadowLevelInfo {
+    uint32 level_id = 12;
+    uint32 min_finish_time = 1;
+    bool is_open = 4;
+}
+

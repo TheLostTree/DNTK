@@ -1,0 +1,23 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "PlayerDieType.proto";
+import "StrengthenPointData.proto";
+
+// CmdId: 959
+// Name: GPMGFINNFNA
+message DungeonPlayerDieNotify {
+    uint32 murderer_entity_id = 6;
+    uint32 dungeon_id = 13;
+    map<uint32, StrengthenPointData> strengthen_point_data_map = 2;
+    uint32 revive_count = 11;
+    uint32 wait_time = 1;
+    PlayerDieType die_type = 4;
+    oneof entity {
+        uint32 monster_id = 14;
+        uint32 gadget_id = 9;
+    }
+}
+

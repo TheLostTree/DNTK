@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4686
+// Name: JLLBLAEKEEF
+message HomeAvatarSummonFinishRsp {
+    int32 retcode = 3;
+    uint32 event_id = 2;
+}
+

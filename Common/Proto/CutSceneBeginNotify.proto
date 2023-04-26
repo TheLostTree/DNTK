@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CutSceneExtraParam.proto";
+
+// CmdId: 261
+// Name: CBPCIBPLELE
+message CutSceneBeginNotify {
+    uint32 cutscene_id = 6;
+    bool is_wait_others = 7;
+    repeated CutSceneExtraParam extra_param_list = 3;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "WindFieldDungeonFailReason.proto";
+
+// Name: NMMOKIPHLHN
+message WindFieldDungeonSettleInfo {
+    repeated uint32 BLIJCEPMNMA = 1;
+    repeated uint32 DMJAIIOOGDA = 15;
+    WindFieldDungeonFailReason fail_reason = 8;
+}
+

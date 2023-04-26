@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: PAJEAPHKFFI
+message MichiaeMatsuriStage {
+    uint32 open_time = 8;
+    uint32 stage_id = 9;
+    bool is_open = 15;
+}
+

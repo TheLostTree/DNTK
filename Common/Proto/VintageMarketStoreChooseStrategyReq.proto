@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "VintageMarketStoreOpInfo.proto";
+
+// CmdId: 23012
+// Name: IPANFPMDLDD
+message VintageMarketStoreChooseStrategyReq {
+    uint32 store_id = 9;
+    repeated uint32 strategy_list = 5;
+    repeated VintageMarketStoreOpInfo store_op_list = 4;
+}
+

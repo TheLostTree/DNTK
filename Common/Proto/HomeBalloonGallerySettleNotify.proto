@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "BalloonGallerySettleInfo.proto";
+
+// CmdId: 4782
+// Name: IJEHPPNGEMD
+message HomeBalloonGallerySettleNotify {
+    uint32 rank = 5;
+    bool is_new_record = 14;
+    BalloonGallerySettleInfo settle_info = 15;
+    uint32 gallery_id = 8;
+}
+

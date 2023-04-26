@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8649
+// Name: AACAGBIGNIK
+message RoguelikeCardGachaNotify {
+    repeated uint32 card_list = 15;
+    bool is_can_refresh = 11;
+}
+

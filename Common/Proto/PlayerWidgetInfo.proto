@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "WidgetSlotData.proto";
+
+// Name: LFEBJABCAOL
+message PlayerWidgetInfo {
+    repeated WidgetSlotData slot_list = 15;
+    uint32 uid = 12;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2107
+// Name: EFCJOBBJGOG
+message SeaLampCoinNotify {
+    uint32 sea_lamp_coin = 11;
+}
+

@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 650
+// Name: APPALGKPALK
+message ReliquaryPromoteRsp {
+    uint64 target_reliquary_guid = 6;
+    uint32 BDLCGNNPHLJ = 9;
+    repeated uint32 FPGACFGKCCK = 10;
+    repeated uint32 PHGKJLPHCBI = 7;
+    int32 retcode = 13;
+    uint32 AKLAKDIDLBE = 14;
+}
+

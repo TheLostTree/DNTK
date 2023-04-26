@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3194
+// Name: KHLHDJADOMN
+message EntityMoveRoomNotify {
+    uint32 entity_id = 6;
+    uint32 dest_room_id = 11;
+}
+

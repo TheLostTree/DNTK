@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ScenePlayBattleSettlePlayerInfo.proto";
+import "ScenePlayBattleSettleRewardInfo.proto";
+
+// CmdId: 4362
+// Name: DAJCIMDMJBD
+message ScenePlayBattleResultNotify {
+    bool is_win = 2;
+    uint32 cost_time = 6;
+    uint32 play_type = 12;
+    repeated ScenePlayBattleSettlePlayerInfo settle_player_info_list = 1;
+    repeated ScenePlayBattleSettleRewardInfo settle_reward_info_list = 10;
+    uint32 play_id = 13;
+}
+

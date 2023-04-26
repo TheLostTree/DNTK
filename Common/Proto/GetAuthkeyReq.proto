@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1472
+// Name: LGMOLHBKPBD
+message GetAuthkeyReq {
+    string auth_appid = 9;
+    uint32 EAFDADOGNIF = 10;
+    uint32 OBPIIAHOMOE = 5;
+}
+

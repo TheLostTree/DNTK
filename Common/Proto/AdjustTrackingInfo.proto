@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: IOEAFDEDGHH
+message AdjustTrackingInfo {
+    string MPAIFPMBIHP = 14;
+    string PPNIOHNCLMI = 9;
+    string OFJCBCLDMGC = 15;
+    string FNHDMMNNDOH = 11;
+    string BJNLPFHJNMB = 12;
+    string ENHBOKJDKDD = 2;
+}
+

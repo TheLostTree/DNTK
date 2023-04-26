@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 672
+// Name: BDMPGIOBPKD
+message UseItemReq {
+    uint64 target_guid = 12;
+    uint64 guid = 11;
+    bool is_enter_mp_dungeon_team = 2;
+    uint32 option_idx = 14;
+    uint32 count = 8;
+}
+

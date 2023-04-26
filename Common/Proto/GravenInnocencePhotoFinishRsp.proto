@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 21852
+// Name: BGCKGNLMJHH
+message GravenInnocencePhotoFinishRsp {
+    uint32 param = 7;
+    int32 retcode = 5;
+    uint32 object_id = 6;
+}
+

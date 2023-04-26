@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AbilityString.proto";
+
+// Name: PDNHFNMLEDA
+message AbilityMetaUpdateBaseReactionDamage {
+    AbilityString ability_name = 14;
+    uint32 source_caster_id = 8;
+    uint32 reaction_type = 12;
+    AbilityString global_value_key = 6;
+}
+

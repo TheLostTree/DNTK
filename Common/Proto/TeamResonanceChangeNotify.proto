@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AvatarTeamResonanceInfo.proto";
+
+// CmdId: 1046
+// Name: IINMOIBOOAB
+message TeamResonanceChangeNotify {
+    repeated AvatarTeamResonanceInfo info_list = 9;
+}
+

@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// CmdId: 4261
+// Name: JLFMKPEFCDL
+message UseWidgetCreateGadgetReq {
+    Vector rot = 6;
+    uint32 material_id = 10;
+    Vector pos = 14;
+}
+

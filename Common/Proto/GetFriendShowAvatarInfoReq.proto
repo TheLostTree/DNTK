@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4015
+// Name: CFPHGJPKKHP
+message GetFriendShowAvatarInfoReq {
+    uint32 uid = 13;
+}
+

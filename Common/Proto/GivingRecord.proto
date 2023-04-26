@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: OBDLPMCIFNG
+message GivingRecord {
+    bool is_gadget_giving = 2;
+    bool is_finished = 13;
+    uint32 last_group_id = 3;
+    map<uint32, uint32> material_cnt_map = 9;
+    uint32 giving_id = 7;
+    uint32 group_id = 8;
+    uint32 config_id = 14;
+}
+

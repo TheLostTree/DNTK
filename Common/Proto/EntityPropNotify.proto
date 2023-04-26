@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "PropValue.proto";
+
+// CmdId: 1290
+// Name: AMLBFLIFIKP
+message EntityPropNotify {
+    map<uint32, PropValue> prop_map = 13;
+    uint32 entity_id = 2;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 433
+// Name: INOINOLAGLI
+message QuestTransmitReq {
+    uint32 point_id = 2;
+    uint32 quest_id = 3;
+}
+

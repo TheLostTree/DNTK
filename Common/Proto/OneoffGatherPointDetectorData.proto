@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: JEFLHCMKIFB
+message OneoffGatherPointDetectorData {
+    Vector hint_center_pos = 4;
+    bool is_hint_valid = 11;
+    uint32 config_id = 10;
+    bool is_all_collected = 5;
+    uint32 hint_radius = 1;
+    uint32 group_id = 7;
+    uint32 material_id = 14;
+}
+

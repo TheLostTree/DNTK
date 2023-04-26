@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1847
+// Name: LJPJJCMCKAB
+message MpPlayPrepareInterruptNotify {
+    uint32 mp_play_id = 11;
+}
+

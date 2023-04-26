@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2180
+// Name: JCAKGKAECOI
+message DragonSpineChapterFinishNotify {
+    uint32 chapter_id = 2;
+    uint32 schedule_id = 6;
+    uint32 weapon_enhance_level = 13;
+}
+

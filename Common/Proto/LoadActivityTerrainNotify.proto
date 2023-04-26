@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2165
+// Name: HGPJLOBEENG
+message LoadActivityTerrainNotify {
+    uint32 activity_id = 13;
+}
+

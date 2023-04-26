@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SumoTeamData.proto";
+
+// CmdId: 8722
+// Name: BFGKDELGOHP
+message SumoSaveTeamRsp {
+    uint32 stage_id = 11;
+    uint32 difficulty_id = 3;
+    repeated SumoTeamData team_list = 12;
+    uint32 activity_id = 13;
+    int32 retcode = 5;
+}
+

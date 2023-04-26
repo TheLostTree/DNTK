@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8312
+// Name: FEFNCKMDIDB
+message DigActivityChangeGadgetStateRsp {
+    uint32 entity_id = 14;
+    int32 retcode = 15;
+}
+

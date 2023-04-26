@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "DungeonEntryCond.proto";
+
+// CmdId: 3261
+// Name: BOIJKMNMIEH
+message GetDungeonEntryExploreConditionRsp {
+    DungeonEntryCond dungeon_entry_cond = 13;
+    int32 retcode = 14;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CustomDungeonBlock.proto";
+
+// Name: EBADLMHHFPL
+message CustomDungeonRoom {
+    uint32 room_id = 4;
+    repeated CustomDungeonBlock block_list = 3;
+}
+

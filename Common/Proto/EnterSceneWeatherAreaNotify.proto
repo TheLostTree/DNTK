@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 273
+// Name: FEPGLJNGIJF
+message EnterSceneWeatherAreaNotify {
+    uint32 weather_gadget_id = 7;
+}
+

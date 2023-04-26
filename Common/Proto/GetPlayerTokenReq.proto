@@ -7,11 +7,11 @@ option java_package = "catgirl.kirara.moe";
 // CmdId: 190
 // Name: MOPMEMHOLIK
 message GetPlayerTokenReq {
-    uint32 KDIHPMJOCPG = 7;
+    uint32 sub_channel_id = 7;
     string client_ip_str = 5;
     uint32 platform_type = 3;
     string account_token = 12;
-    uint32 JGDGPILDCHJ = 576;
+    uint32 lang = 576;
     string online_id = 8;
     string account_uid = 15;
     string KIIHGMPJKDJ = 6;
@@ -23,7 +23,7 @@ message GetPlayerTokenReq {
     bool is_guest = 13;
     string OOABKBBNBKL = 963;
     uint32 key_id = 970;
-    uint32 CIJNPHDIOND = 2;
+    uint32 account_type = 2;
     string country_code = 9;
     uint32 CJHEEAGCFJG = 10;
     string IDMEOEHPCGF = 11;

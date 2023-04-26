@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: PABEKLDMOOJ
+message ExpeditionAssistInfo {
+    uint32 avatar_id = 5;
+    string target_nick_name = 12;
+    uint32 costume_id = 1;
+    uint32 assist_time = 4;
+    string online_id = 13;
+}
+

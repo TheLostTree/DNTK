@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8947
+// Name: PDNJLMHKDIL
+message TryEnterNextRogueDiaryDungeonRsp {
+    int32 retcode = 5;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: NHACGMJJHEJ
+message ChessNormalCardInfo {
+    uint32 card_id = 14;
+    uint32 cost_points = 5;
+    bool is_attach_curse = 12;
+}
+

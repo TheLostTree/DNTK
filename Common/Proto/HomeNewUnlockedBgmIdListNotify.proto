@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4669
+// Name: LBIGJHDPPMH
+message HomeNewUnlockedBgmIdListNotify {
+    repeated uint32 new_unlocked_bgm_id_list = 13;
+}
+

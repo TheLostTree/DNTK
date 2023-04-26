@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: MEDHAFCLIHB
+message SkyCrystalDetectorData {
+    uint32 group_id = 9;
+    uint32 config_id = 13;
+    bool is_hint_valid = 5;
+    Vector hint_center_pos = 4;
+}
+

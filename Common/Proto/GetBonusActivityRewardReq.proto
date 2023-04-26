@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2599
+// Name: CLGOGGKLNHD
+message GetBonusActivityRewardReq {
+    uint32 bonus_activity_id = 13;
+}
+

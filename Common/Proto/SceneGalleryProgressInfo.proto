@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: HFHMFDLAMDL
+message SceneGalleryProgressInfo {
+    uint32 progress = 11;
+    string key = 5;
+    repeated uint32 progress_stage_list = 6;
+    uint32 ui_form = 7;
+}
+

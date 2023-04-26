@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1674
+// Name: LLALFDHLFJG
+message FocusAvatarRsp {
+    int32 retcode = 12;
+    uint64 avatar_guid = 14;
+    bool is_focus = 15;
+}
+

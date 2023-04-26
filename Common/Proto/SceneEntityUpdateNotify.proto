@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SceneEntityInfo.proto";
+import "VisionType.proto";
+
+// CmdId: 3060
+// Name: FPPNHNKFNPK
+message SceneEntityUpdateNotify {
+    uint32 param = 2;
+    repeated SceneEntityInfo entity_list = 15;
+    VisionType appear_type = 10;
+}
+

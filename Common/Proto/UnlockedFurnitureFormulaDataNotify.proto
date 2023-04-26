@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4562
+// Name: BFMLANHPHHK
+message UnlockedFurnitureFormulaDataNotify {
+    repeated uint32 furniture_id_list = 1;
+    bool is_all = 13;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2078
+// Name: APGOHOIGBMF
+message TakeEffigyRewardRsp {
+    int32 retcode = 1;
+    uint32 reward_index = 6;
+}
+

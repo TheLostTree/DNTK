@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: IFJDEEJLEDK
+enum FriendOnlineState {
+    FREIEND_DISCONNECT = 0;
+    FRIEND_ONLINE = 1;
+}
+

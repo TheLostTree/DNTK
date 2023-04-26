@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 24980
+// Name: JEMJHGJJECK
+message VintageCampGroupBundleRegisterNotify {
+    uint32 group_bundle_id = 10;
+}
+

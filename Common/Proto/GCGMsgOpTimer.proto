@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGPhaseType.proto";
+
+// Name: CILAMJDNCIL
+message GCGMsgOpTimer {
+    fixed64 time_stamp = 1;
+    GCGPhaseType phase = 5;
+    fixed64 begin_time = 10;
+    uint32 controller_id = 7;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 24889
+// Name: DCJEGFPGKEF
+message DCJEGFPGKEF {
+    uint32 level_id = 15;
+}
+

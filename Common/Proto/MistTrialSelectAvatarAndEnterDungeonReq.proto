@@ -1,0 +1,23 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8943
+// Name: BBDEIOEDMOF
+message MistTrialSelectAvatarAndEnterDungeonReq {
+    // Name: OKKBHJNLCFB
+    message SelectAvatarIndex {
+        oneof detail {
+            uint32 mist_trial_avatar_id = 6;
+            uint64 formal_avatar_guid = 11;
+        }
+    }
+
+    repeated uint32 select_trial_avatar_id_list = 10;
+    repeated SelectAvatarIndex select_avatar_index_list = 3;
+    uint32 trial_id = 12;
+    uint32 enter_point_id = 1;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4522
+// Name: HACMAFACMPM
+message HomeAvatarTalkReq {
+    uint32 talk_id = 2;
+    uint32 avatar_id = 12;
+}
+

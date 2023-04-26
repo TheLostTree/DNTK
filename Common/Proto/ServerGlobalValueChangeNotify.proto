@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1165
+// Name: PGIFCEKLNPJ
+message ServerGlobalValueChangeNotify {
+    float value = 10;
+    uint32 entity_id = 9;
+    uint32 key_hash = 8;
+}
+

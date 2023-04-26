@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8636
+// Name: MDCEJECJBAC
+message HideAndSeekChooseMapRsp {
+    repeated uint32 map_list = 13;
+    int32 retcode = 10;
+}
+

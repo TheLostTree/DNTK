@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 397
+// Name: PGOGJAJLDBM
+message MonsterAlertChangeNotify {
+    uint32 is_alert = 14;
+    repeated uint32 monster_entity_list = 2;
+    uint32 avatar_entity_id = 3;
+}
+

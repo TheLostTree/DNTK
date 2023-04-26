@@ -1,0 +1,24 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "WidgetCameraInfo.proto";
+import "WidgetCreateLocationInfo.proto";
+import "WidgetCreatorInfo.proto";
+import "WidgetSorushInfo.proto";
+import "WidgetThunderBirdFeatherInfo.proto";
+
+// CmdId: 4273
+// Name: KPHPHAEKPDO
+message QuickUseWidgetReq {
+    bool GPAEJDBAELH = 1846;
+    oneof param {
+        WidgetCreateLocationInfo location_info = 1807;
+        WidgetCameraInfo camera_info = 1828;
+        WidgetCreatorInfo creator_info = 1560;
+        WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 1431;
+        WidgetSorushInfo sorush_info = 1961;
+    }
+}
+

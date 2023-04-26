@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "TowerLevelRecord.proto";
+
+// Name: OBHMBIAPBIK
+message TowerFloorRecord {
+    repeated TowerLevelRecord passed_level_record_list = 5;
+    uint32 floor_id = 15;
+    uint32 floor_star_reward_progress = 14;
+    map<uint32, uint32> passed_level_map = 7;
+}
+

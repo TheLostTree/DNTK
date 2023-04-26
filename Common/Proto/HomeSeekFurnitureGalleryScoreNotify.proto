@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GalleryStopReason.proto";
+import "HomeSeekFurnitureOneRecord.proto";
+
+// CmdId: 4791
+// Name: AILOGCEEAEF
+message HomeSeekFurnitureGalleryScoreNotify {
+    HomeSeekFurnitureOneRecord record = 2;
+    uint32 gallery_id = 15;
+    GalleryStopReason reason = 13;
+}
+

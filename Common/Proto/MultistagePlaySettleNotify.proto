@@ -1,0 +1,21 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "InBattleChessSettleInfo.proto";
+import "InBattleIrodoriChessSettleInfo.proto";
+import "InBattleMechanicusSettleInfo.proto";
+
+// CmdId: 5371
+// Name: GKHKOEMINHA
+message MultistagePlaySettleNotify {
+    uint32 play_index = 3;
+    uint32 group_id = 4;
+    oneof detail {
+        InBattleMechanicusSettleInfo mechanicus_settle_info = 1266;
+        InBattleChessSettleInfo chess_settle_info = 121;
+        InBattleIrodoriChessSettleInfo irodori_chess_settle_info = 671;
+    }
+}
+

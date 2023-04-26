@@ -1,0 +1,20 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MathQuaternion.proto";
+import "ShapeType.proto";
+import "Vector.proto";
+import "Vector3Int.proto";
+
+// Name: NGCBMFFPPBK
+message GMObstacleInfo {
+    ShapeType shape = 2;
+    int64 timestamp = 8;
+    MathQuaternion rotation = 11;
+    Vector center = 1;
+    int32 obstacle_id = 6;
+    Vector3Int extents = 13;
+}
+

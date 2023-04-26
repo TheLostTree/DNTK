@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "EvtBeingHitInfo.proto";
+import "ForwardType.proto";
+
+// CmdId: 354
+// Name: AODDNJBLCKM
+message EvtBeingHitsCombineNotify {
+    ForwardType forward_type = 7;
+    repeated EvtBeingHitInfo evt_being_hit_info_list = 15;
+}
+

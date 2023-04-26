@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SumoDungeonTeam.proto";
+
+// CmdId: 8997
+// Name: LFKKACBLNFF
+message SumoSetNoSwitchPunishTimeNotify {
+    uint32 LCDBHJCBKJG = 13;
+    repeated SumoDungeonTeam dungeon_team_list = 4;
+    uint32 stage_id = 15;
+    uint32 LADPDBLGKLP = 10;
+    uint32 activity_id = 12;
+    uint32 GAILDAHOMAG = 6;
+}
+

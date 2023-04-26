@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5845
+// Name: GMOFHIOFJLN
+message FishChosenNotify {
+    uint32 fish_id = 7;
+}
+

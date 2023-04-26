@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2101
+// Name: MGFOFHBEEIE
+message FlightActivityRestartRsp {
+    uint32 schedule_id = 14;
+    int32 retcode = 7;
+    uint32 group_id = 10;
+}
+

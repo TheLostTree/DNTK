@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MatchType.proto";
+
+// CmdId: 4170
+// Name: JFFMEIKNAAL
+message PlayerConfirmMatchRsp {
+    bool is_agreed = 15;
+    int32 retcode = 7;
+    MatchType match_type = 6;
+    uint32 match_id = 14;
+}
+

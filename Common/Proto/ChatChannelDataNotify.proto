@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ChatChannelInfo.proto";
+
+// CmdId: 4962
+// Name: LNMDKMAKDPA
+message ChatChannelDataNotify {
+    repeated ChatChannelInfo channel_info_list = 15;
+    repeated uint32 channel_list = 5;
+}
+

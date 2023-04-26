@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1728
+// Name: BKHJBJLCGII
+message AvatarChangeAnimHashRsp {
+    int32 retcode = 10;
+    uint64 avatar_guid = 9;
+    uint32 anim_hash = 13;
+}
+

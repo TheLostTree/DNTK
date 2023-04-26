@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "OnlinePlayerInfo.proto";
+
+// CmdId: 4833
+// Name: LDAKAIIPNGI
+message LDAKAIIPNGI {
+    uint32 src_app_id = 7;
+    OnlinePlayerInfo src_player_info = 3;
+}
+

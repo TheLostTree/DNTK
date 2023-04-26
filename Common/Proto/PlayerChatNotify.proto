@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ChatInfo.proto";
+
+// CmdId: 3103
+// Name: AEOICKOILCK
+message PlayerChatNotify {
+    ChatInfo chat_info = 13;
+    uint32 channel_id = 5;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "BalloonPlayerInfo.proto";
+
+// Name: PEKBDJKFBDM
+message SceneGalleryBalloonInfo {
+    map<uint32, BalloonPlayerInfo> scene_player_balloon_info_map = 13;
+    uint32 end_time = 14;
+}
+

@@ -1,0 +1,20 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 899
+// Name: NAJCCPACDGD
+message UpdateAbilityCreatedMovingPlatformNotify {
+    // Name: BEOBGNOIFEM
+    enum OpType {
+        OP_NONE = 0;
+        OP_ACTIVATE = 1;
+        OP_DEACTIVATE = 2;
+    }
+
+    uint32 entity_id = 10;
+    OpType op_type = 6;
+}
+

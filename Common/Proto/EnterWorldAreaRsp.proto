@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 283
+// Name: IIIFOMLDNEC
+message EnterWorldAreaRsp {
+    uint32 area_id = 9;
+    int32 retcode = 12;
+    uint32 area_type = 14;
+}
+

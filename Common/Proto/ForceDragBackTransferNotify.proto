@@ -1,0 +1,11 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3057
+// Name: POINPIFINFH
+message ForceDragBackTransferNotify {
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1489
+// Name: HHLOLKGJCHP
+message ReadMailNotify {
+    repeated uint32 mail_id_list = 9;
+}
+

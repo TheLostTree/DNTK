@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MotionInfo.proto";
+
+// CmdId: 206
+// Name: OPNIBBJGIID
+message EntityForceSyncReq {
+    uint32 room_id = 7;
+    uint32 entity_id = 14;
+    uint32 scene_time = 8;
+    MotionInfo motion_info = 6;
+}
+

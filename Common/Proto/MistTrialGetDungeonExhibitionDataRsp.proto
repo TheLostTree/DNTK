@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8086
+// Name: AOKKFEIGDIC
+message MistTrialGetDungeonExhibitionDataRsp {
+    uint32 trial_id = 2;
+    int32 retcode = 12;
+}
+

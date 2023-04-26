@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ReunionBriefInfo.proto";
+
+// CmdId: 5066
+// Name: HPMHCBAJHGA
+message ReunionBriefInfoRsp {
+    ReunionBriefInfo reunion_brief_info = 2;
+    int32 retcode = 4;
+    bool is_activate = 7;
+}
+

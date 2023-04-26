@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "PlayerDieOption.proto";
+
+// CmdId: 912
+// Name: FKHLCMCPIGC
+message DungeonDieOptionRsp {
+    int32 retcode = 3;
+    uint32 revive_count = 12;
+    PlayerDieOption die_option = 9;
+}
+

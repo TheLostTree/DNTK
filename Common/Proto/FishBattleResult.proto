@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: HJINEIJEJIL
+enum FishBattleResult {
+    FISH_BATTLE_RESULT_NONE = 0;
+    FISH_BATTLE_RESULT_SUCC = 1;
+    FISH_BATTLE_RESULT_FAIL = 2;
+    FISH_BATTLE_RESULT_TIMEOUT = 3;
+    FISH_BATTLE_RESULT_CANCEL = 4;
+    FISH_BATTLE_RESULT_EXIT = 5;
+}
+

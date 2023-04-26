@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HuntingPair.proto";
+import "Vector.proto";
+
+// CmdId: 4336
+// Name: FDIOOFPLJBA
+message HuntingOngoingNotify {
+    bool is_final = 6;
+    uint32 finish_clue_count = 15;
+    bool is_started = 11;
+    Vector next_position = 5;
+    HuntingPair hunting_pair = 2;
+    uint32 fail_time = 10;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1969
+// Name: HJKFPFCKJAO
+message SaveCoopDialogRsp {
+    uint32 NKGPOHKHJAG = 2;
+    int32 retcode = 1;
+    uint32 HCBJHDCMKKN = 13;
+}
+

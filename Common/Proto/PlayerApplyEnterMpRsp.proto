@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1817
+// Name: DCGHCNJEHBH
+message PlayerApplyEnterMpRsp {
+    uint32 param = 4;
+    uint32 target_uid = 2;
+    int32 retcode = 12;
+}
+

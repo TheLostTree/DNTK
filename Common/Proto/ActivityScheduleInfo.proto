@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: GFDPEELJAFP
+message ActivityScheduleInfo {
+    uint32 begin_time = 2;
+    uint32 activity_id = 7;
+    uint32 end_time = 11;
+    uint32 schedule_id = 4;
+    bool is_open = 6;
+}
+

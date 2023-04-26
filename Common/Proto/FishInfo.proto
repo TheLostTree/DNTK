@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: EDIEHBNAAJI
+message FishInfo {
+    uint32 AIJOJFINDOH = 8;
+    uint32 PIHGEIKICJI = 5;
+}
+

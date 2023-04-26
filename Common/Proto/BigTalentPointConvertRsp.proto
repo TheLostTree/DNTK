@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1056
+// Name: HOLIILCCLHP
+message BigTalentPointConvertRsp {
+    int32 retcode = 8;
+    uint64 avatar_guid = 5;
+}
+

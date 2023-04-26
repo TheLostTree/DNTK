@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ActivityWatcherInfo.proto";
+
+// CmdId: 2108
+// Name: MMDEIBDCLBL
+message ActivityUpdateWatcherNotify {
+    ActivityWatcherInfo watcher_info = 7;
+    uint32 activity_id = 11;
+}
+

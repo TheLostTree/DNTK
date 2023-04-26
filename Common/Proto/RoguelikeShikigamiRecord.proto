@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: NLKKLDNECPM
+message RoguelikeShikigamiRecord {
+    uint32 id = 4;
+    uint32 level = 11;
+}
+

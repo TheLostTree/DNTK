@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CodexType.proto";
+
+// CmdId: 4209
+// Name: CAEKJKGCKLD
+message CodexDataUpdateNotify {
+    uint32 id = 13;
+    CodexType type = 6;
+    uint32 weapon_max_promote_level = 10;
+}
+

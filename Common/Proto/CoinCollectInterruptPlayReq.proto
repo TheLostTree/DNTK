@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 20183
+// Name: BBPLDBJJDKK
+message CoinCollectInterruptPlayReq {
+    uint32 gallery_id = 15;
+}
+

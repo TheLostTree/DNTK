@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FurnitureMakeSlot.proto";
+
+// CmdId: 4853
+// Name: BEJNPDHEGDO
+message FurnitureMakeCancelRsp {
+    int32 retcode = 3;
+    uint32 make_id = 5;
+    FurnitureMakeSlot furniture_make_slot = 1;
+}
+

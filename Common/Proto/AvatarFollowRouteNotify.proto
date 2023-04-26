@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Route.proto";
+
+// CmdId: 3343
+// Name: CDBHOOGAMEL
+message AvatarFollowRouteNotify {
+    string client_params = 12;
+    uint32 start_scene_time_ms = 3;
+    uint32 template_id = 7;
+    Route route = 5;
+    uint32 entity_id = 4;
+}
+

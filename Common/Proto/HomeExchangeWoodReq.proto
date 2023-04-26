@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4883
+// Name: JFBCACPLFLB
+message HomeExchangeWoodReq {
+    map<uint32, uint32> material_count_map = 7;
+    uint32 wood_id = 6;
+}
+

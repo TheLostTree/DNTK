@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8579
+// Name: ECJGNLPFACF
+message WinterCampGiveFriendItemRsp {
+    repeated uint32 limit_item_id_list = 9;
+    int32 retcode = 7;
+}
+

@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: DMDNCLBJMGG
+message BrickBreakerPlayerBattleInfo {
+    bool is_ready = 15;
+    repeated uint32 skill_list = 9;
+    uint32 uid = 11;
+    repeated uint32 avatar_id = 12;
+    bool is_changing = 10;
+    repeated uint32 costume_id = 1;
+    string nickname = 5;
+}
+

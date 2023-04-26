@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "LanternRiteFireworksStageInfo.proto";
+
+// Name: CKGPIIMDNMJ
+message LanternRiteFireworksInfo {
+    repeated LanternRiteFireworksStageInfo stage_info_list = 11;
+}
+

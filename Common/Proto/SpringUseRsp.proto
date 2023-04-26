@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1706
+// Name: DEPMHNALOJG
+message SpringUseRsp {
+    int32 retcode = 13;
+    uint64 guid = 10;
+}
+

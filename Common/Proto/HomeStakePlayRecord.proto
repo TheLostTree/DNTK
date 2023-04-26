@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeGroupPlayerInfo.proto";
+
+// Name: HDOAHEOIPFF
+message HomeStakePlayRecord {
+    uint32 timestamp = 11;
+    repeated HomeGroupPlayerInfo engaged_player_info_list = 3;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeAvatarTalkFinishInfo.proto";
+
+// CmdId: 4628
+// Name: HGGGONGOAHF
+message HomeAvatarTalkRsp {
+    int32 retcode = 15;
+    HomeAvatarTalkFinishInfo avatar_talk_info = 8;
+}
+

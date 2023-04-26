@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: NNAODHDGKBH
+message RogueDiaryDungeonRecord {
+    uint32 finish_time = 4;
+    uint32 difficulty = 14;
+    uint32 max_round = 3;
+    bool is_finish = 12;
+}
+

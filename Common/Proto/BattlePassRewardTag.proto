@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "BattlePassUnlockStatus.proto";
+
+// Name: IHONIMHMIGN
+message BattlePassRewardTag {
+    BattlePassUnlockStatus unlock_status = 5;
+    uint32 reward_id = 10;
+    uint32 level = 2;
+}
+

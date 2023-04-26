@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4709
+// Name: JKKONKOOANK
+message TakeFurnitureMakeReq {
+    uint32 index = 5;
+    bool is_fast_finish = 14;
+    uint32 make_id = 3;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MatchPlayerInfo.proto";
+
+// Name: IFJOMPBIBLO
+message GeneralMatchInfo {
+    repeated MatchPlayerInfo player_list = 12;
+    uint32 match_id = 3;
+    uint32 match_param = 15;
+}
+

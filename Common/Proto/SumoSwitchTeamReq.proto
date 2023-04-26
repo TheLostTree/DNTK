@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8324
+// Name: EEBADFBJJMD
+message SumoSwitchTeamReq {
+    uint32 activity_id = 14;
+    uint32 stage_id = 11;
+}
+

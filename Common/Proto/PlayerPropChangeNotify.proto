@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 142
+// Name: AEIAGGMHFIO
+message PlayerPropChangeNotify {
+    uint32 prop_type = 13;
+    uint32 prop_delta = 2;
+}
+

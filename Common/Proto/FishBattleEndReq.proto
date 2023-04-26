@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FishBattleResult.proto";
+
+// CmdId: 5831
+// Name: EGHHKBCHAML
+message FishBattleEndReq {
+    uint32 max_bonus_time = 15;
+    bool is_always_bonus = 2;
+    FishBattleResult battle_result = 12;
+}
+

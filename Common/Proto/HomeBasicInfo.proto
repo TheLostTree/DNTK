@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeLimitedShopInfo.proto";
+
+// Name: NJAMABMAGCC
+message HomeBasicInfo {
+    HomeLimitedShopInfo limited_shop_info = 2;
+    uint64 exp = 11;
+    string owner_nick_name = 9;
+    uint32 OCBCKIIJNFD = 5;
+    uint32 KJEBPOOEKJG = 3;
+    uint32 level = 15;
+    bool is_in_edit_mode = 12;
+    uint32 DHJNNKOAPEA = 1;
+}
+

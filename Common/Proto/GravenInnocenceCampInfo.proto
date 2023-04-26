@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GravenInnocenceCampStageInfo.proto";
+
+// Name: KCFFMHEOAKP
+message GravenInnocenceCampInfo {
+    repeated GravenInnocenceCampStageInfo stage_info_list = 2;
+}
+

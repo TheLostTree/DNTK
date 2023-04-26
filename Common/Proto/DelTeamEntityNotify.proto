@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 340
+// Name: LLAEAGCDEND
+message DelTeamEntityNotify {
+    repeated uint32 del_entity_id_list = 1;
+    uint32 scene_id = 8;
+}
+

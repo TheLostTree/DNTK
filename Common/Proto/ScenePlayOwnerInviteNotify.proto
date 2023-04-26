@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4406
+// Name: MDIJHFEDIGC
+message ScenePlayOwnerInviteNotify {
+    uint32 play_id = 1;
+    bool is_remain_reward = 13;
+    uint32 invite_cd = 15;
+}
+

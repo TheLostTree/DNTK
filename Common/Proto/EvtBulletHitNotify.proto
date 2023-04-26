@@ -1,0 +1,23 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ForwardType.proto";
+import "HitColliderType.proto";
+import "Vector.proto";
+
+// CmdId: 312
+// Name: HGBEDNJLLOD
+message EvtBulletHitNotify {
+    ForwardType forward_type = 9;
+    uint32 CHAAECJCFEO = 11;
+    int32 hit_box_index = 8;
+    uint32 forward_peer = 10;
+    Vector MIACKLDGLNE = 3;
+    HitColliderType hit_collider_type = 14;
+    Vector HMFHFOBAMHL = 15;
+    uint32 entity_id = 2;
+    uint32 NPDKHLDBEBI = 4;
+}
+

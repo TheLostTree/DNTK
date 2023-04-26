@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5542
+// Name: NHJPMAEBGHN
+message GalleryCrystalLinkBuffInfoNotify {
+    bool is_buff_valid = 11;
+    uint32 gallery_id = 12;
+    uint32 buff_id = 10;
+}
+

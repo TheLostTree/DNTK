@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MichiaeMatsuriChallengePositionInfo.proto";
+import "MichiaeMatsuriChestPositionInfo.proto";
+import "MichiaeMatsuriStage.proto";
+
+// Name: HOFHJGEMMKL
+message MichiaeMatsuriActivityDetailInfo {
+    repeated MichiaeMatsuriChestPositionInfo chest_pos_list = 12;
+    repeated uint32 unlocked_crystal_skill_list = 6;
+    repeated MichiaeMatsuriChallengePositionInfo challenge_pos_list = 13;
+    uint32 gain_crystal_exp = 4;
+    repeated MichiaeMatsuriStage stage_list = 14;
+}
+

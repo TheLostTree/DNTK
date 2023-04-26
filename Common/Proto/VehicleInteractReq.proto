@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "VehicleInteractType.proto";
+
+// CmdId: 886
+// Name: HGDEDCKBIIN
+message VehicleInteractReq {
+    bool IOILPCOLCGM = 15;
+    uint32 pos = 12;
+    VehicleInteractType interact_type = 6;
+    uint32 entity_id = 13;
+}
+

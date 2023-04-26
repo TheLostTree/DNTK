@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 223
+// Name: CKMAPHDLBFJ
+message SetSceneWeatherAreaReq {
+    map<uint32, string> weather_value_map = 11;
+    uint32 weather_gadget_id = 15;
+}
+

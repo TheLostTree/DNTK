@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "LunchBoxData.proto";
+
+// CmdId: 4272
+// Name: NEEIJAKMAFF
+message SetUpLunchBoxWidgetReq {
+    LunchBoxData lunch_box_data = 4;
+}
+

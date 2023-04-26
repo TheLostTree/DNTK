@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4490
+// Name: ACCOBPBFHPH
+message HomePreChangeEditModeNotify {
+    bool is_enter_edit_mode = 11;
+}
+

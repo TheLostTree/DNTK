@@ -1,0 +1,28 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGOperationAttack.proto";
+import "GCGOperationOnStageSelect.proto";
+import "GCGOperationPass.proto";
+import "GCGOperationPlayCard.proto";
+import "GCGOperationReboot.proto";
+import "GCGOperationRedraw.proto";
+import "GCGOperationReroll.proto";
+import "GCGOperationSurrender.proto";
+
+// Name: EALFDFCFHPG
+message GCGOperation {
+    oneof op {
+        GCGOperationRedraw op_redraw = 13;
+        GCGOperationOnStageSelect op_select_on_stage = 5;
+        GCGOperationReroll op_reroll = 7;
+        GCGOperationAttack op_attack = 4;
+        GCGOperationPass op_pass = 14;
+        GCGOperationPlayCard op_play_card = 1;
+        GCGOperationReboot op_reboot = 10;
+        GCGOperationSurrender op_surrender = 9;
+    }
+}
+

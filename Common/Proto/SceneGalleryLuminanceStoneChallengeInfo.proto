@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LDODANEMAHI
+message SceneGalleryLuminanceStoneChallengeInfo {
+    uint32 clean_mud_count = 13;
+    uint32 kill_monster_count = 2;
+    uint32 score = 1;
+    uint32 kill_special_monster_count = 8;
+}
+

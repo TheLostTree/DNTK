@@ -1,0 +1,20 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: NBEGCGIOLGP
+message ScenePlayBattleInfo {
+    uint32 state = 9;
+    repeated uint32 progress_stage_list = 2;
+    uint32 mode = 1;
+    uint32 progress = 14;
+    uint32 start_time = 4;
+    uint32 play_id = 11;
+    uint32 duration = 3;
+    uint32 type = 5;
+    uint32 prepare_end_time = 12;
+    uint32 play_type = 8;
+}
+

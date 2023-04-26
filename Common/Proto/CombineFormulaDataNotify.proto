@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 622
+// Name: BKJBIOIIJNB
+message CombineFormulaDataNotify {
+    bool is_locked = 7;
+    uint32 combine_id = 9;
+}
+

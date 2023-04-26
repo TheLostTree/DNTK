@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "TeamChainChooseTeamInfo.proto";
+
+// CmdId: 24527
+// Name: IFLFCDPABPB
+message TeamChainRestartDungeonReq {
+    repeated TeamChainChooseTeamInfo team_info_list = 8;
+}
+

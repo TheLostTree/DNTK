@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "StoreType.proto";
+
+// CmdId: 676
+// Name: JCKKGBHHMKE
+message StoreItemDelNotify {
+    repeated uint64 guid_list = 6;
+    StoreType store_type = 11;
+}
+

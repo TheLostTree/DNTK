@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SegmentInfo.proto";
+
+// CmdId: 42
+// Name: PDFOAPHCLGI
+message CheckSegmentCRCNotify {
+    repeated SegmentInfo info_list = 1;
+}
+

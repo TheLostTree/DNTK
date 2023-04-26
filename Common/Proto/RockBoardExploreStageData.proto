@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: GODKJGMPPNL
+message RockBoardExploreStageData {
+    uint32 open_time = 13;
+    bool is_open = 9;
+    uint32 stage_id = 11;
+    bool is_finish = 1;
+}
+

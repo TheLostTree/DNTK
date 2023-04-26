@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: MILONFPLDDB
+message HomeFurnitureSuiteData {
+    Vector spawn_pos = 2;
+    uint32 guid = 9;
+    uint32 suite_id = 4;
+    bool is_allow_summon = 1;
+    repeated int32 included_furniture_index_list = 11;
+}
+

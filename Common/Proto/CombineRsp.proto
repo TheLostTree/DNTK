@@ -1,0 +1,21 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ItemParam.proto";
+
+// CmdId: 606
+// Name: GFKHDFNBKIC
+message CombineRsp {
+    uint64 avatar_guid = 13;
+    uint32 combine_count = 6;
+    uint32 combine_id = 7;
+    int32 retcode = 2;
+    repeated ItemParam IHDOKECEDDF = 9;
+    repeated ItemParam cost_item_list = 3;
+    repeated ItemParam INKBGEBHDDN = 12;
+    repeated ItemParam OIJHNBLLBGE = 11;
+    repeated ItemParam DIBLNNKANMM = 10;
+}
+

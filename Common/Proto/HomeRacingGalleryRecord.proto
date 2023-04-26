@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeGroupPlayerInfo.proto";
+
+// Name: LJAOMOMCHCJ
+message HomeRacingGalleryRecord {
+    HomeGroupPlayerInfo player_info = 4;
+    uint32 timestamp = 2;
+    uint32 use_time = 7;
+}
+

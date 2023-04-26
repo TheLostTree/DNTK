@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 437
+// Name: CHFGMLFKKAM
+message SubmitInferenceWordRsp {
+    uint32 word_id = 2;
+    uint32 conclusion_id = 12;
+    uint32 page_id = 8;
+    int32 retcode = 15;
+}
+

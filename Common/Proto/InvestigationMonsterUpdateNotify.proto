@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "InvestigationMonster.proto";
+
+// CmdId: 1912
+// Name: NMMIMIJIBKK
+message InvestigationMonsterUpdateNotify {
+    InvestigationMonster investigation_monster = 7;
+}
+

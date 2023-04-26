@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: IGMMKIIKDJK
+message LanternRiteFireworksReformSkillInfo {
+    uint32 FOKOINJOONI = 15;
+    bool is_unlock = 11;
+    uint32 skill_id = 9;
+    uint32 DCFIKGHLPJP = 8;
+}
+

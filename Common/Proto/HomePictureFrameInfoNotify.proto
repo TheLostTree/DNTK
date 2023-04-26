@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomePictureFrameInfo.proto";
+
+// CmdId: 4683
+// Name: BFCFMHNMOPJ
+message HomePictureFrameInfoNotify {
+    repeated HomePictureFrameInfo picture_frame_info_list = 5;
+}
+

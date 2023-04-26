@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: FFNJNOEBCFC
+message AsterProgressDetailInfo {
+    uint32 last_auto_add_time = 9;
+    uint32 count = 6;
+}
+

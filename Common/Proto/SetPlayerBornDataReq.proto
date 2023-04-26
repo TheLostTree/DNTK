@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 175
+// Name: LMJAGHOBMLG
+message SetPlayerBornDataReq {
+    string nick_name = 15;
+    uint32 avatar_id = 2;
+}
+

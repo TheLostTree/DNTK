@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "VintagePresentLevelData.proto";
+
+// Name: LAFPNNGPPME
+message VintagePresentStageData {
+    uint32 stage_id = 12;
+    bool is_open = 11;
+    uint32 open_time = 15;
+    map<uint32, VintagePresentLevelData> present_level_map = 3;
+    bool is_finish = 4;
+}
+

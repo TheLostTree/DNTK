@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ActivityScheduleInfo.proto";
+
+// CmdId: 2020
+// Name: OIIEMAPPMNO
+message ActivityScheduleInfoNotify {
+    uint32 remain_fly_sea_lamp_num = 7;
+    repeated ActivityScheduleInfo activity_schedule_list = 3;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: MOJEBEBKDAF
+message GravenInnocencePhotoObjectInfo {
+    uint32 object_id = 2;
+    uint32 finish_time = 6;
+    uint32 param = 4;
+}
+

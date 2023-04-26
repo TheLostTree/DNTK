@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: KDDEFGEOJJC
+message SorushTrialDetailInfo {
+    repeated uint32 JAMGNDKIEAL = 5;
+    map<uint32, uint32> FFADCNBDFMF = 15;
+    repeated uint32 PEAGPLNPGNE = 7;
+    repeated uint32 EEGMCLFOHCL = 10;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: HMCBPDBJEOM
+message JigsawPictureData {
+    uint32 NJPEANGOAMC = 7;
+    bool is_finished = 10;
+    bool is_open = 12;
+    uint32 ACAPFNOLMKE = 15;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8982
+// Name: GLBPOJCMBPK
+message PhotoActivityClientViewRsp {
+    int32 retcode = 12;
+    uint32 pos_id = 4;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4064
+// Name: PPLMPOEMAAO
+message GetFriendShowNameCardInfoRsp {
+    repeated uint32 show_name_card_id_list = 15;
+    int32 retcode = 9;
+    uint32 uid = 2;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 20841
+// Name: FNDLCLGFFIO
+message LanV3BoatGameTransferFinishNotify {
+    bool is_reenter = 14;
+}
+

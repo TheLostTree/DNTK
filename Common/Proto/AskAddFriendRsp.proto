@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4056
+// Name: HIKJADDBLEJ
+message AskAddFriendRsp {
+    uint32 target_uid = 3;
+    int32 retcode = 13;
+    uint32 param = 15;
+}
+

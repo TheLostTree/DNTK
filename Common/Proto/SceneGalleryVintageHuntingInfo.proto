@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "VintageHuntingFirstStageInfo.proto";
+import "VintageHuntingSecondStageInfo.proto";
+import "VintageHuntingThirdStageInfo.proto";
+
+// Name: OBFDDCOLMPE
+message SceneGalleryVintageHuntingInfo {
+    uint32 stage_id = 6;
+    oneof info {
+        VintageHuntingFirstStageInfo first_stage_info = 12;
+        VintageHuntingSecondStageInfo second_stage_info = 13;
+        VintageHuntingThirdStageInfo third_stage_info = 7;
+    }
+}
+

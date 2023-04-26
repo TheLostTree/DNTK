@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: COHJIIJBAGM
+message FungusPlotStageDetail {
+    bool is_open = 14;
+    uint32 stage_id = 9;
+}
+

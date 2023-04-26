@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2296
+// Name: AGMEBNFLEPJ
+message WatcherChangeNotify {
+    repeated uint32 KINFJNPHEMA = 13;
+    repeated uint32 CGKECCAIIED = 5;
+}
+

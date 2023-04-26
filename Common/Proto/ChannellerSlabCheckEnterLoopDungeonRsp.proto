@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8122
+// Name: JEBDFCABMKE
+message ChannellerSlabCheckEnterLoopDungeonRsp {
+    int32 retcode = 9;
+}
+

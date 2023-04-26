@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: JNENOEAOCLB
+message ElectroherculesBattleLevelInfo {
+    bool is_finish = 4;
+    uint32 min_finish_time = 14;
+    uint32 level_id = 13;
+}
+

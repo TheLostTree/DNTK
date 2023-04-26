@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4205
+// Name: FIONMEBLJNI
+message SetCodexPushtipsReadReq {
+    uint32 NACFJFLGNFH = 8;
+    uint32 AOLDDCCIAHH = 15;
+}
+

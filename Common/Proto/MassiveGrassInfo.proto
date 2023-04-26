@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: OLHOELIKCAG
+message MassiveGrassInfo {
+    uint32 id = 1;
+    Vector center = 2;
+    Vector size = 3;
+}
+

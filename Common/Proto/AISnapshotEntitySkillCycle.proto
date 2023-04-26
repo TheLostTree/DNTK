@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: IBHCDDLNFFL
+message AISnapshotEntitySkillCycle {
+    uint32 skill_id = 9;
+    bool PAOPNMDAOBE = 6;
+    bool KKOCGOBEJOI = 5;
+    bool OEPHKNKELCI = 3;
+    bool DMJJMKFEDGE = 14;
+}
+

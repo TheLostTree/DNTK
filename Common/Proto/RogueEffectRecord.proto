@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: GPCCIKMALLP
+message RogueEffectRecord {
+    uint32 source_id = 7;
+    repeated uint32 extra_param_list = 8;
+    uint32 count = 13;
+    bool is_new = 15;
+}
+

@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// CmdId: 293
+// Name: IGBFEJEONIE
+message PersonalSceneJumpRsp {
+    uint32 dest_scene_id = 13;
+    Vector dest_pos = 4;
+    int32 retcode = 10;
+}
+

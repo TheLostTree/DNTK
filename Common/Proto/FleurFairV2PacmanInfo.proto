@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FleurFairV2StageData.proto";
+
+// Name: CPEBANBOLHC
+message FleurFairV2PacmanInfo {
+    repeated FleurFairV2StageData stage_data_list = 12;
+    uint32 LPIFNMHCPEF = 9;
+}
+

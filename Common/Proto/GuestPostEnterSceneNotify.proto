@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3145
+// Name: LGLKPOAIEOP
+message GuestPostEnterSceneNotify {
+    uint32 uid = 4;
+    uint32 scene_id = 3;
+}
+

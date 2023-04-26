@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FurnitureMakeSlot.proto";
+import "ItemParam.proto";
+
+// CmdId: 4710
+// Name: AIOIBJHEPKI
+message TakeFurnitureMakeRsp {
+    FurnitureMakeSlot furniture_make_slot = 11;
+    uint32 make_id = 7;
+    repeated ItemParam MDJJBOAANKF = 4;
+    int32 retcode = 10;
+    repeated ItemParam BNCLNGJLJIA = 2;
+}
+

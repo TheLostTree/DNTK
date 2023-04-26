@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGDiceSideType.proto";
+
+// CmdId: 7243
+// Name: CJPDFDFACHM
+message CJPDFDFACHM {
+    repeated uint32 ECLJEEFBNJG = 5;
+    repeated GCGDiceSideType dice_side_list = 9;
+}
+

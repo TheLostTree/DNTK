@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4208
+// Name: GEEINFDPFHF
+message QueryCodexMonsterBeKilledNumRsp {
+    repeated uint32 EKCLLDCMJLB = 12;
+    repeated uint32 CJFGLJIGKNL = 7;
+    int32 retcode = 4;
+    repeated uint32 codex_id_list = 15;
+}
+

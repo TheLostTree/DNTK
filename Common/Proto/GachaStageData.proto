@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: ICONCJCFCIG
+message GachaStageData {
+    map<uint32, uint32> target_num_map = 12;
+    uint32 stage_id = 2;
+    bool is_open = 7;
+}
+

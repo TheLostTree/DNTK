@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: MAPAKLCCCEH
+message ExclusiveRuleInfo {
+    repeated uint32 object_id_list = 14;
+    uint32 rule_type = 4;
+}
+

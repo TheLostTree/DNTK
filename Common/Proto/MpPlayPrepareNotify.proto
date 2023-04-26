@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1844
+// Name: HMKBEINOGKB
+message MpPlayPrepareNotify {
+    uint32 mp_play_id = 2;
+    uint32 prepare_end_time = 4;
+}
+

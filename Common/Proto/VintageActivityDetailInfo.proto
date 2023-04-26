@@ -1,0 +1,21 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "VintageBoothUsedItemData.proto";
+import "VintageCampChallengeStageData.proto";
+import "VintageHuntingStageData.proto";
+import "VintageMarketInfo.proto";
+import "VintagePresentStageData.proto";
+
+// Name: KCBPFIEBOOC
+message VintageActivityDetailInfo {
+    VintageBoothUsedItemData booth_data = 4;
+    map<uint32, VintageHuntingStageData> hunting_stage_map = 3;
+    map<uint32, VintageCampChallengeStageData> camp_stage_map = 1;
+    VintageMarketInfo market_info = 5;
+    bool is_content_closed = 15;
+    map<uint32, VintagePresentStageData> present_stage_map = 12;
+}
+

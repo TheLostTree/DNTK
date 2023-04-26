@@ -1,0 +1,20 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ChallengeBrief.proto";
+import "CustomDungeonFinishType.proto";
+
+// Name: KFHEKHMOBEC
+message CustomDungeonResultInfo {
+    bool OBLLPOAMFKN = 1;
+    uint32 got_coin_num = 11;
+    CustomDungeonFinishType finish_type = 5;
+    uint32 time_cost = 8;
+    repeated ChallengeBrief child_challenge_list = 12;
+    bool OONBJGKALAO = 6;
+    uint64 dungeon_guid = 14;
+    bool DEAPGFHKJIJ = 4;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: JFEEEGPDDNC
+message SceneGalleryBulletInfo {
+    uint32 end_time = 1;
+    map<uint32, uint32> hit_count_map = 14;
+}
+

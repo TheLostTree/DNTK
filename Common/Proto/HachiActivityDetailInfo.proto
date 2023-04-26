@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HachiStageInfo.proto";
+
+// Name: JNMCDCPDGAC
+message HachiActivityDetailInfo {
+    map<uint32, HachiStageInfo> stage_map = 14;
+}
+

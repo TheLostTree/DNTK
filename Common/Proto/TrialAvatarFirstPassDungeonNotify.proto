@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2089
+// Name: LJGHKOONHHG
+message TrialAvatarFirstPassDungeonNotify {
+    uint32 trial_avatar_index_id = 5;
+}
+

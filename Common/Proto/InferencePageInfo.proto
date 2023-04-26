@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "InfernceWordInfo.proto";
+
+// Name: FNFOEMFBKFF
+message InferencePageInfo {
+    uint32 page_id = 2;
+    repeated InfernceWordInfo unlock_word_list = 15;
+}
+

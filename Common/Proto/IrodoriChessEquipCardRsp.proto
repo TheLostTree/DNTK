@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8650
+// Name: FEGOKDNDBCO
+message IrodoriChessEquipCardRsp {
+    int32 retcode = 9;
+    bool is_hard_map = 13;
+    uint32 card_id = 6;
+    uint32 level_id = 3;
+}
+

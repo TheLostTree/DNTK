@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "InstableSprayAvatarInfo.proto";
+
+// CmdId: 21466
+// Name: APJFDJLFMOI
+message InstableSprayEnterDungeonReq {
+    uint32 difficulty = 3;
+    repeated InstableSprayAvatarInfo avatar_info_list = 4;
+    uint32 stage_id = 8;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4081
+// Name: CMCLJJPIFEO
+message RemoveBlacklistRsp {
+    uint32 target_uid = 12;
+    int32 retcode = 4;
+}
+

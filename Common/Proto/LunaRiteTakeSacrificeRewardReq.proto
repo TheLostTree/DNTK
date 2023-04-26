@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8853
+// Name: OGAEOJCNIJP
+message LunaRiteTakeSacrificeRewardReq {
+    uint32 area_id = 4;
+    uint32 index = 3;
+}
+

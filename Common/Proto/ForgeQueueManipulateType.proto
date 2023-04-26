@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: EOMPENELAEF
+enum ForgeQueueManipulateType {
+    FORGE_QUEUE_MANIPULATE_TYPE_RECEIVE_OUTPUT = 0;
+    FORGE_QUEUE_MANIPULATE_TYPE_STOP_FORGE = 1;
+}
+

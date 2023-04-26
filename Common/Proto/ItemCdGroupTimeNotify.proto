@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 635
+// Name: IPAGBGMDOJL
+message ItemCdGroupTimeNotify {
+    map<uint32, uint64> item_cd_map = 7;
+}
+

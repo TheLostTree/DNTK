@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: CPFLEKBAPNG
+message FungusTrainingMonsterPreviewDetail {
+    uint32 monster_id = 13;
+    repeated uint32 affix_list = 14;
+    uint32 level = 6;
+}
+

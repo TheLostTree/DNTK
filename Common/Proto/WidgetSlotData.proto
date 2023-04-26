@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "WidgetSlotTag.proto";
+
+// Name: NOABONHBAJJ
+message WidgetSlotData {
+    uint32 material_id = 11;
+    WidgetSlotTag tag = 5;
+    uint32 cd_over_time = 6;
+    bool is_active = 12;
+}
+

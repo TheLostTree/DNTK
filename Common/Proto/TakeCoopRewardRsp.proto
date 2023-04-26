@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1987
+// Name: IHHECPLMBEO
+message TakeCoopRewardRsp {
+    int32 retcode = 13;
+    uint32 reward_config_id = 7;
+}
+

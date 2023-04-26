@@ -1,0 +1,29 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4517
+// Name: ADMHOKGPIHC
+message ADMHOKGPIHC {
+    // Name: MAHLBDMPLJA
+    enum MAHLBDMPLJA {
+        MAHLBDMPLJA_PLAYER_JUDGE = 0;
+        MAHLBDMPLJA_PLAYER_ENTER_OPTION_REFUSE = 1;
+        MAHLBDMPLJA_PLAYER_ENTER_OPTION_DIRECT = 2;
+        MAHLBDMPLJA_SYSTEM_JUDGE = 3;
+        MAHLBDMPLJA_HOST_IN_MATCH = 4;
+        MAHLBDMPLJA_PS_PLAYER_NOT_ACCEPT_OTHERS = 5;
+        MAHLBDMPLJA_OPEN_STATE_NOT_OPEN = 6;
+        MAHLBDMPLJA_HOST_IN_EDIT_MODE = 7;
+        MAHLBDMPLJA_PRIOR_CHECK = 8;
+        MAHLBDMPLJA_PLAYER_OFFLINE = 9;
+    }
+
+    string target_nickname = 7;
+    bool is_agreed = 5;
+    MAHLBDMPLJA reason = 6;
+    uint32 target_uid = 11;
+}
+

@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FleurFairV2MusicGameInfo.proto";
+import "FleurFairV2PacmanInfo.proto";
+import "FleurFairV2PhotoInfo.proto";
+
+// Name: BHFMHLDBBID
+message FleurFairV2DetailInfo {
+    FleurFairV2PhotoInfo photo_info = 9;
+    FleurFairV2PacmanInfo pacman_info = 3;
+    FleurFairV2MusicGameInfo music_game_info = 5;
+}
+

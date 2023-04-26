@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: NFBBOLGMJHK
+message ForgeQueueData {
+    uint32 LFKLAHBIMHG = 5;
+    uint32 ANEHHKAEKNL = 12;
+    uint32 avatar_id = 13;
+    uint32 forge_id = 14;
+    uint32 HANICBEMMJM = 11;
+    uint32 EBFDNIFEKBN = 1;
+    uint32 JHCELCAALGH = 15;
+}
+

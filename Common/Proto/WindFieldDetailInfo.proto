@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "WindFieldStageInfo.proto";
+
+// Name: EMLCEFBODJJ
+message WindFieldDetailInfo {
+    repeated WindFieldStageInfo stage_info_list = 3;
+}
+

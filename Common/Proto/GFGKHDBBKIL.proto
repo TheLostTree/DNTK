@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2916
+// Name: GFGKHDBBKIL
+message GFGKHDBBKIL {
+    int32 retcode = 10;
+    uint32 offering_id = 4;
+}
+

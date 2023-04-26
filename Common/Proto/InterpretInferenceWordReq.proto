@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 445
+// Name: HOHKAJNDCIJ
+message InterpretInferenceWordReq {
+    uint32 word_id = 4;
+    uint32 page_id = 5;
+}
+

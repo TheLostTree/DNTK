@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3978
+// Name: NBHGJELAONN
+message EnterMechanicusDungeonRsp {
+    uint32 wrong_uid = 13;
+    int32 retcode = 8;
+    uint32 difficult_level = 2;
+    uint32 dungeon_id = 7;
+}
+

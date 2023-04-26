@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 24985
+// Name: OLCOENGMPPC
+message OLCOENGMPPC {
+    int32 retcode = 13;
+}
+

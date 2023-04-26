@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: ENLKHNPEPCL
+message BattlePassProduct {
+    string LCLGNDMDBPG = 13;
+    string DEFBKEGPICP = 10;
+    string GLEBBINJLCC = 7;
+}
+

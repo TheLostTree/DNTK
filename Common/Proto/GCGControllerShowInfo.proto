@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ProfilePicture.proto";
+
+// Name: KEPMLHIMBHG
+message GCGControllerShowInfo {
+    uint32 controller_id = 2;
+    string online_id = 6;
+    ProfilePicture profile_picture = 13;
+    string nick_name = 1;
+    string psn_id = 4;
+}
+

@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ChannellerSlabLoopDungeonInfo.proto";
+
+// Name: HLLPCLCADDC
+message ChannellerSlabLoopDungeonStageInfo {
+    uint32 open_time = 4;
+    uint32 last_difficulty_id = 14;
+    bool is_open = 1;
+    repeated ChannellerSlabLoopDungeonInfo dungeon_info_list = 3;
+    repeated uint32 taken_reward_index_list = 7;
+}
+

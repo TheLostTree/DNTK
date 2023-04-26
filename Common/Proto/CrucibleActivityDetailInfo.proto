@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CrucibleBattleUidInfo.proto";
+import "Vector.proto";
+
+// Name: HCEPMHMPEOC
+message CrucibleActivityDetailInfo {
+    uint32 cost_time = 15;
+    uint32 battle_world_level = 12;
+    Vector pos = 2;
+    repeated CrucibleBattleUidInfo uid_info_list = 9;
+}
+

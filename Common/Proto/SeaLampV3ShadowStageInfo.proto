@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SeaLampV3ShadowLevelInfo.proto";
+
+// Name: IACJKAKPGDL
+message SeaLampV3ShadowStageInfo {
+    bool is_open = 1;
+    repeated SeaLampV3ShadowLevelInfo level_info_list = 2;
+    uint32 stage_id = 15;
+}
+

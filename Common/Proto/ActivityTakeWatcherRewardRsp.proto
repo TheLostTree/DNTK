@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2122
+// Name: IIEIAEEFLGL
+message ActivityTakeWatcherRewardRsp {
+    int32 retcode = 9;
+    uint32 activity_id = 7;
+    uint32 watcher_id = 10;
+}
+

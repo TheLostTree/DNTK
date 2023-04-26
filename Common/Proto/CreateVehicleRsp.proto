@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 895
+// Name: LHOBJJPEFGM
+message CreateVehicleRsp {
+    uint32 vehicle_id = 11;
+    uint32 entity_id = 13;
+    int32 retcode = 6;
+}
+

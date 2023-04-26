@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: PNDFBCEFOOA
+enum GCGClientPerformType {
+    GCG_PERFORM_INVALID = 0;
+    GCG_PERFORM_CARD_EXCHANGE = 1;
+    GCG_PERFORM_FIRST_HAND = 2;
+    GCG_PERFORM_REROLL = 3;
+    GCG_PREFORM_COST_REVISE = 4;
+}
+

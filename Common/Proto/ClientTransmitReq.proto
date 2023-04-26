@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "TransmitReason.proto";
+import "Vector.proto";
+
+// CmdId: 228
+// Name: OBPENFHAFGD
+message ClientTransmitReq {
+    Vector pos = 1;
+    uint32 scene_id = 7;
+    TransmitReason reason = 9;
+    Vector rot = 11;
+}
+

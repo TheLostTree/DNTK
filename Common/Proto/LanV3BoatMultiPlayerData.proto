@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: JFJIHFAGDKI
+message LanV3BoatMultiPlayerData {
+    uint32 BGBKKDGAPIM = 11;
+    uint32 uid = 4;
+}
+

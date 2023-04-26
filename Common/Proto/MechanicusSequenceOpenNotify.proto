@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3989
+// Name: AMGLLIPIOLJ
+message MechanicusSequenceOpenNotify {
+    uint32 mechanicus_id = 7;
+    uint32 sequence_id = 4;
+}
+

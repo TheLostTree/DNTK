@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: EKPPHANLAGM
+message BartenderTaskInfo {
+    uint32 id = 14;
+    bool is_finish = 10;
+}
+

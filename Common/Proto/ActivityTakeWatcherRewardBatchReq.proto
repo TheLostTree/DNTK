@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2110
+// Name: GANAMONPBKB
+message ActivityTakeWatcherRewardBatchReq {
+    repeated uint32 watcher_id_list = 1;
+    uint32 activity_id = 2;
+}
+

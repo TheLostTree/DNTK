@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1738
+// Name: GIICPGMGBHC
+message AvatarDieAnimationEndRsp {
+    uint32 skill_id = 8;
+    int32 retcode = 3;
+    uint64 die_guid = 7;
+}
+

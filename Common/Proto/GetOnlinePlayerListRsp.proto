@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "OnlinePlayerInfo.proto";
+
+// CmdId: 92
+// Name: ACBHFLGOADD
+message GetOnlinePlayerListRsp {
+    repeated OnlinePlayerInfo player_info_list = 15;
+    int32 retcode = 4;
+    uint32 param = 10;
+}
+

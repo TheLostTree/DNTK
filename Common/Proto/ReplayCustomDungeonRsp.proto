@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 6240
+// Name: GEJLLHOIIOG
+message ReplayCustomDungeonRsp {
+    int32 retcode = 1;
+}
+

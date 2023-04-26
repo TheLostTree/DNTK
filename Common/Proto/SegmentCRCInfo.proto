@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LCADAJJAJAM
+message SegmentCRCInfo {
+    uint32 module = 14;
+    string crc = 3;
+    int32 retcode = 10;
+    uint32 size = 13;
+    uint32 offset = 8;
+}
+

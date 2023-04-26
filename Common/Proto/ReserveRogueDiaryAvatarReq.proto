@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "RogueDiaryAvatar.proto";
+
+// CmdId: 8990
+// Name: BKOBKABFOLG
+message ReserveRogueDiaryAvatarReq {
+    repeated RogueDiaryAvatar reserve_avatar_list = 14;
+}
+

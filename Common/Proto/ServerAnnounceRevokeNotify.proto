@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2167
+// Name: PIFPBALEJLO
+message ServerAnnounceRevokeNotify {
+    repeated uint32 config_id_list = 8;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4611
+// Name: NCEADPGPAAD
+message JoinHomeWorldFailNotify {
+    uint32 target_uid = 15;
+    int32 retcode = 14;
+}
+

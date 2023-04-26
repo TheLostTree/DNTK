@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AbilityInvokeEntry.proto";
+
+// CmdId: 1178
+// Name: DCPFIKALCJL
+message ClientAbilityChangeNotify {
+    uint32 entity_id = 15;
+    repeated AbilityInvokeEntry invokes = 14;
+    bool is_init_hash = 4;
+}
+

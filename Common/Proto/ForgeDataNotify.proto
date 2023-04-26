@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ForgeQueueData.proto";
+
+// CmdId: 693
+// Name: KIDBDAJPICA
+message ForgeDataNotify {
+    repeated uint32 forge_id_list = 5;
+    uint32 max_queue_num = 10;
+    map<uint32, ForgeQueueData> forge_queue_map = 14;
+}
+

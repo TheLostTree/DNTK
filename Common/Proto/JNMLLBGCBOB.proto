@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CKMJBOGJFMB.proto";
+
+// Name: JNMLLBGCBOB
+message JNMLLBGCBOB {
+    repeated CKMJBOGJFMB level_info_list = 4;
+}
+

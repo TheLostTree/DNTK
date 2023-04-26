@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8283
+// Name: BBNHHOBEHIN
+message ChannellerSlabLoopDungeonSelectConditionRsp {
+    uint32 dungeon_index = 7;
+    uint32 difficulty_id = 1;
+    repeated uint32 condition_id_list = 2;
+    int32 retcode = 3;
+}
+

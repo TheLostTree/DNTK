@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ActivityRecvGiftData.proto";
+
+// CmdId: 8806
+// Name: CKOMFPDNHBN
+message ActivityGetRecvGiftListRsp {
+    int32 retcode = 1;
+    repeated ActivityRecvGiftData recv_gift_list = 4;
+    uint32 schedule_id = 13;
+}
+

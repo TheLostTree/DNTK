@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SummerTimeV2BoatGallerySettleInfo.proto";
+
+// CmdId: 8514
+// Name: DIHNGAOLEIB
+message SummerTimeV2BoatSettleNotify {
+    uint32 gallery_id = 14;
+    SummerTimeV2BoatGallerySettleInfo settle_info = 4;
+    uint32 stage_id = 1;
+    bool is_new_record = 7;
+}
+

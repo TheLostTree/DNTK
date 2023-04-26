@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MailData.proto";
+
+// CmdId: 1478
+// Name: LBGKJBDFGKP
+message GetAllMailRsp {
+    bool is_collected = 4;
+    repeated MailData mail_list = 6;
+    bool is_truncated = 10;
+    int32 retcode = 7;
+}
+

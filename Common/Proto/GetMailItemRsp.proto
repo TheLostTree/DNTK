@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "EquipParam.proto";
+
+// CmdId: 1416
+// Name: HJJCDLCPACH
+message GetMailItemRsp {
+    repeated EquipParam item_list = 5;
+    repeated uint32 mail_id_list = 2;
+    int32 retcode = 3;
+}
+

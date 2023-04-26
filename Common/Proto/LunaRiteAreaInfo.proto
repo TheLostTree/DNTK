@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "LunaRiteHintStatusType.proto";
+
+// Name: KGIAEDGPNBH
+message LunaRiteAreaInfo {
+    uint32 area_id = 14;
+    repeated uint32 sacrifice_list = 4;
+    LunaRiteHintStatusType hint_status = 1;
+    repeated uint32 sacrifice_reward_list = 13;
+    uint32 challenge_index = 15;
+}
+

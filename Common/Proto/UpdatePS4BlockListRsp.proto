@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4043
+// Name: DONBHCNMFJN
+message UpdatePS4BlockListRsp {
+    int32 retcode = 4;
+}
+

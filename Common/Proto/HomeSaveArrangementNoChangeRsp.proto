@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4887
+// Name: IPHKIKKEHJM
+message HomeSaveArrangementNoChangeRsp {
+    uint32 scene_id = 10;
+    int32 retcode = 1;
+}
+

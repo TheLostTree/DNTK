@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: NHJBKINAHEH
+message EffigyDailyInfo {
+    uint32 challenge_max_score = 11;
+    uint32 EJIHDCNMFEE = 10;
+    uint32 begin_time = 1;
+    uint32 day_index = 4;
+    bool is_first_pass_reward_taken = 3;
+    uint32 challenge_id = 9;
+    uint32 BHJHCPLKIMJ = 5;
+}
+

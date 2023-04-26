@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 20761
+// Name: BFLBHJDMNIK
+message EffigyChallengeV2ChooseSkillReq {
+    uint32 level_id = 5;
+    uint32 challenge_mode_skill_no = 1;
+}
+

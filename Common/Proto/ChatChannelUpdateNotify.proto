@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ChatChannelInfo.proto";
+
+// CmdId: 5028
+// Name: LIEEOGAEGEA
+message ChatChannelUpdateNotify {
+    bool is_create = 10;
+    uint32 channel_id = 14;
+    ChatChannelInfo channel_info = 2;
+}
+

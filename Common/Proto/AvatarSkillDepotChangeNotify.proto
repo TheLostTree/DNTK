@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1076
+// Name: ABCMGIEMGEP
+message AvatarSkillDepotChangeNotify {
+    uint64 avatar_guid = 14;
+    repeated uint32 talent_id_list = 9;
+    repeated uint32 proud_skill_list = 11;
+    uint32 core_proud_skill_level = 5;
+    map<uint32, uint32> proud_skill_extra_level_map = 1;
+    map<uint32, uint32> skill_level_map = 2;
+    uint32 skill_depot_id = 6;
+    uint32 entity_id = 15;
+}
+

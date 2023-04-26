@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2055
+// Name: FLKCCEBGKDA
+message FleurFairMusicGameSettleReq {
+    uint32 music_basic_id = 8;
+    uint32 correct_hit = 1;
+    uint32 combo = 6;
+    uint32 score = 2;
+}
+

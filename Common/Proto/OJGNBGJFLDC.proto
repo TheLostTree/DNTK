@@ -1,0 +1,23 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGGameBusinessType.proto";
+import "GCGPlayerBriefData.proto";
+import "Uint32Pair.proto";
+
+// Name: OJGNBGJFLDC
+message OJGNBGJFLDC {
+    bool is_invalid = 8;
+    uint32 controller_id = 3;
+    uint32 game_id = 11;
+    uint32 win_controller_id = 9;
+    fixed32 expire_time = 14;
+    GCGGameBusinessType business_type = 2;
+    repeated GCGPlayerBriefData player_brief_list = 7;
+    uint32 id = 4;
+    fixed32 time_stamp = 10;
+    repeated Uint32Pair CEEKAANHKID = 12;
+}
+

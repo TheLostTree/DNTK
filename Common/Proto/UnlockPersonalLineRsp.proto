@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 428
+// Name: NAMKFIIDGHA
+message UnlockPersonalLineRsp {
+    uint32 personal_line_id = 8;
+    int32 retcode = 13;
+    oneof param {
+        uint32 level = 3;
+        uint32 chapter_id = 2;
+    }
+}
+

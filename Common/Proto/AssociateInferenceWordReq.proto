@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 464
+// Name: LPENNMHPHGO
+message AssociateInferenceWordReq {
+    uint32 BHNIGBDOGPG = 2;
+    uint32 page_id = 13;
+    uint32 FDBFNNDGPBB = 4;
+}
+

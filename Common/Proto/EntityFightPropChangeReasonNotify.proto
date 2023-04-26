@@ -1,0 +1,21 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ChangeEnergyReason.proto";
+import "ChangHpReason.proto";
+import "PropChangeReason.proto";
+
+// CmdId: 1241
+// Name: CFFMDGNCJDD
+message EntityFightPropChangeReasonNotify {
+    ChangeEnergyReason change_energy_reson = 10;
+    repeated uint32 param_list = 5;
+    float prop_delta = 4;
+    ChangHpReason change_hp_reason = 7;
+    PropChangeReason reason = 11;
+    uint32 entity_id = 12;
+    uint32 prop_type = 1;
+}
+

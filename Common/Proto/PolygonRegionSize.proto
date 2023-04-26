@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "VectorPlane.proto";
+
+// Name: LJEKGNLHFBO
+message PolygonRegionSize {
+    float height = 7;
+    repeated VectorPlane point_list = 4;
+}
+

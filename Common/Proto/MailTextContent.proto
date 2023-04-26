@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: JLNOLCOKGJD
+message MailTextContent {
+    string title = 1;
+    string content = 2;
+    string sender = 3;
+}
+

@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomePlantFieldStatus.proto";
+
+// Name: BIHOOGKDIGP
+message HomePlantSubFieldData {
+    HomePlantFieldStatus field_status = 14;
+    uint32 LLGHDIMCDAG = 11;
+    repeated uint32 entity_id_list = 7;
+    fixed32 end_time = 6;
+    uint32 MAIEPKDDLJF = 13;
+}
+

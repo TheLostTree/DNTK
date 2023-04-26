@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1976
+// Name: FAPCCOFIPHK
+message FinishMainCoopRsp {
+    uint32 id = 9;
+    uint32 ending_save_point_id = 7;
+    int32 retcode = 10;
+}
+

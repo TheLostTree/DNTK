@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LODHKCAGNKL
+message IrodoriChessMonsterInfo {
+    uint32 monster_id = 7;
+    uint32 level = 2;
+    uint32 grant_points = 8;
+    repeated uint32 affix_list = 3;
+}
+

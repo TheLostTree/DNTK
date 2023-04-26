@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 23878
+// Name: IGIIFOABMFE
+message CharAmusementSettleNotify {
+    bool is_new_record = 2;
+    uint32 finish_time = 9;
+    bool is_succ = 13;
+}
+

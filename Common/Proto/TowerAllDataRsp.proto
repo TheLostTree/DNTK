@@ -1,0 +1,31 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "TowerCurLevelRecord.proto";
+import "TowerFloorRecord.proto";
+import "TowerMonthlyBrief.proto";
+
+// CmdId: 2492
+// Name: MPFPLNBLIKB
+message TowerAllDataRsp {
+    uint32 DPKOCIDIHEI = 10;
+    bool is_finished_entrance_floor = 4;
+    map<uint32, uint32> OAFKGDGFFEO = 1;
+    uint32 AJKNPOGBLDG = 6;
+    bool is_first_interact = 11;
+    uint32 EDGJPPKNHJE = 5;
+    int32 retcode = 13;
+    uint32 PHCNCLHJFBM = 8;
+    uint32 KPJMJMPPPGK = 12;
+    uint32 NKMMGNAGOOA = 15;
+    TowerMonthlyBrief last_schedule_monthly_brief = 1890;
+    repeated TowerFloorRecord tower_floor_record_list = 2;
+    TowerMonthlyBrief monthly_brief = 7;
+    map<uint32, uint32> OJGBCIONMOL = 3;
+    uint32 GMMJNDFMHAM = 9;
+    uint32 MDANKJCGMIN = 1783;
+    TowerCurLevelRecord cur_level_record = 14;
+}
+

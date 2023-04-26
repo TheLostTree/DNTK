@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 22017
+// Name: AKIFJCCDNEM
+message AKIFJCCDNEM {
+    uint32 cost = 2;
+    bool is_new_record = 1;
+    uint32 level_id = 6;
+    uint32 NCGGLBKNEJD = 13;
+    uint32 BFCNINBLMEJ = 14;
+}
+

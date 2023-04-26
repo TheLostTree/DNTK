@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AvatarExpeditionInfo.proto";
+
+// CmdId: 1768
+// Name: OGDFANFAIDP
+message AvatarExpeditionStartRsp {
+    map<uint64, AvatarExpeditionInfo> expedition_info_map = 15;
+    int32 retcode = 1;
+}
+

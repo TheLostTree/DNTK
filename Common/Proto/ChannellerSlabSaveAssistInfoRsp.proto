@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ChannellerSlabAssistInfo.proto";
+
+// CmdId: 8537
+// Name: LAMLGINPBCI
+message ChannellerSlabSaveAssistInfoRsp {
+    int32 retcode = 6;
+    repeated ChannellerSlabAssistInfo assist_info_list = 13;
+}
+

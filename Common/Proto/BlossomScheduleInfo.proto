@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: CJIFKICMNGA
+message BlossomScheduleInfo {
+    uint32 circle_camp_id = 11;
+    uint32 progress = 5;
+    uint32 round = 13;
+    uint32 finish_progress = 9;
+    uint32 state = 12;
+    uint32 refresh_id = 4;
+}
+

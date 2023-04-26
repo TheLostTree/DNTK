@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: JCOOOHKFJDC
+message SceneGalleryFlowerInfo {
+    uint32 end_time = 14;
+    uint32 target_score = 15;
+    uint32 cur_score = 7;
+}
+

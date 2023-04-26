@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5709
+// Name: DEIEAFAHEDG
+message NormalUidOpNotify {
+    uint32 param_index = 6;
+    repeated uint32 param_uid_list = 10;
+    repeated uint32 param_list = 2;
+    uint32 duration = 7;
+}
+

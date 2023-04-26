@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 7007
+// Name: MKPDDCLLPOF
+message GCGDSChangeDeckNameReq {
+    string name = 12;
+    uint32 deck_id = 11;
+    bool OKPBIBHGKEJ = 2;
+}
+

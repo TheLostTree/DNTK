@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: KBMBFAGBEII
+enum RogueCellState {
+    ROGUE_CELL_NONE = 0;
+    ROGUE_CELL_BATTLE = 1;
+    ROGUE_CELL_SUCCESS = 2;
+    ROGUE_CELL_FINISH = 3;
+    ROGUE_CELL_TAKEN_CHEST = 4;
+}
+

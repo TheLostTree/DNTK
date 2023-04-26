@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3207
+// Name: HDJGNGLPHHO
+message LuaEnvironmentEffectNotify {
+    uint32 type = 4;
+    repeated float float_param_list = 7;
+    repeated int32 int_param_list = 3;
+    string effect_alias = 5;
+}
+

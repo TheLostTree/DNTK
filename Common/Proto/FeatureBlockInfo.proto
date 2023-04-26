@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: PCEIONKOFAD
+message FeatureBlockInfo {
+    uint32 feature_type = 1;
+    uint32 end_time = 2;
+}
+

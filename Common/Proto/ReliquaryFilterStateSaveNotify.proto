@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 653
+// Name: GMNMJNNKPMO
+message ReliquaryFilterStateSaveNotify {
+    map<uint32, uint32> reliquary_filter_state_map = 6;
+}
+

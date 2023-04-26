@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeGroupRecord.proto";
+
+// CmdId: 4594
+// Name: FNPPMBFAEJP
+message HomeGetGroupRecordRsp {
+    HomeGroupRecord group_record = 3;
+    int32 retcode = 6;
+    uint32 record_type = 2;
+}
+

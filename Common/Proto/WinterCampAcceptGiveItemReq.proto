@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8875
+// Name: BLFOENGGJAK
+message WinterCampAcceptGiveItemReq {
+    uint32 uid = 1;
+}
+

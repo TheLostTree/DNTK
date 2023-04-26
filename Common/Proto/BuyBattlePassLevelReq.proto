@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2624
+// Name: KABEBBFHLDC
+message BuyBattlePassLevelReq {
+    uint32 buy_level = 12;
+}
+

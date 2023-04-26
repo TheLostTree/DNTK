@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2125
+// Name: KGKOFKIOHBH
+message StartArenaChallengeLevelReq {
+    uint32 FCLFLMPGIKN = 9;
+    uint32 gadget_entity_id = 5;
+    uint32 GELFIDPMHLJ = 13;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: OJPLFMHBHHC
+message GachaUpInfo {
+    uint32 item_parent_type = 8;
+    repeated uint32 item_id_list = 9;
+}
+

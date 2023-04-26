@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "TreasureMapDetectorData.proto";
+
+// CmdId: 4262
+// Name: KIJGGFINIBP
+message TreasureMapDetectorDataNotify {
+    TreasureMapDetectorData data = 14;
+}
+

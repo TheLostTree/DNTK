@@ -1,0 +1,23 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CoinCollectTeamInfoData.proto";
+
+// Name: JNDPIICGKPI
+message CoinCollectLevelData {
+    uint32 NKDIAHFFCIG = 14;
+    uint32 NJHLNPIHHNO = 9;
+    repeated CoinCollectTeamInfoData double_best_team_info_list = 12;
+    uint32 FNKMLBJPMOK = 5;
+    bool HFHAHHODINP = 3;
+    CoinCollectTeamInfoData single_best_team_info = 4;
+    bool HLDOLEELKOK = 7;
+    bool is_level_open = 15;
+    uint32 OMIILLBKHFH = 11;
+    uint32 level_id = 10;
+    uint32 MIBBPBCIIIJ = 8;
+    bool CBBHLOABNLE = 6;
+}
+

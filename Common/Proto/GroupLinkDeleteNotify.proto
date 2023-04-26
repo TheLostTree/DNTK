@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5767
+// Name: ONDIOIKGEPL
+message GroupLinkDeleteNotify {
+    uint32 bundle_id = 14;
+}
+

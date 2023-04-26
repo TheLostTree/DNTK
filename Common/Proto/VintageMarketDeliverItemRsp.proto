@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 22707
+// Name: BKAMPLBFEJC
+message VintageMarketDeliverItemRsp {
+    uint32 trader_id = 6;
+    int32 retcode = 9;
+}
+

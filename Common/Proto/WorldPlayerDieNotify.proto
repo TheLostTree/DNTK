@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "PlayerDieType.proto";
+
+// CmdId: 279
+// Name: GKOJHPIPBHO
+message WorldPlayerDieNotify {
+    PlayerDieType die_type = 15;
+    uint32 murderer_entity_id = 10;
+    oneof entity {
+        uint32 monster_id = 2;
+        uint32 gadget_id = 7;
+    }
+}
+

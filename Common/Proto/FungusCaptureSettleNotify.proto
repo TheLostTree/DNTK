@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5570
+// Name: JIALODJKPJP
+message FungusCaptureSettleNotify {
+    bool is_success = 1;
+}
+

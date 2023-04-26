@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ChessMonsterInfo.proto";
+
+// Name: NBGGEIGICAF
+message ChessEntranceInfo {
+    uint32 entrance_index = 15;
+    uint32 entrance_point_id = 6;
+    repeated ChessMonsterInfo monster_info_list = 7;
+}
+

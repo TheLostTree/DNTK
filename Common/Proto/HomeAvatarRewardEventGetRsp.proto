@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ItemParam.proto";
+
+// CmdId: 4565
+// Name: GKMMANJBFDO
+message HomeAvatarRewardEventGetRsp {
+    int32 retcode = 7;
+    uint32 event_id = 1;
+    repeated ItemParam item_list = 2;
+}
+

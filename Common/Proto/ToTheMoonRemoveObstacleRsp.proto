@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "DynamicNodes.proto";
+
+// CmdId: 6192
+// Name: PLFOMMBGEIF
+message ToTheMoonRemoveObstacleRsp {
+    int32 retcode = 10;
+    DynamicNodes dynamic_nodes = 12;
+    int32 query_id = 4;
+}
+

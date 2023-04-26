@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: BADIFJMPNAG
+message CityReputationExploreInfo {
+    uint32 explore_percent = 13;
+    bool is_open = 15;
+    repeated uint32 taken_explore_reward_list = 11;
+}
+

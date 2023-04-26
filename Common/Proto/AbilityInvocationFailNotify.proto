@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AbilityInvokeEntry.proto";
+
+// CmdId: 1116
+// Name: BAKKCODKNDD
+message AbilityInvocationFailNotify {
+    string reason = 7;
+    uint32 entity_id = 9;
+    AbilityInvokeEntry invoke = 12;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: AGCCGMMBBBL
+message GCGLevelData {
+    uint32 level_id = 3;
+    repeated uint32 finished_challenge_id_list = 9;
+}
+

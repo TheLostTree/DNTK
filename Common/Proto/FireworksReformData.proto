@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FireworksReformParam.proto";
+
+// Name: PFNLMPFONPN
+message FireworksReformData {
+    uint32 id = 8;
+    repeated FireworksReformParam reform_param_list = 4;
+}
+

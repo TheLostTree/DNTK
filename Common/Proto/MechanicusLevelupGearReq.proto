@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3992
+// Name: ONLHKPHEIHA
+message MechanicusLevelupGearReq {
+    uint32 gear_id = 10;
+    uint32 mechanicus_id = 5;
+}
+

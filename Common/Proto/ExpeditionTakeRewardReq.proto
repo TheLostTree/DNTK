@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2199
+// Name: AEABBBBPHPN
+message ExpeditionTakeRewardReq {
+    uint32 path_id = 8;
+}
+

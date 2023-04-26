@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AranaraCollectionSuite.proto";
+
+// CmdId: 6359
+// Name: FMOMGOBBJAJ
+message AranaraCollectionDataNotify {
+    repeated AranaraCollectionSuite collection_suite_list = 10;
+}
+

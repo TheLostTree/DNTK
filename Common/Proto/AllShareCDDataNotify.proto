@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ShareCDInfo.proto";
+
+// CmdId: 9090
+// Name: HMKHCMNELAL
+message AllShareCDDataNotify {
+    map<uint32, ShareCDInfo> share_cd_info_map = 15;
+}
+

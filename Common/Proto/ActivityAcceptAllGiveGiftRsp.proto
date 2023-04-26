@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ActivityAcceptGiftResultInfo.proto";
+
+// CmdId: 8004
+// Name: IMGFKJFHKFN
+message ActivityAcceptAllGiveGiftRsp {
+    uint32 schedule_id = 6;
+    repeated ActivityAcceptGiftResultInfo accept_gift_result_info_list = 1;
+    int32 retcode = 9;
+}
+

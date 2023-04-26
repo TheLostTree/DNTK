@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "RegionSimpleInfo.proto";
+
+// Name: BHOFPAFHBIE
+message QueryRegionListHttpRsp {
+    int32 retcode = 1;
+    repeated RegionSimpleInfo region_list = 2;
+    bytes client_secret_key = 5;
+    bytes client_custom_config_encrypted = 6;
+    bool enable_login_pc = 7;
+}
+

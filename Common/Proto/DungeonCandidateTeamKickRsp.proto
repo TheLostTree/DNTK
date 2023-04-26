@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 906
+// Name: LHOODIGKDCF
+message DungeonCandidateTeamKickRsp {
+    int32 retcode = 6;
+}
+

@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8846
+// Name: EBEBCGBHJKH
+message BartenderStartLevelRsp {
+    uint32 time = 12;
+    int32 retcode = 7;
+    uint32 level_id = 13;
+    repeated uint32 order_list = 11;
+}
+

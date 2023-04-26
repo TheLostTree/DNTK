@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1850
+// Name: HPMAFEGNKGP
+message MpPlayOwnerCheckReq {
+    uint32 mp_play_id = 3;
+    bool is_skip_match = 11;
+}
+

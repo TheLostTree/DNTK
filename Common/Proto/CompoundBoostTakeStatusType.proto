@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: BCHLHMNBPCI
+enum CompoundBoostTakeStatusType {
+    COMPOUND_BOOST_TAKE_STATUS_NONE = 0;
+    COMPOUND_BOOST_TAKE_STATUS_BOOST_ONLY = 1;
+    COMPOUND_BOOST_TAKE_STATUS_BOOST_AND_TAKE = 2;
+    COMPOUND_BOOST_TAKE_STATUS_BAG_FULL = 3;
+}
+

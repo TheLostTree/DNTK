@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HitTreeInfo.proto";
+
+// CmdId: 3246
+// Name: PKBIBIIEKBM
+message WidgetQuickHitTreeReq {
+    repeated HitTreeInfo hit_tree_info_list = 7;
+}
+

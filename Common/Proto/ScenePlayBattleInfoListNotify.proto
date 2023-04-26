@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ScenePlayBattleInfo.proto";
+
+// CmdId: 4449
+// Name: AEGNIMMJCEI
+message ScenePlayBattleInfoListNotify {
+    repeated ScenePlayBattleInfo battle_info_list = 11;
+}
+

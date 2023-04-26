@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AvatarExpeditionInfo.proto";
+import "ItemParam.proto";
+
+// CmdId: 1623
+// Name: AAHBAHOLAEF
+message AvatarExpeditionGetRewardRsp {
+    map<uint64, AvatarExpeditionInfo> expedition_info_map = 5;
+    repeated ItemParam item_list = 11;
+    repeated ItemParam extra_item_list = 9;
+    int32 retcode = 4;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LBCHICGPEKA
+message SceneGallerySumoInfo {
+    uint32 EEPIFMDOOHM = 11;
+    uint32 score = 2;
+    uint32 KFACNCAIMAM = 12;
+}
+

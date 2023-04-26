@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SalvageBundleChallengeInfo.proto";
+import "SalvageScoreChallengeInfo.proto";
+
+// Name: NINBHPBDBNP
+message SalvageChallengeInfo {
+    uint32 challenge_type = 1;
+    bool is_unlock = 11;
+    oneof challenge_detail {
+        SalvageBundleChallengeInfo bundle_info = 4;
+        SalvageScoreChallengeInfo score_challenge_info = 5;
+        uint32 boss_challenge_id = 6;
+    }
+}
+

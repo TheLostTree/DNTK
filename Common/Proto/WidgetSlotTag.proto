@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: PKGFJDKCLNB
+enum WidgetSlotTag {
+    WIDGET_SLOT_QUICK_USE = 0;
+    WIDGET_SLOT_ATTACH_AVATAR = 1;
+}
+

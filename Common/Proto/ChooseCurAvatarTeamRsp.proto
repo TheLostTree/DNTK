@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1791
+// Name: FKFJKOEDCHL
+message ChooseCurAvatarTeamRsp {
+    uint32 cur_team_id = 3;
+    int32 retcode = 15;
+}
+

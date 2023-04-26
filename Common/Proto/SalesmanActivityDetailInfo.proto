@@ -1,0 +1,21 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SalesmanStatusType.proto";
+
+// Name: BHDNEKJAHIB
+message SalesmanActivityDetailInfo {
+    uint32 GDAEGLIFGAN = 3;
+    bool MCNJKPCOJFE = 12;
+    uint32 PDIIBHEPHAF = 6;
+    SalesmanStatusType status = 11;
+    uint32 day_reward_id = 10;
+    uint32 day_index = 14;
+    uint32 GMLNJIFOGME = 4;
+    uint32 EMPKGACAAOK = 2;
+    bool OHEICLDPHBF = 9;
+    map<uint32, uint32> selected_reward_id_map = 8;
+}
+

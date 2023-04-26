@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3333
+// Name: NEIGIGODCNL
+message ShowTemplateReminderNotify {
+    uint32 template_reminder_id = 7;
+    bool JOIAOAOPGFI = 5;
+    bool MLFFFPALACK = 13;
+    repeated uint32 param_uid_list = 11;
+    repeated int32 param_list = 6;
+}
+

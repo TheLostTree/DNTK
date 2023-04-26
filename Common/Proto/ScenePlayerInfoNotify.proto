@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ScenePlayerInfo.proto";
+
+// CmdId: 218
+// Name: LOJLNEMABDP
+message ScenePlayerInfoNotify {
+    repeated ScenePlayerInfo player_info_list = 9;
+}
+

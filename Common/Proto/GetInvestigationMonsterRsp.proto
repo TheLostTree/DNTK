@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "InvestigationMonster.proto";
+
+// CmdId: 1922
+// Name: ACFFIBPINDH
+message GetInvestigationMonsterRsp {
+    bool is_for_mark = 8;
+    int32 retcode = 9;
+    repeated InvestigationMonster monster_list = 2;
+}
+

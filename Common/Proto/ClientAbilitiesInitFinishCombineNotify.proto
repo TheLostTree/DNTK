@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "EntityAbilityInvokeEntry.proto";
+
+// CmdId: 1141
+// Name: AHALAPHDHHM
+message ClientAbilitiesInitFinishCombineNotify {
+    repeated EntityAbilityInvokeEntry entity_invoke_list = 8;
+}
+

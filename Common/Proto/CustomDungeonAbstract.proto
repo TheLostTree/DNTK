@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LIAGAGLLAGM
+message CustomDungeonAbstract {
+    map<uint32, uint32> brick_statistics_map = 11;
+    uint32 FLGEIJDLABF = 15;
+    uint32 JEJBBAIBLGF = 2;
+    uint32 FGHPHCDOPFF = 10;
+    uint32 GFLOKGOCOKM = 13;
+}
+

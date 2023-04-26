@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 158
+// Name: POECKGCEMFF
+message DailyTaskDataNotify {
+    uint32 score_reward_id = 1;
+    bool is_taken_score_reward = 6;
+    uint32 finished_num = 8;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5316
+// Name: AKILAOGLLOH
+message InBattleMechanicusExcapeMonsterNotify {
+    uint32 excaped_monster_num = 1;
+}
+

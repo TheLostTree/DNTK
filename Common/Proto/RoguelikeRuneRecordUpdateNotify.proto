@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "RoguelikeRuneRecord.proto";
+
+// CmdId: 8363
+// Name: DPPNCLMMMMB
+message RoguelikeRuneRecordUpdateNotify {
+    repeated RoguelikeRuneRecord rune_record_list = 1;
+}
+

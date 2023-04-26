@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: OLKDJDOFGHH
+message LuminanceStoneChallengeActivityDetailInfo {
+    uint32 current_stage_id = 1;
+    uint32 best_score = 6;
+    bool is_content_closed = 13;
+    bool is_final_gallery_complete = 9;
+}
+

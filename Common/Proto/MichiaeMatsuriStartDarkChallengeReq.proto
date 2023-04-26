@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8797
+// Name: PBDKPEIHGGA
+message MichiaeMatsuriStartDarkChallengeReq {
+    uint32 worktop_entity_id = 7;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: FNPHPMFDJKF
+message CustomDungeonSocial {
+    uint32 PJIGHLFMAEF = 8;
+    uint32 JGPFCECDGAA = 2;
+    uint32 BCHJNCGHBJD = 10;
+    uint32 PNGKDOCLNPN = 11;
+}
+

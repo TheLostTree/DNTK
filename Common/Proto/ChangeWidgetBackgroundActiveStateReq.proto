@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 6060
+// Name: INFKPPMCMFH
+message ChangeWidgetBackgroundActiveStateReq {
+    bool is_active = 6;
+    uint32 material_id = 14;
+}
+

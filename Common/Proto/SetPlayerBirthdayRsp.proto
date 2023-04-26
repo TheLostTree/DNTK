@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Birthday.proto";
+
+// CmdId: 4065
+// Name: JGHMHJOEDHB
+message SetPlayerBirthdayRsp {
+    int32 retcode = 10;
+    Birthday birthday = 1;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 7035
+// Name: FDCMPHIBAKC
+message GCGDSCardFaceUnlockNotify {
+    uint32 face_type = 10;
+    uint32 card_id = 6;
+}
+

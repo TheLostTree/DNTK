@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5533
+// Name: GDGGNKEMCOA
+message CoinCollectGallerySettleNotify {
+    uint32 multistage_play_index = 9;
+    uint32 AJOLCIGIMNA = 8;
+    uint32 DKAPCHHJPCM = 6;
+    uint32 level_id = 10;
+    uint32 EEBBADCOGNG = 5;
+    bool is_new_record = 4;
+}
+

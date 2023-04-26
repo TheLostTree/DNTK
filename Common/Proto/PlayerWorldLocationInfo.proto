@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "PlayerLocationInfo.proto";
+
+// Name: OGOGMKJEFGO
+message PlayerWorldLocationInfo {
+    uint32 scene_id = 14;
+    PlayerLocationInfo player_loc = 3;
+}
+

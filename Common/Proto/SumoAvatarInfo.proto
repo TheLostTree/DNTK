@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LGLPAMOMGHI
+message SumoAvatarInfo {
+    bool is_trial = 5;
+    uint64 avatar_id = 1;
+}
+

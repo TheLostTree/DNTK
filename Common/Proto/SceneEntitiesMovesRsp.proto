@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "EntityMoveFailInfo.proto";
+
+// CmdId: 266
+// Name: LOFHHKFLEBM
+message SceneEntitiesMovesRsp {
+    repeated EntityMoveFailInfo entity_move_fail_info_list = 4;
+}
+

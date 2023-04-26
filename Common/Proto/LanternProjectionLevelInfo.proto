@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: CGOBFABMIJI
+message LanternProjectionLevelInfo {
+    uint32 id = 5;
+    bool is_finished = 1;
+    bool is_show_tips = 15;
+    uint32 min_finish_time = 8;
+    bool is_can_start = 6;
+}
+

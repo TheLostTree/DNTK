@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "WIDGET_EXTRA_CD_TYPE.proto";
+
+// CmdId: 6051
+// Name: OLGGNMNDPHD
+message WidgetUpdateExtraCDReq {
+    uint32 cd_group = 15;
+    WIDGET_EXTRA_CD_TYPE extra_cd_type = 9;
+    uint32 material_id = 1;
+}
+

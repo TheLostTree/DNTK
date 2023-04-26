@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CustomDungeonBrief.proto";
+
+// CmdId: 6243
+// Name: CLLHCDIDKAK
+message CustomDungeonUpdateNotify {
+    CustomDungeonBrief dungeon_brief = 14;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2872
+// Name: HJFNGMIHNON
+message AcceptCityReputationRequestReq {
+    uint32 city_id = 15;
+    uint32 request_id = 5;
+}
+

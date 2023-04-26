@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4638
+// Name: JPDELFGIDNG
+message HomeAvatarSummonFinishReq {
+    uint32 event_id = 4;
+}
+

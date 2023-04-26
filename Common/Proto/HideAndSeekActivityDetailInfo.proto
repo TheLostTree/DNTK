@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HideAndSeekMapInfo.proto";
+
+// Name: EOHHMLMKABI
+message HideAndSeekActivityDetailInfo {
+    repeated HideAndSeekMapInfo open_map_info_list = 5;
+    repeated uint32 COGIIPOBNCN = 15;
+    repeated uint32 KLBGALDPIJK = 4;
+    repeated uint32 HBGNHHJEENH = 12;
+    repeated uint32 EOICLHOPHNL = 11;
+}
+

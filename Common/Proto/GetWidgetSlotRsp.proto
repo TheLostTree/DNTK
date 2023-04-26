@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "WidgetSlotData.proto";
+
+// CmdId: 4291
+// Name: FHLAOOICHDH
+message GetWidgetSlotRsp {
+    repeated WidgetSlotData slot_list = 12;
+    int32 retcode = 8;
+}
+

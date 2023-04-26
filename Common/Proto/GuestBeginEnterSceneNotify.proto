@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3457
+// Name: BHEGBMEGACF
+message GuestBeginEnterSceneNotify {
+    uint32 scene_id = 6;
+    uint32 uid = 12;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeLimitedShopGoods.proto";
+
+// Name: KGGBKEKLNDP
+message HomeLimitedShop {
+    repeated HomeLimitedShopGoods goods_list = 5;
+}
+

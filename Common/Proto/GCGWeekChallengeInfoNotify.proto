@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGWeekChallengeInfo.proto";
+
+// CmdId: 7747
+// Name: LNCHADCLDFO
+message GCGWeekChallengeInfoNotify {
+    uint32 next_refresh_time = 7;
+    repeated GCGWeekChallengeInfo challenge_info_list = 13;
+    bool is_notify_npc_change = 6;
+}
+

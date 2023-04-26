@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Investigation.proto";
+import "InvestigationTarget.proto";
+
+// CmdId: 1917
+// Name: AAGKEHNFPPN
+message PlayerInvestigationAllInfoNotify {
+    repeated Investigation investigation_list = 4;
+    repeated InvestigationTarget investigation_target_list = 12;
+}
+

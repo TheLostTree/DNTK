@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: IKACDKHICCL
+message EvtSetAttackTargetInfo {
+    uint32 select_point_index = 5;
+    uint32 attack_target_id = 15;
+    uint32 entity_id = 1;
+}
+

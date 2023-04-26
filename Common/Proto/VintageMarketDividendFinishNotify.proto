@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 24165
+// Name: CMABLDADPDH
+message VintageMarketDividendFinishNotify {
+    uint32 MFMAKKFFAHP = 8;
+    uint32 FCOMCAIMCGG = 3;
+}
+

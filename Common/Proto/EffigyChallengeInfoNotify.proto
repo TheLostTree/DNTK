@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2039
+// Name: GKANNBKMMBN
+message EffigyChallengeInfoNotify {
+    uint32 challenge_score = 1;
+    uint32 challenge_id = 14;
+    repeated uint32 condition_id_list = 7;
+    uint32 difficulty_id = 6;
+}
+

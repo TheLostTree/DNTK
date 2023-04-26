@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1456
+// Name: MJOIAKOLBNB
+message DelMailReq {
+    repeated uint32 mail_id_list = 1;
+}
+

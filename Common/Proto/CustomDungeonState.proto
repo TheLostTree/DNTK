@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: GDMHGEKNPGN
+enum CustomDungeonState {
+    CUSTOM_DUNGEON_STATE_EDIT = 0;
+    CUSTOM_DUNGEON_STATE_SELF_PASS = 1;
+    CUSTOM_DUNGEON_STATE_PUBLISHED = 2;
+}
+

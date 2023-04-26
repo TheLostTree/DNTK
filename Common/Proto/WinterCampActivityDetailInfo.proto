@@ -1,0 +1,21 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ItemParam.proto";
+import "WinterCampRaceStageInfo.proto";
+import "WinterCampStageInfo.proto";
+
+// Name: PGPBBKMJIEB
+message WinterCampActivityDetailInfo {
+    bool is_content_closed = 12;
+    repeated uint32 FANCDPPOIGF = 10;
+    WinterCampStageInfo battle_info = 13;
+    repeated uint32 FDDPLJAJCJF = 7;
+    repeated WinterCampRaceStageInfo race_info_list = 9;
+    WinterCampStageInfo explore_info = 15;
+    repeated ItemParam used_item_list = 8;
+    repeated uint32 JPFBCGKIAJL = 4;
+}
+

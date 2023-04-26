@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "LuaShellType.proto";
+
+// CmdId: 127
+// Name: DEDIIKDDKEM
+message PlayerLuaShellNotify {
+    bytes lua_shell = 11;
+    uint32 id = 12;
+    LuaShellType shell_type = 8;
+    uint32 use_type = 2;
+}
+

@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// CmdId: 2032
+// Name: PMKNFFOEOAE
+message SeaLampFlyLampReq {
+    Vector pos = 8;
+    uint32 item_id = 1;
+    int32 param = 4;
+    uint32 item_num = 13;
+}
+

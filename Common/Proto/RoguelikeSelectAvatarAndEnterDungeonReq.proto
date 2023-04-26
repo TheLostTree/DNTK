@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8438
+// Name: HLEIPNANFJF
+message RoguelikeSelectAvatarAndEnterDungeonReq {
+    repeated uint64 backstage_avatar_guid_list = 12;
+    uint32 stage_id = 14;
+    repeated uint64 onstage_avatar_guid_list = 1;
+}
+

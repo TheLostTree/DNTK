@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 472
+// Name: ADBBIBDMOOB
+message GetQuestTalkHistoryReq {
+    uint32 parent_quest_id = 11;
+}
+

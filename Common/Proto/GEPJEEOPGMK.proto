@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: GEPJEEOPGMK
+message GEPJEEOPGMK {
+    Vector rot = 15;
+    Vector pos = 3;
+}
+

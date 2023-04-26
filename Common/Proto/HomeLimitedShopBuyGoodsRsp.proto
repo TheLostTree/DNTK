@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeLimitedShopGoods.proto";
+
+// CmdId: 4823
+// Name: AFFCNECKBGG
+message HomeLimitedShopBuyGoodsRsp {
+    uint32 buy_count = 1;
+    repeated HomeLimitedShopGoods goods_list = 12;
+    int32 retcode = 5;
+    HomeLimitedShopGoods goods = 15;
+}
+

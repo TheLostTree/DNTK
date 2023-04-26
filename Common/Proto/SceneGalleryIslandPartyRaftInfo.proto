@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GalleryStartSource.proto";
+
+// Name: LHNLHCOPMGP
+message SceneGalleryIslandPartyRaftInfo {
+    uint32 coin = 13;
+    uint32 DPKCLCKNEOF = 6;
+    GalleryStartSource start_source = 9;
+    uint32 CDJPPMFEPHL = 12;
+    uint32 FKCCBPJENFJ = 5;
+    uint32 point_id = 3;
+}
+

@@ -1,0 +1,11 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: FKENPFDANHC
+message GameplayRecommendationReliquaryRequest {
+    uint32 equip_type = 4;
+}
+

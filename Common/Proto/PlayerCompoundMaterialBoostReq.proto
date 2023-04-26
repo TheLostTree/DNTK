@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 179
+// Name: MEAHPANFPHD
+message PlayerCompoundMaterialBoostReq {
+    uint32 GHBDKDMBGEH = 5;
+    uint32 OBIJFFPNJCH = 13;
+    bool is_boost_all = 3;
+    uint32 MOOPCNDDCEP = 14;
+}
+

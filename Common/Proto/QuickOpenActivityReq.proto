@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8347
+// Name: LDOBABFHGNE
+message QuickOpenActivityReq {
+    uint32 activity_id = 2;
+}
+

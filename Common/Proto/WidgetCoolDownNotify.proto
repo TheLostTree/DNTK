@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "WidgetCoolDownData.proto";
+
+// CmdId: 4286
+// Name: ABEOGNPCKPI
+message WidgetCoolDownNotify {
+    repeated WidgetCoolDownData PJIEGBPGGGA = 15;
+    repeated WidgetCoolDownData PDHMECJOMAB = 2;
+}
+

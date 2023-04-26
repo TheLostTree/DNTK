@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: NIKAOEMFALA
+message TrackingIOInfo {
+    string BFMFMEMDFKI = 13;
+    string IEJAJOEMHHH = 12;
+    string BACNDOEIJAI = 2;
+    string JFALHGNODBE = 6;
+    string ODNKGDEPIJP = 7;
+    string MFCOPCCIKCA = 8;
+    string KFBANNMIEGD = 14;
+}
+

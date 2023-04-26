@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "EventTriggerType.proto";
+
+// CmdId: 112
+// Name: NCFJLNGOJAD
+message ClientTriggerEventNotify {
+    EventTriggerType event_type = 13;
+    uint32 force_id = 4;
+}
+

@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ItemParam.proto";
+
+// CmdId: 2650
+// Name: DCGIKJPBKGI
+message BattlePassBuySuccNotify {
+    uint32 KIHLPOPDEHO = 5;
+    uint32 CLAPOODOICH = 8;
+    uint32 schedule_id = 15;
+    repeated ItemParam item_list = 2;
+}
+

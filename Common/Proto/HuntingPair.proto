@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: PIDANILFCHF
+message HuntingPair {
+    uint32 monster_config_id = 8;
+    uint32 refresh_id = 6;
+}
+

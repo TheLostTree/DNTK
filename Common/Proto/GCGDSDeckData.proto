@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LDPIOEFDNDN
+message GCGDSDeckData {
+    fixed32 create_time = 1;
+    uint32 id = 10;
+    uint32 card_back_id = 3;
+    repeated uint32 card_list = 8;
+    string name = 13;
+    repeated uint32 character_card_list = 14;
+    uint32 field_id = 7;
+    bool is_valid = 15;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8006
+// Name: GDMAJNCEDPO
+message MichiaeMatsuriUnlockCrystalSkillReq {
+    uint32 crystal_skill_id = 15;
+}
+

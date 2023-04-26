@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5363
+// Name: FDIHNNPDDOH
+message InBattleMechanicusPickCardNotify {
+    uint32 play_index = 9;
+    uint32 card_id = 4;
+    uint32 player_uid = 13;
+    uint32 group_id = 14;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: FIEOBJIFPCA
+message Vector3Int {
+    int32 x = 1;
+    int32 y = 2;
+    int32 z = 3;
+}
+

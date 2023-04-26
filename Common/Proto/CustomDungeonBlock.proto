@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: AKCLNKNCMFK
+message CustomDungeonBlock {
+    Vector rot = 12;
+    uint32 block_id = 8;
+    uint32 guid = 14;
+    Vector pos = 10;
+}
+

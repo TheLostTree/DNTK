@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "WinterCampRecvItemData.proto";
+
+// CmdId: 8869
+// Name: BFFJAMBLFHI
+message WinterCampRecvItemNotify {
+    WinterCampRecvItemData recv_item_data = 7;
+}
+

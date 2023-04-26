@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeResource.proto";
+
+// CmdId: 4672
+// Name: JBMNKOKPABK
+message HomeResourceTakeHomeCoinRsp {
+    HomeResource home_coin = 11;
+    int32 retcode = 2;
+}
+

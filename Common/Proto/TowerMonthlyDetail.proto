@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "TowerMonthlyBrief.proto";
+import "TowerMonthlyCombatRecord.proto";
+
+// Name: MEMFEIDLPMA
+message TowerMonthlyDetail {
+    TowerMonthlyBrief monthly_brief = 14;
+    TowerMonthlyCombatRecord monthly_combat_record = 4;
+}
+

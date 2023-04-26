@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: AKBAFAOBLBO
+message ParkourLevelInfo {
+    Vector pos = 12;
+    uint32 open_time = 4;
+    bool is_open = 3;
+    uint32 best_record = 7;
+}
+

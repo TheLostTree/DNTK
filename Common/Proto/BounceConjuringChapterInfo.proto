@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: HPBALKBMEAI
+message BounceConjuringChapterInfo {
+    uint32 open_time = 9;
+    uint32 chapter_id = 4;
+    uint32 best_score = 7;
+}
+

@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8931
+// Name: GMNFLKICICI
+message SpiceActivityFinishMakeSpiceReq {
+    repeated uint32 left_material_id_list = 7;
+    uint32 stage_id = 3;
+    bool is_success = 8;
+    uint32 left_turns = 2;
+}
+

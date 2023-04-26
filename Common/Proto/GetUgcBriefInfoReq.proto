@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "UgcType.proto";
+
+// CmdId: 6317
+// Name: KJMGOCCECKI
+message GetUgcBriefInfoReq {
+    uint64 ugc_guid = 10;
+    UgcType ugc_type = 1;
+}
+

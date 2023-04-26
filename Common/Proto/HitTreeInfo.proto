@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: ADPEHMKAAKK
+message HitTreeInfo {
+    Vector tree_pos = 14;
+    uint32 tree_type = 15;
+}
+

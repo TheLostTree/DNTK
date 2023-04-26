@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: BJILPHGIGCF
+message SceneGalleryPacmanInfo {
+    uint32 BKECHEIMCGP = 14;
+    uint32 cur_score = 5;
+    uint32 start_time = 3;
+    uint32 FJBKBMHJMMM = 15;
+}
+

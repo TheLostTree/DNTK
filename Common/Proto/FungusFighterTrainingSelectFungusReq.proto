@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 21230
+// Name: MGEPGOKKALB
+message FungusFighterTrainingSelectFungusReq {
+    repeated uint32 fight_fungus_id_list = 6;
+    repeated uint32 backup_fungus_id_list = 14;
+}
+

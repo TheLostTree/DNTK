@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FallPlayerBrief.proto";
+
+// CmdId: 5556
+// Name: LFHBKCENMLC
+message GalleryFallScoreNotify {
+    map<uint32, FallPlayerBrief> uid_brief_map = 15;
+    uint32 gallery_id = 2;
+}
+

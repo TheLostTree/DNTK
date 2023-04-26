@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MotionInfo.proto";
+
+// Name: ACJLHIPJLAE
+message EntityMoveFailInfo {
+    uint32 scene_time = 8;
+    MotionInfo fail_motion = 5;
+    int32 retcode = 13;
+    uint32 entity_id = 9;
+    uint32 reliable_seq = 2;
+}
+

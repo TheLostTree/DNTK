@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MapMarkTipsType.proto";
+
+// Name: LGGBPLPGBBO
+message MapMarkTipsInfo {
+    MapMarkTipsType tips_type = 1;
+    repeated uint32 point_id_list = 2;
+}
+

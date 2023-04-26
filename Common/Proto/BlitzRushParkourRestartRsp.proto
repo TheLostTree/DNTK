@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8534
+// Name: HCLBPCCIBAL
+message BlitzRushParkourRestartRsp {
+    uint32 group_id = 2;
+    int32 retcode = 11;
+    uint32 schedule_id = 1;
+}
+

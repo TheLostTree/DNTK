@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FlightDailyRecord.proto";
+
+// Name: DLECLBJNCBK
+message FlightActivityDetailInfo {
+    uint32 MEHOKJOPMBN = 8;
+    uint32 KKLLPPPLKMM = 7;
+    repeated FlightDailyRecord daily_record_list = 14;
+}
+

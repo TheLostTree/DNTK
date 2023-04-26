@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1965
+// Name: LNCMJEHKBCI
+message FinishMainCoopReq {
+    uint32 ending_save_point_id = 9;
+    uint32 id = 5;
+}
+

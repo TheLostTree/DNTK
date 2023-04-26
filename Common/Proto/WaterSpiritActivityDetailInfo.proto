@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: MMJAADOMEIP
+message WaterSpiritActivityDetailInfo {
+    uint32 mp_play_id = 7;
+    uint32 region_search_id = 8;
+    map<uint32, uint32> search_time_map = 14;
+}
+

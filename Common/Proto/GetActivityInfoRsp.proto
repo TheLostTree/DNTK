@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ActivityInfo.proto";
+import "Uint32Pair.proto";
+
+// CmdId: 2187
+// Name: HCGGECOOAMK
+message GetActivityInfoRsp {
+    repeated ActivityInfo activity_info_list = 1;
+    repeated Uint32Pair disable_transfer_point_interaction_list = 12;
+    repeated uint32 activated_sale_id_list = 7;
+    int32 retcode = 6;
+}
+

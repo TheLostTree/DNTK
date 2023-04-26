@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2042
+// Name: IDBBCLDOHKB
+message StartEffigyChallengeRsp {
+    uint32 point_id = 5;
+    uint32 challenge_id = 6;
+    uint32 difficulty_id = 4;
+    int32 retcode = 11;
+    repeated uint32 condition_id_list = 12;
+}
+

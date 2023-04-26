@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 7684
+// Name: CCCHPDLEDMO
+message GCGHeartBeatNotify {
+    uint32 server_seq = 14;
+}
+

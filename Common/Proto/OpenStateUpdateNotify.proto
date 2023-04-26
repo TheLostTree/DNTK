@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 139
+// Name: IAHGJJDFDOI
+message OpenStateUpdateNotify {
+    map<uint32, uint32> open_state_map = 9;
+}
+

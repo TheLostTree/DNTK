@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 246
+// Name: NAKEMMGEJBP
+message ExitTransPointRegionNotify {
+    uint32 point_id = 9;
+    uint32 scene_id = 6;
+}
+

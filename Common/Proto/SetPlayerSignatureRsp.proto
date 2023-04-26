@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4075
+// Name: OCCAFEBEKAD
+message SetPlayerSignatureRsp {
+    string signature = 10;
+    int32 retcode = 15;
+}
+

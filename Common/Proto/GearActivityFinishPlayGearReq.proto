@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GearColumnInfo.proto";
+
+// CmdId: 22172
+// Name: IDBMLIJNLFC
+message GearActivityFinishPlayGearReq {
+    uint32 level_id = 11;
+    repeated GearColumnInfo gear_column_info_list = 13;
+    bool is_success = 12;
+    bool use_clue = 1;
+}
+

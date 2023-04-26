@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FriendBrief.proto";
+
+// CmdId: 4001
+// Name: BGKPCOACAPN
+message PSNBlackListNotify {
+    repeated FriendBrief psn_blacklist = 4;
+}
+

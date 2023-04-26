@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2478
+// Name: PDANKGGIHNG
+message TowerEnterLevelRsp {
+    repeated uint32 tower_buff_id_list = 7;
+    uint32 level_index = 5;
+    uint32 floor_id = 9;
+    int32 retcode = 1;
+}
+

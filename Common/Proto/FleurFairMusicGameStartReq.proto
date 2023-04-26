@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2054
+// Name: NCGCAEBOIGG
+message FleurFairMusicGameStartReq {
+    uint32 music_basic_id = 8;
+}
+

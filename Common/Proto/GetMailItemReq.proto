@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1476
+// Name: IFBKCKFGICP
+message GetMailItemReq {
+    repeated uint32 mail_id_list = 9;
+}
+

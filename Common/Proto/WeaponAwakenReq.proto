@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 681
+// Name: HBJJPKDAMFA
+message WeaponAwakenReq {
+    uint64 target_weapon_guid = 10;
+    uint64 item_guid = 14;
+    map<uint32, uint32> affix_level_map = 11;
+}
+

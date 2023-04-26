@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "TeamChainStageData.proto";
+
+// Name: NCNALPMIDEE
+message TeamChainDetailInfo {
+    repeated TeamChainStageData stage_data_list = 14;
+    bool is_token_costume_reward = 3;
+}
+

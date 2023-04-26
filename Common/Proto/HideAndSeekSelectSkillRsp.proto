@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8916
+// Name: HAADBMMELOK
+message HideAndSeekSelectSkillRsp {
+    int32 retcode = 9;
+    repeated uint32 skill_list = 6;
+}
+

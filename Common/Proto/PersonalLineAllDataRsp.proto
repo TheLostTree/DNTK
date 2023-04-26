@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "LockedPersonallineData.proto";
+
+// CmdId: 404
+// Name: CKJDCPDNGII
+message PersonalLineAllDataRsp {
+    uint32 legendary_key_count = 14;
+    uint32 cur_finished_daily_task_count = 6;
+    repeated uint32 OIJBKBOLJIL = 3;
+    repeated uint32 DIHALBEEOPO = 10;
+    int32 retcode = 2;
+    repeated LockedPersonallineData locked_personal_line_list = 1;
+}
+

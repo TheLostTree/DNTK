@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: JCAFAPNCKDP
+message GCGTavernNpcInfo {
+    uint32 level_id = 6;
+    uint32 scene_point_id = 12;
+    uint32 id = 7;
+}
+

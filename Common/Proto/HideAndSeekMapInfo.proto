@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: ENGBKEBLFFD
+message HideAndSeekMapInfo {
+    uint32 id = 10;
+    repeated uint32 match_lock_reason_list = 13;
+}
+

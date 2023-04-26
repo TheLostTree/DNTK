@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MassivePropSyncInfo.proto";
+
+// Name: PBFKONAJNPD
+message AbilityMixinScenePropSync {
+    repeated int64 delete_id_list = 15;
+    repeated MassivePropSyncInfo massive_prop_list = 3;
+    bool is_clear_all = 8;
+}
+

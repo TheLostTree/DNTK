@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "DungeonCandidateTeamAvatar.proto";
+import "DungeonCandidateTeamPlayerState.proto";
+
+// CmdId: 995
+// Name: DFHKBHEIOBF
+message DungeonCandidateTeamInfoNotify {
+    repeated DungeonCandidateTeamAvatar avatar_list = 5;
+    map<uint32, DungeonCandidateTeamPlayerState> player_state_map = 8;
+    uint32 match_type = 7;
+    repeated uint32 ready_player_uid = 2;
+    uint32 dungeon_id = 10;
+}
+

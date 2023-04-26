@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ActivityDungeonAvatar.proto";
+import "RogueDiaryAvatarDisableStatus.proto";
+
+// Name: HAOPJHKKJLK
+message RogueDiaryAvatar {
+    repeated RogueDiaryAvatarDisableStatus disable_status_list = 13;
+    uint32 tired_round = 10;
+    ActivityDungeonAvatar avatar = 1;
+    uint32 level = 6;
+}
+

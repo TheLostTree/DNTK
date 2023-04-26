@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: KKFJHKAIICP
+message BlessingActivityDetailInfo {
+    bool is_content_closed = 2;
+    bool is_activated = 13;
+    uint32 OELGLNKALIE = 10;
+    uint32 OJIKMNKCMJI = 7;
+    uint32 KFFAALMFGID = 14;
+    uint32 next_refresh_time = 11;
+    map<uint32, uint32> pic_num_map = 6;
+    uint32 content_close_time = 4;
+}
+

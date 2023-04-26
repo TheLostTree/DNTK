@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2070
+// Name: NKFGJMDKJCJ
+message ExpeditionStartReq {
+    repeated uint32 avatar_id_list = 7;
+    uint32 PIHIMOCPPFO = 9;
+    uint32 GOMIFKCFNKJ = 15;
+    uint32 path_id = 13;
+}
+

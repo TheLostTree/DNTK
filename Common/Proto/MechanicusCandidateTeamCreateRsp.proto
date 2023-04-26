@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3975
+// Name: CHDLLDCFKDO
+message MechanicusCandidateTeamCreateRsp {
+    int32 retcode = 8;
+    uint32 dungeon_id = 9;
+    uint32 difficult_level = 1;
+}
+

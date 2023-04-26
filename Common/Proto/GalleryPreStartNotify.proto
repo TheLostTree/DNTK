@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5563
+// Name: PFCCJFBBDKL
+message GalleryPreStartNotify {
+    uint32 gallery_id = 14;
+    uint32 pre_start_end_time = 6;
+}
+

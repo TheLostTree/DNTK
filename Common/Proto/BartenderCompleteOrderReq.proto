@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ItemParam.proto";
+
+// CmdId: 8671
+// Name: IEEAGCKDJAA
+message BartenderCompleteOrderReq {
+    uint32 MJABGHGABFH = 9;
+    uint32 quest_id = 5;
+    uint32 HAPFNEIHHPP = 6;
+    bool is_view_formula = 14;
+    repeated ItemParam item_list = 12;
+    repeated uint32 optional_order_list = 7;
+    uint32 MOBMFDJLHKD = 11;
+}
+

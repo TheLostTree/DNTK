@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8082
+// Name: ANAGINKCDEH
+message UpdateSalvageBundleMarkReq {
+    uint32 stage_id = 15;
+    uint32 challenge_type = 12;
+}
+

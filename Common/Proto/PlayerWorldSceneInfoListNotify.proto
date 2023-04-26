@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "PlayerWorldSceneInfo.proto";
+
+// CmdId: 3205
+// Name: LEHGOANEDOH
+message PlayerWorldSceneInfoListNotify {
+    repeated PlayerWorldSceneInfo info_list = 10;
+}
+

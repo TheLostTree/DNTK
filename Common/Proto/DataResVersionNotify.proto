@@ -1,0 +1,28 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ResVersionConfig.proto";
+
+// CmdId: 118
+// Name: AKGLNBEFBAE
+message DataResVersionNotify {
+    // Name: NIAIEPJFONE
+    enum DataResVersionOpType {
+        OP_TYPE_NONE = 0;
+        OP_TYPE_RELOGIN = 1;
+        OP_TYPE_MP_RELOGIN = 2;
+    }
+
+    string client_md5 = 8;
+    uint32 client_silence_data_version = 6;
+    string client_silence_version_suffix = 9;
+    ResVersionConfig res_version_config = 7;
+    bool is_data_need_relogin = 3;
+    string client_silence_md5 = 5;
+    DataResVersionOpType op_type = 1;
+    uint32 client_data_version = 2;
+    string client_version_suffix = 14;
+}
+

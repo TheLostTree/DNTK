@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Reward.proto";
+
+// CmdId: 697
+// Name: BKACBGIOAIJ
+message GrantRewardNotify {
+    Reward reward = 11;
+}
+

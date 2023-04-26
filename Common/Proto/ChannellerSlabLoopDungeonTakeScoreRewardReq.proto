@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8052
+// Name: APIBLPLOAHC
+message ChannellerSlabLoopDungeonTakeScoreRewardReq {
+    uint32 reward_index = 6;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGDiceSideType.proto";
+
+// Name: HLCHOKIIMAD
+message GCGMsgDiceReroll {
+    repeated uint32 select_dice_index_list = 7;
+    uint32 controller_id = 2;
+    repeated GCGDiceSideType dice_side_list = 8;
+}
+

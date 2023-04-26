@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ChatInfo.proto";
+
+// CmdId: 5039
+// Name: OLMKKFNGGEK
+message PrivateChatNotify {
+    ChatInfo chat_info = 2;
+}
+

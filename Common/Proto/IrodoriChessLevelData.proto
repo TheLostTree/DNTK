@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "IrodoriChessMapData.proto";
+
+// Name: BBOCNPLHGAM
+message IrodoriChessLevelData {
+    IrodoriChessMapData OEMKKEEKONG = 9;
+    uint32 level_id = 8;
+    IrodoriChessMapData JCCNLMMCENC = 15;
+    uint32 open_time = 6;
+}
+

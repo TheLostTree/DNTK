@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 24702
+// Name: KNKBOAHFHGE
+message GravenInnocenceEditCarveCombinationRsp {
+    int32 retcode = 5;
+}
+

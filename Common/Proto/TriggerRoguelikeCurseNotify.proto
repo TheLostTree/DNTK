@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8674
+// Name: NPOLMCJJCKP
+message TriggerRoguelikeCurseNotify {
+    uint32 CEECGMGGGED = 4;
+    uint32 OCBPDFLBFPK = 1;
+    bool is_trigger_curse = 13;
+    repeated uint32 effect_param_list = 5;
+}
+

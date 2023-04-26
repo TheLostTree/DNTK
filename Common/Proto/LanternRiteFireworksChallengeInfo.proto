@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: PHALMEICHMB
+message LanternRiteFireworksChallengeInfo {
+    uint32 challenge_id = 5;
+    uint32 best_score = 14;
+    bool is_full_score = 13;
+}
+

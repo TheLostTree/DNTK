@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8531
+// Name: GCAAKGBBFNK
+message MichiaeMatsuriInteractStatueReq {
+    uint32 statue_entity_id = 9;
+}
+

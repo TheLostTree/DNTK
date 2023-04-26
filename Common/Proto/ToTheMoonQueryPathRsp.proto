@@ -1,0 +1,25 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// CmdId: 6196
+// Name: BLMEIMMKNIG
+message ToTheMoonQueryPathRsp {
+    // Name: OICDHCHDIAF
+    enum PathStatusType {
+        STATUS_FAIL = 0;
+        STATUS_SUCC = 1;
+        STATUS_PARTIAL = 2;
+    }
+
+    PathStatusType query_status = 12;
+    repeated int32 level = 7;
+    int32 query_id = 15;
+    repeated Vector corners = 9;
+    repeated int64 index = 10;
+    int32 retcode = 5;
+}
+

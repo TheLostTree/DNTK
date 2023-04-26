@@ -1,0 +1,24 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "DIJILDLCPLG.proto";
+import "GENJGPDIPNI.proto";
+import "KHHEAFGCOMJ.proto";
+import "PPBLCBFKEHE.proto";
+
+// Name: KMNPJIFBGJD
+message KMNPJIFBGJD {
+    uint32 target_score = 14;
+    GENJGPDIPNI type = 13;
+    uint32 HKPLPJIBMOC = 8;
+    repeated uint32 KAOGGMEJPBD = 6;
+    string name = 3;
+    oneof detail {
+        PPBLCBFKEHE normal = 1759;
+        KHHEAFGCOMJ countdown = 360;
+        DIJILDLCPLG timer = 492;
+    }
+}
+

@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 7118
+// Name: GMOLCIIJJOD
+message GCGDSDeckSaveReq {
+    uint32 deck_id = 1;
+    string name = 8;
+    repeated uint32 card_list = 13;
+    repeated uint32 character_card_list = 9;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: CFFFGFFKINK
+message CFFFGFFKINK {
+    uint32 ELKJELLMMAD = 15;
+    uint32 level_id = 13;
+    bool is_open = 14;
+    uint32 min_finish_time = 7;
+}
+

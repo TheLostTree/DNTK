@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "DKFDACEPNAL.proto";
+
+// Name: AKFPAANICKG
+message AKFPAANICKG {
+    repeated DKFDACEPNAL level_info_list = 3;
+}
+

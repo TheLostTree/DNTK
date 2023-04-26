@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AiSkillCdInfo.proto";
+
+// CmdId: 304
+// Name: MLOBPCAHFAJ
+message EvtAiSyncSkillCdNotify {
+    map<uint32, AiSkillCdInfo> ai_cd_map = 9;
+}
+

@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CookRecipeData.proto";
+import "ItemParam.proto";
+
+// CmdId: 148
+// Name: GJBLIANJAOC
+message PlayerCookRsp {
+    uint32 AIBLNBAFJOL = 2;
+    int32 retcode = 12;
+    uint32 EHPKNEPMOAO = 14;
+    repeated ItemParam item_list = 8;
+    repeated ItemParam extral_item_list = 15;
+    CookRecipeData recipe_data = 9;
+}
+

@@ -1,0 +1,24 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "VintageHuntingFirstStageSettleInfo.proto";
+import "VintageHuntingSecondStageSettleInfo.proto";
+import "VintageHuntingThirdStageSettleInfo.proto";
+
+// CmdId: 24566
+// Name: GFEGGLGCPIB
+message SceneGalleryVintageHuntingSettleNotify {
+    bool is_new_record = 2;
+    uint32 stage_id = 15;
+    uint32 CIGKIGPIBJO = 13;
+    uint32 CCCLEOMNEBM = 11;
+    bool has_new_watcher = 3;
+    oneof info {
+        VintageHuntingFirstStageSettleInfo first_stage_info = 9;
+        VintageHuntingSecondStageSettleInfo second_stage_info = 8;
+        VintageHuntingThirdStageSettleInfo third_stage_info = 10;
+    }
+}
+

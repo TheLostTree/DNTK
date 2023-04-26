@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "DailyDungeonEntryInfo.proto";
+
+// CmdId: 918
+// Name: PILGJINNHNA
+message GetDailyDungeonEntryInfoRsp {
+    repeated DailyDungeonEntryInfo daily_dungeon_info_list = 15;
+    int32 retcode = 6;
+}
+

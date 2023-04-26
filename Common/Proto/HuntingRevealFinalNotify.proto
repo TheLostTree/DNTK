@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HuntingPair.proto";
+import "Vector.proto";
+
+// CmdId: 4320
+// Name: AJKKNGAPJAH
+message HuntingRevealFinalNotify {
+    uint32 finished_group_id = 15;
+    Vector final_position = 13;
+    HuntingPair hunting_pair = 10;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1819
+// Name: GKDMNMMGFPD
+message MpPlayGuestReplyNotify {
+    bool is_agree = 11;
+    uint32 uid = 3;
+    uint32 mp_play_id = 8;
+}
+

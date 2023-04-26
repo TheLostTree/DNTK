@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1589
+// Name: PCNKFCOOMOH
+message DoGachaReq {
+    uint32 PAHELCJNHAH = 5;
+    uint32 gacha_type = 6;
+    string gacha_tag = 1;
+    uint32 gacha_schedule_id = 12;
+    uint32 gacha_times = 2;
+}
+

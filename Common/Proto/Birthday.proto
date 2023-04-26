@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: CIHBKIMLMLO
+message Birthday {
+    uint32 month = 1;
+    uint32 day = 2;
+}
+

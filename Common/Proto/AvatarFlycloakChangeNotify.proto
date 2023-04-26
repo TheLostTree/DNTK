@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1657
+// Name: OAPGCKKFJOB
+message AvatarFlycloakChangeNotify {
+    uint64 avatar_guid = 13;
+    uint32 flycloak_id = 15;
+}
+

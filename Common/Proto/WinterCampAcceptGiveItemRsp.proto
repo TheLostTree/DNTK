@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "WinterCampAcceptItemResultInfo.proto";
+
+// CmdId: 8018
+// Name: JPIOJPILOCF
+message WinterCampAcceptGiveItemRsp {
+    int32 retcode = 3;
+    WinterCampAcceptItemResultInfo accept_item_result_info = 11;
+}
+

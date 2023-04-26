@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4207
+// Name: PHBKIOKCEFL
+message SetCodexPushtipsReadRsp {
+    uint32 NACFJFLGNFH = 1;
+    uint32 AOLDDCCIAHH = 2;
+    int32 retcode = 3;
+}
+

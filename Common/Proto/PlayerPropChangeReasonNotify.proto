@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "PropChangeReason.proto";
+
+// CmdId: 1263
+// Name: ECKONOENIGF
+message PlayerPropChangeReasonNotify {
+    float cur_value = 13;
+    float old_value = 6;
+    uint32 prop_type = 7;
+    PropChangeReason reason = 3;
+}
+

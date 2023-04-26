@@ -1,0 +1,23 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MapMarkPoint.proto";
+
+// CmdId: 3483
+// Name: DDECFGAEPFL
+message MarkMapReq {
+    // Name: NABGOBNLACJ
+    enum Operation {
+        ADD = 0;
+        MOD = 1;
+        DEL = 2;
+        GET = 3;
+    }
+
+    MapMarkPoint old = 15;
+    MapMarkPoint mark = 11;
+    Operation op = 7;
+}
+

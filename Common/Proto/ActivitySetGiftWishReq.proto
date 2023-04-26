@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8921
+// Name: HIGNILPNKNO
+message ActivitySetGiftWishReq {
+    uint32 schedule_id = 1;
+    map<uint32, uint32> gift_num_map = 5;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 876
+// Name: JABPJDGCCLD
+message WorktopOptionNotify {
+    repeated uint32 option_list = 2;
+    uint32 gadget_entity_id = 11;
+}
+

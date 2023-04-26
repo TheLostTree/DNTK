@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: PCCKJKGKPOA
+message EffigyChallengeDungeonResultInfo {
+    uint32 challenge_max_score = 11;
+    uint32 challenge_id = 13;
+    bool is_success = 5;
+    bool is_in_time_limit = 4;
+    uint32 challenge_score = 14;
+}
+

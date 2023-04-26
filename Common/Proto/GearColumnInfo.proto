@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: BPOHGBMCHOP
+message GearColumnInfo {
+    uint32 gear_id = 5;
+    uint32 HHKCHFDLAMO = 2;
+    bool IGLHBIKHHFL = 8;
+    bool EJJFGFOKOPC = 10;
+    uint32 LCHKEEDFCCL = 3;
+}
+

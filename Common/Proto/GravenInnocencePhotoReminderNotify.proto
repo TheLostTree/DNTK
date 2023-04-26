@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 24631
+// Name: IPOBJJLKFIC
+message GravenInnocencePhotoReminderNotify {
+    uint32 group_bundle_id = 3;
+    uint32 reminder_id = 5;
+}
+

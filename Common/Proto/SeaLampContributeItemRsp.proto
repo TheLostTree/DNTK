@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2198
+// Name: NJCLGLANLMO
+message SeaLampContributeItemRsp {
+    uint32 add_progress = 14;
+    int32 retcode = 2;
+    uint32 LHEFDGPEFPN = 4;
+    uint32 LCMDALFODMC = 7;
+}
+

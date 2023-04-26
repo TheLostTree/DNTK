@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 949
+// Name: NLLGPPBKJJJ
+message GetDailyDungeonEntryInfoReq {
+    uint32 scene_id = 6;
+}
+

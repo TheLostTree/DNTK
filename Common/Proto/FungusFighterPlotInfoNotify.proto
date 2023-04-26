@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 24684
+// Name: JDDDFIOGOFO
+message FungusFighterPlotInfoNotify {
+    repeated uint32 fungus_id_list = 3;
+    uint32 dungeon_id = 14;
+}
+

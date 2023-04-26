@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "PlantFlowerAcceptFlowerResultInfo.proto";
+
+// CmdId: 8456
+// Name: IJBAJKMEMJN
+message PlantFlowerAcceptAllGiveFlowerRsp {
+    uint32 schedule_id = 13;
+    int32 retcode = 1;
+    repeated PlantFlowerAcceptFlowerResultInfo accept_flower_result_info_list = 14;
+}
+

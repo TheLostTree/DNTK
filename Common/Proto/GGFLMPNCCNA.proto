@@ -1,0 +1,11 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: GGFLMPNCCNA
+message GGFLMPNCCNA {
+    uint32 apply_entity_id = 14;
+}
+

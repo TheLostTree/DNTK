@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8145
+// Name: KGOHJODOKGD
+message BartenderFinishLevelReq {
+    uint32 level_id = 11;
+}
+

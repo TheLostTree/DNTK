@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "StoreType.proto";
+
+// CmdId: 659
+// Name: HHKNLLGKPOO
+message DropItemRsp {
+    StoreType store_type = 3;
+    uint64 guid = 4;
+    int32 retcode = 5;
+}
+

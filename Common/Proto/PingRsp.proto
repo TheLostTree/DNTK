@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 56
+// Name: INDGLMIDHBB
+message PingRsp {
+    int32 retcode = 9;
+    uint32 seq = 4;
+    uint32 client_time = 2;
+}
+

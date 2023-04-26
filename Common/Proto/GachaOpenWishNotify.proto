@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1541
+// Name: EHEPDPEIEHP
+message GachaOpenWishNotify {
+    uint32 gacha_schedule_id = 14;
+    uint32 gacha_type = 2;
+}
+

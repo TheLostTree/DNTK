@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGTavernNpcInfo.proto";
+
+// CmdId: 7111
+// Name: MJLFJPCIPKH
+message GCGTavernNpcInfoNotify {
+    GCGTavernNpcInfo character_npc = 4;
+    repeated GCGTavernNpcInfo ELBDENMOANJ = 3;
+    repeated GCGTavernNpcInfo ABGFKOHNMFD = 5;
+}
+

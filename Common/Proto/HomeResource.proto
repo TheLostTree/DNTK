@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LDMGBIGBOLN
+message HomeResource {
+    fixed32 next_refresh_time = 9;
+    uint32 GBBFEOLGIPA = 13;
+    uint32 ELNCBCIJMJJ = 10;
+}
+

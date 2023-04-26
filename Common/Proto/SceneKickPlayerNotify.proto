@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 280
+// Name: HACFHECKHHB
+message SceneKickPlayerNotify {
+    uint32 kicker_uid = 11;
+    uint32 target_uid = 1;
+}
+

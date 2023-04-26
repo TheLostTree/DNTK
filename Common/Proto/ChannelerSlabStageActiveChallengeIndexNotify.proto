@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8687
+// Name: OJCOGGKJONA
+message ChannelerSlabStageActiveChallengeIndexNotify {
+    uint32 challenge_index = 9;
+    uint32 stage_id = 8;
+    uint32 active_camp_index = 13;
+}
+

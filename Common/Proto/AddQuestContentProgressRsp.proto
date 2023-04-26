@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 441
+// Name: DABGGEPNIEP
+message AddQuestContentProgressRsp {
+    uint32 content_type = 7;
+    int32 retcode = 2;
+}
+

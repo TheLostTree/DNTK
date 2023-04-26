@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 24731
+// Name: IAJAEHMLMAP
+message VintageCampStageFinishNotify {
+    uint32 stage_id = 10;
+}
+

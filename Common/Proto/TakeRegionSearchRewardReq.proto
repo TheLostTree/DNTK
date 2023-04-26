@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5617
+// Name: MANPBEJLMKH
+message TakeRegionSearchRewardReq {
+    uint32 id = 9;
+    uint32 search_id = 4;
+}
+

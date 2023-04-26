@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HuntingOfferData.proto";
+import "HuntingPair.proto";
+
+// CmdId: 4349
+// Name: LGMBGPKIBJM
+message GetCityHuntingOfferRsp {
+    int32 retcode = 9;
+    uint32 city_id = 11;
+    repeated HuntingOfferData hunting_offer_list = 3;
+    HuntingPair ongoing_hunting_pair = 1;
+    uint32 cur_week_finished_count = 4;
+    uint32 next_refresh_time = 5;
+}
+

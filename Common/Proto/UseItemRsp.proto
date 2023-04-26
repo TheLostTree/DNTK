@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 692
+// Name: FLHLJEFBEDE
+message UseItemRsp {
+    uint32 option_idx = 13;
+    uint32 item_id = 5;
+    int32 retcode = 7;
+    uint64 target_guid = 3;
+    uint64 guid = 8;
+}
+

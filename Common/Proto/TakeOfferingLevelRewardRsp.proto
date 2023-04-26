@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ItemParam.proto";
+
+// CmdId: 2922
+// Name: BCJFNBDODKB
+message TakeOfferingLevelRewardRsp {
+    uint32 offering_id = 2;
+    int32 retcode = 10;
+    repeated ItemParam item_list = 1;
+    uint32 take_level = 6;
+}
+

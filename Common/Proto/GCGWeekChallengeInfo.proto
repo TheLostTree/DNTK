@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LMILHIAIFIJ
+message GCGWeekChallengeInfo {
+    uint32 unlock_time = 14;
+    uint32 npc_id = 13;
+    bool is_finished = 3;
+}
+

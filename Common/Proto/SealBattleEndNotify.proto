@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 244
+// Name: ENKLEDNFFIC
+message SealBattleEndNotify {
+    uint32 seal_entity_id = 9;
+    bool is_win = 13;
+}
+

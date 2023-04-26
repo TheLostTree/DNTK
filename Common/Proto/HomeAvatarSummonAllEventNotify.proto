@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeAvatarSummonEventInfo.proto";
+
+// CmdId: 4464
+// Name: PEGPLPFJABM
+message HomeAvatarSummonAllEventNotify {
+    repeated HomeAvatarSummonEventInfo summon_event_list = 1;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: MJLCBFDOPBF
+message WidgetCoolDownData {
+    bool is_success = 8;
+    uint32 id = 6;
+    uint64 cool_down_time = 7;
+}
+

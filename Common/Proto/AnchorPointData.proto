@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: DOHNFLCDCJP
+message AnchorPointData {
+    Vector rot = 1;
+    uint32 anchor_point_id = 9;
+    uint32 end_time = 10;
+    Vector pos = 2;
+    uint32 scene_id = 15;
+}
+

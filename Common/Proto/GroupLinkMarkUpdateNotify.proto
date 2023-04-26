@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GroupLinkBundle.proto";
+
+// CmdId: 5799
+// Name: DJBBFDIDMLK
+message GroupLinkMarkUpdateNotify {
+    GroupLinkBundle bundle = 13;
+}
+

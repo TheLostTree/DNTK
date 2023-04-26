@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8578
+// Name: LDJMIBJJIIG
+message RogueSwitchAvatarRsp {
+    int32 retcode = 15;
+    repeated uint64 onstage_avatar_guid_list = 4;
+    repeated uint64 backstage_avatar_guid_list = 13;
+    uint64 cur_avatar_guid = 12;
+    uint32 dungeon_id = 6;
+    uint32 cell_id = 7;
+}
+

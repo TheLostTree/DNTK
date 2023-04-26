@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MotionInfo.proto";
+
+// CmdId: 3289
+// Name: IKHDMMGIPPN
+message ForceDragAvatarNotify {
+    uint32 scene_time = 7;
+    bool is_first_valid = 4;
+    uint64 HBPMGOHDIOO = 8;
+    uint32 entity_id = 9;
+    MotionInfo motion_info = 6;
+    uint64 HEDKENGIAPE = 5;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ClientReconnectReason.proto";
+
+// CmdId: 78
+// Name: EBLBKMMAKNH
+message ClientReconnectNotify {
+    ClientReconnectReason reason = 6;
+}
+

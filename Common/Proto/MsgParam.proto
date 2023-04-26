@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: BLBBHMODFBA
+message MsgParam {
+    oneof param {
+        uint32 int_param = 11;
+        float flt_param = 13;
+        string str_param = 12;
+    }
+}
+

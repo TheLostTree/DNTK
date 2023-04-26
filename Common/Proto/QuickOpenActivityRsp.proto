@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8867
+// Name: ANCNBCHBNIL
+message QuickOpenActivityRsp {
+    uint32 activity_id = 2;
+    int32 retcode = 14;
+}
+

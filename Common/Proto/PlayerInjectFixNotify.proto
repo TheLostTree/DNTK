@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 122
+// Name: PEMELLOACHH
+message PlayerInjectFixNotify {
+    bytes inject_fix = 3;
+    uint32 id = 12;
+}
+

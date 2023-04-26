@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AuditState.proto";
+
+// Name: GPCCMCBLGJK
+message ContentAuditInfo {
+    bool is_open = 1;
+    string content = 2;
+    uint32 submit_count = 3;
+    AuditState audit_state = 4;
+    uint32 submit_limit = 5;
+}
+

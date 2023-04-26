@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2091
+// Name: BNDDIBJFHJL
+message ExpeditionChallengeEnterRegionNotify {
+    uint32 id = 4;
+    bool is_puzzle_finished = 11;
+}
+

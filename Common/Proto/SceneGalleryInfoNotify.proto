@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SceneGalleryInfo.proto";
+
+// CmdId: 5599
+// Name: EKPFAAFNGJE
+message SceneGalleryInfoNotify {
+    SceneGalleryInfo gallery_info = 15;
+}
+

@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "EvtRushMoveInfo.proto";
+import "ForwardType.proto";
+
+// CmdId: 378
+// Name: AEMCOFMKGBP
+message EvtRushMoveNotify {
+    ForwardType forward_type = 2;
+    EvtRushMoveInfo evt_rush_move_info = 12;
+}
+

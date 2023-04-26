@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 138
+// Name: KPFDAAAHFOE
+message AdjustWorldLevelReq {
+    uint32 LJJOOOBJAKM = 13;
+    uint32 GEIJKDPEJKG = 15;
+}
+

@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: GHGALEANJOA
+message ArenaChallengeChildChallengeInfo {
+    bool is_settled = 3;
+    bool is_success = 13;
+    uint32 challenge_id = 12;
+    uint32 challenge_index = 4;
+    uint32 challenge_type = 11;
+}
+

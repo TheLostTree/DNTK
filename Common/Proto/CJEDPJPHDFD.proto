@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "EEKGPJAAGNH.proto";
+
+// CmdId: 21417
+// Name: CJEDPJPHDFD
+message CJEDPJPHDFD {
+    repeated EEKGPJAAGNH EOFCOHEIPNO = 9;
+    uint32 level_id = 13;
+    int32 retcode = 7;
+}
+

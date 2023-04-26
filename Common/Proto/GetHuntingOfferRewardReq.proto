@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HuntingPair.proto";
+
+// CmdId: 4315
+// Name: IIIDHHIHDHN
+message GetHuntingOfferRewardReq {
+    uint32 city_id = 3;
+    HuntingPair hunting_pair = 6;
+}
+

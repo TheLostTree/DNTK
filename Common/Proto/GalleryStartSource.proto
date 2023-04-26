@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: BPJKMCDHCOJ
+enum GalleryStartSource {
+    GALLERY_START_BY_NONE = 0;
+    GALLERY_START_BY_MATCH = 1;
+    GALLERY_START_BY_DRAFT = 2;
+}
+

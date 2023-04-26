@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SalvagePreventStopReason.proto";
+
+// Name: OOCDNJINJGJ
+message SalvagePreventGallerySettleInfo {
+    uint32 monster_count = 14;
+    uint32 time_remain = 7;
+    SalvagePreventStopReason reason = 13;
+    uint32 final_score = 11;
+}
+

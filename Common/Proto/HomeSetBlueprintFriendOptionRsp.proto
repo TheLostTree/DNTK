@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4849
+// Name: KHKDGIEFOAO
+message HomeSetBlueprintFriendOptionRsp {
+    bool PKDOOEMFGDL = 8;
+    bool ADPGCNNFAHJ = 11;
+    int32 retcode = 4;
+}
+

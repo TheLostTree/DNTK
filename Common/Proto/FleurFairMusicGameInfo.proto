@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FleurFairMusicRecord.proto";
+
+// Name: NCGOHMANHCA
+message FleurFairMusicGameInfo {
+    map<uint32, FleurFairMusicRecord> music_record_map = 6;
+}
+

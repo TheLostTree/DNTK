@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: KHBDDBHLOCA
+message ChallengeRecord {
+    uint32 challenge_id = 3;
+    uint32 challenge_index = 2;
+    uint32 MDLNIEHGHHD = 1;
+    uint32 HHHBNDFPJJI = 15;
+}
+

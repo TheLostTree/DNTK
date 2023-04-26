@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: JCDFMFJACEH
+message AvatarSatiationData {
+    float finish_time = 12;
+    float penalty_finish_time = 8;
+    uint64 avatar_guid = 5;
+}
+

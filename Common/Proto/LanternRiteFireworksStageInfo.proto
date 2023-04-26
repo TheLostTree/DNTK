@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "LanternRiteFireworksChallengeInfo.proto";
+
+// Name: AHGKMMHDLNC
+message LanternRiteFireworksStageInfo {
+    repeated LanternRiteFireworksChallengeInfo challenge_info_list = 3;
+    uint32 stage_id = 5;
+    bool is_open = 7;
+}
+

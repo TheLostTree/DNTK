@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "LunaRiteHintPointType.proto";
+import "Vector.proto";
+
+// Name: NKMCNBPFMBJ
+message LunaRiteHintPoint {
+    LunaRiteHintPointType type = 5;
+    uint32 index = 1;
+    uint32 area_id = 14;
+    Vector pos = 10;
+}
+

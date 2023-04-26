@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ActivityInfo.proto";
+
+// CmdId: 2186
+// Name: DMOCPEKHGHA
+message ActivityInfoNotify {
+    ActivityInfo activity_info = 12;
+}
+

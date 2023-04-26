@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ItemParam.proto";
+
+// CmdId: 2132
+// Name: AOFKHINBNPA
+message ActivityTakeWatcherRewardBatchRsp {
+    int32 retcode = 7;
+    repeated ItemParam item_list = 8;
+    uint32 activity_id = 3;
+    repeated uint32 watcher_id_list = 6;
+}
+

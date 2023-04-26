@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 24388
+// Name: INPJHOENKHP
+message VintageMarketStoreViewStrategyRsp {
+    uint32 strategy_id = 7;
+    int32 retcode = 2;
+    repeated uint32 strategy_list = 11;
+}
+

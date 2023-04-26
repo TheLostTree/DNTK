@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: IMNNCILPDEM
+enum GCGSettleOption {
+    GCG_SETTLE_OPT_NONE = 0;
+    GCG_SETTLE_OPT_EXIT = 1;
+    GCG_SETTLE_OPT_CONTINUE = 2;
+    GCG_SETTLE_OPT_RESTART = 3;
+}
+

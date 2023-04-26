@@ -1,0 +1,11 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LHJBFAABGFH
+message GCGOperationReroll {
+    repeated uint32 dice_index_list = 9;
+}
+

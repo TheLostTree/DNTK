@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2459
+// Name: PBGNHCLPLIN
+message TowerEnterLevelReq {
+    uint32 enter_point_id = 13;
+}
+

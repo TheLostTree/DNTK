@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8429
+// Name: BGJBLCDKIND
+message ActivitySetGiftWishRsp {
+    int32 retcode = 11;
+    uint32 schedule_id = 7;
+}
+

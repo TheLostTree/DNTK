@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: BJPCCGMMMPF
+message TreasureMapBonusChallengeInfo {
+    uint32 solution_id = 2;
+    map<uint32, bool> fragment_map = 14;
+    bool is_done = 15;
+    bool is_active = 3;
+    uint32 config_id = 1;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5249
+// Name: LEEDPLNIJHN
+message MiracleRingTakeRewardReq {
+    uint32 gadget_id = 2;
+    uint32 gadget_entity_id = 15;
+}
+

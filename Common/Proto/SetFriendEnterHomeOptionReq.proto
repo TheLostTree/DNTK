@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FriendEnterHomeOption.proto";
+
+// CmdId: 4621
+// Name: JNOPMAOIKHJ
+message SetFriendEnterHomeOptionReq {
+    FriendEnterHomeOption option = 4;
+}
+

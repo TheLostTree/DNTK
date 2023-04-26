@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2865
+// Name: EOOLFHCDEEA
+message TakeCityReputationExploreRewardReq {
+    repeated uint32 explore_id_list = 2;
+    uint32 city_id = 5;
+}
+

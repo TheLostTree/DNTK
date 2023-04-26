@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AreaPlayType.proto";
+
+// CmdId: 3327
+// Name: EDBBJDLNODE
+message AreaPlayInfoNotify {
+    AreaPlayType area_play_type = 6;
+    uint32 detail_play_type = 4;
+}
+

@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ExhibitionDisplayInfo.proto";
+import "ProfilePicture.proto";
+
+// Name: JKPKCHPJLBK
+message HideAndSeekSettleInfo {
+    repeated ExhibitionDisplayInfo card_list = 4;
+    string online_id = 11;
+    uint32 uid = 9;
+    ProfilePicture profile_picture = 12;
+    uint32 head_image = 10;
+    string nickname = 3;
+}
+

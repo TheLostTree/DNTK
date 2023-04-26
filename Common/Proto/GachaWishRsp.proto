@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1556
+// Name: AEEFJKOLIKC
+message GachaWishRsp {
+    uint32 KKDFKKEMEBA = 4;
+    uint32 gacha_schedule_id = 15;
+    uint32 FBILBJNNIKE = 14;
+    uint32 KDFPKENAIOJ = 6;
+    int32 retcode = 1;
+    uint32 gacha_type = 5;
+}
+

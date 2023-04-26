@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CreateEntityInfo.proto";
+import "CreateReason.proto";
+
+// CmdId: 248
+// Name: PMHPGGKMPCJ
+message SceneCreateEntityReq {
+    bool is_destroy_when_disconnect = 9;
+    CreateReason reason = 5;
+    CreateEntityInfo entity = 2;
+}
+

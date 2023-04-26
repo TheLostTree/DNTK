@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "EntityConfigHashEntry.proto";
+
+// CmdId: 3304
+// Name: BKGBDCBDGKF
+message EntityConfigHashNotify {
+    repeated EntityConfigHashEntry KPJGDNDBAIM = 9;
+    repeated EntityConfigHashEntry EBKCNJNMGLA = 8;
+    repeated EntityConfigHashEntry LIMODOCBEBH = 14;
+}
+

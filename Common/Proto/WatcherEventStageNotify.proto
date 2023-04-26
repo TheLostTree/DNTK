@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2216
+// Name: OLIPECANKPG
+message WatcherEventStageNotify {
+    uint32 watcher_id = 14;
+    uint32 add_progress = 8;
+    uint32 stage = 11;
+}
+

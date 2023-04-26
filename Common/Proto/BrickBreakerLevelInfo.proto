@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: FOGBFDIKCIL
+message BrickBreakerLevelInfo {
+    bool is_can_start = 6;
+    repeated uint32 chosen_skill_list = 3;
+    repeated uint32 chosen_avatar_list = 12;
+    uint32 max_score = 2;
+    bool is_finish = 8;
+    uint32 level_id = 7;
+}
+

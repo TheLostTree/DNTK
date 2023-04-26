@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8516
+// Name: GDDMMCHGDKM
+message RogueDiaryDungeonSettleNotify {
+    bool is_finish = 1;
+    uint32 cur_round = 9;
+    uint32 explore_time = 10;
+}
+

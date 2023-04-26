@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 7793
+// Name: FHLIADHHNAF
+message GCGDSBanCardNotify {
+    repeated uint32 card_list = 10;
+}
+

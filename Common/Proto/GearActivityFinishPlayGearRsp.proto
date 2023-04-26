@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 21164
+// Name: CAHLCOBAAOA
+message GearActivityFinishPlayGearRsp {
+    bool is_success = 11;
+    uint32 level_id = 5;
+    int32 retcode = 4;
+}
+

@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5586
+// Name: MGNIILLEFFB
+message IslandPartyRaftInfoNotify {
+    uint32 DPKCLCKNEOF = 13;
+    uint32 point_id = 11;
+    uint32 CDJPPMFEPHL = 6;
+    uint32 coin = 14;
+}
+

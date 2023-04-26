@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SummerTimeSprintBoatRecord.proto";
+
+// Name: ECKGBIFKOFN
+message SummerTimeSprintBoatInfo {
+    repeated SummerTimeSprintBoatRecord record_list = 11;
+}
+

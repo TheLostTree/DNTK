@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 881
+// Name: MEJCOJFINIL
+message ProjectorOptionRsp {
+    uint32 entity_id = 15;
+    int32 retcode = 10;
+    uint32 op_type = 14;
+}
+

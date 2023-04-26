@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LAJCKPNPIEO
+message InBattleMechanicusBuildingInfo {
+    uint32 refund_points = 7;
+    uint32 level = 4;
+    uint32 cost_points = 8;
+    uint32 building_id = 14;
+}
+

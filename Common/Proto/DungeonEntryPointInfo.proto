@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "DungeonEntryInfo.proto";
+
+// Name: JALNEBPGBAJ
+message DungeonEntryPointInfo {
+    uint32 recommend_dungeon_id = 11;
+    uint32 point_id = 12;
+    uint32 scene_id = 8;
+    repeated DungeonEntryInfo dungeon_entry_list = 4;
+}
+

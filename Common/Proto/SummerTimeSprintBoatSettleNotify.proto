@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8406
+// Name: GNLNKEJEPIG
+message SummerTimeSprintBoatSettleNotify {
+    uint32 LKOGKCCJBFE = 6;
+    bool is_success = 5;
+    uint32 group_id = 10;
+    uint32 HPCCAIMDMDN = 7;
+    uint32 score = 2;
+    uint32 total_num = 3;
+    uint32 left_time = 1;
+    bool is_new_record = 13;
+}
+

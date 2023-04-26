@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5597
+// Name: BONOCJHIGAL
+message WindFieldGalleryChallengeInfoNotify {
+    bool is_success = 3;
+    uint32 FKLLFAPMCOB = 12;
+    uint32 HBEFCMIOHCN = 13;
+    bool is_start = 9;
+    uint32 FJDAJPLIFIG = 15;
+    uint32 DIFGKMHHIMF = 11;
+    uint32 BKIIHPOAPNA = 10;
+}
+

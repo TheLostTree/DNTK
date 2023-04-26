@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8260
+// Name: MINCIEAHAPO
+message IrodoriMasterStartGalleryReq {
+    uint32 difficulty = 13;
+    uint32 level_id = 14;
+}
+

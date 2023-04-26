@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "RoguelikeDungeonSettleInfo.proto";
+
+// CmdId: 8451
+// Name: OOHKNAIKHNK
+message RoguelikeGiveUpRsp {
+    int32 retcode = 4;
+    uint32 stage_id = 9;
+    oneof info {
+        RoguelikeDungeonSettleInfo settle_info = 10;
+    }
+}
+

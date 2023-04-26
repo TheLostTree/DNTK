@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeMarkPointSceneData.proto";
+
+// CmdId: 4551
+// Name: ILKGKNKEFIP
+message HomeMarkPointNotify {
+    repeated HomeMarkPointSceneData mark_point_data_list = 10;
+}
+

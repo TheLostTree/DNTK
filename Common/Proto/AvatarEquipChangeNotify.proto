@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SceneReliquaryInfo.proto";
+import "SceneWeaponInfo.proto";
+
+// CmdId: 682
+// Name: ANIOAPMNCML
+message AvatarEquipChangeNotify {
+    uint64 avatar_guid = 14;
+    SceneWeaponInfo weapon = 9;
+    SceneReliquaryInfo reliquary = 1;
+    uint32 equip_type = 5;
+    uint64 equip_guid = 15;
+    uint32 item_id = 11;
+}
+

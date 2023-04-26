@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4737
+// Name: FEKGILBDFCN
+message HomeDeleteBlueprintReq {
+    uint32 slot_id = 12;
+}
+

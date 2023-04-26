@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SalvagePreventSettleInfo.proto";
+
+// CmdId: 8120
+// Name: HHLJCILFCFJ
+message SalvagePreventSettleNotify {
+    uint32 gallery_id = 7;
+    SalvagePreventSettleInfo settle_info = 1;
+}
+

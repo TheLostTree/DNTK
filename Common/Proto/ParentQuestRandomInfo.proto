@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: GMGHKEODFAD
+message ParentQuestRandomInfo {
+    uint32 entrance_id = 13;
+    uint32 template_id = 10;
+    repeated uint32 factor_list = 4;
+}
+

@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CustomDungeon.proto";
+import "EnterCustomDungeonType.proto";
+
+// CmdId: 6216
+// Name: NOLHMPAAHCB
+message EnterCustomDungeonRsp {
+    map<uint32, uint32> room_cost_map = 8;
+    CustomDungeon custom_dungeon = 15;
+    EnterCustomDungeonType enter_type = 11;
+    int32 retcode = 4;
+}
+

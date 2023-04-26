@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1721
+// Name: JEOOOPFMNOK
+message AvatarFetterLevelRewardRsp {
+    uint32 reward_id = 7;
+    int32 retcode = 15;
+    uint32 fetter_level = 13;
+    uint64 avatar_guid = 3;
+}
+

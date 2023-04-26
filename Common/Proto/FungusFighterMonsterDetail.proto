@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: MEEKLHEGAKK
+message FungusFighterMonsterDetail {
+    uint32 fungus_id = 5;
+    bool is_alive = 12;
+    float cur_hp_percentage = 8;
+}
+

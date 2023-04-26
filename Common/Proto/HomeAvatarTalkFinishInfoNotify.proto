@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeAvatarTalkFinishInfo.proto";
+
+// CmdId: 4768
+// Name: FOILFLGLJNI
+message HomeAvatarTalkFinishInfoNotify {
+    repeated HomeAvatarTalkFinishInfo avatar_talk_info_list = 9;
+}
+

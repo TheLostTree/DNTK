@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4644
+// Name: FGOLIGGOLFH
+message HomeExchangeWoodRsp {
+    uint32 wood_id = 5;
+    int32 retcode = 8;
+    uint32 NMNCDDNAKLK = 12;
+    uint32 KLNKMDGAOJI = 9;
+}
+

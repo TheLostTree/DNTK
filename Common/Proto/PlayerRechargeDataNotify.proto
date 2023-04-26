@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ProductPriceTier.proto";
+
+// CmdId: 4115
+// Name: PEHFNKBDNNG
+message PlayerRechargeDataNotify {
+    uint32 card_product_remain_days = 15;
+    repeated ProductPriceTier product_price_tier_list = 11;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "LunchBoxData.proto";
+
+// CmdId: 4270
+// Name: KGFNKABPJMB
+message SetUpLunchBoxWidgetRsp {
+    int32 retcode = 14;
+    LunchBoxData lunch_box_data = 10;
+}
+

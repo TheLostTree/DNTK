@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGDiceSideType.proto";
+
+// Name: EDHEBJGBOAN
+message GCGMsgDiceRoll {
+    repeated GCGDiceSideType dice_side_list = 15;
+    uint32 controller_id = 3;
+    uint32 dice_num = 11;
+}
+

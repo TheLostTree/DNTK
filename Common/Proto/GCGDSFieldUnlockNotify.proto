@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 7820
+// Name: OJDIFIEOINF
+message GCGDSFieldUnlockNotify {
+    uint32 field_id = 15;
+}
+

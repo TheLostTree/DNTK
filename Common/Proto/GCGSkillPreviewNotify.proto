@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGChangeOnstageInfo.proto";
+import "GCGSkillPreviewInfo.proto";
+import "GCGSkillPreviewPlayCardInfo.proto";
+
+// CmdId: 7993
+// Name: PKMOJBOIHAD
+message GCGSkillPreviewNotify {
+    repeated GCGSkillPreviewInfo skill_preview_list = 5;
+    uint32 onstage_card_guid = 11;
+    uint32 controller_id = 12;
+    repeated GCGChangeOnstageInfo change_onstage_preview_list = 8;
+    repeated GCGSkillPreviewPlayCardInfo play_card_list = 1;
+}
+

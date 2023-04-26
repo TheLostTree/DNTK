@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: JKLPFKCFBHM
+message FungusFighterV2SettleInfo {
+    uint32 LJLPPLECIJK = 9;
+    uint32 PFEJLBFPMGF = 2;
+    uint32 cost_time = 3;
+    uint32 HMEKPCPLCDG = 6;
+    uint32 level_id = 8;
+    bool is_new_record = 1;
+}
+

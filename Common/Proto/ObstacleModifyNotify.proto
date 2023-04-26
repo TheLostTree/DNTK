@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ObstacleInfo.proto";
+
+// CmdId: 2389
+// Name: BEDOODLKBLH
+message ObstacleModifyNotify {
+    uint32 scene_id = 2;
+    repeated int32 remove_obstacle_ids = 13;
+    repeated ObstacleInfo add_obstacles = 5;
+}
+

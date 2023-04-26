@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 456
+// Name: DNDFBIMEHCF
+message AddQuestContentProgressReq {
+    uint32 add_progress = 10;
+    uint32 param = 3;
+    uint32 content_type = 9;
+}
+

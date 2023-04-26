@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8245
+// Name: NCFOMHIINBL
+message LanternRiteEndFireworksReformReq {
+    uint32 challenge_id = 13;
+    uint32 stage_id = 3;
+}
+

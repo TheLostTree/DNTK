@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3972
+// Name: CHIANHIJGEP
+message MechanicusUnlockGearRsp {
+    uint32 gear_id = 5;
+    uint32 mechanicus_id = 8;
+    int32 retcode = 6;
+}
+

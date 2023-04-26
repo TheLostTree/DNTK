@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 6331
+// Name: OKAPOMMIKFD
+message UgcNotify {
+    bool ACDJAAHCMNO = 12;
+    bool NNMGKMBNHFH = 11;
+    bool KOIGBBAOMHF = 2;
+    bool JKCCFGGGKGA = 5;
+}
+

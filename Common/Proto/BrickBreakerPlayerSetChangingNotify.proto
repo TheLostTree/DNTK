@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5330
+// Name: EPLLEJADMPA
+message BrickBreakerPlayerSetChangingNotify {
+    uint32 uid = 2;
+    bool is_changing = 3;
+}
+

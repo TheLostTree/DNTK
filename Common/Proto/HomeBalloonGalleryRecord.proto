@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeGroupPlayerInfo.proto";
+
+// Name: HKNJMJFDBBB
+message HomeBalloonGalleryRecord {
+    uint32 hit_count = 9;
+    uint32 score = 4;
+    uint32 timestamp = 11;
+    HomeGroupPlayerInfo player_info = 2;
+}
+

@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "LunaRiteHintPoint.proto";
+import "LunaRiteHintStatusType.proto";
+
+// CmdId: 8822
+// Name: JBGDFBKCNFH
+message LunaRiteHintPointRsp {
+    repeated LunaRiteHintPoint hint_point = 11;
+    uint32 area_id = 7;
+    LunaRiteHintStatusType hint_status = 12;
+    int32 retcode = 13;
+}
+

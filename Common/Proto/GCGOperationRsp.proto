@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 7925
+// Name: AEMOAMOBAEB
+message GCGOperationRsp {
+    int32 retcode = 8;
+    uint32 op_seq = 1;
+}
+

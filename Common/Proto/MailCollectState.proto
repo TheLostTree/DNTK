@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: COONHFJFEHG
+enum MailCollectState {
+    MAIL_COLLECTIBLE_UNKONW = 0;
+    MAIL_NOT_COLLECTIBLE = 1;
+    MAIL_COLLECTIBLE_UNCOLLECTED = 2;
+    MAIL_COLLECTIBLE_COLLECTED = 3;
+}
+

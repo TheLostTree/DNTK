@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGPlayerGCGState.proto";
+
+// CmdId: 7880
+// Name: KEGFDAJCPIO
+message GCGWorldPlayerGCGStateRsp {
+    repeated GCGPlayerGCGState player_state = 1;
+    int32 retcode = 10;
+}
+

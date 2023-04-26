@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: ANCKCFFOAID
+message AbilityActionGenerateElemBall {
+    uint32 room_id = 2;
+    Vector rot = 9;
+    Vector pos = 14;
+}
+

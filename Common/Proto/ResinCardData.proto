@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: CJGELELGMNO
+message ResinCardData {
+    uint32 remain_reward_days = 10;
+    uint32 last_daily_reward_time = 7;
+    uint32 config_id = 1;
+    uint32 expire_time = 13;
+}
+

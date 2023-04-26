@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1096
+// Name: FKHLNMFAJBD
+message UnlockAvatarTalentRsp {
+    int32 retcode = 11;
+    uint64 avatar_guid = 13;
+    uint32 talent_id = 4;
+}
+

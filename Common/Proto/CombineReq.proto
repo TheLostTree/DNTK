@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 683
+// Name: BJKEDKMONBM
+message CombineReq {
+    uint32 combine_id = 14;
+    uint32 combine_count = 4;
+    uint64 avatar_guid = 11;
+}
+

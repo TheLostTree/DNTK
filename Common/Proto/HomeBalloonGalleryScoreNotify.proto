@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4606
+// Name: PHKCFKKMHAF
+message HomeBalloonGalleryScoreNotify {
+    uint32 add_score = 5;
+    uint32 trigger_entity_id = 4;
+    uint32 gallery_id = 7;
+    uint32 cur_score = 8;
+}
+

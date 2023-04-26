@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8844
+// Name: CGNGOIAICCF
+message RefreshRoguelikeDungeonCardRsp {
+    repeated uint32 res_card_list = 14;
+    int32 retcode = 5;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGMessagePack.proto";
+
+// CmdId: 7133
+// Name: JCMIBMOKICD
+message GCGMessagePackNotify {
+    uint32 server_seq = 2;
+    repeated GCGMessagePack msg_pack_list = 14;
+}
+

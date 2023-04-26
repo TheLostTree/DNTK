@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "RegionSearchState.proto";
+
+// Name: ANHDCCFHLOD
+message RegionSearch {
+    RegionSearchState state = 5;
+    uint32 region_search_id = 1;
+    bool is_entered = 10;
+    uint32 progress = 8;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: OMEFMODIDAM
+enum AranaraCollectionState {
+    ARANARA_COLLECTION_STATE_NONE = 0;
+    ARANARA_COLLECTION_STATE_COLLECTABLE = 1;
+    ARANARA_COLLECTION_STATE_COLLECTED = 2;
+    ARANARA_COLLECTION_STATE_FINISHED = 3;
+}
+

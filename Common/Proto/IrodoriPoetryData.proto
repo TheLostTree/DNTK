@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "IrodoriPoetryThemeData.proto";
+
+// Name: DCDPDMDHDHD
+message IrodoriPoetryData {
+    uint32 cur_theme_id = 2;
+    repeated IrodoriPoetryThemeData theme_data_list = 15;
+}
+

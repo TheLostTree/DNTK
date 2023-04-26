@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ClientMassiveEntity.proto";
+
+// CmdId: 388
+// Name: PCCMPICFEFA
+message CreateMassiveEntityReq {
+    repeated ClientMassiveEntity massive_entity_list = 2;
+}
+

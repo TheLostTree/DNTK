@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: KLODNOOCDPE
+message WinterCampStageInfo {
+    uint32 cur_progress = 9;
+    uint32 id = 13;
+    uint32 total_progress = 2;
+    Vector pos = 5;
+    uint32 open_time = 6;
+    bool is_finished = 3;
+}
+

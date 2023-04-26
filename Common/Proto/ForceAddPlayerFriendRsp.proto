@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FriendBrief.proto";
+
+// CmdId: 4057
+// Name: OHOAMNEBEDD
+message ForceAddPlayerFriendRsp {
+    int32 retcode = 13;
+    FriendBrief target_friend_brief = 9;
+    uint32 target_uid = 5;
+}
+

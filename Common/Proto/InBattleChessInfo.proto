@@ -1,0 +1,22 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ChessCardInfo.proto";
+import "ChessMysteryInfo.proto";
+import "ChessPlayerInfo.proto";
+
+// Name: HLHMEIOKCEA
+message InBattleChessInfo {
+    ChessMysteryInfo mystery_info = 3;
+    uint32 round = 10;
+    repeated uint32 ban_card_tag_list = 12;
+    uint32 left_monsters = 7;
+    map<uint32, ChessPlayerInfo> player_info_map = 13;
+    uint32 excaped_monsters = 9;
+    repeated ChessCardInfo selected_card_info_list = 2;
+    uint32 MMLJDCLICFL = 15;
+    uint32 NFNKKDHGPAN = 5;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: MCAMPODMLJG
+message SceneGalleryBrokenFloorInfo {
+    uint32 end_time = 7;
+    map<uint32, uint32> fall_count_map = 15;
+}
+

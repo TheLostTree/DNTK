@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// CmdId: 633
+// Name: EFOOFNIDNMC
+message DropHintNotify {
+    Vector position = 6;
+    repeated uint32 item_id_list = 12;
+}
+

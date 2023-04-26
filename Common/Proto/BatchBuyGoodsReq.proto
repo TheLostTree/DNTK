@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "BuyGoodsParam.proto";
+
+// CmdId: 792
+// Name: HFFEKJIIFDG
+message BatchBuyGoodsReq {
+    uint32 shop_type = 12;
+    repeated BuyGoodsParam buy_goods_list = 13;
+}
+

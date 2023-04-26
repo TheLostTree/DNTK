@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SalvageEscortGallerySettleInfo.proto";
+
+// Name: IEMOAMPLPGH
+message SalvageEscortSettleInfo {
+    bool is_new_record = 6;
+    SalvageEscortGallerySettleInfo settle_info = 13;
+}
+

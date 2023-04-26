@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 426
+// Name: KMIHBBDHIFF
+message GetParentQuestVideoKeyRsp {
+    uint64 video_key = 3;
+    uint32 parent_quest_id = 8;
+    int32 retcode = 10;
+}
+

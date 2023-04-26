@@ -1,0 +1,20 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: HNANDMBFCNA
+message EvtAnimatorStateChangedInfo {
+    Vector pos = 3;
+    bool APIBNFGICMI = 1;
+    uint32 JFEGPJJOCBK = 5;
+    bool JCEAKFNKDBM = 11;
+    uint32 entity_id = 13;
+    uint32 DPCNLFACFEC = 4;
+    uint32 EJAOGEAEKOH = 2;
+    float fade_duration = 12;
+    int32 face_angle_compact = 15;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3198
+// Name: FPMKANGLGAP
+message CheckGroupReplacedRsp {
+    repeated uint32 replaced_group_id_list = 8;
+    int32 retcode = 11;
+}
+

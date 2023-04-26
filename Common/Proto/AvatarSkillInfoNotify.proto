@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AvatarSkillInfo.proto";
+
+// CmdId: 1072
+// Name: IMODKAICNHM
+message AvatarSkillInfoNotify {
+    map<uint32, AvatarSkillInfo> skill_map = 1;
+    uint64 guid = 12;
+}
+

@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "BattlePassMission.proto";
+import "BattlePassSchedule.proto";
+
+// CmdId: 2609
+// Name: KHDJKFCMPKM
+message BattlePassAllDataNotify {
+    repeated BattlePassMission mission_list = 12;
+    BattlePassSchedule cur_schedule = 14;
+    bool have_cur_schedule = 11;
+}
+

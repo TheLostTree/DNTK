@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: ELGBEHJIAIA
+message CoopCg {
+    uint32 id = 1;
+    bool is_unlock = 7;
+}
+

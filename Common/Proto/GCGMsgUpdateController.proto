@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Uint32Pair.proto";
+
+// Name: ADBCPAJHOHK
+message GCGMsgUpdateController {
+    repeated Uint32Pair allow_controller_map = 4;
+}
+

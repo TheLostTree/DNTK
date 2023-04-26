@@ -1,0 +1,23 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// CmdId: 2396
+// Name: HHMLOCBABMC
+message QueryPathRsp {
+    // Name: AMHEPLPEHOG
+    enum PathStatusType {
+        STATUS_FAIL = 0;
+        STATUS_SUCC = 1;
+        STATUS_PARTIAL = 2;
+    }
+
+    PathStatusType query_status = 5;
+    int32 query_id = 3;
+    repeated Vector corners = 1;
+    int32 retcode = 10;
+}
+

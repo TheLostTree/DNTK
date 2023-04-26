@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: GFDMALDLDJM
+message SceneGalleryHomeSeekFurnitureInfo {
+    uint32 NJHPFPPGMHP = 4;
+    map<uint32, uint32> player_score_map = 15;
+    uint32 FOLBDGFAJHK = 14;
+    uint32 GPJDOAEHFGN = 8;
+}
+

@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: HCCCNFFCBGN
+message HomeFurnitureData {
+    uint32 furniture_id = 10;
+    Vector spawn_rot = 15;
+    int32 parent_furniture_index = 11;
+    Vector spawn_pos = 6;
+    uint32 version = 13;
+    uint32 guid = 3;
+}
+

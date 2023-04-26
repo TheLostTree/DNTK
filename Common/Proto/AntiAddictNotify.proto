@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 193
+// Name: PLLBADBHJJB
+message AntiAddictNotify {
+    string level = 1;
+    int32 msg_type = 5;
+    string msg = 12;
+}
+

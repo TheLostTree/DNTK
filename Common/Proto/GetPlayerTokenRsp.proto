@@ -12,8 +12,8 @@ message GetPlayerTokenRsp {
     string msg = 11;
     string sign = 907;
     bytes JLOPICGGPBP = 9;
-    uint32 CIJNPHDIOND = 12;
-    uint32 KDIHPMJOCPG = 834;
+    uint32 account_type = 12;
+    uint32 sub_channel_id = 834;
     uint32 platform_type = 1;
     uint32 channel_id = 1156;
     int32 retcode = 10;
@@ -21,7 +21,7 @@ message GetPlayerTokenRsp {
     uint32 IEPOFPNOOKD = 1572;
     string token = 15;
     uint32 key_id = 1470;
-    uint32 LFPHHMGKIIP = 1474;
+    uint32 reg_platform = 1474;
     string server_rand_key = 1291;
     bool MPKKNNFFINM = 1058;
     bool is_proficient_player = 14;

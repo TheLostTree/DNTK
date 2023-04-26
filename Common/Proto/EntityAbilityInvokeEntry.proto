@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AbilityInvokeEntry.proto";
+
+// Name: EMCLDENBBCF
+message EntityAbilityInvokeEntry {
+    uint32 entity_id = 9;
+    repeated AbilityInvokeEntry invokes = 7;
+}
+

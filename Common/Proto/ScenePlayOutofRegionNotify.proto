@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4425
+// Name: OHALFGLLBHC
+message ScenePlayOutofRegionNotify {
+    uint32 play_id = 6;
+}
+

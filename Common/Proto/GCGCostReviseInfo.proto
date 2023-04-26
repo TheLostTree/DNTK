@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGAttackCostInfo.proto";
+import "GCGPlayCardCostInfo.proto";
+import "GCGSelectOnStageCostInfo.proto";
+
+// Name: JNCLNIFHAEF
+message GCGCostReviseInfo {
+    repeated GCGPlayCardCostInfo play_card_cost_list = 3;
+    repeated GCGAttackCostInfo attack_cost_list = 9;
+    repeated GCGSelectOnStageCostInfo select_on_stage_cost_list = 6;
+    bool is_can_attack = 4;
+    repeated uint32 can_use_hand_card_id_list = 2;
+}
+

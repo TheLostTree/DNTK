@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: HNLOLPHFANA
+message FurnitureMakeMakeInfo {
+    uint32 make_count = 14;
+    uint32 furniture_id = 6;
+}
+

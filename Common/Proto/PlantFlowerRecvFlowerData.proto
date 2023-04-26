@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ProfilePicture.proto";
+
+// Name: NLLJKPNIDML
+message PlantFlowerRecvFlowerData {
+    ProfilePicture profile_picture = 9;
+    uint32 uid = 4;
+    string nickname = 10;
+    map<uint32, uint32> flower_num_map = 7;
+}
+

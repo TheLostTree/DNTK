@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "EntityClientData.proto";
+
+// CmdId: 3424
+// Name: GMCOAPLLLOG
+message SetEntityClientDataNotify {
+    uint32 entity_id = 7;
+    EntityClientData entity_client_data = 6;
+}
+

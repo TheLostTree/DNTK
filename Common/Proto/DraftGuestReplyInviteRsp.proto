@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5441
+// Name: PBDACOIIJCI
+message DraftGuestReplyInviteRsp {
+    uint32 draft_id = 4;
+    bool is_agree = 6;
+    int32 retcode = 5;
+}
+

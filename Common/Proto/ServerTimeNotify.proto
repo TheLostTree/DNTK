@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 63
+// Name: FDLANFBPBIO
+message ServerTimeNotify {
+    uint64 server_time = 10;
+}
+

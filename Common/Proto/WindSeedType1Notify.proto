@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 23435
+// Name: DKKHNGCHJHL
+message WindSeedType1Notify {
+    bytes payload = 12;
+    uint32 config_id = 7;
+}
+

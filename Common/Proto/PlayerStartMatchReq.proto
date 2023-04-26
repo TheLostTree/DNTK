@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MatchType.proto";
+
+// CmdId: 4159
+// Name: NPDMPGMDBAL
+message PlayerStartMatchReq {
+    MatchType match_type = 15;
+    uint32 mp_play_id = 13;
+    uint32 dungeon_id = 12;
+    uint32 mechanicus_difficult_level = 6;
+    uint32 match_id = 2;
+    repeated uint32 match_param_list = 11;
+}
+

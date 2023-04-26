@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1651
+// Name: AGJOJDPCHDG
+message AvatarUpgradeRsp {
+    map<uint32, float> old_fight_prop_map = 15;
+    uint64 avatar_guid = 2;
+    uint32 cur_level = 14;
+    int32 retcode = 6;
+    uint32 old_level = 1;
+    map<uint32, float> cur_fight_prop_map = 10;
+}
+

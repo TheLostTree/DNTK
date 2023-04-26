@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4366
+// Name: NKECGGDNBCB
+message ScenePlayOwnerStartInviteRsp {
+    int32 retcode = 6;
+    bool is_skip_match = 12;
+    uint32 play_id = 3;
+}
+

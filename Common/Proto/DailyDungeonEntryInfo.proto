@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "DungeonEntryInfo.proto";
+
+// Name: BHMLNJCILMM
+message DailyDungeonEntryInfo {
+    uint32 recommend_dungeon_id = 11;
+    DungeonEntryInfo recommend_dungeon_entry_info = 12;
+    uint32 BKPHNNDJJDM = 13;
+    uint32 LNDLCHHFFEA = 14;
+}
+

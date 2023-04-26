@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: GGFHCGIAFOI
+enum ClientReconnectReason {
+    CLIENT_RECONNNECT_NONE = 0;
+    CLIENT_RECONNNECT_QUIT_MP = 1;
+}
+

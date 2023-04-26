@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeAvatarRewardEventInfo.proto";
+
+// CmdId: 4626
+// Name: ILDBHFKHBCD
+message HomeAvatarRewardEventNotify {
+    HomeAvatarRewardEventInfo reward_event = 1;
+    bool is_event_trigger = 6;
+    repeated HomeAvatarRewardEventInfo pending_list = 5;
+}
+

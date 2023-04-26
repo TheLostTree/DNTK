@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2465
+// Name: GPCHOKFJKHO
+message TowerBuffSelectRsp {
+    uint32 tower_buff_id = 13;
+    int32 retcode = 11;
+}
+

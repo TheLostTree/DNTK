@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2135
+// Name: GFPCJOCCGMC
+message FinishDeliveryNotify {
+    uint32 finished_quest_index = 14;
+    uint32 day_index = 11;
+    uint32 schedule_id = 15;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 24529
+// Name: ANLPPAMFPKC
+message ANLPPAMFPKC {
+    uint32 level_id = 4;
+    uint32 CDGBFFCINOP = 14;
+}
+

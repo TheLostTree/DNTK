@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: LJEMEAEFOFN
+message AbilityBornType {
+    Vector move_dir = 11;
+    Vector pos = 7;
+    Vector rot = 10;
+}
+

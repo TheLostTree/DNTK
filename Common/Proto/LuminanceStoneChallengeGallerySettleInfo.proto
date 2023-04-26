@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GalleryStopReason.proto";
+
+// Name: HMMDFIENJGE
+message LuminanceStoneChallengeGallerySettleInfo {
+    uint32 gallery_id = 15;
+    GalleryStopReason reason = 13;
+    uint32 kill_special_monster_count = 6;
+    uint32 clean_mud_count = 4;
+    uint32 kill_monster_count = 9;
+    uint32 final_score = 3;
+}
+

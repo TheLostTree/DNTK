@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 7407
+// Name: PMMLAIDANPP
+message GCGInviteGuestBattleReq {
+    uint32 LNNOPIDBJDH = 7;
+    uint32 uid = 5;
+}
+

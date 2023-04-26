@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "RogueDiaryAvatar.proto";
+
+// CmdId: 8927
+// Name: DPGPIGLIIMK
+message RogueDiaryTiredAvatarNotify {
+    uint32 KJHIELEECFE = 4;
+    repeated RogueDiaryAvatar optianal_tired_avatar_list = 14;
+    uint32 DAFLPOLAOLI = 10;
+    bool is_need_show = 11;
+}
+

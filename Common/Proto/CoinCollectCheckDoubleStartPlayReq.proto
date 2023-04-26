@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 24962
+// Name: AJELBAPILIK
+message CoinCollectCheckDoubleStartPlayReq {
+    uint32 level_id = 6;
+}
+

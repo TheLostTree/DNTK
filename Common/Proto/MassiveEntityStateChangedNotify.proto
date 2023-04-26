@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MassiveEntityState.proto";
+
+// CmdId: 315
+// Name: LIPALCJGCFM
+message MassiveEntityStateChangedNotify {
+    repeated MassiveEntityState massive_entity_state_list = 12;
+}
+

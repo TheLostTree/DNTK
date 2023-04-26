@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: PFGKJAENJNE
+message GearLevelData {
+    uint32 open_time = 3;
+    uint32 ACAPFNOLMKE = 1;
+    uint32 level_id = 2;
+    uint32 NJPEANGOAMC = 9;
+    bool is_open = 6;
+    bool is_finished = 15;
+}
+

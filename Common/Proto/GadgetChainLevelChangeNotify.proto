@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 877
+// Name: JDHIIDNHDIA
+message GadgetChainLevelChangeNotify {
+    map<uint32, uint32> gadget_chain_level_map = 13;
+}
+

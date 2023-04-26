@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4171
+// Name: HOBHBPEFHDL
+message PlayerGeneralMatchConfirmNotify {
+    uint32 uid = 10;
+    bool is_agree = 6;
+    uint32 match_id = 4;
+}
+

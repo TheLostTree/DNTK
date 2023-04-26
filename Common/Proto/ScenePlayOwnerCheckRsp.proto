@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4439
+// Name: BHCDLEGLAKB
+message ScenePlayOwnerCheckRsp {
+    repeated uint32 param_list = 8;
+    uint32 wrong_uid = 7;
+    uint32 play_id = 10;
+    int32 retcode = 5;
+    bool is_skip_match = 13;
+}
+

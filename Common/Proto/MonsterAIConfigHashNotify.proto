@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3467
+// Name: MEGNOIJENKI
+message MonsterAIConfigHashNotify {
+    uint32 entity_id = 3;
+    int32 hash_value = 4;
+    uint32 job_id = 8;
+}
+

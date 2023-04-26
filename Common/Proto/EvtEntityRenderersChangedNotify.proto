@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "EntityRendererChangedInfo.proto";
+import "ForwardType.proto";
+
+// CmdId: 383
+// Name: PBGHFFIDFKC
+message EvtEntityRenderersChangedNotify {
+    ForwardType forward_type = 9;
+    EntityRendererChangedInfo renderer_changed_info = 6;
+    bool is_server_cache = 7;
+    uint32 entity_id = 15;
+}
+

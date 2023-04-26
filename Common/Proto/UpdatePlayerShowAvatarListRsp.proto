@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4058
+// Name: GDGFCOGCFGI
+message UpdatePlayerShowAvatarListRsp {
+    int32 retcode = 5;
+    bool is_show_avatar = 6;
+    repeated uint32 show_avatar_id_list = 2;
+}
+

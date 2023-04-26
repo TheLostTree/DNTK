@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "InBattleMechanicusBuildingInfo.proto";
+
+// Name: IGLPHNBDPBA
+message InBattleMechanicusPlayerInfo {
+    uint32 uid = 6;
+    bool is_card_confirmed = 9;
+    repeated InBattleMechanicusBuildingInfo building_list = 10;
+    uint32 FABNMNFMJFG = 12;
+    uint32 OGEKLCAABAG = 3;
+}
+

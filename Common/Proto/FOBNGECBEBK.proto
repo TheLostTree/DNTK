@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: FOBNGECBEBK
+message FOBNGECBEBK {
+    uint32 FFFEGANCBGK = 1;
+    uint32 card_id = 9;
+}
+

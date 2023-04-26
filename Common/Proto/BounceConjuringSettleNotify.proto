@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "BounceConjuringGallerySettleInfo.proto";
+
+// CmdId: 8427
+// Name: HBHFPDGFOML
+message BounceConjuringSettleNotify {
+    uint32 total_score = 11;
+    bool is_new_record = 8;
+    uint32 chapter_id = 7;
+    map<uint32, BounceConjuringGallerySettleInfo> settle_info_map = 13;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ExpeditionAssistInfo.proto";
+
+// CmdId: 2056
+// Name: OKEJCCLPGCC
+message GetExpeditionAssistInfoListRsp {
+    repeated ExpeditionAssistInfo assist_info_list = 6;
+    int32 retcode = 12;
+}
+

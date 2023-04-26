@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ReunionBriefInfo.proto";
+
+// CmdId: 5062
+// Name: EOBKLFHDEBD
+message ReunionDailyRefreshNotify {
+    ReunionBriefInfo reunion_brief_info = 2;
+}
+

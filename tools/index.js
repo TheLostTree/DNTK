@@ -71,7 +71,48 @@ function copyProtos(){
         fs.writeFileSync("./Common/Proto/"+proto, protocontents_new)
     })
 }
+function copyAllProtos(){
+    const protolist = [
+        // "PacketHead.proto", 
+    ]
 
+    const includes = []
+
+    const proto_source = `${proto_path}/translated/protos`
+    fs.readdirSync(proto_source).forEach(file => {
+        if(file.endsWith(".proto")){
+            protolist.push(file.split("/").pop())
+        }
+    })
+    console.log(protolist)
+    //copy dependencies + protolist to ./protos
+
+    while(protolist.length > 0){
+        const proto = protolist.shift()
+        includes.push(proto)
+        const proto_path = `${proto_source}/${proto}`
+        const proto_content = fs.readFileSync(proto_path, 'utf8')
+        const proto_imports = proto_content.match(/import\s+"(.*)";/g)
+        if(proto_imports){
+            proto_imports.forEach(proto_import => {
+                const import_proto = proto_import.match(/import\s+"(.*)";/)[1]
+                if(!includes.includes(import_proto)){
+                    protolist.push(import_proto)
+                }
+            })
+        }
+    }
+    //copy dependencies + protolist to ./protos
+    includes.forEach(proto => {
+        const protocontents = fs.readFileSync(`${proto_source}/${proto}`, 'utf8');
+        //replace "syntax = "proto3";" with ""syntax = "proto3";\noption csharp_namespace = "Common";""
+        const protocontents_new = protocontents.replace(/syntax\s=\s"proto3";/, `syntax = "proto3";\noption csharp_namespace = "Common.Protobuf";`)
+
+
+        fs.writeFileSync("./Common/Proto/"+proto, protocontents_new)
+    })
+}
 
 createOpcodeCsFile();
-copyProtos();
+// copyProtos();
+copyAllProtos();

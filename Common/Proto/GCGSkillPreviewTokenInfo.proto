@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: FHBHGHNJODK
+message GCGSkillPreviewTokenInfo {
+    uint32 PFPJPOEDPON = 15;
+    uint32 MEKGLJAFFHC = 4;
+    uint32 BKHAKDNDMIO = 2;
+}
+

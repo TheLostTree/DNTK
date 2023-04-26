@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 265
+// Name: KAFMIMOBKKE
+message GetScenePointReq {
+    uint32 scene_id = 1;
+    uint32 belong_uid = 2;
+    bool BJLCFHHIGJD = 15;
+}
+

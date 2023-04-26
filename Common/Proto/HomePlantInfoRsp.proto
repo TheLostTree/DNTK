@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomePlantFieldData.proto";
+
+// CmdId: 4604
+// Name: KPOMBGHCCIJ
+message HomePlantInfoRsp {
+    int32 retcode = 4;
+    repeated HomePlantFieldData field_list = 9;
+}
+

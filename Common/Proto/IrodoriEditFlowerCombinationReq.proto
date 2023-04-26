@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CustomGadgetTreeInfo.proto";
+
+// CmdId: 8944
+// Name: MKEDLCFFAOO
+message IrodoriEditFlowerCombinationReq {
+    CustomGadgetTreeInfo combination_info = 3;
+    uint32 entity_id = 7;
+}
+

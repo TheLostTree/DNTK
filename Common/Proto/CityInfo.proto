@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: HIOHLMOBFND
+message CityInfo {
+    uint32 city_id = 1;
+    uint32 crystal_num = 9;
+    uint32 level = 5;
+}
+

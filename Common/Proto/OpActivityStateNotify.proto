@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "OpActivityTagBriefInfo.proto";
+
+// CmdId: 2590
+// Name: CNGMBOODNAC
+message OpActivityStateNotify {
+    repeated uint32 finished_bonus_activity_id_list = 1;
+    repeated OpActivityTagBriefInfo opened_op_activity_info_list = 10;
+}
+

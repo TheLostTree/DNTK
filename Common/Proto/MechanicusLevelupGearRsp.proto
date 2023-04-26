@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3963
+// Name: IFKPKMPHDFD
+message MechanicusLevelupGearRsp {
+    uint32 mechanicus_id = 1;
+    uint32 after_gear_level = 10;
+    uint32 gear_id = 14;
+    int32 retcode = 6;
+}
+

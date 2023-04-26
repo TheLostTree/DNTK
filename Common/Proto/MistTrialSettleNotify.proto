@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MistTrialBestAvatar.proto";
+
+// CmdId: 8393
+// Name: ENFGOPAEPBM
+message MistTrialSettleNotify {
+    repeated MistTrialBestAvatar best_avatar_list = 6;
+    uint32 first_pass_time = 8;
+    map<uint32, uint32> DKBPGAGEGPL = 12;
+    MistTrialBestAvatar best_hit_avatar = 15;
+    uint32 dungeon_scene_id = 11;
+    map<uint32, uint32> AGCNLMLPFKE = 4;
+}
+

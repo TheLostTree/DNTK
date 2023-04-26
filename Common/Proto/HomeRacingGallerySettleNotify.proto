@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "RacingGallerySettleInfo.proto";
+
+// CmdId: 4840
+// Name: APPIAPLKDKO
+message HomeRacingGallerySettleNotify {
+    RacingGallerySettleInfo settle_info = 5;
+    bool is_new_record = 13;
+    uint32 gallery_id = 10;
+    uint32 rank = 7;
+}
+

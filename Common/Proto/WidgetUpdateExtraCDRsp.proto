@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "WIDGET_EXTRA_CD_TYPE.proto";
+import "WidgetCoolDownData.proto";
+
+// CmdId: 5944
+// Name: NDPCABCJAPA
+message WidgetUpdateExtraCDRsp {
+    int32 retcode = 15;
+    uint32 cd_group = 5;
+    WidgetCoolDownData cool_data = 14;
+    uint32 material_id = 9;
+    WIDGET_EXTRA_CD_TYPE extra_cd_type = 8;
+}
+

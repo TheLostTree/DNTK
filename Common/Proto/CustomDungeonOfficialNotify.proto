@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "EnterCustomDungeonType.proto";
+import "TryCustomDungeonType.proto";
+
+// CmdId: 6213
+// Name: FEDBCANJJGD
+message CustomDungeonOfficialNotify {
+    TryCustomDungeonType try_type = 2;
+    EnterCustomDungeonType enter_type = 9;
+    repeated uint32 official_black_coin_list = 12;
+}
+

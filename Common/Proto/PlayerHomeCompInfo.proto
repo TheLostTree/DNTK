@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FriendEnterHomeOption.proto";
+
+// Name: MBGAMHAPMHK
+message PlayerHomeCompInfo {
+    repeated uint32 seen_module_id_list = 4;
+    repeated uint32 BPAOEFJJFPI = 5;
+    repeated uint32 CKMGNKPLJPI = 2;
+    FriendEnterHomeOption friend_enter_home_option = 11;
+}
+

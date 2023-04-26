@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "InferencePageInfo.proto";
+
+// CmdId: 440
+// Name: NNDLHKHDGJB
+message ParentQuestInferenceDataNotify {
+    uint32 parent_quest_id = 11;
+    repeated InferencePageInfo inference_page_list = 13;
+}
+

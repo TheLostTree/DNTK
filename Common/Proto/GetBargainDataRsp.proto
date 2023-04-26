@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "BargainSnapshot.proto";
+
+// CmdId: 498
+// Name: CMPGGEKCDPC
+message GetBargainDataRsp {
+    int32 retcode = 11;
+    uint32 bargain_id = 6;
+    BargainSnapshot snapshot = 2;
+}
+

@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "OJGNBGJFLDC.proto";
+
+// CmdId: 7310
+// Name: LGDLKBJBEOE
+message LGDLKBJBEOE {
+    repeated uint32 GNGDMHNANEH = 15;
+    int32 retcode = 7;
+    repeated uint32 BKFNFJGFCAD = 9;
+    repeated OJGNBGJFLDC JBDAEBOBLBI = 14;
+}
+

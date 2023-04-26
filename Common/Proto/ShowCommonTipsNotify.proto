@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3128
+// Name: DPNNLLEHHCK
+message ShowCommonTipsNotify {
+    string content = 1;
+    string title = 4;
+    uint32 close_time = 5;
+}
+

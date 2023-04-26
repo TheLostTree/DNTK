@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 111
+// Name: LEIKEGJEGAP
+message TakeBackGivingItemReq {
+    uint32 giving_id = 9;
+}
+

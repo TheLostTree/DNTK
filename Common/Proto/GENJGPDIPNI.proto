@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: GENJGPDIPNI
+enum GENJGPDIPNI {
+    GENJGPDIPNI_CUSTOM_GALLERY_SCORE_BOARD_NORMAL = 0;
+    GENJGPDIPNI_CUSTOM_GALLERY_SCORE_BOARD_COUNTDOWN = 1;
+    GENJGPDIPNI_CUSTOM_GALLERY_SCORE_BOARD_TIMER = 2;
+}
+

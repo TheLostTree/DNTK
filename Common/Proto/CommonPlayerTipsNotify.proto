@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8780
+// Name: MLFMNHKIFNK
+message CommonPlayerTipsNotify {
+    repeated string text_map_id_list = 14;
+    uint32 notify_type = 7;
+}
+

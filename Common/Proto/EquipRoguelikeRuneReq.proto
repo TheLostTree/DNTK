@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8546
+// Name: FJJAIHHLNMC
+message EquipRoguelikeRuneReq {
+    repeated uint32 rune_list = 10;
+}
+

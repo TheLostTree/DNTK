@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGIntentionChangeType.proto";
+import "GCGMsgPVEIntention.proto";
+
+// Name: OMOMDIGPEHH
+message GCGMsgPVEIntentionChange {
+    GCGIntentionChangeType change_type = 11;
+    repeated GCGMsgPVEIntention change_intention_list = 3;
+}
+

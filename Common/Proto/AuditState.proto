@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: GBHPBGNKCEE
+enum AuditState {
+    AUDIT_NONE = 0;
+    AUDIT_WAITING = 1;
+    AUDIT_FAILED = 2;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1016
+// Name: ALMFLAIFPCM
+message BigTalentPointConvertReq {
+    uint64 avatar_guid = 11;
+    repeated uint64 item_guid_list = 10;
+}
+

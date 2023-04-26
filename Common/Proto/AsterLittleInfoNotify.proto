@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AsterLittleDetailInfo.proto";
+
+// CmdId: 2161
+// Name: CEBNEHCJNOC
+message AsterLittleInfoNotify {
+    AsterLittleDetailInfo info = 11;
+}
+

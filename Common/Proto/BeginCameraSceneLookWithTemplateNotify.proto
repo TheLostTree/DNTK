@@ -1,0 +1,25 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// CmdId: 3314
+// Name: CMOCHECCPBP
+message BeginCameraSceneLookWithTemplateNotify {
+    // Name: IGEOPIOCKBE
+    enum FollowType {
+        FOLLOW_TYPE_INIT_FOLLOW_POS = 0;
+        FOLLOW_TYPE_SET_FOLLOW_POS = 1;
+        FOLLOW_TYPE_SET_ABS_FOLLOW_POS = 2;
+    }
+
+    Vector BJAIBAFFGAP = 14;
+    Vector BIGFKDFJPDD = 12;
+    uint32 template_id = 10;
+    repeated string other_params = 15;
+    FollowType follow_type = 5;
+    uint32 entity_id = 2;
+}
+

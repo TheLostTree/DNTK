@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ReunionSignInInfo.proto";
+
+// CmdId: 5076
+// Name: NDLOBKKGODC
+message GetReunionSignInInfoRsp {
+    int32 retcode = 12;
+    ReunionSignInInfo sign_in_info = 10;
+}
+

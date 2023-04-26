@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// CmdId: 5815
+// Name: JCGJAPODEHI
+message FishCastRodReq {
+    uint32 rod_entity_id = 7;
+    uint32 AEINBNLNPJH = 11;
+    uint32 JDNBDNLCCHN = 2;
+    Vector pos = 14;
+}
+

@@ -1,0 +1,21 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ClientCollectorData.proto";
+import "OneoffGatherPointDetectorData.proto";
+import "SkyCrystalDetectorQuickUseResult.proto";
+
+// CmdId: 4292
+// Name: JDNIONAJAPG
+message QuickUseWidgetRsp {
+    int32 retcode = 5;
+    uint32 material_id = 2;
+    oneof param {
+        OneoffGatherPointDetectorData detector_data = 6;
+        ClientCollectorData client_collector_data = 13;
+        SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 224702;
+    }
+}
+

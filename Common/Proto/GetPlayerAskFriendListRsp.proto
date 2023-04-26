@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FriendBrief.proto";
+
+// CmdId: 4032
+// Name: ELFBKLJGGFD
+message GetPlayerAskFriendListRsp {
+    int32 retcode = 9;
+    repeated FriendBrief ask_friend_list = 11;
+}
+

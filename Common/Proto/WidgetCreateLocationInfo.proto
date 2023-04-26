@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: HPEAEINKHOM
+message WidgetCreateLocationInfo {
+    Vector pos = 4;
+    Vector rot = 1;
+}
+

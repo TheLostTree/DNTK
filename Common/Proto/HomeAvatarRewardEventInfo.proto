@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: PGJKHDMCNJM
+message HomeAvatarRewardEventInfo {
+    uint32 event_id = 2;
+    uint32 guid = 6;
+    uint32 random_position = 1;
+    uint32 suite_id = 3;
+    uint32 avatar_id = 11;
+}
+

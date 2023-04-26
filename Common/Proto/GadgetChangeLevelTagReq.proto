@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CustomGadgetTreeInfo.proto";
+
+// CmdId: 883
+// Name: BDHMGDBGLCA
+message GadgetChangeLevelTagReq {
+    uint32 gadget_entity_id = 14;
+    uint32 level_tag_id = 1;
+    CustomGadgetTreeInfo combination_info = 10;
+}
+

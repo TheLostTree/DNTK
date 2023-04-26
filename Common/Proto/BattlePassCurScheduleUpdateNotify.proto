@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "BattlePassSchedule.proto";
+
+// CmdId: 2649
+// Name: NEBFLGBEDBM
+message BattlePassCurScheduleUpdateNotify {
+    BattlePassSchedule cur_schedule = 7;
+    bool have_cur_schedule = 6;
+}
+

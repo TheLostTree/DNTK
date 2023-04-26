@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 286
+// Name: CLAIAONNJPO
+message GetSceneAreaReq {
+    uint32 belong_uid = 1;
+    uint32 scene_id = 9;
+}
+

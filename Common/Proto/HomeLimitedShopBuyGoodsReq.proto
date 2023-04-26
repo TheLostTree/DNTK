@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeLimitedShopGoods.proto";
+
+// CmdId: 4867
+// Name: AMGABHMJHCA
+message HomeLimitedShopBuyGoodsReq {
+    uint32 buy_count = 1;
+    HomeLimitedShopGoods goods = 13;
+}
+

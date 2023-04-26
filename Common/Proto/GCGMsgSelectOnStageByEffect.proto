@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: EHGIKMKOHPO
+message GCGMsgSelectOnStageByEffect {
+    uint32 skill_id = 5;
+    uint32 card_guid = 2;
+    uint32 controller_id = 4;
+}
+

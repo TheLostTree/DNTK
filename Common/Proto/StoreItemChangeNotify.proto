@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Item.proto";
+import "StoreType.proto";
+
+// CmdId: 689
+// Name: KAMNCMHFHKA
+message StoreItemChangeNotify {
+    repeated Item item_list = 4;
+    StoreType store_type = 3;
+}
+

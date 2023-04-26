@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AbilityInvokeEntry.proto";
+
+// CmdId: 1190
+// Name: BHDLIOICLPK
+message AbilityInvocationFixedNotify {
+    AbilityInvokeEntry BKDHNIKAFLH = 9;
+    AbilityInvokeEntry KHPMEKFDAAE = 12;
+    AbilityInvokeEntry KMHDFNIJGJK = 11;
+    AbilityInvokeEntry LGEKDIMGJEP = 3;
+    AbilityInvokeEntry DAAJIPDGECA = 4;
+    AbilityInvokeEntry MBCMPLKDGJK = 7;
+}
+

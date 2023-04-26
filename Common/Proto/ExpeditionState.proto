@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: MKKHEKAJHKN
+enum ExpeditionState {
+    EXPEDITION_NONE = 0;
+    EXPEDITION_STARTED = 1;
+    EXPEDITION_FINISHED = 2;
+    EXPEDITION_REWARDED = 3;
+    EXPEDITION_LOCKED = 4;
+}
+

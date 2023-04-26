@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "InstableSprayAvatarInfo.proto";
+
+// Name: FBKKDPENLEJ
+message InstableSprayTeamInfo {
+    repeated InstableSprayAvatarInfo avatar_info_list = 7;
+}
+

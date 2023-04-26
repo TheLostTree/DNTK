@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FriendBrief.proto";
+
+// CmdId: 4028
+// Name: FCACOLLBEIL
+message GetPlayerBlacklistRsp {
+    repeated FriendBrief blacklist = 11;
+    int32 retcode = 5;
+}
+

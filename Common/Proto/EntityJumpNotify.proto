@@ -1,0 +1,23 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// CmdId: 277
+// Name: GCNOIGGCBBN
+message EntityJumpNotify {
+    // Name: PPGMHILJKOI
+    enum Type {
+        NULL = 0;
+        ACTIVE = 1;
+        PASSIVE = 2;
+    }
+
+    Type jump_type = 4;
+    Vector pos = 6;
+    Vector rot = 3;
+    uint32 entity_id = 5;
+}
+

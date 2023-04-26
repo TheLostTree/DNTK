@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FungusTrainingProgressDetail.proto";
+
+// CmdId: 22163
+// Name: JDNDNFFHCDL
+message FungusFighterRuntimeDataNotify {
+    FungusTrainingProgressDetail progress_detail = 1;
+}
+

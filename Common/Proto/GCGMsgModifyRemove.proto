@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGReason.proto";
+
+// Name: JPOIDEAHMPH
+message GCGMsgModifyRemove {
+    repeated uint32 card_guid_list = 9;
+    GCGReason reason = 2;
+    uint32 controller_id = 15;
+    uint32 owner_card_guid = 4;
+}
+

@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// CmdId: 240
+// Name: NCFPJNJGBGD
+message MarkEntityInMinMapNotify {
+    Vector position = 3;
+    uint32 entity_id = 4;
+    uint32 monster_id = 8;
+}
+

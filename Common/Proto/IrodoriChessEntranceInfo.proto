@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "IrodoriChessMonsterInfo.proto";
+
+// Name: IGJCNGBEIOD
+message IrodoriChessEntranceInfo {
+    repeated IrodoriChessMonsterInfo monster_info_list = 8;
+    uint32 entrance_point_id = 11;
+}
+

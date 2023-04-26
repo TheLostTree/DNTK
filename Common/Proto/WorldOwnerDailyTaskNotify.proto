@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "DailyTaskInfo.proto";
+
+// CmdId: 140
+// Name: OHLMKKDBBCL
+message WorldOwnerDailyTaskNotify {
+    uint32 IPPGLLBIHHJ = 10;
+    repeated DailyTaskInfo task_list = 14;
+    uint32 JJHMPHKOHIC = 6;
+}
+

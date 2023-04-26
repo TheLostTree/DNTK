@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: GADICHLBHOI
+message FurnitureMakeData {
+    fixed32 begin_time = 9;
+    uint32 dur_time = 7;
+    fixed32 accelerate_time = 14;
+    uint32 avatar_id = 11;
+    uint32 make_id = 5;
+    uint32 index = 13;
+}
+

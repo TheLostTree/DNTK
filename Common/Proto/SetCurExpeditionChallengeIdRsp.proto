@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2086
+// Name: MJLIOMCGIHK
+message SetCurExpeditionChallengeIdRsp {
+    uint32 id = 5;
+    int32 retcode = 11;
+}
+

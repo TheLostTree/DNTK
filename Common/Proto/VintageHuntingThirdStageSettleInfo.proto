@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: DLJDELOBGMF
+message VintageHuntingThirdStageSettleInfo {
+    uint32 left_time = 7;
+    bool is_success = 2;
+}
+

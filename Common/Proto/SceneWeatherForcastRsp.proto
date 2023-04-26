@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3354
+// Name: PJFGAPEJNGA
+message SceneWeatherForcastRsp {
+    uint64 next_climate_time = 15;
+    repeated uint32 forcast_climate_list = 12;
+    int32 retcode = 9;
+}
+

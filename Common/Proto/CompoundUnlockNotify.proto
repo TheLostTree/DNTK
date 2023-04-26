@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 121
+// Name: COLEEIFDJKE
+message CompoundUnlockNotify {
+    uint32 compound_id = 10;
+}
+

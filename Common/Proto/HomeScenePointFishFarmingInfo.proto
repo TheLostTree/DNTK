@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: FHKECNDGHCG
+message HomeScenePointFishFarmingInfo {
+    uint32 scene_id = 9;
+    repeated uint32 fish_id_list = 15;
+    uint32 local_entity_id = 1;
+}
+

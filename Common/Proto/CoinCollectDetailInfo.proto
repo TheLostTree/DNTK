@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CoinCollectLevelData.proto";
+
+// Name: ECDHHOAEKGP
+message CoinCollectDetailInfo {
+    repeated CoinCollectLevelData level_data_list = 1;
+}
+

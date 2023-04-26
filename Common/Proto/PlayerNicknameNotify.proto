@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 185
+// Name: KMLMIEEPOFI
+message PlayerNicknameNotify {
+    string nickname = 13;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: BHMPJCHCBKN
+message HomePictureFrameInfo {
+    uint32 picture_id = 11;
+    uint32 guid = 3;
+}
+

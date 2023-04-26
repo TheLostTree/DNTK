@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CustomDungeonRoom.proto";
+import "CustomDungeonSetting.proto";
+
+// CmdId: 6217
+// Name: DDNIDJFDJNO
+message SaveCustomDungeonRoomReq {
+    CustomDungeonSetting setting = 6;
+    bool is_update_setting = 14;
+    CustomDungeonRoom custom_dungeon_room = 4;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: BIGICACAMIG
+message VintageHuntingFirstStageInfo {
+    uint32 BKPLONJEOAF = 12;
+    uint32 AAFNJPABDDJ = 13;
+    uint32 score = 15;
+    uint32 CALCAHMEJGN = 1;
+}
+

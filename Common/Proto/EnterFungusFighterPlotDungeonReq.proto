@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 24171
+// Name: IDBMONNNPAN
+message EnterFungusFighterPlotDungeonReq {
+    repeated uint32 fungus_id_list = 15;
+    uint32 dungeon_id = 12;
+}
+

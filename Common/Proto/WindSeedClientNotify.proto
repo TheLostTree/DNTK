@@ -1,0 +1,36 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// CmdId: 1163
+// Name: MHPFILLGJOJ
+message WindSeedClientNotify {
+    // Name: POCPFABKJCL
+    message RefreshNotify {
+        uint32 refresh_num = 7;
+    }
+
+    // Name: NBNLPGEFDEC
+    message AddWindBulletNotify {
+        Vector seed_pos = 8;
+        uint32 JGDLMEEEBIM = 10;
+        uint32 ALLPEAAMOLB = 3;
+    }
+
+    // Name: CLAKGGEPCLD
+    message AreaNotify {
+        uint32 area_id = 3;
+        uint32 area_type = 2;
+        bytes area_code = 1;
+    }
+
+    oneof notify {
+        RefreshNotify refresh_notify = 12;
+        AddWindBulletNotify add_wind_bullet_notify = 11;
+        AreaNotify area_notify = 2;
+    }
+}
+

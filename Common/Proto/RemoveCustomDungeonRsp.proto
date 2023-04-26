@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 6242
+// Name: MFCCCJJBOJD
+message RemoveCustomDungeonRsp {
+    int32 retcode = 10;
+    uint64 dungeon_guid = 13;
+}
+

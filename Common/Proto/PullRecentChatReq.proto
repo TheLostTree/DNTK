@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5022
+// Name: NCFBCDPLLIG
+message PullRecentChatReq {
+    uint32 HNOFCJJHEAD = 1;
+    uint32 LMHJHHFEHOL = 15;
+}
+

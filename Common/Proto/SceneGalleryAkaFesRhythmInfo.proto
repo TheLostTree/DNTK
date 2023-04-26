@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: CCOOHEJNIKK
+message SceneGalleryAkaFesRhythmInfo {
+    bool OBIIGFOOFIK = 5;
+    string transaction = 1;
+}
+

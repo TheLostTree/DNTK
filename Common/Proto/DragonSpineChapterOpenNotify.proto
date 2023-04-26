@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2075
+// Name: BBBCOOCMJOL
+message DragonSpineChapterOpenNotify {
+    uint32 chapter_id = 6;
+    uint32 schedule_id = 13;
+}
+

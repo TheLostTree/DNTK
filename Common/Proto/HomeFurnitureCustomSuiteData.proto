@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: LOBAFOGBMIA
+message HomeFurnitureCustomSuiteData {
+    uint32 guid = 6;
+    Vector spawn_pos = 1;
+    repeated int32 included_furniture_index_list = 11;
+}
+

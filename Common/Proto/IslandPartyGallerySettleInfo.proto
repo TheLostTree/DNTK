@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ExhibitionDisplayInfo.proto";
+import "OnlinePlayerInfo.proto";
+
+// Name: CFOCPOEDBJC
+message IslandPartyGallerySettleInfo {
+    repeated ExhibitionDisplayInfo card_list = 14;
+    OnlinePlayerInfo player_info = 10;
+}
+

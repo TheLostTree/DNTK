@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 7031
+// Name: AFPBCMBHGNC
+message AFPBCMBHGNC {
+    int32 retcode = 8;
+    bool FJOJGDKMFDG = 10;
+    uint32 id = 7;
+}
+

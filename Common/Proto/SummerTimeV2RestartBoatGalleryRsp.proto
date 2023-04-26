@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8112
+// Name: DAADLBJHMNF
+message SummerTimeV2RestartBoatGalleryRsp {
+    int32 retcode = 2;
+    uint32 gallery_id = 14;
+}
+

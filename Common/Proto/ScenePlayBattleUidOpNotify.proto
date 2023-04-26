@@ -1,0 +1,21 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4415
+// Name: DGJFEOAEIOF
+message ScenePlayBattleUidOpNotify {
+    string param_str = 9;
+    uint32 play_type = 5;
+    uint32 play_id = 6;
+    uint32 entity_id = 14;
+    uint32 op = 2;
+    repeated uint32 param_list = 7;
+    repeated uint32 uid_list = 8;
+    uint32 param_index = 1;
+    uint32 param_duration = 4;
+    repeated uint32 param_target_list = 15;
+}
+

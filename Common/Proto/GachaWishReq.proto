@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1516
+// Name: JEOLICDPLML
+message GachaWishReq {
+    uint32 item_id = 15;
+    uint32 gacha_schedule_id = 14;
+    uint32 gacha_type = 3;
+}
+

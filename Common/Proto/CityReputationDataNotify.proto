@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CityReputationSimpleInfo.proto";
+
+// CmdId: 2875
+// Name: BCEKJNJBPIP
+message CityReputationDataNotify {
+    repeated CityReputationSimpleInfo simple_info_list = 6;
+}
+

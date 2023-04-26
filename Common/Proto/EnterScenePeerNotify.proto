@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 231
+// Name: EHDLDPHGGFF
+message EnterScenePeerNotify {
+    uint32 host_peer_id = 6;
+    uint32 enter_scene_token = 9;
+    uint32 peer_id = 12;
+    uint32 dest_scene_id = 5;
+}
+

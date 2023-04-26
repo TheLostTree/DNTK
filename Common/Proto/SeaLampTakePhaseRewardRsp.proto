@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2153
+// Name: CFJBHLNIJEF
+message SeaLampTakePhaseRewardRsp {
+    uint32 phase_id = 2;
+    int32 retcode = 4;
+}
+

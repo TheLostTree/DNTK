@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "OpActivityInfo.proto";
+
+// CmdId: 5176
+// Name: JPFGDONNGEA
+message OpActivityUpdateNotify {
+    OpActivityInfo op_activity_info = 9;
+}
+

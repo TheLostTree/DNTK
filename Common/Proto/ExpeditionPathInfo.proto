@@ -1,0 +1,21 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ExpeditionState.proto";
+
+// Name: ICNPCNKGFEI
+message ExpeditionPathInfo {
+    repeated uint32 avatar_id_list = 1;
+    uint32 HHLEPAKOHAK = 11;
+    uint32 path_id = 4;
+    uint32 PIHIMOCPPFO = 6;
+    uint32 FJKJJLAIBMF = 12;
+    float bonus_probability = 9;
+    uint32 start_time = 2;
+    uint32 GOMIFKCFNKJ = 15;
+    uint32 challenge_id = 10;
+    ExpeditionState state = 13;
+}
+

@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CustomDungeon.proto";
+import "EnterCustomDungeonType.proto";
+import "TryCustomDungeonType.proto";
+
+// CmdId: 6207
+// Name: DAHJKHDDMBP
+message CustomDungeonRecoverNotify {
+    repeated uint32 official_black_coin_list = 11;
+    CustomDungeon custom_dungeon = 14;
+    EnterCustomDungeonType enter_type = 2;
+    TryCustomDungeonType try_type = 5;
+}
+

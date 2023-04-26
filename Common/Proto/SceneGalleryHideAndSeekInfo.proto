@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: IIIFEGBGIHG
+message SceneGalleryHideAndSeekInfo {
+    repeated uint32 GCNNADABPLG = 10;
+    repeated uint32 GIDIOJBKDKH = 13;
+}
+

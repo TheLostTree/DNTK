@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: FNBEPEJNOFD
+message SummerTimeSprintBoatRecord {
+    repeated uint32 watcher_id_list = 12;
+    uint32 start_time = 9;
+    uint32 best_score = 1;
+    uint32 group_id = 3;
+    bool is_touched = 10;
+}
+

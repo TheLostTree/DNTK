@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ChessNormalCardInfo.proto";
+
+// Name: JBBIMMPGADK
+message ChessPlayerInfo {
+    uint32 uid = 3;
+    uint32 MILMGKEIKNM = 6;
+    repeated ChessNormalCardInfo candidate_card_info_list = 2;
+    uint32 OLGJAJMBHAF = 13;
+    uint32 NMKOCNBCEOA = 14;
+    uint32 LPLBCOBAOLO = 4;
+    uint32 FABNMNFMJFG = 12;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1909
+// Name: ICAJDFEAEHE
+message GetInvestigationMonsterReq {
+    bool is_for_mark = 2;
+    repeated uint32 city_id_list = 15;
+}
+

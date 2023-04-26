@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGLimitsInfo.proto";
+
+// Name: OKIDGAFOHGD
+message GCGSkillLimitsInfo {
+    uint32 skill_id = 11;
+    repeated GCGLimitsInfo limits_list = 1;
+}
+

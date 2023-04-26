@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: OEIONLNODLN
+message EvtFaceToDirInfo {
+    Vector face_dir = 12;
+    uint32 entity_id = 2;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4252
+// Name: LDDBEADHCDI
+message WidgetUseAttachAbilityGroupChangeNotify {
+    uint32 material_id = 3;
+    bool is_attach = 9;
+}
+

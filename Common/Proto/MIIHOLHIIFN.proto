@@ -1,0 +1,11 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: MIIHOLHIIFN
+message MIIHOLHIIFN {
+    repeated uint32 data = 15;
+}
+

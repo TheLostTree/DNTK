@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 23884
+// Name: HPEDLAPJCCH
+message SingleRestartBrickBreakerReq {
+    uint32 level_id = 12;
+    bool is_dungeon = 14;
+}
+

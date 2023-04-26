@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ExpeditionChallengeInfo.proto";
+import "ExpeditionPathInfo.proto";
+
+// Name: FKHMOADCCBJ
+message ExpeditionActivityDetailInfo {
+    repeated ExpeditionChallengeInfo challenge_info_list = 5;
+    uint32 BBFNGINCJBB = 14;
+    repeated ExpeditionPathInfo path_info_list = 6;
+    uint32 content_close_time = 7;
+    bool is_content_closed = 13;
+    uint32 LCEFDDNGDIP = 1;
+}
+

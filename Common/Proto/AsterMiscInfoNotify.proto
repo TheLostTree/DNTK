@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2188
+// Name: GIOGOPPLLGE
+message AsterMiscInfoNotify {
+    uint32 HNJDOJKGDOP = 6;
+    uint32 MFJDILDLMGP = 13;
+}
+

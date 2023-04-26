@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5327
+// Name: DJBLFOONPMJ
+message ChessPickCardReq {
+    uint32 card_id = 1;
+    uint32 card_index = 3;
+}
+

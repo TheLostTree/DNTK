@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: PEHFOAKOBCN
+message PEHFOAKOBCN {
+    uint32 IGGFEPAJECG = 3;
+    uint32 NLMFLJDFCMK = 9;
+}
+

@@ -1,0 +1,23 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AsterLargeDetailInfo.proto";
+import "AsterLittleDetailInfo.proto";
+import "AsterMidDetailInfo.proto";
+import "AsterProgressDetailInfo.proto";
+
+// Name: BPEIHPFCNLN
+message AsterActivityDetailInfo {
+    uint32 content_close_time = 13;
+    AsterProgressDetailInfo aster_progress = 1;
+    AsterLittleDetailInfo aster_little = 12;
+    AsterMidDetailInfo aster_mid = 4;
+    bool is_special_reward_taken = 8;
+    AsterLargeDetailInfo aster_large = 3;
+    bool is_content_closed = 14;
+    uint32 MFJDILDLMGP = 11;
+    uint32 HNJDOJKGDOP = 5;
+}
+

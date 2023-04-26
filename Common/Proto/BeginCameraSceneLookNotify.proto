@@ -1,0 +1,38 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// CmdId: 215
+// Name: LHPLPIEOKGN
+message BeginCameraSceneLookNotify {
+    // Name: KPPLOGGHIMJ
+    enum KeepRotType {
+        KEEP_ROT_X = 0;
+        KEEP_ROT_XY = 1;
+    }
+
+    bool DHEJCFIIJJN = 7;
+    bool LJGMCKKIBKD = 1;
+    uint32 entity_id = 431;
+    uint32 FCCKPEGCEJN = 1335;
+    KeepRotType keep_rot_type = 3;
+    bool ICFCABODPHC = 10;
+    bool HABGHENOCHA = 13;
+    bool OHBPOGDOBEN = 15;
+    uint32 LCGFBOLPMDJ = 339;
+    repeated string other_params = 5;
+    bool MCFCBOJLEEA = 14;
+    bool MHOPMFLJEJB = 1736;
+    float IPCLENFLCLJ = 484;
+    Vector BJAIBAFFGAP = 6;
+    Vector BIGFKDFJPDD = 9;
+    float OHCHDGHEJDH = 2;
+    bool FGEILCFGECH = 12;
+    float PIOFKMOEEBP = 11;
+    float JDDGAILHJHH = 8;
+    float duration = 4;
+}
+

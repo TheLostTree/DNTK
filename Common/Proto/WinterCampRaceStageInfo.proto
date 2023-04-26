@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: HGFJKBCKJFE
+message WinterCampRaceStageInfo {
+    uint32 max_score = 9;
+    uint32 open_time = 8;
+    Vector pos = 1;
+    uint32 id = 10;
+}
+

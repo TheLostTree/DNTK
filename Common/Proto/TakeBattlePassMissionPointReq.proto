@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2645
+// Name: NOFBIGOHAKF
+message TakeBattlePassMissionPointReq {
+    repeated uint32 mission_id_list = 13;
+}
+

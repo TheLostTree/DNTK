@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2003
+// Name: LADELAPFEJE
+message ReceivedTrialAvatarActivityRewardReq {
+    uint32 trial_avatar_index_id = 7;
+}
+

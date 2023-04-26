@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GravenInnocenceCarveStageInfo.proto";
+
+// Name: DFKIFLPKDBK
+message GravenInnocenceCarveInfo {
+    uint32 can_edit_count = 1;
+    repeated GravenInnocenceCarveStageInfo stage_info_list = 7;
+    repeated uint32 has_edit_config_id_list = 10;
+}
+

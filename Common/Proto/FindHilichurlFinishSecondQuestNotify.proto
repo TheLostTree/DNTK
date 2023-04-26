@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8465
+// Name: MAEIFFICOIC
+message FindHilichurlFinishSecondQuestNotify {
+    uint32 day_index = 1;
+}
+

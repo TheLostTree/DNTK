@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGSkillPreviewReactionInfo.proto";
+
+// Name: OKLOOLBCCKD
+message GCGSkillPreviewElementReactionInfo {
+    repeated uint32 APFLEJEMNKA = 4;
+    repeated GCGSkillPreviewReactionInfo reaction_list = 15;
+    repeated uint32 PFNNOMPLCEC = 13;
+}
+

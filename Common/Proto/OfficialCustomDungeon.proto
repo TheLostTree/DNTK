@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: DKLAAEICIII
+message OfficialCustomDungeon {
+    uint32 dungeon_id = 13;
+    uint32 win_times = 15;
+}
+

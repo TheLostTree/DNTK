@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 168
+// Name: COCJKAPJLDM
+message ServerDisconnectClientNotify {
+    uint32 data = 9;
+}
+

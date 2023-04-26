@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CreateEntityInfo.proto";
+
+// CmdId: 459
+// Name: DEMEIIONLDG
+message QuestCreateEntityRsp {
+    uint32 entity_id = 4;
+    uint32 parent_quest_id = 6;
+    CreateEntityInfo entity = 8;
+    uint32 quest_id = 5;
+    bool is_rewind = 3;
+    int32 retcode = 11;
+}
+

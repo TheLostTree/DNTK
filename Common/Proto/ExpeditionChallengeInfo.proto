@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: FFADNOLCIKG
+message ExpeditionChallengeInfo {
+    uint32 open_time = 5;
+    uint32 id = 15;
+    bool is_finished = 11;
+}
+

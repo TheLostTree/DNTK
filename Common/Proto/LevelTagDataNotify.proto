@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3263
+// Name: KDOMBPOPLDK
+message LevelTagDataNotify {
+    repeated uint32 level_tag_id_list = 6;
+}
+

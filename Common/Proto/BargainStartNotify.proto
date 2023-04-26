@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "BargainSnapshot.proto";
+
+// CmdId: 451
+// Name: PAEHKJAIHFP
+message BargainStartNotify {
+    BargainSnapshot snapshot = 8;
+    uint32 bargain_id = 5;
+}
+

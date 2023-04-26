@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 203
+// Name: GOENHCJCPOL
+message CutSceneEndNotify {
+    int32 retcode = 14;
+    uint32 cutscene_id = 8;
+}
+

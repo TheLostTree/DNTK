@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1823
+// Name: IGADDHNAECL
+message GetPlayerMpModeAvailabilityRsp {
+    int32 retcode = 6;
+    int32 mp_ret = 2;
+    repeated uint32 param_list = 5;
+}
+

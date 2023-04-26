@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: CMELEBGINMN
+enum LuaShellType {
+    LUASHELL_NONE = 0;
+    LUASHELL_NORMAL = 1;
+    LUASHELL_SECURITY = 2;
+    LUASHELL_SHELL_CODE = 3;
+}
+

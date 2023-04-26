@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "EnterCustomDungeonType.proto";
+
+// CmdId: 6209
+// Name: LKHCBDGLADP
+message EnterCustomDungeonReq {
+    uint32 dungeon_id = 7;
+    uint64 dungeon_guid = 11;
+    EnterCustomDungeonType enter_type = 1;
+}
+

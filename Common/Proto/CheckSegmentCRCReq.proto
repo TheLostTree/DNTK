@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SegmentCRCInfo.proto";
+
+// CmdId: 94
+// Name: OEODMJEEKPM
+message CheckSegmentCRCReq {
+    repeated SegmentCRCInfo info_list = 8;
+}
+

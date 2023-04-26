@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: DEOCMDJCCPB
+message DynamicSVONode {
+    int32 area = 13;
+    int64 index = 1;
+    Vector refer_pos = 2;
+}
+

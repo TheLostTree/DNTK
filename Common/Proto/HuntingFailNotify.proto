@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HuntingPair.proto";
+
+// CmdId: 4342
+// Name: PHLJPGECOOA
+message HuntingFailNotify {
+    HuntingPair hunting_pair = 15;
+}
+

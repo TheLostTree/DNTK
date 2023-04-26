@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 217
+// Name: MLHGMKJPGMM
+message SceneTimeNotify {
+    uint32 scene_id = 6;
+    bool is_paused = 15;
+    uint64 scene_time = 1;
+}
+

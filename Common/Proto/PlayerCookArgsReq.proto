@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 132
+// Name: FPPJFMKAMOK
+message PlayerCookArgsReq {
+    uint32 assist_avatar = 8;
+    uint32 recipe_id = 9;
+}
+

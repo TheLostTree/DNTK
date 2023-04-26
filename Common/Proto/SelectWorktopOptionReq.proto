@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 816
+// Name: DBPJFAJEEPK
+message SelectWorktopOptionReq {
+    uint32 option_id = 1;
+    uint32 gadget_entity_id = 11;
+}
+

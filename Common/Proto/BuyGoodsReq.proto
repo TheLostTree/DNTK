@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ShopGoods.proto";
+
+// CmdId: 789
+// Name: DPGDGHJEDFH
+message BuyGoodsReq {
+    uint32 shop_type = 4;
+    uint32 buy_count = 9;
+    ShopGoods goods = 13;
+}
+

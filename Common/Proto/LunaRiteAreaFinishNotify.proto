@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8209
+// Name: BJAJBCMCMGD
+message LunaRiteAreaFinishNotify {
+    uint32 area_id = 9;
+}
+

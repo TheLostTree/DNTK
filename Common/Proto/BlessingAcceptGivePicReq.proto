@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2121
+// Name: EBOFNEMBJCD
+message BlessingAcceptGivePicReq {
+    uint32 uid = 11;
+    uint32 index = 4;
+}
+

@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 20024
+// Name: JGLJENGADON
+message MuqadasPotionDungeonSettleNotify {
+    uint32 capture_weakness_count = 11;
+    bool is_new_record = 2;
+    uint32 final_score = 10;
+    bool is_success = 9;
+    uint32 level_id = 14;
+}
+

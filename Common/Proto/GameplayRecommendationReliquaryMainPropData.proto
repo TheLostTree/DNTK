@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: PGIJOMGHNEA
+message GameplayRecommendationReliquaryMainPropData {
+    uint32 main_prop_id = 11;
+    uint32 permillage = 12;
+}
+

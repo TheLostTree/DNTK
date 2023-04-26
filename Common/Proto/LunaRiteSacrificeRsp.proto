@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8980
+// Name: CNEKANMAICI
+message LunaRiteSacrificeRsp {
+    int32 retcode = 2;
+    uint32 area_id = 5;
+    repeated uint32 sacrifice_list = 14;
+    uint32 index = 10;
+}
+

@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CustomDungeonBlock.proto";
+
+// CmdId: 6249
+// Name: HHGCOBLMHEL
+message SaveCustomDungeonRoomRsp {
+    int32 retcode = 4;
+    repeated CustomDungeonBlock error_block_list = 5;
+    uint32 room_id = 14;
+}
+

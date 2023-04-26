@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeMarkPointFurnitureData.proto";
+import "Vector.proto";
+
+// Name: KDHIILONFMA
+message HomeMarkPointSceneData {
+    Vector PEIAJDDGMIG = 6;
+    uint32 module_id = 5;
+    Vector IPPBNCILPHJ = 3;
+    repeated HomeMarkPointFurnitureData furniture_list = 2;
+    uint32 scene_id = 8;
+}
+

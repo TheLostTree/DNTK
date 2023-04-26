@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4049
+// Name: NHDBOLOEILO
+message SetFriendRemarkNameRsp {
+    int32 retcode = 4;
+    uint32 uid = 15;
+    string remark_name = 14;
+    bool is_clear_remark = 11;
+}
+

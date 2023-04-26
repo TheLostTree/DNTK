@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 889
+// Name: IFJKFEAFEKJ
+message GadgetStateNotify {
+    uint32 gadget_entity_id = 5;
+    bool is_enable_interact = 1;
+    uint32 gadget_state = 3;
+}
+

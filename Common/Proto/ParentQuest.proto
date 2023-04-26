@@ -1,0 +1,25 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ChildQuest.proto";
+import "InferencePageInfo.proto";
+import "ParentQuestRandomInfo.proto";
+
+// Name: DDOKGPGCJNK
+message ParentQuest {
+    uint32 accept_time = 10;
+    bool is_random = 3;
+    repeated ChildQuest child_quest_list = 4;
+    uint64 video_key = 15;
+    ParentQuestRandomInfo random_info = 14;
+    map<uint32, uint32> time_var_map = 5;
+    repeated InferencePageInfo inference_page_list = 13;
+    uint32 PGAAFEALHLK = 9;
+    uint32 NJNBCLGFCIN = 12;
+    repeated int32 quest_var = 8;
+    bool is_finished = 11;
+    uint32 parent_quest_id = 7;
+}
+

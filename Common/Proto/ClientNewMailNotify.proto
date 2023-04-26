@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1463
+// Name: MLDDJLANDPE
+message ClientNewMailNotify {
+    uint32 BKHHHACGKKA = 2;
+    bool NIKMLGOAFIA = 3;
+    uint32 JEGNPFIFGOI = 1;
+}
+

@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 333
+// Name: JDCLEDBBEAH
+message TriggerCreateGadgetToEquipPartNotify {
+    string equip_part = 8;
+    uint32 entity_id = 5;
+    uint32 gadget_id = 15;
+    uint32 gadget_entity_id = 10;
+}
+

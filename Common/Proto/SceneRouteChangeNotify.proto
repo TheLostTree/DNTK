@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SceneRouteChangeInfo.proto";
+
+// CmdId: 201
+// Name: FCLLABHADCK
+message SceneRouteChangeNotify {
+    uint32 scene_time = 4;
+    repeated SceneRouteChangeInfo route_list = 3;
+    uint32 scene_id = 14;
+}
+

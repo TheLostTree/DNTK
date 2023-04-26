@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "PotionDungeonAvatar.proto";
+
+// CmdId: 8360
+// Name: EFOFHAJFPDA
+message PotionEnterDungeonNotify {
+    uint32 level_id = 14;
+    repeated PotionDungeonAvatar dungeon_avatar_list = 4;
+    uint32 mode_id = 10;
+    uint32 stage_id = 11;
+    uint32 difficulty_level = 3;
+}
+

@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: IMOGNGLFLFK
+message WidgetSorushInfo {
+    uint32 slot = 10;
+    Vector pos = 7;
+    bool DJHLJCJAIEG = 8;
+    bool CPAPAEPOFOE = 4;
+    bool KIKBFGKBJKP = 6;
+    Vector rot = 11;
+}
+

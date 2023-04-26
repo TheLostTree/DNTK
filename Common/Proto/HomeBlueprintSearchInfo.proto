@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: OGPFCJJIJNH
+message HomeBlueprintSearchInfo {
+    uint32 module_id = 7;
+    string share_code = 10;
+    uint32 scene_id = 11;
+    uint32 block_id = 9;
+}
+

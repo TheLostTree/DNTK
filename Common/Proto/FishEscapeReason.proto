@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: MKFIMBHKACA
+enum FishEscapeReason {
+    FISN_ESCAPE_NONE = 0;
+    FISH_ESCAPE_SHOCKED = 1;
+    FISH_ESCAPE_UNHOOK = 2;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ReunionWatcherInfo.proto";
+
+// CmdId: 5081
+// Name: GOIFNMPJFAL
+message UpdateReunionWatcherNotify {
+    ReunionWatcherInfo watcher_info = 6;
+    uint32 mission_id = 15;
+}
+

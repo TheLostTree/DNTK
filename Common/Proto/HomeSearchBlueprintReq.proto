@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4720
+// Name: PAACGBOEJBK
+message HomeSearchBlueprintReq {
+    string share_code = 14;
+}
+

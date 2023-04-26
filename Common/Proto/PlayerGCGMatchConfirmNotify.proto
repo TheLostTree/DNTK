@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4187
+// Name: BLMCHAALMDP
+message PlayerGCGMatchConfirmNotify {
+    uint32 uid = 4;
+    uint32 match_id = 14;
+    bool is_agree = 10;
+}
+

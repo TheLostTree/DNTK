@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5575
+// Name: MCDAMGDNAMF
+message GalleryBounceConjuringHitNotify {
+    bool is_perfect = 11;
+    uint32 add_score = 4;
+    uint32 gallery_id = 14;
+}
+

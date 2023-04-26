@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1059
+// Name: KNHEBFKCDHB
+message ProudSkillChangeNotify {
+    uint32 entity_id = 14;
+    uint64 avatar_guid = 10;
+    uint32 skill_depot_id = 15;
+    repeated uint32 proud_skill_list = 6;
+}
+

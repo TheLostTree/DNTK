@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4149
+// Name: FGEMJEBIEBF
+message CardProductRewardNotify {
+    uint32 MLKHDJPCJLG = 8;
+    uint32 OKKCPKEGAJF = 1;
+    string product_id = 12;
+}
+

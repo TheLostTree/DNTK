@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8804
+// Name: GBCDBNEANGC
+message MistTrialGetChallengeMissionReq {
+    uint32 trial_id = 1;
+}
+

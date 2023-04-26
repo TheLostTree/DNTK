@@ -1,0 +1,20 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GalleryStopReason.proto";
+
+// CmdId: 23001
+// Name: OBECOGIBJBH
+message FungusFighterTrainingGallerySettleNotify {
+    GalleryStopReason reason = 2;
+    uint32 COCEMCJMFGA = 15;
+    uint32 PNKNJPIMAFC = 12;
+    uint32 final_score = 1;
+    uint32 total_used_time = 13;
+    bool is_new_record = 11;
+    bool is_final_settle = 3;
+    uint32 GEAAIMCNKCK = 4;
+}
+

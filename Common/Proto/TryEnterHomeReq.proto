@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4504
+// Name: MBLNFDMHCMM
+message TryEnterHomeReq {
+    uint32 target_point = 7;
+    bool EIEPKFHNILM = 2;
+    bool OJAFECKPAJE = 14;
+    uint32 target_uid = 13;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 21829
+// Name: FBKJHEPOMCM
+message SingleStartBrickBreakerRsp {
+    uint32 level_id = 5;
+    bool is_dungeon = 15;
+    int32 retcode = 6;
+}
+

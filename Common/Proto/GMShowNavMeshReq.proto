@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// CmdId: 2400
+// Name: GFLHBOHBNHI
+message GMShowNavMeshReq {
+    Vector center = 13;
+    Vector extent = 12;
+    int32 uid = 6;
+}
+

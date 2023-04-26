@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "TreasureSeelieRegionData.proto";
+
+// Name: ANKAEHLNHEP
+message TreasureSeelieActivityDetailInfo {
+    repeated TreasureSeelieRegionData region_data_list = 15;
+    uint32 treasure_close_time = 11;
+    bool is_content_closed = 5;
+}
+

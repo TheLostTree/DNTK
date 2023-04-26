@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: FNNCKHEEBGD
+message RogueAvatarInfo {
+    bool is_onstage = 7;
+    uint32 avatar_id = 15;
+    bool is_alive = 14;
+}
+

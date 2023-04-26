@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2439
+// Name: LFAECKJPJFB
+message TowerGetFloorStarRewardRsp {
+    int32 retcode = 11;
+    uint32 floor_id = 15;
+}
+

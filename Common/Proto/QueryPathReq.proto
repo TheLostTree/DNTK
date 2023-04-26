@@ -1,0 +1,29 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "QueryFilter.proto";
+import "Vector.proto";
+import "Vector3Int.proto";
+
+// CmdId: 2390
+// Name: PPNEGEHHFHC
+message QueryPathReq {
+    // Name: GFGAGCEANNG
+    enum OptionType {
+        OPTION_NONE = 0;
+        OPTION_NORMAL = 1;
+        OPTION_FIRST_CAN_GO = 2;
+    }
+
+    Vector source_pos = 7;
+    QueryFilter filter = 10;
+    repeated Vector destination_pos = 2;
+    int32 query_id = 15;
+    Vector3Int FOJHBGHIMDG = 3;
+    uint32 scene_id = 9;
+    OptionType query_type = 14;
+    Vector3Int LCOAPOJGMKL = 6;
+}
+

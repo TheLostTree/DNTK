@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FleurFairV2PhotoPosData.proto";
+
+// Name: BMPLONCEFFO
+message FleurFairV2PhotoInfo {
+    repeated FleurFairV2PhotoPosData photo_pos_data_list = 6;
+}
+

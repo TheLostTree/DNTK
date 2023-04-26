@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 381
+// Name: ABEAMHFKNML
+message MonsterForceAlertNotify {
+    uint32 monster_entity_id = 3;
+}
+

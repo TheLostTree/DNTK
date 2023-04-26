@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SumoDungeonAvatar.proto";
+
+// Name: HCBHHEKABOD
+message SumoDungeonTeam {
+    repeated SumoDungeonAvatar dungeon_avatar_list = 8;
+}
+

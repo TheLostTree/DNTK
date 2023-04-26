@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FireworksLaunchParam.proto";
+
+// Name: HCFBDIGKKNN
+message FireworksLaunchSchemeData {
+    uint32 scheme_id = 13;
+    repeated FireworksLaunchParam launch_param_list = 8;
+    repeated uint32 fireworks_id_list = 4;
+}
+

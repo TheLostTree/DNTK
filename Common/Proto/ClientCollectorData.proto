@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: IPICMDDHCHD
+message ClientCollectorData {
+    uint32 BJAOMANHLNM = 9;
+    uint32 material_id = 10;
+    uint32 JCGPKAGJIOF = 11;
+}
+

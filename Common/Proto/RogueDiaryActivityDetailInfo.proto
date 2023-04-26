@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "RogueDiaryProgress.proto";
+import "RogueDiaryStageInfo.proto";
+
+// Name: LLLDOONMJPE
+message RogueDiaryActivityDetailInfo {
+    bool is_have_progress = 3;
+    bool is_content_closed = 8;
+    RogueDiaryProgress cur_progress = 2;
+    repeated RogueDiaryStageInfo stage_list = 1;
+}
+

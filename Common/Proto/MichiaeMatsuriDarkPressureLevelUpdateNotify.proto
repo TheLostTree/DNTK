@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8616
+// Name: OMGGPDKPDCH
+message MichiaeMatsuriDarkPressureLevelUpdateNotify {
+    uint32 dark_pressure_level = 4;
+}
+

@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// CmdId: 4277
+// Name: OFGALPKIKGN
+message WidgetCaptureAnimalRsp {
+    uint32 entity_id = 10;
+    Vector pos = 6;
+    int32 retcode = 1;
+    uint32 material_id = 8;
+}
+

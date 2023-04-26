@@ -1,0 +1,20 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: PAJINPMADLD
+message EvtGrapplingHookMove {
+    bool FPFCJFPALLI = 3;
+    uint32 entity_id = 4;
+    string override_collider = 11;
+    float speed = 5;
+    bool PMHJPLEMFAD = 12;
+    repeated uint32 animator_state_id_list = 1;
+    float CGJPAHPGHHK = 10;
+    Vector target_pos = 7;
+    float FNFBDGDNJCC = 13;
+}
+

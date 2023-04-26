@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 669
+// Name: DCKDKJNEPCN
+message DestroyMaterialRsp {
+    repeated uint32 item_id_list = 3;
+    repeated uint32 item_count_list = 7;
+    int32 retcode = 14;
+}
+

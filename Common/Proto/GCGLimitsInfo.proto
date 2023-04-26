@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: CEPMFMBMHPN
+message GCGLimitsInfo {
+    uint32 EBKJNJHDGBB = 11;
+    uint32 JAKJEOOMDKD = 2;
+}
+

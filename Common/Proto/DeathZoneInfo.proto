@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LBHCDCJALKG
+message DeathZoneInfo {
+    uint32 id = 6;
+    bool is_open = 15;
+}
+

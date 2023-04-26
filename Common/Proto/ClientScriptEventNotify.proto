@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 271
+// Name: BNAHADPMBIJ
+message ClientScriptEventNotify {
+    uint32 event_type = 9;
+    repeated int32 param_list = 13;
+    uint32 target_entity_id = 7;
+    uint32 source_entity_id = 3;
+}
+

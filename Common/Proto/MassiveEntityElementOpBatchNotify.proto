@@ -1,0 +1,24 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ShapeBox.proto";
+import "ShapeSphere.proto";
+
+// CmdId: 400
+// Name: HAPKANDAINI
+message MassiveEntityElementOpBatchNotify {
+    int32 entity_type = 5;
+    float attack_element_durability = 6;
+    int32 FJPCMHBFKLB = 9;
+    uint32 ODJPGAKLKAK = 7;
+    int32 BAPFIFOEPHB = 8;
+    uint32 IFJIEDHNCFA = 10;
+    uint32 attacker_id = 13;
+    oneof check_shape {
+        ShapeSphere shape_sphere = 12;
+        ShapeBox shape_box = 14;
+    }
+}
+

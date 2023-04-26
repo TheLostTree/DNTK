@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 848
+// Name: BBGCJHDIJHK
+message RequestLiveInfoRsp {
+    int32 retcode = 13;
+    string MJDAMPGJDCJ = 3;
+    uint32 live_id = 1;
+    string DBFCODLGJJB = 10;
+}
+

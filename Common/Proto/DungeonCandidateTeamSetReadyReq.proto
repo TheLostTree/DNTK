@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 928
+// Name: BKMLEDPDPGP
+message DungeonCandidateTeamSetReadyReq {
+    bool is_ready = 1;
+}
+

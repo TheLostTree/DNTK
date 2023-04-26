@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2250
+// Name: FDNOEEEKJKP
+message GetPushTipsRewardRsp {
+    repeated uint32 push_tips_id_list = 13;
+    int32 retcode = 5;
+}
+

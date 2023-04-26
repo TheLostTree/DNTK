@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ProfilePicture.proto";
+
+// CmdId: 4082
+// Name: MBKMBEIOGGC
+message SetPlayerHeadImageRsp {
+    ProfilePicture profile_picture = 6;
+    int32 retcode = 13;
+    uint32 avatar_id = 1;
+}
+

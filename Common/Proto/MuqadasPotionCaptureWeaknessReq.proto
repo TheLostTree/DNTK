@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 21132
+// Name: GDNPMKGKFBH
+message MuqadasPotionCaptureWeaknessReq {
+    uint32 capture_weakness_count = 13;
+    uint32 level_id = 2;
+}
+

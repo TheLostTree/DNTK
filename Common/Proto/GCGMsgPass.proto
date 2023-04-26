@@ -1,0 +1,11 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LIAEEPNLLPA
+message GCGMsgPass {
+    uint32 controller_id = 3;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: GHJHLHKEADB
+message ChannelerSlabOneoffDungeon {
+    bool is_done = 15;
+    uint32 dungeon_id = 10;
+    uint32 reward_id = 13;
+}
+

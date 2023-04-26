@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: POFNPDMFDFB
+enum DealAddFriendResultType {
+    DEAL_ADD_FRIEND_REJECT = 0;
+    DEAL_ADD_FRIEND_ACCEPT = 1;
+}
+

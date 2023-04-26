@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "BuoyantCombatGallerySettleInfo.proto";
+
+// Name: FEHOJNBKNKM
+message BuoyantCombatSettleInfo {
+    bool is_new_record = 6;
+    BuoyantCombatGallerySettleInfo settle_info = 9;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 429
+// Name: PFFEILDHDMB
+message UnlockPersonalLineReq {
+    uint32 personal_line_id = 15;
+}
+

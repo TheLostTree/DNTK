@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 6222
+// Name: CEKGHJHOGNE
+message ChangeCustomDungeonRoomReq {
+    uint32 room_id = 12;
+}
+

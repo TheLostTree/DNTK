@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 21126
+// Name: HCCDEDBNNLH
+message HCCDEDBNNLH {
+    uint32 level_id = 1;
+    repeated uint32 CHFJCPHLGDI = 7;
+}
+

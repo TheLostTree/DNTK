@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 624
+// Name: JMPCEHHBLGI
+message McoinExchangeHcoinRsp {
+    int32 retcode = 1;
+    uint32 MLKHDJPCJLG = 11;
+    uint32 PBPMGONFBPF = 3;
+}
+

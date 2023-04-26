@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: EKKBDFFFCHH
+message InBattleIrodoriChessSettleInfo {
+    bool is_new_record = 13;
+    bool is_activity_end = 14;
+    uint64 scene_time_ms = 5;
+    bool is_perfect = 2;
+    uint32 DPLOCABFHKK = 7;
+    uint32 KHNEENKECBK = 8;
+}
+

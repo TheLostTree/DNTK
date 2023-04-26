@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 646
+// Name: JDGBIPPFOBN
+message TakeoffEquipRsp {
+    uint32 slot = 5;
+    uint64 avatar_guid = 8;
+    int32 retcode = 11;
+}
+

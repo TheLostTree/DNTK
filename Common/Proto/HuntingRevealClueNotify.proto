@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HuntingPair.proto";
+import "Vector.proto";
+
+// CmdId: 4322
+// Name: HCNJNLNNNCM
+message HuntingRevealClueNotify {
+    Vector clue_position = 8;
+    uint32 finish_clue_count = 6;
+    HuntingPair hunting_pair = 3;
+    uint32 finished_group_id = 2;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2053
+// Name: HEHBPMJFELC
+message ActivityBannerClearReq {
+    uint32 activity_id = 13;
+    uint32 schedule_id = 8;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ChatInfo.proto";
+
+// CmdId: 4991
+// Name: FAKALDAMEDD
+message PullPrivateChatRsp {
+    repeated ChatInfo chat_info = 10;
+    int32 retcode = 11;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1749
+// Name: MBNHDAMLHMP
+message AvatarExpeditionStartReq {
+    uint32 exp_id = 7;
+    uint32 hour_time = 3;
+    uint64 avatar_guid = 12;
+}
+

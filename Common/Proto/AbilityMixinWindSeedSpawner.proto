@@ -1,0 +1,30 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: JMDAKCMNMIB
+message AbilityMixinWindSeedSpawner {
+    // Name: HKENNGHIKAP
+    message AddSignal {
+    }
+
+    // Name: BBDPJPCLOCM
+    message RefreshSeed {
+        repeated Vector pos_list = 8;
+    }
+
+    // Name: GLPMJAHCNJH
+    message CatchSeed {
+        uint32 entity_id = 14;
+    }
+
+    oneof cmd {
+        AddSignal add_signal = 6;
+        RefreshSeed refresh_seed = 1;
+        CatchSeed catch_seed = 4;
+    }
+}
+

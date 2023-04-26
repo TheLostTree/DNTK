@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 835
+// Name: PPKCBCCKLMC
+message VehicleStaminaNotify {
+    uint32 entity_id = 11;
+    float cur_stamina = 10;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "WidgetGadgetData.proto";
+
+// CmdId: 4278
+// Name: DGNBGJPCNAN
+message WidgetGadgetDataNotify {
+    WidgetGadgetData widget_gadget_data = 6;
+}
+

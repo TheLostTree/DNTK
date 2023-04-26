@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5837
+// Name: LODNMOGMOOM
+message PlayerFishingDataNotify {
+    uint32 last_fish_rod_id = 12;
+}
+

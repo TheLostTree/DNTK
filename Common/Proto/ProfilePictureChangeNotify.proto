@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ProfilePicture.proto";
+
+// CmdId: 4037
+// Name: HOJEGAPGGNE
+message ProfilePictureChangeNotify {
+    ProfilePicture profile_picture = 9;
+}
+

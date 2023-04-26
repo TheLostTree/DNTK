@@ -1,0 +1,23 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: PBPLDMMEGBO
+message Achievement {
+    // Name: OPFLKOJMOIG
+    enum Status {
+        INVALID = 0;
+        UNFINISHED = 1;
+        FINISHED = 2;
+        REWARD_TAKEN = 3;
+    }
+
+    uint32 total_progress = 4;
+    uint32 finish_timestamp = 9;
+    Status status = 2;
+    uint32 id = 10;
+    uint32 cur_progress = 3;
+}
+

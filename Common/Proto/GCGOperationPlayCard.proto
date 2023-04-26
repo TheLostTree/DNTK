@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: IIHLNKACGAI
+message GCGOperationPlayCard {
+    repeated uint32 cost_dice_index_list = 1;
+    uint32 card_guid = 5;
+    repeated uint32 target_card_guid_list = 10;
+    uint32 replace_card_guid = 6;
+}
+

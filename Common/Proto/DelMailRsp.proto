@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1441
+// Name: PFLOBKKCCIA
+message DelMailRsp {
+    repeated uint32 mail_id_list = 11;
+    int32 retcode = 7;
+}
+

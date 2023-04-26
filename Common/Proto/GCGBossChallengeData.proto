@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: NJDPLIMDEEN
+message GCGBossChallengeData {
+    uint32 id = 6;
+    repeated uint32 unlock_level_id_list = 10;
+}
+

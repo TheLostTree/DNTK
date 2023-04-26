@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "EffigyChallengeV2LevelData.proto";
+
+// Name: GKJNBOAHIJB
+message EffigyChallengeV2DetailInfo {
+    repeated EffigyChallengeV2LevelData level_data_list = 8;
+}
+

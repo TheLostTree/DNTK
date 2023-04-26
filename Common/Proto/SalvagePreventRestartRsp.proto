@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8807
+// Name: JCLHEAKGHLO
+message SalvagePreventRestartRsp {
+    uint32 gallery_id = 15;
+    int32 retcode = 5;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8839
+// Name: DPBDKEPJDIJ
+message RoguelikeEffectViewReq {
+    repeated uint32 KLHGFELAILA = 8;
+    repeated uint32 MKFIGOJPBGP = 1;
+}
+

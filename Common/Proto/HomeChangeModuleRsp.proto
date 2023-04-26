@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4516
+// Name: OOEKDEHCHAE
+message HomeChangeModuleRsp {
+    uint32 target_module_id = 8;
+    int32 retcode = 14;
+}
+

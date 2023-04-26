@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1686
+// Name: CGPNDMOBAOI
+message CGPNDMOBAOI {
+    uint64 cur_avatar_guid = 10;
+    int32 retcode = 6;
+    repeated uint64 avatar_team_guid_list = 2;
+}
+

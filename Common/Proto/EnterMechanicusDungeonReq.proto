@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3959
+// Name: EJLGLJHLKMG
+message EnterMechanicusDungeonReq {
+    uint32 difficult_level = 12;
+}
+

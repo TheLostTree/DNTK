@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1601
+// Name: BBKJCNMLLCD
+message AvatarChangeCostumeRsp {
+    int32 retcode = 8;
+    uint32 costume_id = 13;
+    uint64 avatar_guid = 11;
+}
+

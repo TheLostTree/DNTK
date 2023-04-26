@@ -1,0 +1,20 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: FCLMIIGMPED
+message TreasureMapRegionInfo {
+    bool AKDHMDINPHC = 13;
+    uint32 region_radius = 11;
+    uint32 IGINBLLKCPJ = 10;
+    Vector region_center_pos = 5;
+    bool KODNMGNPCCE = 9;
+    uint32 DPPENDNMMOE = 4;
+    uint32 scene_id = 8;
+    uint32 start_time = 14;
+    uint32 region_id = 7;
+}
+

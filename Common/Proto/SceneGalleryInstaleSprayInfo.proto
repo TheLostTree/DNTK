@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SceneGalleryInstableSprayBuffInfo.proto";
+
+// Name: JAMJCMJGCCH
+message SceneGalleryInstaleSprayInfo {
+    uint32 score = 1;
+    repeated SceneGalleryInstableSprayBuffInfo buff_info_list = 3;
+}
+

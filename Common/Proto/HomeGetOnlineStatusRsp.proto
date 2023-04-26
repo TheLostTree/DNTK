@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "OnlinePlayerInfo.proto";
+
+// CmdId: 4649
+// Name: AKGCBCCDOIP
+message HomeGetOnlineStatusRsp {
+    int32 retcode = 6;
+    repeated OnlinePlayerInfo player_info_list = 14;
+}
+

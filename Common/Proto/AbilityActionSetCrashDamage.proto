@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: DCPBNCDJFIK
+message AbilityActionSetCrashDamage {
+    Vector hit_pos = 10;
+    float damage = 14;
+}
+

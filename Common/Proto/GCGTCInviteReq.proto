@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 7926
+// Name: FBEBHPMGAFJ
+message GCGTCInviteReq {
+    uint32 level_id = 13;
+    uint32 character_id = 1;
+}
+

@@ -1,0 +1,31 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: JFGLKLBDHBF
+message UgcMusicBriefInfo {
+    bool OPKICKNECFH = 12;
+    uint32 IMLAOIECPAF = 7;
+    uint32 AEFAIFLGINI = 1145;
+    uint32 JLENMFBAPHN = 3;
+    bool is_psn_platform = 9;
+    uint32 version = 11;
+    bool PBOHPBBOLMA = 6;
+    bool FIMEFIBGPBM = 13;
+    uint64 import_from_ugc_guid = 14;
+    uint64 ugc_guid = 5;
+    uint32 LJLNNDMKBHD = 898;
+    repeated uint32 KEKFLIHPMDE = 1457;
+    uint32 CKGODIPLAEP = 10;
+    uint32 music_id = 15;
+    uint32 EFIMGDCDJEI = 1;
+    string creator_nickname = 4;
+    uint32 AEOJLGHLMBO = 602;
+    uint32 LNPANKACJKB = 2;
+    uint32 max_score = 8;
+    repeated uint32 HLBMBEECICD = 1858;
+    uint32 NMCPJCNAJFC = 1292;
+}
+

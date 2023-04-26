@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 335
+// Name: FPBBGCJGPON
+message AvatarEnterElementViewNotify {
+    bool is_triggerd = 1;
+    uint32 avatar_entity_id = 3;
+}
+

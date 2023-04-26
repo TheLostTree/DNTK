@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeCustomFurnitureInfo.proto";
+
+// CmdId: 4755
+// Name: ECKDBAFOHGM
+message HomeEditCustomFurnitureRsp {
+    int32 retcode = 7;
+    HomeCustomFurnitureInfo custom_furniture_info = 9;
+}
+

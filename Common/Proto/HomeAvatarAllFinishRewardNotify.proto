@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4662
+// Name: MPIIBDEPHOI
+message HomeAvatarAllFinishRewardNotify {
+    repeated uint32 event_id_list = 7;
+}
+

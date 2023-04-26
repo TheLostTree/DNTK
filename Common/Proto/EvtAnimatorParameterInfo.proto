@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AnimatorParameterValueInfo.proto";
+
+// Name: KPADLGJMKOH
+message EvtAnimatorParameterInfo {
+    uint32 entity_id = 10;
+    bool is_server_cache = 11;
+    int32 name_id = 13;
+    AnimatorParameterValueInfo value = 15;
+}
+

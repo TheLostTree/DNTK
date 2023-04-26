@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 133
+// Name: IHLADGBBKDA
+message PlayerCompoundMaterialReq {
+    uint32 compound_id = 10;
+    uint32 count = 6;
+}
+

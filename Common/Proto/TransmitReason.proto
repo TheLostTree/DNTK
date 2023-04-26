@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: HFKNBJHCGCI
+enum TransmitReason {
+    TRANSMIT_NONE = 0;
+    TRANSMIT_QUEST = 1;
+}
+

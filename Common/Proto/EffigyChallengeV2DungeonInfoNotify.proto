@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 24928
+// Name: IDNIDNOCAOO
+message EffigyChallengeV2DungeonInfoNotify {
+    uint32 skill_no = 2;
+    uint32 challenge_mode_difficulty = 14;
+    uint32 level_id = 15;
+}
+

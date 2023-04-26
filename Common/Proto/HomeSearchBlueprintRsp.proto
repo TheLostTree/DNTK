@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeBlueprintSearchInfo.proto";
+
+// CmdId: 4697
+// Name: JMBIGNLPDEC
+message HomeSearchBlueprintRsp {
+    int32 retcode = 8;
+    HomeBlueprintSearchInfo search_info = 14;
+}
+

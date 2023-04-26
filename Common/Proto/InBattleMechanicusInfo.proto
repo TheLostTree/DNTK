@@ -1,0 +1,31 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "InBattleMechanicusCardInfo.proto";
+import "InBattleMechanicusMonsterInfo.proto";
+import "InBattleMechanicusPlayerInfo.proto";
+import "InBattleMechanicusStageType.proto";
+
+// Name: OEKICOMPAFL
+message InBattleMechanicusInfo {
+    uint32 excaped_monster_num = 2;
+    uint64 ACGHDNCENEK = 13;
+    uint64 wait_begin_time_us = 12;
+    uint32 IFPJMEJGMEA = 9;
+    repeated InBattleMechanicusMonsterInfo monster_list = 8;
+    uint32 wait_seconds = 14;
+    repeated uint32 IHPACAHCKCH = 1582;
+    uint32 round = 4;
+    repeated InBattleMechanicusCardInfo pick_card_list = 3;
+    uint32 MMLJDCLICFL = 7;
+    uint32 left_monster = 11;
+    repeated uint32 EFEBPAKIIKH = 576;
+    InBattleMechanicusStageType stage = 15;
+    uint64 ANCACNKMJPL = 5;
+    uint32 JBPNIJKKEFD = 10;
+    repeated InBattleMechanicusCardInfo history_card_list = 1;
+    repeated InBattleMechanicusPlayerInfo player_list = 6;
+}
+

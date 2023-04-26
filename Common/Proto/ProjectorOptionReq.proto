@@ -1,0 +1,20 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 897
+// Name: DCIIDBFJNMH
+message ProjectorOptionReq {
+    // Name: DOENKMNEPFO
+    enum DOENKMNEPFO {
+        DOENKMNEPFO_PROJECTOR_OP_NONE = 0;
+        DOENKMNEPFO_PROJECTOR_OP_CREATE = 1;
+        DOENKMNEPFO_PROJECTOR_OP_DESTROY = 2;
+    }
+
+    uint32 op_type = 6;
+    uint32 entity_id = 5;
+}
+

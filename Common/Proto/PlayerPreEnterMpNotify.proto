@@ -1,0 +1,21 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1822
+// Name: HMGLDIEKKKD
+message PlayerPreEnterMpNotify {
+    // Name: MCNOPMHCNHC
+    enum State {
+        INVALID = 0;
+        START = 1;
+        TIMEOUT = 2;
+    }
+
+    uint32 uid = 4;
+    string nickname = 10;
+    State state = 13;
+}
+

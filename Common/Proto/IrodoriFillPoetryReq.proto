@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8769
+// Name: OIADJFNAMII
+message IrodoriFillPoetryReq {
+    uint32 BNNBEAHNPNH = 7;
+    uint32 JKJHPHOGAHE = 11;
+}
+

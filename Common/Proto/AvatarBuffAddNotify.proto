@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 348
+// Name: OOLMIAMAJEL
+message AvatarBuffAddNotify {
+    uint64 avatar_guid = 15;
+    uint32 buff_id = 12;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2144
+// Name: HPBMFFNJHOC
+message FleurFairMusicGameStartRsp {
+    int32 retcode = 12;
+    uint32 music_basic_id = 1;
+}
+

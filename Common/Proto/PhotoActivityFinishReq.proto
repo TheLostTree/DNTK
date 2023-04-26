@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8138
+// Name: DFECEAOCJLI
+message PhotoActivityFinishReq {
+    bool is_succ = 2;
+    uint32 pos_id = 15;
+    uint32 check_root_id = 6;
+}
+

@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGReason.proto";
+import "GCGZoneType.proto";
+
+// Name: HMNIHMNIOKA
+message GCGMsgAddCards {
+    uint32 pos = 15;
+    repeated uint32 card_guid_list = 9;
+    GCGReason reason = 13;
+    uint32 controller_id = 3;
+    GCGZoneType zone = 14;
+}
+

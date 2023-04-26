@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5849
+// Name: BCCAFNMNICP
+message StartFishingRsp {
+    uint32 fish_pool_id = 14;
+    int32 retcode = 12;
+}
+

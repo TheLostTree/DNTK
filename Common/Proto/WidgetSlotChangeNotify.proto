@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "WidgetSlotData.proto";
+import "WidgetSlotOp.proto";
+
+// CmdId: 4257
+// Name: OGAHAOPHMIM
+message WidgetSlotChangeNotify {
+    WidgetSlotOp op = 14;
+    WidgetSlotData slot = 2;
+}
+

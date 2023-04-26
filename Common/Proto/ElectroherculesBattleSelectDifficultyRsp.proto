@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 21035
+// Name: HBHJGEIKJEP
+message ElectroherculesBattleSelectDifficultyRsp {
+    uint32 gallery_id = 9;
+    uint32 diffculty = 10;
+    int32 retcode = 8;
+    uint32 stage_id = 4;
+}
+

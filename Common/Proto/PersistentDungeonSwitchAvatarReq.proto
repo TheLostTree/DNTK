@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1685
+// Name: GALLHCNNOGL
+message PersistentDungeonSwitchAvatarReq {
+    repeated uint64 avatar_team_guid_list = 10;
+    uint64 cur_avatar_guid = 2;
+}
+

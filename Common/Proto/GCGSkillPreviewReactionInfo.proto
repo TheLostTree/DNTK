@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: JEMOPJPJDPL
+message GCGSkillPreviewReactionInfo {
+    uint32 EIJFJJJBIIH = 9;
+    uint32 LKDBPBBGDBN = 12;
+}
+

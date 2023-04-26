@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HideAndSeekPlayerBattleInfo.proto";
+import "HideAndSeekStageType.proto";
+
+// Name: CJNADCAPBFH
+message HideAndSeekStageInfo {
+    repeated uint32 hider_uid_list = 11;
+    uint32 map_id = 9;
+    bool is_record_score = 6;
+    uint32 hunter_uid = 3;
+    HideAndSeekStageType stage_type = 12;
+    map<uint32, HideAndSeekPlayerBattleInfo> battle_info_map = 4;
+}
+

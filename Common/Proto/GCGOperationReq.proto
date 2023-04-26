@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGOperation.proto";
+
+// CmdId: 7479
+// Name: LMHHDFLHLMN
+message GCGOperationReq {
+    uint32 redirect_uid = 10;
+    uint32 op_seq = 8;
+    GCGOperation op = 1;
+}
+

@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MainCoop.proto";
+
+// CmdId: 2000
+// Name: AMPMNKIKBID
+message StartCoopPointRsp {
+    bool is_start = 8;
+    MainCoop start_main_coop = 6;
+    uint32 coop_point = 13;
+    int32 retcode = 9;
+}
+

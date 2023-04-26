@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ItemParam.proto";
+
+// CmdId: 694
+// Name: AMLFPANDAFE
+message WeaponUpgradeRsp {
+    uint64 target_weapon_guid = 15;
+    int32 retcode = 2;
+    uint32 old_level = 14;
+    repeated ItemParam item_param_list = 5;
+    uint32 cur_level = 10;
+}
+

@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: MHMEJPDBJHD
+enum GCGZoneType {
+    GCG_ZONE_INVALID = 0;
+    GCG_ZONE_DECK = 1;
+    GCG_ZONE_HAND = 2;
+    GCG_ZONE_CHARACTER = 3;
+    GCG_ZONE_MODIFY = 4;
+    GCG_ZONE_SUMMON = 5;
+    GCG_ZONE_ASSIST = 7;
+    GCG_ZONE_ONSTAGE = 8;
+    GCG_ZONE_RULE = 9;
+}
+

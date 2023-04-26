@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SceneEntityInfo.proto";
+import "VisionType.proto";
+
+// CmdId: 3466
+// Name: AEIMANHHJAC
+message ScenePlayerBackgroundAvatarRefreshNotify {
+    uint32 param = 12;
+    VisionType appear_type = 8;
+    repeated SceneEntityInfo entity_list = 14;
+}
+

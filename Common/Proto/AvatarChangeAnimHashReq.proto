@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1602
+// Name: GLDBIGJJKPE
+message AvatarChangeAnimHashReq {
+    uint64 avatar_guid = 11;
+    uint32 anim_hash = 15;
+}
+

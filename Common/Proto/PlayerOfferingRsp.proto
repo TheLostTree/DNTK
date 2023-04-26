@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ItemParam.proto";
+import "PlayerOfferingData.proto";
+
+// CmdId: 2912
+// Name: JBDIFMONCAG
+message PlayerOfferingRsp {
+    repeated ItemParam item_list = 15;
+    PlayerOfferingData offering_data = 4;
+    int32 retcode = 5;
+}
+

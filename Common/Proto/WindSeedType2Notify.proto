@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 24656
+// Name: KABDOKKOMBB
+message WindSeedType2Notify {
+    bytes payload = 10;
+    uint32 config_id = 1;
+}
+

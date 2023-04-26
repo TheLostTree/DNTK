@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ProfilePicture.proto";
+
+// Name: CPKIODONDBP
+message CrucibleBattleUidInfo {
+    string online_id = 13;
+    ProfilePicture profile_picture = 1;
+    string nickname = 15;
+    uint32 icon = 4;
+    uint32 uid = 9;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: OBFFNAGDGMJ
+message CylinderRegionSize {
+    float height = 3;
+    float radius = 15;
+}
+

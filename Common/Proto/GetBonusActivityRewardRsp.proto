@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "BonusActivityInfo.proto";
+
+// CmdId: 2575
+// Name: NJIPJNNCPHD
+message GetBonusActivityRewardRsp {
+    BonusActivityInfo bonus_activity_info_list = 12;
+    int32 retcode = 8;
+}
+

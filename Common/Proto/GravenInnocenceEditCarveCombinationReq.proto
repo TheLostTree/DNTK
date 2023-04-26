@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CustomGadgetTreeInfo.proto";
+
+// CmdId: 24050
+// Name: NMOHOIIFAEH
+message GravenInnocenceEditCarveCombinationReq {
+    uint32 entity_id = 1;
+    CustomGadgetTreeInfo combination_info = 2;
+}
+

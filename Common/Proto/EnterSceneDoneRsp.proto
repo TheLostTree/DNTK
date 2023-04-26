@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 267
+// Name: NFFMBCKHDLJ
+message EnterSceneDoneRsp {
+    int32 retcode = 3;
+    uint32 enter_scene_token = 13;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: JNNFMHFJCEG
+message FishingScore {
+    bool is_new_record = 12;
+    uint32 fishing_score = 14;
+}
+

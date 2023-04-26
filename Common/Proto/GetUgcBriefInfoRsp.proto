@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "UgcMusicBriefInfo.proto";
+import "UgcType.proto";
+
+// CmdId: 6349
+// Name: NICLPBFFHAA
+message GetUgcBriefInfoRsp {
+    uint64 ugc_guid = 5;
+    int32 retcode = 10;
+    UgcType ugc_type = 2;
+    oneof brief {
+        UgcMusicBriefInfo music_brief_info = 1;
+    }
+}
+

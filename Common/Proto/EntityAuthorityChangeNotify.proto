@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AuthorityChange.proto";
+
+// CmdId: 350
+// Name: JLADAPJELAE
+message EntityAuthorityChangeNotify {
+    repeated AuthorityChange authority_change_list = 6;
+}
+

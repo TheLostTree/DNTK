@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2028
+// Name: EDBGLCIMCLG
+message FleurFairReplayMiniGameRsp {
+    int32 retcode = 2;
+    uint32 minigame_id = 4;
+}
+

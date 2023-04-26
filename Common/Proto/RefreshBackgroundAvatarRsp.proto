@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1705
+// Name: LCJDCDGGAKG
+message RefreshBackgroundAvatarRsp {
+    int32 retcode = 5;
+    map<uint64, uint32> hp_full_time_map = 14;
+}
+

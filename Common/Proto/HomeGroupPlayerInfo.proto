@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ProfilePicture.proto";
+
+// Name: GECIFFJAPJD
+message HomeGroupPlayerInfo {
+    uint32 uid = 10;
+    uint32 player_level = 14;
+    ProfilePicture profile_picture = 6;
+    string psn_id = 1;
+    string nickname = 9;
+    string online_id = 11;
+}
+

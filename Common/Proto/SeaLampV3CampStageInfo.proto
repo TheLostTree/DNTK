@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: HHHABMICCBP
+message SeaLampV3CampStageInfo {
+    uint32 stage_id = 11;
+    uint32 level_id = 3;
+    bool is_finished = 14;
+    bool is_open = 9;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5368
+// Name: NIHAFBFKGMP
+message ChessPickCardRsp {
+    int32 retcode = 2;
+    uint32 card_index = 7;
+    uint32 card_id = 13;
+}
+

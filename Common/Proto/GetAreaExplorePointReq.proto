@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 243
+// Name: MAJEDICCBIL
+message GetAreaExplorePointReq {
+    repeated uint32 area_id_list = 2;
+}
+

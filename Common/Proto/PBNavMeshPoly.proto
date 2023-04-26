@@ -1,0 +1,21 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LMDMGGJHBKI
+message PBNavMeshPoly {
+    // Name: PJKEMGMCEFM
+    enum EdgeType {
+        INNER = 0;
+        TILE_BOUND = 1;
+        TILE_BOUND_UNCONNECT = 2;
+        TILE_BOUND_OVERIDE = 3;
+    }
+
+    repeated EdgeType edge_types = 8;
+    repeated int32 vects = 1;
+    int32 area = 6;
+}
+

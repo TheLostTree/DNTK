@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "OtherCustomDungeonBrief.proto";
+
+// CmdId: 6248
+// Name: HMDPFFCIFCD
+message GetRecommendCustomDungeonRsp {
+    int32 retcode = 11;
+    repeated OtherCustomDungeonBrief custom_dungeon_list = 3;
+}
+

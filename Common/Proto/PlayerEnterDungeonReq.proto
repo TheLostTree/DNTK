@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "DungeonEnterPosInfo.proto";
+
+// CmdId: 989
+// Name: CJLIPEPDAHP
+message PlayerEnterDungeonReq {
+    uint32 point_id = 12;
+    uint32 dungeon_id = 14;
+    DungeonEnterPosInfo enter_pos_info = 6;
+}
+

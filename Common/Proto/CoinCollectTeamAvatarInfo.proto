@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: HGKFODIDPHN
+message CoinCollectTeamAvatarInfo {
+    uint32 costume_id = 10;
+    uint32 avatar_id = 1;
+}
+

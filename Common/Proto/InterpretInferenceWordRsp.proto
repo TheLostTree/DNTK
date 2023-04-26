@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 434
+// Name: EIGDCMPDAJO
+message InterpretInferenceWordRsp {
+    uint32 page_id = 8;
+    int32 retcode = 10;
+    uint32 word_id = 1;
+}
+

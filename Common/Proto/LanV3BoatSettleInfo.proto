@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ExhibitionDisplayInfo.proto";
+import "ProfilePicture.proto";
+
+// Name: HKLPDBAPNMI
+message LanV3BoatSettleInfo {
+    string nickname = 11;
+    ProfilePicture profile_picture = 2;
+    repeated ExhibitionDisplayInfo card_list = 15;
+    uint32 head_image = 4;
+    string online_id = 8;
+    uint32 uid = 6;
+}
+

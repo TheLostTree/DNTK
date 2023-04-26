@@ -1,0 +1,22 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "RogueDiaryRoomInfo.proto";
+
+// CmdId: 8967
+// Name: KGMDCMKPGOM
+message RogueDiaryDungeonInfoNotify {
+    uint32 coin = 14;
+    repeated RogueDiaryRoomInfo room_list = 15;
+    uint32 difficulty = 13;
+    uint32 dungeon_id = 3;
+    uint32 cur_round = 5;
+    uint32 stage_id = 4;
+    uint32 KKJMDCAINKD = 10;
+    repeated uint32 GGBGBBGFCBH = 11;
+    repeated uint32 GOPALHMFHDE = 1;
+    uint32 time = 8;
+}
+

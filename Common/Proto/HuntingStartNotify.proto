@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HuntingPair.proto";
+import "Vector.proto";
+
+// CmdId: 4345
+// Name: CKGLOBELCOC
+message HuntingStartNotify {
+    uint32 fail_time = 10;
+    Vector clue_position = 4;
+    HuntingPair hunting_pair = 15;
+    bool is_final = 1;
+}
+

@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GravenInnocenceCampInfo.proto";
+import "GravenInnocenceCarveInfo.proto";
+import "GravenInnocencePhotoInfo.proto";
+import "GravenInnocenceRaceInfo.proto";
+
+// Name: PACIIOONPBH
+message GravenInnocenceDetailInfo {
+    GravenInnocencePhotoInfo photo_info = 4;
+    bool is_content_closed = 8;
+    GravenInnocenceCarveInfo carve_info = 15;
+    GravenInnocenceCampInfo camp_info = 9;
+    GravenInnocenceRaceInfo race_info = 13;
+}
+

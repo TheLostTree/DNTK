@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SalvageEscortSettleInfo.proto";
+
+// CmdId: 8856
+// Name: OLMKGCCALAM
+message SalvageEscortSettleNotify {
+    uint32 gallery_id = 8;
+    SalvageEscortSettleInfo settle_info = 12;
+}
+

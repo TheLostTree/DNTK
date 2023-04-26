@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4265
+// Name: NIKHJHHKIMC
+message AnchorPointOpRsp {
+    int32 retcode = 8;
+    uint32 anchor_point_id = 14;
+    uint32 anchor_point_op_type = 5;
+}
+

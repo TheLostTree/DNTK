@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8543
+// Name: LEFMHBANNII
+message BartenderGetFormulaRsp {
+    uint32 formula_id = 5;
+    int32 retcode = 11;
+    bool is_new = 14;
+    repeated uint32 affix_list = 2;
+}
+

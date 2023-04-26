@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4725
+// Name: KDEHLHJBMIG
+message PlayerApplyEnterHomeResultRsp {
+    uint32 param = 12;
+    int32 retcode = 11;
+    uint32 apply_uid = 8;
+    bool is_agreed = 1;
+}
+

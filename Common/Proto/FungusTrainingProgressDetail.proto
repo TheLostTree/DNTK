@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FungusFighterMonsterDetail.proto";
+import "FungusTrainingPoolPreviewDetail.proto";
+
+// Name: OFGPAAEDBLN
+message FungusTrainingProgressDetail {
+    repeated uint32 ONGOEANKEBM = 5;
+    uint32 cur_round = 10;
+    uint32 dungeon_id = 9;
+    uint32 total_used_time = 15;
+    repeated uint32 HBGDJGLGJIH = 2;
+    repeated FungusFighterMonsterDetail monster_detail_list = 3;
+    repeated FungusTrainingPoolPreviewDetail monster_pool_preview_list = 13;
+}
+

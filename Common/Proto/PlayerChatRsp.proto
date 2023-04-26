@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3425
+// Name: LHGABNCEJMG
+message PlayerChatRsp {
+    uint32 chat_forbidden_endtime = 2;
+    int32 retcode = 9;
+}
+

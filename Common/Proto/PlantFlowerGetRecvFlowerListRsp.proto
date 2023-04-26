@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "PlantFlowerRecvFlowerData.proto";
+
+// CmdId: 8365
+// Name: MENPBJEIOAG
+message PlantFlowerGetRecvFlowerListRsp {
+    repeated PlantFlowerRecvFlowerData recv_flower_list = 3;
+    int32 retcode = 10;
+    uint32 schedule_id = 5;
+}
+

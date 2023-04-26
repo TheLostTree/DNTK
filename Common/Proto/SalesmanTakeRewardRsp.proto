@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2159
+// Name: MFDCJHEOKAJ
+message SalesmanTakeRewardRsp {
+    int32 retcode = 6;
+    uint32 schedule_id = 9;
+    uint32 reward_id = 15;
+    uint32 position = 2;
+}
+

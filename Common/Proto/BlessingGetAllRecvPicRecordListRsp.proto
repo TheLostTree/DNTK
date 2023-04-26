@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "BlessingRecvPicRecord.proto";
+
+// CmdId: 2150
+// Name: DOBNAPMLACB
+message BlessingGetAllRecvPicRecordListRsp {
+    repeated BlessingRecvPicRecord recv_pic_record_list = 14;
+    int32 retcode = 5;
+}
+

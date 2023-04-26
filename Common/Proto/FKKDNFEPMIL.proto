@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeBlueprintSlotInfo.proto";
+
+// CmdId: 4614
+// Name: FKKDNFEPMIL
+message FKKDNFEPMIL {
+    int32 retcode = 8;
+    HomeBlueprintSlotInfo slot_info = 14;
+}
+

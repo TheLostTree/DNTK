@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ChannelerSlabCamp.proto";
+
+// Name: BFOECPJHBHK
+message ChannelerSlabChallenge {
+    uint32 active_camp_index = 11;
+    repeated ChannelerSlabCamp camp_list = 13;
+}
+

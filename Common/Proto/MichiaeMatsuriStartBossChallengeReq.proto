@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8214
+// Name: JHFJJDBBOON
+message MichiaeMatsuriStartBossChallengeReq {
+    uint32 difficulty = 5;
+    uint32 gadget_entity_id = 12;
+}
+

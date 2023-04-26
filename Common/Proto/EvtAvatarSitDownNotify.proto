@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// CmdId: 374
+// Name: LJELJMOKMEJ
+message EvtAvatarSitDownNotify {
+    uint32 entity_id = 9;
+    uint64 chair_id = 1;
+    Vector position = 15;
+}
+

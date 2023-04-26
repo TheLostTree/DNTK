@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CustomGadgetTreeInfo.proto";
+
+// CmdId: 833
+// Name: FCKNLPLIOAM
+message GadgetCustomTreeInfoNotify {
+    uint32 gadget_entity_id = 6;
+    CustomGadgetTreeInfo custom_gadget_tree_info = 3;
+}
+

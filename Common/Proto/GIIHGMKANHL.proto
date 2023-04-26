@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 22187
+// Name: GIIHGMKANHL
+message GIIHGMKANHL {
+    int32 retcode = 14;
+    uint32 pos_id = 15;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4793
+// Name: AFJNICPBLBF
+message FurnitureMakeStartReq {
+    uint32 make_id = 8;
+    uint32 avatar_id = 14;
+}
+

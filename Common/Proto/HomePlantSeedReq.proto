@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4624
+// Name: EPFNLONCBBP
+message HomePlantSeedReq {
+    uint32 index = 3;
+    repeated uint32 seed_id_list = 10;
+    uint32 field_guid = 1;
+}
+

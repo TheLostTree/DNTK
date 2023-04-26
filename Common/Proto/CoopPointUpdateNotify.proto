@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CoopPoint.proto";
+
+// CmdId: 1981
+// Name: MMAKIBIBFJF
+message CoopPointUpdateNotify {
+    CoopPoint coop_point = 11;
+}
+

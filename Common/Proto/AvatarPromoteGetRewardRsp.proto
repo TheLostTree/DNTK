@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1750
+// Name: BDPJACNADDJ
+message AvatarPromoteGetRewardRsp {
+    int32 retcode = 15;
+    uint32 reward_id = 9;
+    uint64 avatar_guid = 13;
+    uint32 promote_level = 1;
+}
+

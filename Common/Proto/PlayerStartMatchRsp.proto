@@ -1,0 +1,20 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MatchType.proto";
+
+// CmdId: 4166
+// Name: CCGNHDDBACB
+message PlayerStartMatchRsp {
+    uint32 param = 15;
+    uint32 match_id = 14;
+    MatchType match_type = 9;
+    uint32 mechanicus_difficult_level = 10;
+    uint32 mp_play_id = 2;
+    uint32 dungeon_id = 3;
+    uint32 punish_end_time = 1;
+    int32 retcode = 13;
+}
+

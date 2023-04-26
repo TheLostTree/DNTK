@@ -1,0 +1,24 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: GNCMJDPOLCE
+message MainCoop {
+    // Name: PPHCOKFGLOL
+    enum Status {
+        INVALID = 0;
+        RUNNING = 1;
+        FINISHED = 2;
+    }
+
+    map<uint32, int32> JFNGFEFMHMM = 5;
+    uint32 id = 12;
+    uint32 self_confidence = 10;
+    repeated uint32 save_point_id_list = 8;
+    map<uint32, uint32> seen_ending_map = 11;
+    map<uint32, int32> KINJAIJMLPM = 2;
+    Status status = 4;
+}
+

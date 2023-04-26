@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 915
+// Name: GIJPAOFHLHB
+message DungeonSlipRevivePointActivateRsp {
+    int32 retcode = 10;
+    uint32 slip_revive_point_id = 3;
+}
+

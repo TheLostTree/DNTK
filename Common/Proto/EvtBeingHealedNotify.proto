@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 327
+// Name: LJPOOGNPDNM
+message EvtBeingHealedNotify {
+    float KNLBFMODPIN = 11;
+    uint32 target_id = 8;
+    float OFOGNOIABMG = 12;
+    uint32 source_id = 4;
+}
+

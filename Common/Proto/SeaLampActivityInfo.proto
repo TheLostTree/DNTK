@@ -1,0 +1,20 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SeaLampSectionInfo.proto";
+
+// Name: JALGJKCFCMP
+message SeaLampActivityInfo {
+    uint32 sea_lamp_coin = 10;
+    uint32 day_index = 4;
+    uint32 first_day_start_time = 12;
+    repeated SeaLampSectionInfo section_info_list = 8;
+    bool CFABGECNHGK = 2;
+    uint32 mechanicus_id = 7;
+    bool is_content_closed = 15;
+    uint32 popularity = 14;
+    bool IAAOFEIDABB = 1;
+}
+

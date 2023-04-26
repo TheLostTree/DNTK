@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 186
+// Name: GBJPMDHMOGG
+message SetOpenStateReq {
+    uint32 key = 3;
+    uint32 value = 14;
+}
+

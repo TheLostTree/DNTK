@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SkyCrystalDetectorData.proto";
+
+// CmdId: 4275
+// Name: DKBDMKJOAFM
+message SkyCrystalDetectorDataUpdateNotify {
+    SkyCrystalDetectorData sky_crystal_detector_data = 2;
+}
+

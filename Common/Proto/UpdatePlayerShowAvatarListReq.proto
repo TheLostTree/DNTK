@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4018
+// Name: PJGONDKJIHI
+message UpdatePlayerShowAvatarListReq {
+    repeated uint32 show_avatar_id_list = 13;
+    bool is_show_avatar = 8;
+}
+

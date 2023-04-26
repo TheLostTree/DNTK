@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MainCoop.proto";
+
+// CmdId: 1966
+// Name: AOBNNHLBNCJ
+message MainCoopUpdateNotify {
+    repeated MainCoop main_coop_list = 5;
+}
+

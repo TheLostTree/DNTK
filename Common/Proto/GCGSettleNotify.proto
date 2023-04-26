@@ -1,0 +1,22 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGEndReason.proto";
+import "GCGGameBusinessType.proto";
+import "ItemParam.proto";
+
+// CmdId: 7504
+// Name: EAAHMIEAONL
+message GCGSettleNotify {
+    uint32 game_id = 10;
+    bool is_win = 7;
+    repeated ItemParam reward_item_list = 15;
+    GCGGameBusinessType business_type = 2;
+    repeated uint32 finished_challenge_id_list = 12;
+    repeated uint32 forbid_finish_challenge_list = 11;
+    GCGEndReason reason = 1;
+    uint32 win_controller_id = 5;
+}
+

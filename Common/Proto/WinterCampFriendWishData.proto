@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ProfilePicture.proto";
+
+// Name: MCMJPIGCMCN
+message WinterCampFriendWishData {
+    uint32 uid = 2;
+    string nickname = 13;
+    repeated uint32 item_id_list = 12;
+    ProfilePicture profile_picture = 11;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: ALNFLILBDNC
+message BalloonPlayerInfo {
+    uint32 uid = 9;
+    uint32 cur_score = 14;
+    uint32 combo = 3;
+    uint32 combo_disable_time = 5;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: BMMIIMLDFOG
+message SegmentInfo {
+    uint32 size = 3;
+    uint32 offset = 15;
+    uint32 module = 4;
+}
+

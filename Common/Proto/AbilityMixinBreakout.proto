@@ -1,0 +1,35 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "BreakoutSyncAction.proto";
+import "BreakoutSyncCreateConnect.proto";
+import "BreakoutSyncFinishGame.proto";
+import "BreakoutSyncPing.proto";
+import "BreakoutSyncSnapShot.proto";
+
+// Name: FFKGDKFKJCD
+message AbilityMixinBreakout {
+    // Name: ACIFCBGMPPK
+    enum SyncType {
+        SYNC_TYPE_NONE = 0;
+        SYNC_TYPE_CREATE_CONNECT = 1;
+        SYNC_TYPE_START_GAME = 2;
+        SYNC_TYPE_PING = 3;
+        SYNC_TYPE_FINISH_GAME = 4;
+        SYNC_TYPE_SNAP_SHOT = 5;
+        SYNC_TYPE_ACTION = 6;
+    }
+
+    int32 retcode = 13;
+    SyncType sync_type = 7;
+    oneof sync {
+        BreakoutSyncCreateConnect sync_create_connect = 3;
+        BreakoutSyncPing sync_ping = 6;
+        BreakoutSyncFinishGame sync_finish_game = 1;
+        BreakoutSyncSnapShot sync_snap_shot = 9;
+        BreakoutSyncAction sync_action = 2;
+    }
+}
+

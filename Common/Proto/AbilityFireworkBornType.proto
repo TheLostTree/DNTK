@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: GMFKKIFMOFA
+message AbilityFireworkBornType {
+    uint32 effect_index = 15;
+    Vector move_dir = 13;
+    Vector rot = 3;
+    Vector pos = 12;
+}
+

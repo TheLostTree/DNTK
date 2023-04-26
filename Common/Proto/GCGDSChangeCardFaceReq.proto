@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 7498
+// Name: JKOODGPGFIC
+message GCGDSChangeCardFaceReq {
+    uint32 face_type = 2;
+    uint32 card_id = 5;
+}
+

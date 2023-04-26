@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "BuyGoodsParam.proto";
+import "ShopGoods.proto";
+
+// CmdId: 763
+// Name: POILJBBMNCF
+message BatchBuyGoodsRsp {
+    int32 retcode = 15;
+    repeated ShopGoods goods_list = 5;
+    repeated BuyGoodsParam buy_goods_list = 2;
+    uint32 shop_type = 11;
+}
+

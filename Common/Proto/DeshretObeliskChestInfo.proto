@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: PPPPFCNAIDN
+message DeshretObeliskChestInfo {
+    uint32 config_id = 11;
+    Vector pos = 6;
+    uint32 group_id = 4;
+    uint32 scene_id = 5;
+}
+

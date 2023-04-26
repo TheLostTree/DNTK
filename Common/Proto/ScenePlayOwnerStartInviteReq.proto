@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4426
+// Name: OABNMFAFFAI
+message ScenePlayOwnerStartInviteReq {
+    bool is_skip_match = 15;
+    uint32 play_id = 2;
+}
+

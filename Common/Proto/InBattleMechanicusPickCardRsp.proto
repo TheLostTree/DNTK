@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5392
+// Name: LEPEPBLADCN
+message InBattleMechanicusPickCardRsp {
+    uint32 card_id = 5;
+    uint32 play_index = 2;
+    int32 retcode = 8;
+    uint32 group_id = 13;
+}
+

@@ -1,0 +1,11 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: FOCGIMOBEAB
+message GameplayRecommendationSkillRequest {
+    uint32 skill_depot_id = 3;
+}
+

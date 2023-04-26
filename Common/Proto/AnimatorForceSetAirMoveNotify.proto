@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ForwardType.proto";
+
+// CmdId: 306
+// Name: HNAIHFDMNOD
+message AnimatorForceSetAirMoveNotify {
+    ForwardType forward_type = 2;
+    bool in_air_move = 11;
+    uint32 entity_id = 6;
+}
+

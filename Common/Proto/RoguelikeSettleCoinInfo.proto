@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: PCPONDNPNNL
+message RoguelikeSettleCoinInfo {
+    uint32 OAHOGNOCKDJ = 6;
+    uint32 CBOFMPMNLEL = 7;
+    uint32 MFMAKKFFAHP = 8;
+}
+

@@ -1,0 +1,29 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FOBNGECBEBK.proto";
+import "GCGDiceSideType.proto";
+import "GCGZone.proto";
+
+// Name: HBIDFNBNHHF
+message GCGPlayerField {
+    map<uint32, GCGZone> modify_zone_map = 11;
+    repeated GCGDiceSideType dice_side_list = 5;
+    repeated FOBNGECBEBK BGLJDAIDGEJ = 13;
+    uint32 MGHEKGHODFC = 6;
+    uint32 CLKDCEFCLPC = 1;
+    uint32 HMBPCLPFOHL = 12;
+    GCGZone JFABLHNLOJE = 7;
+    uint32 HGMGNCDLHEL = 1424;
+    bool is_passed = 3;
+    uint32 KGKNKJGOOLG = 4;
+    uint32 LHKPDFPOMAI = 9;
+    GCGZone PFIPNPLNJLK = 10;
+    GCGZone LHPELBOAMFC = 15;
+    GCGZone OAPLAEMOEOB = 14;
+    GCGZone PKAMKJIDCKG = 2;
+    uint32 controller_id = 8;
+}
+

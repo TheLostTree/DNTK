@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 7303
+// Name: HADLPGOAPCE
+message GCGDSChangeFieldReq {
+    uint32 deck_id = 3;
+    uint32 field_id = 4;
+}
+

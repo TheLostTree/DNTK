@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 389
+// Name: NPBLKELHECA
+message HostPlayerNotify {
+    uint32 host_peer_id = 3;
+    uint32 host_uid = 11;
+}
+

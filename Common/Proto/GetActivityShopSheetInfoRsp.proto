@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ActivityShopSheetInfo.proto";
+
+// CmdId: 772
+// Name: EPKOFNPJGBC
+message GetActivityShopSheetInfoRsp {
+    uint32 shop_type = 9;
+    int32 retcode = 8;
+    repeated ActivityShopSheetInfo sheet_info_list = 1;
+}
+

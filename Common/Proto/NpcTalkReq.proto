@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 590
+// Name: LPCLBLKFNPB
+message NpcTalkReq {
+    uint32 npc_entity_id = 7;
+    uint32 entity_id = 14;
+    uint32 talk_id = 11;
+}
+

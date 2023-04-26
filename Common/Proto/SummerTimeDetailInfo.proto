@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SummerTimeSprintBoatInfo.proto";
+import "SummerTimeStageInfo.proto";
+
+// Name: NGAGNENCEEJ
+message SummerTimeDetailInfo {
+    uint32 content_close_time = 10;
+    SummerTimeSprintBoatInfo sprint_boat_info = 4;
+    bool is_content_closed = 14;
+    map<uint32, SummerTimeStageInfo> stage_map = 5;
+}
+

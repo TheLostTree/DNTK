@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: AGCMMLFHBHH
+message SceneGalleryWindFieldInfo {
+    uint32 FJDAJPLIFIG = 10;
+    uint32 BKIIHPOAPNA = 13;
+    uint32 HBEFCMIOHCN = 6;
+    uint32 FKLLFAPMCOB = 3;
+    uint32 BKECHEIMCGP = 4;
+    uint32 BKLMMCLHEHK = 2;
+    uint32 FJBKBMHJMMM = 12;
+    uint32 DIFGKMHHIMF = 9;
+}
+

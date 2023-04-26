@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3203
+// Name: FHHIKGOMKPK
+message WorldChestOpenNotify {
+    uint32 scene_id = 4;
+    uint32 config_id = 9;
+    uint32 group_id = 7;
+}
+

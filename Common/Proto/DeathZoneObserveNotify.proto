@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3139
+// Name: FKAFHNIHACL
+message DeathZoneObserveNotify {
+    uint32 source_entity_id = 13;
+    uint32 target_entity_id = 12;
+}
+

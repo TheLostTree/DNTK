@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "PBNavMeshTile.proto";
+
+// CmdId: 2357
+// Name: DMIMDAPMCMO
+message GMShowNavMeshRsp {
+    int32 retcode = 15;
+    repeated PBNavMeshTile tiles = 12;
+}
+

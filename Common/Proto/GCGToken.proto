@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: CIDPEEOGOFC
+message GCGToken {
+    uint32 value = 15;
+    uint32 key = 9;
+}
+

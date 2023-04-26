@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: EIIDPILABCO
+message TeamChainStageData {
+    uint32 best_score = 6;
+    uint32 stage_id = 10;
+    bool is_open = 3;
+}
+

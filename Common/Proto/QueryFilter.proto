@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: BIAIAGAANOL
+message QueryFilter {
+    int32 AOLDDCCIAHH = 2;
+    int32 KMKDOPOMCNG = 9;
+}
+

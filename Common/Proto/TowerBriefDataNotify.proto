@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2490
+// Name: DOOOMKLOHOB
+message TowerBriefDataNotify {
+    uint32 MDANKJCGMIN = 4;
+    uint32 EBEDFHGAGEA = 14;
+    uint32 DPKOCIDIHEI = 1;
+    uint32 EDGJPPKNHJE = 8;
+    bool is_finished_entrance_floor = 11;
+    uint32 HNOACOEEGMH = 6;
+    uint32 IHAJGIFPGAI = 5;
+}
+

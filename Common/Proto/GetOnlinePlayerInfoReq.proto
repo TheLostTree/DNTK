@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 46
+// Name: NMIMOKPBFOI
+message GetOnlinePlayerInfoReq {
+    bool is_online_id = 11;
+    oneof player_id {
+        uint32 target_uid = 4;
+        string online_id = 3;
+        string psn_id = 14;
+    }
+}
+

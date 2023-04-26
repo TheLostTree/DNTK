@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ReunionMissionInfo.proto";
+
+// CmdId: 5100
+// Name: HLJAMFHGDMO
+message TakeReunionMissionRewardRsp {
+    uint32 reward_index = 7;
+    uint32 reward_id = 10;
+    int32 retcode = 5;
+    ReunionMissionInfo mission_info = 12;
+}
+

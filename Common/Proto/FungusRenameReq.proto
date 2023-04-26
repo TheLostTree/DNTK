@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 23177
+// Name: JPILDPAFDFP
+message FungusRenameReq {
+    uint32 fungus_id = 13;
+    uint32 name_id = 3;
+}
+

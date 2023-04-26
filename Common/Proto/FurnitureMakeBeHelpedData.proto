@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ProfilePicture.proto";
+
+// Name: JEACAGKGEGF
+message FurnitureMakeBeHelpedData {
+    uint32 icon = 1;
+    string player_name = 12;
+    fixed32 time = 8;
+    ProfilePicture profile_picture = 11;
+    uint32 uid = 4;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GalleryStopReason.proto";
+
+// Name: MCOGKAOEINM
+message RacingGallerySettleInfo {
+    uint32 winner_uid = 9;
+    uint32 use_time = 5;
+    GalleryStopReason reason = 6;
+}
+

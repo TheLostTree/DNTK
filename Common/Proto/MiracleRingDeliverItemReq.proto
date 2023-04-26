@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "InterOpType.proto";
+import "ItemParam.proto";
+
+// CmdId: 5245
+// Name: PEAEKOIGBCH
+message MiracleRingDeliverItemReq {
+    repeated uint64 food_weapon_guid_list = 2;
+    repeated ItemParam item_param_list = 3;
+    uint32 gadget_id = 7;
+    InterOpType op_type = 5;
+    uint32 gadget_entity_id = 11;
+}
+

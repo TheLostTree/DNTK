@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MapAreaInfo.proto";
+
+// CmdId: 3018
+// Name: PMPCHBJJJAN
+message MapAreaChangeNotify {
+    repeated MapAreaInfo map_area_info_list = 12;
+}
+

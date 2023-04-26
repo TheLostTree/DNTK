@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8693
+// Name: DECMCFHDGFM
+message PlantFlowerGiveFriendFlowerReq {
+    map<uint32, uint32> flower_num_map = 7;
+    uint32 uid = 1;
+    uint32 schedule_id = 15;
+}
+

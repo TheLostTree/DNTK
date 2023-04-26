@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1276
+// Name: NLBPIGMANAH
+message EntityFightPropUpdateNotify {
+    map<uint32, float> fight_prop_map = 12;
+    uint32 entity_id = 3;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: OLEPOGNDEFB
+message PlayProduct {
+    string product_id = 1;
+    string price_tier = 2;
+    uint32 schedule_id = 3;
+}
+

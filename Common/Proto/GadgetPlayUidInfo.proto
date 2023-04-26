@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ProfilePicture.proto";
+
+// Name: OANHOEBKLCP
+message GadgetPlayUidInfo {
+    ProfilePicture profile_picture = 2;
+    string nickname = 14;
+    uint32 battle_watcher_id = 4;
+    uint32 uid = 11;
+    string online_id = 7;
+    uint32 score = 13;
+    uint32 icon = 8;
+}
+

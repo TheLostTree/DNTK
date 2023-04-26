@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CustomDungeonBanType.proto";
+
+// Name: AAIBOLBPIHO
+message CustomDungeonBanInfo {
+    uint64 dungeon_guid = 6;
+    CustomDungeonBanType ban_type = 12;
+    uint32 expire_time = 4;
+}
+

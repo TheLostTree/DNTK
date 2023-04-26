@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HuntingOfferState.proto";
+import "HuntingPair.proto";
+
+// Name: IMEJDDMMKFB
+message HuntingOfferData {
+    uint32 city_id = 6;
+    HuntingOfferState state = 5;
+    HuntingPair hunting_pair = 2;
+}
+

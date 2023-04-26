@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "DigMarkPoint.proto";
+
+// CmdId: 8576
+// Name: IBCLLIIOPEE
+message DigActivityMarkPointChangeNotify {
+    repeated DigMarkPoint dig_mark_point_list = 9;
+}
+

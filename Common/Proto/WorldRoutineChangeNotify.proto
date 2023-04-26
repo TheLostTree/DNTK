@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "WorldRoutineInfo.proto";
+
+// CmdId: 3549
+// Name: NKEPKPDOHFG
+message WorldRoutineChangeNotify {
+    uint32 routine_type = 13;
+    WorldRoutineInfo routine_info = 2;
+}
+

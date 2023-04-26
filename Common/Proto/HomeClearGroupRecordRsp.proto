@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4527
+// Name: KIDOKDPNMAF
+message HomeClearGroupRecordRsp {
+    uint32 group_id = 6;
+    int32 retcode = 11;
+}
+

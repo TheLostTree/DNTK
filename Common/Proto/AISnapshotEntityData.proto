@@ -1,0 +1,23 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AISnapshotEntitySkillCycle.proto";
+
+// Name: DBMCOIFNCGD
+message AISnapshotEntityData {
+    uint32 DNOPLJCEPEK = 12;
+    float FIGCHBCEBLM = 10;
+    uint32 BOCPCJNJFLL = 1;
+    map<uint32, uint32> hitting_avatars = 7;
+    uint32 LLDLIEFOODH = 9;
+    float AKBGKFBHPEO = 5;
+    uint32 entity_id = 15;
+    float EHCPFCIGKMJ = 11;
+    uint32 GBCJLKBJCBO = 3;
+    repeated AISnapshotEntitySkillCycle finished_skill_cycles = 2;
+    uint32 attack_target_id = 6;
+    float HLLKKIIENIK = 4;
+}
+

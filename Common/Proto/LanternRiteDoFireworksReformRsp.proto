@@ -1,0 +1,21 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "LanternRiteFireworksReformFactorInfo.proto";
+
+// CmdId: 8191
+// Name: OHNHLABOCHA
+message LanternRiteDoFireworksReformRsp {
+    uint32 EFLPMIIEPNG = 13;
+    uint32 challenge_id = 9;
+    bool is_lucky = 6;
+    int32 retcode = 7;
+    uint32 MAKIBNPJGEJ = 2;
+    repeated LanternRiteFireworksReformFactorInfo factor_info_list = 12;
+    uint32 HEAJHLGGKLM = 10;
+    uint32 ALIIBHKIMBM = 8;
+    uint32 stage_id = 14;
+}
+

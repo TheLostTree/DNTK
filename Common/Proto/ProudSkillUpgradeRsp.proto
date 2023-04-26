@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1063
+// Name: MNEMEFKMBCH
+message ProudSkillUpgradeRsp {
+    uint64 avatar_guid = 12;
+    uint32 proud_skill_id = 5;
+    int32 retcode = 14;
+}
+

@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GalleryStartSource.proto";
+import "IslandPartySailStage.proto";
+
+// Name: COFLJAJIAPN
+message SceneGalleryIslandPartySailInfo {
+    GalleryStartSource start_source = 1;
+    uint32 BEBDPAPHFMM = 9;
+    uint32 MEIDOEMPBOH = 3;
+    IslandPartySailStage stage = 11;
+    uint32 FHFHIGBGEBG = 6;
+    uint32 ABOELDEOICA = 2;
+    uint32 coin = 12;
+}
+

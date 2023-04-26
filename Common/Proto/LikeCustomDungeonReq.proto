@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 6232
+// Name: PPHIDLPEDEG
+message LikeCustomDungeonReq {
+    uint64 dungeon_guid = 8;
+    bool is_cancel_like = 7;
+}
+

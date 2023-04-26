@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FleurFairPlayerStatInfo.proto";
+
+// Name: MOEDDAGHKAE
+message FleurFairBossSettleInfo {
+    uint32 energy = 4;
+    uint32 cost_time = 1;
+    bool is_success = 9;
+    repeated FleurFairPlayerStatInfo stat_info_list = 8;
+    uint32 reward_token_num = 7;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "PotionStageData.proto";
+
+// Name: JBNODGBKCKE
+message PotionActivityDetailInfo {
+    repeated PotionStageData stage_list = 3;
+}
+

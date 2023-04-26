@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "EntityAuthorityInfo.proto";
+
+// Name: FJNICKGNFHF
+message AuthorityChange {
+    uint32 entity_id = 13;
+    uint32 authority_peer_id = 9;
+    EntityAuthorityInfo entity_authority_info = 4;
+}
+

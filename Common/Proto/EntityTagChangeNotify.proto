@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3138
+// Name: OLNAKLCGDKD
+message EntityTagChangeNotify {
+    string tag = 11;
+    uint32 entity_id = 3;
+    bool is_add = 13;
+}
+

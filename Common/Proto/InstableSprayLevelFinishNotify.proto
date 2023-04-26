@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 24758
+// Name: GPIBHNNMOOA
+message InstableSprayLevelFinishNotify {
+    uint32 round = 15;
+    uint32 difficulty = 13;
+    bool KHKAMOPPEBE = 10;
+    repeated uint32 score_list = 4;
+    bool BMHBNKGBKEK = 12;
+    uint32 stage_id = 14;
+    uint32 level_id = 3;
+}
+

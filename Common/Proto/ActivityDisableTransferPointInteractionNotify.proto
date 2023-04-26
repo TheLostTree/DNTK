@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Uint32Pair.proto";
+
+// CmdId: 8741
+// Name: EILMBOBIDGI
+message ActivityDisableTransferPointInteractionNotify {
+    bool is_disable = 6;
+    Uint32Pair scene_point_pair = 2;
+}
+

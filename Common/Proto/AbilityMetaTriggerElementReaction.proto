@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: DFGPLHCFDIA
+message AbilityMetaTriggerElementReaction {
+    uint32 JNBEDFOKMPM = 9;
+    int32 hit_index = 6;
+    uint32 element_reaction_type = 3;
+    uint32 trigger_entity_id = 4;
+    uint32 GFAPKLBLADP = 15;
+}
+

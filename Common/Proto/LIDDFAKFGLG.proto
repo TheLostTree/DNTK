@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 20158
+// Name: LIDDFAKFGLG
+message LIDDFAKFGLG {
+    int32 retcode = 14;
+    uint32 score = 3;
+    bool is_new_record = 8;
+    bool is_success = 6;
+}
+

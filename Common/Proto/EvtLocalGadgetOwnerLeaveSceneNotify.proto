@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 368
+// Name: AAELEBEPLGM
+message EvtLocalGadgetOwnerLeaveSceneNotify {
+    uint32 entity_id = 2;
+}
+

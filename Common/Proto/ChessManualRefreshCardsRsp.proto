@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5344
+// Name: OFJEHEHMPII
+message ChessManualRefreshCardsRsp {
+    int32 retcode = 6;
+}
+

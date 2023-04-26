@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Achievement.proto";
+
+// CmdId: 2666
+// Name: LLBPPPADHLB
+message AchievementUpdateNotify {
+    repeated Achievement achievement_list = 12;
+}
+

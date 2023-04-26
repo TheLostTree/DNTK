@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 23047
+// Name: MADBIGEEADF
+message LanV3RaceRestartReq {
+    uint32 gallery_id = 7;
+}
+

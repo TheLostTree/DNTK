@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "PlatformInfo.proto";
+
+// CmdId: 269
+// Name: MNDPKCGJAFF
+message PlatformStartRouteNotify {
+    uint32 entity_id = 8;
+    PlatformInfo platform = 4;
+    uint32 scene_time = 3;
+}
+

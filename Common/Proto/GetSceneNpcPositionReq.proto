@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 576
+// Name: DBFOHJIIGPF
+message GetSceneNpcPositionReq {
+    repeated uint32 npc_id_list = 1;
+    uint32 scene_id = 7;
+}
+

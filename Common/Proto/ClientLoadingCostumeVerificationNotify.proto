@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3270
+// Name: FGNKEMCGCCD
+message ClientLoadingCostumeVerificationNotify {
+    uint32 costume_id = 3;
+    uint64 guid = 7;
+    uint64 prefab_hash = 4;
+}
+

@@ -1,0 +1,22 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: JIDKKFKPDIH
+message Investigation {
+    // Name: PMHIABIOPBE
+    enum State {
+        INVALID = 0;
+        IN_PROGRESS = 1;
+        COMPLETE = 2;
+        REWARD_TAKEN = 3;
+    }
+
+    uint32 total_progress = 11;
+    State state = 8;
+    uint32 id = 3;
+    uint32 progress = 15;
+}
+

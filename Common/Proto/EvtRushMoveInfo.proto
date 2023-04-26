@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: JCBNLMMLEEB
+message EvtRushMoveInfo {
+    Vector KJALEBGPBJL = 1;
+    Vector pos = 3;
+    Vector CPJPIOFFALP = 9;
+    int32 face_angle_compact = 13;
+    Vector velocity = 2;
+    uint32 entity_id = 11;
+    int32 state_name_hash = 7;
+    float timeRange = 6;
+}
+

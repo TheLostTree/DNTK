@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8933
+// Name: DLCGFIJKLKF
+message ChannellerSlabLoopDungeonTakeScoreRewardRsp {
+    int32 retcode = 10;
+    uint32 reward_index = 13;
+}
+

@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SumoDungeonTeam.proto";
+
+// CmdId: 8317
+// Name: OOMIPNMLMFN
+message SumoSwitchTeamRsp {
+    uint32 GAILDAHOMAG = 8;
+    int32 retcode = 1;
+    uint32 activity_id = 9;
+    repeated SumoDungeonTeam dungeon_team_list = 2;
+    uint32 LADPDBLGKLP = 14;
+    uint32 stage_id = 15;
+}
+

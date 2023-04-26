@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FleurFairBalloonSettleInfo.proto";
+
+// CmdId: 2038
+// Name: LOJGHFIINHP
+message FleurFairBalloonSettleNotify {
+    map<uint32, FleurFairBalloonSettleInfo> settle_info_map = 7;
+    uint32 minigame_id = 6;
+}
+

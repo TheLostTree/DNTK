@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: CLBLCGKLOEE
+message PushTipsData {
+    uint32 push_tips_id = 14;
+    uint32 state = 6;
+}
+

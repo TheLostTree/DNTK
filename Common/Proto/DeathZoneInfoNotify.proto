@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "DeathZoneInfo.proto";
+
+// CmdId: 6266
+// Name: DDLKOLJNFEB
+message DeathZoneInfoNotify {
+    repeated DeathZoneInfo death_zone_info_list = 2;
+}
+

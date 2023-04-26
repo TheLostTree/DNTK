@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MotionInfo.proto";
+
+// CmdId: 278
+// Name: HADOGPNKCLM
+message SceneEntityMoveNotify {
+    MotionInfo motion_info = 3;
+    uint32 reliable_seq = 1;
+    uint32 scene_time = 14;
+    uint32 entity_id = 15;
+}
+

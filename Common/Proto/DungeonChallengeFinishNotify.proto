@@ -1,0 +1,31 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ChallengeFinishType.proto";
+import "ChannellerSlabLoopDungeonResultInfo.proto";
+import "CustomDungeonResultInfo.proto";
+import "EffigyChallengeDungeonResultInfo.proto";
+import "PotionDungeonResultInfo.proto";
+import "StrengthenPointData.proto";
+
+// CmdId: 942
+// Name: DHLGODFFBFB
+message DungeonChallengeFinishNotify {
+    uint32 MDLNIEHGHHD = 3;
+    uint32 JGEIIGFGNJG = 6;
+    uint32 time_cost = 5;
+    uint32 challenge_index = 14;
+    ChallengeFinishType finish_type = 7;
+    bool is_success = 2;
+    map<uint32, StrengthenPointData> strengthen_point_data_map = 13;
+    bool is_new_record = 8;
+    oneof detail {
+        ChannellerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 357;
+        EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 1482;
+        PotionDungeonResultInfo potion_dungeon_result_info = 507;
+        CustomDungeonResultInfo custom_dungeon_result_info = 806;
+    }
+}
+

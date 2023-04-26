@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "DungeonCandidateTeamPlayerLeaveReason.proto";
+
+// CmdId: 998
+// Name: MCFDHLDDMDA
+message DungeonCandidateTeamPlayerLeaveNotify {
+    uint32 player_uid = 2;
+    DungeonCandidateTeamPlayerLeaveReason reason = 9;
+}
+

@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: NOBKFICGCHL
+message GCGDSCardData {
+    uint32 num = 15;
+    uint32 proficiency = 12;
+    uint32 card_id = 1;
+    repeated uint32 BDJJKKAIPLD = 4;
+    uint32 face_type = 7;
+    repeated uint32 BEHPIJPHPKM = 5;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: OKDOOEMGDLK
+enum UgcType {
+    UGC_TYPE_NONE = 0;
+    UGC_TYPE_MUSIC_GAME = 1;
+}
+

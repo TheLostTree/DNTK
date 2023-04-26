@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 439
+// Name: MHHNJNJOFIL
+message BargainOfferPriceReq {
+    uint32 price = 14;
+    uint32 bargain_id = 3;
+}
+

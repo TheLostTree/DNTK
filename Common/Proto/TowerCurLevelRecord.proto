@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "TowerTeam.proto";
+
+// Name: NCJJFDLFCEE
+message TowerCurLevelRecord {
+    bool is_empty = 12;
+    repeated TowerTeam tower_team_list = 14;
+    bool is_upper_part = 1;
+    repeated uint32 buff_id_list = 13;
+    uint32 NDMAOJGHOGG = 5;
+    uint32 FHLJPMEJNAJ = 6;
+}
+

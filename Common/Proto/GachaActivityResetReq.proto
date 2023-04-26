@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8876
+// Name: MDGJAHGAHBJ
+message GachaActivityResetReq {
+    uint32 stage_id = 12;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: MABLDNEFFCB
+message PlayerWorldSceneInfo {
+    repeated uint32 scene_tag_id_list = 3;
+    uint32 scene_id = 6;
+    bool is_locked = 4;
+}
+

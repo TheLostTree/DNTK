@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SalvageChallengeInfo.proto";
+
+// Name: IFDDHGFMDGM
+message SalvageStageInfo {
+    uint32 stage_id = 4;
+    bool is_open = 15;
+    repeated SalvageChallengeInfo challenge_info_list = 10;
+}
+

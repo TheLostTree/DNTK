@@ -1,0 +1,43 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// CmdId: 6190
+// Name: GJIPCNAOBPA
+message ToTheMoonQueryPathReq {
+    // Name: DFNFLIPEIFH
+    enum OptionType {
+        OPTION_NONE = 0;
+        OPTION_NORMAL = 1;
+    }
+
+    // Name: OILPBFMHGMF
+    enum OILPBFMHGMF {
+        OILPBFMHGMF_CLASSIC = 0;
+        OILPBFMHGMF_TENDENCY = 1;
+        OILPBFMHGMF_ADAPTIVE = 2;
+        OILPBFMHGMF_INFLECTION = 3;
+    }
+
+    // Name: EHFBKPBIGHA
+    enum EHFBKPBIGHA {
+        EHFBKPBIGHA_ALL = 0;
+        EHFBKPBIGHA_AIR = 1;
+        EHFBKPBIGHA_WATER = 2;
+    }
+
+    OptionType query_type = 5;
+    EHFBKPBIGHA NFLFEIDEBOE = 2;
+    int32 fuzzy_range = 4;
+    int32 query_id = 9;
+    Vector destination_pos = 3;
+    OILPBFMHGMF BADOBDOICOG = 1;
+    Vector source_pos = 13;
+    uint32 scene_id = 11;
+    bool EGNOJKAHBJK = 12;
+    bool EJOJKEHOEHA = 10;
+}
+

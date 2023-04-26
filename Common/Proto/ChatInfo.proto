@@ -1,0 +1,25 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: JOFBOBHLMJA
+message ChatInfo {
+    // Name: BEDECNHGCGK
+    message SystemHint {
+        uint32 type = 12;
+    }
+
+    uint32 to_uid = 4;
+    uint32 time = 15;
+    uint32 LHKGJHPFJKA = 2;
+    uint32 uid = 11;
+    bool is_read = 12;
+    oneof content {
+        string text = 1362;
+        uint32 icon = 451;
+        SystemHint system_hint = 772;
+    }
+}
+

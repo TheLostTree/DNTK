@@ -1,0 +1,52 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ChannellerSlabLoopDungeonResultInfo.proto";
+import "CrystalLinkDungeonSettleInfo.proto";
+import "DungeonSettleExhibitionInfo.proto";
+import "EffigyChallengeDungeonResultInfo.proto";
+import "EffigyChallengeV2SettleInfo.proto";
+import "FungusFighterV2SettleInfo.proto";
+import "InstableSprayDungeonSettleInfo.proto";
+import "PacmanSettleInfo.proto";
+import "ParamList.proto";
+import "RoguelikeDungeonSettleInfo.proto";
+import "StrengthenPointData.proto";
+import "SummerTimeV2DungeonSettleInfo.proto";
+import "TeamChainSettleInfo.proto";
+import "TowerLevelEndNotify.proto";
+import "TrialAvatarFirstPassDungeonNotify.proto";
+import "WindFieldDungeonSettleInfo.proto";
+
+// CmdId: 963
+// Name: ACFCCAJPEOP
+message DungeonSettleNotify {
+    uint32 use_time = 5;
+    uint32 CHNDMCHIOON = 9;
+    map<uint32, ParamList> settle_show = 14;
+    map<uint32, StrengthenPointData> strengthen_point_data_map = 8;
+    uint32 close_time = 13;
+    uint32 dungeon_id = 7;
+    repeated DungeonSettleExhibitionInfo exhibition_info_list = 11;
+    bool is_success = 2;
+    repeated uint32 fail_cond_list = 12;
+    uint32 BBMMPMLBGJO = 10;
+    oneof detail {
+        TowerLevelEndNotify tower_level_end_notify = 1587;
+        TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 1512;
+        ChannellerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 859;
+        EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 1855;
+        RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 545;
+        CrystalLinkDungeonSettleInfo crystal_link_settle_info = 2022;
+        SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 1728;
+        InstableSprayDungeonSettleInfo instable_spray_settle_info = 1011;
+        WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 1924;
+        EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 1147;
+        TeamChainSettleInfo team_chain_settle_info = 571;
+        PacmanSettleInfo pacman_settle_info = 1998;
+        FungusFighterV2SettleInfo fungus_fighter_v2_settle_info = 1012;
+    }
+}
+

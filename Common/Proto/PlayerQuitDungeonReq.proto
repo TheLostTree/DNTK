@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 916
+// Name: DGNGJHAIIEK
+message PlayerQuitDungeonReq {
+    uint32 point_id = 9;
+    bool is_quit_immediately = 5;
+}
+

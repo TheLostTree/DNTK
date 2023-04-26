@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 276
+// Name: IOCPFMHFFFN
+message SceneInitFinishReq {
+    uint32 enter_scene_token = 13;
+}
+

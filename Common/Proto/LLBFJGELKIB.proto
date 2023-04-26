@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LLBFJGELKIB
+enum LLBFJGELKIB {
+    LLBFJGELKIB_SANDWORM_LEVEL_NOT_OPEN = 0;
+    LLBFJGELKIB_SANDWORM_LEVEL_PRE_QUEST = 1;
+    LLBFJGELKIB_SANDWORM_LEVEL_START = 2;
+    LLBFJGELKIB_SANDWORM_LEVEL_SEQUEL_QUEST = 3;
+}
+

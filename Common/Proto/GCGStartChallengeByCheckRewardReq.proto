@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGLevelType.proto";
+
+// CmdId: 7949
+// Name: IBOJKHAFLJN
+message GCGStartChallengeByCheckRewardReq {
+    uint32 level_id = 4;
+    GCGLevelType level_type = 9;
+    uint32 config_id = 5;
+}
+

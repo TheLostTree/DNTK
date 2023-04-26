@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CompoundQueueData.proto";
+
+// CmdId: 183
+// Name: NPAHEOCCAHH
+message PlayerCompoundMaterialRsp {
+    CompoundQueueData compound_que_data = 4;
+    int32 retcode = 13;
+}
+

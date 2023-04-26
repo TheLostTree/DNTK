@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "InBattleMechanicusCardInfo.proto";
+
+// CmdId: 5365
+// Name: FBEOAMCGJKF
+message InBattleMechanicusCardResultNotify {
+    uint32 group_id = 7;
+    uint32 wait_seconds = 15;
+    map<uint32, uint32> player_confirmed_card_map = 2;
+    uint64 wait_begin_time_us = 5;
+    uint32 play_index = 4;
+    repeated InBattleMechanicusCardInfo card_list = 6;
+}
+

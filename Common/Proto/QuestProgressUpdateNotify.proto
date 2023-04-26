@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 446
+// Name: CBPKBCFKCKJ
+message QuestProgressUpdateNotify {
+    uint32 quest_id = 3;
+    repeated uint32 finish_progress_list = 1;
+    repeated uint32 fail_progress_list = 7;
+}
+

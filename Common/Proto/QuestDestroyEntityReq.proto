@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 478
+// Name: ENMJALKLLJA
+message QuestDestroyEntityReq {
+    uint32 scene_id = 5;
+    uint32 quest_id = 7;
+    uint32 entity_id = 4;
+}
+

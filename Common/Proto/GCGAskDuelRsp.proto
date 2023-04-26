@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGDuel.proto";
+
+// CmdId: 7088
+// Name: ACPDBCOLLIM
+message GCGAskDuelRsp {
+    GCGDuel duel = 3;
+    int32 retcode = 7;
+}
+

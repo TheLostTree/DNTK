@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 282
+// Name: HIPLJNBHKLG
+message ScenePointUnlockNotify {
+    repeated uint32 GNNBFLNNODN = 6;
+    repeated uint32 ELNACLNNKIO = 9;
+    repeated uint32 CBNONONIPKH = 2;
+    uint32 scene_id = 3;
+    repeated uint32 point_list = 7;
+}
+

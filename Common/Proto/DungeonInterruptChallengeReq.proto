@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 926
+// Name: JDNBAICODLN
+message DungeonInterruptChallengeReq {
+    uint32 challenge_index = 5;
+    uint32 group_id = 12;
+    uint32 challenge_id = 6;
+}
+

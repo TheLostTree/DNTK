@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5341
+// Name: CJPJGDMCBME
+message InBattleMechanicusBuildingPointsNotify {
+    map<uint32, uint32> player_building_points_map = 14;
+}
+

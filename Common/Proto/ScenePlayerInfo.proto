@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "OnlinePlayerInfo.proto";
+
+// Name: DNPOCMJCINI
+message ScenePlayerInfo {
+    string name = 14;
+    OnlinePlayerInfo online_player_info = 15;
+    bool is_connected = 7;
+    uint32 uid = 4;
+    uint32 scene_id = 12;
+    uint32 peer_id = 13;
+}
+

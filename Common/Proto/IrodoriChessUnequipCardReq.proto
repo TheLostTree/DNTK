@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8995
+// Name: IPCDEJHFGNO
+message IrodoriChessUnequipCardReq {
+    uint32 card_id = 15;
+    bool is_hard_map = 9;
+    uint32 level_id = 11;
+}
+

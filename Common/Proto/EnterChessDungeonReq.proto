@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8342
+// Name: PHPDCNJODNE
+message EnterChessDungeonReq {
+    uint32 map_id = 13;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "BuoyantCombatDailyInfo.proto";
+
+// Name: GNMMBNPEODC
+message BuoyantCombatDetailInfo {
+    repeated BuoyantCombatDailyInfo daily_info_list = 13;
+}
+

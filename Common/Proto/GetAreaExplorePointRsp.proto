@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 229
+// Name: FDBNHFALFHJ
+message GetAreaExplorePointRsp {
+    int32 retcode = 8;
+    repeated uint32 area_id_list = 11;
+    repeated uint32 explore_point_list = 5;
+}
+

@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2812
+// Name: LKBDHDEIKGI
+message GetCityReputationMapInfoRsp {
+    int32 retcode = 11;
+    repeated uint32 EDAOAKIHGDE = 7;
+    repeated uint32 PBGGOGLHINL = 8;
+    bool MDAOIPDBBLN = 4;
+    bool KOIGFJPNDIO = 1;
+}
+

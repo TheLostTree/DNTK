@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 7470
+// Name: OPKHNAMFACE
+message GCGGrowthLevelRewardNotify {
+    repeated uint32 level_reward_taken_list = 12;
+}
+

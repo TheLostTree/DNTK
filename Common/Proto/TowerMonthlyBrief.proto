@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: PFEKDHGCBPP
+message TowerMonthlyBrief {
+    uint32 DPKOCIDIHEI = 12;
+    uint32 PLMIFICPLGM = 2;
+    uint32 HNOGBBLDHMH = 9;
+    uint32 IJHGFNOICOH = 1;
+}
+

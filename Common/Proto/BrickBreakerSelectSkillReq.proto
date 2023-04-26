@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5313
+// Name: NLIDOGHJPCM
+message BrickBreakerSelectSkillReq {
+    repeated uint32 skill_id = 12;
+}
+

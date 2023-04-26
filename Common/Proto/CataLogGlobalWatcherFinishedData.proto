@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: NOKPFHEOIME
+message CataLogGlobalWatcherFinishedData {
+    uint32 catalog_type = 3;
+    repeated uint32 finished_global_watcher_list = 9;
+}
+

@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CoopChapter.proto";
+
+// CmdId: 1995
+// Name: GDPLHDAPLJI
+message CoopDataNotify {
+    bool is_have_progress = 3;
+    uint32 cur_coop_point = 13;
+    repeated CoopChapter chapter_list = 2;
+    repeated uint32 viewed_chapter_list = 10;
+}
+

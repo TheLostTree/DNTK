@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGLevelType.proto";
+
+// CmdId: 7763
+// Name: NNAAFMMAGIF
+message GCGStartChallengeRsp {
+    GCGLevelType level_type = 13;
+    uint32 level_id = 4;
+    uint32 config_id = 7;
+    int32 retcode = 8;
+}
+

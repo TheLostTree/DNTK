@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MatchPlayerInfo.proto";
+
+// Name: LDHLGONLKPM
+message GCGMatchInfo {
+    repeated MatchPlayerInfo player_list = 14;
+}
+

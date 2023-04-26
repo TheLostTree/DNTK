@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 7865
+// Name: NKFLEOEPOKD
+message GCGDSCardNumChangeNotify {
+    uint32 num = 2;
+    uint32 card_id = 4;
+}
+

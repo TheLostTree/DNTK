@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2063
+// Name: PILCGKOELAC
+message BlessingRecvFriendPicNotify {
+    uint32 uid = 5;
+    uint32 pic_id = 7;
+}
+

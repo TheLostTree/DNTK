@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 89
+// Name: CNFJJJAIKNB
+message GmTalkRsp {
+    string msg = 6;
+    string retmsg = 14;
+    int32 retcode = 5;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: CGGMBIMICNH
+message CrystalLinkBuffInfo {
+    uint32 OGJBCOGMBLB = 5;
+    uint32 HOKBNFIGGLF = 11;
+}
+

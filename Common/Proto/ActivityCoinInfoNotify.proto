@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2189
+// Name: CONHOPDNJDG
+message ActivityCoinInfoNotify {
+    uint32 activity_id = 1;
+    map<uint32, uint32> activity_coin_map = 14;
+    uint32 schedule_id = 2;
+}
+

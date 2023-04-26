@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "DynamicNodes.proto";
+
+// CmdId: 6141
+// Name: KIMFNJJNOAE
+message ToTheMoonAddObstacleRsp {
+    int32 retcode = 6;
+    int32 query_id = 7;
+    DynamicNodes dynamic_nodes = 3;
+}
+

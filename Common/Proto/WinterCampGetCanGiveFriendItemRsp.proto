@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ItemParam.proto";
+
+// CmdId: 8328
+// Name: IMMLFIOGPAJ
+message WinterCampGetCanGiveFriendItemRsp {
+    int32 retcode = 11;
+    repeated ItemParam item_list = 2;
+}
+

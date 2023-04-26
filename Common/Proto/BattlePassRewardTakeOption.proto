@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "BattlePassRewardTag.proto";
+
+// Name: ALEOBFDPPBP
+message BattlePassRewardTakeOption {
+    BattlePassRewardTag tag = 10;
+    uint32 option_idx = 12;
+}
+

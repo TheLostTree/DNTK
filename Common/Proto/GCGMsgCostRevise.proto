@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGCostReviseInfo.proto";
+
+// Name: ICLCOGAIEAE
+message GCGMsgCostRevise {
+    GCGCostReviseInfo cost_revise = 5;
+    uint32 controller_id = 10;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: JMIKLAMABOK
+message ChessMonsterInfo {
+    repeated uint32 affix_list = 1;
+    uint32 monster_id = 8;
+    uint32 level = 11;
+}
+

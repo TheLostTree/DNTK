@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: KOFLKOIFKLK
+message KOFLKOIFKLK {
+    uint32 BLKFMKAACGP = 6;
+    uint64 DLIPKCGAALG = 9;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 470
+// Name: MMPFLFGLFFC
+message ServerCondMeetQuestListUpdateNotify {
+    repeated uint32 GNFJHCIHOBE = 9;
+    repeated uint32 EOMIKDEBBGN = 5;
+}
+

@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "LanternProjectionInfo.proto";
+import "LanternRiteFireworksInfo.proto";
+import "SalvageStageInfo.proto";
+
+// Name: FEHKKAADAMI
+message LanternRiteActivityDetailInfo {
+    bool AHIBJCCBCBI = 2;
+    bool is_content_closed = 9;
+    LanternRiteFireworksInfo fireworks_info = 13;
+    bool ODDJOICLCNC = 6;
+    repeated SalvageStageInfo stage_info_list = 5;
+    LanternProjectionInfo projection_info = 8;
+}
+

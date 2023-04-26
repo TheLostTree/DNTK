@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1967
+// Name: PDJGPFHOHPJ
+message SaveMainCoopReq {
+    map<uint32, int32> KINJAIJMLPM = 12;
+    uint32 save_point_id = 5;
+    uint32 id = 15;
+    map<uint32, int32> JFNGFEFMHMM = 11;
+    uint32 self_confidence = 1;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: DJGOABOOOHI
+message SalvageScoreChallengeInfo {
+    uint32 max_score = 4;
+    uint32 salvage_challenge_id = 10;
+}
+

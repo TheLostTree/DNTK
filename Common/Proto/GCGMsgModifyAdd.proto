@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGReason.proto";
+
+// Name: KLKGODCFLBJ
+message GCGMsgModifyAdd {
+    uint32 pos = 6;
+    uint32 controller_id = 13;
+    uint32 owner_card_guid = 8;
+    GCGReason reason = 2;
+    repeated uint32 card_guid_list = 15;
+}
+

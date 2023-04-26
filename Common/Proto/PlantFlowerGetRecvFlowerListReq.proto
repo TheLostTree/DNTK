@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8225
+// Name: GDEBDNKNOLK
+message PlantFlowerGetRecvFlowerListReq {
+    uint32 schedule_id = 8;
+}
+

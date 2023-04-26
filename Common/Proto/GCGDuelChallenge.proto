@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: OFOIBICFDCF
+message GCGDuelChallenge {
+    uint32 total_progress = 4;
+    uint32 challenge_id = 8;
+    uint32 cur_progress = 5;
+}
+

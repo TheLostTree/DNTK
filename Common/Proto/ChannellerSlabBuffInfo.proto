@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ChannellerSlabAssistInfo.proto";
+import "ChannellerSlabBuffSchemeInfo.proto";
+
+// Name: AOKCLJGIMAD
+message ChannellerSlabBuffInfo {
+    repeated uint32 buff_id_list = 10;
+    repeated ChannellerSlabAssistInfo assist_info_list = 15;
+    ChannellerSlabBuffSchemeInfo GDJEJEJABPK = 3;
+    ChannellerSlabBuffSchemeInfo FGIHAJHGCBI = 11;
+}
+

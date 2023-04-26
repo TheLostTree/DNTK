@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8313
+// Name: FEHMLLJEMEM
+message RefreshRogueDiaryCardReq {
+    repeated uint32 refresh_card_list = 13;
+}
+

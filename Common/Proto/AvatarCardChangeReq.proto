@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 648
+// Name: KIPFBEGHHLN
+message AvatarCardChangeReq {
+    uint32 count = 11;
+    uint64 avatar_guid = 9;
+    uint32 item_id = 6;
+}
+

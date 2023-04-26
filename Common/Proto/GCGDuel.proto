@@ -1,0 +1,39 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AKPPCGEACLE.proto";
+import "GCGCard.proto";
+import "GCGControllerShowInfo.proto";
+import "GCGCostReviseInfo.proto";
+import "GCGDuelChallenge.proto";
+import "GCGGameBusinessType.proto";
+import "GCGMessagePack.proto";
+import "GCGPhase.proto";
+import "GCGPlayerField.proto";
+import "GCGPVEIntention.proto";
+
+// Name: MLBIGMHGJJB
+message GCGDuel {
+    GCGCostReviseInfo cost_revise = 4;
+    repeated AKPPCGEACLE JGFGPJCHMCB = 625;
+    repeated GCGMessagePack history_msg_pack_list = 971;
+    repeated GCGPVEIntention intetion_list = 7;
+    uint32 game_id = 12;
+    uint32 GDIFDLBCPLK = 1;
+    uint32 server_seq = 9;
+    repeated GCGCard history_card_list = 1773;
+    uint32 CDDPINAKOLH = 11;
+    repeated uint32 card_id_list = 3;
+    GCGGameBusinessType business_type = 10;
+    repeated GCGCard card_list = 5;
+    uint32 round = 2;
+    repeated GCGControllerShowInfo show_info_list = 6;
+    GCGPhase phase = 13;
+    repeated uint32 forbid_finish_challenge_list = 1263;
+    repeated GCGDuelChallenge challenge_list = 460;
+    uint32 controller_id = 14;
+    repeated GCGPlayerField field_list = 15;
+}
+

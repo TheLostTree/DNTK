@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5015
+// Name: IEBBBLDIPCC
+message ChatChannelShieldNotify {
+    bool is_shield = 15;
+    uint32 channel_id = 10;
+}
+

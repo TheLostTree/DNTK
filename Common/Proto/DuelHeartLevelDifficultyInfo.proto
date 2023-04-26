@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: MCHGLACJIHO
+message DuelHeartLevelDifficultyInfo {
+    uint32 cost_time = 5;
+    uint32 difficulty = 11;
+    bool is_open = 3;
+}
+

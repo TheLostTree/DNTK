@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Item.proto";
+
+// CmdId: 865
+// Name: GDJHBFGHBOK
+message GadgetAutoPickDropInfoNotify {
+    repeated Item item_list = 7;
+}
+

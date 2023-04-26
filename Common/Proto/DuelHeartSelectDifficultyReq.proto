@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 24776
+// Name: HPEMAPPDFAH
+message DuelHeartSelectDifficultyReq {
+    uint32 difficulty = 7;
+}
+

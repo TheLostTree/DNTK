@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: FDOECABHIEL
+enum AvatarType {
+    AVATAR_TYPE_NONE = 0;
+    AVATAR_TYPE_FORMAL = 1;
+    AVATAR_TYPE_TRIAL = 2;
+    AVATAR_TYPE_MIRROR = 3;
+}
+

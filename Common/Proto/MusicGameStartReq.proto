@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8292
+// Name: ABFDFANIJEK
+message MusicGameStartReq {
+    uint32 music_basic_id = 2;
+    uint64 ugc_guid = 11;
+    bool is_save_score = 10;
+}
+

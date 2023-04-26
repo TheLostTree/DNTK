@@ -1,0 +1,27 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "RoguelikeRuneRecord.proto";
+import "RogueShowAvatarTeamInfo.proto";
+
+// Name: MELACFCBMFM
+message RogueStageInfo {
+    uint32 EIMBKPHMPEH = 3;
+    uint32 IPDPBFFPPBG = 1489;
+    uint32 NFAGHAIMDKI = 15;
+    bool AJFBLDPHGDD = 12;
+    uint32 NILFBNCBADF = 658;
+    bool NHKJHKLOPDP = 14;
+    uint32 cur_level = 10;
+    RogueShowAvatarTeamInfo avatar_team = 13;
+    bool is_taken_reward = 1;
+    bool is_passed = 4;
+    repeated RoguelikeRuneRecord rune_record_list = 8;
+    uint32 LOJJNAJBAFO = 11;
+    bool is_open = 9;
+    uint32 stage_id = 5;
+    uint32 DFAFANNFGMG = 2;
+}
+

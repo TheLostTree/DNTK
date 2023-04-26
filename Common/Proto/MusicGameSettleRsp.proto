@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8156
+// Name: DIFCABEKCFF
+message MusicGameSettleRsp {
+    bool is_unlock_next_level = 6;
+    int32 retcode = 14;
+    uint32 music_basic_id = 13;
+    bool is_new_record = 4;
+    uint64 ugc_guid = 2;
+}
+

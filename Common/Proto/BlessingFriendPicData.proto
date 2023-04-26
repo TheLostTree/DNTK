@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ProfilePicture.proto";
+
+// Name: IBLCFHKMEPL
+message BlessingFriendPicData {
+    string nickname = 12;
+    uint32 uid = 2;
+    ProfilePicture profile_picture = 14;
+    map<uint32, uint32> pic_num_map = 6;
+    string signature = 1;
+    uint32 avatar_id = 4;
+    string remark_name = 9;
+}
+

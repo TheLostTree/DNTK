@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CookRecipeData.proto";
+
+// CmdId: 170
+// Name: PEAPDEAMHHM
+message CookRecipeDataNotify {
+    CookRecipeData recipe_data = 12;
+}
+

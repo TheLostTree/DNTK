@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1696
+// Name: NKALLDNFGAO
+message FocusAvatarReq {
+    bool is_focus = 12;
+    uint64 avatar_guid = 10;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8993
+// Name: AMFICLCIIOE
+message ChannellerSlabLoopDungeonSelectConditionReq {
+    uint32 difficulty_id = 14;
+    uint32 dungeon_index = 15;
+    repeated uint32 condition_id_list = 5;
+}
+

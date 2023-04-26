@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: ALENKGIOHDP
+message RegionalPlayVar {
+    float KDDPKEEIMFC = 15;
+    float value = 13;
+    uint32 type = 4;
+    float ELDGOKNLNPP = 7;
+}
+

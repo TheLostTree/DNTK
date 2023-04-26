@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeBalloonGalleryRecord.proto";
+
+// Name: HCLHBNIHOHL
+message HomeBalloonRecord {
+    repeated HomeBalloonGalleryRecord record_list = 6;
+}
+

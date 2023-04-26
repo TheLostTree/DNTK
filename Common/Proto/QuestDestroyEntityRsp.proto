@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 412
+// Name: KDOLGMAIDIO
+message QuestDestroyEntityRsp {
+    uint32 scene_id = 11;
+    uint32 entity_id = 6;
+    uint32 quest_id = 2;
+    int32 retcode = 7;
+}
+

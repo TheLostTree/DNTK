@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ActivityPushTipsState.proto";
+
+// Name: OPPLKFOMILA
+message ActivityPushTipsData {
+    uint32 activity_push_tips_id = 8;
+    ActivityPushTipsState state = 6;
+}
+

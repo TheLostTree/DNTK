@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 6247
+// Name: CHBKOGGNCPK
+message StoreCustomDungeonReq {
+    bool is_cancel_store = 12;
+    uint64 dungeon_guid = 7;
+}
+

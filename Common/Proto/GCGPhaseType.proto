@@ -1,0 +1,21 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: ILGBKKPPKCL
+enum GCGPhaseType {
+    GCG_PHASE_INVALID = 0;
+    GCG_PHASE_START = 1;
+    GCG_PHASE_DRAW = 2;
+    GCG_PHASE_ON_STAGE = 3;
+    GCG_PHASE_DICE = 4;
+    GCG_PHASE_MAIN = 5;
+    GCG_PHASE_END = 6;
+    GCG_PHASE_DIE = 7;
+    GCG_PHASE_FIN = 8;
+    GCG_PHASE_PRE_MAIN = 9;
+    GCG_PHASE_REROLL = 10;
+}
+

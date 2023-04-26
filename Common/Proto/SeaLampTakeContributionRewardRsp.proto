@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2016
+// Name: GEOLGMFGJMF
+message SeaLampTakeContributionRewardRsp {
+    uint32 config_id = 11;
+    int32 retcode = 1;
+}
+

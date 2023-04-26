@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8925
+// Name: GIMBCMPHMDE
+message ChannellerSlabWearBuffRsp {
+    uint32 slot_id = 4;
+    uint32 buff_id = 6;
+    int32 retcode = 3;
+    bool is_mp = 14;
+}
+

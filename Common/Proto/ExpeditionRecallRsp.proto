@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2133
+// Name: OHHICPFOJGM
+message ExpeditionRecallRsp {
+    int32 retcode = 7;
+    uint32 path_id = 2;
+}
+

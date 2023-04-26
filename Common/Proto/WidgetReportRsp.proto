@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4271
+// Name: GHCKNNAIEKO
+message WidgetReportRsp {
+    uint32 material_id = 15;
+    int32 retcode = 8;
+}
+

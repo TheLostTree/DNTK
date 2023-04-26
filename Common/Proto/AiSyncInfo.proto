@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: AMLFADMPJED
+message AiSyncInfo {
+    bool has_path_to_target = 12;
+    uint32 entity_id = 4;
+    bool is_self_killing = 8;
+}
+

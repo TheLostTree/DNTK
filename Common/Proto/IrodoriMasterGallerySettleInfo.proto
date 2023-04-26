@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GalleryStopReason.proto";
+
+// Name: IHEBHBFOELG
+message IrodoriMasterGallerySettleInfo {
+    uint32 difficult = 14;
+    GalleryStopReason reason = 3;
+    uint32 finish_time = 1;
+    uint32 level_id = 5;
+    bool is_finish = 9;
+}
+

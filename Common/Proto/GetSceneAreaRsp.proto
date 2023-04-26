@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CityInfo.proto";
+
+// CmdId: 251
+// Name: LNAAFIHHCDN
+message GetSceneAreaRsp {
+    uint32 scene_id = 11;
+    repeated uint32 area_id_list = 9;
+    repeated CityInfo city_info_list = 12;
+    int32 retcode = 2;
+}
+

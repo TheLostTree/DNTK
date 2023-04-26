@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 7367
+// Name: OMDLPLDHBHC
+message GCGDSChangeCardBackRsp {
+    int32 retcode = 9;
+    uint32 deck_id = 11;
+    uint32 card_back_id = 2;
+}
+

@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "IrodoriPoetryThemeData.proto";
+
+// CmdId: 8540
+// Name: HCPCIFCJGFE
+message IrodoriScanEntityRsp {
+    bool is_get_inspiration = 3;
+    int32 retcode = 5;
+    IrodoriPoetryThemeData theme_data = 12;
+}
+

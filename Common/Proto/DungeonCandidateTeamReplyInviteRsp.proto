@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 929
+// Name: KEJPKPKPGLD
+message DungeonCandidateTeamReplyInviteRsp {
+    int32 retcode = 14;
+    bool is_trans_point = 6;
+}
+

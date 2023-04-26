@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeSceneArrangementInfo.proto";
+
+// CmdId: 4590
+// Name: FEGMIBFFPAB
+message HomePreviewBlueprintRsp {
+    string share_code = 14;
+    HomeSceneArrangementInfo scene_arrangement_info = 6;
+    int32 retcode = 12;
+}
+

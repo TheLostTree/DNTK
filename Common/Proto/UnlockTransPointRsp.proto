@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3090
+// Name: FPKLJFJFMPI
+message UnlockTransPointRsp {
+    int32 retcode = 2;
+}
+

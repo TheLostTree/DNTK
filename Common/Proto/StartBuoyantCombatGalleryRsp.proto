@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8263
+// Name: PJHAOMDBHEJ
+message StartBuoyantCombatGalleryRsp {
+    uint32 gallery_level = 14;
+    int32 retcode = 4;
+    uint32 gallery_id = 12;
+}
+

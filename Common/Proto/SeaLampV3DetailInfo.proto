@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SeaLampV3CampInfo.proto";
+import "SeaLampV3RaceInfo.proto";
+import "SeaLampV3ShadowInfo.proto";
+
+// Name: MMJLAPCNFKG
+message SeaLampV3DetailInfo {
+    SeaLampV3ShadowInfo shadow_info = 14;
+    SeaLampV3RaceInfo race_info = 3;
+    SeaLampV3CampInfo camp_info = 2;
+}
+

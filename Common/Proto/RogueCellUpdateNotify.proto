@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "RogueCellInfo.proto";
+
+// CmdId: 8385
+// Name: FLLCEDEPHHB
+message RogueCellUpdateNotify {
+    RogueCellInfo cell_info = 11;
+}
+

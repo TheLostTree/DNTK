@@ -1,0 +1,22 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "UgcMusicBriefInfo.proto";
+import "UgcMusicRecord.proto";
+import "UgcType.proto";
+
+// CmdId: 6345
+// Name: GAGHHOCGHKD
+message SaveUgcReq {
+    UgcType ugc_type = 12;
+    uint32 schedule_id = 2;
+    oneof record {
+        UgcMusicRecord music_record = 11;
+    }
+    oneof brief {
+        UgcMusicBriefInfo music_brief_info = 555;
+    }
+}
+

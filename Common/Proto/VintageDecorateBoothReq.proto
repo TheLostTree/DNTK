@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CustomGadgetTreeInfo.proto";
+
+// CmdId: 20581
+// Name: DDJFJCOCPIF
+message VintageDecorateBoothReq {
+    uint32 entity_id = 13;
+    CustomGadgetTreeInfo combination_info = 7;
+}
+

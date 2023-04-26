@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8239
+// Name: MGJNLCEFLMB
+message PlantFlowerGiveFriendFlowerRsp {
+    int32 retcode = 13;
+    uint32 schedule_id = 1;
+    repeated uint32 limit_flower_list = 3;
+}
+

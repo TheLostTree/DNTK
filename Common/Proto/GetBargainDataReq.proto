@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 448
+// Name: IONEPDGCMMG
+message GetBargainDataReq {
+    uint32 bargain_id = 15;
+}
+

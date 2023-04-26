@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LEODFLGAMBL
+message ChessCardInfo {
+    uint32 card_id = 8;
+    uint32 effect_stack = 6;
+}
+

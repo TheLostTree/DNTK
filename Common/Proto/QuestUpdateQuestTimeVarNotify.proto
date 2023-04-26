@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 473
+// Name: NAONNMAPDMD
+message QuestUpdateQuestTimeVarNotify {
+    uint32 parent_quest_id = 8;
+    map<uint32, uint32> time_var_map = 2;
+}
+

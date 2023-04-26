@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4764
+// Name: GBDPEGGNNON
+message HomeUpdateFishFarmingInfoRsp {
+    int32 retcode = 6;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FallPlayerInfo.proto";
+
+// Name: CNGJBCGMEMK
+message SceneGalleryFallInfo {
+    map<uint32, FallPlayerInfo> scene_player_fall_info_map = 10;
+    uint32 end_time = 11;
+}
+

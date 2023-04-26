@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "EEKGPJAAGNH.proto";
+
+// CmdId: 23464
+// Name: MMBGBMHBIBA
+message MMBGBMHBIBA {
+    repeated EEKGPJAAGNH EOFCOHEIPNO = 3;
+}
+

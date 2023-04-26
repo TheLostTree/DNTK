@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 24252
+// Name: BNNMGNNFFOG
+message DuelHeartSettleNotify {
+    bool is_new_record = 5;
+    bool is_succ = 12;
+    uint32 cost_time = 15;
+}
+

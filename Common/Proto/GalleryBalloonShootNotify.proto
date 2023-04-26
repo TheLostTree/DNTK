@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5596
+// Name: KKPPMPIMCKI
+message GalleryBalloonShootNotify {
+    int32 add_score = 13;
+    uint64 combo_disable_time = 2;
+    uint32 combo = 7;
+    uint32 trigger_entity_id = 6;
+    uint32 cur_score = 11;
+    uint32 gallery_id = 5;
+}
+

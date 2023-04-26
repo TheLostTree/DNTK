@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MapMarkPoint.proto";
+
+// CmdId: 3363
+// Name: PGNBFNNCAFB
+message AllMarkPointNotify {
+    repeated MapMarkPoint mark_list = 10;
+}
+

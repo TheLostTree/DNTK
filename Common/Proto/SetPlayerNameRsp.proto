@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 177
+// Name: LGJJFJBCBIE
+message SetPlayerNameRsp {
+    string nick_name = 8;
+    int32 retcode = 13;
+}
+

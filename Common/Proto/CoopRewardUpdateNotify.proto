@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CoopReward.proto";
+
+// CmdId: 1973
+// Name: LBGPJMCOBAG
+message CoopRewardUpdateNotify {
+    repeated CoopReward reward_list = 12;
+}
+

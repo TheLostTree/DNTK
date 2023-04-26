@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8511
+// Name: GBBPJPMGIKM
+message StartBuoyantCombatGalleryReq {
+    uint32 gallery_id = 5;
+    uint32 gallery_level = 10;
+}
+

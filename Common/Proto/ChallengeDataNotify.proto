@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 994
+// Name: HBLHJCEKECI
+message ChallengeDataNotify {
+    uint32 value = 2;
+    uint32 challenge_index = 9;
+    uint32 param_index = 4;
+}
+

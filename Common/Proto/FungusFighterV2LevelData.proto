@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: GEPNCOBIMBD
+message FungusFighterV2LevelData {
+    uint32 level_id = 5;
+    uint32 PHEIGICNDCJ = 14;
+    bool is_level_open = 10;
+}
+

@@ -1,0 +1,26 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ForwardType.proto";
+import "Vector.proto";
+
+// CmdId: 351
+// Name: CDBHOGIJIEF
+message EvtAvatarEnterFocusNotify {
+    bool BPBFKLKHLBF = 8;
+    uint32 entity_id = 2;
+    bool NFBFOBPLJIO = 4;
+    bool JIEAFLOFIDP = 11;
+    bool CBILFPIHDLD = 13;
+    bool DJBCKOHEPIN = 1;
+    bool BONKCNJNKHC = 9;
+    bool PJOMNBJGCGO = 12;
+    bool KNGIHBNEEBA = 7;
+    ForwardType forward_type = 15;
+    Vector focus_forward = 10;
+    bool DDMCNCCKAFP = 14;
+    bool NAABHFBGGEA = 5;
+}
+

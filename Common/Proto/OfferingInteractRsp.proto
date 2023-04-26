@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "PlayerOfferingData.proto";
+
+// CmdId: 2920
+// Name: POFHGEBPHNP
+message OfferingInteractRsp {
+    PlayerOfferingData offering_data = 9;
+    int32 retcode = 11;
+}
+

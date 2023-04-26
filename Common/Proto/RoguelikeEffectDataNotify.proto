@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "RogueEffectRecord.proto";
+
+// CmdId: 8729
+// Name: EGKMBIHKJOB
+message RoguelikeEffectDataNotify {
+    repeated RogueEffectRecord curse_list = 8;
+    repeated RogueEffectRecord card_list = 2;
+}
+

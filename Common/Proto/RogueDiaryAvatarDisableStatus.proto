@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: EDHNIJFDFDO
+enum RogueDiaryAvatarDisableStatus {
+    ROGUE_DIARY_AVATAR_DISABLE_NONE = 0;
+    ROGUE_DIARY_AVATAR_DISABLE_DEATH = 1;
+    ROGUE_DIARY_AVATAR_DISABLE_TIRED = 2;
+    ROGUE_DIARY_AVATAR_DISABLE_DUPLICATED = 3;
+}
+

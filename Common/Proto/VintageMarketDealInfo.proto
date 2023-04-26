@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "VintageMarketTraderInfo.proto";
+
+// Name: PNBMCBELDNA
+message VintageMarketDealInfo {
+    map<uint32, VintageMarketTraderInfo> trader_item_info_map = 9;
+}
+

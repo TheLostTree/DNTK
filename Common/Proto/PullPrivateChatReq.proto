@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5006
+// Name: IIHMACNLDCN
+message PullPrivateChatReq {
+    uint32 FGFEAACHHME = 2;
+    uint32 LMHJHHFEHOL = 11;
+    uint32 target_uid = 4;
+}
+

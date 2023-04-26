@@ -1,0 +1,20 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GameplayRecommendationElementReliquaryRequest.proto";
+import "GameplayRecommendationReliquaryRequest.proto";
+import "GameplayRecommendationSkillRequest.proto";
+
+// CmdId: 114
+// Name: FLHPFALHKNK
+message GetGameplayRecommendationReq {
+    uint32 avatar_id = 7;
+    oneof detail {
+        GameplayRecommendationSkillRequest skill_request = 1417;
+        GameplayRecommendationReliquaryRequest reliquary_request = 616;
+        GameplayRecommendationElementReliquaryRequest element_reliquary_request = 2013;
+    }
+}
+

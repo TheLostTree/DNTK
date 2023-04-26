@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "BuildingInfo.proto";
+
+// CmdId: 5336
+// Name: ANMKBBNIEJF
+message GlobalBuildingInfoNotify {
+    repeated BuildingInfo building_list = 7;
+    uint32 current_num = 6;
+    uint32 max_num = 4;
+}
+

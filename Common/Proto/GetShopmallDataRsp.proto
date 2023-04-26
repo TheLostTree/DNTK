@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 756
+// Name: ANANDPPJAOD
+message GetShopmallDataRsp {
+    repeated uint32 shop_type_list = 9;
+    int32 retcode = 15;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: NNNABEEOCCB
+message RedPointData {
+    uint32 red_point_type = 1;
+    bool is_show = 2;
+    uint32 content_id = 3;
+}
+

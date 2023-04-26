@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ChatEmojiCollectionData.proto";
+
+// CmdId: 4027
+// Name: CLEOEMBHLBK
+message GetChatEmojiCollectionRsp {
+    ChatEmojiCollectionData chat_emoji_collection_data = 3;
+    int32 retcode = 8;
+}
+

@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// CmdId: 2126
+// Name: BNBOGNHLECH
+message SeaLampFlyLampNotify {
+    uint32 item_id = 6;
+    Vector pos = 10;
+    int32 param = 15;
+    uint32 item_num = 9;
+}
+

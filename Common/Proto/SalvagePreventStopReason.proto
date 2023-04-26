@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: NBHBPGJHJKK
+enum SalvagePreventStopReason {
+    SALVAGE_PREVENT_STOP_NONE = 0;
+    SALVAGE_PREVENT_STOP_SUCCESS = 1;
+    SALVAGE_PREVENT_STOP_ARRIVAL = 2;
+    SALVAGE_PREVENT_STOP_INTERRUPT = 3;
+    SALVAGE_PREVENT_STOP_LEAVE = 4;
+    SALVAGE_PREVENT_STOP_FULL = 5;
+    SALVAGE_PREVENT_STOP_AWAY = 6;
+}
+

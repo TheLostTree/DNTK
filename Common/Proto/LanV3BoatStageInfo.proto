@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: ODMKEMKFBMB
+message LanV3BoatStageInfo {
+    uint32 map_id = 14;
+    uint32 match_id = 3;
+    repeated uint32 player_uid_list = 9;
+    bool is_single = 13;
+}
+

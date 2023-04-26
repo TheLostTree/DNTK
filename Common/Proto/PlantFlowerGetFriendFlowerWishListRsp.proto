@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "PlantFlowerFriendFlowerWishData.proto";
+
+// CmdId: 8571
+// Name: IGAGICLJCLC
+message PlantFlowerGetFriendFlowerWishListRsp {
+    uint32 schedule_id = 1;
+    int32 retcode = 12;
+    repeated PlantFlowerFriendFlowerWishData friend_flower_wish_list = 2;
+}
+

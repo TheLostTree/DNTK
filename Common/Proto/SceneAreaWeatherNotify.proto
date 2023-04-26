@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 249
+// Name: BGJJBDDEOHG
+message SceneAreaWeatherNotify {
+    float trans_duration = 3;
+    map<uint32, string> weather_value_map = 13;
+    uint32 weather_area_id = 5;
+    uint32 climate_type = 2;
+    uint32 weather_gadget_id = 6;
+}
+

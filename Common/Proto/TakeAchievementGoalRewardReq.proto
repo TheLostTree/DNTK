@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2665
+// Name: MEAKOLJPEIM
+message TakeAchievementGoalRewardReq {
+    repeated uint32 id_list = 9;
+}
+

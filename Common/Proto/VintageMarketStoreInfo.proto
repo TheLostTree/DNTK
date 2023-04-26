@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: JENCFFBPFAO
+message VintageMarketStoreInfo {
+    repeated uint32 PLMNJFADJPF = 8;
+    repeated uint32 FAHFMJNEMKB = 6;
+    uint32 slot_count = 10;
+    uint32 store_id = 4;
+    repeated uint32 strategy_list = 9;
+}
+

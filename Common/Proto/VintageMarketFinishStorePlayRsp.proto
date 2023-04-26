@@ -1,0 +1,21 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 24767
+// Name: MHEDKPGDENI
+message VintageMarketFinishStorePlayRsp {
+    uint32 store_round = 6;
+    uint32 DJABGHKONIF = 14;
+    repeated uint32 EGPKJCLKBCA = 2;
+    uint32 DIJAEGLFOBL = 1;
+    repeated uint32 KDCPKDLKBCA = 10;
+    uint32 KFHGEEMNKHG = 13;
+    int32 retcode = 9;
+    repeated uint32 DADGLCIDMCC = 3;
+    uint32 BFNNEEBOGIH = 8;
+    map<uint32, uint32> store_income_map = 12;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "UgcType.proto";
+
+// CmdId: 6342
+// Name: FALNIBLGNCF
+message CheckUgcUpdateReq {
+    UgcType ugc_type = 6;
+}
+

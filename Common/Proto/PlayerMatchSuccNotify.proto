@@ -1,0 +1,22 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGMatchInfo.proto";
+import "GeneralMatchInfo.proto";
+import "MatchType.proto";
+
+// CmdId: 4195
+// Name: JAEBMMNHIFH
+message PlayerMatchSuccNotify {
+    uint32 host_uid = 8;
+    uint32 dungeon_id = 13;
+    GCGMatchInfo gcg_match_info = 7;
+    MatchType match_type = 3;
+    uint32 mp_play_id = 12;
+    uint32 confirm_end_time = 6;
+    uint32 mechanicus_difficult_level = 10;
+    GeneralMatchInfo general_match_info = 1;
+}
+

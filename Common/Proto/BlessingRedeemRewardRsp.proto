@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2130
+// Name: GPAHEAKOKPL
+message BlessingRedeemRewardRsp {
+    map<uint32, uint32> pic_num_map = 3;
+    int32 retcode = 1;
+}
+

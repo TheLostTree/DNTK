@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8750
+// Name: MECALNNAOKO
+message TreasureMapHostInfoNotify {
+    repeated uint32 mp_challenge_region_list = 10;
+}
+

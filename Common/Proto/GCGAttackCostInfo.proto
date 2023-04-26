@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Uint32Pair.proto";
+
+// Name: DKBDDJJHDHA
+message GCGAttackCostInfo {
+    repeated Uint32Pair cost_map = 7;
+    uint32 skill_id = 12;
+}
+

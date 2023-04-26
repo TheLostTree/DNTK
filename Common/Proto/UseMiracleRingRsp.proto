@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5216
+// Name: PPHEBGDHOPA
+message UseMiracleRingRsp {
+    uint32 miracle_ring_op_type = 10;
+    int32 retcode = 3;
+}
+

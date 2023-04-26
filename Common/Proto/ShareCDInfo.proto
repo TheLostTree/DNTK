@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: HNPGMPNHPFG
+message ShareCDInfo {
+    uint32 share_cd_id = 15;
+    uint32 index = 8;
+    uint64 cd_start_time = 9;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1665
+// Name: JKKNIONOFPI
+message AvatarGainCostumeNotify {
+    uint32 costume_id = 12;
+}
+

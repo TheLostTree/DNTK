@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8606
+// Name: DEJPLOKCHLE
+message EchoShellTakeRewardRsp {
+    uint32 reward_id = 8;
+    int32 retcode = 10;
+}
+

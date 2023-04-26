@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ExclusiveRuleInfo.proto";
+
+// CmdId: 109
+// Name: HOAAPIKFAMA
+message ExclusiveRuleNotify {
+    repeated ExclusiveRuleInfo rule_info_list = 13;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 199
+// Name: BGHONDPPLBN
+message SetPlayerPropRsp {
+    int32 retcode = 6;
+}
+

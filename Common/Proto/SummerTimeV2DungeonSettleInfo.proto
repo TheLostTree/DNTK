@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LNEDLNCEKDB
+message SummerTimeV2DungeonSettleInfo {
+    uint32 BCAIGBJGEOD = 15;
+    bool is_success = 5;
+    uint32 CFFPNHNDNNI = 3;
+}
+

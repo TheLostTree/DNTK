@@ -1,0 +1,28 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ChapterState.proto";
+
+// CmdId: 475
+// Name: JKMGOFOBNBC
+message ChapterStateNotify {
+    // Name: PBMHNPFBBOI
+    message PBMHNPFBBOI {
+        bool HJHDAHFJGBM = 15;
+        uint32 IOOFCEKCNLP = 5;
+    }
+
+    // Name: EHMGNAPJJJO
+    message EHMGNAPJJJO {
+        uint32 OBBEJICFPIC = 6;
+        bool HJHDAHFJGBM = 4;
+    }
+
+    ChapterState chapter_state = 13;
+    PBMHNPFBBOI NCCCEAHMHHB = 3;
+    uint32 chapter_id = 15;
+    EHMGNAPJJJO EIPKJBGKGKE = 11;
+}
+

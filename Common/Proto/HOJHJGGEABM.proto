@@ -1,0 +1,20 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "PlatformType.proto";
+
+// CmdId: 993
+// Name: HOJHJGGEABM
+message HOJHJGGEABM {
+    // Name: ALMDBKOCELN
+    message ALMDBKOCELN {
+        repeated uint32 monster_id_list = 6;
+        string HAFEEECHHOJ = 2;
+        repeated PlatformType CHOPMGJFOKD = 7;
+    }
+
+    repeated ALMDBKOCELN BGFGADONCPI = 15;
+}
+

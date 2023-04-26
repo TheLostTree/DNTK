@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 221
+// Name: FBJNIGOFFBL
+message SeeMonsterReq {
+    uint32 monster_id = 9;
+}
+

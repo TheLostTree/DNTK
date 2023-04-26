@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FireworksLaunchSchemeData.proto";
+
+// CmdId: 6022
+// Name: AMCLCEJGJNF
+message LaunchFireworksReq {
+    FireworksLaunchSchemeData scheme_data = 14;
+}
+

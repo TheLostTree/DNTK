@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ParentQuest.proto";
+
+// CmdId: 416
+// Name: LJCDAMNBHJL
+message FinishedParentQuestUpdateNotify {
+    repeated ParentQuest parent_quest_list = 5;
+}
+

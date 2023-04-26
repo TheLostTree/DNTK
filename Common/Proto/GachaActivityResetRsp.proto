@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8715
+// Name: KNELBIOPMIO
+message GachaActivityResetRsp {
+    int32 retcode = 13;
+    uint32 stage_id = 7;
+}
+

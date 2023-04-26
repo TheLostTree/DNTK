@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LOFDJMMJMAJ
+message PlantFlowerActivityDetailInfo {
+    map<uint32, uint32> LJENBNHMAHE = 10;
+    bool is_today_has_awarded = 6;
+    bool is_content_closed = 3;
+    map<uint32, uint32> LBKFMDJGOPL = 1;
+    uint32 day_index = 11;
+    uint32 today_seed_reward_id = 15;
+}
+

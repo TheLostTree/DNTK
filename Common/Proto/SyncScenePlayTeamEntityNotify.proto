@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "PlayTeamEntityInfo.proto";
+
+// CmdId: 3170
+// Name: IJAJCEENKHC
+message SyncScenePlayTeamEntityNotify {
+    uint32 scene_id = 15;
+    repeated PlayTeamEntityInfo entity_info_list = 13;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeBlueprintSlotInfo.proto";
+
+// CmdId: 4553
+// Name: DJHCBMFGKHK
+message HomeCreateBlueprintRsp {
+    int32 retcode = 3;
+    HomeBlueprintSlotInfo slot_info = 15;
+}
+

@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 300
+// Name: JOLDFKPIFMF
+message ExecuteGroupTriggerReq {
+    int32 param1 = 7;
+    int32 param3 = 12;
+    int32 param2 = 8;
+    string source_name = 4;
+    uint32 target_entity_id = 10;
+    uint32 source_entity_id = 1;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5548
+// Name: MHLFJAIKKMK
+message InstableSprayGalleryInfoNotify {
+    uint32 score = 11;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8158
+// Name: LGELAEHOADH
+message ActivityGiveFriendGiftRsp {
+    int32 retcode = 12;
+    uint32 schedule_id = 10;
+    repeated uint32 limit_gift_list = 7;
+}
+

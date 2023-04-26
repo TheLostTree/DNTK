@@ -1,0 +1,29 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 22180
+// Name: BMBJFJNIAKL
+message BMBJFJNIAKL {
+    float speed = 1636;
+    uint32 PDAEMLNANJB = 522;
+    repeated uint32 IENNECCNIFA = 12;
+    uint32 LFBNPBMNLKD = 14;
+    uint32 max_combo = 9;
+    bool JBDMHEJEGIB = 1214;
+    uint32 correct_hit = 11;
+    uint32 music_basic_id = 3;
+    uint32 CNAJIGJCBAA = 7;
+    uint32 combo = 13;
+    bool JGNMPPLDBON = 1580;
+    bool is_save_score = 4;
+    uint32 HDOIBKCMFPK = 186;
+    uint32 NGCEDFEHHIM = 2;
+    uint32 score = 1;
+    uint32 AHGFEMANIFF = 1857;
+    uint64 ugc_guid = 5;
+    repeated uint32 DLGEHGGHDAI = 1499;
+}
+

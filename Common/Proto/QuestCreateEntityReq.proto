@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CreateEntityInfo.proto";
+
+// CmdId: 463
+// Name: PAADNAFBNIB
+message QuestCreateEntityReq {
+    CreateEntityInfo entity = 2;
+    uint32 quest_id = 5;
+    uint32 parent_quest_id = 11;
+    bool is_rewind = 1;
+}
+

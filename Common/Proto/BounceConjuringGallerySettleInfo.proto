@@ -1,0 +1,21 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ExhibitionDisplayInfo.proto";
+import "OnlinePlayerInfo.proto";
+
+// Name: FFFNAADIBGL
+message BounceConjuringGallerySettleInfo {
+    map<uint32, uint32> gadget_count_map = 3;
+    uint32 BIMOGNBEGNI = 15;
+    uint32 GIMNNOIMHAN = 7;
+    uint32 score = 8;
+    repeated ExhibitionDisplayInfo card_list = 5;
+    float damage = 10;
+    OnlinePlayerInfo player_info = 1;
+    uint32 LLEPOGBFEMP = 6;
+    uint32 CDKGPFEDKLO = 13;
+}
+

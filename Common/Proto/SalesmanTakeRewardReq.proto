@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2018
+// Name: FLPBNMKKFKN
+message SalesmanTakeRewardReq {
+    uint32 schedule_id = 2;
+    uint32 position = 3;
+}
+

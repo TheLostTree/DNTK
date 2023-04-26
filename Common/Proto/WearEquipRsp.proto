@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 699
+// Name: NBCHEBBHLLC
+message WearEquipRsp {
+    uint64 equip_guid = 8;
+    uint64 avatar_guid = 9;
+    int32 retcode = 15;
+}
+

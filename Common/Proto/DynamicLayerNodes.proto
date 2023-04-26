@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "DynamicSVONode.proto";
+
+// Name: JPLPKCCKJPE
+message DynamicLayerNodes {
+    repeated DynamicSVONode nodes = 15;
+    int32 level = 7;
+}
+

@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GachaInfo.proto";
+
+// CmdId: 1596
+// Name: BIKLLFLGCCA
+message GetGachaInfoRsp {
+    repeated GachaInfo gacha_info_list = 9;
+    int32 retcode = 7;
+    uint32 PAHELCJNHAH = 4;
+    bool HFEKPDOKLDK = 15;
+    bool PKOIBFIOLAO = 6;
+    uint32 PKPENDLDPKI = 2;
+}
+

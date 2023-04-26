@@ -1,0 +1,21 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// CmdId: 3454
+// Name: CFIGKJKFEKO
+message GetScenePerformanceRsp {
+    uint32 LJCBJLEAKJF = 7;
+    uint32 DMEEGEIMBDB = 2;
+    uint32 BFIIPKLKFCK = 15;
+    int32 retcode = 4;
+    uint32 JEGLKPIKBLJ = 3;
+    uint32 HDNCFOKNHEF = 14;
+    uint32 EDFGDFFFLKO = 8;
+    uint32 HLGMNFHKIDA = 5;
+    Vector pos = 11;
+}
+

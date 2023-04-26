@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 7879
+// Name: LNELFKCMGNP
+message GCGDSChangeCardBackReq {
+    uint32 card_back_id = 5;
+    uint32 deck_id = 14;
+}
+

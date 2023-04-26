@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1994
+// Name: NCAEGBLIDHA
+message CoopCgShowNotify {
+    repeated uint32 cg_list = 4;
+}
+

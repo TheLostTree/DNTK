@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "BlessingFriendPicData.proto";
+
+// CmdId: 2147
+// Name: BENODBPGBGP
+message BlessingGetFriendPicListRsp {
+    repeated BlessingFriendPicData friend_pic_data_list = 5;
+    int32 retcode = 13;
+}
+

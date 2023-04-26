@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FireworksReformParamType.proto";
+
+// Name: OCEJMFHDDOD
+message FireworksReformParam {
+    int32 value = 7;
+    FireworksReformParamType type = 5;
+}
+

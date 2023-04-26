@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Shop.proto";
+
+// CmdId: 796
+// Name: NFHPBKJDEMC
+message GetShopRsp {
+    Shop shop = 5;
+    int32 retcode = 9;
+}
+

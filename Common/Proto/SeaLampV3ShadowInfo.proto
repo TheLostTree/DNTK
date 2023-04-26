@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "SeaLampV3ShadowStageInfo.proto";
+
+// Name: KALOBOALCPJ
+message SeaLampV3ShadowInfo {
+    repeated SeaLampV3ShadowStageInfo stage_info_list = 9;
+}
+

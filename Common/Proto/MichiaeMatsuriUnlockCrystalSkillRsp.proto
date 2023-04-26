@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8432
+// Name: IOBHIJKKHJM
+message MichiaeMatsuriUnlockCrystalSkillRsp {
+    int32 retcode = 7;
+    uint32 crystal_skill_id = 3;
+}
+

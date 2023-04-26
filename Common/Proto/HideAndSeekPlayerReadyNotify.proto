@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5340
+// Name: HCJEOAOHGDK
+message HideAndSeekPlayerReadyNotify {
+    repeated uint32 uid_list = 6;
+}
+

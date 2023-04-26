@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: KKMFKCJNEAF
+message GCGMsgUseSkillEnd {
+    uint32 card_guid = 11;
+    uint32 skill_id = 14;
+}
+

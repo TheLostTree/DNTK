@@ -1,0 +1,21 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FungusDetail.proto";
+import "FungusPlotStageDetail.proto";
+import "FungusTrainingDungeonDetail.proto";
+import "FungusTrainingProgressDetail.proto";
+
+// Name: CLHNDBBIMIK
+message FungusFighterDetailInfo {
+    repeated uint32 LKGHAADOFLF = 1;
+    repeated FungusTrainingDungeonDetail training_dungeon_detail_list = 10;
+    repeated FungusDetail fungus_detail_list = 14;
+    repeated uint32 KIKFFIHPEKI = 6;
+    repeated FungusTrainingProgressDetail training_dungeon_progress_detail_list = 12;
+    repeated FungusPlotStageDetail plot_stage_detail_list = 13;
+    repeated uint32 DJDBGBNHGGL = 9;
+}
+

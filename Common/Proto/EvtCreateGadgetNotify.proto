@@ -1,0 +1,32 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ForwardType.proto";
+import "Vector.proto";
+
+// CmdId: 316
+// Name: FJHPBLOMBHI
+message EvtCreateGadgetNotify {
+    uint32 owner_entity_id = 9;
+    uint64 guid = 2;
+    ForwardType forward_type = 10;
+    Vector init_euler_angles = 3;
+    bool DKJHPANLPGJ = 1474;
+    bool is_peer_id_from_player = 2005;
+    uint32 target_lock_point_index = 12;
+    repeated uint32 target_lock_point_index_list = 1490;
+    Vector init_pos = 1;
+    bool DGIFLLEHOND = 6;
+    uint32 camp_type = 8;
+    uint32 camp_id = 14;
+    repeated uint32 target_entity_id_list = 383;
+    uint32 config_id = 11;
+    uint32 entity_id = 13;
+    uint32 room_id = 5;
+    bool IJDOMBBFNOM = 7;
+    uint32 target_entity_id = 15;
+    uint32 prop_owner_entity_id = 4;
+}
+

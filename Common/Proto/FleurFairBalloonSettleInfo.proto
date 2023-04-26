@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "BalloonSettleInfo.proto";
+
+// Name: MHMOIFNAGIN
+message FleurFairBalloonSettleInfo {
+    bool is_new_record = 3;
+    BalloonSettleInfo settle_info = 9;
+}
+

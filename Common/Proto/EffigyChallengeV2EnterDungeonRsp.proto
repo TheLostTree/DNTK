@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 23071
+// Name: NOCCAPABBCK
+message EffigyChallengeV2EnterDungeonRsp {
+    uint32 level_id = 9;
+    uint32 challenge_mode_difficulty = 2;
+    uint32 challenge_mode_skill_no = 3;
+    int32 retcode = 13;
+}
+

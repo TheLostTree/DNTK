@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1412
+// Name: GODOJLFLCGL
+message ChangeMailStarNotify {
+    repeated uint32 mail_id_list = 9;
+    bool is_star = 14;
+}
+

@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GachaTransferItem.proto";
+import "ItemParam.proto";
+
+// Name: IPHELIAGHGJ
+message GachaItem {
+    ItemParam gacha_item = 13;
+    repeated GachaTransferItem transfer_items = 3;
+    repeated ItemParam token_item_list = 9;
+    bool DKPCGKMJNMC = 1;
+    bool HBJJJDGGBCN = 11;
+}
+

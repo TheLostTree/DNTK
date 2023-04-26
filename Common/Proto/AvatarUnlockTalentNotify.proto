@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1089
+// Name: FICNHFDNBKE
+message AvatarUnlockTalentNotify {
+    uint32 talent_id = 11;
+    uint32 skill_depot_id = 9;
+    uint32 entity_id = 8;
+    uint64 avatar_guid = 7;
+}
+

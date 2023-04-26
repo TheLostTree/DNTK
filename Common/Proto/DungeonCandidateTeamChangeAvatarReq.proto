@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 973
+// Name: HPAGGBIOCGI
+message DungeonCandidateTeamChangeAvatarReq {
+    repeated uint64 avatar_guid_list = 4;
+}
+

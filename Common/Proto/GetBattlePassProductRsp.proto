@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2623
+// Name: APOOMOPLHGB
+message GetBattlePassProductRsp {
+    string price_tier = 9;
+    int32 retcode = 2;
+    uint32 cur_schedule_id = 11;
+    string product_id = 15;
+    uint32 battle_pass_product_play_type = 3;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: PLKEBHIPGAB
+enum MaterialDeleteReturnType {
+    MATERIAL_DELETE_RETURN_BAG = 0;
+    MATERIAL_DELETE_RETURN_SEED = 1;
+}
+

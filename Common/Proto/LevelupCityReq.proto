@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 237
+// Name: FMMDGBFOCNN
+message LevelupCityReq {
+    uint32 item_num = 13;
+    uint32 area_id = 3;
+    uint32 scene_id = 5;
+}
+

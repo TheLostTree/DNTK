@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "BartenderLevelInfo.proto";
+import "BartenderTaskInfo.proto";
+
+// Name: KDCAMFJFOIB
+message BartenderActivityDetailInfo {
+    bool is_develop_module_open = 6;
+    repeated uint32 EPJAPKIPHKN = 9;
+    repeated BartenderLevelInfo unlock_level_list = 8;
+    repeated uint32 KELDDECINAF = 5;
+    repeated BartenderTaskInfo unlock_task_list = 12;
+    bool is_content_closed = 7;
+}
+

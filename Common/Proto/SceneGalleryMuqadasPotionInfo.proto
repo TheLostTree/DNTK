@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: BKGNOBPMPHD
+message SceneGalleryMuqadasPotionInfo {
+    uint32 capture_weakness_count = 10;
+    uint32 FEBNFKEKJIF = 2;
+    uint32 KNKAGODLFEH = 12;
+    uint32 score = 15;
+}
+

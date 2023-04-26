@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FleurFairBossSettleInfo.proto";
+import "FleurFairGallerySettleInfo.proto";
+
+// CmdId: 5373
+// Name: GMHIAPBGKEA
+message FleurFairStageSettleNotify {
+    uint32 stage_type = 11;
+    oneof detail {
+        FleurFairGallerySettleInfo gallery_settle_info = 6;
+        FleurFairBossSettleInfo boss_settle_info = 14;
+    }
+}
+

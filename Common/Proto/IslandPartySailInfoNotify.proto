@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "IslandPartySailStage.proto";
+
+// CmdId: 5551
+// Name: GCEFCLGFGPE
+message IslandPartySailInfoNotify {
+    uint32 coin = 5;
+    uint32 progress = 11;
+    IslandPartySailStage stage = 1;
+    uint32 kill_monster_count = 4;
+}
+

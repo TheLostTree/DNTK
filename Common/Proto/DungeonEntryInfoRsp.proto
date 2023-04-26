@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "DungeonEntryInfo.proto";
+import "DungeonEntryPointInfo.proto";
+
+// CmdId: 996
+// Name: NJOCOAEINCL
+message DungeonEntryInfoRsp {
+    repeated DungeonEntryPointInfo dungeon_entry_point_list = 7;
+    uint32 recommend_dungeon_id = 2;
+    uint32 point_id = 8;
+    int32 retcode = 5;
+    repeated DungeonEntryInfo dungeon_entry_list = 9;
+}
+

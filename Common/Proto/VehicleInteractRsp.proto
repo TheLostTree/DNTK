@@ -1,0 +1,22 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+import "VehicleInteractType.proto";
+import "VehicleMember.proto";
+
+// CmdId: 851
+// Name: MLIFJHEHJIC
+message VehicleInteractRsp {
+    int32 retcode = 13;
+    uint32 entity_id = 10;
+    Vector MAKPDIBNPAP = 2;
+    VehicleInteractType interact_type = 8;
+    Vector DNJIMMEONNI = 5;
+    VehicleMember member = 1;
+    uint32 PDEPBDNGIAB = 4;
+    uint32 gadget_id = 15;
+}
+

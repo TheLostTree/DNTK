@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: HFEKCMGDEAI
+message AiSkillCdInfo {
+    map<uint32, uint32> skill_cd_map = 15;
+    map<uint32, uint32> skill_group_cd_map = 2;
+}
+

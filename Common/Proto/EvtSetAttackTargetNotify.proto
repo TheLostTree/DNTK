@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "EvtSetAttackTargetInfo.proto";
+import "ForwardType.proto";
+
+// CmdId: 363
+// Name: GAENMKLBNCE
+message EvtSetAttackTargetNotify {
+    EvtSetAttackTargetInfo evt_set_attack_target_info = 10;
+    ForwardType forward_type = 14;
+}
+

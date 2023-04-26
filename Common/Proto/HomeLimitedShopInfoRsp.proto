@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeLimitedShopInfo.proto";
+
+// CmdId: 4731
+// Name: DOFAGDOJLAN
+message HomeLimitedShopInfoRsp {
+    HomeLimitedShopInfo shop_info = 9;
+    int32 retcode = 1;
+}
+

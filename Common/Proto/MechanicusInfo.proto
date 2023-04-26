@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Uint32Pair.proto";
+
+// Name: BCGPFOIOOFJ
+message MechanicusInfo {
+    repeated uint32 LLONNKHKKHA = 11;
+    uint32 coin = 5;
+    uint32 mechanicus_id = 6;
+    repeated Uint32Pair gear_level_pair_list = 9;
+    bool is_finish_teach_dungeon = 8;
+    repeated uint32 FBPPLFNPECI = 3;
+    uint32 punish_over_time = 15;
+}
+

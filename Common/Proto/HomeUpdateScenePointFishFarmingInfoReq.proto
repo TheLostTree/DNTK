@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeScenePointFishFarmingInfo.proto";
+
+// CmdId: 4777
+// Name: EBFKBLPDION
+message HomeUpdateScenePointFishFarmingInfoReq {
+    HomeScenePointFishFarmingInfo fish_farming_info = 1;
+}
+

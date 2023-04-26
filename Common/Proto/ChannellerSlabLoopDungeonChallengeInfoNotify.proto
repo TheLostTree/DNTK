@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 8684
+// Name: MFNPMJKAMNM
+message ChannellerSlabLoopDungeonChallengeInfoNotify {
+    uint32 dungeon_index = 2;
+    uint32 difficulty_id = 11;
+    repeated uint32 scheme_buff_id_list = 13;
+    uint32 challenge_score = 1;
+    repeated uint32 condition_id_list = 4;
+}
+

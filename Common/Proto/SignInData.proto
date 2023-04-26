@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ItemParam.proto";
+
+// Name: FHLIEAJPABN
+message SignInData {
+    repeated ItemParam reward_item_list = 2;
+    uint32 day_count = 12;
+}
+

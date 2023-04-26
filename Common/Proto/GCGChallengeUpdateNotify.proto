@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGDuelChallenge.proto";
+
+// CmdId: 7872
+// Name: EGNIHJPKBKP
+message GCGChallengeUpdateNotify {
+    GCGDuelChallenge challenge = 15;
+    uint32 server_seq = 9;
+}
+

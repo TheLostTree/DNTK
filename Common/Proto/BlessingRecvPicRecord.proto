@@ -1,0 +1,20 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ProfilePicture.proto";
+
+// Name: CBCOHJNHCND
+message BlessingRecvPicRecord {
+    string remark_name = 6;
+    string signature = 14;
+    string nickname = 13;
+    uint32 uid = 11;
+    uint32 pic_id = 4;
+    uint32 avatar_id = 8;
+    uint32 index = 3;
+    ProfilePicture profile_picture = 5;
+    bool is_recv = 7;
+}
+

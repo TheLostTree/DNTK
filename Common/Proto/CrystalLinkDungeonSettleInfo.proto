@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: OHIOLBMFKNH
+message CrystalLinkDungeonSettleInfo {
+    bool JPNNPIBPIIP = 3;
+    uint32 difficulty_id = 13;
+    bool is_new_record = 10;
+    uint32 final_score = 14;
+    uint32 EEPIFMDOOHM = 12;
+    uint32 level_id = 11;
+    uint32 KFACNCAIMAM = 2;
+}
+

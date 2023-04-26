@@ -1,0 +1,31 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GachaItem.proto";
+
+// CmdId: 1576
+// Name: BIMBGHFINGO
+message DoGachaRsp {
+    bool HFEKPDOKLDK = 823;
+    uint32 gacha_type = 7;
+    uint32 KDFPKENAIOJ = 5;
+    bool PKOIBFIOLAO = 651;
+    uint32 DKCIEKFPMCG = 8;
+    repeated GachaItem gacha_item_list = 4;
+    int32 retcode = 10;
+    uint32 gacha_times = 9;
+    uint32 JICLMBKMGCG = 1;
+    uint32 PELOHDIKFAM = 845;
+    uint32 FBIDPNFLBJL = 14;
+    uint32 EAGFIDHCDPD = 3;
+    uint32 BIPHOPJBNHC = 15;
+    uint32 gacha_schedule_id = 2;
+    uint32 KKDFKKEMEBA = 12;
+    uint32 PKPENDLDPKI = 965;
+    uint32 FIHHLGMNIDM = 11;
+    uint32 OKKJEHDBIHK = 6;
+    uint32 FBILBJNNIKE = 13;
+}
+

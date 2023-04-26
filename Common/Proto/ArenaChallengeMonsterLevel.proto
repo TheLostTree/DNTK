@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: OKLFPJCHPDD
+message ArenaChallengeMonsterLevel {
+    uint32 FCLFLMPGIKN = 4;
+    uint32 GELFIDPMHLJ = 9;
+}
+

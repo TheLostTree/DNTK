@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 20143
+// Name: MDBHGIIOPKI
+message MDBHGIIOPKI {
+    uint32 pos_id = 7;
+    uint32 check_root_id = 5;
+    bool is_succ = 13;
+}
+

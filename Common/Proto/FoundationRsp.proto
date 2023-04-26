@@ -1,0 +1,17 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FoundationOpType.proto";
+
+// CmdId: 846
+// Name: CLJJEIKNDFO
+message FoundationRsp {
+    FoundationOpType op_type = 9;
+    uint32 point_config_id = 12;
+    int32 retcode = 11;
+    uint32 gadget_entity_id = 1;
+    uint32 building_id = 5;
+}
+

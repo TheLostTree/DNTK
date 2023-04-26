@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: OHNCHMDLPPM
+message SumoDungeonAvatar {
+    bool is_avlive = 12;
+    uint64 avatar_guid = 2;
+    bool is_trial = 14;
+}
+

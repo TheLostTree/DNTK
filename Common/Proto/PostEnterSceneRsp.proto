@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 3417
+// Name: AHIJMECELNE
+message PostEnterSceneRsp {
+    uint32 enter_scene_token = 5;
+    int32 retcode = 13;
+}
+

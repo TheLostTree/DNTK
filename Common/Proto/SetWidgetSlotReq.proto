@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "WidgetSlotOp.proto";
+import "WidgetSlotTag.proto";
+
+// CmdId: 4251
+// Name: NAPDGILJNIK
+message SetWidgetSlotReq {
+    repeated WidgetSlotTag tag_list = 5;
+    WidgetSlotOp op = 12;
+    uint32 material_id = 6;
+}
+

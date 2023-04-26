@@ -1,0 +1,24 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: BJHMMPKDAGJ
+message BattlePassMission {
+    // Name: NONPHMMOCDO
+    enum MissionStatus {
+        MISSION_INVALID = 0;
+        MISSION_UNFINISHED = 1;
+        MISSION_FINISHED = 2;
+        MISSION_POINT_TAKEN = 3;
+    }
+
+    uint32 mission_id = 11;
+    MissionStatus mission_status = 14;
+    uint32 GJNMCPGNCMA = 13;
+    uint32 cur_progress = 15;
+    uint32 total_progress = 10;
+    uint32 OCEJMMCLNKC = 3;
+}
+

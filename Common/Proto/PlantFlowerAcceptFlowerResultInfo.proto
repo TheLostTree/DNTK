@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: CLEECNDCANA
+message PlantFlowerAcceptFlowerResultInfo {
+    map<uint32, uint32> POKCMICNNDP = 9;
+    map<uint32, uint32> EIBDMNCCEAL = 5;
+    uint32 uid = 8;
+}
+

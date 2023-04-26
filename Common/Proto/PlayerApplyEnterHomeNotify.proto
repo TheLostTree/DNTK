@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "OnlinePlayerInfo.proto";
+
+// CmdId: 4549
+// Name: POPCEJAJKCN
+message PlayerApplyEnterHomeNotify {
+    uint32 src_app_id = 14;
+    OnlinePlayerInfo src_player_info = 9;
+}
+

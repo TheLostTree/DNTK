@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: AGGLMJABOKH
+message CoopReward {
+    // Name: BCDLKPCNHJH
+    enum State {
+        STATE_UNLOCK = 0;
+        STATE_LOCK = 1;
+        STATE_TAKEN = 2;
+    }
+
+    uint32 id = 9;
+    State state = 14;
+}
+

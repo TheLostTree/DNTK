@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1259
+// Name: LKOECLGEAJN
+message AvatarPropNotify {
+    map<uint32, int64> prop_map = 8;
+    uint64 avatar_guid = 13;
+}
+

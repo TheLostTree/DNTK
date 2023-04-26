@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1639
+// Name: AJELMNOHEPB
+message SetUpAvatarTeamReq {
+    uint64 cur_avatar_guid = 14;
+    uint32 team_id = 4;
+    repeated uint64 avatar_team_guid_list = 6;
+}
+

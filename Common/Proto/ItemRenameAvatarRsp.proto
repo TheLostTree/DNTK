@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1656
+// Name: HMEJDLEHHGF
+message ItemRenameAvatarRsp {
+    int32 retcode = 13;
+    uint32 cd_time = 3;
+    uint32 rename_id = 6;
+}
+

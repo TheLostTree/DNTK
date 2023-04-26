@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "WidgetCreateLocationInfo.proto";
+import "WidgetCreatorInfo.proto";
+
+// CmdId: 4254
+// Name: NBCPOJPGAOA
+message WidgetDoBagReq {
+    uint32 material_id = 12;
+    oneof op_info {
+        WidgetCreateLocationInfo location_info = 486;
+        WidgetCreatorInfo widget_creator_info = 694;
+    }
+}
+

@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "FishingGallerySettleInfo.proto";
+
+// CmdId: 8520
+// Name: IDILNEBLNKG
+message FishingGallerySettleNotify {
+    uint32 level_id = 2;
+    FishingGallerySettleInfo settle_info = 5;
+    uint32 gallery_id = 15;
+}
+

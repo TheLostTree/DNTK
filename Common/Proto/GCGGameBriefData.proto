@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "GCGGameBusinessType.proto";
+import "GCGPlayerBriefData.proto";
+
+// Name: HJABBOGMGEL
+message GCGGameBriefData {
+    uint32 game_id = 12;
+    uint32 BKCEKFCCCIC = 7;
+    GCGGameBusinessType business_type = 6;
+    uint32 NCPHDFAEHJC = 10;
+    uint32 platform_type = 4;
+    repeated GCGPlayerBriefData player_brief_list = 2;
+}
+

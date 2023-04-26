@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: JDIEPDONHGO
+message IrodoriChessPlayerInfo {
+    uint32 KHNEENKECBK = 2;
+    uint32 FABNMNFMJFG = 9;
+    uint32 uid = 3;
+}
+

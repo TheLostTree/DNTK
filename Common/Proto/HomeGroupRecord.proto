@@ -1,0 +1,21 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeBalloonRecord.proto";
+import "HomeRacingRecord.proto";
+import "HomeSeekFurnitureAllRecord.proto";
+import "HomeStakeRecord.proto";
+
+// Name: PEKCNIEFEPH
+message HomeGroupRecord {
+    uint32 group_id = 10;
+    oneof detail {
+        HomeRacingRecord racing_gallery_info = 388;
+        HomeBalloonRecord balloon_gallery_info = 1949;
+        HomeStakeRecord stake_play_info = 748;
+        HomeSeekFurnitureAllRecord seek_furniture_gallery_info = 1996;
+    }
+}
+

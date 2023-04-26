@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 5848
+// Name: BJGKEKGIPCA
+message FishPoolDataNotify {
+    uint32 entity_id = 15;
+    uint32 today_fish_num = 1;
+}
+

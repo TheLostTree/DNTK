@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: OAJKPEBHHCH
+message GravenInnocenceRaceLevelInfo {
+    uint32 max_score = 10;
+    bool is_open = 13;
+    uint32 level_id = 14;
+}
+

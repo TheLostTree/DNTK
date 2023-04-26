@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 1199
+// Name: FNCKPACOKHE
+message ClientAIStateNotify {
+    uint32 entity_id = 12;
+    uint32 cur_tactic = 1;
+}
+

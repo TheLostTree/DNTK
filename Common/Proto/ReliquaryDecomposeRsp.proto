@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 680
+// Name: FJKADHAFOIM
+message ReliquaryDecomposeRsp {
+    int32 retcode = 2;
+    repeated uint64 guid_list = 1;
+}
+

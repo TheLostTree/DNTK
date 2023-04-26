@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 2112
+// Name: ODMNCOGPFCG
+message ActivitySelectAvatarCardReq {
+    uint32 activity_id = 13;
+    uint32 reward_id = 4;
+}
+

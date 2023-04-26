@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: EFHLNDLLHIP
+message DragonSpineChapterInfo {
+    uint32 progress = 6;
+    uint32 chapter_id = 14;
+    bool is_open = 13;
+    uint32 open_time = 2;
+    uint32 finished_mission_num = 7;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: ICEJFGHDGJI
+message FallPlayerBrief {
+    uint32 score = 12;
+    uint32 uid = 10;
+    bool is_ground = 3;
+}
+

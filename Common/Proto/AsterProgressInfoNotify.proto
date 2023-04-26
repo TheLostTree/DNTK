@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AsterProgressDetailInfo.proto";
+
+// CmdId: 2082
+// Name: OLCOEPJPFIL
+message AsterProgressInfoNotify {
+    AsterProgressDetailInfo info = 15;
+}
+

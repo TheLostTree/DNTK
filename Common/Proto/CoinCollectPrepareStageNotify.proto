@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CoinCollectStageInfo.proto";
+
+// CmdId: 6569
+// Name: GNCOBJFHHNG
+message CoinCollectPrepareStageNotify {
+    CoinCollectStageInfo coin_collect_info = 6;
+}
+

@@ -1,0 +1,24 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "MathQuaternion.proto";
+import "Vector.proto";
+import "Vector3Int.proto";
+
+// Name: LAGPLFLFOEF
+message ObstacleInfo {
+    // Name: CFHDBJENNAP
+    enum ShapeType {
+        OBSTACLE_SHAPE_CAPSULE = 0;
+        OBSTACLE_SHAPE_BOX = 1;
+    }
+
+    int32 obstacle_id = 15;
+    MathQuaternion rotation = 1;
+    ShapeType shape = 12;
+    Vector3Int extents = 10;
+    Vector center = 3;
+}
+

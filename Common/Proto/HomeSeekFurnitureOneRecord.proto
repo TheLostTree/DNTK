@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeSeekFurniturePlayerScore.proto";
+
+// Name: FALEIHAMGBK
+message HomeSeekFurnitureOneRecord {
+    repeated HomeSeekFurniturePlayerScore engaged_player_score_list = 8;
+    uint32 timestamp = 10;
+}
+

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: LGCPMALEONL
+message ChallengeBrief {
+    uint32 challenge_index = 3;
+    uint32 cur_progress = 5;
+    bool is_success = 7;
+    uint32 challenge_id = 1;
+}
+

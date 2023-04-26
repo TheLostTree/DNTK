@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "DungeonEntryBlockReason.proto";
+
+// Name: MOLENBNLNDP
+message DungeonEntryCond {
+    DungeonEntryBlockReason cond_reason = 2;
+    uint32 param1 = 12;
+}
+

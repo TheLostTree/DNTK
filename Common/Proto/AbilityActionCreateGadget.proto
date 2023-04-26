@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "Vector.proto";
+
+// Name: FGEDHLMBFCM
+message AbilityActionCreateGadget {
+    Vector rot = 9;
+    Vector pos = 6;
+    uint32 room_id = 5;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 319
+// Name: GKLAGIKJCAO
+message ReportFightAntiCheatNotify {
+    uint32 DOKPOLHDEPI = 1;
+    uint32 OPFCEOHOBMH = 10;
+}
+

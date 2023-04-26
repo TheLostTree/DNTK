@@ -1,0 +1,21 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "TreasureMapBonusChallengeInfo.proto";
+import "TreasureMapRegionInfo.proto";
+
+// Name: KNIFKGPNAAC
+message TreasureMapActivityDetailInfo {
+    repeated TreasureMapRegionInfo region_info_list = 6;
+    uint32 currency_num = 1;
+    bool is_mp_challenge_touched = 4;
+    repeated TreasureMapBonusChallengeInfo bonus_challenge_list = 11;
+    uint32 MEHOKJOPMBN = 13;
+    uint32 active_region_index = 15;
+    uint32 treasure_close_time = 3;
+    uint32 KKLLPPPLKMM = 7;
+    uint32 OPDGECDFNDK = 8;
+}
+

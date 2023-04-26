@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: IMHJJIEFMOF
+enum GCGIntentionChangeType {
+    GCG_INTENTION_CHANGE_NONE = 0;
+    GCG_INTENTION_CHANGE_RM = 1;
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "WorldRoutineTypeInfo.proto";
+
+// CmdId: 3516
+// Name: MDMMFNOMJBO
+message WorldAllRoutineTypeNotify {
+    repeated WorldRoutineTypeInfo world_routine_type_list = 2;
+}
+

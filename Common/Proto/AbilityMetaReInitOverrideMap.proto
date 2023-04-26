@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "AbilityScalarValueEntry.proto";
+
+// Name: AHCCOPHKLIK
+message AbilityMetaReInitOverrideMap {
+    repeated AbilityScalarValueEntry override_map = 5;
+}
+

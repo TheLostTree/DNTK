@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// Name: FJAGNEBFDHH
+message BargainSnapshot {
+    uint32 FBLDNHGMENF = 7;
+    uint32 LJKDGKOHKPG = 15;
+    int32 cur_mood = 2;
+    uint32 bargain_id = 13;
+}
+

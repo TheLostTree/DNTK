@@ -1,0 +1,12 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "LanV3BoatMultiPlayerData.proto";
+
+// Name: JOBCGOEPLIM
+message SceneGalleryBoatMultiInfo {
+    repeated LanV3BoatMultiPlayerData JLDGJOPFALG = 1;
+}
+

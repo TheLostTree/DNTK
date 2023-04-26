@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+
+// CmdId: 4841
+// Name: OCBALMKCPIA
+message HomePreviewBlueprintReq {
+    uint32 slot_id = 2;
+    string share_code = 11;
+}
+

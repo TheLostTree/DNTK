@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CustomDungeonBanInfo.proto";
+import "CustomDungeonBrief.proto";
+
+// CmdId: 6246
+// Name: KOLPPEMABAB
+message GetCustomDungeonRsp {
+    CustomDungeonBanInfo ban_info = 12;
+    int32 retcode = 10;
+    repeated CustomDungeonBrief brief_list = 11;
+}
+

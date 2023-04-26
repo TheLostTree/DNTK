@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "HomeFishFarmingInfo.proto";
+
+// CmdId: 4889
+// Name: DAGEAJJKJJD
+message HomeUpdateFishFarmingInfoReq {
+    HomeFishFarmingInfo fish_farming_info = 8;
+}
+

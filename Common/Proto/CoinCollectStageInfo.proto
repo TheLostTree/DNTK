@@ -1,0 +1,14 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CoinCollectPlayerInfo.proto";
+
+// Name: BNDBEPBOMPG
+message CoinCollectStageInfo {
+    repeated CoinCollectPlayerInfo player_info_list = 7;
+    uint32 level_id = 4;
+    uint32 play_index = 9;
+}
+

@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "ReunionWatcherInfo.proto";
+
+// Name: GDMLOGBJIGP
+message ReunionMissionInfo {
+    uint32 mission_id = 1;
+    bool is_taken_reward = 4;
+    repeated ReunionWatcherInfo cur_day_watcher_list = 12;
+    uint32 next_refresh_time = 6;
+    repeated bool is_taken_reward_list = 8;
+    bool is_finished = 9;
+    repeated ReunionWatcherInfo watcher_list = 2;
+    uint32 cur_score = 13;
+}
+

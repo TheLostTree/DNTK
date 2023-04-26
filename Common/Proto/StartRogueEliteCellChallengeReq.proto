@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "RogueEliteCellDifficultyType.proto";
+
+// CmdId: 8971
+// Name: AOHCNKLIHDD
+message StartRogueEliteCellChallengeReq {
+    RogueEliteCellDifficultyType difficulty = 12;
+    uint32 dungeon_id = 13;
+    uint32 cell_id = 5;
+}
+

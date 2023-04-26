@@ -1,0 +1,13 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "TaskVar.proto";
+
+// CmdId: 107
+// Name: MCGDLAKBJOC
+message TaskVarNotify {
+    repeated TaskVar task_var_list = 1;
+}
+

@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "CrystalLinkTeamInfo.proto";
+
+// CmdId: 8602
+// Name: FHBKALGPONC
+message CrystalLinkEnterDungeonRsp {
+    uint32 difficulty_id = 1;
+    repeated CrystalLinkTeamInfo team_info_list = 14;
+    int32 retcode = 13;
+    uint32 level_id = 11;
+}
+

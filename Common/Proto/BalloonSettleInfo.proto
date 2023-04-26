@@ -1,0 +1,16 @@
+syntax = "proto3";
+option csharp_namespace = "Common.Protobuf";
+
+option java_package = "catgirl.kirara.moe";
+
+import "OnlinePlayerInfo.proto";
+
+// Name: IMEDIOJHOEL
+message BalloonSettleInfo {
+    uint32 final_score = 4;
+    uint32 uid = 10;
+    OnlinePlayerInfo player_info = 13;
+    uint32 shoot_count = 2;
+    uint32 max_combo = 7;
+}
+
