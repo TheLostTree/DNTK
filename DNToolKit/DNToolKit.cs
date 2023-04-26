@@ -1,6 +1,9 @@
-﻿using DNToolKit.AnimeGame;
+﻿using System.Collections;
+using System.Net.NetworkInformation;
+using DNToolKit.AnimeGame;
 using DNToolKit.Configuration.Models;
 using DNToolKit.Net;
+using SharpPcap.LibPcap;
 
 namespace DNToolKit
 {
@@ -27,7 +30,7 @@ namespace DNToolKit
         /// <param name="config">The <see cref="SniffConfig"/> to setup the packet sniffing internally.</param>
         public DNToolKit(SniffConfig config)
         {
-            _sniffer = new PCapSniffer(config.ChooseInterface,PCapFilter_);
+            _sniffer = new PCapSniffer(PCapFilter_);
             _packetHandler = new AnimeGamePacketHandler(_sniffer, config);
 
             _cts = new CancellationTokenSource();
@@ -35,6 +38,24 @@ namespace DNToolKit
             _packetHandler.PacketReceived += PacketHandler_PacketReceived;
             _packetHandler.KeyNotRecovered += PacketHandler_KeyNotRecovered;
         }
+
+        public DNToolKit(SniffConfig config, PcapInterface @interface)
+        {
+            _sniffer = new PCapSniffer(@interface, PCapFilter_);
+            _packetHandler = new AnimeGamePacketHandler(_sniffer, config);
+
+            _cts = new CancellationTokenSource();
+
+            _packetHandler.PacketReceived += PacketHandler_PacketReceived;
+            _packetHandler.KeyNotRecovered += PacketHandler_KeyNotRecovered;
+        }
+
+        public static IEnumerable<PcapInterface> GetAllNetworkInterfaces()
+        {
+            return PcapInterface.GetAllPcapInterfaces();
+        }
+        
+        
 
         /// <summary>
         /// Runs the async sniffing process indefinitely.
@@ -46,7 +67,14 @@ namespace DNToolKit
 
             _sniffer.Start();
 
-            await Task.Delay(Timeout.Infinite, _cts.Token);
+            try
+            {
+                await Task.Delay(Timeout.Infinite, _cts.Token);
+            }
+            catch (TaskCanceledException e)
+            {
+                //ignore.
+            }
         }
 
         /// <summary>
@@ -61,6 +89,7 @@ namespace DNToolKit
 
             _sniffer.Close();
             _packetHandler.Close();
+            
         }
 
         /// <summary>

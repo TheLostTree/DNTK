@@ -16,13 +16,13 @@ namespace DNToolKit.Net
 
         private LibPcapLiveDevice? _pCapDevice;
         private LinkLayers _layers;
+        private readonly PcapInterface? _pcapInterface;
 
         /// <summary>
         /// Declares, if this instance was already disposed.
         /// </summary>
         public bool IsDisposed { get; private set; }
 
-        private bool choose;
 
         /// <summary>
         /// The event to pass on network packets.
@@ -35,11 +35,17 @@ namespace DNToolKit.Net
         /// <param name="choose">Whether or not the network interface will be automatically determined, or manually chosen.</param>
         /// <param name="filterExpression">The filter to setup the sniffer.</param>
         /// <remarks>Refer to https://www.tcpdump.org/manpages/pcap-filter.7.html for valid filter expression syntax.</remarks>
-        public PCapSniffer(bool choose, string? filterExpression = null)
+        public PCapSniffer(string? filterExpression = null)
         {
-            this.choose = choose;
             _filterExpression = filterExpression;
         }
+        
+        public PCapSniffer(PcapInterface @interface, string? filterExpression = null)
+        {
+            this._pcapInterface = @interface;
+            _filterExpression = filterExpression;
+        }
+        
 
         /// <summary>
         /// Start listening to the first outgoing and ready PCap device available.
@@ -54,8 +60,19 @@ namespace DNToolKit.Net
 
             Log.Information("SharpPcap {Version}, StartLiveCapture", (object)Pcap.SharpPcapVersion);
 
+            if (_pcapInterface is null)
+            {
+                (_pCapDevice, _layers) = ChoosePcapDevice();
+            }
+            else
+            {
+                _pCapDevice = new LibPcapLiveDevice(_pcapInterface);
+                _pCapDevice.Open();
+                _layers = _pCapDevice.LinkType;
+                
+            }
+
             
-            (_pCapDevice, _layers) = choose ? ChoosePcapDevice():GetPcapDevice();
             if (_pCapDevice == null)
                 throw new InvalidOperationException("No PCap device found.");
 
@@ -76,7 +93,6 @@ namespace DNToolKit.Net
         public void Dispose()
         {
             AssertDisposed();
-
             _pCapDevice?.StopCapture();
 
             IsDisposed = true;
