@@ -1,4 +1,5 @@
-﻿using DNToolKit.AnimeGame.Models;
+﻿using Common.Protobuf;
+using DNToolKit.AnimeGame.Models;
 using DNToolKit.Configuration.Models;
 using DNToolKit.Extensions;
 using DNToolKit.Net;
@@ -55,7 +56,7 @@ namespace DNToolKit.AnimeGame
         /// <inheritdoc cref="UdpHandler.ProcessUdpPacket"/>
         protected override void ProcessUdpPacket(UdpPacket packet)
         {
-            var sender = packet.DestinationPort is 22101 or 22102 ? Sender.Client : Sender.Server;
+            var sender = packet.DestinationPort == 22101 || packet.DestinationPort == 22102 ? Sender.Client : Sender.Server;
 
             if (packet.PayloadData.Length == 20)
             {
@@ -103,6 +104,8 @@ namespace DNToolKit.AnimeGame
                         Log.Error("Unhandled Handshake {MagicBytes}", magic);
                         return;
                 }
+
+                return;
             }
 
             switch (sender)

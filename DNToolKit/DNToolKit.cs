@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Net.NetworkInformation;
 using DNToolKit.AnimeGame;
+using DNToolKit.AnimeGame.Crypto;
 using DNToolKit.Configuration.Models;
 using DNToolKit.Net;
 using SharpPcap.LibPcap;
@@ -30,6 +31,7 @@ namespace DNToolKit
         /// <param name="config">The <see cref="SniffConfig"/> to setup the packet sniffing internally.</param>
         public DNToolKit(SniffConfig config)
         {
+            KeyBruteForcer.LoadOldSeeds();
             _sniffer = new PCapSniffer(PCapFilter_);
             _packetHandler = new AnimeGamePacketHandler(_sniffer, config);
 
@@ -41,6 +43,7 @@ namespace DNToolKit
 
         public DNToolKit(SniffConfig config, PcapInterface @interface)
         {
+            KeyBruteForcer.LoadOldSeeds();
             _sniffer = new PCapSniffer(@interface, PCapFilter_);
             _packetHandler = new AnimeGamePacketHandler(_sniffer, config);
 
@@ -83,7 +86,7 @@ namespace DNToolKit
         public void Close()
         {
             _cts.Cancel();
-
+            KeyBruteForcer.StoreOldSeeds();
             _packetHandler.PacketReceived -= PacketHandler_PacketReceived;
             _packetHandler.KeyNotRecovered -= PacketHandler_KeyNotRecovered;
 

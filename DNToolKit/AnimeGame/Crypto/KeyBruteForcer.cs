@@ -5,7 +5,24 @@ namespace DNToolKit.AnimeGame.Crypto
 {
     static class KeyBruteForcer
     {
-        private static readonly List<long> PrevSeeds = new();
+        public static void StoreOldSeeds()
+        {
+            File.WriteAllText("./OLDSEEDS.txt", String.Join("\n",PrevSeeds));
+        }
+
+        public static void LoadOldSeeds()
+        {
+            if (File.Exists("./OLDSEEDS.txt"))
+            {
+                PrevSeeds = File.ReadAllLines("./OLDSEEDS.txt").Select(y=>long.Parse(y)).ToList();
+                while (PrevSeeds.Count > 1000)
+                {
+                    PrevSeeds.Remove(0);
+                }
+                Log.Debug("Loaded {count} old seeds", PrevSeeds.Count);
+            }
+        }
+        private static List<long> PrevSeeds = new();
 
         /// <summary>
         /// Brute force the seed by guessing over the request data.
@@ -17,11 +34,16 @@ namespace DNToolKit.AnimeGame.Crypto
         public static MtKey? BruteForce(byte[] requestData, long sendTime, ulong serverKey)
         {
             // Check against already guessed seeds
+            Log.Debug("Starting bruteforce");
             foreach (var oldSeed in PrevSeeds)
             {
-                var key = Guess(requestData, oldSeed, serverKey, 1000);
+                var key = Guess(requestData, oldSeed, serverKey, 100);
                 if (key != null)
+                {
+                    Log.Debug("Ended bruteforce");
+
                     return key;
+                }
             }
 
             // Check against our arguments with timeStamp offset
@@ -37,16 +59,18 @@ namespace DNToolKit.AnimeGame.Crypto
                 if ((count & 1) > 0)
                     offset = -offset;
 
-                var key = Guess(requestData, sendTime + offset, serverKey, 1000);
+                var key = Guess(requestData, sendTime + offset, serverKey, 100);
                 if (key == null)
                     continue;
 
                 // Save found seed
                 PrevSeeds.Add(sendTime + offset);
+                Log.Debug("Ended bruteforce");
                 return key;
             }
 
             // If we didn't find the correct key
+            Log.Debug("Failed bruteforce");
             return null;
         }
 
