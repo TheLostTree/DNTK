@@ -104,9 +104,9 @@ namespace DNToolKit.AnimeGame
                     _countBruteForce++;
 
                     if (!_tokenReqSendTime.HasValue)
-                        Log.Warning("Did not receive player token send time yet.");
+                        Log.Warning("Did not receive player token send time yet");
                     else if (!_tokenRspServerKey.HasValue)
-                        Log.Warning("Did not receive server key yet.");
+                        Log.Warning("Did not receive server key yet");
                     else
                     {
                         _sessionKey =
@@ -124,7 +124,7 @@ namespace DNToolKit.AnimeGame
                 if (_countBruteForce > 10)
                 {
                     Log.Error(
-                        "Brute forcing has failed {Count} times, so make sure you login on a freshly launched client.",
+                        "Brute forcing has failed {Count} times, so make sure you login on a freshly launched client",
                         _countBruteForce);
                     keyReceived = false;
 
@@ -146,11 +146,11 @@ namespace DNToolKit.AnimeGame
             }
             else if (_sessionKey is null)
             {
-                Log.Warning("Encrypted Packet detected.");
+                Log.Warning("Encrypted Packet detected");
             }
             else
             {
-                Log.Warning("False positive has occurred. Restart the game client and app.");
+                Log.Warning("Old key is now invalid. You may need to restart the game client and app");
                 _sessionKey = null;
             }
         }
@@ -174,7 +174,7 @@ namespace DNToolKit.AnimeGame
             catch (Exception e)
             {
                 Log.Fatal(e,
-                    "Could not parse anime game packet.");
+                    "Could not parse anime game packet");
                 return null;
             }
 
@@ -192,7 +192,7 @@ namespace DNToolKit.AnimeGame
                 tokenRsp);
 
             if (tokenRsp?.ServerRandKey is null)
-                Log.Warning("Failed to receive random server key.");
+                Log.Warning("Failed to receive random server key");
             else
             {
                 var key = ClientPrivate.Decrypt(Convert.FromBase64String(tokenRsp.ServerRandKey),

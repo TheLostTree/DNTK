@@ -162,7 +162,7 @@ namespace DNToolKit.Net
                 }
                 catch (PcapException ex)
                 {
-                    Log.Fatal(ex, "Could not open PCap Device.");
+                    Log.Fatal(ex, "Could not open PCap Device");
                     continue;
                 }
 

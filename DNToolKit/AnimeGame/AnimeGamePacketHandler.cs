@@ -90,7 +90,7 @@ namespace DNToolKit.AnimeGame
                         if (_client is null)
                             break;
 
-                        Log.Information("{Sender} disconnected.", sender);
+                        Log.Information("{Sender} disconnected", sender);
                         Log.Warning("Relaunch your client to continue capturing packets!");
 
                         break;
@@ -100,7 +100,7 @@ namespace DNToolKit.AnimeGame
                         break;
 
                     default:
-                        Log.Error("Unhandled Handshake {MagicBytes}.", magic);
+                        Log.Error("Unhandled Handshake {MagicBytes}", magic);
                         return;
                 }
             }
