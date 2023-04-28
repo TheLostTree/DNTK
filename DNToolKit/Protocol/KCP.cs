@@ -56,9 +56,19 @@ namespace DNToolKit.Protocol
         /// </summary>
         private void ReceiveAll()
         {
+            byte[]? recv;
+            do
+            {
+                recv = Receive();
+                if (recv == null)
+                {
+                    break;
+                }
+                OnMessageReceived(recv);
+            } while (true);
             // Receive and process message, until message is null
-            while (Receive() is { } receivedMessage)
-                OnMessageReceived(receivedMessage);
+            // while (Receive() is { } receivedMessage)
+            //     OnMessageReceived(receivedMessage);
         }
 
         /// <summary>
@@ -67,17 +77,26 @@ namespace DNToolKit.Protocol
         /// <returns></returns>
         private byte[]? Receive()
         {
+            int size;
             lock (_lockObj)
             {
-                var size = _nativeKcp.PeekSize();
-                if (size < 0)
-                    return null;
-
-                var buffer = new byte[size];
-                _nativeKcp.Recv(buffer, 0, buffer.Length);
-
-                return buffer.ToArray();
+                size = _nativeKcp.PeekSize();
             }
+            if (size < 0)
+                return null;
+            var buffer = new byte[size];
+
+            var ret = 0;
+            lock (_lockObj)
+            {
+                ret = _nativeKcp.Recv(buffer, 0, buffer.Length);
+            }
+            // Console.WriteLine("Recv");
+            if (ret < 0)
+            {
+                Console.WriteLine($"ret: {ret}");
+            }
+            return buffer.ToArray();
         }
 
         /// <summary>

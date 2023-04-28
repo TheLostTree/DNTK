@@ -57,7 +57,6 @@ namespace DNToolKit.AnimeGame
         protected override void ProcessUdpPacket(UdpPacket packet)
         {
             var sender = packet.DestinationPort == 22101 || packet.DestinationPort == 22102 ? Sender.Client : Sender.Server;
-
             if (packet.PayloadData.Length == 20)
             {
                 var magic = packet.PayloadData.GetUInt32(0);
@@ -108,16 +107,32 @@ namespace DNToolKit.AnimeGame
                 return;
             }
 
+            var ret = 0;
+
             switch (sender)
             {
                 case Sender.Client when _client is not null:
-                    _client.Input(packet.PayloadData);
+                {
+                    ret = _client.Input(packet.PayloadData);
+                    if (ret != 0)
+                    {
+                        Console.WriteLine($"client input had non 0 ret value: {ret}");
+                    }
+
+                }
                     break;
 
                 case Sender.Server when _server is not null:
-                    _server.Input(packet.PayloadData);
+                {
+                    ret = _server.Input(packet.PayloadData);
+                    if (ret != 0)
+                    {
+                        Console.WriteLine($"server input had non 0 ret value: {ret}");
+                    }
+                }
                     break;
             }
+  
         }
 
         /// <inheritdoc cref="UdpHandler.DisposeInternal"/>

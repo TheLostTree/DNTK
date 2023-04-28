@@ -77,6 +77,7 @@ namespace DNToolKit.Net
                 throw new InvalidOperationException("No PCap device found.");
 
             StartCapture(_pCapDevice);
+            Console.WriteLine("after capture");
         }
 
         /// <summary>

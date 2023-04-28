@@ -89,6 +89,7 @@ namespace DNToolKit.AnimeGame
             out bool keyReceived)
         {
             keyReceived = true;
+            // Console.WriteLine(sender.ToString());
 
             if (!_useSessionKey)
             {
