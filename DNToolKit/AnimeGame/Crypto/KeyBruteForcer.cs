@@ -40,7 +40,7 @@ namespace DNToolKit.AnimeGame.Crypto
                 var key = Guess(requestData, oldSeed, serverKey, 100);
                 if (key != null)
                 {
-                    Log.Debug("Ended bruteforce");
+                    Log.Information("Ended bruteforce");
 
                     return key;
                 }
@@ -48,6 +48,7 @@ namespace DNToolKit.AnimeGame.Crypto
 
             // Check against our arguments with timeStamp offset
             // Effective range of the loop is -1499..1499
+            // erm if your ping is above 1 second you're having larger issues lmao
             for (var count = 0; count < 3000; count++)
             {
                 // Special case: 1 would result in 0 again, which we already checked for count = 0
@@ -59,13 +60,15 @@ namespace DNToolKit.AnimeGame.Crypto
                 if ((count & 1) > 0)
                     offset = -offset;
 
-                var key = Guess(requestData, sendTime + offset, serverKey, 100);
+                // this gives us a hard limit of 50 relogs, but its also nice to cap the maximum bruteforces to 3000 * 50
+                var key = Guess(requestData, sendTime + offset, serverKey, 50);
                 if (key == null)
                     continue;
 
                 // Save found seed
                 PrevSeeds.Add(sendTime + offset);
-                Log.Debug("Ended bruteforce");
+                StoreOldSeeds();
+                Log.Information("Ended bruteforce");
                 return key;
             }
 

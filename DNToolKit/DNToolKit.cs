@@ -86,7 +86,6 @@ namespace DNToolKit
         public void Close()
         {
             _cts.Cancel();
-            KeyBruteForcer.StoreOldSeeds();
             _packetHandler.PacketReceived -= PacketHandler_PacketReceived;
             _packetHandler.KeyNotRecovered -= PacketHandler_KeyNotRecovered;
 
