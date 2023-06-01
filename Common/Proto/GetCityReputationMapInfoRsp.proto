@@ -1,16 +1,28 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
-
-// CmdId: 2812
-// Name: LKBDHDEIKGI
+option java_package = "emu.grasscutter.net.proto";
+// CmdId: 2821
+// Obf: FOCHOIHCBHJ
 message GetCityReputationMapInfoRsp {
-    int32 retcode = 11;
-    repeated uint32 EDAOAKIHGDE = 7;
-    repeated uint32 PBGGOGLHINL = 8;
-    bool MDAOIPDBBLN = 4;
-    bool KOIGFJPNDIO = 1;
+	bool NNJLDLAOPIE = 10;
+	int32 retcode = 4;
+	repeated uint32 BNOMCHCNPFP = 15;
+	repeated uint32 JCBEMEPIHGH = 14;
+	bool JGAFDIAMBKO = 8;
 }
-

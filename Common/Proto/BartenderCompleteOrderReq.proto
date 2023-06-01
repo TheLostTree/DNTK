@@ -1,19 +1,31 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
+option java_package = "emu.grasscutter.net.proto";
 import "ItemParam.proto";
-
-// CmdId: 8671
-// Name: IEEAGCKDJAA
+// CmdId: 8107
+// Obf: DMOJHANFDAB
 message BartenderCompleteOrderReq {
-    uint32 MJABGHGABFH = 9;
-    uint32 quest_id = 5;
-    uint32 HAPFNEIHHPP = 6;
-    bool is_view_formula = 14;
-    repeated ItemParam item_list = 12;
-    repeated uint32 optional_order_list = 7;
-    uint32 MOBMFDJLHKD = 11;
+	uint32 OIBFDJOINLD = 3;
+	uint32 GAPDCJGFION = 7;
+	uint32 NJHLGJPCJJP = 10;
+	repeated uint32 optional_order_list = 2;
+	bool is_view_formula = 4;
+	uint32 quest_id = 8;
+	repeated ItemParam item_list = 13;
 }
-

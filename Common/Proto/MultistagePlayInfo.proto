@@ -1,39 +1,51 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
-import "BrickBreakerStageInfo.proto";
-import "CharAmusementInfo.proto";
-import "CoinCollectStageInfo.proto";
-import "FleurFairV2PacmanStageInfo.proto";
+option java_package = "emu.grasscutter.net.proto";
+import "InBattleMechanicusInfo.proto";
+import "InBattleFleurFairInfo.proto";
 import "HideAndSeekStageInfo.proto";
 import "InBattleChessInfo.proto";
-import "InBattleFleurFairInfo.proto";
 import "InBattleIrodoriChessInfo.proto";
-import "InBattleMechanicusInfo.proto";
+import "CharAmusementInfo.proto";
+import "BrickBreakerStageInfo.proto";
+import "CoinCollectStageInfo.proto";
 import "LanV3BoatStageInfo.proto";
-
-// Name: MIKMHOPIOEH
+import "FleurFairV2PacmanStageInfo.proto";
+// Obf: ONMCDEPPIOB
 message MultistagePlayInfo {
-    uint32 begin_time = 1;
-    uint32 stage_type = 4;
-    uint32 play_index = 10;
-    uint32 group_id = 3;
-    uint32 stage_index = 2;
-    uint32 duration = 13;
-    uint32 play_type = 11;
-    oneof detail {
-        InBattleMechanicusInfo mechanicus_info = 126;
-        InBattleFleurFairInfo fleur_fair_info = 604;
-        HideAndSeekStageInfo hide_and_seek_info = 1873;
-        InBattleChessInfo chess_info = 167;
-        InBattleIrodoriChessInfo irodori_chess_info = 1680;
-        CharAmusementInfo char_amusement_info = 193;
-        BrickBreakerStageInfo brick_breaker_info = 1784;
-        CoinCollectStageInfo coin_collect_info = 1813;
-        LanV3BoatStageInfo lan_v3_boat_info = 1754;
-        FleurFairV2PacmanStageInfo fleur_fair_v2_pacman_info = 1281;
-    }
+	uint32 group_id = 14;
+	uint32 stage_type = 8;
+	uint32 stage_index = 1;
+	uint32 duration = 11;
+	uint32 begin_time = 9;
+	uint32 play_index = 13;
+	uint32 play_type = 4;
+	oneof detail {
+		InBattleMechanicusInfo mechanicus_info = 1751;
+		InBattleFleurFairInfo fleur_fair_info = 1630;
+		HideAndSeekStageInfo hide_and_seek_info = 216;
+		InBattleChessInfo chess_info = 849;
+		InBattleIrodoriChessInfo irodori_chess_info = 2011;
+		CharAmusementInfo char_amusement_info = 1538;
+		BrickBreakerStageInfo brick_breaker_info = 903;
+		CoinCollectStageInfo coin_collect_info = 1102;
+		LanV3BoatStageInfo lan_v3_boat_info = 1033;
+		FleurFairV2PacmanStageInfo fleur_fair_v2_pacman_info = 2006;
+	}
 }
-

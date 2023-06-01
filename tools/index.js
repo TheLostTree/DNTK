@@ -2,6 +2,16 @@ const fs = require('fs');
 
 
 const proto_path = process.argv[2];
+
+// const proto_source = `${proto_path}/translated/protos`
+// const proto_ids_source = `${proto_path}/translated/packetIds.json`;
+
+// beach-simulator
+const proto_source = `${proto_path}/proto`
+const proto_ids_source = `${proto_path}/packetIds.json`;
+
+
+
 /**
  * assuming directory structure is like this:
  * /raw
@@ -15,7 +25,7 @@ function createOpcodeCsFile(){
     str += `public enum Opcode {\n`
     str += `    None = 0,\n`
 
-    const packetIds = JSON.parse(fs.readFileSync(`${proto_path}/translated/packetIds.json`));
+    const packetIds = JSON.parse(fs.readFileSync(proto_ids_source));
     for (const key in packetIds) {
         str += `    ${packetIds[key]} = ${key},\n`
     }
@@ -78,7 +88,6 @@ function copyAllProtos(){
 
     const includes = []
 
-    const proto_source = `${proto_path}/translated/protos`
     fs.readdirSync(proto_source).forEach(file => {
         if(file.endsWith(".proto")){
             protolist.push(file.split("/").pop())

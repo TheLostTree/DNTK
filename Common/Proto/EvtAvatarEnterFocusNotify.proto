@@ -1,26 +1,38 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
+option java_package = "emu.grasscutter.net.proto";
 import "ForwardType.proto";
 import "Vector.proto";
-
-// CmdId: 351
-// Name: CDBHOGIJIEF
+// CmdId: 324
+// Obf: LHHIJEAFFNB
 message EvtAvatarEnterFocusNotify {
-    bool BPBFKLKHLBF = 8;
-    uint32 entity_id = 2;
-    bool NFBFOBPLJIO = 4;
-    bool JIEAFLOFIDP = 11;
-    bool CBILFPIHDLD = 13;
-    bool DJBCKOHEPIN = 1;
-    bool BONKCNJNKHC = 9;
-    bool PJOMNBJGCGO = 12;
-    bool KNGIHBNEEBA = 7;
-    ForwardType forward_type = 15;
-    Vector focus_forward = 10;
-    bool DDMCNCCKAFP = 14;
-    bool NAABHFBGGEA = 5;
+	bool AIHLHJDNABL = 10;
+	bool GJICOMNALAJ = 11;
+	bool NJJKKALMBEK = 6;
+	uint32 entity_id = 8;
+	bool ACGEHPLHPOH = 15;
+	bool IAMBNGGFPOH = 14;
+	bool JEMNEGDJHAH = 12;
+	bool IELOLHMPNFD = 4;
+	ForwardType forward_type = 3;
+	bool HNGPEEDNPHJ = 2;
+	bool IDLCLDEFJFP = 5;
+	bool CGJEBFFOOCF = 9;
+	Vector focus_forward = 7;
 }
-

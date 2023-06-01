@@ -1,22 +1,34 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
+option java_package = "emu.grasscutter.net.proto";
 import "ExhibitionDisplayInfo.proto";
 import "LanV3BoatSettleInfo.proto";
-
-// CmdId: 6598
-// Name: OIOFGAJIDIH
+// CmdId: 6554
+// Obf: LBILBIGNGPH
 message LanV3BoatSettleNotify {
-    uint32 duration = 13;
-    uint32 begin_time = 5;
-    repeated LanV3BoatSettleInfo settle_info_list = 15;
-    repeated ExhibitionDisplayInfo score_list = 11;
-    bool is_single = 14;
-    uint32 stage_type = 12;
-    uint32 play_index = 1;
-    repeated uint32 winner_uid_list = 3;
-    bool is_gallery_succ = 7;
+	repeated uint32 winner_uid_list = 10;
+	uint32 play_index = 1;
+	uint32 stage_type = 9;
+	uint32 begin_time = 2;
+	repeated ExhibitionDisplayInfo score_list = 15;
+	bool is_single = 6;
+	uint32 duration = 14;
+	bool FIABGADCHAH = 11;
+	repeated LanV3BoatSettleInfo settle_info_list = 8;
 }
-

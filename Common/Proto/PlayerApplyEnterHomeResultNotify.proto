@@ -1,28 +1,40 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
-
-// CmdId: 4832
-// Name: DJEBHJDBGDL
+option java_package = "emu.grasscutter.net.proto";
+// CmdId: 4694
+// Obf: IKAOKIFHNFH
 message PlayerApplyEnterHomeResultNotify {
-    // Name: BCGCCCFDCHL
-    enum Reason {
-        PLAYER_JUDGE = 0;
-        PLAYER_ENTER_OPTION_REFUSE = 1;
-        PLAYER_ENTER_OPTION_DIRECT = 2;
-        SYSTEM_JUDGE = 3;
-        HOST_IN_MATCH = 4;
-        PS_PLAYER_NOT_ACCEPT_OTHERS = 5;
-        OPEN_STATE_NOT_OPEN = 6;
-        HOST_IN_EDIT_MODE = 7;
-        PRIOR_CHECK = 8;
-    }
-
-    bool is_agreed = 1;
-    uint32 target_uid = 14;
-    Reason reason = 2;
-    string target_nickname = 13;
+	// Obf: AFNGLAAINEF
+	enum Reason {
+		PLAYER_JUDGE = 0;
+		PLAYER_ENTER_OPTION_REFUSE = 1;
+		PLAYER_ENTER_OPTION_DIRECT = 2;
+		SYSTEM_JUDGE = 3;
+		HOST_IN_MATCH = 4;
+		PS_PLAYER_NOT_ACCEPT_OTHERS = 5;
+		OPEN_STATE_NOT_OPEN = 6;
+		HOST_IN_EDIT_MODE = 7;
+		PRIOR_CHECK = 8;
+	}
+	
+	bool is_agreed = 8;
+	Reason reason = 12;
+	uint32 target_uid = 10;
+	string target_nickname = 5;
 }
-

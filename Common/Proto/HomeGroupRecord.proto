@@ -1,21 +1,33 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
-import "HomeBalloonRecord.proto";
+option java_package = "emu.grasscutter.net.proto";
 import "HomeRacingRecord.proto";
-import "HomeSeekFurnitureAllRecord.proto";
+import "HomeBalloonRecord.proto";
 import "HomeStakeRecord.proto";
-
-// Name: PEKCNIEFEPH
+import "HomeSeekFurnitureAllRecord.proto";
+// Obf: BDLOJCGKBBH
 message HomeGroupRecord {
-    uint32 group_id = 10;
-    oneof detail {
-        HomeRacingRecord racing_gallery_info = 388;
-        HomeBalloonRecord balloon_gallery_info = 1949;
-        HomeStakeRecord stake_play_info = 748;
-        HomeSeekFurnitureAllRecord seek_furniture_gallery_info = 1996;
-    }
+	uint32 group_id = 13;
+	oneof detail {
+		HomeRacingRecord racing_gallery_info = 1583;
+		HomeBalloonRecord balloon_gallery_info = 1466;
+		HomeStakeRecord stake_play_info = 1887;
+		HomeSeekFurnitureAllRecord seek_furniture_gallery_info = 696;
+	}
 }
-

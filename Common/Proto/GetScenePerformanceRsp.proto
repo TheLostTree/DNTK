@@ -1,21 +1,33 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
+option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-
-// CmdId: 3454
-// Name: CFIGKJKFEKO
+// CmdId: 3082
+// Obf: BIMLDBJFABH
 message GetScenePerformanceRsp {
-    uint32 LJCBJLEAKJF = 7;
-    uint32 DMEEGEIMBDB = 2;
-    uint32 BFIIPKLKFCK = 15;
-    int32 retcode = 4;
-    uint32 JEGLKPIKBLJ = 3;
-    uint32 HDNCFOKNHEF = 14;
-    uint32 EDFGDFFFLKO = 8;
-    uint32 HLGMNFHKIDA = 5;
-    Vector pos = 11;
+	int32 retcode = 13;
+	uint32 JHINOOICAJM = 12;
+	uint32 HGJLDHOJLJJ = 6;
+	uint32 PGFLPDCCPMF = 10;
+	uint32 BHKAFKKOANC = 3;
+	uint32 NNEDOHGOGML = 14;
+	Vector pos = 8;
+	uint32 OEJLPKPBOIO = 1;
+	uint32 BPNLPLOGNKB = 5;
 }
-

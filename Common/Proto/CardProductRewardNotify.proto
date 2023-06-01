@@ -1,14 +1,26 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
-
-// CmdId: 4149
-// Name: FGEMJEBIEBF
+option java_package = "emu.grasscutter.net.proto";
+// CmdId: 4121
+// Obf: JJGBMKJCINL
 message CardProductRewardNotify {
-    uint32 MLKHDJPCJLG = 8;
-    uint32 OKKCPKEGAJF = 1;
-    string product_id = 12;
+	uint32 hcoin = 11;
+	string product_id = 8;
+	uint32 remain_days = 10;
 }
-

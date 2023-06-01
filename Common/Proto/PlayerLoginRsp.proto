@@ -1,50 +1,62 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
-import "BlockInfo.proto";
+option java_package = "emu.grasscutter.net.proto";
 import "FeatureBlockInfo.proto";
-import "ResVersionConfig.proto";
 import "ShortAbilityHashPair.proto";
-
-// CmdId: 176
-// Name: DKIPBAAHKJM
+import "ResVersionConfig.proto";
+import "BlockInfo.proto";
+// CmdId: 172
+// Obf: EGNJOBMKBHK
 message PlayerLoginRsp {
-    int32 ability_hash_code = 4;
-    bytes sc_info = 858;
-    string country_code = 286;
-    repeated ShortAbilityHashPair short_ability_hash_map = 401;
-    string client_version_suffix = 309;
-    string client_silence_md5 = 1149;
-    bool is_data_need_relogin = 1063;
-    bool HKINPODGHHH = 2;
-    ResVersionConfig res_version_config = 1241;
-    bool is_sc_open = 242;
-    uint32 DCFPMMCBEAD = 6;
-    map<string, int32> ability_hash_map = 11;
-    bool is_transfer = 1162;
-    uint32 client_data_version = 10;
-    repeated FeatureBlockInfo feature_block_info_list = 1613;
-    double total_tick_time = 1940;
-    string client_silence_version_suffix = 889;
-    ResVersionConfig next_res_version_config = 670;
-    bool FCJHOMPHEON = 741;
-    string register_cps = 1152;
-    int32 retcode = 5;
-    string game_biz = 3;
-    bool is_use_ability_hash = 15;
-    bool FLEDDLEFFLK = 1257;
-    uint64 login_rand = 1;
-    string birthday = 1129;
-    bool is_audit = 461;
-    string client_md5 = 625;
-    bool BJLCFHHIGJD = 8;
-    uint32 client_silence_data_version = 9;
-    uint32 FMOKLFNAOOK = 892;
-    bytes JLDGJOPFALG = 7;
-    string next_resource_url = 300;
-    uint32 target_uid = 12;
-    map<uint32, BlockInfo> block_info_map = 771;
+	int32 retcode = 15;
+	string next_resource_url = 163;
+	int32 ability_hash_code = 14;
+	string client_version_suffix = 1903;
+	bool NENMBLFJAMC = 7;
+	bytes sc_info = 136;
+	string client_md5 = 715;
+	string game_biz = 10;
+	repeated FeatureBlockInfo feature_block_info_list = 114;
+	uint32 target_uid = 1;
+	string register_cps = 1149;
+	repeated ShortAbilityHashPair short_ability_hash_map = 130;
+	bool is_use_ability_hash = 11;
+	bool is_transfer = 705;
+	bool ALCEGKPMOHB = 902;
+	bool is_audit = 997;
+	ResVersionConfig res_version_config = 1912;
+	ResVersionConfig next_res_version_config = 915;
+	string client_silence_version_suffix = 702;
+	uint32 target_home_owner_uid = 1909;
+	string client_silence_md5 = 1123;
+	map<uint32, BlockInfo> block_info_map = 834;
+	bool is_sc_open = 1908;
+	map<string, int32> ability_hash_map = 8;
+	bool is_data_need_relogin = 252;
+	bool GIKDHIDHBEE = 1209;
+	uint64 login_rand = 9;
+	string birthday = 383;
+	double total_tick_time = 903;
+	string country_code = 1280;
+	uint32 client_data_version = 4;
+	bytes player_data = 3;
+	bool GPMHJGJLAFH = 13;
+	uint32 client_silence_data_version = 6;
+	uint32 player_data_version = 2;
 }
-

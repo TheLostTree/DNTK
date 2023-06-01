@@ -1,28 +1,40 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
+option java_package = "emu.grasscutter.net.proto";
 import "ChapterState.proto";
-
-// CmdId: 475
-// Name: JKMGOFOBNBC
+// CmdId: 416
+// Obf: CLNHLPJKIHO
 message ChapterStateNotify {
-    // Name: PBMHNPFBBOI
-    message PBMHNPFBBOI {
-        bool HJHDAHFJGBM = 15;
-        uint32 IOOFCEKCNLP = 5;
-    }
-
-    // Name: EHMGNAPJJJO
-    message EHMGNAPJJJO {
-        uint32 OBBEJICFPIC = 6;
-        bool HJHDAHFJGBM = 4;
-    }
-
-    ChapterState chapter_state = 13;
-    PBMHNPFBBOI NCCCEAHMHHB = 3;
-    uint32 chapter_id = 15;
-    EHMGNAPJJJO EIPKJBGKGKE = 11;
+	// Obf: NNBEJPGCIMD
+	message NeedPlayerLevel {
+		bool is_limit = 8;
+		uint32 configNeedPlayerLevel = 1;
+	}
+	
+	// Obf: HDPCHNPCKLP
+	message NeedBeginTime {
+		uint32 configNeedBeginTime = 4;
+		bool is_limit = 7;
+	}
+	
+	uint32 chapter_id = 9;
+	NeedBeginTime need_begin_time = 13;
+	NeedPlayerLevel need_player_level = 1;
+	ChapterState chapter_state = 14;
 }
-

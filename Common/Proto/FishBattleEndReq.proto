@@ -1,15 +1,27 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
+option java_package = "emu.grasscutter.net.proto";
 import "FishBattleResult.proto";
-
-// CmdId: 5831
-// Name: EGHHKBCHAML
+// CmdId: 5801
+// Obf: ANHKGPOJDEF
 message FishBattleEndReq {
-    uint32 max_bonus_time = 15;
-    bool is_always_bonus = 2;
-    FishBattleResult battle_result = 12;
+	uint32 max_bonus_time = 12;
+	FishBattleResult battle_result = 9;
+	bool is_always_bonus = 10;
 }
-

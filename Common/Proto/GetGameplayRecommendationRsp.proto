@@ -1,21 +1,33 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
-import "GameplayRecommendationElementReliquaryResponse.proto";
-import "GameplayRecommendationReliquaryResponse.proto";
+option java_package = "emu.grasscutter.net.proto";
 import "GameplayRecommendationSkillResponse.proto";
-
-// CmdId: 102
-// Name: DLPNPDBPINP
+import "GameplayRecommendationReliquaryResponse.proto";
+import "GameplayRecommendationElementReliquaryResponse.proto";
+// CmdId: 150
+// Obf: MJABCIDLGDE
 message GetGameplayRecommendationRsp {
-    int32 retcode = 8;
-    uint32 avatar_id = 11;
-    oneof detail {
-        GameplayRecommendationSkillResponse skill_response = 645;
-        GameplayRecommendationReliquaryResponse reliquary_response = 1180;
-        GameplayRecommendationElementReliquaryResponse element_reliquary_response = 1053;
-    }
+	uint32 avatar_id = 4;
+	int32 retcode = 15;
+	oneof detail {
+		GameplayRecommendationSkillResponse skill_response = 516;
+		GameplayRecommendationReliquaryResponse reliquary_response = 731;
+		GameplayRecommendationElementReliquaryResponse element_reliquary_response = 1452;
+	}
 }
-

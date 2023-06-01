@@ -1,19 +1,31 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
-
-// CmdId: 22893
-// Name: PBOPMKIDBCL
+option java_package = "emu.grasscutter.net.proto";
+// CmdId: 24404
+// Obf: FNOHLKCCFJK
 message FungusCultivateReq {
-    uint32 KPCKFJFNJLM = 10;
-    uint32 CKOKHJBFAKG = 3;
-    uint32 EFJPMNAGMAF = 14;
-    uint32 OALPEBPOMON = 11;
-    uint32 time = 9;
-    uint32 OPMEPHFKKAP = 7;
-    uint32 DECDFPACMCD = 12;
-    uint32 cultivate_id = 6;
+	uint32 cultivate_id = 8;
+	uint32 time = 2;
+	uint32 OKFNJNAKHKF = 10;
+	uint32 HHOHEFDDBLG = 15;
+	uint32 COEDEMAFPMM = 5;
+	uint32 BMOLOBMLFCK = 11;
+	uint32 KHDKLIJEJEG = 7;
+	uint32 CNGHBGNKCMP = 12;
 }
-

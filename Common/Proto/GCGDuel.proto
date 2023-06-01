@@ -1,39 +1,52 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
-import "AKPPCGEACLE.proto";
-import "GCGCard.proto";
-import "GCGControllerShowInfo.proto";
+option java_package = "emu.grasscutter.net.proto";
 import "GCGCostReviseInfo.proto";
-import "GCGDuelChallenge.proto";
-import "GCGGameBusinessType.proto";
-import "GCGMessagePack.proto";
+import "GCGControllerShowInfo.proto";
 import "GCGPhase.proto";
+import "GCGCard.proto";
+import "GCGMessagePack.proto";
+import "GCGDuelChallenge.proto";
 import "GCGPlayerField.proto";
+import "LABBALOFHKB.proto";
+import "GCEGEJJDGFK.proto";
 import "GCGPVEIntention.proto";
-
-// Name: MLBIGMHGJJB
+// Obf: FNAMGMOEEKI
 message GCGDuel {
-    GCGCostReviseInfo cost_revise = 4;
-    repeated AKPPCGEACLE JGFGPJCHMCB = 625;
-    repeated GCGMessagePack history_msg_pack_list = 971;
-    repeated GCGPVEIntention intetion_list = 7;
-    uint32 game_id = 12;
-    uint32 GDIFDLBCPLK = 1;
-    uint32 server_seq = 9;
-    repeated GCGCard history_card_list = 1773;
-    uint32 CDDPINAKOLH = 11;
-    repeated uint32 card_id_list = 3;
-    GCGGameBusinessType business_type = 10;
-    repeated GCGCard card_list = 5;
-    uint32 round = 2;
-    repeated GCGControllerShowInfo show_info_list = 6;
-    GCGPhase phase = 13;
-    repeated uint32 forbid_finish_challenge_list = 1263;
-    repeated GCGDuelChallenge challenge_list = 460;
-    uint32 controller_id = 14;
-    repeated GCGPlayerField field_list = 15;
+	uint32 IGBDLCDGMGB = 1;
+	uint32 server_seq = 4;
+	GCGCostReviseInfo cost_revise = 13;
+	uint32 OPGBGHPHELB = 12;
+	repeated GCGControllerShowInfo show_info_list = 5;
+	uint32 JGNDHJOKELK = 10;
+	uint32 round = 2;
+	GCGPhase phase = 9;
+	repeated GCGCard LDNDHKJNFKJ = 1602;
+	repeated GCGMessagePack history_msg_pack_list = 406;
+	repeated GCGDuelChallenge challenge_list = 951;
+	repeated GCGPlayerField field_list = 15;
+	LABBALOFHKB LNPHMHEEEOL = 3;
+	uint32 controller_id = 8;
+	repeated GCGPlayerField LJMAMCMEJLP = 39;
+	repeated uint32 card_id_list = 11;
+	repeated GCGCard card_list = 7;
+	repeated GCEGEJJDGFK NIHEEDJFPFH = 323;
+	repeated uint32 CGOPKBDOOFH = 487;
+	repeated GCGPVEIntention intetion_list = 6;
 }
-

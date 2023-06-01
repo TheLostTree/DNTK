@@ -1,22 +1,34 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
+option java_package = "emu.grasscutter.net.proto";
 import "ShopCardProduct.proto";
-import "ShopConcertProduct.proto";
-import "ShopGoods.proto";
 import "ShopMcoinProduct.proto";
-
-// Name: BINOGFMKKJO
+import "ShopGoods.proto";
+import "ShopConcertProduct.proto";
+// Obf: JBIFADEKOFE
 message Shop {
-    repeated ShopGoods goods_list = 1;
-    uint32 shop_type = 6;
-    repeated ShopCardProduct card_product_list = 13;
-    uint32 city_id = 14;
-    uint32 next_refresh_time = 9;
-    repeated ShopConcertProduct concert_product_list = 3;
-    repeated ShopMcoinProduct mcoin_product_list = 5;
-    uint32 city_reputation_level = 4;
+	uint32 next_refresh_time = 2;
+	repeated ShopCardProduct card_product_list = 1;
+	uint32 shop_type = 5;
+	repeated ShopMcoinProduct mcoin_product_list = 14;
+	uint32 city_id = 8;
+	repeated ShopGoods goods_list = 7;
+	uint32 city_reputation_level = 10;
+	repeated ShopConcertProduct concert_product_list = 6;
 }
-

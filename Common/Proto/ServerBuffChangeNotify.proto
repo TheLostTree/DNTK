@@ -1,23 +1,35 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
+option java_package = "emu.grasscutter.net.proto";
 import "ServerBuff.proto";
-
-// CmdId: 334
-// Name: DPDLNPHNOME
+// CmdId: 323
+// Obf: LACOIJCBPHJ
 message ServerBuffChangeNotify {
-    // Name: JEMLILGEABH
-    enum ServerBuffChangeType {
-        ADD_SERVER_BUFF = 0;
-        DEL_SERVER_BUFF = 1;
-    }
-
-    repeated uint64 avatar_guid_list = 6;
-    bool is_creature_buff = 7;
-    repeated ServerBuff server_buff_list = 9;
-    ServerBuffChangeType server_buff_change_type = 15;
-    repeated uint32 entity_id_list = 13;
+	// Obf: OKJGNGFMJGH
+	enum ServerBuffChangeType {
+		SERVER_BUFF_CHANGE_TYPE_ADD_SERVER_BUFF = 0;
+		SERVER_BUFF_CHANGE_TYPE_DEL_SERVER_BUFF = 1;
+	}
+	
+	repeated ServerBuff server_buff_list = 5;
+	repeated uint64 avatar_guid_list = 12;
+	bool is_creature_buff = 7;
+	ServerBuffChangeType server_buff_change_type = 3;
+	repeated uint32 entity_id_list = 9;
 }
-

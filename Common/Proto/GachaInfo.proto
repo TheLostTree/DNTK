@@ -1,37 +1,49 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
+option java_package = "emu.grasscutter.net.proto";
 import "GachaUpInfo.proto";
-
-// Name: INCDGNIDDAE
+// Obf: HNNEGNIHGED
 message GachaInfo {
-    uint32 FBILBJNNIKE = 578;
-    uint32 BIPHOPJBNHC = 9;
-    uint32 FBIDPNFLBJL = 7;
-    string OMGFPIJPPGH = 3;
-    uint32 PELOHDIKFAM = 316;
-    uint32 begin_time = 1;
-    uint32 DINELKJLAPI = 4;
-    uint32 end_time = 10;
-    uint32 JICLMBKMGCG = 12;
-    string PEFGGCAMAJE = 908;
-    uint32 OKKJEHDBIHK = 11;
-    uint32 schedule_id = 13;
-    uint32 KKDFKKEMEBA = 2003;
-    string JAHGGIJLMCD = 883;
-    string FGLBHLDAFAM = 15;
-    repeated GachaUpInfo gacha_up_info_list = 771;
-    string LAMBGJLFDCN = 8;
-    string AMGOIFHFKIE = 1371;
-    repeated uint32 LANKFGHJJEB = 793;
-    bool is_new_wish = 1748;
-    uint32 gacha_type = 6;
-    uint32 DKCIEKFPMCG = 5;
-    uint32 EAGFIDHCDPD = 14;
-    uint32 KDFPKENAIOJ = 1986;
-    repeated uint32 LIBFHKDFHLG = 565;
-    string DACBIMFIOFO = 2;
+	uint32 gachaTimesLimit = 13;
+	string gachaPrefabPath = 3;
+	bool is_new_wish = 901;
+	string titleTextmap = 1378;
+	uint32 wishMaxProgress = 218;
+	uint32 leftGachaTimes = 7;
+	repeated uint32 displayUp4ItemList = 21;
+	string gachaProbUrl = 1;
+	uint32 curScheduleDailyGachaTimes = 1818;
+	uint32 wishItemId = 1593;
+	string gachaRecordUrlOversea = 1379;
+	uint32 schedule_id = 10;
+	uint32 wishProgress = 1219;
+	string gachaPreviewPrefabPath = 5;
+	uint32 tenCostItemNum = 4;
+	uint32 gachaSortId = 15;
+	repeated GachaUpInfo gacha_up_info_list = 1530;
+	uint32 end_time = 9;
+	uint32 tenCostItemId = 8;
+	uint32 costItemId = 2;
+	uint32 gachaType = 6;
+	uint32 begin_time = 12;
+	repeated uint32 displayUp5ItemList = 1273;
+	string gachaRecordUrl = 11;
+	string gachaProbUrlOversea = 1326;
+	uint32 costItemNum = 14;
 }
-

@@ -1,28 +1,40 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
-import "FishBattleResult.proto";
+option java_package = "emu.grasscutter.net.proto";
 import "ItemParam.proto";
-
-// CmdId: 5821
-// Name: IKIGLFPJABI
+import "FishBattleResult.proto";
+// CmdId: 5842
+// Obf: HMIGHNHCFGK
 message FishBattleEndRsp {
-    // Name: BAOFMDDOHHC
-    enum FishNoRewardReason {
-        FISH_NO_REWARD_NONE = 0;
-        FISH_NO_REWARD_ACTIVITY_LIMIT = 1;
-        FISH_NO_REWARD_BAG_LIMIT = 2;
-        FISH_NO_REWARD_POOL_LIMIT = 3;
-    }
-
-    bool is_got_reward = 7;
-    FishNoRewardReason no_reward_reason = 10;
-    repeated ItemParam reward_item_list = 9;
-    repeated ItemParam EGKGIDNNNLG = 13;
-    repeated ItemParam GJCMOFAMKLA = 4;
-    int32 retcode = 11;
-    FishBattleResult battle_result = 12;
+	// Obf: PGBJLBLAHGB
+	enum FishNoRewardReason {
+		FISH_NO_REWARD_NONE = 0;
+		FISH_NO_REWARD_ACTIVITY_LIMIT = 1;
+		FISH_NO_REWARD_BAG_LIMIT = 2;
+		FISH_NO_REWARD_POOL_LIMIT = 3;
+	}
+	
+	repeated ItemParam LBPLLDKBLEA = 14;
+	FishNoRewardReason no_reward_reason = 10;
+	bool is_got_reward = 12;
+	int32 retcode = 4;
+	FishBattleResult battle_result = 5;
+	repeated ItemParam ODDGKMGMOGO = 13;
+	repeated ItemParam reward_item_list = 1;
 }
-

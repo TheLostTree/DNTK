@@ -1,18 +1,30 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
-
-// CmdId: 2490
-// Name: DOOOMKLOHOB
+option java_package = "emu.grasscutter.net.proto";
+// CmdId: 2475
+// Obf: JGALMNICNFO
 message TowerBriefDataNotify {
-    uint32 MDANKJCGMIN = 4;
-    uint32 EBEDFHGAGEA = 14;
-    uint32 DPKOCIDIHEI = 1;
-    uint32 EDGJPPKNHJE = 8;
-    bool is_finished_entrance_floor = 11;
-    uint32 HNOACOEEGMH = 6;
-    uint32 IHAJGIFPGAI = 5;
+	uint32 KKHFBLDICMJ = 6;
+	uint32 next_schedule_change_time = 9;
+	bool is_finished_entrance_floor = 3;
+	uint32 schedule_start_time = 5;
+	uint32 tower_schedule_id = 14;
+	uint32 BCHDECHFOAA = 2;
+	uint32 HECMGJCDAOA = 7;
 }
-

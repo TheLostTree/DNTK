@@ -1,29 +1,41 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
-
-// CmdId: 8512
-// Name: HKPCJMACGEA
+option java_package = "emu.grasscutter.net.proto";
+// CmdId: 8397
+// Obf: PLCOHKGFGLK
 message MusicGameSettleReq {
-    uint32 score = 15;
-    uint32 LFBNPBMNLKD = 7;
-    uint32 max_combo = 2;
-    uint32 HDOIBKCMFPK = 1291;
-    uint32 correct_hit = 9;
-    bool JBDMHEJEGIB = 23;
-    uint32 PDAEMLNANJB = 599;
-    bool JGNMPPLDBON = 878;
-    uint64 ugc_guid = 8;
-    bool is_save_score = 6;
-    uint32 AHGFEMANIFF = 1415;
-    uint32 CNAJIGJCBAA = 12;
-    uint32 NGCEDFEHHIM = 5;
-    float speed = 161;
-    uint32 combo = 1;
-    uint32 music_basic_id = 14;
-    repeated uint32 DLGEHGGHDAI = 491;
-    repeated uint32 IENNECCNIFA = 4;
+	uint32 JHFIMHMILJG = 3;
+	bool ONEIFPCDHFM = 1878;
+	repeated uint32 FEHHLANOBJP = 1;
+	uint32 correct_hit = 8;
+	uint32 OBBNAPAKNCM = 10;
+	uint32 OOIOKGHACML = 1831;
+	uint32 max_combo = 12;
+	uint32 CCIAKNJMMBI = 626;
+	uint32 music_basic_id = 15;
+	uint32 score = 11;
+	uint32 GDFLBOFAANF = 2026;
+	bool is_save_score = 7;
+	uint32 POEMOFFOAEN = 6;
+	float speed = 963;
+	bool LFLFFIKPDAA = 961;
+	uint32 combo = 2;
+	repeated uint32 PECJLBDKHCO = 814;
+	uint64 ugc_guid = 13;
 }
-

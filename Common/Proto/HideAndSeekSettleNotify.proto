@@ -1,28 +1,40 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
-import "ExhibitionDisplayInfo.proto";
+option java_package = "emu.grasscutter.net.proto";
 import "HideAndSeekSettleInfo.proto";
-
-// CmdId: 5326
-// Name: CKGALBJACEN
+import "ExhibitionDisplayInfo.proto";
+// CmdId: 5318
+// Obf: PNDEJLGFIJC
 message HideAndSeekSettleNotify {
-    // Name: BNPALGNFKAB
-    enum SettleReason {
-        SETTLE_REASON_TIME_OUT = 0;
-        SETTLE_PLAY_END = 1;
-        SETTLE_PLAYER_QUIT = 2;
-    }
-
-    repeated HideAndSeekSettleInfo settle_info_list = 5;
-    uint32 cost_time = 13;
-    uint32 stage_type = 7;
-    repeated ExhibitionDisplayInfo score_list = 6;
-    uint32 play_index = 9;
-    repeated uint32 winner_list = 1;
-    SettleReason reason = 10;
-    bool is_record_score = 11;
+	// Obf: KABKPGKDJMK
+	enum SettleReason {
+		SETTLE_REASON_TIME_OUT = 0;
+		SETTLE_PLAY_END = 1;
+		SETTLE_PLAYER_QUIT = 2;
+	}
+	
+	repeated HideAndSeekSettleInfo settle_info_list = 8;
+	SettleReason reason = 15;
+	uint32 stage_type = 10;
+	uint32 play_index = 11;
+	repeated uint32 winner_list = 5;
+	bool is_record_score = 13;
+	uint32 cost_time = 12;
+	repeated ExhibitionDisplayInfo score_list = 3;
 }
-

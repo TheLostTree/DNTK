@@ -1,24 +1,36 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
-import "WidgetCameraInfo.proto";
+option java_package = "emu.grasscutter.net.proto";
 import "WidgetCreateLocationInfo.proto";
+import "WidgetCameraInfo.proto";
 import "WidgetCreatorInfo.proto";
-import "WidgetSorushInfo.proto";
 import "WidgetThunderBirdFeatherInfo.proto";
-
-// CmdId: 4273
-// Name: KPHPHAEKPDO
+import "WidgetSorushInfo.proto";
+// CmdId: 4266
+// Obf: LFNGOLHIBCA
 message QuickUseWidgetReq {
-    bool GPAEJDBAELH = 1846;
-    oneof param {
-        WidgetCreateLocationInfo location_info = 1807;
-        WidgetCameraInfo camera_info = 1828;
-        WidgetCreatorInfo creator_info = 1560;
-        WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 1431;
-        WidgetSorushInfo sorush_info = 1961;
-    }
+	bool MDCPHIOENOJ = 782;
+	oneof param {
+		WidgetCreateLocationInfo location_info = 1827;
+		WidgetCameraInfo camera_info = 1598;
+		WidgetCreatorInfo creator_info = 1489;
+		WidgetThunderBirdFeatherInfo thunder_bird_feather_info = 767;
+		WidgetSorushInfo sorush_info = 75;
+	}
 }
-

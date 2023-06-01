@@ -1,24 +1,36 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
+option java_package = "emu.grasscutter.net.proto";
 import "MatchType.proto";
-
-// CmdId: 4192
-// Name: APIPBBJHNFE
+// CmdId: 4153
+// Obf: JFBDENGHLJN
 message PlayerMatchAgreedResultNotify {
-    // Name: LHJPPCIIDKM
-    enum Reason {
-        SUCC = 0;
-        TARGET_SCENE_CANNOT_ENTER = 1;
-        SELF_MP_UNAVAILABLE = 2;
-        OTHER_DATA_VERSION_NOT_LATEST = 3;
-        DATA_VERSION_NOT_LATEST = 4;
-    }
-
-    MatchType match_type = 1;
-    uint32 target_uid = 6;
-    Reason reason = 14;
+	// Obf: EGGMLHKLMHE
+	enum Reason {
+		SUCC = 0;
+		TARGET_SCENE_CANNOT_ENTER = 1;
+		SELF_MP_UNAVAILABLE = 2;
+		OTHER_DATA_VERSION_NOT_LATEST = 3;
+		DATA_VERSION_NOT_LATEST = 4;
+	}
+	
+	Reason reason = 7;
+	MatchType match_type = 10;
+	uint32 target_uid = 15;
 }
-

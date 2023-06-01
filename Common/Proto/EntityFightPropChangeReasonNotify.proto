@@ -1,21 +1,33 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
-import "ChangeEnergyReason.proto";
-import "ChangHpReason.proto";
+option java_package = "emu.grasscutter.net.proto";
+import "ChangeHpReason.proto";
 import "PropChangeReason.proto";
-
-// CmdId: 1241
-// Name: CFFMDGNCJDD
+import "ChangeEnergyReason.proto";
+// CmdId: 1258
+// Obf: CJKLCKHPBEN
 message EntityFightPropChangeReasonNotify {
-    ChangeEnergyReason change_energy_reson = 10;
-    repeated uint32 param_list = 5;
-    float prop_delta = 4;
-    ChangHpReason change_hp_reason = 7;
-    PropChangeReason reason = 11;
-    uint32 entity_id = 12;
-    uint32 prop_type = 1;
+	ChangeHpReason changeHpReason = 15;
+	repeated uint32 param_list = 1;
+	float prop_delta = 14;
+	PropChangeReason reason = 7;
+	uint32 entity_id = 8;
+	uint32 prop_type = 6;
+	ChangeEnergyReason changeEnergyReason = 4;
 }
-

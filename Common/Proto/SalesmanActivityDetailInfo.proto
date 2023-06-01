@@ -1,21 +1,33 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
+option java_package = "emu.grasscutter.net.proto";
 import "SalesmanStatusType.proto";
-
-// Name: BHDNEKJAHIB
+// Obf: HHBPGNPOECK
 message SalesmanActivityDetailInfo {
-    uint32 GDAEGLIFGAN = 3;
-    bool MCNJKPCOJFE = 12;
-    uint32 PDIIBHEPHAF = 6;
-    SalesmanStatusType status = 11;
-    uint32 day_reward_id = 10;
-    uint32 day_index = 14;
-    uint32 GMLNJIFOGME = 4;
-    uint32 EMPKGACAAOK = 2;
-    bool OHEICLDPHBF = 9;
-    map<uint32, uint32> selected_reward_id_map = 8;
+	bool EMDKLOLLFIE = 11;
+	SalesmanStatusType status = 2;
+	uint32 EHHIEIBIFOH = 7;
+	map<uint32, uint32> selected_reward_id_map = 9;
+	uint32 MCJPKPDEIOE = 13;
+	uint32 day_reward_id = 14;
+	uint32 day_index = 6;
+	uint32 KNGECCJOOKO = 3;
+	uint32 HMIKNKJJAIH = 1;
+	bool OAAPGPJLNDM = 15;
 }
-

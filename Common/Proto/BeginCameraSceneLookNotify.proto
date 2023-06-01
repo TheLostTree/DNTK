@@ -1,38 +1,50 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
+option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-
-// CmdId: 215
-// Name: LHPLPIEOKGN
+// CmdId: 263
+// Obf: CGLDNNDKGHN
 message BeginCameraSceneLookNotify {
-    // Name: KPPLOGGHIMJ
-    enum KeepRotType {
-        KEEP_ROT_X = 0;
-        KEEP_ROT_XY = 1;
-    }
-
-    bool DHEJCFIIJJN = 7;
-    bool LJGMCKKIBKD = 1;
-    uint32 entity_id = 431;
-    uint32 FCCKPEGCEJN = 1335;
-    KeepRotType keep_rot_type = 3;
-    bool ICFCABODPHC = 10;
-    bool HABGHENOCHA = 13;
-    bool OHBPOGDOBEN = 15;
-    uint32 LCGFBOLPMDJ = 339;
-    repeated string other_params = 5;
-    bool MCFCBOJLEEA = 14;
-    bool MHOPMFLJEJB = 1736;
-    float IPCLENFLCLJ = 484;
-    Vector BJAIBAFFGAP = 6;
-    Vector BIGFKDFJPDD = 9;
-    float OHCHDGHEJDH = 2;
-    bool FGEILCFGECH = 12;
-    float PIOFKMOEEBP = 11;
-    float JDDGAILHJHH = 8;
-    float duration = 4;
+	// Obf: HEGALHEOJIG
+	enum KeepRotType {
+		KEEP_ROT_X = 0;
+		KEEP_ROT_XY = 1;
+	}
+	
+	bool CCCLAFNEBGN = 7;
+	float NLAMNKNJJDH = 613;
+	bool MHJDHLAFBLE = 11;
+	uint32 JOFGLBIHMHH = 1484;
+	float HBOFNBPGPLI = 10;
+	repeated string other_params = 5;
+	bool FFPDDLGFGKL = 1965;
+	uint32 entity_id = 1456;
+	float FCNNDFADOFL = 4;
+	bool GDOAFMGAJCB = 1;
+	bool JDOJPLBIBDE = 8;
+	bool JIDHHBFDMOK = 15;
+	Vector LKECKPKNOIP = 3;
+	uint32 PNDLGCIPIAA = 1356;
+	KeepRotType keep_rot_type = 2;
+	bool LELBPCJOPCE = 13;
+	Vector OKIEEACHAID = 9;
+	float duration = 12;
+	bool BACBEFNEHGG = 6;
+	float NLCMNGGEIJG = 14;
 }
-

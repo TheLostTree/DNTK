@@ -1,9 +1,6 @@
 # DNTK (DNToolKit)
 This is the C# backend for DNTK (i also dont really know what the name is an acronym of tbh)
 
-# Thanks
-Big thanks to [OnePieceFreak3](https://github.com/onepiecefreak3) for refactoring my questionable code
-
 
 # RSAKey
 You need to bring your own RSA Key(extracted from the client) if the one in this repo does not work.
@@ -22,10 +19,14 @@ config.json is regenerated on first launch
 This works as a backend for iridium
 
 
-Currently it is updated for version 3.6 of SomeAnimeGame
+Currently it is updated for version 3.7 of SomeAnimeGame
+
+thanks to slushy team for [protos](https://github.com/SlushinPS/beach-simulator)
 
 
 TODO:
 determine proper rsa keyid support (for cn)
 
 (if i get dmca'd yall will have to drg your own protos into the solution smh)
+
+

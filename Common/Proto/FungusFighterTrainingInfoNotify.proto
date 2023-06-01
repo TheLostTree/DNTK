@@ -1,18 +1,30 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
-
-// CmdId: 5581
-// Name: MHCLLFDBFAC
+option java_package = "emu.grasscutter.net.proto";
+// CmdId: 5566
+// Obf: CIBENDOKFKH
 message FungusFighterTrainingInfoNotify {
-    uint32 OMILDIGCPAJ = 9;
-    uint32 NOIAIMOONIB = 5;
-    uint32 GLCGHJKHFEI = 15;
-    uint32 buff_id = 6;
-    uint32 CNODBENOPKK = 3;
-    uint32 MBCGPKHEHPP = 11;
-    uint32 CNOCKIIKIKI = 14;
+	uint32 MPEELPGPHIJ = 7;
+	uint32 PJDEJHODAMK = 8;
+	uint32 KPCEBEHOKNO = 1;
+	uint32 NHGJDJBLEFA = 2;
+	uint32 NDNFMHHOMCM = 15;
+	uint32 CJLJCDGDKPD = 14;
+	uint32 buff_id = 4;
 }
-

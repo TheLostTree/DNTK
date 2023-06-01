@@ -1,20 +1,32 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
-
-// Name: GINFLDADAOO
+option java_package = "emu.grasscutter.net.proto";
+// Obf: COOPFICDPBH
 message CoopPoint {
-    // Name: CLMHLFCKFLK
-    enum State {
-        STATE_UNSTARTED = 0;
-        STATE_STARTED = 1;
-        STATE_FINISHED = 2;
-    }
-
-    uint32 id = 15;
-    State state = 4;
-    uint32 self_confidence = 8;
+	// Obf: EPLCHMLHLBA
+	enum State {
+		STATE_UNSTARTED = 0;
+		STATE_STARTED = 1;
+		STATE_FINISHED = 2;
+	}
+	
+	uint32 self_confidence = 9;
+	uint32 id = 11;
+	State state = 14;
 }
-

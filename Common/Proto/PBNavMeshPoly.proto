@@ -1,21 +1,33 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
-
-// Name: LMDMGGJHBKI
+option java_package = "emu.grasscutter.net.proto";
+// Obf: JGBCFAMHKCP
 message PBNavMeshPoly {
-    // Name: PJKEMGMCEFM
-    enum EdgeType {
-        INNER = 0;
-        TILE_BOUND = 1;
-        TILE_BOUND_UNCONNECT = 2;
-        TILE_BOUND_OVERIDE = 3;
-    }
-
-    repeated EdgeType edge_types = 8;
-    repeated int32 vects = 1;
-    int32 area = 6;
+	// Obf: NENAAAKMHPN
+	enum EdgeType {
+		INNER = 0;
+		TILE_BOUND = 1;
+		TILE_BOUND_UNCONNECT = 2;
+		TILE_BOUND_OVERIDE = 3;
+	}
+	
+	repeated int32 vects = 2;
+	repeated EdgeType edge_types = 13;
+	int32 area = 5;
 }
-

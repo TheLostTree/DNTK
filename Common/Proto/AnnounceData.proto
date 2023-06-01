@@ -1,19 +1,31 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
-
-// Name: FOGGKINBMOI
+option java_package = "emu.grasscutter.net.proto";
+// Obf: EJALGEOEIMH
 message AnnounceData {
-    string MLDDOLJCDAM = 9;
-    bool is_center_system_last_5_every_minutes = 2;
-    string HEAKAFCFBHM = 10;
-    uint32 OMEJDCDMJKH = 12;
-    uint32 config_id = 13;
-    string DLKKCKHJJAC = 5;
-    uint32 begin_time = 14;
-    uint32 GBNNHNDNCPP = 15;
-    uint32 end_time = 3;
+	bool is_center_system_last_5_every_minutes = 14;
+	uint32 end_time = 10;
+	uint32 count_down_frequency = 1;
+	string count_down_text = 7;
+	uint32 center_system_frequency = 8;
+	string center_system_text = 15;
+	uint32 config_id = 9;
+	string dungeon_confirm_text = 11;
+	uint32 begin_time = 3;
 }
-

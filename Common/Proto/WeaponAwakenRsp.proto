@@ -1,17 +1,29 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
-
-// CmdId: 670
-// Name: BODKGGEKPHH
+option java_package = "emu.grasscutter.net.proto";
+// CmdId: 643
+// Obf: EBKEOGAFFJH
 message WeaponAwakenRsp {
-    map<uint32, uint32> MCLMGECDMHI = 11;
-    int32 retcode = 9;
-    map<uint32, uint32> KKDIFJGIAMN = 14;
-    uint32 target_weapon_awaken_level = 4;
-    uint64 avatar_guid = 7;
-    uint64 target_weapon_guid = 13;
+	uint32 target_weapon_awaken_level = 3;
+	map<uint32, uint32> cur_affix_level_map = 6;
+	map<uint32, uint32> old_affix_level_map = 15;
+	int32 retcode = 12;
+	uint64 target_weapon_guid = 14;
+	uint64 avatar_guid = 8;
 }
-

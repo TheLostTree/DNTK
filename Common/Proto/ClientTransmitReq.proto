@@ -1,17 +1,29 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
-import "TransmitReason.proto";
+option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-
-// CmdId: 228
-// Name: OBPENFHAFGD
+import "TransmitReason.proto";
+// CmdId: 211
+// Obf: FCKPPKGOODO
 message ClientTransmitReq {
-    Vector pos = 1;
-    uint32 scene_id = 7;
-    TransmitReason reason = 9;
-    Vector rot = 11;
+	Vector pos = 1;
+	TransmitReason reason = 4;
+	Vector rot = 13;
+	uint32 scene_id = 3;
 }
-

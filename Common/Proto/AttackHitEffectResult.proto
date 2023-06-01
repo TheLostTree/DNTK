@@ -1,16 +1,28 @@
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
-
-option java_package = "catgirl.kirara.moe";
-
-
-// Name: ABOLAALABPG
+option java_package = "emu.grasscutter.net.proto";
+// Obf: PBAFNBPPAND
 message AttackHitEffectResult {
-    uint32 FAAKOHDGPFM = 13;
-    uint32 FMEGOOPBEJB = 11;
-    float OIJINAAFNAC = 9;
-    float JHNFFJDKJJJ = 2;
-    float GMFMEIEIEPB = 3;
-    float JOOLHFLPAOE = 10;
+	float hitHaltTime = 6;
+	float hitHaltTimeScale = 2;
+	float retreatStrength = 14;
+	float airStrength = 13;
+	uint32 IDJFCEPGOOF = 5;
+	uint32 ODEDPMCMFNN = 8;
 }
-
