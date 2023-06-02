@@ -25,9 +25,10 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dir /S
-    - name: Release
+      run: dir
+    - name: GH Release
       uses: softprops/action-gh-release@v0.1.15
+      if: ${{ success() }}
       with:
         files: DNTK/DNTK/Common/bin/Debug/net6.0/Common.dll 
         token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
