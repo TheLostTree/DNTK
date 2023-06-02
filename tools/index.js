@@ -26,8 +26,15 @@ function createOpcodeCsFile(){
     str += `    None = 0,\n`
 
     const packetIds = JSON.parse(fs.readFileSync(proto_ids_source));
+    const reversed = {};
     for (const key in packetIds) {
-        str += `    ${packetIds[key]} = ${key},\n`
+        // str += `    ${packetIds[key]} = ${key},\n`
+        reversed[packetIds[key]] = key;
+    }
+
+    for (const key in reversed){
+        str += `    ${key} = ${reversed[key]},\n`
+
     }
     str += `}\n`
     fs.writeFileSync(`./Common/Opcode.cs`, str);
@@ -124,4 +131,11 @@ function copyAllProtos(){
 
 createOpcodeCsFile();
 // copyProtos();
+// remove all files in ./Common/Proto
+fs.rmSync("./Common/Proto/", {recursive: true, force: true})
+
+
+if(!fs.existsSync("./Common/Proto/")){
+    fs.mkdirSync("./Common/Proto/");
+}
 copyAllProtos();
