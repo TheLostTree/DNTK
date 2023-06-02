@@ -26,3 +26,12 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      if: startsWith(github.ref, 'refs/tags/')
+      with:
+        files: DNTK/DNTK/Common/bin/Debug/net6.0/Common.dll 
+        token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
+      env:
+        GITHUB_REPOSITORY: Crepe-Inc/DNTK
+      
