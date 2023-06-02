@@ -31,7 +31,9 @@ jobs:
       if: ${{ success() }}
       with:
         files: DNTK/DNTK/Common/bin/Debug/net6.0/Common.dll 
+        tag_name: ${{github.sha}}
         token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
+
       env:
         GITHUB_REPOSITORY: Crepe-Inc/DNTK
       
