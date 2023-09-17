@@ -18,7 +18,7 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-// Obf: KEOGDMLAMBC
+// Obf: BFCLKLDHKOM
 message ShapeBox {
 	Vector center = 1;
 	Vector axis0 = 2;

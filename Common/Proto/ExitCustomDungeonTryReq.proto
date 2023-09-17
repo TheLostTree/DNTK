@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 6231
-// Obf: DKHELJILCOF
+// CmdId: 23043
+// Obf: JFIJMPLBGPL
 message ExitCustomDungeonTryReq {
 }

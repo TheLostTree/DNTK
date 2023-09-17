@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "SalvageEscortStopReason.proto";
-// Obf: EFMACIMFNNJ
+// Obf: FFDJGANMLAD
 message SalvageEscortGallerySettleInfo {
+	SalvageEscortStopReason reason = 6;
 	uint32 time_remain = 1;
-	SalvageEscortStopReason reason = 2;
 }

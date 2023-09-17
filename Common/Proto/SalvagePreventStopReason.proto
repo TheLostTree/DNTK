@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: FCFOOHDOGCJ
+// Obf: MPKIGDOAHIH
 enum SalvagePreventStopReason {
 	SALVAGE_PREVENT_STOP_NONE = 0;
 	SALVAGE_PREVENT_STOP_SUCCESS = 1;

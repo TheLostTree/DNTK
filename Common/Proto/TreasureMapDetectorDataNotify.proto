@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "TreasureMapDetectorData.proto";
-// CmdId: 4288
-// Obf: LOHPPIBGKDM
+// CmdId: 7264
+// Obf: ICPAKHOPDGK
 message TreasureMapDetectorDataNotify {
-	TreasureMapDetectorData data = 13;
+	TreasureMapDetectorData data = 8;
 }

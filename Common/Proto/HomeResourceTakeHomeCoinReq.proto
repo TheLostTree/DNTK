@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 4773
-// Obf: JBHKJDLNHDJ
+// CmdId: 4728
+// Obf: LCHACOIBHAH
 message HomeResourceTakeHomeCoinReq {
 }

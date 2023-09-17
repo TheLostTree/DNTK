@@ -19,8 +19,8 @@ option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ExhibitionDisplayInfo.proto";
 import "OnlinePlayerInfo.proto";
-// Obf: CIFECNBHAMI
+// Obf: CHJLCBKEGPE
 message IslandPartyGallerySettleInfo {
-	repeated ExhibitionDisplayInfo card_list = 6;
-	OnlinePlayerInfo player_info = 14;
+	repeated ExhibitionDisplayInfo card_list = 1;
+	OnlinePlayerInfo player_info = 5;
 }

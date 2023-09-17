@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 22959
-// Obf: GOOFGFLGKHM
+// CmdId: 26744
+// Obf: OPNLJBEEMKD
 message DuelHeartEnterDungeonReq {
-	uint32 level_id = 10;
+	uint32 level_id = 7;
 }

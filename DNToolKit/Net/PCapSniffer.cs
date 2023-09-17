@@ -116,7 +116,8 @@ namespace DNToolKit.Net
         {
             pCapDevice.OnPacketArrival += (_, c) => OnPacketReceived(c);
 
-            pCapDevice.Open(DeviceModes.Promiscuous | DeviceModes.DataTransferUdp | DeviceModes.NoCaptureLocal);
+            // | DeviceModes.DataTransferUdp | DeviceModes.NoCaptureLocal
+            pCapDevice.Open(DeviceModes.Promiscuous);
             pCapDevice.Filter = _filterExpression;
             pCapDevice.StartCapture();
 

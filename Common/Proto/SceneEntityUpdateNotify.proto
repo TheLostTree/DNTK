@@ -19,10 +19,10 @@ option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "SceneEntityInfo.proto";
 import "VisionType.proto";
-// CmdId: 3388
-// Obf: LGPJPEKFMAH
+// CmdId: 27983
+// Obf: PEEAFBLFBLC
 message SceneEntityUpdateNotify {
-	repeated SceneEntityInfo entity_list = 12;
-	uint32 param = 2;
-	VisionType appear_type = 14;
+	uint32 param = 14;
+	repeated SceneEntityInfo entity_list = 10;
+	VisionType appear_type = 13;
 }

@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "FriendBrief.proto";
-// CmdId: 4097
-// Obf: IOGEPKICHPK
+// CmdId: 23957
+// Obf: APIOBALMDKK
 message PSNBlackListNotify {
-	repeated FriendBrief psn_blacklist = 14;
+	repeated FriendBrief psn_blacklist = 10;
 }

@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 6102
-// Obf: LNMBNFLNFDN
+// CmdId: 6154
+// Obf: FONBLBBMKAG
 message ToTheMoonPingNotify {
 }

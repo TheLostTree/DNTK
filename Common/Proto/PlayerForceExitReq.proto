@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 160
-// Obf: JOALHHCCOMM
+// CmdId: 1819
+// Obf: EAJKGNFALHF
 message PlayerForceExitReq {
 }

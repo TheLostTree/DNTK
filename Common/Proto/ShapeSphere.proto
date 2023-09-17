@@ -18,7 +18,7 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-// Obf: OODCAOFHFPD
+// Obf: KJNACIDANGB
 message ShapeSphere {
 	Vector center = 1;
 	float radius = 2;

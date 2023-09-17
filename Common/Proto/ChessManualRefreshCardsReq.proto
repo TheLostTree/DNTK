@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5360
-// Obf: DGEKJFNDJJN
+// CmdId: 9762
+// Obf: HEDEBDIHKAP
 message ChessManualRefreshCardsReq {
 }
