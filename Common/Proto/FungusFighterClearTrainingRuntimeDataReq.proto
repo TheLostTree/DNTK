@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 22654
-// Obf: HOOOCDBDDOJ
+// CmdId: 28420
+// Obf: OFJNJOBNNNK
 message FungusFighterClearTrainingRuntimeDataReq {
-	uint32 dungeon_id = 10;
+	uint32 dungeon_id = 1;
 }

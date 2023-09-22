@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: JFDPPEKABPL
+// Obf: NMCABLGJJEK
 enum EnterType {
 	ENTER_TYPE_NONE = 0;
 	ENTER_TYPE_SELF = 1;
@@ -31,4 +31,5 @@ enum EnterType {
 	ENTER_TYPE_SELF_HOME = 9;
 	ENTER_TYPE_OTHER_HOME = 10;
 	ENTER_TYPE_GOTO_RECREATE = 11;
+	ENTER_TYPE_GOTO_BY_TPL = 12;
 }

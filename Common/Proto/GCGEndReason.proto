@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: KHBHKELMHNO
+// Obf: PNMCCGIBCDL
 enum GCGEndReason {
 	GCG_END_REASON_DEFAULT = 0;
 	GCG_END_REASON_DIE = 1;

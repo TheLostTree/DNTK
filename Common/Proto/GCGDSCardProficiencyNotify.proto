@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 7774
-// Obf: NKEGILJDAKE
+// CmdId: 9282
+// Obf: CKECGJCLCAO
 message GCGDSCardProficiencyNotify {
 	uint32 card_id = 2;
-	uint32 proficiency = 1;
+	uint32 proficiency = 14;
 }

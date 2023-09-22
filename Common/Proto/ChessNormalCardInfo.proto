@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: IJAKIMAKMAN
+// Obf: JDPEJCIEJIP
 message ChessNormalCardInfo {
-	bool is_attach_curse = 2;
-	uint32 cost_points = 3;
-	uint32 card_id = 10;
+	uint32 cost_points = 11;
+	bool is_attach_curse = 15;
+	uint32 card_id = 1;
 }

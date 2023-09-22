@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "FriendEnterHomeOption.proto";
-// CmdId: 4847
-// Obf: IIOGPMHNJOB
+// CmdId: 26896
+// Obf: GFLDPKKAAKP
 message SetFriendEnterHomeOptionReq {
-	FriendEnterHomeOption option = 7;
+	FriendEnterHomeOption option = 6;
 }

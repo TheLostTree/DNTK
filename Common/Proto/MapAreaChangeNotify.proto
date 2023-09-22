@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "MapAreaInfo.proto";
-// CmdId: 3144
-// Obf: PKAKCEJDGDF
+// CmdId: 21970
+// Obf: EHGEGMPIFKC
 message MapAreaChangeNotify {
-	repeated MapAreaInfo map_area_info_list = 13;
+	repeated MapAreaInfo map_area_info_list = 1;
 }

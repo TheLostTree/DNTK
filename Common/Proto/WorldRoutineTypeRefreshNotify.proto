@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "WorldRoutineTypeInfo.proto";
-// CmdId: 3537
-// Obf: KEKIJMHMIHL
+// CmdId: 26687
+// Obf: JHDIBPDJHEL
 message WorldRoutineTypeRefreshNotify {
-	WorldRoutineTypeInfo world_routine_type = 3;
+	WorldRoutineTypeInfo world_routine_type = 15;
 }

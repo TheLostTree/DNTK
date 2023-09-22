@@ -18,7 +18,7 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "MassivePropParam.proto";
-// Obf: HNDJPPEKOPF
+// Obf: HMEMJBACNJE
 message MassivePropSyncInfo {
 	int64 id = 1;
 	repeated MassivePropParam prop_list = 2;

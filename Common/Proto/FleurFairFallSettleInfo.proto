@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "FallSettleInfo.proto";
-// Obf: OPMEGAHDDCE
+// Obf: LJDBBLNHOIG
 message FleurFairFallSettleInfo {
-	FallSettleInfo settle_info = 3;
-	bool is_new_record = 10;
+	FallSettleInfo settle_info = 4;
+	bool is_new_record = 5;
 }

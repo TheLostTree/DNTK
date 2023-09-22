@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5175
-// Obf: OLCKDAPDJJF
+// CmdId: 25823
+// Obf: FGMBOCEJFKB
 message GetOpActivityInfoReq {
 }

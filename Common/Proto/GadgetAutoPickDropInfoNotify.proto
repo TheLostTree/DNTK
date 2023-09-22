@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Item.proto";
-// CmdId: 834
-// Obf: CPLEJBJGLDC
+// CmdId: 3579
+// Obf: PEILLEHHFBL
 message GadgetAutoPickDropInfoNotify {
-	repeated Item item_list = 12;
+	repeated Item item_list = 1;
 }

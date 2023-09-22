@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 8982
-// Obf: KGIHIHBJEJO
+// CmdId: 2711
+// Obf: HODLMPCEKJL
 message RefreshRogueDiaryCardRsp {
-	int32 retcode = 2;
-	repeated uint32 rand_card_list = 7;
+	int32 retcode = 11;
+	repeated uint32 rand_card_list = 5;
 }

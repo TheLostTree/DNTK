@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 3063
-// Obf: MKKMNMNIBPK
+// CmdId: 27695
+// Obf: DGCCDLAPKBE
 message CloseCommonTipsNotify {
 }

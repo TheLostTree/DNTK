@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 301
-// Obf: ACBFHNJFPHI
+// CmdId: 27982
+// Obf: NIGCPCEFALM
 message ReportFightAntiCheatNotify {
-	uint32 EPMDIKMDJIK = 11;
-	uint32 GOMNCHPHBHB = 14;
+	uint32 cheat_type = 10;
+	uint32 cheat_count = 6;
 }

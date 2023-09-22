@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: EAPLAEOEHNB
+// Obf: EMLCHDIFKDG
 message BrickBreakerActivityStageInfo {
-	uint32 stage_id = 3;
-	bool HEGNICKAFFB = 10;
-	bool GLJHIOPBPNM = 13;
+	bool HIAOPLJIBNL = 15;
+	bool MHDFOPDMOBC = 6;
+	uint32 stage_id = 10;
 }

@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "RedPointData.proto";
-// CmdId: 31
-// Obf: LNLHPPBHCHH
+// CmdId: 21359
+// Obf: KKKFCINHKNO
 message UpdateRedPointNotify {
-	repeated RedPointData red_point_list = 1;
+	repeated RedPointData red_point_list = 2;
 }

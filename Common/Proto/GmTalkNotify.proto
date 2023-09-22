@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 26
-// Obf: OIFDKACKJIH
+// CmdId: 8449
+// Obf: EFECOMEPPHE
 message GmTalkNotify {
-	string msg = 9;
+	string msg = 11;
 }

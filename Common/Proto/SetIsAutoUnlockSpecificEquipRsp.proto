@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 690
-// Obf: EEAPJGDCCKD
+// CmdId: 23704
+// Obf: EOOCECPKMAG
 message SetIsAutoUnlockSpecificEquipRsp {
 	int32 retcode = 6;
 }

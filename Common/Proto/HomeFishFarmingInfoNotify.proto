@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "HomeFishFarmingInfo.proto";
-// CmdId: 4865
-// Obf: IGHJEKMKAKO
+// CmdId: 136
+// Obf: LAOFIKDDKDA
 message HomeFishFarmingInfoNotify {
-	repeated HomeFishFarmingInfo fish_farming_info_list = 11;
+	repeated HomeFishFarmingInfo fish_farming_info_list = 8;
 }

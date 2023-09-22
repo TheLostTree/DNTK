@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: AGHLKHJDEHO
+// Obf: IGGCOLMGDPL
 enum SalesmanStatusType {
 	SALESMAN_STATUS_NONE = 0;
 	SALESMAN_STATUS_UNSTARTED = 1;

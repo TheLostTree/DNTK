@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 7944
-// Obf: ECBPPDHPIHF
+// CmdId: 26809
+// Obf: DPEDKFHGAFG
 message GCGClientSettleRsp {
 	uint32 close_time = 13;
-	int32 retcode = 15;
+	int32 retcode = 11;
 }

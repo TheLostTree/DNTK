@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 8560
-// Obf: ACMPJBDCEBG
+// CmdId: 29747
+// Obf: GKEGJFHNGEJ
 message FindHilichurlAcceptQuestNotify {
 }

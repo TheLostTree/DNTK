@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "FireworksReformParamType.proto";
-// Obf: PKEGKEEOFHK
+// Obf: PMAIMKODBLA
 message FireworksReformParam {
-	FireworksReformParamType type = 15;
-	int32 value = 5;
+	FireworksReformParamType type = 2;
+	int32 value = 3;
 }

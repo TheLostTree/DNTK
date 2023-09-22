@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5626
-// Obf: DEDKFOOONAO
+// CmdId: 2030
+// Obf: BHEPKPEBEGB
 message GetRegionSearchReq {
 }

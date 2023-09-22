@@ -18,7 +18,7 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "MusicGameRecord.proto";
-// Obf: CBKMKJIHFIO
+// Obf: NFFIPPGMKMH
 message FleurFairV2MusicGameInfo {
-	map<uint32, MusicGameRecord> music_game_record_map = 9;
+	map<uint32, MusicGameRecord> music_game_record_map = 5;
 }

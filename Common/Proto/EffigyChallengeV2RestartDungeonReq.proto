@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 23136
-// Obf: MEMGKKPAODO
+// CmdId: 3728
+// Obf: MBNGMBKBAGL
 message EffigyChallengeV2RestartDungeonReq {
 }

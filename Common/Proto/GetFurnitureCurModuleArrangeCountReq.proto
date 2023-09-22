@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 4688
-// Obf: AOKHNKCIGFG
+// CmdId: 27516
+// Obf: KPANNNCEOKM
 message GetFurnitureCurModuleArrangeCountReq {
 }

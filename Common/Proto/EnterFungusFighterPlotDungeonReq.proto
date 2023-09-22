@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 20605
-// Obf: BALNOBEPNBK
+// CmdId: 22446
+// Obf: LKIDPMOEFDI
 message EnterFungusFighterPlotDungeonReq {
-	uint32 dungeon_id = 1;
-	repeated uint32 fungus_id_list = 2;
+	uint32 dungeon_id = 6;
+	repeated uint32 fungus_id_list = 8;
 }
