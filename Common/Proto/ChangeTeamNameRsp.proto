@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 29496
-// Obf: JKAKFOEKEDH
+// CmdId: 1670
+// Obf: FPPJFDJHMAA
 message ChangeTeamNameRsp {
-	int32 retcode = 5;
+	string team_name = 4;
 	int32 team_id = 12;
-	string team_name = 15;
+	int32 retcode = 8;
 }

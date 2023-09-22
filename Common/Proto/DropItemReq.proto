@@ -19,11 +19,11 @@ option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "StoreType.proto";
 import "Vector.proto";
-// CmdId: 28541
-// Obf: ALHJAJDGNDA
+// CmdId: 630
+// Obf: HBHDPEOGOMB
 message DropItemReq {
-	uint32 count = 10;
-	uint64 guid = 15;
-	StoreType store_type = 8;
-	Vector pos = 1;
+	StoreType store_type = 3;
+	Vector pos = 15;
+	uint64 guid = 8;
+	uint32 count = 11;
 }

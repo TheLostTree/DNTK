@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "DailyTaskInfo.proto";
-// CmdId: 27206
-// Obf: GGPEBLCLECH
+// CmdId: 163
+// Obf: PKNBMIJGAGF
 message DailyTaskProgressNotify {
-	DailyTaskInfo info = 4;
+	DailyTaskInfo info = 15;
 }

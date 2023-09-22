@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 27511
-// Obf: FGKMCKFALJL
+// CmdId: 4090
+// Obf: KJMABJBDJHA
 message ReadSignatureAuditRsp {
-	int32 retcode = 5;
+	int32 retcode = 4;
 }

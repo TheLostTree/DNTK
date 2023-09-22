@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 6739
-// Obf: EHONJGBBFEG
+// CmdId: 1402
+// Obf: EIMKILMHOCI
 message ReadMailNotify {
-	repeated uint32 mail_id_list = 2;
+	repeated uint32 mail_id_list = 6;
 }

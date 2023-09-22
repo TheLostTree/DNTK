@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5363
-// Obf: NLJDGJGBDDO
+// CmdId: 8669
+// Obf: CGNHFOKLMKB
 message ActivityReadPushTipsRsp {
 	int32 retcode = 8;
 }

@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-// Obf: HOJNPGJMOML
+// Obf: JPEGENEFKLC
 message DynamicSVONode {
-	Vector refer_pos = 10;
-	int32 area = 7;
-	int64 index = 11;
+	int64 index = 3;
+	Vector refer_pos = 14;
+	int32 area = 4;
 }

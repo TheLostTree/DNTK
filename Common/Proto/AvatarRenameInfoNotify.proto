@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "AvatarRenameInfo.proto";
-// CmdId: 26468
-// Obf: MEDFBIJCAGF
+// CmdId: 1730
+// Obf: OCMOBFMMGOO
 message AvatarRenameInfoNotify {
-	repeated AvatarRenameInfo avatar_rename_list = 8;
+	repeated AvatarRenameInfo avatar_rename_list = 10;
 }

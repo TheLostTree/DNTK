@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 2482
-// Obf: DIFFHJFFHGE
+// CmdId: 4669
+// Obf: MJOEBIHECAD
 message HomeSceneJumpReq {
-	bool is_enter_room_scene = 12;
+	bool is_enter_room_scene = 6;
 }

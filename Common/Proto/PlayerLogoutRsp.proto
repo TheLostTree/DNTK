@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 24757
-// Obf: IPEBEDBBELN
+// CmdId: 148
+// Obf: CONCBIGOIIK
 message PlayerLogoutRsp {
-	int32 retcode = 3;
+	int32 retcode = 8;
 }

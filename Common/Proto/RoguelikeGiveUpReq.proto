@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 25469
-// Obf: PHIAELCHFCP
+// CmdId: 8671
+// Obf: AECCEJHDGKD
 message RoguelikeGiveUpReq {
-	uint32 stage_id = 2;
+	uint32 stage_id = 7;
 }

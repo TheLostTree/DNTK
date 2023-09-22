@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 6257
-// Obf: EANOCGOKDIN
+// CmdId: 3284
+// Obf: PICEJIDPMOD
 message GroupSuiteNotify {
-	map<uint32, uint32> group_map = 10;
+	map<uint32, uint32> group_map = 15;
 }

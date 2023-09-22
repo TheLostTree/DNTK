@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5280
-// Obf: GLLODFLDCPE
+// CmdId: 4261
+// Obf: KDHEBBJEAPJ
 message WidgetUseAttachAbilityGroupChangeNotify {
-	bool is_attach = 1;
+	bool is_attach = 8;
 	uint32 material_id = 3;
 }

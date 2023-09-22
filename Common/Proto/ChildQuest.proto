@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: DHJCFBHIJFE
+// Obf: PGDIMINOAPM
 message ChildQuest {
-	uint32 quest_config_id = 6;
+	uint32 state = 1;
 	uint32 quest_id = 11;
-	uint32 state = 2;
+	uint32 quest_config_id = 5;
 }

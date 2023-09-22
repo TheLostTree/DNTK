@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 7404
-// Obf: BLKCFDFEIEE
+// CmdId: 8049
+// Obf: GPACKHENEIO
 message BartenderGetFormulaRsp {
-	int32 retcode = 4;
-	bool is_new = 11;
+	int32 retcode = 1;
+	bool is_new = 13;
 	repeated uint32 affix_list = 3;
 	uint32 formula_id = 6;
 }

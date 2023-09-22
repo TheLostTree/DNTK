@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 24868
-// Obf: BJDDHFIJPEK
+// CmdId: 8633
+// Obf: BDBMNDMFCCE
 message SelectRoguelikeDungeonCardRsp {
-	int32 retcode = 10;
-	uint32 card_id = 7;
+	uint32 card_id = 1;
+	int32 retcode = 15;
 }

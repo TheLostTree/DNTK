@@ -17,12 +17,12 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "EnterCustomDungeonType.proto";
 import "TryCustomDungeonType.proto";
-// CmdId: 3645
-// Obf: BJEOENDLBCP
+import "EnterCustomDungeonType.proto";
+// CmdId: 6224
+// Obf: DKNJJMOMFDM
 message CustomDungeonOfficialNotify {
-	EnterCustomDungeonType enter_type = 12;
-	repeated uint32 official_black_coin_list = 7;
-	TryCustomDungeonType try_type = 9;
+	TryCustomDungeonType try_type = 14;
+	repeated uint32 official_black_coin_list = 8;
+	EnterCustomDungeonType enter_type = 10;
 }

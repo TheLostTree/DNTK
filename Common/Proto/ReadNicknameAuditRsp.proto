@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 29628
-// Obf: ODDEACKNEEN
+// CmdId: 181
+// Obf: JMLDBCJJODB
 message ReadNicknameAuditRsp {
-	int32 retcode = 2;
+	int32 retcode = 13;
 }

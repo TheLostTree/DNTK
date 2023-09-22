@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "PlayerLocationInfo.proto";
-// Obf: JNPBJHGCCOP
+// Obf: GLMHEOCDHBH
 message PlayerWorldLocationInfo {
-	uint32 scene_id = 5;
-	PlayerLocationInfo player_loc = 12;
+	PlayerLocationInfo player_loc = 2;
+	uint32 scene_id = 7;
 }

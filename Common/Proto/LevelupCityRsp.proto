@@ -18,11 +18,11 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "CityInfo.proto";
-// CmdId: 9797
-// Obf: IOPGGBHIHIC
+// CmdId: 217
+// Obf: CAPLOJCDPDE
 message LevelupCityRsp {
-	CityInfo city_info = 13;
-	uint32 scene_id = 12;
-	uint32 area_id = 8;
-	int32 retcode = 3;
+	uint32 area_id = 2;
+	uint32 scene_id = 6;
+	CityInfo city_info = 1;
+	int32 retcode = 12;
 }

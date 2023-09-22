@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: FGOPOLCODBO
+// Obf: OGILNLELDED
 message VintageHuntingSecondStageSettleInfo {
-	map<uint32, uint32> animal_count_map = 15;
-	uint32 capture_animal_num = 13;
-	uint32 total_num = 8;
+	uint32 capture_animal_num = 4;
+	uint32 total_num = 7;
+	map<uint32, uint32> animal_count_map = 12;
 }

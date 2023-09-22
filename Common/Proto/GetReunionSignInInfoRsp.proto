@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ReunionSignInInfo.proto";
-// CmdId: 22823
-// Obf: EOMJOAPOLLI
+// CmdId: 5089
+// Obf: DFELNPBAODE
 message GetReunionSignInInfoRsp {
-	int32 retcode = 3;
-	ReunionSignInInfo sign_in_info = 7;
+	int32 retcode = 8;
+	ReunionSignInInfo sign_in_info = 5;
 }

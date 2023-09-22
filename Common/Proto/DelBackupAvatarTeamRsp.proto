@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 3661
-// Obf: FFNGPJOGGAC
+// CmdId: 1777
+// Obf: DJGKPJONOAN
 message DelBackupAvatarTeamRsp {
-	int32 retcode = 6;
-	uint32 backup_avatar_team_id = 14;
+	uint32 backup_avatar_team_id = 4;
+	int32 retcode = 11;
 }

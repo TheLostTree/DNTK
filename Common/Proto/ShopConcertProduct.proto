@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: ABHPGEAODHI
+// Obf: CKIBKCAKBNI
 message ShopConcertProduct {
 	string product_id = 1;
 	string price_tier = 2;

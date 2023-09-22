@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 9742
-// Obf: FNFAIBECOME
+// CmdId: 898
+// Obf: GEAPKJPIIBL
 message GadgetChangeLevelTagRsp {
-	int32 retcode = 15;
+	int32 retcode = 2;
 }

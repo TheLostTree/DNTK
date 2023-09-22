@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "IrodoriChessPlayerInfo.proto";
-// CmdId: 21679
-// Obf: NAJDJPEICOL
+// CmdId: 5390
+// Obf: HKMHJLNBACN
 message IrodoriChessPlayerInfoNotify {
-	IrodoriChessPlayerInfo player_info = 7;
+	IrodoriChessPlayerInfo player_info = 13;
 }

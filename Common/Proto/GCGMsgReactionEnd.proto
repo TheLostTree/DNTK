@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: DCIFMELKGOA
+// Obf: KICGELKNHHB
 message GCGMsgReactionEnd {
-	uint32 skill_id = 6;
+	uint32 skill_id = 2;
 }

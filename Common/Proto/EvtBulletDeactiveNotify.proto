@@ -17,12 +17,12 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "ForwardType.proto";
 import "Vector.proto";
-// CmdId: 26348
-// Obf: FJJAANMLOOB
+import "ForwardType.proto";
+// CmdId: 334
+// Obf: KGCIBIOLFNL
 message EvtBulletDeactiveNotify {
-	ForwardType forward_type = 1;
-	uint32 entity_id = 14;
-	Vector disappear_pos = 8;
+	Vector disappear_pos = 10;
+	uint32 entity_id = 15;
+	ForwardType forward_type = 2;
 }

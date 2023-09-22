@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 24688
-// Obf: ANEAJLBCHDG
+// CmdId: 8297
+// Obf: CEGGELHPLKG
 message EchoShellUpdateNotify {
-	uint32 shell_id = 7;
+	uint32 shell_id = 4;
 }

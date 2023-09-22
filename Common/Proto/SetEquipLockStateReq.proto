@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 8002
-// Obf: POOALLFACLH
+// CmdId: 661
+// Obf: EEKKEIGCNPK
 message SetEquipLockStateReq {
-	bool is_locked = 2;
-	uint64 target_equip_guid = 12;
+	uint64 target_equip_guid = 4;
+	bool is_locked = 12;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 8694
-// Obf: ALCNOJCIJGE
+// CmdId: 2421
+// Obf: JBGGBPMLKNN
 message TowerBuffSelectReq {
-	uint32 tower_buff_id = 5;
+	uint32 tower_buff_id = 14;
 }

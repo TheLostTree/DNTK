@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 7953
-// Obf: MDBECONHBKJ
+// CmdId: 8579
+// Obf: CBDBJBJJGFJ
 message QuickOpenActivityRsp {
-	uint32 activity_id = 8;
-	int32 retcode = 13;
+	int32 retcode = 12;
+	uint32 activity_id = 10;
 }

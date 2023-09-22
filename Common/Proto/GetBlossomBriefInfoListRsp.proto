@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "BlossomBriefInfo.proto";
-// CmdId: 8452
-// Obf: DODBCPCGPMA
+// CmdId: 2796
+// Obf: PCNGBIDFALG
 message GetBlossomBriefInfoListRsp {
-	repeated BlossomBriefInfo brief_info_list = 11;
+	repeated BlossomBriefInfo brief_info_list = 6;
 	int32 retcode = 2;
 }

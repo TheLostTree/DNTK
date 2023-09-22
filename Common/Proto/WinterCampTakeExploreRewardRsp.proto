@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5622
-// Obf: DNAGNDHNANO
+// CmdId: 8549
+// Obf: IOCEHLCHDAL
 message WinterCampTakeExploreRewardRsp {
-	int32 retcode = 11;
-	uint32 id = 4;
+	int32 retcode = 1;
+	uint32 id = 9;
 }

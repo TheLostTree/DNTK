@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 28113
-// Obf: AHFCIHOLGHC
+// CmdId: 8839
+// Obf: BDBPONIOBIJ
 message CrystalLinkRestartDungeonRsp {
-	int32 retcode = 2;
+	int32 retcode = 5;
 }

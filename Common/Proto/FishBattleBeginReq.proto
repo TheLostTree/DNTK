@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 23596
-// Obf: GNDDFDMHMHN
+// CmdId: 5803
+// Obf: MIADDMIGDAG
 message FishBattleBeginReq {
 }

@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Uint32Pair.proto";
-// CmdId: 2948
-// Obf: FGLMMAMBPBP
+// CmdId: 4856
+// Obf: MCDJNNGJBIO
 message FurnitureCurModuleArrangeCountNotify {
-	repeated Uint32Pair furniture_arrange_count_list = 1;
+	repeated Uint32Pair furniture_arrange_count_list = 14;
 }

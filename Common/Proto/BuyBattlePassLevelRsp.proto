@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 26570
-// Obf: JLNMDHMIKAE
+// CmdId: 2610
+// Obf: GGBICCLGPHC
 message BuyBattlePassLevelRsp {
-	uint32 buy_level = 7;
-	int32 retcode = 11;
+	uint32 buy_level = 5;
+	int32 retcode = 2;
 }

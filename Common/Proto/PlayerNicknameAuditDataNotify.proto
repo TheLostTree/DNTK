@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ContentAuditInfo.proto";
-// CmdId: 29372
-// Obf: IBIFMJEIJFH
+// CmdId: 151
+// Obf: HLGDJHFLNOJ
 message PlayerNicknameAuditDataNotify {
-	ContentAuditInfo info = 2;
+	ContentAuditInfo info = 8;
 }

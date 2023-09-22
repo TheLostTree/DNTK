@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 9805
-// Obf: BPBEHFFOFDJ
+// CmdId: 7230
+// Obf: OLFMBLLJPJJ
 message GCGAskDuelReq {
 }

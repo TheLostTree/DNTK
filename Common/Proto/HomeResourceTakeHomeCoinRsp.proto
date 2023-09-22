@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "HomeResource.proto";
-// CmdId: 6329
-// Obf: PCJPOGJJIOH
+// CmdId: 4707
+// Obf: DBNLECALCBO
 message HomeResourceTakeHomeCoinRsp {
+	int32 retcode = 7;
 	HomeResource home_coin = 8;
-	int32 retcode = 15;
 }

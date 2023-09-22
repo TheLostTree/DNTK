@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 810
-// Obf: FPOPCBIOAAA
+// CmdId: 387
+// Obf: OFELKNOHKOB
 message EvtCostStaminaNotify {
-	float cost_stamina = 11;
-	uint32 skill_id = 4;
+	float cost_stamina = 9;
+	uint32 skill_id = 6;
 }

@@ -17,13 +17,13 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "EnterCustomDungeonType.proto";
 import "CustomDungeon.proto";
-// CmdId: 22598
-// Obf: HJBLNFGNAGN
+import "EnterCustomDungeonType.proto";
+// CmdId: 6208
+// Obf: LJEKKIJMALI
 message EnterCustomDungeonRsp {
+	int32 retcode = 7;
+	CustomDungeon custom_dungeon = 3;
 	map<uint32, uint32> room_cost_map = 15;
-	EnterCustomDungeonType enter_type = 8;
-	int32 retcode = 6;
-	CustomDungeon custom_dungeon = 5;
+	EnterCustomDungeonType enter_type = 10;
 }

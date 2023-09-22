@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ItemParam.proto";
-// Obf: LJJFPCDLGIJ
+// Obf: BBANKBFEFAA
 message ShopCardProduct {
-	// Obf: JIBALNEIBIK
+	// Obf: NGEFDJMEEDL
 	message ResinCard {
 		repeated ItemParam base_item_list = 1;
 		repeated ItemParam per_day_item_list = 2;

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: LJLJCPMMEKG
+// Obf: FJBFPLFPINM
 message GCGPVEIntention {
-	repeated uint32 skill_id_list = 5;
-	uint32 card_guid = 10;
+	repeated uint32 skill_id_list = 7;
+	uint32 card_guid = 6;
 }

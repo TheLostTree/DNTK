@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 24729
-// Obf: JMOMPLEOGLD
+// CmdId: 188
+// Obf: NMMNNPCFPKN
 message PlayerPropChangeNotify {
-	uint32 prop_delta = 4;
-	uint32 prop_type = 6;
+	uint32 prop_type = 8;
+	uint32 prop_delta = 5;
 }

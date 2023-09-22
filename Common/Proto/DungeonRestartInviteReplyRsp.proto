@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 20035
-// Obf: IBLKGMDNOGJ
+// CmdId: 974
+// Obf: GHMIHKGLKGH
 message DungeonRestartInviteReplyRsp {
-	bool is_accept = 8;
-	bool is_trans_point = 2;
-	int32 retcode = 12;
+	int32 retcode = 4;
+	bool is_trans_point = 7;
+	bool is_accept = 2;
 }

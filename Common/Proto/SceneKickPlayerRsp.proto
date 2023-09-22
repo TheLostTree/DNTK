@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 27200
-// Obf: IBIKNKAPMNJ
+// CmdId: 299
+// Obf: IDPLILJFIAF
 message SceneKickPlayerRsp {
-	uint32 target_uid = 4;
-	int32 retcode = 1;
+	int32 retcode = 14;
+	uint32 target_uid = 13;
 }

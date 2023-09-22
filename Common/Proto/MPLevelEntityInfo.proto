@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "AbilitySyncStateInfo.proto";
-// Obf: EPAFCHAOKLI
+// Obf: DBEDDNAPIOA
 message MPLevelEntityInfo {
-	uint32 entity_id = 7;
-	AbilitySyncStateInfo ability_info = 9;
-	uint32 authority_peer_id = 6;
+	AbilitySyncStateInfo ability_info = 11;
+	uint32 entity_id = 14;
+	uint32 authority_peer_id = 8;
 }

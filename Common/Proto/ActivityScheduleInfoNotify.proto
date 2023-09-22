@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ActivityScheduleInfo.proto";
-// CmdId: 23970
-// Obf: HGICHODDHDN
+// CmdId: 2107
+// Obf: HHEIHADMIIN
 message ActivityScheduleInfoNotify {
-	repeated ActivityScheduleInfo activity_schedule_list = 11;
-	uint32 remain_fly_sea_lamp_num = 10;
+	uint32 remain_fly_sea_lamp_num = 5;
+	repeated ActivityScheduleInfo activity_schedule_list = 12;
 }

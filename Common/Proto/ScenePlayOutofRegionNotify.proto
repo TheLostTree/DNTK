@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 26290
-// Obf: NINFJMKNMAC
+// CmdId: 4366
+// Obf: PDPKMLMBMCJ
 message ScenePlayOutofRegionNotify {
-	uint32 play_id = 14;
+	uint32 play_id = 8;
 }

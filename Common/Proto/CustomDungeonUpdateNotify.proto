@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "CustomDungeonBrief.proto";
-// CmdId: 8476
-// Obf: CPNIIHAEIPL
+// CmdId: 6213
+// Obf: BCEOFBOGIEI
 message CustomDungeonUpdateNotify {
-	CustomDungeonBrief dungeon_brief = 6;
+	CustomDungeonBrief dungeon_brief = 14;
 }

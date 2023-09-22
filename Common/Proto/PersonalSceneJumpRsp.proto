@@ -18,10 +18,10 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-// CmdId: 26151
-// Obf: FENDEOICMKE
+// CmdId: 289
+// Obf: PLGLDALKIJC
 message PersonalSceneJumpRsp {
-	uint32 dest_scene_id = 6;
-	Vector dest_pos = 14;
-	int32 retcode = 8;
+	Vector dest_pos = 8;
+	uint32 dest_scene_id = 5;
+	int32 retcode = 14;
 }

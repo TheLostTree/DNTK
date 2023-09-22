@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 28597
-// Obf: ICOGEAIAOOG
+// CmdId: 971
+// Obf: EFEDBKPNOCA
 message DungeonCandidateTeamSetReadyRsp {
-	int32 retcode = 8;
+	int32 retcode = 1;
 }

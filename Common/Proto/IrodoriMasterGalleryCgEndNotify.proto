@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 23987
-// Obf: GEIMKHDDGJK
+// CmdId: 8270
+// Obf: FBHCGKGPOID
 message IrodoriMasterGalleryCgEndNotify {
-	uint32 level_id = 15;
-	uint32 gallery_id = 14;
+	uint32 level_id = 14;
+	uint32 gallery_id = 5;
 }

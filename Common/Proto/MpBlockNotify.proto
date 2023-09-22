@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 27749
-// Obf: AEBMFPKLIHH
+// CmdId: 1805
+// Obf: MBDHLMOEAHN
 message MpBlockNotify {
-	uint32 end_time = 1;
+	uint32 end_time = 12;
 }

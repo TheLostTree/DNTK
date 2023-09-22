@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: LOFGLBBMMAL
+// Obf: DLDJOMHIENO
 message CookRecipeData {
-	uint32 recipe_id = 5;
-	uint32 proficiency = 10;
+	uint32 recipe_id = 6;
+	uint32 proficiency = 12;
 }

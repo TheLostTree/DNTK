@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: DCLOEDNCIHD
+// Obf: MLIJNFGLGLP
 message HomePictureFrameInfo {
-	uint32 guid = 7;
-	uint32 picture_id = 15;
+	uint32 picture_id = 14;
+	uint32 guid = 3;
 }

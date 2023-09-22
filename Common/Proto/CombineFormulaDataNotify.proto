@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 25832
-// Obf: CCMFELEODNK
+// CmdId: 678
+// Obf: JFJDDJBLOLF
 message CombineFormulaDataNotify {
-	uint32 combine_id = 14;
-	bool is_locked = 7;
+	bool is_locked = 15;
+	uint32 combine_id = 10;
 }

@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 20350
-// Obf: PBDBDIHNCJP
+// CmdId: 7443
+// Obf: LNDFIODJJAK
 message GCGGrowthLevelTakeRewardRsp {
 	uint32 level = 10;
-	int32 retcode = 6;
+	int32 retcode = 5;
 }

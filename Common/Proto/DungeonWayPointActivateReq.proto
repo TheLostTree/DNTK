@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 7942
-// Obf: IKEEIFMLEMK
+// CmdId: 935
+// Obf: JAMLIJIPNJJ
 message DungeonWayPointActivateReq {
-	uint32 way_point_id = 11;
+	uint32 way_point_id = 14;
 }

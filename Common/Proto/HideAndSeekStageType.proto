@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: AIHOPPMEJNG
+// Obf: GLCDALAIONK
 enum HideAndSeekStageType {
 	HIDE_AND_SEEK_STAGE_PREPARE = 0;
 	HIDE_AND_SEEK_STAGE_PICK = 1;

@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ScenePlayerInfo.proto";
-// CmdId: 23510
-// Obf: AKPNDPFIBFH
+// CmdId: 253
+// Obf: ADOEGJHHOPF
 message ScenePlayerInfoNotify {
-	repeated ScenePlayerInfo player_info_list = 9;
+	repeated ScenePlayerInfo player_info_list = 8;
 }

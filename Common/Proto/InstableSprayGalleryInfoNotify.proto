@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 20574
-// Obf: OINBAOCLLPO
+// CmdId: 5520
+// Obf: KOODHOENOHB
 message InstableSprayGalleryInfoNotify {
-	uint32 score = 4;
+	uint32 score = 8;
 }

@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 1073
-// Obf: NOBMFNDGPOB
+// CmdId: 5906
+// Obf: BBBJMMDHKLK
 message ChangeWidgetBackgroundActiveStateRsp {
-	int32 retcode = 3;
-	uint32 material_id = 10;
+	int32 retcode = 9;
+	uint32 material_id = 4;
 }

@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ResinCardData.proto";
-// CmdId: 6072
-// Obf: ILIKBAGAKKB
+// CmdId: 4116
+// Obf: HDIPGJDMBOA
 message ResinCardDataUpdateNotify {
-	uint32 today_start_time = 10;
-	repeated ResinCardData card_data_list = 7;
+	repeated ResinCardData card_data_list = 4;
+	uint32 today_start_time = 14;
 }

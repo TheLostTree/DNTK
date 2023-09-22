@@ -17,14 +17,14 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 22639
-// Obf: KLMPBEENMNG
+// CmdId: 7194
+// Obf: LGEBINHGCCF
 message GCGTCTavernInfoNotify {
-	uint32 character_id = 11;
-	uint32 avatar_id = 7;
-	bool KPBIEOPHOHC = 4;
-	uint32 level_id = 13;
+	uint32 level_id = 14;
+	bool GDNNFNKDFIP = 7;
+	uint32 point_id = 8;
+	uint32 character_id = 2;
 	uint32 element_type = 5;
-	uint32 point_id = 6;
-	bool EKEOEIDDHCN = 3;
+	uint32 avatar_id = 12;
+	bool OAIBMHHIOFA = 11;
 }

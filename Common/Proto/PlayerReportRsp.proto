@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 3564
-// Obf: JHJFHHIIOIA
+// CmdId: 4049
+// Obf: NKPJBKEMNHJ
 message PlayerReportRsp {
-	int32 retcode = 6;
-	uint32 cd_time = 4;
-	uint32 target_uid = 14;
+	uint32 cd_time = 9;
+	int32 retcode = 8;
+	uint32 target_uid = 11;
 }

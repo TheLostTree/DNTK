@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Uint32Pair.proto";
-// Obf: CDKNMFIMBMH
+// Obf: DLKEBIPAMFP
 message GCGSelectOnStageCostInfo {
-	repeated Uint32Pair cost_map = 10;
-	uint32 card_guid = 13;
+	repeated Uint32Pair cost_map = 1;
+	uint32 card_guid = 4;
 }

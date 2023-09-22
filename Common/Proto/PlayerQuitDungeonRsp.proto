@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 4431
-// Obf: KHKEMHFADOL
+// CmdId: 948
+// Obf: KFAMCAGJKJA
 message PlayerQuitDungeonRsp {
-	int32 retcode = 8;
-	uint32 point_id = 13;
+	uint32 point_id = 2;
+	int32 retcode = 4;
 }

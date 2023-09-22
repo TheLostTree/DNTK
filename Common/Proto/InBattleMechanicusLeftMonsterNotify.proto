@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 9107
-// Obf: EPHLIIMGJPA
+// CmdId: 5348
+// Obf: OJPFPFGNELP
 message InBattleMechanicusLeftMonsterNotify {
-	uint32 left_monster = 3;
+	uint32 left_monster = 11;
 }

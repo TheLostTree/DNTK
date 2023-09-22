@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: ENKCILBBOJN
+// Obf: DMLGIAOKEMI
 message WidgetGadgetData {
-	repeated uint32 gadget_entity_id_list = 4;
-	uint32 gadget_id = 3;
+	repeated uint32 gadget_entity_id_list = 14;
+	uint32 gadget_id = 15;
 }

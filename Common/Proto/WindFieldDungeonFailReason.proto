@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: EPFKHGDAOCP
+// Obf: LCLLFHFCPHG
 enum WindFieldDungeonFailReason {
 	WIND_FIELD_DUNGEON_FAIL_NONE = 0;
 	WIND_FIELD_DUNGEON_FAIL_CANCEL = 1;

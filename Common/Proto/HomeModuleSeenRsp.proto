@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 3944
-// Obf: IAGPCJIHFMC
+// CmdId: 4725
+// Obf: MFJDJBOBBMM
 message HomeModuleSeenRsp {
-	repeated uint32 seen_module_id_list = 2;
-	int32 retcode = 15;
+	repeated uint32 seen_module_id_list = 14;
+	int32 retcode = 9;
 }

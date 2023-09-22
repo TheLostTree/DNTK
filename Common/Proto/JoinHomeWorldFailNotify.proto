@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 2403
-// Obf: GBHNANPJGMC
+// CmdId: 4600
+// Obf: OPGDMIEDCOP
 message JoinHomeWorldFailNotify {
-	int32 retcode = 14;
-	uint32 target_uid = 11;
+	int32 retcode = 4;
+	uint32 target_uid = 12;
 }

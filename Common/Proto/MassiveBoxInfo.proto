@@ -18,7 +18,7 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-// Obf: GJEOHIBBKDA
+// Obf: ECODOBCMKIG
 message MassiveBoxInfo {
 	int32 id = 1;
 	uint32 config_id = 2;

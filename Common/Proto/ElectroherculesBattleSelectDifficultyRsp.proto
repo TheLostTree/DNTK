@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 2828
-// Obf: GOOLHDCAIKG
+// CmdId: 24886
+// Obf: FFKACKPHECC
 message ElectroherculesBattleSelectDifficultyRsp {
-	uint32 diffculty = 3;
-	int32 retcode = 2;
-	uint32 stage_id = 12;
-	uint32 gallery_id = 1;
+	uint32 stage_id = 4;
+	uint32 gallery_id = 5;
+	int32 retcode = 7;
+	uint32 BNMHJGCJAPB = 2;
 }

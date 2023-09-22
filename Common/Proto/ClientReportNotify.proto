@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 29196
-// Obf: FNLJHKJGODK
+// CmdId: 94
+// Obf: JPGJCONIBGC
 message ClientReportNotify {
-	string report_type = 3;
-	string report_value = 12;
+	string FKBNBKFNBDK = 13;
+	string HGDGHCLHDMG = 7;
 }

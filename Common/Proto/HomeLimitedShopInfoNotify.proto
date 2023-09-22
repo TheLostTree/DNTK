@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "HomeLimitedShopInfo.proto";
-// CmdId: 25226
-// Obf: EBOCOJNBEAO
+// CmdId: 4852
+// Obf: PGHENMOIDIC
 message HomeLimitedShopInfoNotify {
-	HomeLimitedShopInfo shop_info = 14;
+	HomeLimitedShopInfo shop_info = 7;
 }

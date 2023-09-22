@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 9681
-// Obf: BLGEHKEBJAA
+// CmdId: 775
+// Obf: IONMOGGHBPF
 message GetShopReq {
-	uint32 shop_type = 4;
+	uint32 shop_type = 12;
 }

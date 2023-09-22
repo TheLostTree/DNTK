@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: LHGPEPCOLMA
+// Obf: OFGPKKENEFH
 message FleurFairDungeonSectionInfo {
-	bool is_open = 14;
-	uint32 section_id = 6;
-	uint32 open_time = 13;
+	bool is_open = 2;
+	uint32 section_id = 10;
+	uint32 open_time = 14;
 }

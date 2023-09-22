@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "UgcType.proto";
-// CmdId: 8229
-// Obf: GANFHAADKOP
+// CmdId: 6303
+// Obf: MCMPDMKLJFP
 message CheckUgcUpdateReq {
-	UgcType ugc_type = 15;
+	UgcType ugc_type = 4;
 }

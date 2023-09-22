@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 20080
-// Obf: KOMEJHDGCAG
+// CmdId: 8387
+// Obf: AKJFPPFFNPK
 message EnterChessDungeonReq {
-	uint32 map_id = 2;
+	uint32 map_id = 4;
 }

@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: LJENCJEGDKA
+// Obf: PDNHHHHPBOK
 enum TryCustomDungeonType {
 	TRY_CUSTOM_DUNGEON_NONE = 0;
 	TRY_CUSTOM_DUNGEON_ROOM = 1;

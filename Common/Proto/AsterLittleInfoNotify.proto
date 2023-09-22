@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "AsterLittleDetailInfo.proto";
-// CmdId: 25815
-// Obf: HHOJCLGOFJC
+// CmdId: 2104
+// Obf: OJJEODCNPNG
 message AsterLittleInfoNotify {
-	AsterLittleDetailInfo info = 14;
+	AsterLittleDetailInfo info = 4;
 }

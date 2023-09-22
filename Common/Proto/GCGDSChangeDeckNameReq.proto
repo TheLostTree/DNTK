@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 23479
-// Obf: IHNLOCICDNB
+// CmdId: 7928
+// Obf: NFAMOMHMIJH
 message GCGDSChangeDeckNameReq {
-	string name = 1;
-	uint32 deck_id = 10;
-	bool GJJGJOMABDO = 9;
+	uint32 deck_id = 6;
+	string name = 2;
+	bool KDLBHMGIHBA = 3;
 }

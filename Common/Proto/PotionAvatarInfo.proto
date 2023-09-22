@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: MJDFKHIIOFM
+// Obf: EGFDGFANNGN
 message PotionAvatarInfo {
-	bool is_trial = 8;
-	uint64 avatar_id = 15;
+	uint64 avatar_id = 7;
+	bool is_trial = 10;
 }

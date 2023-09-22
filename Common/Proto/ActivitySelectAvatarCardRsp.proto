@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 7203
-// Obf: KCOKKMIOMJN
+// CmdId: 2098
+// Obf: LOODKPOCPDC
 message ActivitySelectAvatarCardRsp {
-	uint32 reward_id = 2;
-	uint32 activity_id = 8;
-	int32 retcode = 4;
+	uint32 activity_id = 3;
+	uint32 reward_id = 14;
+	int32 retcode = 5;
 }

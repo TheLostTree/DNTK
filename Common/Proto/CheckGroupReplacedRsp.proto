@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5854
-// Obf: CNFADLCLOBL
+// CmdId: 3231
+// Obf: AMDBCBAKMFJ
 message CheckGroupReplacedRsp {
-	repeated uint32 replaced_group_id_list = 13;
-	int32 retcode = 11;
+	repeated uint32 replaced_group_id_list = 1;
+	int32 retcode = 8;
 }

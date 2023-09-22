@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 22277
-// Obf: DEDMMLJOCEF
+// CmdId: 276
+// Obf: NDKJBLIDLCI
 message SceneEntityDrownReq {
-	uint32 entity_id = 14;
+	uint32 entity_id = 4;
 }

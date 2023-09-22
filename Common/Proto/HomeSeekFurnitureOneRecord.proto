@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "HomeSeekFurniturePlayerScore.proto";
-// Obf: HIKDFFBMMHO
+// Obf: PAJGLJGGGNO
 message HomeSeekFurnitureOneRecord {
-	uint32 timestamp = 4;
-	repeated HomeSeekFurniturePlayerScore engaged_player_score_list = 6;
+	repeated HomeSeekFurniturePlayerScore engaged_player_score_list = 13;
+	uint32 timestamp = 5;
 }

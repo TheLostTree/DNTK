@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 26496
-// Obf: JMKJMIMOLAA
+// CmdId: 8646
+// Obf: DFDICNIKEDM
 message DigActivityChangeGadgetStateRsp {
-	uint32 entity_id = 6;
-	int32 retcode = 10;
+	int32 retcode = 2;
+	uint32 entity_id = 5;
 }

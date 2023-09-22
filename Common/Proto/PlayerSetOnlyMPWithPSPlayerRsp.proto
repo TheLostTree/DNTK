@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 25610
-// Obf: FLJMMDODPBD
+// CmdId: 1848
+// Obf: KOJJGLLEEEM
 message PlayerSetOnlyMPWithPSPlayerRsp {
-	bool is_only = 1;
-	int32 retcode = 10;
+	int32 retcode = 12;
+	bool is_only = 13;
 }

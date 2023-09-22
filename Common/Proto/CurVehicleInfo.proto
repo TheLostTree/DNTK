@@ -18,12 +18,12 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-// Obf: LNHHODFOLCP
+// Obf: IEDNAPEHNEN
 message CurVehicleInfo {
 	uint32 entity_id = 1;
 	uint32 pos = 2;
 	uint32 gadget_id = 3;
-	Vector KKDFCJENDNI = 4;
-	uint32 CJIMMADJKHD = 5;
-	Vector JGOGBMEKOPP = 6;
+	Vector MBJJPEGEDME = 4;
+	uint32 IDLLLBLACAE = 5;
+	Vector KPLLINDPCBJ = 6;
 }

@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 1990
-// Obf: BEIGKDCMHAH
+// CmdId: 4841
+// Obf: IKPMJLAIAJM
 message HomeSetBlueprintSlotOptionReq {
 	uint32 slot_id = 1;
-	bool is_allow_copy = 4;
+	bool is_allow_copy = 14;
 }

@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-// Obf: DGNNOOGKIDC
+// Obf: DHDPCHAJIEC
 message EvtFaceToDirInfo {
-	uint32 entity_id = 12;
-	Vector face_dir = 11;
+	uint32 entity_id = 8;
+	Vector face_dir = 9;
 }

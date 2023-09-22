@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: JICCKJLPGHF
+// Obf: KOJNFAKDGFL
 message ReunionPrivilegeInfo {
-	uint32 privilege_id = 8;
-	uint32 GONKOHLOLGM = 9;
-	uint32 DPFKGAJIFGG = 1;
+	uint32 EDBAKLDPAAD = 6;
+	uint32 NJGIJJIJGCJ = 12;
+	uint32 privilege_id = 9;
 }

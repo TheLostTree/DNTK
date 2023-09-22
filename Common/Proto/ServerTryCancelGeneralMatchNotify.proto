@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 7158
-// Obf: CFABFBCEICO
+// CmdId: 4160
+// Obf: MEMBCNOBJLE
 message ServerTryCancelGeneralMatchNotify {
-	uint32 match_id = 7;
+	uint32 match_id = 15;
 }

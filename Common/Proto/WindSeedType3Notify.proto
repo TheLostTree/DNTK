@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5640
-// Obf: FIMMFEOLNIK
+// CmdId: 24948
+// Obf: AAFCAGMOLJA
 message WindSeedType3Notify {
-	bytes payload = 15;
-	uint32 config_id = 1;
+	uint32 config_id = 8;
+	bytes payload = 7;
 }

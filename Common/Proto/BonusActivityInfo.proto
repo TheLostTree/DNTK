@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: BLGBDLDEJCD
+// Obf: JOMIHJEJLBP
 message BonusActivityInfo {
-	uint32 bonus_activity_id = 7;
-	uint32 state = 14;
+	uint32 bonus_activity_id = 12;
+	uint32 state = 1;
 }

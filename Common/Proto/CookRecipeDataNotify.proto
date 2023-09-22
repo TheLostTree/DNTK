@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "CookRecipeData.proto";
-// CmdId: 21778
-// Obf: NAJPFJCAPEI
+// CmdId: 143
+// Obf: GABHMDEGHOJ
 message CookRecipeDataNotify {
-	CookRecipeData recipe_data = 1;
+	CookRecipeData recipe_data = 8;
 }

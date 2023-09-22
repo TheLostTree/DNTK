@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 22931
-// Obf: KBBFBHOLEPP
+// CmdId: 8847
+// Obf: PNJOBMNDGME
 message MichiaeMatsuriUnlockCrystalSkillRsp {
-	uint32 crystal_skill_id = 5;
-	int32 retcode = 6;
+	int32 retcode = 7;
+	uint32 crystal_skill_id = 9;
 }

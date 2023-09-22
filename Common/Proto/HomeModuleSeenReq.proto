@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 27692
-// Obf: KNOGFPMPFGK
+// CmdId: 4826
+// Obf: OJHBOIHODLL
 message HomeModuleSeenReq {
-	repeated uint32 seen_module_id_list = 8;
+	repeated uint32 seen_module_id_list = 13;
 }

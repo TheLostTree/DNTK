@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "AbilityInvokeEntry.proto";
-// CmdId: 8666
-// Obf: PJIHLINBLNG
+// CmdId: 1172
+// Obf: AKLEFDPDDAD
 message ClientAbilityInitFinishNotify {
-	uint32 entity_id = 4;
 	repeated AbilityInvokeEntry invokes = 9;
+	uint32 entity_id = 2;
 }

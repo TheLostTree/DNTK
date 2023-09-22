@@ -17,11 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "NHFPBBLCHKH.proto";
-// Obf: FCGGGBEOFIJ
+// Obf: IGFHEIKIJAO
 message PlayerWorldSceneInfo {
-	NHFPBBLCHKH DCGPONECHMM = 1;
-	uint32 scene_id = 12;
-	bool is_locked = 2;
-	repeated uint32 scene_tag_id_list = 7;
+	uint32 scene_id = 2;
+	repeated uint32 scene_tag_id_list = 11;
+	bool is_locked = 8;
 }

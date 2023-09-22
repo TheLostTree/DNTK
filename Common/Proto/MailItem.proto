@@ -19,7 +19,7 @@ option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "EquipParam.proto";
 import "MaterialDeleteInfo.proto";
-// Obf: BNPJNAPNHKB
+// Obf: MBAJGGFCGGC
 message MailItem {
 	EquipParam equip_param = 1;
 	MaterialDeleteInfo delete_info = 2;

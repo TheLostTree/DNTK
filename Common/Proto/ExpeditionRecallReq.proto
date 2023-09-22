@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 24533
-// Obf: CFNODODEEEK
+// CmdId: 2009
+// Obf: HNAMCNLJFFI
 message ExpeditionRecallReq {
-	uint32 path_id = 4;
+	uint32 path_id = 8;
 }

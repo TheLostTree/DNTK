@@ -18,10 +18,10 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-// Obf: DLJGHOCEDAE
+// Obf: AKPGAHJAFMB
 message ChannelerSlabCamp {
-	Vector pos = 11;
-	uint32 reward_id = 15;
-	uint32 group_id = 14;
-	uint32 buff_num = 5;
+	uint32 buff_num = 3;
+	Vector pos = 6;
+	uint32 group_id = 1;
+	uint32 reward_id = 12;
 }

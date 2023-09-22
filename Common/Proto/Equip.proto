@@ -19,11 +19,11 @@ option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Reliquary.proto";
 import "Weapon.proto";
-// Obf: EFEDALDPHMA
+// Obf: JFNFEJHPPKA
 message Equip {
+	bool is_locked = 3;
 	oneof detail {
 		Reliquary reliquary = 1;
 		Weapon weapon = 2;
 	}
-	bool is_locked = 3;
 }

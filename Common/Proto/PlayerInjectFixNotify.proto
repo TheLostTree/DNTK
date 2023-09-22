@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 27662
-// Obf: JAGPJBOAGGK
+// CmdId: 178
+// Obf: OIOAGJGLGBJ
 message PlayerInjectFixNotify {
-	bytes inject_fix = 3;
-	uint32 id = 7;
+	bytes inject_fix = 4;
+	uint32 id = 10;
 }

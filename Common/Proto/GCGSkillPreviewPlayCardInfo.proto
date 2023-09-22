@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "GCGSkillPreviewInfo.proto";
-// Obf: ICPJOFEGFJA
+// Obf: FLMAALGBMNM
 message GCGSkillPreviewPlayCardInfo {
-	uint32 OLIGHPNIHNG = 15;
-	uint32 CNKPKHNGILK = 1;
-	GCGSkillPreviewInfo play_card_info = 9;
+	uint32 NDJABBCPLBB = 6;
+	uint32 OFFCPFLINJN = 14;
+	GCGSkillPreviewInfo play_card_info = 8;
 }

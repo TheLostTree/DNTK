@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 8615
-// Obf: DGNFHHHNOAJ
+// CmdId: 2068
+// Obf: KKODGFOHEBE
 message ReceivedTrialAvatarActivityRewardReq {
 	uint32 trial_avatar_index_id = 7;
 }

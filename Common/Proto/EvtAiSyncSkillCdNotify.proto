@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "AiSkillCdInfo.proto";
-// CmdId: 6471
-// Obf: DCKIHJONHIO
+// CmdId: 346
+// Obf: IIEAPNAFCGB
 message EvtAiSyncSkillCdNotify {
-	map<uint32, AiSkillCdInfo> ai_cd_map = 10;
+	map<uint32, AiSkillCdInfo> ai_cd_map = 6;
 }

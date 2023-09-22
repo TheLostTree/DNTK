@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: HBNLGHJLHNL
+// Obf: LGFNBNFIONC
 message DeshretObeliskGadgetInfo {
 	repeated uint32 argument_list = 1;
 }

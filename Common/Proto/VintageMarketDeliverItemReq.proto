@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ItemParam.proto";
-// CmdId: 27142
-// Obf: GGLDPBHFMIE
+// CmdId: 23543
+// Obf: MHMGHKMPJDE
 message VintageMarketDeliverItemReq {
-	repeated ItemParam deliver_item_list = 5;
-	uint32 trader_id = 11;
+	uint32 trader_id = 15;
+	repeated ItemParam deliver_item_list = 10;
 }

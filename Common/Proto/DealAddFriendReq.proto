@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "DealAddFriendResultType.proto";
-// CmdId: 25212
-// Obf: FAIFBJNFCAG
+// CmdId: 4058
+// Obf: PIAFDFFMOBK
 message DealAddFriendReq {
-	DealAddFriendResultType deal_add_friend_result = 11;
-	uint32 target_uid = 1;
+	uint32 target_uid = 15;
+	DealAddFriendResultType deal_add_friend_result = 4;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: JFIHFGBEAOA
+// Obf: ICIENKMONBE
 message GCGSkillPreviewOnstageChangeInfo {
-	uint32 JKMNPINFJFD = 4;
-	uint32 NACJJLMOIII = 13;
+	uint32 DDICNPEPEMI = 2;
+	uint32 JMADKMJOCFO = 8;
 }

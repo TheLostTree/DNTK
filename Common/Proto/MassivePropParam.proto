@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: BDEEMMBPFDH
+// Obf: EEBMHDBBEEH
 message MassivePropParam {
 	int32 type = 1;
 	repeated uint32 reaction_info_list = 2;

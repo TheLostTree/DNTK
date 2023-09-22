@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 25633
-// Obf: PDIJEFMDCDK
+// CmdId: 24774
+// Obf: NDJNCJJLLNI
 message InstableSpraySwitchTeamRsp {
-	uint32 level_id = 3;
-	int32 retcode = 7;
+	uint32 level_id = 9;
+	int32 retcode = 6;
 }

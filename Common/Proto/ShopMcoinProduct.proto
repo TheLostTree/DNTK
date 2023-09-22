@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: BNMNBLNCBIG
+// Obf: CLIPCGJEBBP
 message ShopMcoinProduct {
 	string product_id = 1;
 	string price_tier = 2;

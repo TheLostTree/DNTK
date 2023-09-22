@@ -18,7 +18,7 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "RogueAvatarInfo.proto";
-// Obf: ILENPPFEOAP
+// Obf: PAFAMIEEDHL
 message RogueShowAvatarTeamInfo {
-	repeated RogueAvatarInfo avatar_list = 3;
+	repeated RogueAvatarInfo avatar_list = 5;
 }

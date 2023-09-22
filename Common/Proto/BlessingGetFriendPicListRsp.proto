@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "BlessingFriendPicData.proto";
-// CmdId: 28112
-// Obf: DONMJCEKNJH
+// CmdId: 2054
+// Obf: MCHOEEDEEDB
 message BlessingGetFriendPicListRsp {
-	repeated BlessingFriendPicData friend_pic_data_list = 8;
-	int32 retcode = 10;
+	int32 retcode = 6;
+	repeated BlessingFriendPicData friend_pic_data_list = 11;
 }

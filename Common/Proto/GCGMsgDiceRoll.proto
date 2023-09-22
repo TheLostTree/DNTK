@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "GCGDiceSideType.proto";
-// Obf: NOFCBPBCHDO
+// Obf: GINOHOCIIKJ
 message GCGMsgDiceRoll {
-	uint32 controller_id = 10;
+	repeated GCGDiceSideType dice_side_list = 4;
 	uint32 dice_num = 1;
-	repeated GCGDiceSideType dice_side_list = 11;
+	uint32 controller_id = 6;
 }

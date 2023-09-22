@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: ANLKFPJIOMK
+// Obf: GIJOJHBPCLK
 enum BattlePassUnlockStatus {
 	BATTLE_PASS_UNLOCK_STATUS_INVALID = 0;
 	BATTLE_PASS_UNLOCK_STATUS_FREE = 1;

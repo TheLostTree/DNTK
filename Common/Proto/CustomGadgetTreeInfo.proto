@@ -18,7 +18,7 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "CustomCommonNodeInfo.proto";
-// Obf: POAIMCJGABA
+// Obf: DPOLIKKKKLA
 message CustomGadgetTreeInfo {
 	repeated CustomCommonNodeInfo node_list = 1;
 }

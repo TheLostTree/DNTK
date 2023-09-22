@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: HHIHPEEHHNI
+// Obf: AIBIFKIHIGF
 message SceneNpcInfo {
 	uint32 npc_id = 1;
 	uint32 room_id = 2;

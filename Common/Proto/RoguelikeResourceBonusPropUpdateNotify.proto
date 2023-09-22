@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 9873
-// Obf: IGFNELOOAML
+// CmdId: 8700
+// Obf: FPDJKFMIFHI
 message RoguelikeResourceBonusPropUpdateNotify {
-	float bonus_resource_prop = 3;
+	float bonus_resource_prop = 2;
 }

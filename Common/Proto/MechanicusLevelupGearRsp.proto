@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 23973
-// Obf: ODOAMHDGABC
+// CmdId: 3930
+// Obf: FGICNIDNNOP
 message MechanicusLevelupGearRsp {
-	uint32 gear_id = 12;
-	int32 retcode = 1;
-	uint32 mechanicus_id = 15;
+	int32 retcode = 3;
+	uint32 mechanicus_id = 1;
+	uint32 gear_id = 9;
 	uint32 after_gear_level = 11;
 }

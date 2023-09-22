@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 7366
-// Obf: PEBIAODKCLI
+// CmdId: 2071
+// Obf: FBKFCGEADIG
 message ActivitySaleChangeNotify {
-	bool is_close = 1;
 	uint32 sale_id = 15;
+	bool is_close = 3;
 }

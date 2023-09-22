@@ -18,7 +18,7 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "BreakoutSnapShot.proto";
-// Obf: GEPMIGKJJLE
+// Obf: BLBJLEJIMPL
 message BreakoutSyncSnapShot {
-	BreakoutSnapShot snap_shot = 2;
+	BreakoutSnapShot snap_shot = 13;
 }

@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5677
-// Obf: ENCODHADEDM
+// CmdId: 488
+// Obf: DDAOEAHEAEK
 message QuestUpdateQuestVarRsp {
-	uint32 parent_quest_var_seq = 10;
-	uint32 quest_id = 7;
+	uint32 parent_quest_var_seq = 12;
+	uint32 parent_quest_id = 5;
 	int32 retcode = 14;
-	uint32 parent_quest_id = 11;
+	uint32 quest_id = 15;
 }

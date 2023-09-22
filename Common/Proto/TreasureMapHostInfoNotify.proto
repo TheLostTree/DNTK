@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 1895
-// Obf: GMJPDBAFBLG
+// CmdId: 8054
+// Obf: PGOHFOELLOK
 message TreasureMapHostInfoNotify {
-	repeated uint32 mp_challenge_region_list = 4;
+	repeated uint32 mp_challenge_region_list = 15;
 }

@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "HomePictureFrameInfo.proto";
-// CmdId: 5532
-// Obf: BNDPJBMPDKK
+// CmdId: 4569
+// Obf: DFKKKGLCFLG
 message HomeUpdatePictureFrameInfoReq {
-	HomePictureFrameInfo picture_frame_info = 2;
+	HomePictureFrameInfo picture_frame_info = 4;
 }

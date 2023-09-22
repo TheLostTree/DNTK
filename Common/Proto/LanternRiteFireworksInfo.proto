@@ -18,7 +18,7 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "LanternRiteFireworksStageInfo.proto";
-// Obf: KIINMBGKFOK
+// Obf: DCFHHMDCJEJ
 message LanternRiteFireworksInfo {
-	repeated LanternRiteFireworksStageInfo stage_info_list = 4;
+	repeated LanternRiteFireworksStageInfo stage_info_list = 11;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 29156
-// Obf: DFMIEJLIKMK
+// CmdId: 22648
+// Obf: LIPGHOICFGO
 message DuelHeartSelectDifficultyReq {
-	uint32 difficulty = 9;
+	uint32 difficulty = 5;
 }

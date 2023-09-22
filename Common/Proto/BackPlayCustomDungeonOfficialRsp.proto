@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 329
-// Obf: HNOJFDEBCIH
+// CmdId: 6233
+// Obf: PLDPFBDJCOH
 message BackPlayCustomDungeonOfficialRsp {
-	int32 retcode = 11;
+	int32 retcode = 5;
 }

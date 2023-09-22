@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ReunionBriefInfo.proto";
-// CmdId: 6332
-// Obf: KIJONMBFNGN
+// CmdId: 5093
+// Obf: MGGGJJNIDDA
 message ReunionActivateNotify {
-	ReunionBriefInfo reunion_brief_info = 11;
-	bool is_activate = 3;
+	bool is_activate = 5;
+	ReunionBriefInfo reunion_brief_info = 14;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 9406
-// Obf: GFGPACAMELF
+// CmdId: 1789
+// Obf: GPOADFMJEGE
 message ChooseCurAvatarTeamReq {
-	uint32 team_id = 10;
+	uint32 team_id = 5;
 }

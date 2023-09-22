@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 3981
-// Obf: GNIAPEEIAEC
+// CmdId: 4539
+// Obf: GEIHHOCOPFD
 message HomeSetBlueprintFriendOptionRsp {
-	bool BNAIJODKBJL = 10;
-	int32 retcode = 1;
-	bool HMIHEBDACID = 8;
+	int32 retcode = 5;
+	bool CNDJLHPOOBO = 7;
+	bool KMDEOGAINNP = 8;
 }

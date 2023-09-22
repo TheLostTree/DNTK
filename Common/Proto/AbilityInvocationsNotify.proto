@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "AbilityInvokeEntry.proto";
-// CmdId: 26313
-// Obf: IFAKFDEJFLI
+// CmdId: 1196
+// Obf: PJFLGALPCNO
 message AbilityInvocationsNotify {
-	repeated AbilityInvokeEntry invokes = 15;
+	repeated AbilityInvokeEntry invokes = 1;
 }

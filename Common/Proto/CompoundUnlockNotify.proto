@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 29908
-// Obf: HEIKIOLAOKF
+// CmdId: 167
+// Obf: GJDLOBNDGOB
 message CompoundUnlockNotify {
-	uint32 compound_id = 4;
+	uint32 compound_id = 8;
 }

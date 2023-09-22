@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 3830
-// Obf: NLJJOEJHNMP
+// CmdId: 8271
+// Obf: PEPIPMGMJBN
 message ChannellerSlabCheckEnterLoopDungeonRsp {
-	int32 retcode = 11;
+	int32 retcode = 7;
 }

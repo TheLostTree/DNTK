@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 28908
-// Obf: PBCEHPMKNBG
+// CmdId: 8801
+// Obf: IDIFCMMPLEO
 message GachaActivityNextStageReq {
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 8257
-// Obf: GPEHNKALIPD
+// CmdId: 291
+// Obf: JGAOHFKBMGM
 message JoinPlayerFailNotify {
-	int32 retcode = 14;
+	int32 retcode = 4;
 }

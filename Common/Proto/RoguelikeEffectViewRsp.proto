@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 26737
-// Obf: PPEPCKCALHO
+// CmdId: 8770
+// Obf: PCMEPDMFBKK
 message RoguelikeEffectViewRsp {
-	int32 retcode = 4;
+	int32 retcode = 8;
 }

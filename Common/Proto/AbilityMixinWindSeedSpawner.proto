@@ -18,25 +18,25 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-// Obf: GODBLNPFIIG
+// Obf: ECIPFNGJAIF
 message AbilityMixinWindSeedSpawner {
-	// Obf: KOLEALFBLKF
+	// Obf: EKDJLLIPACM
 	message AddSignal {
 	}
 	
-	// Obf: PKIEIPCDKJN
+	// Obf: FLOPFNIHOIO
 	message RefreshSeed {
-		repeated Vector pos_list = 9;
+		repeated Vector pos_list = 1;
 	}
 	
-	// Obf: CMGICLJOGAM
+	// Obf: LEOLCCAAAPG
 	message CatchSeed {
-		uint32 entity_id = 9;
+		uint32 entity_id = 1;
 	}
 	
 	oneof cmd {
-		AddSignal add_signal = 2;
-		RefreshSeed refresh_seed = 8;
-		CatchSeed catch_seed = 15;
+		AddSignal add_signal = 13;
+		RefreshSeed refresh_seed = 11;
+		CatchSeed catch_seed = 4;
 	}
 }

@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "HomePictureFrameInfo.proto";
-// CmdId: 24256
-// Obf: MHPADHDCIBP
+// CmdId: 4728
+// Obf: DAPLCMGCNEN
 message HomePictureFrameInfoNotify {
-	repeated HomePictureFrameInfo picture_frame_info_list = 11;
+	repeated HomePictureFrameInfo picture_frame_info_list = 8;
 }

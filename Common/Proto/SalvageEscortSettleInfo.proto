@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "SalvageEscortGallerySettleInfo.proto";
-// Obf: IIBLODPLGHA
+// Obf: CCFLBANIHHO
 message SalvageEscortSettleInfo {
-	SalvageEscortGallerySettleInfo settle_info = 1;
-	bool is_new_record = 12;
+	bool is_new_record = 15;
+	SalvageEscortGallerySettleInfo settle_info = 10;
 }

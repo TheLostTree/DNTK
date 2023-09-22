@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "HomeSceneArrangementInfo.proto";
-// CmdId: 4976
-// Obf: LBFIBLCPDEL
+// CmdId: 4871
+// Obf: AHPNGIHKNPH
 message HomeUpdateArrangementInfoReq {
-	HomeSceneArrangementInfo scene_arrangement_info = 15;
+	HomeSceneArrangementInfo scene_arrangement_info = 6;
 }

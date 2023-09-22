@@ -17,13 +17,13 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 21665
-// Obf: DNNMIGPCKOH
+// CmdId: 28
+// Obf: PJKHCJKGNNF
 message GetOnlinePlayerInfoReq {
-	bool is_online_id = 7;
+	bool is_online_id = 9;
 	oneof player_id {
-		uint32 target_uid = 3;
-		string online_id = 11;
-		string psn_id = 4;
+		uint32 target_uid = 11;
+		string online_id = 15;
+		string psn_id = 10;
 	}
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5317
-// Obf: GLKNPOJNACB
+// CmdId: 1472
+// Obf: NDJKANLCIIP
 message GetMailItemReq {
-	repeated uint32 mail_id_list = 14;
+	repeated uint32 mail_id_list = 7;
 }

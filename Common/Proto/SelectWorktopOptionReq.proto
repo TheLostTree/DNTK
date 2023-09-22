@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 24949
-// Obf: KGNHIFGFOIA
+// CmdId: 855
+// Obf: MDNJNLAPAFA
 message SelectWorktopOptionReq {
-	uint32 gadget_entity_id = 12;
-	uint32 option_id = 6;
+	uint32 gadget_entity_id = 3;
+	uint32 option_id = 2;
 }

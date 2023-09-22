@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 649
-// Obf: GFODEGILOPD
+// CmdId: 123
+// Obf: HICNNLNDPJA
 message RemoveRandTaskInfoNotify {
-	// Obf: NBOBEDPHGNA
+	// Obf: LLHKGJHDLDD
 	enum FinishReason {
 		DEFAULT = 0;
 		CLEAR = 1;
@@ -28,7 +28,7 @@ message RemoveRandTaskInfoNotify {
 		FINISH = 3;
 	}
 	
-	bool is_succ = 3;
-	uint32 rand_task_id = 6;
-	FinishReason reason = 13;
+	FinishReason reason = 2;
+	uint32 rand_task_id = 5;
+	bool is_succ = 6;
 }

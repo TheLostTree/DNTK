@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "FriendBrief.proto";
-// CmdId: 4703
-// Obf: IDGCHPDEBHN
+// CmdId: 4005
+// Obf: HJIPHKBMIEL
 message AddBlacklistRsp {
-	int32 retcode = 5;
-	FriendBrief target_friend_brief = 8;
+	FriendBrief target_friend_brief = 9;
+	int32 retcode = 10;
 }

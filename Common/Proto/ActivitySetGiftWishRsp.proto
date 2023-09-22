@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 165
-// Obf: BDHKJIJLFJM
+// CmdId: 8893
+// Obf: DCGJNFMIAPP
 message ActivitySetGiftWishRsp {
-	uint32 schedule_id = 11;
-	int32 retcode = 10;
+	int32 retcode = 13;
+	uint32 schedule_id = 3;
 }

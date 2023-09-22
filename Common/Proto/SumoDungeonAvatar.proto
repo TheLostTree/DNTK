@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: ADALLMGGAPN
+// Obf: DDJOHGFNFKB
 message SumoDungeonAvatar {
-	bool is_avlive = 4;
-	uint64 avatar_guid = 10;
-	bool is_trial = 6;
+	uint64 avatar_guid = 2;
+	bool is_trial = 4;
+	bool is_avlive = 1;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 2846
-// Obf: APEIENAMMJC
+// CmdId: 76
+// Obf: MHOKEEHKGHP
 message ChangeServerGlobalValueNotify {
-	uint32 entity_id = 12;
+	uint32 entity_id = 15;
 }

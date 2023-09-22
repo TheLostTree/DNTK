@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 2906
-// Obf: BEGHJCKOHCA
+// CmdId: 699
+// Obf: GEFNBINBKDE
 message ReliquaryDecomposeReq {
-	uint32 target_count = 15;
-	uint32 config_id = 1;
-	repeated uint64 guid_list = 8;
+	uint32 target_count = 8;
+	uint32 config_id = 10;
+	repeated uint64 guid_list = 1;
 }

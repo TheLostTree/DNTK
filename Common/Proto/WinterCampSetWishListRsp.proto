@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 8424
-// Obf: HCPIAIIBLGD
+// CmdId: 8887
+// Obf: MOCNKHEAAHD
 message WinterCampSetWishListRsp {
-	int32 retcode = 5;
-	repeated uint32 item_id_list = 9;
+	repeated uint32 item_id_list = 1;
+	int32 retcode = 6;
 }

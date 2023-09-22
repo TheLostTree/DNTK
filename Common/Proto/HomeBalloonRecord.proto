@@ -18,7 +18,7 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "HomeBalloonGalleryRecord.proto";
-// Obf: DKHFCAMLEIE
+// Obf: DLMFMBIBKDD
 message HomeBalloonRecord {
-	repeated HomeBalloonGalleryRecord record_list = 7;
+	repeated HomeBalloonGalleryRecord record_list = 9;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 21351
-// Obf: PMIAFBEBJNF
+// CmdId: 162
+// Obf: DJFBMLNEOFC
 message TakeBackGivingItemReq {
-	uint32 giving_id = 6;
+	uint32 giving_id = 2;
 }

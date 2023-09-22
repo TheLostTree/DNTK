@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "TowerMonthlyBrief.proto";
 import "TowerMonthlyCombatRecord.proto";
-// Obf: BODKPJIIDPO
+import "TowerMonthlyBrief.proto";
+// Obf: EGHIMFAFPDO
 message TowerMonthlyDetail {
-	TowerMonthlyBrief last_schedule_monthly_brief = 3;
-	TowerMonthlyCombatRecord monthly_combat_record = 15;
+	TowerMonthlyCombatRecord monthly_combat_record = 8;
+	TowerMonthlyBrief last_schedule_monthly_brief = 12;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 26399
-// Obf: CMDGCOIKJOG
+// CmdId: 8964
+// Obf: LDMFCCANOJA
 message EnterRogueDiaryDungeonRsp {
-	int32 retcode = 8;
+	int32 retcode = 12;
 }

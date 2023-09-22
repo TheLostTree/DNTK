@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 9760
-// Obf: PFCFCHANLHA
+// CmdId: 1202
+// Obf: CGFPJMOGLLB
 message EntityFightPropNotify {
-	map<uint32, float> fight_prop_map = 7;
+	map<uint32, float> fight_prop_map = 9;
 	uint32 entity_id = 13;
 }

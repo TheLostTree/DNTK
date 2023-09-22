@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 28490
-// Obf: ILMLELNIKGE
+// CmdId: 660
+// Obf: DNELGIHMGNF
 message ForgeFormulaDataNotify {
-	bool is_locked = 4;
-	uint32 forge_id = 2;
+	bool is_locked = 10;
+	uint32 forge_id = 13;
 }

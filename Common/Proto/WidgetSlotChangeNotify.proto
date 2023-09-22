@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "WidgetSlotData.proto";
 import "WidgetSlotOp.proto";
-// CmdId: 26889
-// Obf: GMLDKFNJJCH
+import "WidgetSlotData.proto";
+// CmdId: 4296
+// Obf: KFDKDKMIEIE
 message WidgetSlotChangeNotify {
-	WidgetSlotData slot = 9;
-	WidgetSlotOp op = 1;
+	WidgetSlotOp op = 11;
+	WidgetSlotData slot = 12;
 }

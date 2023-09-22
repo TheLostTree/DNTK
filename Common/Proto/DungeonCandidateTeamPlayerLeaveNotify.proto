@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "DungeonCandidateTeamPlayerLeaveReason.proto";
-// CmdId: 23849
-// Obf: LCCBHDIDMLM
+// CmdId: 905
+// Obf: KKOAFBEJGBO
 message DungeonCandidateTeamPlayerLeaveNotify {
-	uint32 player_uid = 9;
-	DungeonCandidateTeamPlayerLeaveReason reason = 14;
+	DungeonCandidateTeamPlayerLeaveReason reason = 4;
+	uint32 player_uid = 10;
 }

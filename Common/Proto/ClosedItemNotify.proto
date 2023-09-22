@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 1446
-// Obf: GMNLOLIHNLC
+// CmdId: 647
+// Obf: IHODBFNNEON
 message ClosedItemNotify {
-	repeated uint32 item_id_list = 2;
+	repeated uint32 item_id_list = 1;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 9279
-// Obf: HBGDILLIJDK
+// CmdId: 131
+// Obf: NMDDJJCDOPG
 message OpenStateUpdateNotify {
-	map<uint32, uint32> open_state_map = 13;
+	map<uint32, uint32> open_state_map = 1;
 }

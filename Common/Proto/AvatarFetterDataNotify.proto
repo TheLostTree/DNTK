@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "AvatarFetterInfo.proto";
-// CmdId: 29004
-// Obf: JKPPLBNFEGM
+// CmdId: 1775
+// Obf: OGBCMAKENBC
 message AvatarFetterDataNotify {
-	map<uint64, AvatarFetterInfo> fetter_info_map = 8;
+	map<uint64, AvatarFetterInfo> fetter_info_map = 12;
 }

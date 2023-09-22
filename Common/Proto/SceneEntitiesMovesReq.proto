@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "EntityMoveInfo.proto";
-// CmdId: 20585
-// Obf: LJMMMGNFNOM
+// CmdId: 254
+// Obf: DJJAFMMGCFF
 message SceneEntitiesMovesReq {
-	repeated EntityMoveInfo entity_move_info_list = 10;
+	repeated EntityMoveInfo entity_move_info_list = 5;
 }

@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 23423
-// Obf: FNALFPHPGIE
+// CmdId: 6050
+// Obf: DFCKMNCENAC
 message ChangeWidgetBackgroundActiveStateReq {
-	uint32 material_id = 5;
-	bool is_active = 9;
+	bool is_active = 14;
+	uint32 material_id = 4;
 }

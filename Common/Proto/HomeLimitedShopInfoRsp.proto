@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "HomeLimitedShopInfo.proto";
-// CmdId: 8746
-// Obf: JIFGKGGIDNN
+// CmdId: 4800
+// Obf: HFGOGKHLBEI
 message HomeLimitedShopInfoRsp {
-	HomeLimitedShopInfo shop_info = 11;
-	int32 retcode = 2;
+	HomeLimitedShopInfo shop_info = 9;
+	int32 retcode = 5;
 }

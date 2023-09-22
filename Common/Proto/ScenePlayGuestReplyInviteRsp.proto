@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 26358
-// Obf: AKGMHABOKJM
+// CmdId: 4385
+// Obf: JOGKFLBLBCJ
 message ScenePlayGuestReplyInviteRsp {
-	int32 retcode = 10;
-	uint32 play_id = 11;
-	bool is_agree = 5;
+	int32 retcode = 9;
+	bool is_agree = 2;
+	uint32 play_id = 14;
 }

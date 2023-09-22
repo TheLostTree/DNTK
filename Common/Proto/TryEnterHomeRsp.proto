@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 351
-// Obf: NDAPMOBJOBI
+// CmdId: 4762
+// Obf: KOMBHGLOIOI
 message TryEnterHomeRsp {
-	repeated uint32 param_list = 8;
-	int32 retcode = 13;
-	uint32 target_uid = 6;
+	uint32 target_uid = 11;
+	repeated uint32 param_list = 6;
+	int32 retcode = 5;
 }

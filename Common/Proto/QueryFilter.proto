@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: JGKDEPOMBFP
+// Obf: FOFMOHPPKPO
 message QueryFilter {
-	int32 JKLHOJOCLJD = 10;
-	int32 JOJGNGIGNDB = 6;
+	int32 DHGFHBFCGOL = 10;
+	int32 HFJNAAGCKFJ = 3;
 }

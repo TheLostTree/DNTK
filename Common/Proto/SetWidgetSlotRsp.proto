@@ -19,11 +19,11 @@ option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "WidgetSlotTag.proto";
 import "WidgetSlotOp.proto";
-// CmdId: 21258
-// Obf: LOLIHGGKHCF
+// CmdId: 4286
+// Obf: LGMCNLPMOFI
 message SetWidgetSlotRsp {
-	int32 retcode = 11;
-	repeated WidgetSlotTag tag_list = 12;
-	uint32 material_id = 4;
-	WidgetSlotOp op = 3;
+	int32 retcode = 5;
+	uint32 material_id = 11;
+	repeated WidgetSlotTag tag_list = 9;
+	WidgetSlotOp op = 2;
 }

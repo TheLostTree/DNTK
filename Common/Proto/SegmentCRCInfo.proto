@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: GODLCHDBEJD
+// Obf: BFEDHBGKCCH
 message SegmentCRCInfo {
-	uint32 offset = 7;
-	string crc = 3;
-	uint32 module = 1;
-	uint32 size = 11;
-	int32 retcode = 8;
+	int32 retcode = 3;
+	uint32 offset = 6;
+	uint32 module = 11;
+	uint32 size = 12;
+	string crc = 1;
 }

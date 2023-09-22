@@ -17,16 +17,16 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "ObstacleInfo.proto";
 import "Vector.proto";
 import "Vector3Int.proto";
+import "ObstacleInfo.proto";
 import "MathQuaternion.proto";
-// Obf: BMPHJKHEMID
+// Obf: MPFGIOBIHIL
 message GMObstacleInfo {
-	int32 obstacle_id = 15;
-	ObstacleInfo.ShapeType shape = 11;
-	Vector center = 7;
+	Vector center = 5;
 	Vector3Int extents = 3;
-	int64 timestamp = 13;
-	MathQuaternion rotation = 10;
+	ObstacleInfo.ShapeType shape = 2;
+	int64 timestamp = 12;
+	MathQuaternion rotation = 11;
+	int32 obstacle_id = 4;
 }

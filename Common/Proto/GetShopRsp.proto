@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Shop.proto";
-// CmdId: 22793
-// Obf: JKOBDIPLIKB
+// CmdId: 796
+// Obf: ICPODKNNJCF
 message GetShopRsp {
-	int32 retcode = 7;
-	Shop shop = 2;
+	Shop shop = 15;
+	int32 retcode = 2;
 }

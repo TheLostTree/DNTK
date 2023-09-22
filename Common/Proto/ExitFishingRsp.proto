@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 4039
-// Obf: AGBLLAMGEMM
+// CmdId: 5831
+// Obf: OFJKPOHEAFK
 message ExitFishingRsp {
 	int32 retcode = 10;
 }

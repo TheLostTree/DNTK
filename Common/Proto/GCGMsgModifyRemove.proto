@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "GCGReason.proto";
-// Obf: BNHEMNJABOO
+import "MNDCMMKBIBP.proto";
+// Obf: PFIOBCGCDMJ
 message GCGMsgModifyRemove {
-	GCGReason reason = 7;
-	uint32 owner_card_guid = 2;
-	repeated uint32 card_guid_list = 11;
-	uint32 controller_id = 1;
+	repeated uint32 card_guid_list = 2;
+	uint32 owner_card_guid = 12;
+	uint32 controller_id = 14;
+	MNDCMMKBIBP reason = 3;
 }

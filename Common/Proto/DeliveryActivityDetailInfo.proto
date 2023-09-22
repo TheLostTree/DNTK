@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: DOBDHABKDGM
+// Obf: IOHOBABPFDF
 message DeliveryActivityDetailInfo {
-	repeated uint32 finished_delivery_quest_index = 14;
-	uint32 day_index = 13;
-	bool is_taken_reward = 6;
+	uint32 day_index = 12;
+	bool is_taken_reward = 1;
+	repeated uint32 finished_delivery_quest_index = 8;
 }

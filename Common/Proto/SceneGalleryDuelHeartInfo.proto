@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: FNNGJDPGKJL
+// Obf: IMPKEBNAIPJ
 message SceneGalleryDuelHeartInfo {
-	uint32 difficulty = 14;
+	uint32 difficulty = 15;
 }

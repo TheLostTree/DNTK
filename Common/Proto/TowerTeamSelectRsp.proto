@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 21023
-// Obf: INPKIDGHCKO
+// CmdId: 2458
+// Obf: KNFLOIHDFKG
 message TowerTeamSelectRsp {
-	int32 retcode = 8;
+	int32 retcode = 4;
 }

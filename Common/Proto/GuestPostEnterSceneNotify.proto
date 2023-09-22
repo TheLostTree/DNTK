@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 4310
-// Obf: AICDKKICHLK
+// CmdId: 3107
+// Obf: AEMHPKBKFAA
 message GuestPostEnterSceneNotify {
-	uint32 scene_id = 2;
-	uint32 uid = 15;
+	uint32 uid = 2;
+	uint32 scene_id = 11;
 }

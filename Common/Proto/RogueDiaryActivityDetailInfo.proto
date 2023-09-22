@@ -17,12 +17,12 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "RogueDiaryProgress.proto";
 import "RogueDiaryStageInfo.proto";
-// Obf: AACDJMCBPDB
+import "RogueDiaryProgress.proto";
+// Obf: FEKLEGPDNJI
 message RogueDiaryActivityDetailInfo {
-	bool is_have_progress = 4;
-	RogueDiaryProgress cur_progress = 10;
-	bool is_content_closed = 13;
-	repeated RogueDiaryStageInfo stage_list = 7;
+	repeated RogueDiaryStageInfo stage_list = 11;
+	RogueDiaryProgress cur_progress = 6;
+	bool is_have_progress = 1;
+	bool is_content_closed = 8;
 }

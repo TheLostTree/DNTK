@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5073
-// Obf: AJHIALPBPME
+// CmdId: 4059
+// Obf: PEKGHDHCCGE
 message UpdatePS4BlockListRsp {
-	int32 retcode = 13;
+	int32 retcode = 9;
 }

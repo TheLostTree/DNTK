@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 6341
-// Obf: ICOKGCHCLNL
+// CmdId: 966
+// Obf: NHJEKHCOAEA
 message DungeonCandidateTeamCreateReq {
 	uint32 dungeon_id = 12;
-	uint32 point_id = 13;
+	uint32 point_id = 7;
 }

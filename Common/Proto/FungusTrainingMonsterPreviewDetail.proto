@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: JMOBGEADKMA
+// Obf: EELEHAKPGNM
 message FungusTrainingMonsterPreviewDetail {
-	uint32 monster_id = 15;
-	uint32 level = 6;
-	repeated uint32 affix_list = 11;
+	repeated uint32 affix_list = 7;
+	uint32 level = 1;
+	uint32 monster_id = 8;
 }

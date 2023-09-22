@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 20037
-// Obf: EOELPEDJHOM
+// CmdId: 4720
+// Obf: LHIGOHOBNNI
 message HomePlantWeedReq {
-	uint32 index = 4;
-	uint32 field_guid = 13;
+	uint32 index = 15;
+	uint32 field_guid = 3;
 }

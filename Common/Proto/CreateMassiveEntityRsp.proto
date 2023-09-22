@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 20637
-// Obf: AJJNIEABIAH
+// CmdId: 341
+// Obf: NOEADFGHPAC
 message CreateMassiveEntityRsp {
-	int32 retcode = 15;
+	int32 retcode = 9;
 }

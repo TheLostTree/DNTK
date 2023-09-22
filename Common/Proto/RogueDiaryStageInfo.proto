@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "RogueDiaryDungeonRecord.proto";
-// Obf: PKLHAFICKIC
+// Obf: NGNOANEIFJJ
 message RogueDiaryStageInfo {
-	uint32 stage_id = 1;
-	RogueDiaryDungeonRecord best_record = 7;
-	bool is_have_try = 13;
+	RogueDiaryDungeonRecord best_record = 15;
+	bool is_have_try = 1;
+	uint32 stage_id = 7;
 }

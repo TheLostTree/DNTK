@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: PGEKJBDCGND
+// Obf: ADPDFNABDCI
 message QuestGlobalVar {
-	int32 value = 14;
+	int32 value = 13;
 	uint32 key = 8;
 }

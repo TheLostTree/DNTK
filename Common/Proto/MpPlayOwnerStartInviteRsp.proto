@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 20017
-// Obf: JBFAELEDEGP
+// CmdId: 1813
+// Obf: EPNIBNCAMOE
 message MpPlayOwnerStartInviteRsp {
-	bool is_skip_match = 8;
-	int32 retcode = 1;
+	int32 retcode = 11;
 	uint32 mp_play_id = 13;
+	bool is_skip_match = 2;
 }

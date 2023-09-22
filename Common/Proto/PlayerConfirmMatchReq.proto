@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "MatchType.proto";
-// CmdId: 1167
-// Obf: CMDGGJDBOIO
+// CmdId: 4157
+// Obf: MMLHDBJNOEN
 message PlayerConfirmMatchReq {
-	MatchType match_type = 15;
-	bool is_agreed = 12;
+	bool is_agreed = 14;
+	MatchType match_type = 9;
 }

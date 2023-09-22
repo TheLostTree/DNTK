@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 25548
-// Obf: HJCAOLCGNGM
+// CmdId: 5502
+// Obf: IEEOOALICIK
 message GalleryBalloonScoreNotify {
-	uint32 gallery_id = 13;
-	map<uint32, uint32> uid_score_map = 11;
+	map<uint32, uint32> uid_score_map = 10;
+	uint32 gallery_id = 1;
 }

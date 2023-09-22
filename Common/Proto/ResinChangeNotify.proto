@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 21937
-// Obf: POKGPJBGPLM
+// CmdId: 612
+// Obf: GNHJPFEHCEB
 message ResinChangeNotify {
-	uint32 cur_buy_count = 3;
-	uint32 next_add_timestamp = 6;
-	uint32 cur_value = 7;
+	uint32 curBuyCount = 1;
+	uint32 nextAddTimestamp = 11;
+	uint32 cur_value = 8;
 }

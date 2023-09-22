@@ -17,12 +17,12 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "Vector.proto";
 import "ForwardType.proto";
-// CmdId: 8305
-// Obf: LHFNDLOOJKJ
+import "Vector.proto";
+// CmdId: 376
+// Obf: NAGHKLONLBM
 message EvtAvatarUpdateFocusNotify {
-	uint32 entity_id = 8;
-	Vector focus_forward = 14;
-	ForwardType forward_type = 9;
+	ForwardType forward_type = 13;
+	uint32 entity_id = 3;
+	Vector focus_forward = 9;
 }

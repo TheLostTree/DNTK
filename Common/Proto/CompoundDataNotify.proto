@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "CompoundQueueData.proto";
-// CmdId: 25801
-// Obf: MMAMJJIHNBP
+// CmdId: 180
+// Obf: BGHIMPKEDMG
 message CompoundDataNotify {
-	repeated CompoundQueueData compoundQueueDataList = 9;
-	repeated uint32 unlockCompoundList = 6;
+	repeated uint32 unlockCompoundList = 4;
+	repeated CompoundQueueData compoundQueueDataList = 6;
 }

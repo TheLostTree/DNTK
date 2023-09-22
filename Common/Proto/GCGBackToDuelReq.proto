@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 664
-// Obf: OMMOCDHAKEJ
+// CmdId: 7300
+// Obf: NLODGPMIPPA
 message GCGBackToDuelReq {
-	bool is_back = 9;
+	bool is_back = 7;
 }

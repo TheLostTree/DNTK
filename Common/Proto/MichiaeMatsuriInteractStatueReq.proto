@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 25870
-// Obf: IEBOHGDOEEN
+// CmdId: 8736
+// Obf: BEHEDEIECCE
 message MichiaeMatsuriInteractStatueReq {
-	uint32 statue_entity_id = 6;
+	uint32 statue_entity_id = 12;
 }

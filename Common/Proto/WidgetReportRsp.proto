@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 27403
-// Obf: FGIPDBHBOPH
+// CmdId: 4292
+// Obf: KLAFBCFKMAM
 message WidgetReportRsp {
-	int32 retcode = 2;
-	uint32 material_id = 5;
+	uint32 material_id = 8;
+	int32 retcode = 7;
 }

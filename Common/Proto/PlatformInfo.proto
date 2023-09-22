@@ -21,7 +21,7 @@ import "Vector.proto";
 import "MathQuaternion.proto";
 import "MovingPlatformType.proto";
 import "Route.proto";
-// Obf: NEACNMDIMDL
+// Obf: JIHNBDJFOFI
 message PlatformInfo {
 	uint32 route_id = 1;
 	int32 start_index = 2;

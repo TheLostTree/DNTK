@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 509
-// Obf: NCLDLEACMPK
+// CmdId: 23659
+// Obf: DKHBIMPOOJM
 message DuelHeartCgEndNotify {
 }

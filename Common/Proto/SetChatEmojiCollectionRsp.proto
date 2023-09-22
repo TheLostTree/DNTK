@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 2098
-// Obf: PELINEBALPE
+// CmdId: 4089
+// Obf: MMBMFFADHEM
 message SetChatEmojiCollectionRsp {
-	int32 retcode = 7;
+	int32 retcode = 11;
 }

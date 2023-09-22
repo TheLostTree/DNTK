@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: EGJIPIADEGJ
+// Obf: BEBGFDMPMHD
 message SorushTrialDetailInfo {
-	repeated uint32 EJKGIMFCDKE = 4;
-	repeated uint32 IHCPBJNKAGO = 6;
-	map<uint32, uint32> LLNADKOEMMF = 13;
-	repeated uint32 DOELBHKKNIM = 7;
+	repeated uint32 DGELICKACOP = 6;
+	repeated uint32 COOILNKNEEF = 3;
+	map<uint32, uint32> KFLLEIACPHC = 10;
+	repeated uint32 EJBPEFKFILC = 13;
 }

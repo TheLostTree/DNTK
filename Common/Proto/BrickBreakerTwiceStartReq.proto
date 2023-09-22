@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 7000
-// Obf: EBCGDCALGJI
+// CmdId: 23603
+// Obf: PGCGIEJBINH
 message BrickBreakerTwiceStartReq {
 }

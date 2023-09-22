@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5843
-// Obf: GIFEBICDBCF
+// CmdId: 21623
+// Obf: ACPEMIFBNNB
 message FungusFighterRestartTraningDungeonRsp {
-	int32 retcode = 10;
+	int32 retcode = 4;
 }

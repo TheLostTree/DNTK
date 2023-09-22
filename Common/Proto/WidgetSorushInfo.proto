@@ -18,12 +18,12 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-// Obf: NCIHENPDBPD
+// Obf: FFGKNAHPKKF
 message WidgetSorushInfo {
-	uint32 slot = 15;
-	bool MHMHPPJKAHM = 14;
-	bool JMOJHHHKHEL = 7;
-	Vector rot = 3;
-	bool EOFNCKAMIKB = 10;
-	Vector pos = 5;
+	Vector pos = 2;
+	bool PLDLMAFLGDJ = 11;
+	bool EDBKNMHNOLP = 3;
+	Vector rot = 8;
+	bool EMLEJFAGFBF = 10;
+	uint32 slot = 7;
 }

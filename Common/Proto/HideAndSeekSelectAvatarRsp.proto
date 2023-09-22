@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 4472
-// Obf: NBGFNPFNHDL
+// CmdId: 5353
+// Obf: GLAOFIIDCHP
 message HideAndSeekSelectAvatarRsp {
-	int32 retcode = 2;
-	uint32 avatar_id = 3;
+	uint32 avatar_id = 15;
+	int32 retcode = 3;
 }

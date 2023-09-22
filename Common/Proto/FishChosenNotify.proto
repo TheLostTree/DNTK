@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 26704
-// Obf: MDNEPFPANAP
+// CmdId: 5825
+// Obf: MABHDMMLLCK
 message FishChosenNotify {
-	uint32 fish_id = 15;
+	uint32 fish_id = 10;
 }

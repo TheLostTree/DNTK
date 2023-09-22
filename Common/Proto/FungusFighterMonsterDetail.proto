@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: HMDOLFMPBAF
+// Obf: JAIAMJEOAGD
 message FungusFighterMonsterDetail {
-	bool is_alive = 11;
+	bool is_alive = 6;
+	float cur_hp_percentage = 4;
 	uint32 fungus_id = 9;
-	float cur_hp_percentage = 6;
 }

@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 8751
-// Obf: IKPHDDJIDGO
+// CmdId: 2170
+// Obf: BIPJBPEAGIH
 message EnterTrialAvatarActivityDungeonRsp {
-	uint32 activity_id = 1;
-	int32 retcode = 15;
-	uint32 trial_avatar_index_id = 6;
+	uint32 activity_id = 12;
+	int32 retcode = 3;
+	uint32 trial_avatar_index_id = 8;
 }

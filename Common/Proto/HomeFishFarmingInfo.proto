@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: CBMABNMGGCK
+// Obf: CHEPDPBCKDP
 message HomeFishFarmingInfo {
-	uint32 fishpond_guid = 1;
-	repeated uint32 fish_id_list = 15;
+	repeated uint32 fish_id_list = 8;
+	uint32 fishpond_guid = 2;
 }

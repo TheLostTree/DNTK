@@ -19,9 +19,9 @@ option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Investigation.proto";
 import "InvestigationTarget.proto";
-// CmdId: 23777
-// Obf: AOFKNKKENHJ
+// CmdId: 1919
+// Obf: CHGDBPOCDKC
 message PlayerInvestigationAllInfoNotify {
-	repeated Investigation investigation_list = 5;
-	repeated InvestigationTarget investigation_target_list = 14;
+	repeated Investigation investigation_list = 11;
+	repeated InvestigationTarget investigation_target_list = 12;
 }

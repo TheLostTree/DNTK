@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "GCGBossChallengeData.proto";
-// CmdId: 5240
-// Obf: JNBKJEOGHBG
+// CmdId: 7099
+// Obf: BNGAGMGNFAF
 message GCGBossChallengeUpdateNotify {
-	GCGBossChallengeData boss_challenge = 14;
+	GCGBossChallengeData boss_challenge = 8;
 }

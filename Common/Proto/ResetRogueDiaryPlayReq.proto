@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 3800
-// Obf: KDHFDDAOPEN
+// CmdId: 8459
+// Obf: HMACMGIOHDG
 message ResetRogueDiaryPlayReq {
-	uint32 stage_id = 4;
+	uint32 stage_id = 15;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 21244
-// Obf: AONPFFPGJBK
+// CmdId: 21817
+// Obf: CJNIMNCGHML
 message VintageCampGroupBundleRegisterNotify {
-	uint32 group_bundle_id = 6;
+	uint32 group_bundle_id = 13;
 }

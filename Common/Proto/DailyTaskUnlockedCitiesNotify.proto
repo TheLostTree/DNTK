@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 6722
-// Obf: PACMFFMCCEK
+// CmdId: 127
+// Obf: MAFKBKGEIBB
 message DailyTaskUnlockedCitiesNotify {
-	repeated uint32 unlocked_city_list = 15;
+	repeated uint32 unlocked_city_list = 5;
 }

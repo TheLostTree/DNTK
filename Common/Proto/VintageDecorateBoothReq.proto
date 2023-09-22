@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "CustomGadgetTreeInfo.proto";
-// CmdId: 4197
-// Obf: GOBHLJKBFNJ
+// CmdId: 24321
+// Obf: DHGHMOFNLHJ
 message VintageDecorateBoothReq {
-	uint32 entity_id = 4;
-	CustomGadgetTreeInfo combination_info = 2;
+	CustomGadgetTreeInfo combination_info = 3;
+	uint32 entity_id = 10;
 }

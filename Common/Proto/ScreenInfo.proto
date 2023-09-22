@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: MPEEPHMCGKD
+// Obf: BPBJHFCAEEA
 message ScreenInfo {
 	uint32 live_id = 1;
 	uint32 projector_entity_id = 2;

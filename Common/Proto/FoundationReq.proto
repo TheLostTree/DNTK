@@ -18,11 +18,11 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "FoundationOpType.proto";
-// CmdId: 29818
-// Obf: LGBCFACNBEC
+// CmdId: 816
+// Obf: HPKMHKOFJHC
 message FoundationReq {
-	FoundationOpType op_type = 1;
-	uint32 building_id = 11;
-	uint32 gadget_entity_id = 4;
 	uint32 point_config_id = 8;
+	uint32 building_id = 1;
+	uint32 gadget_entity_id = 3;
+	FoundationOpType op_type = 6;
 }

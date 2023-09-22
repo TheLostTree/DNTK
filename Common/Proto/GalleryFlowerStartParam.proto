@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: OMALNNMCMPP
+// Obf: CLHGHBAPIDK
 message GalleryFlowerStartParam {
-	uint32 target_score = 10;
+	uint32 target_score = 6;
 }

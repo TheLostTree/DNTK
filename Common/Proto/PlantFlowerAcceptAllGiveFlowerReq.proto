@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 27784
-// Obf: MEOIGCKMDJN
+// CmdId: 8493
+// Obf: HJAEBFBKODO
 message PlantFlowerAcceptAllGiveFlowerReq {
-	uint32 schedule_id = 7;
+	uint32 schedule_id = 6;
 }

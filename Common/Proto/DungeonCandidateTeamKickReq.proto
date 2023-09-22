@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 28294
-// Obf: MAHEAEBNDNP
+// CmdId: 907
+// Obf: GIGAIOEBJNC
 message DungeonCandidateTeamKickReq {
 	uint32 player_uid = 5;
 }

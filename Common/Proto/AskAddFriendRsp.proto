@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 1146
-// Obf: DGNBHNPCBNC
+// CmdId: 4048
+// Obf: HLILMLBMHLG
 message AskAddFriendRsp {
-	uint32 target_uid = 3;
-	int32 retcode = 15;
-	uint32 param = 7;
+	int32 retcode = 3;
+	uint32 target_uid = 4;
+	uint32 param = 11;
 }

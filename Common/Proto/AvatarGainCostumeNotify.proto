@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 24251
-// Obf: CMOIAGEGIOJ
+// CmdId: 1645
+// Obf: CALPEEFDPGK
 message AvatarGainCostumeNotify {
-	uint32 costume_id = 6;
+	uint32 costume_id = 1;
 }

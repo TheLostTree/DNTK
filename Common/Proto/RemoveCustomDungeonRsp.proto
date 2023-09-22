@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 28228
-// Obf: IKNDOJKMIHF
+// CmdId: 6203
+// Obf: CICCGOEOCHG
 message RemoveCustomDungeonRsp {
-	uint64 dungeon_guid = 9;
-	int32 retcode = 11;
+	uint64 dungeon_guid = 11;
+	int32 retcode = 9;
 }

@@ -22,7 +22,7 @@ import "SocialShowAvatarInfo.proto";
 import "FriendEnterHomeOption.proto";
 import "ProfilePicture.proto";
 import "PlatformType.proto";
-// Obf: JIFKJKFNBFF
+// Obf: LOJEJNBFKEA
 message FriendBrief {
 	uint32 uid = 1;
 	string nickname = 2;
@@ -46,6 +46,4 @@ message FriendBrief {
 	bool is_game_source = 25;
 	bool is_psn_source = 26;
 	PlatformType platform_type = 27;
-	bool IEAHDCLDOEJ = 28;
-	bool BJFJJMGENCH = 29;
 }

@@ -18,10 +18,10 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "HuntingPair.proto";
-// CmdId: 8846
-// Obf: KODBBECLOLL
+// CmdId: 4308
+// Obf: ADFKIGKCMLA
 message TakeHuntingOfferRsp {
-	HuntingPair hunting_pair = 9;
-	uint32 city_id = 2;
-	int32 retcode = 7;
+	int32 retcode = 8;
+	uint32 city_id = 13;
+	HuntingPair hunting_pair = 7;
 }

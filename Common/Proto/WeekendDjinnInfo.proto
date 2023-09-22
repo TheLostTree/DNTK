@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-// Obf: PDPLPNHEJPH
+// Obf: ILCMJCOHIKF
 message WeekendDjinnInfo {
-	Vector pos = 4;
-	Vector rot = 1;
+	Vector rot = 14;
+	Vector pos = 13;
 }

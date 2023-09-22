@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "GivingRecord.proto";
-// CmdId: 7258
-// Obf: DPEHMENOLIB
+// CmdId: 174
+// Obf: HMNBBCGJFMC
 message GivingRecordNotify {
-	repeated GivingRecord giving_record_list = 4;
+	repeated GivingRecord giving_record_list = 9;
 }

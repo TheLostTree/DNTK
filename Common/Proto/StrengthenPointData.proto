@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: DELLDHCKHKJ
+// Obf: OJLOLCKMJNH
 message StrengthenPointData {
-	uint32 FNBNNLOLACD = 2;
-	uint32 ENNCLEFEMDF = 5;
+	uint32 MJENJDAGDJI = 1;
+	uint32 NINKDFMACII = 8;
 }

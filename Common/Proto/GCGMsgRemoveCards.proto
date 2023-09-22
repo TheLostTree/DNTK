@@ -17,12 +17,12 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "GCGReason.proto";
+import "MNDCMMKBIBP.proto";
 import "GCGZoneType.proto";
-// Obf: BOOGIFJDFKP
+// Obf: FKGKNMLKCGA
 message GCGMsgRemoveCards {
-	GCGReason reason = 8;
-	uint32 controller_id = 3;
-	repeated uint32 card_guid_list = 15;
-	GCGZoneType zone = 7;
+	MNDCMMKBIBP reason = 2;
+	uint32 controller_id = 1;
+	repeated uint32 card_guid_list = 9;
+	GCGZoneType zone = 15;
 }

@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "GroupLinkBundle.proto";
-// CmdId: 5992
-// Obf: EFKGBILBKKB
+// CmdId: 5758
+// Obf: NIIBKLHBNAL
 message GroupLinkChangeNotify {
-	GroupLinkBundle bundle = 2;
+	GroupLinkBundle bundle = 8;
 }

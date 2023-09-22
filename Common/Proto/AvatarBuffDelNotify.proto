@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 3202
-// Obf: HPKFFICFAKP
+// CmdId: 305
+// Obf: NFKPMCMOKNP
 message AvatarBuffDelNotify {
-	uint64 avatar_guid = 11;
-	uint32 buff_id = 5;
+	uint32 buff_id = 15;
+	uint64 avatar_guid = 3;
 }

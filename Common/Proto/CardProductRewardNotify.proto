@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5635
-// Obf: KHCOIEOAPAE
+// CmdId: 4121
+// Obf: JJGBMKJCINL
 message CardProductRewardNotify {
-	string product_id = 7;
 	uint32 hcoin = 11;
-	uint32 remain_days = 4;
+	string product_id = 8;
+	uint32 remain_days = 10;
 }

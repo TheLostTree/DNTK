@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 4718
-// Obf: CDIBKABNMLB
+// CmdId: 5503
+// Obf: KINIPNPNLBP
 message HideAndSeekPlayerCapturedNotify {
-	uint32 ghost_skill_id = 13;
+	uint32 ghost_skill_id = 9;
 }

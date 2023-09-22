@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 21680
-// Obf: HLNLOLMOCDI
+// CmdId: 2637
+// Obf: EHBCMBGNEAI
 message BattlePassMissionDelNotify {
-	repeated uint32 del_mission_id_list = 8;
+	repeated uint32 del_mission_id_list = 9;
 }

@@ -18,10 +18,10 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "MatchReason.proto";
-// CmdId: 28090
-// Obf: KLDALAILPLA
+// CmdId: 4163
+// Obf: BKBJGKENNBI
 message PlayerGCGMatchDismissNotify {
-	MatchReason reason = 13;
-	uint32 match_id = 4;
-	repeated uint32 uid_list = 7;
+	repeated uint32 uid_list = 11;
+	uint32 match_id = 12;
+	MatchReason reason = 10;
 }

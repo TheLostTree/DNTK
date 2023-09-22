@@ -18,10 +18,10 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-// CmdId: 2124
-// Obf: GLCLJMKPDLG
+// CmdId: 4272
+// Obf: BACNGKGEKIB
 message UseWidgetCreateGadgetReq {
-	Vector rot = 9;
-	uint32 material_id = 1;
-	Vector pos = 12;
+	uint32 material_id = 14;
+	Vector pos = 10;
+	Vector rot = 13;
 }

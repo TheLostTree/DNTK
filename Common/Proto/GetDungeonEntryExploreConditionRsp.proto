@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "DungeonEntryCond.proto";
-// CmdId: 3536
-// Obf: GAICEEONGHO
+// CmdId: 3140
+// Obf: CDKGGIJGPCN
 message GetDungeonEntryExploreConditionRsp {
-	int32 retcode = 11;
-	DungeonEntryCond dungeon_entry_cond = 12;
+	DungeonEntryCond dungeon_entry_cond = 6;
+	int32 retcode = 7;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 20708
-// Obf: BOADCMOEAAA
+// CmdId: 20376
+// Obf: OAIOHBNFMIN
 message LanV3BoatGameTransferFinishNotify {
-	bool is_reenter = 3;
+	bool is_reenter = 4;
 }

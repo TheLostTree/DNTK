@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 20880
-// Obf: IEOPFDFPIND
+// CmdId: 5708
+// Obf: BFNPDJHLHNP
 message ServerMessageNotify {
-	uint32 index = 12;
+	uint32 index = 9;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 1624
-// Obf: JICAOKFIGGL
+// CmdId: 3007
+// Obf: MLFDDGCBNJD
 message WidgetQuickHitTreeRsp {
-	int32 retcode = 10;
+	int32 retcode = 15;
 }

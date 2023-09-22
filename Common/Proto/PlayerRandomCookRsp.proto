@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 9489
-// Obf: JJOOOKDKNLF
+// CmdId: 136
+// Obf: FKNNOLLMNME
 message PlayerRandomCookRsp {
-	int32 retcode = 9;
+	int32 retcode = 3;
 }

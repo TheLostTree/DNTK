@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 24844
-// Obf: JAOEMELOGIB
+// CmdId: 2834
+// Obf: GMFGIEFMNMC
 message TakeCityReputationExploreRewardReq {
 	repeated uint32 explore_id_list = 9;
-	uint32 city_id = 8;
+	uint32 city_id = 11;
 }

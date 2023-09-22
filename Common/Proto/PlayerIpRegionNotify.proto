@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 1074
-// Obf: JLLGODJMAAG
+// CmdId: 191
+// Obf: FOIEBCFOCLK
 message PlayerIpRegionNotify {
-	string ip_code = 9;
+	string ip_code = 3;
 }

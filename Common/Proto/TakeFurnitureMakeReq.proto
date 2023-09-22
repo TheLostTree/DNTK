@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 28389
-// Obf: FCKFFOJJNDH
+// CmdId: 4671
+// Obf: ICMOFCCCLIN
 message TakeFurnitureMakeReq {
-	uint32 index = 1;
-	bool is_fast_finish = 7;
-	uint32 make_id = 13;
+	uint32 make_id = 12;
+	bool is_fast_finish = 8;
+	uint32 index = 13;
 }

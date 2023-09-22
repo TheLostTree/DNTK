@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 27534
-// Obf: DOPBINMGHKL
+// CmdId: 8957
+// Obf: EPPNJFHOFAH
 message WinterCampTriathlonRestartRsp {
-	uint32 gallery_id = 5;
-	int32 retcode = 14;
+	uint32 gallery_id = 4;
+	int32 retcode = 1;
 }

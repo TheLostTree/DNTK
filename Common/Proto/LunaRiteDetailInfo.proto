@@ -19,8 +19,8 @@ option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "LunaRiteAreaInfo.proto";
 import "LunaRiteHintPoint.proto";
-// Obf: LEKDJAJFCEG
+// Obf: HICKPBHAGFM
 message LunaRiteDetailInfo {
-	repeated LunaRiteAreaInfo area_info_list = 3;
-	repeated LunaRiteHintPoint hint_point = 15;
+	repeated LunaRiteAreaInfo area_info_list = 9;
+	repeated LunaRiteHintPoint hint_point = 11;
 }

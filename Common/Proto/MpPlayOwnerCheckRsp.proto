@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 6021
-// Obf: KJFMGIADCNA
+// CmdId: 1831
+// Obf: OAKGFIPBBDH
 message MpPlayOwnerCheckRsp {
-	bool is_skip_match = 1;
-	uint32 wrong_uid = 9;
-	int32 retcode = 10;
-	uint32 mp_play_id = 13;
+	uint32 wrong_uid = 4;
+	uint32 mp_play_id = 11;
+	bool is_skip_match = 8;
+	int32 retcode = 12;
 }

@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "MatchType.proto";
-// CmdId: 9117
-// Obf: HOBFLBCLPIC
+// CmdId: 4171
+// Obf: CEOKCPHMBIB
 message PlayerCancelMatchReq {
-	MatchType match_type = 7;
+	MatchType match_type = 10;
 }

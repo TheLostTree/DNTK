@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 6203
-// Obf: KMIINGBBACL
+// CmdId: 265
+// Obf: IJJNFABHPDK
 message SetSceneWeatherAreaReq {
-	uint32 weather_gadget_id = 1;
-	map<uint32, string> weather_value_map = 12;
+	map<uint32, string> weather_value_map = 3;
+	uint32 weather_gadget_id = 5;
 }

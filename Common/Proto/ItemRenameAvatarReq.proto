@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 29042
-// Obf: IBCHBDKCOEB
+// CmdId: 1697
+// Obf: MKOBGFBIPJE
 message ItemRenameAvatarReq {
-	uint32 rename_id = 6;
-	string avatar_name = 9;
+	uint32 rename_id = 11;
+	string avatar_name = 4;
 }

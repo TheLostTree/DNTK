@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: JGMFFPHIBEL
+// Obf: FANGELMMMLL
 message CityReputationHuntInfo {
-	bool is_open = 10;
-	bool has_reward = 4;
-	uint32 cur_week_finish_num = 3;
+	bool has_reward = 15;
+	uint32 cur_week_finish_num = 13;
+	bool is_open = 8;
 }

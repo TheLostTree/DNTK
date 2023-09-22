@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 29858
-// Obf: BLLAODMBPOE
+// CmdId: 924
+// Obf: MEBFNMCCCAJ
 message DungeonGetStatueDropRsp {
-	int32 retcode = 11;
+	int32 retcode = 14;
 }

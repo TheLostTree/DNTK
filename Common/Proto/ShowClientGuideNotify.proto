@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 8965
-// Obf: LBKMGIHFFNI
+// CmdId: 3399
+// Obf: FKCLONJPIHM
 message ShowClientGuideNotify {
-	string guide_name = 6;
+	string guide_name = 11;
 }

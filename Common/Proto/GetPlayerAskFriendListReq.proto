@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 3520
-// Obf: FHNBEAINLJA
+// CmdId: 4070
+// Obf: MEEGKFLOAKG
 message GetPlayerAskFriendListReq {
 }

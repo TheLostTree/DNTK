@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 20313
-// Obf: KGNIJMKAGLF
+// CmdId: 8541
+// Obf: JMGALLDLCCN
 message RoguelikeCardGachaNotify {
-	bool is_can_refresh = 1;
-	repeated uint32 card_list = 14;
+	bool is_can_refresh = 8;
+	repeated uint32 card_list = 12;
 }

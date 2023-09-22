@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: APFJJCGJNIP
+// Obf: JJOANEJFBMA
 message GravenInnocencePhotoStageInfo {
-	bool is_finished = 3;
-	bool is_open = 9;
-	uint32 stage_id = 13;
+	bool is_open = 6;
+	uint32 stage_id = 14;
+	bool is_finished = 8;
 }

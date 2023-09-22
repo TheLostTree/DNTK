@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "UgcMusicTrack.proto";
-// Obf: HILPBDEAEAP
+// Obf: CFFGCLHLGPN
 message UgcMusicRecord {
-	repeated UgcMusicTrack music_track_list = 14;
-	uint32 music_id = 12;
+	repeated UgcMusicTrack music_track_list = 3;
+	uint32 music_id = 14;
 }

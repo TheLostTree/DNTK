@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 22107
-// Obf: GDGFKLEKPHP
+// CmdId: 2016
+// Obf: JNDHKGFAPJI
 message WaterSpritePhaseFinishNotify {
 }

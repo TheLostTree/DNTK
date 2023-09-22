@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 26566
-// Obf: BKHPKONPAPN
+// CmdId: 4768
+// Obf: KNHDNOEJIFF
 message HomeAvatarRewardEventGetReq {
-	uint32 avatar_id = 9;
-	uint32 event_id = 10;
+	uint32 event_id = 3;
+	uint32 avatar_id = 7;
 }

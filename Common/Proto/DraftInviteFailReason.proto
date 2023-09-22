@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: ABGFENJLAMG
+// Obf: KGMFIEKKAPP
 enum DraftInviteFailReason {
 	DRAFT_FAIL_UNKNOWN = 0;
 	DRAFT_ACTIVITY_NOT_OPEN = 1;
@@ -25,5 +25,4 @@ enum DraftInviteFailReason {
 	DRAFT_SCENE_NOT_MEET = 3;
 	DRAFT_WORLD_NOT_MEET = 4;
 	DRAFT_PLAY_LIMIT_NOT_MEET = 5;
-	LNILPEDBCDB_DraftActivityConfigNotFound = 6;
 }

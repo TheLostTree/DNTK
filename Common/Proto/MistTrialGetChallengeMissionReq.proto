@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 28736
-// Obf: CPJLGNLKLHB
+// CmdId: 8956
+// Obf: KBEFHHEOABA
 message MistTrialGetChallengeMissionReq {
-	uint32 trial_id = 14;
+	uint32 trial_id = 15;
 }

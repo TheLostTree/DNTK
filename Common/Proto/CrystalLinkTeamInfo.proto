@@ -19,8 +19,8 @@ option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "CrystalLinkBuffInfo.proto";
 import "CrystalLinkAvatarInfo.proto";
-// Obf: HJHHNKFBGDE
+// Obf: EPPFIDECGAF
 message CrystalLinkTeamInfo {
-	repeated CrystalLinkBuffInfo buff_info_list = 7;
-	repeated CrystalLinkAvatarInfo avatar_info_list = 6;
+	repeated CrystalLinkBuffInfo buff_info_list = 9;
+	repeated CrystalLinkAvatarInfo avatar_info_list = 14;
 }

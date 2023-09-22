@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 21318
-// Obf: AAOAGELEOBH
+// CmdId: 8422
+// Obf: BHDGGBDBCKM
 message RogueDiaryCoinAddNotify {
-	uint32 num = 11;
+	uint32 num = 15;
 }

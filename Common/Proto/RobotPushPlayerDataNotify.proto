@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 23031
-// Obf: HCMPFHKCCGE
+// CmdId: 34
+// Obf: NMAMMHHNPKN
 message RobotPushPlayerDataNotify {
-	bytes bin = 15;
+	bytes bin = 8;
 }

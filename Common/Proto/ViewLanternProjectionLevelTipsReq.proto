@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 29565
-// Obf: EEHBOOBGHJP
+// CmdId: 8953
+// Obf: MKGJEKLFPLE
 message ViewLanternProjectionLevelTipsReq {
 	uint32 level_id = 8;
 }

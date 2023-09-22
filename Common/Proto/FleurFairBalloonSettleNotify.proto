@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "FleurFairBalloonSettleInfo.proto";
-// CmdId: 4377
-// Obf: FDLKFLEHFBJ
+// CmdId: 2100
+// Obf: GBOKOGEGHKE
 message FleurFairBalloonSettleNotify {
-	uint32 minigame_id = 5;
-	map<uint32, FleurFairBalloonSettleInfo> settle_info_map = 1;
+	uint32 minigame_id = 14;
+	map<uint32, FleurFairBalloonSettleInfo> settle_info_map = 11;
 }

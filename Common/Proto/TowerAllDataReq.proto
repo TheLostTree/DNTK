@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 23009
-// Obf: OBIBAPPDOKJ
+// CmdId: 2435
+// Obf: BMOMJPFDKHO
 message TowerAllDataReq {
-	bool is_interact = 6;
+	bool is_interact = 11;
 }

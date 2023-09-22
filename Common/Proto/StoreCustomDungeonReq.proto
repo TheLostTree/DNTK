@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 24734
-// Obf: HPMKDKIAOCI
+// CmdId: 6209
+// Obf: OMEGEFIOLHF
 message StoreCustomDungeonReq {
-	bool is_cancel_store = 1;
-	uint64 dungeon_guid = 10;
+	uint64 dungeon_guid = 15;
+	bool is_cancel_store = 11;
 }

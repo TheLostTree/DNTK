@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 21313
-// Obf: MAJHIDEDHMH
+// CmdId: 8949
+// Obf: GHHCCOLGICG
 message MichiaeMatsuriStartDarkChallengeRsp {
-	int32 retcode = 8;
+	int32 retcode = 5;
 }

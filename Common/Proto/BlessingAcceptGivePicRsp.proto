@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 22770
-// Obf: HKAPDDBOIKB
+// CmdId: 2194
+// Obf: NLLJCAMGBGI
 message BlessingAcceptGivePicRsp {
-	uint32 uid = 2;
-	uint32 pic_id = 4;
-	int32 retcode = 15;
-	uint32 index = 9;
+	int32 retcode = 7;
+	uint32 index = 10;
+	uint32 uid = 9;
+	uint32 pic_id = 14;
 }

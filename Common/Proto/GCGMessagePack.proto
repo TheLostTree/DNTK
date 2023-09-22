@@ -18,11 +18,11 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "GCGMessage.proto";
-import "DNLLNJDINJG.proto";
-// Obf: FLLBCOEFODJ
+import "PEONGPLDDGK.proto";
+// Obf: MLKPIINGDEN
 message GCGMessagePack {
-	uint32 controller_id = 6;
-	repeated GCGMessage msg_list = 13;
-	DNLLNJDINJG action_type = 4;
-	uint32 BJMHCKLMAHH = 9;
+	uint32 controller_id = 15;
+	repeated GCGMessage msg_list = 5;
+	PEONGPLDDGK action_type = 8;
+	uint32 IGCDCJEJMOF = 7;
 }

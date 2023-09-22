@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5303
-// Obf: NPLCMDAPCHP
+// CmdId: 2113
+// Obf: KGOCNOHNNNE
 message FleurFairMusicGameStartReq {
-	uint32 music_basic_id = 15;
+	uint32 music_basic_id = 11;
 }

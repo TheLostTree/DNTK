@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 25175
-// Obf: LABAJDKACOG
+// CmdId: 233
+// Obf: HJJMIDADBAP
 message GetSceneAreaReq {
-	uint32 scene_id = 13;
-	uint32 belong_uid = 9;
+	uint32 belong_uid = 11;
+	uint32 scene_id = 6;
 }

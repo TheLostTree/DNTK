@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 22648
-// Obf: GJOAMDCKALK
+// CmdId: 157
+// Obf: NBFBAAAFDGM
 message NicknameAuditConfigNotify {
-	bool is_open = 12;
-	uint32 submit_limit = 8;
+	uint32 submit_limit = 13;
+	bool is_open = 2;
 }

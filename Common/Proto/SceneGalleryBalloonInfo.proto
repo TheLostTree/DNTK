@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "BalloonPlayerInfo.proto";
-// Obf: GLCKHGIDJDK
+// Obf: OMONJJKCABM
 message SceneGalleryBalloonInfo {
-	map<uint32, BalloonPlayerInfo> scene_player_balloon_info_map = 4;
-	uint32 end_time = 2;
+	uint32 end_time = 7;
+	map<uint32, BalloonPlayerInfo> scene_player_balloon_info_map = 13;
 }

@@ -17,12 +17,12 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "HPJPOMAIPNC.proto";
-// CmdId: 25227
-// Obf: LJFKIPPJOBK
+import "JKLJHDFICPL.proto";
+// CmdId: 7358
+// Obf: PPGHMAMMLHN
 message GCGStartChallengeRsp {
-	uint32 level_id = 14;
-	int32 retcode = 9;
-	uint32 config_id = 2;
-	HPJPOMAIPNC OJJEDPGEKFK = 3;
+	JKLJHDFICPL KPHEDFKMFOG = 6;
+	uint32 level_id = 11;
+	uint32 config_id = 7;
+	int32 retcode = 13;
 }

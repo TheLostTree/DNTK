@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 21878
-// Obf: HHJLNGIDODJ
+// CmdId: 8632
+// Obf: HLGDOJBCHEN
 message PhotoActivityClientViewReq {
-	uint32 pos_id = 12;
+	uint32 pos_id = 9;
 }

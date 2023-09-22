@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 27236
-// Obf: OKNKMLEPCKN
+// CmdId: 4020
+// Obf: JHLJPPPLLJL
 message AddBlacklistReq {
-	uint32 target_uid = 12;
+	uint32 target_uid = 5;
 }

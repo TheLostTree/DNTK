@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "FallPlayerInfo.proto";
-// Obf: IIBDBKMHMBI
+// Obf: COMLPJLKHDH
 message SceneGalleryFallInfo {
-	map<uint32, FallPlayerInfo> scene_player_fall_info_map = 5;
-	uint32 end_time = 7;
+	uint32 end_time = 9;
+	map<uint32, FallPlayerInfo> scene_player_fall_info_map = 6;
 }

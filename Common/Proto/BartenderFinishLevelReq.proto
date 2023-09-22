@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 1905
-// Obf: DCABKKDAADC
+// CmdId: 8495
+// Obf: GEDEAJCALBB
 message BartenderFinishLevelReq {
-	uint32 level_id = 12;
+	uint32 level_id = 10;
 }

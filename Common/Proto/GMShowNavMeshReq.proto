@@ -18,10 +18,10 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-// CmdId: 2389
-// Obf: HNNOJGLHJHH
+// CmdId: 2392
+// Obf: KAGKJLCDJLG
 message GMShowNavMeshReq {
-	Vector center = 8;
-	Vector extent = 1;
-	int32 uid = 12;
+	int32 uid = 14;
+	Vector center = 9;
+	Vector JAPOGDGLJCJ = 11;
 }

@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: CILPGEMKHFH
+// Obf: OEHKPJCBOEA
 enum LuaShellType {
 	LUASHELL_NONE = 0;
 	LUASHELL_NORMAL = 1;

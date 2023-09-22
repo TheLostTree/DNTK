@@ -18,11 +18,11 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ItemParam.proto";
-// CmdId: 1428
-// Obf: HEOCHFLFHEE
+// CmdId: 2858
+// Obf: LHMECCFNKID
 message TakeCityReputationParentQuestRsp {
-	repeated ItemParam item_list = 15;
-	uint32 city_id = 7;
-	int32 retcode = 11;
-	repeated uint32 parent_quest_list = 9;
+	repeated uint32 parent_quest_list = 8;
+	int32 retcode = 4;
+	uint32 city_id = 2;
+	repeated ItemParam item_list = 3;
 }

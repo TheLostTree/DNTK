@@ -18,7 +18,7 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "CharAmusementStageData.proto";
-// Obf: PGIMABDCLAP
+// Obf: PKCJIAMPIJD
 message CharAmusementDetailInfo {
-	repeated CharAmusementStageData stage_data_list = 1;
+	repeated CharAmusementStageData stage_data_list = 11;
 }

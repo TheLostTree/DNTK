@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 28204
-// Obf: CFIFEHLBHPM
+// CmdId: 1629
+// Obf: FEBHFJCIKEH
 message AvatarUpgradeReq {
-	uint32 item_id = 5;
-	uint64 avatar_guid = 10;
+	uint64 avatar_guid = 12;
 	uint32 count = 1;
+	uint32 item_id = 4;
 }

@@ -18,7 +18,7 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "GCGSkillPreviewTokenInfo.proto";
-// Obf: GDMPPAMGPHK
+// Obf: MCBCFJBPNAP
 message GCGSkillPreviewTokenChangeInfo {
-	repeated GCGSkillPreviewTokenInfo token_change_list = 8;
+	repeated GCGSkillPreviewTokenInfo token_change_list = 9;
 }

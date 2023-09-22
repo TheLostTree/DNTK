@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: NCBNIKIODKP
+// Obf: COGCCGNJACN
 enum EventTriggerType {
 	EVENT_TRIGGER_NONE = 0;
 	EVENT_TRIGGER_ENTER_FORCE = 1;

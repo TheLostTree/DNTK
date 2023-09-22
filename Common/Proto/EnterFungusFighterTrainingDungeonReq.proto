@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 9440
-// Obf: IGBDKDJEPMO
+// CmdId: 21220
+// Obf: GCKOBEFLAEF
 message EnterFungusFighterTrainingDungeonReq {
-	uint32 dungeon_id = 6;
+	uint32 dungeon_id = 2;
 }

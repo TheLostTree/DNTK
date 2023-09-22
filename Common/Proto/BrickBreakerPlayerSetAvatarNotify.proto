@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 3292
-// Obf: CMPPLEJFGBK
+// CmdId: 5351
+// Obf: JELKPPJLOCE
 message BrickBreakerPlayerSetAvatarNotify {
 	uint32 uid = 7;
-	repeated uint32 costume_id_list = 9;
-	repeated uint32 avatar_id_list = 2;
+	repeated uint32 avatar_id_list = 8;
+	repeated uint32 costume_id_list = 1;
 }

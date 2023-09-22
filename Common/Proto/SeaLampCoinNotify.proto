@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 8079
-// Obf: NHJJEFLAFLN
+// CmdId: 2127
+// Obf: EEPFMDNHGBA
 message SeaLampCoinNotify {
-	uint32 sea_lamp_coin = 11;
+	uint32 sea_lamp_coin = 13;
 }

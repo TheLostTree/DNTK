@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 26920
-// Obf: GLCKLHPBFNH
+// CmdId: 5345
+// Obf: GGIANLPAJAJ
 message BrickBreakerPlayerReadyNotify {
-	repeated uint32 uid_list = 6;
+	repeated uint32 uid_list = 11;
 }

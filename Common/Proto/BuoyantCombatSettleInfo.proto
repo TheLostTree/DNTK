@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "BuoyantCombatGallerySettleInfo.proto";
-// Obf: MDJEIBAMMGM
+// Obf: CPKHDLEDMBM
 message BuoyantCombatSettleInfo {
-	bool is_new_record = 1;
-	BuoyantCombatGallerySettleInfo settle_info = 15;
+	BuoyantCombatGallerySettleInfo settle_info = 2;
+	bool is_new_record = 14;
 }

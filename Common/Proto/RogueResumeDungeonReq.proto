@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 28359
-// Obf: AIMIGPHLJNN
+// CmdId: 8182
+// Obf: AOCFDMGEADM
 message RogueResumeDungeonReq {
-	uint32 stage_id = 15;
+	uint32 stage_id = 1;
 }

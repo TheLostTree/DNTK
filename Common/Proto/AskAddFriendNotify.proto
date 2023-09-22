@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "FriendBrief.proto";
-// CmdId: 27323
-// Obf: NADOGBCLNJI
+// CmdId: 4033
+// Obf: FAFJPCFKENC
 message AskAddFriendNotify {
-	uint32 target_uid = 3;
-	FriendBrief target_friend_brief = 7;
+	uint32 target_uid = 14;
+	FriendBrief target_friend_brief = 12;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 22632
-// Obf: KPAHHCIABPF
+// CmdId: 8751
+// Obf: AIIFDHIDFJH
 message LunaRiteAreaFinishNotify {
 	uint32 area_id = 15;
 }

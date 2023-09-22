@@ -18,7 +18,7 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ItemParam.proto";
-// Obf: HKODPBNKBHM
+// Obf: ELHGKKNMKPG
 message Reward {
 	uint32 reward_id = 1;
 	repeated ItemParam item_list = 2;

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 568
-// Obf: GEJHFAELIPK
+// CmdId: 21956
+// Obf: PCPHPBEFMAH
 message TeamChainTakeCostumeRewardRsp {
-	int32 retcode = 5;
+	int32 retcode = 7;
 }

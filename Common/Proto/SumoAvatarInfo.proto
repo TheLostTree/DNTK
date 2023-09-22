@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: EGPCHKBINEA
+// Obf: FMCHEOACJGI
 message SumoAvatarInfo {
-	bool is_trial = 11;
-	uint64 avatar_id = 10;
+	bool is_trial = 4;
+	uint64 avatar_id = 1;
 }

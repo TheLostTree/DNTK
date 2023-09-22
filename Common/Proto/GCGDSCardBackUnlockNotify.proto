@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 27702
-// Obf: NECNIDOCACF
+// CmdId: 7873
+// Obf: JJOMMBPKJCM
 message GCGDSCardBackUnlockNotify {
-	uint32 card_back_id = 7;
+	uint32 card_back_id = 11;
 }

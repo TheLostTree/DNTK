@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 1091
-// Obf: LEEKMMIELMG
+// CmdId: 2502
+// Obf: GEOAIECJEOJ
 message SignInInfoReq {
 }

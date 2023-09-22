@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 7336
-// Obf: KMMIMMNJBJN
+// CmdId: 1785
+// Obf: FJLFCILPCAG
 message AvatarPromoteGetRewardRsp {
-	uint32 reward_id = 11;
-	uint32 promote_level = 10;
-	int32 retcode = 5;
-	uint64 avatar_guid = 12;
+	int32 retcode = 9;
+	uint64 avatar_guid = 2;
+	uint32 reward_id = 8;
+	uint32 promote_level = 6;
 }

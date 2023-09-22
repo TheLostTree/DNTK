@@ -18,11 +18,11 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "GearColumnInfo.proto";
-// CmdId: 22818
-// Obf: FAJMKMOAHNH
+// CmdId: 20732
+// Obf: CBILABMBFLK
 message GearActivityFinishPlayGearReq {
-	bool use_clue = 13;
-	bool is_success = 15;
-	uint32 level_id = 6;
-	repeated GearColumnInfo gear_column_info_list = 2;
+	bool use_clue = 1;
+	repeated GearColumnInfo gear_column_info_list = 3;
+	bool is_success = 10;
+	uint32 level_id = 8;
 }

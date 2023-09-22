@@ -19,10 +19,10 @@ option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "GCGBossChallengeData.proto";
 import "GCGLevelData.proto";
-// CmdId: 24795
-// Obf: AAKBABHMEIC
+// CmdId: 7616
+// Obf: FKCLECCFIKJ
 message GCGLevelChallengeNotify {
-	repeated GCGBossChallengeData unlock_boss_challenge_list = 15;
-	repeated GCGLevelData level_list = 12;
-	repeated uint32 unlock_world_challenge_list = 10;
+	repeated GCGBossChallengeData unlock_boss_challenge_list = 4;
+	repeated GCGLevelData level_list = 14;
+	repeated uint32 unlock_world_challenge_list = 8;
 }

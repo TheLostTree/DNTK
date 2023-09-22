@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "BargainSnapshot.proto";
-// CmdId: 9154
-// Obf: EGAHBLOCEPK
+// CmdId: 424
+// Obf: HKLGDGKMLIM
 message BargainStartNotify {
-	BargainSnapshot snapshot = 4;
-	uint32 bargain_id = 15;
+	uint32 bargain_id = 3;
+	BargainSnapshot snapshot = 8;
 }

@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "DigMarkPoint.proto";
-// Obf: BNNCLBHONBI
+// Obf: BGOEADLCCNF
 message DigActivityDetailInfo {
-	uint32 stage_id = 10;
-	repeated uint32 stage_id_list = 4;
-	repeated DigMarkPoint dig_mark_point_list = 14;
+	uint32 stage_id = 6;
+	repeated uint32 stage_id_list = 1;
+	repeated DigMarkPoint dig_mark_point_list = 13;
 }

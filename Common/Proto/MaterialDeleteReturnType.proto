@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: NHKCGBBJJGE
+// Obf: EACMIGMMBCA
 enum MaterialDeleteReturnType {
 	MATERIAL_DELETE_RETURN_BAG = 0;
 	MATERIAL_DELETE_RETURN_SEED = 1;

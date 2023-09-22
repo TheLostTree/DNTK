@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "EvtAnimatorParameterInfo.proto";
 import "ForwardType.proto";
-// CmdId: 8912
-// Obf: BNDEGKKNAFJ
+import "EvtAnimatorParameterInfo.proto";
+// CmdId: 396
+// Obf: MNMHGPICKNO
 message EvtAnimatorParameterNotify {
-	EvtAnimatorParameterInfo animator_param_info = 4;
 	ForwardType forward_type = 13;
+	EvtAnimatorParameterInfo animator_param_info = 4;
 }

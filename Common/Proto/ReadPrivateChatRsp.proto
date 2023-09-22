@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 9593
-// Obf: LOCJJOEEJMG
+// CmdId: 5034
+// Obf: DLFLHOEDAKA
 message ReadPrivateChatRsp {
-	int32 retcode = 7;
+	int32 retcode = 1;
 }

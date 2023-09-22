@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "WidgetGadgetData.proto";
-// CmdId: 4861
-// Obf: HCNKGFAPJNC
+// CmdId: 4291
+// Obf: OBICHLEMPEG
 message WidgetGadgetDataNotify {
-	WidgetGadgetData widget_gadget_data = 3;
+	WidgetGadgetData widget_gadget_data = 2;
 }

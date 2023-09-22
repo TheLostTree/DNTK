@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 23123
-// Obf: GEMGPGPCCCD
+// CmdId: 8187
+// Obf: JDNNCJAMPJO
 message UpgradeRoguelikeShikigamiReq {
-	uint32 JGBONDOBAII = 10;
-	uint32 FHBEKAOCDHF = 2;
+	uint32 OOHLIPJCHNE = 3;
+	uint32 HLODNDIEIJG = 11;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 20128
-// Obf: NNPIGOCJPOK
+// CmdId: 5340
+// Obf: KHPCKCDPIFA
 message ChessManualRefreshCardsRsp {
-	int32 retcode = 15;
+	int32 retcode = 11;
 }

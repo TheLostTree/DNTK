@@ -18,10 +18,10 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-// CmdId: 315
-// Obf: LHECKPDNFHN
+// CmdId: 269
+// Obf: GNENOGJPOIO
 message MarkEntityInMinMapNotify {
-	uint32 entity_id = 9;
-	Vector position = 13;
-	uint32 monster_id = 8;
+	Vector position = 15;
+	uint32 monster_id = 1;
+	uint32 entity_id = 6;
 }

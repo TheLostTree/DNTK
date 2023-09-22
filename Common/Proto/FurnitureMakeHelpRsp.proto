@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "FurnitureMakeHelpData.proto";
-// CmdId: 27261
-// Obf: GDJGEPDLKJE
+// CmdId: 4581
+// Obf: HBPNHOHAOOC
 message FurnitureMakeHelpRsp {
-	repeated FurnitureMakeHelpData help_data_list = 10;
-	int32 retcode = 6;
+	int32 retcode = 8;
+	repeated FurnitureMakeHelpData help_data_list = 6;
 }

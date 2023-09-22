@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 26971
-// Obf: PLGCJMCIONN
+// CmdId: 23608
+// Obf: AJHIKLLMIHP
 message LanV3BoatInterruptSettleStageRsp {
-	int32 retcode = 7;
+	int32 retcode = 11;
 }

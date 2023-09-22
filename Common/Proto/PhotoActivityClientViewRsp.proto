@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 20737
-// Obf: NLGPBPGNANF
+// CmdId: 8656
+// Obf: ILMCGBCPBPA
 message PhotoActivityClientViewRsp {
-	int32 retcode = 12;
-	uint32 pos_id = 14;
+	uint32 pos_id = 5;
+	int32 retcode = 15;
 }

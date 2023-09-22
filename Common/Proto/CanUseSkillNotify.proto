@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 1186
-// Obf: DBEMADCMEEF
+// CmdId: 1016
+// Obf: PBIONEOKAFI
 message CanUseSkillNotify {
-	bool is_can_use_skill = 8;
+	bool is_can_use_skill = 10;
 }

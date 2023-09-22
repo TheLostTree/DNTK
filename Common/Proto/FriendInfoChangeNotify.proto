@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 21775
-// Obf: BDOIGJMDPCO
+// CmdId: 4078
+// Obf: PPOCFBPEEAL
 message FriendInfoChangeNotify {
-	uint32 uid = 13;
-	string online_id = 6;
+	uint32 uid = 7;
+	string online_id = 13;
 }

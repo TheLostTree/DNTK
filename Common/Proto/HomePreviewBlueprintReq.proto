@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 4668
-// Obf: LPBJNGOBKPA
+// CmdId: 4508
+// Obf: NGCKGLKOPIO
 message HomePreviewBlueprintReq {
-	string share_code = 3;
-	uint32 slot_id = 1;
+	string share_code = 12;
+	uint32 slot_id = 13;
 }

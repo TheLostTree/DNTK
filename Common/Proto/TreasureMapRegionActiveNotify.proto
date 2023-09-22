@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 20683
-// Obf: CFEOAHDEJFD
+// CmdId: 2065
+// Obf: MCFKLLABOAD
 message TreasureMapRegionActiveNotify {
 	uint32 active_region_index = 11;
 }

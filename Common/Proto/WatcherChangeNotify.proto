@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 26993
-// Obf: OLBHOEIEMMI
+// CmdId: 2296
+// Obf: BJBFEMJBFOA
 message WatcherChangeNotify {
-	repeated uint32 LDFBKBABEDG = 13;
-	repeated uint32 IFEGPHMIGMG = 5;
+	repeated uint32 LJOHAPLDDIA = 9;
+	repeated uint32 NEHBGOHNHLJ = 12;
 }

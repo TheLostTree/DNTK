@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 27603
-// Obf: PAGFAGKCGCD
+// CmdId: 8023
+// Obf: BJNFKHJIODM
 message CommonPlayerTipsNotify {
-	uint32 notify_type = 13;
-	repeated string text_map_id_list = 10;
+	uint32 notify_type = 14;
+	repeated string text_map_id_list = 15;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 29228
-// Obf: OCHDJHKDENA
+// CmdId: 1484
+// Obf: LHMFOJBAOKM
 message GetAllMailReq {
-	bool is_collected = 2;
+	bool is_collected = 7;
 }

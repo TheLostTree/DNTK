@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 26264
-// Obf: DPAIPJGEIND
+// CmdId: 295
+// Obf: KFCNCIDMOJO
 message SeeMonsterRsp {
-	int32 retcode = 2;
+	int32 retcode = 15;
 }

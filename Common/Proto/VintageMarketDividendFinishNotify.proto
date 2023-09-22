@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 1158
-// Obf: LKKGMJHPCCF
+// CmdId: 20538
+// Obf: GOJPPFBAMPJ
 message VintageMarketDividendFinishNotify {
-	uint32 FMABDGMGDAM = 14;
-	uint32 LCIDAMLLGHM = 6;
+	uint32 LGCEBJNOBAM = 8;
+	uint32 LJIOMIABKJC = 2;
 }

@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 21846
-// Obf: IGKIPPJIMAJ
+// CmdId: 987
+// Obf: AECJNNCDMFE
 message DungeonWayPointActivateRsp {
-	uint32 way_point_id = 3;
-	int32 retcode = 14;
+	uint32 way_point_id = 5;
+	int32 retcode = 2;
 }

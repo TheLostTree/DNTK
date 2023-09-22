@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 25517
-// Obf: LFOHLJPLBGN
+// CmdId: 4068
+// Obf: KJMHHBBMIDO
 message DeleteFriendNotify {
-	uint32 target_uid = 15;
+	uint32 target_uid = 7;
 }

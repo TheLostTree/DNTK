@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 21839
-// Obf: JBDLPKOJPNC
+// CmdId: 603
+// Obf: BCNAPIAJLOO
 message ItemCdGroupTimeNotify {
-	map<uint32, uint64> item_cd_map = 7;
+	map<uint32, uint64> item_cd_map = 6;
 }

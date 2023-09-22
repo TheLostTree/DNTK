@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 28550
-// Obf: MIOFHIOGCNF
+// CmdId: 4026
+// Obf: DGDJIDOAGPL
 message GetAllUnlockNameCardRsp {
-	repeated uint32 name_card_list = 8;
-	int32 retcode = 9;
+	repeated uint32 name_card_list = 11;
+	int32 retcode = 13;
 }

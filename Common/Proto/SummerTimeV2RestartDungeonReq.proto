@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 212
-// Obf: KHLOFPMBOOF
+// CmdId: 8841
+// Obf: KPHLIIFCLHO
 message SummerTimeV2RestartDungeonReq {
 }

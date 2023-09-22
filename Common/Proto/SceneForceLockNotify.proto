@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 7079
-// Obf: AOJACOMMPOP
+// CmdId: 203
+// Obf: ECEAOCGLDJA
 message SceneForceLockNotify {
-	repeated uint32 force_id_list = 1;
+	repeated uint32 force_id_list = 12;
 }

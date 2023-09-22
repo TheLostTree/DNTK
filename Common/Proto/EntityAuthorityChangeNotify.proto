@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "AuthorityChange.proto";
-// CmdId: 3913
-// Obf: PCGGEAGLBGD
+// CmdId: 326
+// Obf: JOFAGGLCECB
 message EntityAuthorityChangeNotify {
-	repeated AuthorityChange authority_change_list = 13;
+	repeated AuthorityChange authority_change_list = 6;
 }

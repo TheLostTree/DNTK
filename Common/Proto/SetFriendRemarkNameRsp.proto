@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 25535
-// Obf: LMCPOEKAKNN
+// CmdId: 4041
+// Obf: ACNCOFKGGMB
 message SetFriendRemarkNameRsp {
-	uint32 uid = 7;
-	string remark_name = 11;
-	bool is_clear_remark = 5;
-	int32 retcode = 2;
+	int32 retcode = 4;
+	uint32 uid = 8;
+	bool is_clear_remark = 14;
+	string remark_name = 6;
 }

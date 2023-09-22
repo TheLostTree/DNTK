@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "CustomGadgetTreeInfo.proto";
-// CmdId: 8377
-// Obf: BFFLIJJIIDB
+// CmdId: 842
+// Obf: JCECAPKAIAG
 message GadgetCustomTreeInfoNotify {
-	CustomGadgetTreeInfo custom_gadget_tree_info = 13;
-	uint32 gadget_entity_id = 7;
+	CustomGadgetTreeInfo custom_gadget_tree_info = 4;
+	uint32 gadget_entity_id = 2;
 }

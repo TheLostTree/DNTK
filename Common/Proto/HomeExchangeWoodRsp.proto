@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 1815
-// Obf: EIPIMMDNAAI
+// CmdId: 4802
+// Obf: LDAKLIJFKLE
 message HomeExchangeWoodRsp {
-	uint32 wood_count = 1;
-	uint32 wood_id = 8;
-	uint32 exchangedCount = 11;
-	int32 retcode = 3;
+	uint32 DKKLDFNFCCG = 13;
+	int32 retcode = 4;
+	uint32 HMFHNIBDNOC = 14;
+	uint32 wood_id = 12;
 }

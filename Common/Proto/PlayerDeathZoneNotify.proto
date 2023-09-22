@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 4058
-// Obf: KDGBFBMHHAJ
+// CmdId: 6287
+// Obf: MKCJOMPIGFE
 message PlayerDeathZoneNotify {
-	uint32 cur_death_zone_id = 5;
+	uint32 cur_death_zone_id = 1;
 }

@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "SceneEntityInfo.proto";
-// CmdId: 22376
-// Obf: MMGGANDHHFL
+// CmdId: 1743
+// Obf: APKBPLBGEOP
 message AvatarChangeCostumeNotify {
-	SceneEntityInfo entity_info = 15;
+	SceneEntityInfo entity_info = 9;
 }

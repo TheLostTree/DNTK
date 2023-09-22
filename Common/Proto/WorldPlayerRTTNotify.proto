@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "PlayerRTTInfo.proto";
-// CmdId: 421
-// Obf: JNKBKEOBKGL
+// CmdId: 6
+// Obf: DBMMIAMOIGH
 message WorldPlayerRTTNotify {
-	repeated PlayerRTTInfo player_rtt_list = 6;
+	repeated PlayerRTTInfo player_rtt_list = 9;
 }

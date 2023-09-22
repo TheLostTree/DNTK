@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "CoopChapter.proto";
-// CmdId: 6932
-// Obf: CJCEEDJNAAB
+// CmdId: 1957
+// Obf: FFBCIENPEHL
 message CoopChapterUpdateNotify {
-	repeated CoopChapter chapter_list = 1;
+	repeated CoopChapter chapter_list = 4;
 }

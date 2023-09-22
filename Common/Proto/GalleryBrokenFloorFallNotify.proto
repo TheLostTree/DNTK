@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 9913
-// Obf: NNKNOOLCKMB
+// CmdId: 5564
+// Obf: KIHFMBALOIK
 message GalleryBrokenFloorFallNotify {
-	uint32 fall_count = 1;
+	uint32 fall_count = 6;
 	uint32 gallery_id = 2;
 }

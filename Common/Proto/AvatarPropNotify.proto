@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5355
-// Obf: KGKHNJBJKOJ
+// CmdId: 1284
+// Obf: JEKDLLGKIMN
 message AvatarPropNotify {
-	uint64 avatar_guid = 4;
-	map<uint32, int64> prop_map = 8;
+	uint64 avatar_guid = 1;
+	map<uint32, int64> prop_map = 7;
 }

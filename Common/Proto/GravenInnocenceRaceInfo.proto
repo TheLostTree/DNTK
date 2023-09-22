@@ -18,7 +18,7 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "GravenInnocenceRaceLevelInfo.proto";
-// Obf: GONDHGNEGKB
+// Obf: DAPOFPEOFAL
 message GravenInnocenceRaceInfo {
-	repeated GravenInnocenceRaceLevelInfo level_info_list = 12;
+	repeated GravenInnocenceRaceLevelInfo level_info_list = 13;
 }

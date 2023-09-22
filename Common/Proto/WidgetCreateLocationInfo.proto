@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-// Obf: EABFEFDDFEJ
+// Obf: ODLCGPLCCDF
 message WidgetCreateLocationInfo {
-	Vector rot = 3;
-	Vector pos = 6;
+	Vector pos = 15;
+	Vector rot = 8;
 }

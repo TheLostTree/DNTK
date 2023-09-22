@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 25971
-// Obf: EKLHCGLKLLM
+// CmdId: 202
+// Obf: JAJCPAPGLDM
 message LeaveSceneRsp {
-	int32 retcode = 12;
+	int32 retcode = 7;
 }

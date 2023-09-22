@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 20438
-// Obf: FJFIDGPOJPP
+// CmdId: 259
+// Obf: LEHIOMGFCLO
 message GetAreaExplorePointReq {
-	repeated uint32 area_id_list = 15;
+	repeated uint32 area_id_list = 6;
 }

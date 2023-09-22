@@ -18,10 +18,10 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ForwardType.proto";
-// CmdId: 28358
-// Obf: FOHLJKAFFNL
+// CmdId: 358
+// Obf: EFLEDIMNPED
 message EvtFaceToEntityNotify {
-	uint32 entity_id = 13;
-	ForwardType forward_type = 2;
-	uint32 face_entity_id = 10;
+	uint32 face_entity_id = 7;
+	ForwardType forward_type = 3;
+	uint32 entity_id = 9;
 }

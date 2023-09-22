@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: FNOIEOJLKAB
+// Obf: NNKLFCELDGG
 enum CustomDungeonState {
 	CUSTOM_DUNGEON_STATE_EDIT = 0;
 	CUSTOM_DUNGEON_STATE_SELF_PASS = 1;

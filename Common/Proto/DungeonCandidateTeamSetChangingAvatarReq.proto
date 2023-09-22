@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5541
-// Obf: CNHEIIFDBPM
+// CmdId: 970
+// Obf: NJDDLMOLMBF
 message DungeonCandidateTeamSetChangingAvatarReq {
-	bool is_changing_avatar = 12;
+	bool is_changing_avatar = 1;
 }

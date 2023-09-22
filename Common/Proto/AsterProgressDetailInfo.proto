@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: LKACKFGKBOC
+// Obf: MMEFLEOFLND
 message AsterProgressDetailInfo {
-	uint32 count = 10;
+	uint32 count = 12;
 	uint32 last_auto_add_time = 1;
 }

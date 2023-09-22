@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 29964
-// Obf: IIOBKJCNGAD
+// CmdId: 7141
+// Obf: CNICBHJMBGH
 message GCGDSChangeFieldRsp {
-	int32 retcode = 15;
-	uint32 field_id = 9;
-	uint32 deck_id = 10;
+	uint32 deck_id = 12;
+	int32 retcode = 9;
+	uint32 field_id = 1;
 }

@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ChallengeRecord.proto";
-// CmdId: 27022
-// Obf: KGDDHMLFDGO
+// CmdId: 931
+// Obf: DMEGFLDFBCB
 message ChallengeRecordNotify {
-	uint32 group_id = 14;
-	repeated ChallengeRecord challenge_record_list = 13;
+	repeated ChallengeRecord challenge_record_list = 5;
+	uint32 group_id = 10;
 }

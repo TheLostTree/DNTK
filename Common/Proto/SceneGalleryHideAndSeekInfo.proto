@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: OEDMELCNNFK
+// Obf: FBLDHNKJIIL
 message SceneGalleryHideAndSeekInfo {
-	repeated uint32 KGHDINNKLAP = 12;
-	repeated uint32 OFDHDDONDFD = 9;
+	repeated uint32 PDGGAJOINHB = 9;
+	repeated uint32 LPHCMGCELBB = 3;
 }

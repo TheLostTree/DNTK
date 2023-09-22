@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "WinterCampStageInfo.proto";
-// CmdId: 28290
-// Obf: PIAIMFNGJKI
+// CmdId: 8463
+// Obf: IHFPJIAKIEJ
 message WinterCampStageInfoChangeNotify {
-	WinterCampStageInfo battle_info = 11;
-	WinterCampStageInfo explore_info = 9;
+	WinterCampStageInfo battle_info = 8;
+	WinterCampStageInfo explore_info = 4;
 }

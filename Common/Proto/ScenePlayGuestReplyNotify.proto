@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 9422
-// Obf: HMPFCAKKAJC
+// CmdId: 4437
+// Obf: GOIBIFGMAME
 message ScenePlayGuestReplyNotify {
-	uint32 guest_uid = 13;
-	bool is_agree = 8;
-	uint32 play_id = 10;
+	uint32 play_id = 8;
+	bool is_agree = 9;
+	uint32 guest_uid = 10;
 }

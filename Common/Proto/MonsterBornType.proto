@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: LNFJOAGMCEF
+// Obf: CNKCBENCCOC
 enum MonsterBornType {
 	MONSTER_BORN_TYPE_NONE = 0;
 	MONSTER_BORN_TYPE_DEFAULT = 1;

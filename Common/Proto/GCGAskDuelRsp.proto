@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "GCGDuel.proto";
-// CmdId: 4662
-// Obf: HMJBIINDMKE
+// CmdId: 7659
+// Obf: IEHCEMKOPCF
 message GCGAskDuelRsp {
-	GCGDuel duel = 9;
-	int32 retcode = 12;
+	int32 retcode = 6;
+	GCGDuel duel = 12;
 }

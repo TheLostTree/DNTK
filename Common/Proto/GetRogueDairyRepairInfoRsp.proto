@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 133
-// Obf: LLHECDBHABH
+// CmdId: 8474
+// Obf: DEPDCABIIMH
 message GetRogueDairyRepairInfoRsp {
 	int32 retcode = 7;
 }

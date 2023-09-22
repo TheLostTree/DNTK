@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "PushTipsData.proto";
-// CmdId: 29035
-// Obf: AHBDGMIPIMF
+// CmdId: 2233
+// Obf: DJFCCBJHNHD
 message PushTipsChangeNotify {
-	repeated PushTipsData push_tips_list = 9;
+	repeated PushTipsData push_tips_list = 14;
 }

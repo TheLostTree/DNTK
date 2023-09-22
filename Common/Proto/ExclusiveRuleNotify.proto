@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ExclusiveRuleInfo.proto";
-// CmdId: 1418
-// Obf: ENPIKKCLNIB
+// CmdId: 113
+// Obf: KOPBCIIODNP
 message ExclusiveRuleNotify {
-	repeated ExclusiveRuleInfo rule_info_list = 1;
+	repeated ExclusiveRuleInfo rule_info_list = 14;
 }

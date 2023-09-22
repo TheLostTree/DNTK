@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5
-// Obf: KLFGBKPBBFB
+// CmdId: 2032
+// Obf: MALICCMIPPP
 message LoadActivityTerrainNotify {
 	uint32 activity_id = 10;
 }

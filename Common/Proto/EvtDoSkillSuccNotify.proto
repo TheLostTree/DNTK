@@ -17,13 +17,13 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "Vector.proto";
 import "ForwardType.proto";
-// CmdId: 8216
-// Obf: LPCJNKAIIEL
+import "Vector.proto";
+// CmdId: 372
+// Obf: IJLDLGMBMAJ
 message EvtDoSkillSuccNotify {
-	uint32 caster_id = 14;
-	uint32 skill_id = 7;
-	Vector forward = 5;
-	ForwardType forward_type = 12;
+	ForwardType forward_type = 8;
+	Vector forward = 6;
+	uint32 caster_id = 13;
+	uint32 skill_id = 15;
 }

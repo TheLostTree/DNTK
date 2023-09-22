@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "PlayerRoutineInfo.proto";
-// CmdId: 29752
-// Obf: DLKAPGGBEGE
+// CmdId: 3528
+// Obf: EMEJDIDJBJJ
 message PlayerRoutineDataNotify {
-	repeated PlayerRoutineInfo routine_info_list = 4;
+	repeated PlayerRoutineInfo routine_info_list = 3;
 }

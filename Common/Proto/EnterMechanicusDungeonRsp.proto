@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 29863
-// Obf: MGILGCJGFEB
+// CmdId: 3964
+// Obf: EKIFFKENNLB
 message EnterMechanicusDungeonRsp {
-	uint32 difficult_level = 7;
-	uint32 dungeon_id = 12;
-	uint32 wrong_uid = 14;
-	int32 retcode = 1;
+	uint32 dungeon_id = 14;
+	int32 retcode = 6;
+	uint32 difficult_level = 3;
+	uint32 wrong_uid = 2;
 }

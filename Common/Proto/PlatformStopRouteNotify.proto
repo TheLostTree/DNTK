@@ -18,10 +18,10 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "PlatformInfo.proto";
-// CmdId: 27462
-// Obf: CIMJKKNLBCO
+// CmdId: 261
+// Obf: HBEPLCNKODM
 message PlatformStopRouteNotify {
-	uint32 scene_time = 1;
-	PlatformInfo platform = 8;
-	uint32 entity_id = 5;
+	PlatformInfo platform = 7;
+	uint32 entity_id = 11;
+	uint32 scene_time = 15;
 }

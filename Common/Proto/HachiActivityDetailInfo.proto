@@ -18,7 +18,7 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "HachiStageInfo.proto";
-// Obf: MFMPNLIIBDC
+// Obf: LBGOIMEOFJG
 message HachiActivityDetailInfo {
-	map<uint32, HachiStageInfo> stage_map = 8;
+	map<uint32, HachiStageInfo> stage_map = 12;
 }

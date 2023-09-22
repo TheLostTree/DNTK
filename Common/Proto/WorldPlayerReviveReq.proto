@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 2639
-// Obf: CLFPPNDBGLJ
+// CmdId: 273
+// Obf: OBKKEOENCLB
 message WorldPlayerReviveReq {
 }

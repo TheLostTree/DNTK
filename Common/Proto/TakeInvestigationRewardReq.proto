@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 8462
-// Obf: GBGKOACHBNE
+// CmdId: 1904
+// Obf: BIGDKJLPFAM
 message TakeInvestigationRewardReq {
-	uint32 id = 8;
+	uint32 id = 7;
 }

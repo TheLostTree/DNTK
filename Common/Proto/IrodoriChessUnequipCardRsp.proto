@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 6523
-// Obf: JILOFOCKHIM
+// CmdId: 8654
+// Obf: OMNCGLDFHBG
 message IrodoriChessUnequipCardRsp {
-	uint32 level_id = 13;
-	int32 retcode = 12;
-	uint32 card_id = 3;
-	bool is_hard_map = 8;
+	bool is_hard_map = 14;
+	uint32 level_id = 3;
+	int32 retcode = 7;
+	uint32 card_id = 15;
 }

@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "TaskVar.proto";
-// CmdId: 21431
-// Obf: PMLGBPPNAOH
+// CmdId: 139
+// Obf: IOKCKNLIKDI
 message TaskVarNotify {
-	repeated TaskVar task_var_list = 9;
+	repeated TaskVar task_var_list = 2;
 }

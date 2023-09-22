@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: HLNOLNPKOKD
+// Obf: CIOJFBLABCG
 message GameplayRecommendationReliquaryRequest {
-	uint32 equip_type = 3;
+	uint32 equip_type = 7;
 }

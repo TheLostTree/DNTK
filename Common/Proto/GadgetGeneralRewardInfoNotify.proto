@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "GadgetGeneralRewardInfo.proto";
-// CmdId: 7557
-// Obf: DILFBIEBAAF
+// CmdId: 821
+// Obf: GBNLCOJLDPC
 message GadgetGeneralRewardInfoNotify {
-	uint32 entity_id = 9;
-	GadgetGeneralRewardInfo general_reward_info = 1;
+	GadgetGeneralRewardInfo general_reward_info = 14;
+	uint32 entity_id = 5;
 }

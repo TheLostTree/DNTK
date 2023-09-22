@@ -17,12 +17,12 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 2813
-// Obf: IMNBJACCFBI
+// CmdId: 23874
+// Obf: KNHJNEILKAJ
 message MuqadasPotionDungeonSettleNotify {
-	bool is_success = 1;
-	uint32 level_id = 3;
-	bool is_new_record = 8;
-	uint32 capture_weakness_count = 2;
-	uint32 final_score = 6;
+	bool is_success = 15;
+	bool is_new_record = 7;
+	uint32 final_score = 3;
+	uint32 capture_weakness_count = 12;
+	uint32 level_id = 2;
 }

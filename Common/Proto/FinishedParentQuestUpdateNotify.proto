@@ -19,7 +19,7 @@ option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ParentQuest.proto";
 // CmdId: 455
-// Obf: JCGNAICEEND
+// Obf: JFLDCJCCNIA
 message FinishedParentQuestUpdateNotify {
-	repeated ParentQuest parent_quest_list = 3;
+	repeated ParentQuest parent_quest_list = 13;
 }

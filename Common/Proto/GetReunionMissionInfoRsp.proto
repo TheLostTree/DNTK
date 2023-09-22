@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ReunionMissionInfo.proto";
-// CmdId: 8359
-// Obf: ELDGKEPNGBH
+// CmdId: 5066
+// Obf: MOKFKGDKEFA
 message GetReunionMissionInfoRsp {
-	ReunionMissionInfo mission_info = 13;
-	int32 retcode = 14;
+	ReunionMissionInfo mission_info = 1;
+	int32 retcode = 3;
 }

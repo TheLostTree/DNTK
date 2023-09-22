@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 8588
-// Obf: KDOMJCBNKFG
+// CmdId: 5487
+// Obf: GHNMNMFPBHC
 message DraftInviteResultNotify {
-	uint32 draft_id = 6;
-	bool is_all_argee = 3;
+	bool is_all_argee = 11;
+	uint32 draft_id = 13;
 }

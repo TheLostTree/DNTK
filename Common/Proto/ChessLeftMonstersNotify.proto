@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 23974
-// Obf: ADEJFKGDNLO
+// CmdId: 5339
+// Obf: NOEEKCJLHGP
 message ChessLeftMonstersNotify {
-	uint32 left_monsters = 9;
+	uint32 left_monsters = 15;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 26708
-// Obf: KDLHCNPHJCO
+// CmdId: 471
+// Obf: DDANCOPHEBB
 message CancelFinishParentQuestNotify {
-	uint32 parent_quest_id = 3;
+	uint32 parent_quest_id = 10;
 }

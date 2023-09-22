@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 24701
-// Obf: PGFINJBAJOF
+// CmdId: 3223
+// Obf: BANPFHHKFJI
 message ChangeWorldToSingleModeNotify {
 }

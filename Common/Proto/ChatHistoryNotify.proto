@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ChatInfo.proto";
-// CmdId: 4425
-// Obf: DMBCIMODKGA
+// CmdId: 3186
+// Obf: MEILMNEMNHA
 message ChatHistoryNotify {
-	uint32 channel_id = 15;
-	repeated ChatInfo chat_info = 5;
+	repeated ChatInfo chat_info = 12;
+	uint32 channel_id = 9;
 }

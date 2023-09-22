@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 1114
-// Obf: DNLPDFFLIIK
+// CmdId: 5464
+// Obf: LCOCLIAGMAH
 message DraftGuestReplyTwiceConfirmRsp {
-	bool is_agree = 15;
-	uint32 draft_id = 12;
-	int32 retcode = 7;
+	bool is_agree = 14;
+	uint32 draft_id = 1;
+	int32 retcode = 9;
 }

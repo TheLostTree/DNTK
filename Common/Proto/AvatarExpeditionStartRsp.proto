@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "AvatarExpeditionInfo.proto";
-// CmdId: 28415
-// Obf: JOFFMPADDLP
+// CmdId: 1620
+// Obf: NAIJPHNIAIE
 message AvatarExpeditionStartRsp {
-	int32 retcode = 15;
-	map<uint64, AvatarExpeditionInfo> expedition_info_map = 3;
+	int32 retcode = 12;
+	map<uint64, AvatarExpeditionInfo> expedition_info_map = 15;
 }

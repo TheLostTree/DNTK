@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "IrodoriChessMonsterInfo.proto";
-// Obf: NAIFBLPGFMN
+// Obf: MFOKPMJJLGC
 message IrodoriChessEntranceInfo {
-	repeated IrodoriChessMonsterInfo monster_info_list = 7;
-	uint32 entrance_point_id = 4;
+	uint32 entrance_point_id = 3;
+	repeated IrodoriChessMonsterInfo monster_info_list = 1;
 }

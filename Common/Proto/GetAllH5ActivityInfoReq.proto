@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 4793
-// Obf: CFMGENNHKOD
+// CmdId: 5658
+// Obf: IFMGFGLPEJM
 message GetAllH5ActivityInfoReq {
 }

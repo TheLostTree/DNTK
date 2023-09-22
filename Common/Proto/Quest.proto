@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: BLFINGECHDB
+// Obf: LGKNABFOEKJ
 message Quest {
 	uint32 quest_id = 1;
 	uint32 state = 2;

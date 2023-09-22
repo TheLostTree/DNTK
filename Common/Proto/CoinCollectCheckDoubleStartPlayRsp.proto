@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 20610
-// Obf: AGBPKMHELHD
+// CmdId: 24647
+// Obf: MFPPHNPFEMM
 message CoinCollectCheckDoubleStartPlayRsp {
-	uint32 level_id = 14;
-	int32 retcode = 7;
+	int32 retcode = 4;
+	uint32 level_id = 3;
 }

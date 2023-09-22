@@ -22,9 +22,9 @@ import "BreakoutSyncPing.proto";
 import "BreakoutSyncFinishGame.proto";
 import "BreakoutSyncSnapShot.proto";
 import "BreakoutSyncAction.proto";
-// Obf: KOPLDLJGNEO
+// Obf: PKJJKBLLIGJ
 message AbilityMixinBreakout {
-	// Obf: IMAGJJCOADH
+	// Obf: IJFMHDDKKMJ
 	enum SyncType {
 		SYNC_TYPE_NONE = 0;
 		SYNC_TYPE_CREATE_CONNECT = 1;
@@ -35,13 +35,13 @@ message AbilityMixinBreakout {
 		SYNC_TYPE_ACTION = 6;
 	}
 	
-	SyncType sync_type = 14;
-	int32 retcode = 8;
+	int32 retcode = 2;
+	SyncType sync_type = 4;
 	oneof sync {
-		BreakoutSyncCreateConnect sync_create_connect = 12;
+		BreakoutSyncCreateConnect sync_create_connect = 6;
 		BreakoutSyncPing sync_ping = 9;
-		BreakoutSyncFinishGame sync_finish_game = 4;
-		BreakoutSyncSnapShot sync_snap_shot = 2;
-		BreakoutSyncAction sync_action = 6;
+		BreakoutSyncFinishGame sync_finish_game = 13;
+		BreakoutSyncSnapShot sync_snap_shot = 5;
+		BreakoutSyncAction sync_action = 15;
 	}
 }

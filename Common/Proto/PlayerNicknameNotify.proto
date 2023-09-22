@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 25316
-// Obf: KDCHOGMENPG
+// CmdId: 182
+// Obf: FGOFANGPPIN
 message PlayerNicknameNotify {
-	string nickname = 11;
+	string nickname = 1;
 }

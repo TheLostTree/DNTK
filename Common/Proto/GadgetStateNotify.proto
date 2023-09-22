@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 2075
-// Obf: DAHKNOFELFH
+// CmdId: 802
+// Obf: NMJDCBHMLLB
 message GadgetStateNotify {
-	bool is_enable_interact = 12;
-	uint32 gadget_entity_id = 3;
-	uint32 gadget_state = 1;
+	uint32 gadget_state = 8;
+	bool is_enable_interact = 5;
+	uint32 gadget_entity_id = 7;
 }

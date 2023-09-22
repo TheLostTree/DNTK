@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 27406
-// Obf: NGFOLBFFEFO
+// CmdId: 8510
+// Obf: PMMNGKHKONJ
 message GachaActivityTakeRewardRsp {
-	int32 retcode = 7;
-	map<uint32, uint32> robot_num_map = 10;
+	map<uint32, uint32> robot_num_map = 2;
+	int32 retcode = 6;
 }

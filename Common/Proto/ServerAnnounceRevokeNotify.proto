@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 23231
-// Obf: CAOCBNJGPCE
+// CmdId: 2142
+// Obf: MMGOIGJLOFK
 message ServerAnnounceRevokeNotify {
-	repeated uint32 config_id_list = 14;
+	repeated uint32 config_id_list = 5;
 }

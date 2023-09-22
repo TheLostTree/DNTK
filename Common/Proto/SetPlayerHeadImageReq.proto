@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 4071
-// Obf: PDIPMMGDOGN
+// CmdId: 4028
+// Obf: BFCLIPDJCHJ
 message SetPlayerHeadImageReq {
-	uint32 avatar_id = 7;
+	uint32 avatar_id = 11;
 }

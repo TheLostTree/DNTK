@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 25222
-// Obf: KHNOEOFJOHM
+// CmdId: 3958
+// Obf: GOPKGOGJJPB
 message MechanicusUnlockGearReq {
-	uint32 gear_id = 5;
-	uint32 mechanicus_id = 4;
+	uint32 mechanicus_id = 13;
+	uint32 gear_id = 11;
 }

@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 27404
-// Obf: JNPPJCJFMJO
+// CmdId: 126
+// Obf: DIHALIDCKGK
 message PlayerCookReq {
-	uint32 qte_quality = 8;
-	uint32 cook_count = 13;
-	uint32 recipe_id = 11;
-	uint32 assist_avatar = 5;
+	uint32 recipe_id = 8;
+	uint32 assist_avatar = 13;
+	uint32 cook_count = 6;
+	uint32 qte_quality = 4;
 }

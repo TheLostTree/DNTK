@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "GivingRecord.proto";
-// CmdId: 20863
-// Obf: EFABNIELGHL
+// CmdId: 117
+// Obf: MGDPGOLLHFB
 message GivingRecordChangeNotify {
-	GivingRecord giving_record = 9;
 	bool is_deactive = 6;
+	GivingRecord giving_record = 9;
 }

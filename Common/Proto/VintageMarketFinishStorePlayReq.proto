@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "VintageMarketStoreOpInfo.proto";
-// CmdId: 26443
-// Obf: GDGHDKLFAGN
+// CmdId: 21794
+// Obf: LEIHCOLOOLO
 message VintageMarketFinishStorePlayReq {
-	repeated VintageMarketStoreOpInfo store_op_list = 3;
-	uint32 store_round = 7;
+	uint32 store_round = 13;
+	repeated VintageMarketStoreOpInfo store_op_list = 2;
 }

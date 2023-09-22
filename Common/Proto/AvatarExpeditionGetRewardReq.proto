@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 4847
-// Obf: PPKAGNHEIBA
+// CmdId: 1648
+// Obf: LBDKANCAKAL
 message AvatarExpeditionGetRewardReq {
-	uint64 avatar_guid = 11;
+	uint64 avatar_guid = 12;
 }

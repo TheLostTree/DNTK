@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "HuntingPair.proto";
-// CmdId: 26500
-// Obf: MEJFENDLGBH
+// CmdId: 4328
+// Obf: MMAJFKAOMBD
 message TakeHuntingOfferReq {
-	HuntingPair hunting_pair = 7;
-	uint32 city_id = 14;
+	uint32 city_id = 6;
+	HuntingPair hunting_pair = 4;
 }

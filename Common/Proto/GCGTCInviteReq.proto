@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 2997
-// Obf: AIAMNGAIAGN
+// CmdId: 7449
+// Obf: EPNLBMDEFLC
 message GCGTCInviteReq {
-	uint32 character_id = 11;
-	uint32 level_id = 14;
+	uint32 level_id = 10;
+	uint32 character_id = 2;
 }

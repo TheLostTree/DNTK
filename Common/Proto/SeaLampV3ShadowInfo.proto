@@ -18,7 +18,7 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "SeaLampV3ShadowStageInfo.proto";
-// Obf: CDNDGGOEPCJ
+// Obf: KHGILCEDNKL
 message SeaLampV3ShadowInfo {
-	repeated SeaLampV3ShadowStageInfo stage_info_list = 8;
+	repeated SeaLampV3ShadowStageInfo stage_info_list = 2;
 }

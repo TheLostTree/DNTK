@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "IrodoriMasterLevelDetailInfo.proto";
-// Obf: HNGOJKODKMG
+// Obf: EMCIPFMAAHF
 message IrodoriMasterLevelInfo {
-	uint32 level_id = 10;
-	repeated IrodoriMasterLevelDetailInfo detail_info = 1;
+	repeated IrodoriMasterLevelDetailInfo detail_info = 3;
+	uint32 level_id = 14;
 }

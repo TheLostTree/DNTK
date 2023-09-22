@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "BuyGoodsParam.proto";
-// CmdId: 6294
-// Obf: PEJMOLIKOOG
+// CmdId: 787
+// Obf: FFMEADKDEAL
 message BatchBuyGoodsReq {
-	repeated BuyGoodsParam buy_goods_list = 12;
-	uint32 shop_type = 11;
+	uint32 shop_type = 10;
+	repeated BuyGoodsParam buy_goods_list = 5;
 }

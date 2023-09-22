@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "AvatarTeam.proto";
-// CmdId: 7828
-// Obf: OLBHAPJCKDM
+// CmdId: 1633
+// Obf: NFCODIPLJGM
 message AvatarTeamUpdateNotify {
-	repeated uint64 temp_avatar_guid_list = 14;
-	map<uint32, AvatarTeam> avatar_team_map = 3;
+	repeated uint64 temp_avatar_guid_list = 11;
+	map<uint32, AvatarTeam> avatar_team_map = 7;
 }

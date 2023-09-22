@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 3650
-// Obf: MKMFMBMHOPG
+// CmdId: 610
+// Obf: HLAPBCIAOBK
 message BuyResinRsp {
-	int32 retcode = 1;
-	uint32 cur_value = 5;
+	uint32 cur_value = 1;
+	int32 retcode = 15;
 }

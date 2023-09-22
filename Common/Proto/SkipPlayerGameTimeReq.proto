@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 22076
-// Obf: DEFBFNOLMID
+// CmdId: 165
+// Obf: CLJNJBDHDEN
 message SkipPlayerGameTimeReq {
-	uint32 game_time = 12;
-	bool is_force_set = 1;
-	uint32 client_game_time = 7;
+	uint32 game_time = 6;
+	bool is_force_set = 12;
+	uint32 client_game_time = 11;
 }

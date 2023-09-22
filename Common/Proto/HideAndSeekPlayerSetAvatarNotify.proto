@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 27442
-// Obf: PBAMJDOBGEK
+// CmdId: 5310
+// Obf: GFLMJBMGIPF
 message HideAndSeekPlayerSetAvatarNotify {
-	uint32 uid = 11;
-	uint32 costume_id = 2;
-	uint32 avatar_id = 4;
+	uint32 avatar_id = 6;
+	uint32 costume_id = 14;
+	uint32 uid = 3;
 }

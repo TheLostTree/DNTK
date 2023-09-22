@@ -18,12 +18,12 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-// Obf: BOPJHGACPAM
+// Obf: MPEONKDACFL
 message HomeLimitedShopInfo {
-	fixed32 PCECKPDEEBD = 13;
-	fixed32 IMBFLHNJAPD = 6;
-	fixed32 LMJPHDCDAJK = 15;
-	Vector djinn_rot = 7;
+	fixed32 nextOpenTime = 12;
+	uint32 uid = 6;
 	Vector djinn_pos = 8;
-	uint32 uid = 2;
+	fixed32 nextCloseTime = 14;
+	Vector djinn_rot = 15;
+	fixed32 nextGuestOpenTime = 9;
 }

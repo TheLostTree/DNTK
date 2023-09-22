@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: KHPGILKGEPP
+// Obf: BODMEBNADPL
 message RegionSimpleInfo {
 	string name = 1;
 	string title = 2;

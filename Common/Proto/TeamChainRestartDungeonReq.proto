@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "TeamChainChooseTeamInfo.proto";
-// CmdId: 24770
-// Obf: JLKCAJELBHP
+// CmdId: 24341
+// Obf: DAFIHNKHLII
 message TeamChainRestartDungeonReq {
 	repeated TeamChainChooseTeamInfo team_info_list = 9;
 }

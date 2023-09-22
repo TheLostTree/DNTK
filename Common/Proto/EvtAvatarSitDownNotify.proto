@@ -18,11 +18,10 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-// CmdId: 23010
-// Obf: EGKACDGMPPG
+// CmdId: 371
+// Obf: ANDEKBPGEIO
 message EvtAvatarSitDownNotify {
-	uint64 chair_id = 6;
-	int32 direction = 8;
-	Vector position = 9;
-	uint32 entity_id = 4;
+	uint32 entity_id = 6;
+	Vector position = 8;
+	uint64 chair_id = 10;
 }

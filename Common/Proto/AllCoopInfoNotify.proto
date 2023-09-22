@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "MainCoop.proto";
-// CmdId: 2587
-// Obf: FMEOBOHIEGC
+// CmdId: 1978
+// Obf: JBMOBMBBPMC
 message AllCoopInfoNotify {
-	repeated MainCoop main_coop_list = 13;
+	repeated MainCoop main_coop_list = 6;
 }

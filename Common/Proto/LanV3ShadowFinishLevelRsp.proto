@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5118
-// Obf: LEPNIMLOLAK
+// CmdId: 22016
+// Obf: JPBFJMKGFIG
 message LanV3ShadowFinishLevelRsp {
-	int32 retcode = 14;
+	int32 retcode = 3;
 }

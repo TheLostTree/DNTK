@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 20403
-// Obf: CODANKLOAKC
+// CmdId: 2130
+// Obf: GAKLPCILJLJ
 message ExpeditionTakeRewardRsp {
-	int32 retcode = 12;
-	uint32 reward_level = 3;
-	bool is_bonus = 7;
+	uint32 reward_level = 10;
+	bool is_bonus = 4;
+	int32 retcode = 1;
 	uint32 path_id = 14;
 }

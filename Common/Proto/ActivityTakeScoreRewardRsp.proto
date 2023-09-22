@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 7860
-// Obf: OKKEALHPJEO
+// CmdId: 8120
+// Obf: IAGKDCOPEKE
 message ActivityTakeScoreRewardRsp {
-	uint32 activity_id = 11;
-	uint32 reward_config_id = 5;
-	int32 retcode = 2;
+	int32 retcode = 14;
+	uint32 activity_id = 12;
+	uint32 reward_config_id = 10;
 }

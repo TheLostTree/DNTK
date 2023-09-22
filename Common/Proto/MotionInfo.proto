@@ -19,7 +19,7 @@ option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
 import "MotionState.proto";
-// Obf: LJEPKMPIOKJ
+// Obf: JELNCMPFEFL
 message MotionInfo {
 	Vector pos = 1;
 	Vector rot = 2;

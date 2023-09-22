@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: JLBKHIBLNFI
+// Obf: BAEOODGOAOI
 message ExclusiveRuleInfo {
-	uint32 rule_type = 9;
-	repeated uint32 object_id_list = 4;
+	uint32 rule_type = 6;
+	repeated uint32 object_id_list = 13;
 }

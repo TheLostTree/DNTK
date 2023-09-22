@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 26619
-// Obf: IPOLOAOIEKC
+// CmdId: 7563
+// Obf: AOMFGHHCOLO
 message GCGDSCurDeckChangeNotify {
-	uint32 deck_id = 7;
+	uint32 deck_id = 5;
 }

@@ -17,6 +17,6 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: BGEEMCOJKPG
+// Obf: MLDMPOEHPLN
 message GCGOperationSurrender {
 }

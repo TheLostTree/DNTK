@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 6924
-// Obf: MBPLOJNEPHM
+// CmdId: 941
+// Obf: AJANOBNMFFE
 message GetDailyDungeonEntryInfoReq {
-	uint32 scene_id = 5;
+	uint32 scene_id = 4;
 }

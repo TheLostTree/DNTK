@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 7418
-// Obf: LMIJKOGIEEC
+// CmdId: 8740
+// Obf: HPPIBBLNCDO
 message PotionEnterDungeonRsp {
-	int32 retcode = 1;
+	int32 retcode = 6;
 }

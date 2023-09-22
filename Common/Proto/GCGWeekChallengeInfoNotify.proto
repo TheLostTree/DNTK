@@ -18,10 +18,10 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "GCGWeekChallengeInfo.proto";
-// CmdId: 25654
-// Obf: EIABCFLLDKM
+// CmdId: 7592
+// Obf: MCPMKDKOMMJ
 message GCGWeekChallengeInfoNotify {
-	bool is_notify_npc_change = 15;
-	repeated GCGWeekChallengeInfo challenge_info_list = 1;
-	uint32 next_refresh_time = 11;
+	repeated GCGWeekChallengeInfo challenge_info_list = 8;
+	bool is_notify_npc_change = 11;
+	uint32 next_refresh_time = 6;
 }

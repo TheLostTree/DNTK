@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "FungusTrainingMonsterPreviewDetail.proto";
-// Obf: HNFIMGFEFGO
+// Obf: KAHNKMNMPFM
 message FungusTrainingPoolPreviewDetail {
-	uint32 pool_id = 9;
-	repeated FungusTrainingMonsterPreviewDetail monster_preview_detail_list = 13;
+	uint32 pool_id = 8;
+	repeated FungusTrainingMonsterPreviewDetail monster_preview_detail_list = 14;
 }

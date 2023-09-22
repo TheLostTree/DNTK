@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 20500
-// Obf: DDOPBPBNBDM
+// CmdId: 8341
+// Obf: KBCDPPOOJKP
 message StartRogueDiaryRoomReq {
-	bool is_select_hard = 9;
-	uint32 room_difficulty = 13;
+	uint32 room_difficulty = 9;
+	bool is_select_hard = 10;
 }

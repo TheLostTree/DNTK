@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: EDNDPFHDNHB
+// Obf: IGGAOLBKDMP
 enum FireworksLaunchParamType {
 	FIREWORKS_LAUNCH_PARAM_NONE = 0;
 	FIREWORKS_LAUNCH_PARAM_REPEAT = 1;

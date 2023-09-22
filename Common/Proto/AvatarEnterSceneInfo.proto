@@ -17,16 +17,16 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "AbilitySyncStateInfo.proto";
 import "ServerBuff.proto";
-// Obf: AJDGFFHCOCL
+import "AbilitySyncStateInfo.proto";
+// Obf: BIMCKGCPDOF
 message AvatarEnterSceneInfo {
-	AbilitySyncStateInfo avatar_ability_info = 8;
-	uint64 weapon_guid = 1;
+	repeated ServerBuff server_buff_list = 7;
+	AbilitySyncStateInfo avatar_ability_info = 1;
+	uint64 weapon_guid = 12;
+	repeated uint32 buff_id_list = 2;
 	uint32 avatar_entity_id = 5;
-	repeated uint32 buff_id_list = 4;
 	uint32 weapon_entity_id = 3;
-	uint64 avatar_guid = 9;
-	repeated ServerBuff server_buff_list = 10;
-	AbilitySyncStateInfo weapon_ability_info = 15;
+	AbilitySyncStateInfo weapon_ability_info = 10;
+	uint64 avatar_guid = 15;
 }

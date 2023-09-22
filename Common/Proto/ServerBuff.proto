@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: JGJPJFGLDOE
+// Obf: IKGPNFFPDOG
 message ServerBuff {
 	uint32 server_buff_uid = 1;
 	uint32 server_buff_id = 2;

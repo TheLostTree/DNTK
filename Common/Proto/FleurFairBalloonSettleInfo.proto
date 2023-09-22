@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "BalloonSettleInfo.proto";
-// Obf: IMOKJJJALDF
+// Obf: LGEHCMJFCLE
 message FleurFairBalloonSettleInfo {
-	bool is_new_record = 3;
-	BalloonSettleInfo settle_info = 12;
+	BalloonSettleInfo settle_info = 2;
+	bool is_new_record = 12;
 }

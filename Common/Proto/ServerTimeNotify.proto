@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 21404
-// Obf: LHMEAJDEOAI
+// CmdId: 30
+// Obf: CCOFLLBAAAP
 message ServerTimeNotify {
-	uint64 server_time = 1;
+	uint64 server_time = 3;
 }

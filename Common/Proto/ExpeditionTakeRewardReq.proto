@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 20264
-// Obf: BPNLNJGJNOE
+// CmdId: 2102
+// Obf: LFOGAJJHFGM
 message ExpeditionTakeRewardReq {
-	uint32 path_id = 12;
+	uint32 path_id = 11;
 }

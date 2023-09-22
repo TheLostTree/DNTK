@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: ANGGPDIPOFF
+// Obf: OFHAPFBPCJN
 message WidgetCoolDownData {
-	uint32 id = 1;
-	uint64 cool_down_time = 14;
-	bool is_success = 2;
+	bool is_success = 15;
+	uint32 id = 10;
+	uint64 cool_down_time = 5;
 }

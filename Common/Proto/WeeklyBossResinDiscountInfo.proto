@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: PABMLHHIDDM
+// Obf: EJPHPKAJEJB
 message WeeklyBossResinDiscountInfo {
 	uint32 discount_num = 1;
 	uint32 discount_num_limit = 2;

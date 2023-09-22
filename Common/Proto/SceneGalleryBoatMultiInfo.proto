@@ -18,7 +18,7 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "LanV3BoatMultiPlayerData.proto";
-// Obf: GBFOPLLOEJF
+// Obf: OGJDCOJNONF
 message SceneGalleryBoatMultiInfo {
-	repeated LanV3BoatMultiPlayerData player_data = 8;
+	repeated LanV3BoatMultiPlayerData player_data = 12;
 }

@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "GCGSettleOption.proto";
-// CmdId: 3014
-// Obf: KMGOBCNOLII
+// CmdId: 7918
+// Obf: GJDJDHBKHPG
 message GCGSettleOptionRsp {
-	GCGSettleOption option = 1;
-	int32 retcode = 2;
+	GCGSettleOption option = 4;
+	int32 retcode = 12;
 }

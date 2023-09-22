@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5375
-// Obf: EBEFFALDCEG
+// CmdId: 5637
+// Obf: FFEEDDPMOMP
 message TakeRegionSearchRewardReq {
-	uint32 search_id = 4;
-	uint32 id = 8;
+	uint32 id = 12;
+	uint32 search_id = 10;
 }

@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "AsterProgressDetailInfo.proto";
-// CmdId: 26542
-// Obf: KJJNHOPIBEI
+// CmdId: 2017
+// Obf: PIHDMHGAAJL
 message AsterProgressInfoNotify {
-	AsterProgressDetailInfo info = 13;
+	AsterProgressDetailInfo info = 4;
 }

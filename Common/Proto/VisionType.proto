@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: IFLKBEFDMPH
+// Obf: EKIAFPHGIBH
 enum VisionType {
 	VISION_TYPE_NONE = 0;
 	VISION_TYPE_MEET = 1;

@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 28316
-// Obf: BEHKLPMPHBH
+// CmdId: 130
+// Obf: LABMPLOLGJJ
 message ChangeGameTimeRsp {
-	uint32 cur_game_time = 1;
+	int32 retcode = 2;
 	uint32 extra_days = 14;
-	int32 retcode = 13;
+	uint32 cur_game_time = 5;
 }

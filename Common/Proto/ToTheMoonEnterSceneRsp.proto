@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 6130
-// Obf: ECOFGBHBFEO
+// CmdId: 6155
+// Obf: ENLCJKMODKC
 message ToTheMoonEnterSceneRsp {
-	int32 retcode = 12;
+	int32 retcode = 6;
 }

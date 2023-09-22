@@ -19,11 +19,11 @@ option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
 import "FishEscapeReason.proto";
-// CmdId: 1005
-// Obf: INFHDNGEJBH
+// CmdId: 5807
+// Obf: CJAOKNLFKBE
 message FishEscapeNotify {
-	repeated uint32 fish_id_list = 10;
-	Vector pos = 2;
-	FishEscapeReason reason = 15;
-	uint32 uid = 4;
+	Vector pos = 1;
+	repeated uint32 fish_id_list = 15;
+	uint32 uid = 5;
+	FishEscapeReason reason = 7;
 }

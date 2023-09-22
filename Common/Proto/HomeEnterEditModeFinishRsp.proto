@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 21433
-// Obf: CFJKONMEIIG
+// CmdId: 4536
+// Obf: INKJMOOCAKD
 message HomeEnterEditModeFinishRsp {
-	int32 retcode = 1;
+	int32 retcode = 4;
 }

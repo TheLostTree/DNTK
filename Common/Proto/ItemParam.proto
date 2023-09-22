@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: GKCILFACLDH
+// Obf: JOLBKGJKDDN
 message ItemParam {
 	uint32 item_id = 1;
 	uint32 count = 2;

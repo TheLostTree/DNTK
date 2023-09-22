@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 130
-// Obf: KFEPKPFHJNO
+// CmdId: 8598
+// Obf: BBPPOBIMPIC
 message WinterCampGetCanGiveFriendItemReq {
 }

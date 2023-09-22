@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: MDIBKDBOAAO
+// Obf: BFNGHFNKELO
 enum AuditState {
 	AUDIT_NONE = 0;
 	AUDIT_WAITING = 1;

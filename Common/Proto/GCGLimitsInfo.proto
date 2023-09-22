@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: NNODCOEDNIP
+// Obf: INKKKGHKLAN
 message GCGLimitsInfo {
-	uint32 ALDCMICHPPK = 11;
-	uint32 IHELMLLKKJB = 7;
+	uint32 EDNJLNEFJGA = 11;
+	uint32 PNKLDHDMEOP = 9;
 }

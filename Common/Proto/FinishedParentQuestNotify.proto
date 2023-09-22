@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ParentQuest.proto";
-// CmdId: 27820
-// Obf: EPOAAKIMMFB
+// CmdId: 472
+// Obf: ABDJGNCFLAJ
 message FinishedParentQuestNotify {
-	repeated ParentQuest parent_quest_list = 6;
+	repeated ParentQuest parent_quest_list = 8;
 }

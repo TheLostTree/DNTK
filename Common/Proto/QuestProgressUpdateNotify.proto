@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5388
-// Obf: DEOLGKMMGHH
+// CmdId: 428
+// Obf: DFKPLKPAEJP
 message QuestProgressUpdateNotify {
-	uint32 quest_id = 1;
-	repeated uint32 finish_progress_list = 3;
-	repeated uint32 fail_progress_list = 10;
+	uint32 quest_id = 11;
+	repeated uint32 finish_progress_list = 1;
+	repeated uint32 fail_progress_list = 5;
 }

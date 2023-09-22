@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 2971
-// Obf: MIACHENCEEB
+// CmdId: 4166
+// Obf: OAAIDDFKIJD
 message PlayerAllowEnterMpAfterAgreeMatchNotify {
-	uint32 target_uid = 12;
+	uint32 target_uid = 2;
 }

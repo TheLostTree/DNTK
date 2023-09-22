@@ -19,10 +19,10 @@ option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ServerLogType.proto";
 import "ServerLogLevel.proto";
-// CmdId: 7350
-// Obf: FLLKMEPDPHJ
+// CmdId: 84
+// Obf: PAIOIAPJEEM
 message ServerLogNotify {
-	ServerLogType log_type = 7;
-	ServerLogLevel log_level = 8;
-	string server_log = 3;
+	ServerLogType FHJIOJOGJHJ = 1;
+	string server_log = 4;
+	ServerLogLevel DBILBLAGLPC = 9;
 }

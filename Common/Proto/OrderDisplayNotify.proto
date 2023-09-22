@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 595
-// Obf: PPCBGBAFCMF
+// CmdId: 4139
+// Obf: BCMJAOPNAGF
 message OrderDisplayNotify {
-	uint32 order_id = 10;
+	uint32 order_id = 5;
 }

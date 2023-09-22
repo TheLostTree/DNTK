@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: GGCKOHLIGEL
+// Obf: GELHLMJFAGP
 enum LunaRiteHintStatusType {
 	LUNA_RITE_HINT_STATUS_DEFAULT = 0;
 	LUNA_RITE_HINT_STATUS_NO_COUNT = 1;

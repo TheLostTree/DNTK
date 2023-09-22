@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: NNDLPBBCGJH
+// Obf: KNDNJKFLHMA
 message FleurFairFallInfo {
-	uint32 best_score = 9;
+	uint32 best_score = 6;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 3723
-// Obf: FOIMOOAKPHB
+// CmdId: 8557
+// Obf: IMGHPOJOJGI
 message SetLimitOptimizationNotify {
-	bool is_active = 5;
+	bool is_active = 14;
 }

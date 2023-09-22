@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 21452
-// Obf: KHIPDABPPKO
+// CmdId: 4636
+// Obf: DJKMNGFPAEG
 message HomeDeleteBlueprintReq {
-	uint32 slot_id = 7;
+	uint32 slot_id = 13;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 20325
-// Obf: PMDPIHOEMPD
+// CmdId: 5787
+// Obf: FANEIBDCDMC
 message GroupLinkDeleteNotify {
-	uint32 bundle_id = 11;
+	uint32 bundle_id = 3;
 }

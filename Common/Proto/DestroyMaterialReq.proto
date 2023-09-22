@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "MaterialInfo.proto";
-// CmdId: 6985
-// Obf: MGALBJFALCL
+// CmdId: 697
+// Obf: AFOBMEMONBP
 message DestroyMaterialReq {
 	repeated MaterialInfo material_list = 9;
 }

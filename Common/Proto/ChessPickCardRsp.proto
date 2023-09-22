@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 8256
-// Obf: DAAIHBPJAJP
+// CmdId: 5319
+// Obf: KLALPHGMNFB
 message ChessPickCardRsp {
-	uint32 card_index = 15;
-	int32 retcode = 14;
-	uint32 card_id = 13;
+	uint32 card_id = 9;
+	uint32 card_index = 6;
+	int32 retcode = 1;
 }

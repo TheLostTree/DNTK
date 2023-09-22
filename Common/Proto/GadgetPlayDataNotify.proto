@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 29586
-// Obf: IIHEOPMCIKE
+// CmdId: 884
+// Obf: LAALMJMDDMO
 message GadgetPlayDataNotify {
-	uint32 progress = 2;
-	uint32 play_type = 4;
-	uint32 entity_id = 11;
+	uint32 progress = 5;
+	uint32 entity_id = 9;
+	uint32 play_type = 7;
 }

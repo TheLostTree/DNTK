@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-// CmdId: 1884
-// Obf: NMODMKDKNDF
+// CmdId: 642
+// Obf: KGCIHOMNDOG
 message DropHintNotify {
-	Vector position = 3;
-	repeated uint32 item_id_list = 6;
+	repeated uint32 item_id_list = 10;
+	Vector position = 7;
 }

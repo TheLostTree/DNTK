@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: OGJENPCDJEN
+// Obf: BMHFKGLDMII
 message WeatherInfo {
 	uint32 weather_area_id = 1;
 }

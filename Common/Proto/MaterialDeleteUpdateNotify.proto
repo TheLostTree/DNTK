@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 9737
-// Obf: FKMCADJBOIO
+// CmdId: 609
+// Obf: GIOKMCHNNHM
 message MaterialDeleteUpdateNotify {
 }

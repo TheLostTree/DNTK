@@ -17,13 +17,13 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "HomeBlockSubFieldData.proto";
 import "Vector.proto";
-// Obf: ONEIGKNNOGN
+import "HomeBlockSubFieldData.proto";
+// Obf: IHLFOFHLINA
 message HomeBlockFieldData {
-	repeated HomeBlockSubFieldData sub_field_list = 10;
-	uint32 furniture_id = 1;
-	Vector rot = 8;
-	Vector pos = 15;
-	uint32 guid = 13;
+	Vector pos = 3;
+	uint32 furniture_id = 13;
+	repeated HomeBlockSubFieldData sub_field_list = 9;
+	uint32 guid = 5;
+	Vector rot = 1;
 }

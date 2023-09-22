@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: OGLAIMNKFEK
+// Obf: PGCOKALJOJB
 enum PropChangeReason {
 	PROP_CHANGE_REASON_NONE = 0;
 	PROP_CHANGE_REASON_STATUE_RECOVER = 1;

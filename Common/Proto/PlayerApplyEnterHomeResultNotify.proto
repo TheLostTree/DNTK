@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 26518
-// Obf: BDMPJIIHGNK
+// CmdId: 4694
+// Obf: IKAOKIFHNFH
 message PlayerApplyEnterHomeResultNotify {
-	// Obf: HCLKFKDJEMO
+	// Obf: AFNGLAAINEF
 	enum Reason {
 		PLAYER_JUDGE = 0;
 		PLAYER_ENTER_OPTION_REFUSE = 1;
@@ -33,8 +33,8 @@ message PlayerApplyEnterHomeResultNotify {
 		PRIOR_CHECK = 8;
 	}
 	
-	bool is_agreed = 1;
-	string target_nickname = 7;
-	uint32 target_uid = 11;
-	Reason reason = 4;
+	bool is_agreed = 8;
+	Reason reason = 12;
+	uint32 target_uid = 10;
+	string target_nickname = 5;
 }

@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "HomeModuleComfortInfo.proto";
-// CmdId: 4153
-// Obf: CHCBFKOPHLG
+// CmdId: 4580
+// Obf: HAPBDHHGKBN
 message HomeComfortInfoNotify {
-	repeated HomeModuleComfortInfo module_info_list = 11;
+	repeated HomeModuleComfortInfo module_info_list = 14;
 }

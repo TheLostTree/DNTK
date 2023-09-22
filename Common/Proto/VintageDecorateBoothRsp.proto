@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 26648
-// Obf: NCFCPFPADFD
+// CmdId: 22255
+// Obf: JJMJBBICLLA
 message VintageDecorateBoothRsp {
-	int32 retcode = 7;
+	int32 retcode = 6;
 }

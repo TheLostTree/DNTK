@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 23158
-// Obf: DKKBAEDKIBD
+// CmdId: 8450
+// Obf: AEKBHAHIGAN
 message ChannellerSlabOneOffDungeonInfoRsp {
-	repeated uint32 scheme_buff_id_list = 15;
+	repeated uint32 scheme_buff_id_list = 4;
 	int32 retcode = 2;
 }

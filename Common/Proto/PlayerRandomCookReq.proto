@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ItemParam.proto";
-// CmdId: 7190
-// Obf: DPMOJNLNJPL
+// CmdId: 105
+// Obf: CPAAIMKDMGD
 message PlayerRandomCookReq {
-	repeated ItemParam material_list = 3;
+	repeated ItemParam material_list = 4;
 }

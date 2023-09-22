@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 25220
-// Obf: GKLMOOALANM
+// CmdId: 868
+// Obf: FDLDDCKPHID
 message GadgetChainLevelUpdateNotify {
-	map<uint32, uint32> gadget_chain_level_map = 13;
+	map<uint32, uint32> gadget_chain_level_map = 10;
 }

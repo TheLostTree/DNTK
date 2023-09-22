@@ -18,11 +18,11 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "AranaraCollectionState.proto";
-// CmdId: 4632
-// Obf: HFMGAHLDEHE
+// CmdId: 6358
+// Obf: IPOMAKMJOGD
 message AddAranaraCollectionNotify {
-	uint32 collection_type = 5;
-	uint32 collection_id = 7;
-	AranaraCollectionState NHLNJGDOKBF = 8;
-	AranaraCollectionState MPFFGBKBNEP = 3;
+	AranaraCollectionState GOLJHHICAGJ = 7;
+	uint32 collection_id = 9;
+	uint32 collection_type = 12;
+	AranaraCollectionState OMHMCJAFCJH = 4;
 }

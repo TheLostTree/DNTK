@@ -19,15 +19,15 @@ option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ItemHint.proto";
 import "Vector.proto";
-// CmdId: 20755
-// Obf: CNDHGNFOGNJ
+// CmdId: 655
+// Obf: FOCMGEBMEOH
 message ItemAddHintNotify {
-	bool NAMDHIDNAMP = 1;
-	repeated ItemHint item_list = 5;
-	bool OFKEJDENKLE = 10;
-	repeated ItemHint overflow_transformed_item_list = 12;
-	uint32 quest_id = 11;
-	bool DJAHPNGMNGA = 3;
-	uint32 reason = 8;
-	Vector position = 13;
+	bool GCNFBOCLHPE = 7;
+	bool PJLFNPEEBNP = 5;
+	repeated ItemHint overflow_transformed_item_list = 1;
+	repeated ItemHint item_list = 13;
+	uint32 quest_id = 15;
+	Vector position = 8;
+	bool MMHKDGBFKAC = 9;
+	uint32 reason = 4;
 }

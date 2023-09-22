@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: NCGNEJCBBFC
+// Obf: DHHJHMGHCOO
 message TaskVar {
-	uint32 key = 5;
-	repeated int32 value_list = 8;
+	repeated int32 value_list = 14;
+	uint32 key = 2;
 }

@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "FireworksLaunchSchemeData.proto";
-// CmdId: 6285
-// Obf: EIEOMGBOMCB
+// CmdId: 5985
+// Obf: BJKKFIJLLBN
 message LaunchFireworksReq {
-	FireworksLaunchSchemeData scheme_data = 2;
+	FireworksLaunchSchemeData scheme_data = 10;
 }

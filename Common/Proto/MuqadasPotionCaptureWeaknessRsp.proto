@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 26902
-// Obf: AIJJGMDJKFM
+// CmdId: 23979
+// Obf: IBKCHIEDEOJ
 message MuqadasPotionCaptureWeaknessRsp {
-	int32 retcode = 6;
+	int32 retcode = 8;
 }

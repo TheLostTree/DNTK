@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ShopGoods.proto";
-// Obf: FNALFHKDPMN
+// Obf: LPGBNMHAFFF
 message BuyGoodsParam {
-	uint32 buy_count = 15;
-	ShopGoods goods = 1;
+	uint32 buy_count = 3;
+	ShopGoods goods = 9;
 }

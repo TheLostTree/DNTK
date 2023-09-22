@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: BLDJHMOIKLC
+// Obf: LPJBJOMDBDA
 message BartenderTaskInfo {
-	uint32 id = 15;
-	bool is_finish = 9;
+	bool is_finish = 2;
+	uint32 id = 4;
 }

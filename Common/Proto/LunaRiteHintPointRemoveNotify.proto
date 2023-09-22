@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 4154
-// Obf: KOBGAJACOCE
+// CmdId: 8968
+// Obf: HNDNEGPNBID
 message LunaRiteHintPointRemoveNotify {
-	repeated uint32 hint_point_index = 5;
+	repeated uint32 hint_point_index = 14;
 }

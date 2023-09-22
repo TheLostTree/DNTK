@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 28424
-// Obf: JNBCHGENADD
+// CmdId: 587
+// Obf: HGMAGCCBOGC
 message FinishedTalkIdListNotify {
-	repeated uint32 finished_talk_id_list = 2;
+	repeated uint32 finished_talk_id_list = 1;
 }

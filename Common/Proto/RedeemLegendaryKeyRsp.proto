@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 7270
-// Obf: DDNNDBFNHKE
+// CmdId: 459
+// Obf: GNDIOCKBMPI
 message RedeemLegendaryKeyRsp {
-	int32 retcode = 15;
-	uint32 legendary_key_count = 2;
+	uint32 legendary_key_count = 3;
+	int32 retcode = 11;
 }

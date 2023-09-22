@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Achievement.proto";
-// CmdId: 4460
-// Obf: IDGAPFJMLNJ
+// CmdId: 2658
+// Obf: CHOHAAMOIKE
 message AchievementUpdateNotify {
-	repeated Achievement achievement_list = 15;
+	repeated Achievement achievement_list = 2;
 }

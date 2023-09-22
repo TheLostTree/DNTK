@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 24635
-// Obf: OOFAKCOGPFK
+// CmdId: 1558
+// Obf: HIFNJMPDIHJ
 message GachaOpenWishNotify {
-	uint32 gachaScheduleId = 1;
-	uint32 gachaType = 15;
+	uint32 gachaType = 5;
+	uint32 gachaScheduleId = 10;
 }

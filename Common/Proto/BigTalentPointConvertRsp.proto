@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 24684
-// Obf: DLBBOMGGGOB
+// CmdId: 1048
+// Obf: KAMPPPFPNPD
 message BigTalentPointConvertRsp {
-	uint64 avatar_guid = 13;
-	int32 retcode = 12;
+	int32 retcode = 14;
+	uint64 avatar_guid = 15;
 }

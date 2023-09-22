@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 24987
-// Obf: NKLKOJKDGEH
+// CmdId: 5087
+// Obf: BBMNJDIPGIB
 message TakeReunionFirstGiftRewardReq {
 }

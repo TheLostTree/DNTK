@@ -17,11 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "AvatarInfo.proto";
-import "UgcAvatarInfo.proto";
-// Obf: LEJPPHJPGDD
+import "GMIOAJDAFAB.proto";
+import "EGEBOGIIBGB.proto";
+// Obf: NDOOPLOCEFN
 message DungeonCandidateTeamAvatar {
-	AvatarInfo avatar_info = 13;
-	uint32 player_uid = 12;
-	optional UgcAvatarInfo ugc_avatar_info = 260;
+	GMIOAJDAFAB enter_type = 13;
+	EGEBOGIIBGB DHNMGNOLFKJ = 4;
 }

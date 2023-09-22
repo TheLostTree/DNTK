@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "GameplayRecommendationReliquaryMainPropData.proto";
-// Obf: LHNBFIGNBPF
+// Obf: DDGDNMGNCHP
 message GameplayRecommendationReliquaryResponse {
-	uint32 equip_type = 11;
-	repeated GameplayRecommendationReliquaryMainPropData main_prop_data_list = 14;
+	uint32 equip_type = 6;
+	repeated GameplayRecommendationReliquaryMainPropData main_prop_data_list = 5;
 }

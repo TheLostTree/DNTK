@@ -17,15 +17,15 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "FungusTrainingPoolPreviewDetail.proto";
 import "FungusFighterMonsterDetail.proto";
-// Obf: KDGIFHLHDLK
+import "FungusTrainingPoolPreviewDetail.proto";
+// Obf: JHPJEKPHADI
 message FungusTrainingProgressDetail {
-	uint32 cur_round = 3;
-	repeated uint32 LAKDMPGKFND = 8;
-	uint32 dungeon_id = 12;
+	uint32 dungeon_id = 5;
+	repeated uint32 MLFMGPGFGKG = 8;
+	repeated FungusFighterMonsterDetail monster_detail_list = 2;
+	uint32 total_used_time = 10;
+	repeated uint32 KCIJHMAKOGD = 3;
+	uint32 cur_round = 15;
 	repeated FungusTrainingPoolPreviewDetail monster_pool_preview_list = 6;
-	uint32 total_used_time = 2;
-	repeated FungusFighterMonsterDetail monster_detail_list = 13;
-	repeated uint32 HGDEOIPKFAJ = 14;
 }

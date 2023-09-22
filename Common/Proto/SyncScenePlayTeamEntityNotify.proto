@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "PlayTeamEntityInfo.proto";
-// CmdId: 4915
-// Obf: OFHJPADOKFG
+// CmdId: 3492
+// Obf: FKCHMCLMDEJ
 message SyncScenePlayTeamEntityNotify {
-	repeated PlayTeamEntityInfo entity_info_list = 1;
-	uint32 scene_id = 7;
+	repeated PlayTeamEntityInfo entity_info_list = 14;
+	uint32 scene_id = 8;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 22738
-// Obf: AGGNLBIKJJH
+// CmdId: 4047
+// Obf: LIDFLOLPMPD
 message PlayerSignatureNotify {
-	string signature = 1;
+	string signature = 4;
 }

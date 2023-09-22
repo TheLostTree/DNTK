@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 9147
-// Obf: NIMGOEPOCNP
+// CmdId: 4256
+// Obf: LNHMLLJDNFJ
 message UseWidgetRetractGadgetReq {
-	uint32 entity_id = 14;
+	uint32 entity_id = 2;
 }

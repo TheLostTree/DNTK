@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 21199
-// Obf: NIJEOCGLPPB
+// CmdId: 300
+// Obf: DIJIAKALONH
 message CutSceneFinishNotify {
-	uint32 cutscene_id = 4;
+	uint32 cutscene_id = 2;
 }

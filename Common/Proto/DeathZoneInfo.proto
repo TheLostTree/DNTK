@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: BHEIDECNLJB
+// Obf: JIHOPPHABOC
 message DeathZoneInfo {
-	bool is_open = 14;
-	uint32 id = 10;
+	uint32 id = 9;
+	bool is_open = 13;
 }

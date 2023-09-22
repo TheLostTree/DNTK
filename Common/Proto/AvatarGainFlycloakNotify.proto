@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 29528
-// Obf: LOFNLHIBOBB
+// CmdId: 1654
+// Obf: OPFMGFIPHEE
 message AvatarGainFlycloakNotify {
 	uint32 flycloak_id = 6;
 }

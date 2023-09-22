@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 21594
-// Obf: EDHNPBHAIPB
+// CmdId: 2191
+// Obf: AKPFMOJGKLM
 message BlessingScanReq {
-	uint32 entity_id = 11;
+	uint32 entity_id = 6;
 }

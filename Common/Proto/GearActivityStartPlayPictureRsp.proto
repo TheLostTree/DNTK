@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 4894
-// Obf: EPJKKKMAJKB
+// CmdId: 22263
+// Obf: FGPCCIKCNBO
 message GearActivityStartPlayPictureRsp {
-	int32 retcode = 4;
+	int32 retcode = 9;
 }

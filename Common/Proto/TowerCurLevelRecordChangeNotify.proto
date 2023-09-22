@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "TowerCurLevelRecord.proto";
-// CmdId: 2583
-// Obf: PLJFJACFJAH
+// CmdId: 2402
+// Obf: NNFONEJACKG
 message TowerCurLevelRecordChangeNotify {
-	TowerCurLevelRecord cur_level_record = 3;
+	TowerCurLevelRecord cur_level_record = 13;
 }

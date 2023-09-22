@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 6421
-// Obf: IFNKOMOKHDM
+// CmdId: 2151
+// Obf: NKDLBPJOKIC
 message SeaLampPopularityNotify {
-	uint32 popularity = 6;
+	uint32 popularity = 4;
 }

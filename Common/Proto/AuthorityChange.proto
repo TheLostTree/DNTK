@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "EntityAuthorityInfo.proto";
-// Obf: MBOKNLKIPFI
+// Obf: ABPGGKJDEIM
 message AuthorityChange {
-	EntityAuthorityInfo entity_authority_info = 10;
-	uint32 authority_peer_id = 9;
-	uint32 entity_id = 1;
+	uint32 authority_peer_id = 5;
+	EntityAuthorityInfo entity_authority_info = 15;
+	uint32 entity_id = 11;
 }

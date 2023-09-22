@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "GCGPhaseType.proto";
-// Obf: HDBIKIIAINO
+import "OFOHJIEDJKD.proto";
+// Obf: KBHFMBICJNP
 message GCGMsgOpTimer {
-	fixed64 time_stamp = 3;
-	fixed64 begin_time = 4;
-	uint32 controller_id = 5;
-	GCGPhaseType phase = 9;
+	OFOHJIEDJKD phase = 7;
+	fixed64 begin_time = 1;
+	fixed64 NBEKAHFIEAF = 3;
+	uint32 controller_id = 4;
 }

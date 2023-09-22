@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 28953
-// Obf: AIINGBCBBFJ
+// CmdId: 8268
+// Obf: NGONIBLFBNN
 message PlantFlowerTakeSeedRewardRsp {
-	uint32 schedule_id = 5;
-	int32 retcode = 9;
+	int32 retcode = 2;
+	uint32 schedule_id = 3;
 }

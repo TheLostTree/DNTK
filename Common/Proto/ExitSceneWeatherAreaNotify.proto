@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 29563
-// Obf: PMMNBAJNFDK
+// CmdId: 212
+// Obf: PPIMKDPAHCB
 message ExitSceneWeatherAreaNotify {
-	uint32 weather_gadget_id = 7;
+	uint32 weather_gadget_id = 4;
 }

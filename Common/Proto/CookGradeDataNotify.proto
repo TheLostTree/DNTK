@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 20583
-// Obf: AHCCHJMAIEI
+// CmdId: 103
+// Obf: MPEDAIGLBMB
 message CookGradeDataNotify {
-	uint32 grade = 7;
+	uint32 grade = 13;
 }

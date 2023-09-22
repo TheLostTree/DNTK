@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: CGABDBLBBGF
+// Obf: EMAIJJNIDOE
 message MassiveWaterInfo {
 	int64 id = 1;
 }

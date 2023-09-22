@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "CityReputationSimpleInfo.proto";
-// CmdId: 8325
-// Obf: DJMIMCGIGFJ
+// CmdId: 2816
+// Obf: ONLFJBNBLNL
 message CityReputationDataNotify {
-	repeated CityReputationSimpleInfo simple_info_list = 14;
+	repeated CityReputationSimpleInfo simple_info_list = 10;
 }

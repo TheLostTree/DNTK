@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ClientInputType.proto";
-// CmdId: 6221
-// Obf: JKKDJKOCCPI
+// CmdId: 8047
+// Obf: EFOOEAAJELB
 message ViewLanternProjectionTipsReq {
-	bool is_input_tips = 7;
-	ClientInputType input_type = 12;
+	ClientInputType input_type = 6;
+	bool is_input_tips = 13;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 21320
-// Obf: IFBOPEIGBKP
+// CmdId: 24232
+// Obf: DFKEPHOCIHG
 message DuelHeartEnterDungeonRsp {
-	int32 retcode = 12;
+	int32 retcode = 3;
 }

@@ -18,7 +18,7 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "AbilityAppliedAbility.proto";
-// Obf: GOIHMEADCCK
+// Obf: KGNBOGPLLAM
 message AbilityMetaAddAbility {
-	AbilityAppliedAbility ability = 9;
+	AbilityAppliedAbility ability = 2;
 }

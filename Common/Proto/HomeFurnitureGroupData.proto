@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "HomeFurnitureData.proto";
-// Obf: HFMLKOOJPAO
+// Obf: OKOMHBCDEIH
 message HomeFurnitureGroupData {
-	uint32 group_furniture_index = 9;
-	repeated HomeFurnitureData virtual_furniure_list = 15;
+	uint32 group_furniture_index = 12;
+	repeated HomeFurnitureData virtual_furniure_list = 5;
 }

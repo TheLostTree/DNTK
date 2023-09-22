@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "EvtBeingHitInfo.proto";
 import "ForwardType.proto";
-// CmdId: 22445
-// Obf: KKMJKPPFMGI
+import "EvtBeingHitInfo.proto";
+// CmdId: 380
+// Obf: JGJGGKDENBM
 message EvtBeingHitsCombineNotify {
-	repeated EvtBeingHitInfo evt_being_hit_info_list = 4;
-	ForwardType forward_type = 8;
+	ForwardType forward_type = 13;
+	repeated EvtBeingHitInfo evt_being_hit_info_list = 10;
 }

@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 25975
-// Obf: NFOGPCEEEEH
+// CmdId: 20735
+// Obf: KMOELPBADJL
 message GearActivityStartPlayGearRsp {
-	uint32 level_id = 7;
-	int32 retcode = 11;
+	int32 retcode = 3;
+	uint32 level_id = 15;
 }

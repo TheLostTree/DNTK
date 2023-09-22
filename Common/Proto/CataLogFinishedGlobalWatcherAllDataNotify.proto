@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "CataLogGlobalWatcherFinishedData.proto";
-// CmdId: 6277
-// Obf: INIFBMCNLFH
+// CmdId: 6353
+// Obf: EEBGALKIANL
 message CataLogFinishedGlobalWatcherAllDataNotify {
 	repeated CataLogGlobalWatcherFinishedData finished_global_watcher_data_list = 14;
 }

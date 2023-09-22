@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: JKIMDJMBCOP
+// Obf: EIEEEEGCDEJ
 message FishInfo {
-	uint32 BKNIFIIKAOJ = 5;
-	uint32 KMEKOBBJLDH = 2;
+	uint32 KNHKIEOMMFC = 13;
+	uint32 IKHMLANEEBO = 14;
 }

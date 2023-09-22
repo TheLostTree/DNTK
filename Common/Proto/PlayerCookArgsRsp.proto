@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 9840
-// Obf: BHKCIFABCAL
+// CmdId: 101
+// Obf: CAJPAGGCEHI
 message PlayerCookArgsRsp {
-	float qte_range_ratio = 4;
-	int32 retcode = 8;
+	int32 retcode = 6;
+	float qte_range_ratio = 10;
 }

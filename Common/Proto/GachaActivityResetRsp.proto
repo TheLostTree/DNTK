@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 9141
-// Obf: ANHDCCPNDCA
+// CmdId: 8011
+// Obf: CMHJBIMGJCI
 message GachaActivityResetRsp {
-	int32 retcode = 6;
 	uint32 stage_id = 5;
+	int32 retcode = 10;
 }

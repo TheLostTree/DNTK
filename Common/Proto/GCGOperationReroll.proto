@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: NBMJJHNECMH
+// Obf: FCANKDPKMLF
 message GCGOperationReroll {
-	repeated uint32 dice_index_list = 12;
+	repeated uint32 dice_index_list = 7;
 }

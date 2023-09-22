@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 25353
-// Obf: KLKEPODPBIL
+// CmdId: 24567
+// Obf: HEEABPJLCIK
 message EffigyChallengeV2DungeonInfoNotify {
-	uint32 level_id = 5;
-	uint32 challenge_mode_difficulty = 12;
-	uint32 skill_no = 2;
+	uint32 skill_no = 1;
+	uint32 challenge_mode_difficulty = 7;
+	uint32 level_id = 11;
 }

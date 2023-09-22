@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "LunchBoxData.proto";
-// CmdId: 20055
-// Obf: GJMHODKMMJN
+// CmdId: 4257
+// Obf: KOMALFPCIAI
 message SetUpLunchBoxWidgetReq {
-	LunchBoxData lunch_box_data = 9;
+	LunchBoxData lunch_box_data = 14;
 }

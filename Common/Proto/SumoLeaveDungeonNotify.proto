@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 4886
-// Obf: FEIBGIGLAKF
+// CmdId: 8521
+// Obf: JDOGDOCOGEJ
 message SumoLeaveDungeonNotify {
 }

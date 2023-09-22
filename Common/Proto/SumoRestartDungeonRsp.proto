@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 8491
-// Obf: BKNKOICDBJG
+// CmdId: 8743
+// Obf: OPBDFLFEELK
 message SumoRestartDungeonRsp {
-	int32 retcode = 1;
-	uint32 point_id = 3;
-	uint32 dungeon_id = 15;
+	int32 retcode = 6;
+	uint32 dungeon_id = 13;
+	uint32 point_id = 14;
 }

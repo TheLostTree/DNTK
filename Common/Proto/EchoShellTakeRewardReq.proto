@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 855
-// Obf: IGMILGOOBGI
+// CmdId: 8280
+// Obf: IMBLMKPEOGP
 message EchoShellTakeRewardReq {
-	uint32 reward_id = 12;
+	uint32 reward_id = 8;
 }

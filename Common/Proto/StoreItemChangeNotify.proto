@@ -19,9 +19,9 @@ option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Item.proto";
 import "StoreType.proto";
-// CmdId: 370
-// Obf: IBPNONJJFIN
+// CmdId: 602
+// Obf: MEIPEBBLOAK
 message StoreItemChangeNotify {
-	repeated Item item_list = 1;
-	StoreType store_type = 10;
+	repeated Item item_list = 4;
+	StoreType store_type = 7;
 }

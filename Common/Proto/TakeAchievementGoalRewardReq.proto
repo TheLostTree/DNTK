@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 249
-// Obf: FILFJFONHAK
+// CmdId: 2676
+// Obf: PDIDCMNCIAE
 message TakeAchievementGoalRewardReq {
-	repeated uint32 id_list = 8;
+	repeated uint32 id_list = 1;
 }

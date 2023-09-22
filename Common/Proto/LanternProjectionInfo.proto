@@ -17,12 +17,12 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "ClientInputType.proto";
 import "LanternProjectionLevelInfo.proto";
-// Obf: ENAMKBDKBDD
+import "ClientInputType.proto";
+// Obf: PCNDNIOHPPA
 message LanternProjectionInfo {
-	repeated uint32 open_stage_list = 6;
-	repeated ClientInputType LPFHLCMPJDE = 10;
-	repeated LanternProjectionLevelInfo level_list = 12;
-	repeated ClientInputType IHBEIKHBBPA = 14;
+	repeated LanternProjectionLevelInfo level_list = 6;
+	repeated ClientInputType PPBJGJCPALO = 12;
+	repeated uint32 open_stage_list = 15;
+	repeated ClientInputType PGIIONPLNPJ = 10;
 }

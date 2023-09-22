@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 6547
-// Obf: HMBNKNMBHGG
+// CmdId: 627
+// Obf: BDLPMNNPKLE
 message ReliquaryFilterStateNotify {
-	map<uint32, uint32> reliquary_filter_state_map = 13;
+	map<uint32, uint32> reliquary_filter_state_map = 15;
 }

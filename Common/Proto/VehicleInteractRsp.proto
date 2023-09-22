@@ -17,18 +17,18 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "VehicleMember.proto";
 import "Vector.proto";
+import "VehicleMember.proto";
 import "VehicleInteractType.proto";
-// CmdId: 29349
-// Obf: CFHCGPCDLPA
+// CmdId: 824
+// Obf: BGCJBJNDCDB
 message VehicleInteractRsp {
-	int32 retcode = 6;
-	VehicleMember member = 14;
-	Vector KKDFCJENDNI = 4;
-	uint32 entity_id = 5;
+	Vector KPLLINDPCBJ = 14;
+	VehicleMember member = 3;
+	uint32 entity_id = 9;
+	uint32 IDLLLBLACAE = 15;
 	VehicleInteractType interact_type = 7;
+	int32 retcode = 11;
 	uint32 gadget_id = 13;
-	Vector JGOGBMEKOPP = 1;
-	uint32 CJIMMADJKHD = 10;
+	Vector MBJJPEGEDME = 10;
 }

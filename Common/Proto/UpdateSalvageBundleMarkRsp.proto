@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 22649
-// Obf: NCJOPEJIMNG
+// CmdId: 8927
+// Obf: LFOIFONCELI
 message UpdateSalvageBundleMarkRsp {
-	int32 retcode = 11;
-	uint32 stage_id = 4;
-	uint32 challenge_type = 5;
+	uint32 stage_id = 8;
+	int32 retcode = 9;
+	uint32 challenge_type = 11;
 }

@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 27826
-// Obf: LPJDOPEJJHH
+// CmdId: 1790
+// Obf: PEAMAJJMFAM
 message AvatarChangeAnimHashRsp {
-	int32 retcode = 14;
-	uint64 avatar_guid = 11;
-	uint32 anim_hash = 3;
+	uint32 anim_hash = 12;
+	uint64 avatar_guid = 10;
+	int32 retcode = 7;
 }

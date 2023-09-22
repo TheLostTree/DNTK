@@ -18,11 +18,11 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-// CmdId: 23169
-// Obf: JENKJBLNBMD
+// CmdId: 1690
+// Obf: CDONCHPFNAE
 message ChangeAvatarReq {
-	Vector move_pos = 9;
-	uint64 guid = 4;
-	bool is_move = 3;
-	uint32 skill_id = 7;
+	Vector move_pos = 3;
+	bool is_move = 9;
+	uint32 skill_id = 15;
+	uint64 guid = 8;
 }

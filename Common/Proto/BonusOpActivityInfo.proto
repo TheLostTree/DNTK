@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: COLPNJDOIDM
+// Obf: MBPEIAOFFNP
 message BonusOpActivityInfo {
-	uint32 left_bonus_count = 12;
+	uint32 left_bonus_count = 11;
 }

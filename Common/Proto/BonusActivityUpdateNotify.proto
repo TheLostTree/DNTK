@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "BonusActivityInfo.proto";
-// CmdId: 28781
-// Obf: CCPKAKDJGBN
+// CmdId: 2564
+// Obf: KOKOGPAPCKA
 message BonusActivityUpdateNotify {
-	repeated BonusActivityInfo bonus_activity_info_list = 14;
+	repeated BonusActivityInfo bonus_activity_info_list = 8;
 }

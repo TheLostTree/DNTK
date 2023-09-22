@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 9238
-// Obf: JIJKLANOOHE
+// CmdId: 4777
+// Obf: LKHMJDHGINB
 message HomeAvatarSummonEventReq {
-	uint32 avatar_id = 4;
-	uint32 suit_id = 1;
-	uint32 guid = 5;
+	uint32 guid = 1;
+	uint32 suit_id = 7;
+	uint32 avatar_id = 14;
 }

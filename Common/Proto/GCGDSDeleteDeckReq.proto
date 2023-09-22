@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 27984
-// Obf: POBAMAFCDFA
+// CmdId: 7576
+// Obf: HPEIOOKKAHD
 message GCGDSDeleteDeckReq {
-	uint32 deck_id = 7;
+	uint32 deck_id = 8;
 }

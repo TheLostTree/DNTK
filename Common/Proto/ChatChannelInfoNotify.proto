@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ChatChannelInfo.proto";
-// CmdId: 5319
-// Obf: BMILFLEIHON
+// CmdId: 5044
+// Obf: GAHFHBNBEHN
 message ChatChannelInfoNotify {
-	ChatChannelInfo channel_info = 4;
+	ChatChannelInfo channel_info = 5;
 }

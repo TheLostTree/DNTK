@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 4966
-// Obf: GPOBOMCCOMK
+// CmdId: 24
+// Obf: EHMCALABOPM
 message ClientBulletCreateNotify {
-	uint32 param = 2;
+	uint32 param = 7;
 }

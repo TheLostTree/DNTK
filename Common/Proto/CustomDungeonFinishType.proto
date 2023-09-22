@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: AJGOAOOHDHK
+// Obf: HPPKOKPKAHJ
 enum CustomDungeonFinishType {
 	CUSTOM_DUNGEON_FINISH_PLAY_NORMAL = 0;
 	CUSTOM_DUNGEON_FINISH_PLAY_TRY = 1;

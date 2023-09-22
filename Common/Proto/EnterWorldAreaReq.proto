@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 29482
-// Obf: OLIJIMJGACD
+// CmdId: 242
+// Obf: PKDAGNPOOOK
 message EnterWorldAreaReq {
-	uint32 area_type = 8;
-	uint32 area_id = 15;
+	uint32 area_id = 11;
+	uint32 area_type = 9;
 }

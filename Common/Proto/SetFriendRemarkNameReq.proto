@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 1521
-// Obf: KGIPKDELIOE
+// CmdId: 4012
+// Obf: AMIENEGEALD
 message SetFriendRemarkNameReq {
-	uint32 uid = 14;
-	string remark_name = 6;
+	uint32 uid = 7;
+	string remark_name = 1;
 }

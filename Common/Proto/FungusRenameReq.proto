@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 29655
-// Obf: NDEPPHOPDCD
+// CmdId: 20104
+// Obf: AIGBCOCJCGN
 message FungusRenameReq {
-	uint32 name_id = 13;
-	uint32 fungus_id = 9;
+	uint32 name_id = 7;
+	uint32 fungus_id = 3;
 }

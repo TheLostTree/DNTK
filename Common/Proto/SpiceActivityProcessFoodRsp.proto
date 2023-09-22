@@ -18,10 +18,10 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ItemParam.proto";
-// CmdId: 21724
-// Obf: LDJKKEJCDHM
+// CmdId: 8171
+// Obf: HMEPPOKOJLI
 message SpiceActivityProcessFoodRsp {
-	repeated ItemParam normal_food_list = 12;
+	repeated ItemParam normal_food_list = 13;
+	repeated ItemParam special_food_list = 6;
 	int32 retcode = 4;
-	repeated ItemParam special_food_list = 2;
 }

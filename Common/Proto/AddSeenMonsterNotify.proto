@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 26127
-// Obf: IIMFPCEHEMP
+// CmdId: 250
+// Obf: OBHEAMNHHEB
 message AddSeenMonsterNotify {
-	repeated uint32 monster_id_list = 7;
+	repeated uint32 monster_id_list = 15;
 }

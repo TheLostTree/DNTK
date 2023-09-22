@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ReunionBriefInfo.proto";
-// CmdId: 505
-// Obf: BFKFMPLPOAG
+// CmdId: 5088
+// Obf: DBHIKKMABNM
 message ReunionDailyRefreshNotify {
-	ReunionBriefInfo reunion_brief_info = 7;
+	ReunionBriefInfo reunion_brief_info = 5;
 }

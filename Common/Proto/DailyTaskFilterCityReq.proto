@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 21803
-// Obf: JMEAMJOPKAD
+// CmdId: 132
+// Obf: FGIIGEAAJGI
 message DailyTaskFilterCityReq {
-	uint32 city_id = 14;
+	uint32 city_id = 8;
 }

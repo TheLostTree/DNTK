@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ItemParam.proto";
-// CmdId: 4625
-// Obf: AGLKMBBPCJA
+// CmdId: 8878
+// Obf: FPLLNAOJKDL
 message WinterCampGiveFriendItemReq {
-	repeated ItemParam item_list = 7;
-	uint32 uid = 13;
+	repeated ItemParam item_list = 5;
+	uint32 uid = 14;
 }

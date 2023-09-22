@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "JGDMDPNJLCA.proto";
-// Obf: OPLKPKFMFNJ
+import "ACKNNJIEGEK.proto";
+// Obf: OEKOABENGBG
 message SandwormCannonDetailInfo {
-	repeated JGDMDPNJLCA HAKEHEFJDBD = 15;
+	repeated ACKNNJIEGEK CEBANFGCAFM = 2;
 }

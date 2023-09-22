@@ -19,10 +19,10 @@ option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
 import "ForwardType.proto";
-// CmdId: 8672
-// Obf: PJHHOALDCDN
+// CmdId: 333
+// Obf: LFKAAHFDIKE
 message EvtBulletMoveNotify {
-	uint32 entity_id = 6;
-	Vector cur_pos = 13;
-	ForwardType forward_type = 15;
+	Vector cur_pos = 14;
+	uint32 entity_id = 2;
+	ForwardType forward_type = 13;
 }

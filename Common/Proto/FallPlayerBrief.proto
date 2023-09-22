@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: CAPMOPJNBBE
+// Obf: CGLBJONCFBA
 message FallPlayerBrief {
-	uint32 score = 3;
-	uint32 uid = 15;
-	bool is_ground = 6;
+	bool is_ground = 15;
+	uint32 score = 6;
+	uint32 uid = 9;
 }

@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "AsterMidCampInfo.proto";
-// CmdId: 21139
-// Obf: JGDCHLHCNFO
+// CmdId: 2145
+// Obf: JOHBIOHFHOI
 message AsterMidCampInfoNotify {
-	repeated AsterMidCampInfo camp_list = 12;
+	repeated AsterMidCampInfo camp_list = 11;
 }

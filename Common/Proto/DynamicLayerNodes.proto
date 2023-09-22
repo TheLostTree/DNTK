@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "DynamicSVONode.proto";
-// Obf: HJCMPLOCJKE
+// Obf: JBLLEPHMFMJ
 message DynamicLayerNodes {
-	int32 level = 5;
-	repeated DynamicSVONode nodes = 14;
+	repeated DynamicSVONode nodes = 11;
+	int32 level = 10;
 }

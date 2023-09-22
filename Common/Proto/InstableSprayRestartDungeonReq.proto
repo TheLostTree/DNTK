@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "InstableSprayAvatarInfo.proto";
-// CmdId: 3513
-// Obf: BPFOJJJKEIO
+// CmdId: 21065
+// Obf: BDALIKKNEGP
 message InstableSprayRestartDungeonReq {
-	repeated InstableSprayAvatarInfo avatar_info_list = 2;
+	repeated InstableSprayAvatarInfo avatar_info_list = 3;
 }

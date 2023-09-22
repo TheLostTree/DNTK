@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 7184
-// Obf: GPDNNBHHBDF
+// CmdId: 8455
+// Obf: GHHEELDLCFB
 message HideAndSeekChooseMapRsp {
-	repeated uint32 map_list = 10;
-	int32 retcode = 15;
+	int32 retcode = 1;
+	repeated uint32 map_list = 2;
 }

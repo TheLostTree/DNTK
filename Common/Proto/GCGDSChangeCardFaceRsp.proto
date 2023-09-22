@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 6683
-// Obf: LGNOHDGDGPB
+// CmdId: 7097
+// Obf: ONEIJAMCFJC
 message GCGDSChangeCardFaceRsp {
-	int32 retcode = 14;
-	uint32 card_id = 4;
-	uint32 face_type = 8;
+	int32 retcode = 7;
+	uint32 card_id = 8;
+	uint32 face_type = 4;
 }

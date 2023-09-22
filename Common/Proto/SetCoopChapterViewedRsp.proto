@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 23389
-// Obf: AIFNGABDBJK
+// CmdId: 1959
+// Obf: FMDKNDKKLAA
 message SetCoopChapterViewedRsp {
-	int32 retcode = 12;
-	uint32 chapter_id = 6;
+	uint32 chapter_id = 14;
+	int32 retcode = 13;
 }

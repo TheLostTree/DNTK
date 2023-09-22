@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 23871
-// Obf: MAGKJBNMEIJ
+// CmdId: 2125
+// Obf: GIGACANHOPK
 message FleurFairMusicGameSettleRsp {
-	uint32 music_basic_id = 9;
-	bool is_new_record = 1;
-	int32 retcode = 4;
-	bool is_unlock_next_level = 13;
+	uint32 music_basic_id = 5;
+	int32 retcode = 15;
+	bool is_new_record = 11;
+	bool is_unlock_next_level = 14;
 }

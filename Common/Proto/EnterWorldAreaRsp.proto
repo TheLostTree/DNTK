@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 21362
-// Obf: MIPCODPODKN
+// CmdId: 207
+// Obf: GAEPKHKAHGF
 message EnterWorldAreaRsp {
 	uint32 area_type = 6;
-	int32 retcode = 13;
-	uint32 area_id = 9;
+	uint32 area_id = 13;
+	int32 retcode = 11;
 }

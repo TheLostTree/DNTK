@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 2031
-// Obf: HIJFHJEALCJ
+// CmdId: 4479
+// Obf: HIMMOIJJPGB
 message HomeChangeBgmNotify {
-	uint32 bgm_id = 2;
+	uint32 bgm_id = 15;
 }

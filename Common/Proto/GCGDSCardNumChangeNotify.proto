@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 8761
-// Obf: BCIGKHPFMLI
+// CmdId: 7158
+// Obf: DBCICNAFMKH
 message GCGDSCardNumChangeNotify {
-	uint32 num = 5;
-	uint32 card_id = 9;
+	uint32 num = 15;
+	uint32 card_id = 12;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 22183
-// Obf: AGFCKCAGECB
+// CmdId: 8594
+// Obf: LNJIJECJAMI
 message ViewLanternProjectionTipsRsp {
-	int32 retcode = 8;
+	int32 retcode = 7;
 }

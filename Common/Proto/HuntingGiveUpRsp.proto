@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "HuntingPair.proto";
-// CmdId: 5719
-// Obf: IOEIACCDKMN
+// CmdId: 4342
+// Obf: KGBKLJDLAEG
 message HuntingGiveUpRsp {
-	int32 retcode = 12;
-	HuntingPair hunting_pair = 11;
+	HuntingPair hunting_pair = 4;
+	int32 retcode = 11;
 }

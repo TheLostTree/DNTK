@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 8630
-// Obf: GKBNCJBCIDH
+// CmdId: 8147
+// Obf: HHONHBALFOG
 message GiveUpRoguelikeDungeonCardReq {
 }

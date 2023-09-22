@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 2616
-// Obf: GKCCFCPCHAK
+// CmdId: 755
+// Obf: JDGADILKHCE
 message GetShopmallDataReq {
 }

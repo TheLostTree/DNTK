@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 27734
-// Obf: IEPBGIKMJFE
+// CmdId: 4806
+// Obf: IFGLHNJGLDB
 message HomeGetBasicInfoReq {
 }

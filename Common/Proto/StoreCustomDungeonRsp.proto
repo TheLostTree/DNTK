@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 28706
-// Obf: PECOCMJLBDE
+// CmdId: 6205
+// Obf: IOCFJKIDOPB
 message StoreCustomDungeonRsp {
-	int32 retcode = 1;
+	int32 retcode = 13;
 }

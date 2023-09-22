@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: OJCJONLPBME
+// Obf: PFOAMFGJEIF
 message CoopCg {
-	uint32 id = 5;
-	bool is_unlock = 6;
+	bool is_unlock = 15;
+	uint32 id = 2;
 }

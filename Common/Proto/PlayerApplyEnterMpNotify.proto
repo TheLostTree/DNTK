@@ -18,10 +18,10 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "OnlinePlayerInfo.proto";
-// CmdId: 5296
-// Obf: DKNEOIPGLJP
+// CmdId: 1828
+// Obf: AOPCBABBFLA
 message PlayerApplyEnterMpNotify {
-	uint32 src_app_id = 5;
-	uint32 src_thread_index = 8;
-	OnlinePlayerInfo src_player_info = 14;
+	OnlinePlayerInfo src_player_info = 12;
+	uint32 src_app_id = 2;
+	uint32 src_thread_index = 10;
 }

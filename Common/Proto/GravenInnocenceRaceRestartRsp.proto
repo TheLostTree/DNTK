@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 1603
-// Obf: MKJMIKIMLBG
+// CmdId: 24299
+// Obf: IGNMHIBOFEA
 message GravenInnocenceRaceRestartRsp {
-	int32 retcode = 1;
-	uint32 gallery_id = 12;
+	uint32 gallery_id = 2;
+	int32 retcode = 11;
 }

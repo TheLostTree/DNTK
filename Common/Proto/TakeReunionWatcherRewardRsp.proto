@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5682
-// Obf: OKCJNNIHAAJ
+// CmdId: 5098
+// Obf: GLFGDBCHGJA
 message TakeReunionWatcherRewardRsp {
-	int32 retcode = 7;
-	uint32 mission_id = 1;
-	uint32 watcher_id = 11;
+	uint32 mission_id = 11;
+	int32 retcode = 5;
+	uint32 watcher_id = 14;
 }

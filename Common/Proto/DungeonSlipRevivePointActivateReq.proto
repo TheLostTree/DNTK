@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 8945
-// Obf: NMHIJGEDOLK
+// CmdId: 956
+// Obf: MJDBOGJIPMD
 message DungeonSlipRevivePointActivateReq {
-	uint32 slip_revive_point_id = 11;
+	uint32 slip_revive_point_id = 1;
 }

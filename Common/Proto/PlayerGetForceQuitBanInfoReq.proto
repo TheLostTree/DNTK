@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 24478
-// Obf: FFIHLFOEOGJ
+// CmdId: 4185
+// Obf: JGGJABGBLMP
 message PlayerGetForceQuitBanInfoReq {
 }

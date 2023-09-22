@@ -19,8 +19,8 @@ option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
 import "PBNavMeshPoly.proto";
-// Obf: PPNJOACGDIN
+// Obf: OPBBHGEONJL
 message PBNavMeshTile {
-	repeated Vector vecs = 3;
-	repeated PBNavMeshPoly polys = 5;
+	repeated Vector vecs = 10;
+	repeated PBNavMeshPoly polys = 9;
 }

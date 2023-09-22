@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "CoinCollectStageInfo.proto";
-// CmdId: 2218
-// Obf: FLHCCOOELDD
+// CmdId: 6455
+// Obf: LALGGEHKIAE
 message CoinCollectPrepareStageNotify {
-	CoinCollectStageInfo coin_collect_info = 12;
+	CoinCollectStageInfo coin_collect_info = 7;
 }

@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 27893
-// Obf: NFDEPIKILGA
+// CmdId: 2075
+// Obf: ILKDHAHONPJ
 message StartArenaChallengeLevelRsp {
-	uint32 gadget_entity_id = 1;
-	uint32 OAHPACPBKJM = 8;
-	uint32 CCKGKFMEKKL = 15;
-	int32 retcode = 5;
+	uint32 DBPEAEAANPG = 13;
+	uint32 gadget_entity_id = 11;
+	int32 retcode = 15;
+	uint32 PEPMDOACJNL = 2;
 }

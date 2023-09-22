@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: KMBKLPECAEO
+// Obf: HHJFBBFKPIE
 enum DungeonCandidateTeamPlayerState {
 	DUNGEON_CANDIDATE_TEAM_PLAYER_STATE_IDLE = 0;
 	DUNGEON_CANDIDATE_TEAM_PLAYER_STATE_CHANGING_AVATAR = 1;

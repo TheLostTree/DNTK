@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: GCJOGKGADPD
+// Obf: CMKPIEPINGG
 message BattlePassProduct {
-	string HOJKADLEFBP = 7;
-	string CHOKHINHNGH = 14;
-	string NJCCJEMGKDJ = 5;
+	string extra_product_id = 13;
+	string normal_product_id = 5;
+	string upgrade_product_id = 4;
 }

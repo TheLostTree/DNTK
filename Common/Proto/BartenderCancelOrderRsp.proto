@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 1772
-// Obf: MPPMFOJADJE
+// CmdId: 8417
+// Obf: HHJDDENECKG
 message BartenderCancelOrderRsp {
-	int32 retcode = 3;
-	uint32 quest_id = 12;
+	uint32 quest_id = 3;
+	int32 retcode = 11;
 }

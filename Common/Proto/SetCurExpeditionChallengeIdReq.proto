@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 20340
-// Obf: OMEPMBGNIDB
+// CmdId: 2106
+// Obf: MAAKMJOIMIG
 message SetCurExpeditionChallengeIdReq {
-	uint32 id = 4;
+	uint32 id = 11;
 }

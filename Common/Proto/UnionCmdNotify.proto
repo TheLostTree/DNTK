@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "UnionCmd.proto";
-// CmdId: 21088
-// Obf: GLEELPIOJHO
+// CmdId: 16
+// Obf: DABEPBFAFLP
 message UnionCmdNotify {
-	repeated UnionCmd cmd_list = 7;
+	repeated UnionCmd cmd_list = 8;
 }

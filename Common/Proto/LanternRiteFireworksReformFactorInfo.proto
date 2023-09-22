@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: HKOILFOAMGM
+// Obf: CBDNLHOCBPN
 message LanternRiteFireworksReformFactorInfo {
+	uint32 factor_id = 5;
 	uint32 factor_value = 3;
-	uint32 factor_id = 4;
 }

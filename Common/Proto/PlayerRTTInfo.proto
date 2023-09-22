@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: MCDPPKMOEJJ
+// Obf: BINJAMDAACF
 message PlayerRTTInfo {
-	uint32 rtt = 2;
-	uint32 uid = 1;
+	uint32 uid = 11;
+	uint32 rtt = 1;
 }

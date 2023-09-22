@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "AbilityString.proto";
-// Obf: HFHFECKAJGB
+// Obf: HDNMEHLEAGE
 message ModifierProperty {
-	AbilityString key = 10;
-	float value = 14;
+	float value = 4;
+	AbilityString key = 12;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 2859
-// Obf: LGFJOLKJKII
+// CmdId: 8721
+// Obf: OKJFNECHCNL
 message HideAndSeekSelectSkillReq {
-	repeated uint32 skill_list = 10;
+	repeated uint32 skill_list = 2;
 }

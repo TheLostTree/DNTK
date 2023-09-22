@@ -18,7 +18,7 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "DynamicLayerNodes.proto";
-// Obf: OPEOGJDEIKG
+// Obf: KBNJMNFKECD
 message DynamicNodes {
-	repeated DynamicLayerNodes nodes = 15;
+	repeated DynamicLayerNodes nodes = 14;
 }

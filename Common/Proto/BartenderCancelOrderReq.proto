@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 7877
-// Obf: LIOKMLBGHFH
+// CmdId: 8189
+// Obf: PJGFFBDPBPF
 message BartenderCancelOrderReq {
-	uint32 quest_id = 3;
+	uint32 quest_id = 11;
 }

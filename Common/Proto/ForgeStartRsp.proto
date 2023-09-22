@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 24460
-// Obf: AAPABLBKOGM
+// CmdId: 611
+// Obf: DFGJKMJHMFG
 message ForgeStartRsp {
-	int32 retcode = 10;
+	int32 retcode = 6;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 6681
-// Obf: FNJPMMKFLFC
+// CmdId: 24449
+// Obf: CLACJNIMEFP
 message VintageMarketStartStorePlayReq {
-	uint32 store_round = 1;
+	uint32 store_round = 4;
 }

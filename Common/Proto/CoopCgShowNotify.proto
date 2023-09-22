@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 26025
-// Obf: JDLGCMDAEFP
+// CmdId: 1997
+// Obf: CAAHLDMDGBL
 message CoopCgShowNotify {
-	repeated uint32 cg_list = 4;
+	repeated uint32 cg_list = 5;
 }

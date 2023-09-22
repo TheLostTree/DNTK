@@ -19,17 +19,17 @@ option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "MathQuaternion.proto";
 import "Vector.proto";
-// Obf: ENOOIIGMBMM
+// Obf: ANKBKPGDBDF
 message ToTheMoonObstacleInfo {
-	// Obf: LEBNOHBEPDG
+	// Obf: LGLLHBPIPJM
 	enum ShapeType {
 		OBSTACLE_SHAPE_CAPSULE = 0;
 		OBSTACLE_SHAPE_BOX = 1;
 	}
 	
-	int32 handle_id = 2;
-	MathQuaternion rotation = 12;
-	ShapeType type = 11;
-	Vector center = 5;
-	Vector half_extents = 6;
+	ShapeType type = 15;
+	MathQuaternion rotation = 14;
+	int32 handle_id = 12;
+	Vector center = 9;
+	Vector half_extents = 13;
 }

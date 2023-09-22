@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "AiSyncInfo.proto";
-// CmdId: 5447
-// Obf: HKGLOBEAHIN
+// CmdId: 309
+// Obf: CAIOLKOIKNI
 message EntityAiSyncNotify {
-	repeated uint32 local_avatar_alerted_monster_list = 4;
-	repeated AiSyncInfo info_list = 5;
+	repeated uint32 local_avatar_alerted_monster_list = 8;
+	repeated AiSyncInfo info_list = 1;
 }

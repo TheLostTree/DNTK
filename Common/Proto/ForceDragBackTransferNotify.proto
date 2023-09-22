@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5469
-// Obf: JHMDCJHOOEA
+// CmdId: 3439
+// Obf: HPBKAFCAHOJ
 message ForceDragBackTransferNotify {
 }

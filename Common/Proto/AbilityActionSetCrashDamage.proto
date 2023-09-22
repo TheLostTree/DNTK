@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-// Obf: DHBNJILLKFA
+// Obf: ICJEFJLIABP
 message AbilityActionSetCrashDamage {
-	Vector hit_pos = 4;
-	float damage = 8;
+	float damage = 5;
+	Vector hit_pos = 9;
 }

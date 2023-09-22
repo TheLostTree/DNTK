@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: OJBIHADNECN
+// Obf: LICFNNPLLLA
 enum AvatarExpeditionState {
 	AVATAR_EXPEDITION_NONE = 0;
 	AVATAR_EXPEDITION_DOING = 1;

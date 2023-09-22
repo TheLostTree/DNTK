@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "CombatInvokeEntry.proto";
-// CmdId: 20271
-// Obf: BLEFDDJFMLO
+// CmdId: 310
+// Obf: FLAKGKFNPBM
 message CombatInvocationsNotify {
-	repeated CombatInvokeEntry invoke_list = 15;
+	repeated CombatInvokeEntry invoke_list = 5;
 }

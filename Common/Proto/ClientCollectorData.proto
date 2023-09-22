@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: KGHDHIMBJHP
+// Obf: NLEMHBCLPLJ
 message ClientCollectorData {
-	uint32 KMCFLNNCFBL = 15;
-	uint32 material_id = 9;
-	uint32 DNOGKGIHECO = 3;
+	uint32 material_id = 8;
+	uint32 KIAPBPEHAEB = 1;
+	uint32 KCPIPGHNCNM = 11;
 }

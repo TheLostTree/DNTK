@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 7734
-// Obf: BCBKBAPGEGC
+// CmdId: 2079
+// Obf: GEGLGDKPHPC
 message SeaLampTakePhaseRewardRsp {
-	uint32 phase_id = 10;
-	int32 retcode = 3;
+	uint32 phase_id = 14;
+	int32 retcode = 10;
 }

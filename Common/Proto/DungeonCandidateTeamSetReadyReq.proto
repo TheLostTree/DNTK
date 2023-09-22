@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 23358
-// Obf: DOCBKNBOMEH
+// CmdId: 911
+// Obf: BIKCPAKMPPO
 message DungeonCandidateTeamSetReadyReq {
-	bool is_ready = 11;
+	bool is_ready = 9;
 }

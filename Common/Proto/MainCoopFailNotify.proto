@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 2503
-// Obf: IEMIIPKOOLI
+// CmdId: 1955
+// Obf: AKEBOMFKDLE
 message MainCoopFailNotify {
-	string textmap_id = 14;
-	uint32 chapter_id = 11;
+	string textmap_id = 12;
+	uint32 chapter_id = 5;
 }

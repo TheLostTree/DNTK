@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 8284
-// Obf: KIPLDLKHDHC
+// CmdId: 6206
+// Obf: PCKJHFGCBJH
 message CustomDungeonBattleRecordNotify {
-	uint32 min_cost_time = 9;
-	uint64 dungeon_guid = 11;
+	uint64 dungeon_guid = 14;
+	uint32 min_cost_time = 10;
 }

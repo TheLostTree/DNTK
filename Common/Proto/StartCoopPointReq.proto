@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 22463
-// Obf: NEHKCPAFDAI
+// CmdId: 1992
+// Obf: BKIMMOOOPCL
 message StartCoopPointReq {
-	uint32 coop_point = 8;
+	uint32 coop_point = 12;
 }

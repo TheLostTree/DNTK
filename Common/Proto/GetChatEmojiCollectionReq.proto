@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 25164
-// Obf: PIAMFKEAKIB
+// CmdId: 4001
+// Obf: LHCGKKANDGP
 message GetChatEmojiCollectionReq {
 }

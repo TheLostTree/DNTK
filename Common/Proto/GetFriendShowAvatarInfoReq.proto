@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 3887
-// Obf: HPFMOEEPOGI
+// CmdId: 4063
+// Obf: FHLFPFEGLPN
 message GetFriendShowAvatarInfoReq {
-	uint32 uid = 1;
+	uint32 uid = 14;
 }

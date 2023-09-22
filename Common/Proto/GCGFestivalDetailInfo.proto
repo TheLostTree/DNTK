@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: FHDANDMEDKC
+// Obf: FJOECJDLCED
 message GCGFestivalDetailInfo {
-	bool BCCMKGLDCAC = 11;
+	bool OJKNLGIJIBJ = 9;
 }

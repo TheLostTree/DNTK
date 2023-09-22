@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 21709
-// Obf: BCNAOIAJONN
+// CmdId: 8737
+// Obf: OMAIPODJCNE
 message DoRoguelikeDungeonCardGachaReq {
 	uint32 dungeon_id = 14;
-	uint32 cell_id = 3;
+	uint32 cell_id = 9;
 }

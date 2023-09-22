@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 3136
-// Obf: DKJCBKAMLFA
+// CmdId: 5071
+// Obf: CIEAKKNADMM
 message TakeReunionFirstGiftRewardRsp {
-	int32 retcode = 12;
-	int32 reward_id = 8;
+	int32 retcode = 1;
+	int32 reward_id = 12;
 }

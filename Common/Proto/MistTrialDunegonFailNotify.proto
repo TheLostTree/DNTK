@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 9722
-// Obf: IJCEGNADCHN
+// CmdId: 8015
+// Obf: BKAPHGDLCNH
 message MistTrialDunegonFailNotify {
-	int32 dungeon_id = 14;
+	int32 dungeon_id = 12;
 }

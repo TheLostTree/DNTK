@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 4947
-// Obf: KKAFAGKOAOI
+// CmdId: 5391
+// Obf: LOPBKCGNPJD
 message BrickBreakerSetChangingReq {
-	bool is_changing = 13;
+	bool is_changing = 5;
 }

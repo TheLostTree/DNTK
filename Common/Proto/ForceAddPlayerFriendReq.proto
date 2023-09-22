@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 7895
-// Obf: FFABJGCBBMJ
+// CmdId: 4092
+// Obf: FMGPGHAAEGP
 message ForceAddPlayerFriendReq {
-	uint32 target_uid = 6;
+	uint32 target_uid = 13;
 }

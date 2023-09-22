@@ -17,16 +17,16 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 2608
-// Obf: OLFDCFONNEK
+// CmdId: 894
+// Obf: BDLHLHEIKLM
 message UpdateAbilityCreatedMovingPlatformNotify {
-	// Obf: LMONNLKLHCB
+	// Obf: GIGDLMCLDGC
 	enum OpType {
 		OP_TYPE_NONE = 0;
 		OP_TYPE_ACTIVATE = 1;
 		OP_TYPE_DEACTIVATE = 2;
 	}
 	
-	OpType op_type = 12;
-	uint32 entity_id = 10;
+	OpType op_type = 1;
+	uint32 entity_id = 13;
 }

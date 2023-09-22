@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 22741
-// Obf: JKFADKELCLL
+// CmdId: 8643
+// Obf: DDEKCMDAMBG
 message SummerTimeV2RestartDungeonRsp {
-	int32 retcode = 5;
+	int32 retcode = 9;
 }

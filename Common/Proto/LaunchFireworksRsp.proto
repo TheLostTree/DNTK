@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 25523
-// Obf: GFFDFGJKCEN
+// CmdId: 5931
+// Obf: NHBOGGANPPJ
 message LaunchFireworksRsp {
-	int32 retcode = 10;
+	int32 retcode = 5;
 }

@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: DAHFOONKPOM
+// Obf: LLIPOHHDJOL
 message FungusFighterV2LevelData {
-	bool is_level_open = 2;
-	uint32 level_id = 7;
-	uint32 NPLPFHEKCIH = 13;
+	uint32 PJIHHFHLOGM = 5;
+	bool is_level_open = 15;
+	uint32 level_id = 12;
 }

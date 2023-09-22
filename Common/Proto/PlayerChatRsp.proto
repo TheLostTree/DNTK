@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 27239
-// Obf: OANNGBKFIIB
+// CmdId: 3369
+// Obf: IABIBNLADIM
 message PlayerChatRsp {
-	int32 retcode = 15;
-	uint32 chat_forbidden_endtime = 1;
+	uint32 chat_forbidden_endtime = 7;
+	int32 retcode = 5;
 }

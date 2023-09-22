@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 3896
-// Obf: JBDIJCCECHP
+// CmdId: 4043
+// Obf: GAEJLADHKBA
 message UnlockNameCardNotify {
-	uint32 name_card_id = 2;
+	uint32 name_card_id = 3;
 }

@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "RogueCellInfo.proto";
-// CmdId: 4597
-// Obf: KBOGKJLJKEB
+// CmdId: 8723
+// Obf: KLMMGJJDKAP
 message RogueCellUpdateNotify {
-	RogueCellInfo cell_info = 9;
+	RogueCellInfo cell_info = 3;
 }

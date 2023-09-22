@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "GCGTCTavernChallengeData.proto";
-// CmdId: 7499
-// Obf: IPLHCMNBHBK
+// CmdId: 7777
+// Obf: LLKPACFPMLG
 message GCGTCTavernChallengeDataNotify {
-	repeated GCGTCTavernChallengeData tavern_challenge_list = 12;
+	repeated GCGTCTavernChallengeData tavern_challenge_list = 4;
 }

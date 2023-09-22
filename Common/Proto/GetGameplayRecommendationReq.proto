@@ -20,13 +20,13 @@ option java_package = "emu.grasscutter.net.proto";
 import "GameplayRecommendationSkillRequest.proto";
 import "GameplayRecommendationReliquaryRequest.proto";
 import "GameplayRecommendationElementReliquaryRequest.proto";
-// CmdId: 29716
-// Obf: EEALLDOJCBO
+// CmdId: 195
+// Obf: FKEKHPFJAOP
 message GetGameplayRecommendationReq {
-	uint32 avatar_id = 13;
+	uint32 avatar_id = 8;
 	oneof detail {
-		GameplayRecommendationSkillRequest skill_request = 866;
-		GameplayRecommendationReliquaryRequest reliquary_request = 431;
-		GameplayRecommendationElementReliquaryRequest element_reliquary_request = 546;
+		GameplayRecommendationSkillRequest skill_request = 195;
+		GameplayRecommendationReliquaryRequest reliquary_request = 293;
+		GameplayRecommendationElementReliquaryRequest element_reliquary_request = 1333;
 	}
 }

@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 20047
-// Obf: OKGEHGOEJKK
+// CmdId: 8372
+// Obf: NNOEOPFIHPB
 message WinterCampRaceScoreNotify {
-	uint32 max_score = 9;
-	uint32 id = 6;
+	uint32 max_score = 4;
+	uint32 id = 7;
 }

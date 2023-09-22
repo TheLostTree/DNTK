@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 3674
-// Obf: HIGKKKJFAFM
+// CmdId: 7845
+// Obf: PDIGPHKJHIC
 message GCGDSFieldUnlockNotify {
-	uint32 field_id = 7;
+	uint32 field_id = 13;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 24602
-// Obf: BGEPCHMCEBK
+// CmdId: 7017
+// Obf: DCJMMAFGEFD
 message GCGSkillPreviewAskRsp {
-	int32 retcode = 15;
+	int32 retcode = 2;
 }

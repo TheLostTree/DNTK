@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 6974
-// Obf: INHNJADLNFG
+// CmdId: 5484
+// Obf: OBCCLMGMPGJ
 message DraftGuestReplyTwiceConfirmReq {
-	uint32 draft_id = 15;
-	bool is_agree = 8;
+	bool is_agree = 1;
+	uint32 draft_id = 5;
 }

@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: JHMBENBNPBH
+// Obf: IPJPEPIILAJ
 message ExpeditionChallengeInfo {
-	uint32 open_time = 2;
+	bool is_finished = 11;
+	uint32 open_time = 5;
 	uint32 id = 4;
-	bool is_finished = 10;
 }

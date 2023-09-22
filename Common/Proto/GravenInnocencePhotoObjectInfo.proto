@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: ICNCDADMNMM
+// Obf: MHMICGIPAGB
 message GravenInnocencePhotoObjectInfo {
+	uint32 finish_time = 5;
 	uint32 param = 11;
-	uint32 finish_time = 12;
-	uint32 object_id = 14;
+	uint32 object_id = 8;
 }

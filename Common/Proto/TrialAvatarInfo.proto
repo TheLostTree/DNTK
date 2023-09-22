@@ -19,7 +19,7 @@ option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Item.proto";
 import "TrialAvatarGrantRecord.proto";
-// Obf: FMNJAFCPNPD
+// Obf: LHKLGLMFEOF
 message TrialAvatarInfo {
 	uint32 trial_avatar_id = 1;
 	repeated Item trial_equip_list = 2;

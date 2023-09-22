@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: IGCCAHCKIMN
+// Obf: MAOIFCBPMCG
 message GCGMsgDuelDataChange {
-	uint32 round = 10;
+	uint32 round = 7;
 }

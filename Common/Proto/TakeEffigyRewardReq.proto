@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 28268
-// Obf: IEJENPJJIFF
+// CmdId: 2090
+// Obf: PBCGIHFNCKC
 message TakeEffigyRewardReq {
-	uint32 reward_index = 2;
+	uint32 reward_index = 9;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 4969
-// Obf: HNCKJCIOCPI
+// CmdId: 640
+// Obf: DCIKPMMCEAB
 message CombineDataNotify {
-	repeated uint32 combine_id_list = 6;
+	repeated uint32 combine_id_list = 15;
 }

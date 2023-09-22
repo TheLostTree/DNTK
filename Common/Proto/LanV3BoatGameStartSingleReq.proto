@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 21038
-// Obf: MOBJEOLKNCA
+// CmdId: 20591
+// Obf: IANIJNOAGBH
 message LanV3BoatGameStartSingleReq {
 }

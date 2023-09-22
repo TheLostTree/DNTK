@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 21565
-// Obf: MHHDHGFMPAD
+// CmdId: 7184
+// Obf: JCGFAKDDGJK
 message GCGWorldChallengeUnlockNotify {
-	repeated uint32 unlock_id_list = 7;
+	repeated uint32 unlock_id_list = 13;
 }

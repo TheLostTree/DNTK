@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "MapMarkPoint.proto";
-// CmdId: 2766
-// Obf: KCCLLAGEBMD
+// CmdId: 3044
+// Obf: LNGMNLCIJPM
 message AllMarkPointNotify {
-	repeated MapMarkPoint mark_list = 4;
+	repeated MapMarkPoint mark_list = 2;
 }

@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 829
-// Obf: GPFLIABGBGG
+// CmdId: 2140
+// Obf: HMHLLGLOKNM
 message SalesmanDeliverItemRsp {
-	int32 retcode = 14;
-	uint32 schedule_id = 3;
+	uint32 schedule_id = 1;
+	int32 retcode = 2;
 }

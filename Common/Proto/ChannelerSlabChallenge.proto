@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ChannelerSlabCamp.proto";
-// Obf: FFPKPPELBHH
+// Obf: MGFAOBBLLAD
 message ChannelerSlabChallenge {
-	uint32 active_camp_index = 4;
-	repeated ChannelerSlabCamp camp_list = 6;
+	repeated ChannelerSlabCamp camp_list = 14;
+	uint32 active_camp_index = 8;
 }

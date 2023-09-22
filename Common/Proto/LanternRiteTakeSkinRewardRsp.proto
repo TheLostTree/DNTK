@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 23147
-// Obf: BCHEOHLDCHK
+// CmdId: 8773
+// Obf: PLKLLLNHDHN
 message LanternRiteTakeSkinRewardRsp {
-	int32 retcode = 14;
+	int32 retcode = 5;
 }

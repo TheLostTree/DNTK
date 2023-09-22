@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: AGEMDFOGNBD
+// Obf: ODJEENMANEG
 enum BargainResultType {
 	BARGAIN_COMPLETE_SUCC = 0;
 	BARGAIN_SINGLE_FAIL = 1;

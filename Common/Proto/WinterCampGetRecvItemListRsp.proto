@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "WinterCampRecvItemData.proto";
-// CmdId: 2293
-// Obf: KPAMGHGLKCN
+// CmdId: 8882
+// Obf: OEAPHJPCFHA
 message WinterCampGetRecvItemListRsp {
-	int32 retcode = 6;
-	repeated WinterCampRecvItemData recv_item_data_list = 9;
+	repeated WinterCampRecvItemData recv_item_data_list = 4;
+	int32 retcode = 11;
 }

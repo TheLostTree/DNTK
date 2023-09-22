@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: ALBDDCMFKKJ
+// Obf: AJLLMEBCFIB
 message GameplayRecommendationSkillRequest {
-	uint32 skill_depot_id = 7;
+	uint32 skill_depot_id = 5;
 }

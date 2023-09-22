@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "MatchType.proto";
-// CmdId: 4875
-// Obf: HEEJIEDBDJP
+// CmdId: 4176
+// Obf: POFIHGOMMEJ
 message PlayerCancelMatchRsp {
-	MatchType match_type = 1;
-	int32 retcode = 8;
+	MatchType match_type = 10;
+	int32 retcode = 2;
 }

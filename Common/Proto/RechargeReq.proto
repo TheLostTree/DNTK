@@ -17,15 +17,15 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "ShopMcoinProduct.proto";
-import "PlayProduct.proto";
 import "ShopCardProduct.proto";
 import "ShopConcertProduct.proto";
-// CmdId: 3184
-// Obf: JHDKPKJPMCK
+import "PlayProduct.proto";
+import "ShopMcoinProduct.proto";
+// CmdId: 4128
+// Obf: JAINGPIJIBM
 message RechargeReq {
-	ShopMcoinProduct mcoin_product = 4;
-	PlayProduct play_product = 11;
-	ShopCardProduct card_product = 2;
-	ShopConcertProduct concert_product = 8;
+	ShopCardProduct card_product = 11;
+	ShopConcertProduct concert_product = 7;
+	PlayProduct play_product = 9;
+	ShopMcoinProduct mcoin_product = 15;
 }

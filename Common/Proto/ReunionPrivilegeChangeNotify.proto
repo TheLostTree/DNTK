@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ReunionPrivilegeInfo.proto";
-// CmdId: 25522
-// Obf: JBHFBBDEGGI
+// CmdId: 5065
+// Obf: EEAINPIBIJJ
 message ReunionPrivilegeChangeNotify {
-	ReunionPrivilegeInfo privilege_info = 8;
+	ReunionPrivilegeInfo privilege_info = 10;
 }

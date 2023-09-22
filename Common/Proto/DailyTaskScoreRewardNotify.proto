@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 20810
-// Obf: LDEAEOMCCOP
+// CmdId: 118
+// Obf: BDMELLFIGAH
 message DailyTaskScoreRewardNotify {
-	uint32 reward_id = 10;
+	uint32 reward_id = 12;
 }

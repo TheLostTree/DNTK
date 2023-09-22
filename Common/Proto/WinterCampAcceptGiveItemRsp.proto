@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "WinterCampAcceptItemResultInfo.proto";
-// CmdId: 22048
-// Obf: LPAIOBLKCKN
+// CmdId: 8718
+// Obf: OGPFPMJDDJE
 message WinterCampAcceptGiveItemRsp {
-	int32 retcode = 10;
-	WinterCampAcceptItemResultInfo accept_item_result_info = 4;
+	int32 retcode = 2;
+	WinterCampAcceptItemResultInfo accept_item_result_info = 10;
 }

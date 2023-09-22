@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: MGAPJIJBGGJ
+// Obf: EJKDFCMJLEE
 message ActivityAcceptGiftResultInfo {
-	uint32 uid = 11;
-	map<uint32, uint32> IJCFDJFGMPP = 12;
-	map<uint32, uint32> PKBLFFNAILJ = 4;
+	map<uint32, uint32> BLNMJKEKMKN = 1;
+	map<uint32, uint32> DCNCHKBMNOA = 5;
+	uint32 uid = 14;
 }

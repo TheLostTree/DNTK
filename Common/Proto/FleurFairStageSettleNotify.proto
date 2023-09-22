@@ -19,12 +19,12 @@ option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "FleurFairGallerySettleInfo.proto";
 import "FleurFairBossSettleInfo.proto";
-// CmdId: 23852
-// Obf: OPDHCFCGAEK
+// CmdId: 5349
+// Obf: OBBJIFHGAEK
 message FleurFairStageSettleNotify {
-	uint32 stage_type = 12;
+	uint32 stage_type = 8;
 	oneof detail {
-		FleurFairGallerySettleInfo gallery_settle_info = 13;
+		FleurFairGallerySettleInfo gallery_settle_info = 7;
 		FleurFairBossSettleInfo boss_settle_info = 14;
 	}
 }

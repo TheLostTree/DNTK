@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "MaterialDeleteReturnType.proto";
-// CmdId: 23877
-// Obf: OFKEEGHALAI
+// CmdId: 677
+// Obf: BOEOPIAOODM
 message TakeMaterialDeleteReturnReq {
-	MaterialDeleteReturnType type = 6;
+	MaterialDeleteReturnType type = 5;
 }

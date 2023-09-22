@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: NFFHIBBIIKB
+// Obf: KEJFFCAKLNH
 message HomeResource {
-	uint32 AIHDOEBOLLC = 1;
+	uint32 store_value = 4;
 	fixed32 next_refresh_time = 5;
-	uint32 CELOOEHBGBJ = 3;
+	uint32 store_limit = 13;
 }

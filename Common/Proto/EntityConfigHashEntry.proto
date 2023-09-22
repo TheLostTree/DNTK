@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: EBABANMDGDJ
+// Obf: LMHKLMDCLAK
 message EntityConfigHashEntry {
-	uint32 entity_id = 13;
-	uint32 job_id = 3;
-	int32 hash_value = 6;
+	uint32 job_id = 9;
+	uint32 entity_id = 10;
+	int32 hash_value = 2;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 9497
-// Obf: PLHINAALPPO
+// CmdId: 4653
+// Obf: EBKECPJLCOH
 message HomeAvatarAllFinishRewardNotify {
-	repeated uint32 event_id_list = 12;
+	repeated uint32 event_id_list = 10;
 }

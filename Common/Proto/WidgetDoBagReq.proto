@@ -19,12 +19,12 @@ option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "WidgetCreateLocationInfo.proto";
 import "WidgetCreatorInfo.proto";
-// CmdId: 2739
-// Obf: KFDNMJHKFAA
+// CmdId: 4295
+// Obf: JFBFFLAEENK
 message WidgetDoBagReq {
-	uint32 material_id = 15;
+	uint32 material_id = 10;
 	oneof op_info {
-		WidgetCreateLocationInfo location_info = 2046;
-		WidgetCreatorInfo widget_creator_info = 1156;
+		WidgetCreateLocationInfo location_info = 1329;
+		WidgetCreatorInfo widget_creator_info = 1593;
 	}
 }

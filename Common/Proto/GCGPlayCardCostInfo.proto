@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Uint32Pair.proto";
-// Obf: COFFEJPLHGB
+// Obf: ENEBDGIGECG
 message GCGPlayCardCostInfo {
-	repeated Uint32Pair cost_map = 7;
-	uint32 card_id = 11;
+	uint32 card_id = 7;
+	repeated Uint32Pair cost_map = 15;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 26227
-// Obf: CLNCAJHKIFD
+// CmdId: 1757
+// Obf: GJCJIIEOIJP
 message AvatarChangeElementTypeRsp {
-	int32 retcode = 6;
+	int32 retcode = 1;
 }

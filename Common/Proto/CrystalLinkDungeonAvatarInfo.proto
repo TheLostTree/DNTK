@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: EMILFGGOCLJ
+// Obf: MEOEEOOKNAA
 message CrystalLinkDungeonAvatarInfo {
-	uint64 avatar_guid = 4;
-	bool is_trial = 5;
+	bool is_trial = 10;
+	uint64 avatar_guid = 14;
 }

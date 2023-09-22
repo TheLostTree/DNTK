@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 22635
-// Obf: HEHEEJKLCGH
+// CmdId: 119
+// Obf: BLKFEODAELO
 message ServerDisconnectClientNotify {
-	uint32 data = 13;
+	uint32 data = 9;
 }

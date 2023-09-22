@@ -18,7 +18,7 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "MotionInfo.proto";
-// Obf: LHBMDEAGHFD
+// Obf: DGBPMOADLDG
 message EntityMoveInfo {
 	uint32 entity_id = 1;
 	MotionInfo motion_info = 2;

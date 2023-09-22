@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 27878
-// Obf: NMNHNKJEAJC
+// CmdId: 3935
+// Obf: DPLJMGGADAP
 message MechanicusUnlockGearRsp {
-	uint32 mechanicus_id = 10;
-	uint32 gear_id = 15;
-	int32 retcode = 9;
+	int32 retcode = 5;
+	uint32 gear_id = 3;
+	uint32 mechanicus_id = 12;
 }

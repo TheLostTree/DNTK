@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ProfilePicture.proto";
-// CmdId: 5763
-// Obf: OHNJEEDFEEL
+// CmdId: 4074
+// Obf: BACBAKKDEGF
 message ProfilePictureChangeNotify {
-	ProfilePicture profile_picture = 3;
+	ProfilePicture profile_picture = 4;
 }

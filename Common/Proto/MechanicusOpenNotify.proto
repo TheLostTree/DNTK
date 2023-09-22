@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 27627
-// Obf: ODMKJCMNDBL
+// CmdId: 3955
+// Obf: EBIPBACCALI
 message MechanicusOpenNotify {
-	uint32 mechanicus_id = 10;
+	uint32 mechanicus_id = 7;
 }

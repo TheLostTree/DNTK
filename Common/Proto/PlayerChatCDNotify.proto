@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 26350
-// Obf: NOKLHPPCPKB
+// CmdId: 3227
+// Obf: GOGNIJGLMLG
 message PlayerChatCDNotify {
-	uint32 over_time = 2;
+	uint32 over_time = 1;
 }

@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 477
-// Obf: AFDBIGNEOMH
+// CmdId: 680
+// Obf: ICIPKMHLDKP
 message ForgeGetQueueDataReq {
 }

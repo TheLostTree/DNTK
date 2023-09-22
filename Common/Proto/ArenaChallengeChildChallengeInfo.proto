@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: LCKLGDEIAIO
+// Obf: LJFPICECLON
 message ArenaChallengeChildChallengeInfo {
-	bool is_settled = 15;
-	uint32 challenge_index = 1;
-	bool is_success = 14;
-	uint32 challenge_id = 10;
-	uint32 challenge_type = 8;
+	bool is_success = 9;
+	uint32 challenge_type = 12;
+	uint32 challenge_id = 7;
+	uint32 challenge_index = 3;
+	bool is_settled = 13;
 }

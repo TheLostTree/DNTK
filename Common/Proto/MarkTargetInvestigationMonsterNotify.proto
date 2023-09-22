@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 21010
-// Obf: ONLMENNEHOH
+// CmdId: 1912
+// Obf: FJBCDLIHGKJ
 message MarkTargetInvestigationMonsterNotify {
-	uint32 scene_id = 7;
-	uint32 monster_id = 15;
-	uint32 investigation_monster_id = 2;
-	uint32 group_id = 10;
+	uint32 monster_id = 3;
+	uint32 group_id = 7;
+	uint32 investigation_monster_id = 8;
+	uint32 scene_id = 13;
 }

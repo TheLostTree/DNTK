@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5246
-// Obf: KMGJEEMHJEJ
+// CmdId: 4812
+// Obf: OAKFBMBKPFD
 message HomeSetBlueprintFriendOptionReq {
-	bool HMIHEBDACID = 7;
-	bool BNAIJODKBJL = 1;
+	bool CNDJLHPOOBO = 2;
+	bool KMDEOGAINNP = 13;
 }

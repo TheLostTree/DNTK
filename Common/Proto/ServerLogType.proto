@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: DEJFCBNPEJO
+// Obf: EBGEGNIBCPC
 enum ServerLogType {
 	SERVER_LOG_NONE = 0;
 	SERVER_LOG_ABILITY = 1;

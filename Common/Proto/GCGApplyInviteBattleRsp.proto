@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 6602
-// Obf: NCDDDLDKEKK
+// CmdId: 7923
+// Obf: ANKPIMNLGDD
 message GCGApplyInviteBattleRsp {
-	int32 retcode = 4;
 	uint32 punish_end_time = 7;
+	int32 retcode = 3;
 }

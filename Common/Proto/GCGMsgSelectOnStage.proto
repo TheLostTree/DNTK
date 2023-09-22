@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "GCGReason.proto";
-// Obf: CJGMMPPDOAE
+import "MNDCMMKBIBP.proto";
+// Obf: AGPDBOHBCFC
 message GCGMsgSelectOnStage {
-	GCGReason reason = 4;
-	uint32 card_guid = 9;
-	uint32 controller_id = 12;
+	MNDCMMKBIBP reason = 1;
+	uint32 controller_id = 14;
+	uint32 card_guid = 12;
 }

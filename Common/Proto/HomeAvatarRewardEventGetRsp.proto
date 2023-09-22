@@ -18,10 +18,10 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ItemParam.proto";
-// CmdId: 25571
-// Obf: BDMGFBJLCFC
+// CmdId: 4895
+// Obf: LCGFNBCPBMO
 message HomeAvatarRewardEventGetRsp {
-	repeated ItemParam item_list = 15;
-	int32 retcode = 10;
-	uint32 event_id = 13;
+	uint32 event_id = 8;
+	int32 retcode = 1;
+	repeated ItemParam item_list = 11;
 }

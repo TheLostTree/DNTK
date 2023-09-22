@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 8102
-// Obf: FHJAEPJKLFD
+// CmdId: 2160
+// Obf: KGFHLDBNEKP
 message RestartEffigyChallengeRsp {
-	int32 retcode = 3;
+	int32 retcode = 7;
 }

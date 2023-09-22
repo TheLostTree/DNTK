@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: CHIBLMMMKPE
+// Obf: IODOKNGPEHE
 message PlantFlowerAcceptFlowerResultInfo {
-	map<uint32, uint32> DKJPFMBKKCH = 5;
-	map<uint32, uint32> MHHEEKNBOHC = 15;
-	uint32 uid = 1;
+	uint32 uid = 14;
+	map<uint32, uint32> CAIDLCELFLB = 15;
+	map<uint32, uint32> EBBCPNKLENP = 2;
 }

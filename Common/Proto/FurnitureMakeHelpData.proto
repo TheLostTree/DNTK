@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: OJADJNFBBCL
+// Obf: IGGFPDFMJAL
 message FurnitureMakeHelpData {
-	uint32 times = 10;
-	uint32 uid = 4;
+	uint32 uid = 8;
+	uint32 times = 5;
 }

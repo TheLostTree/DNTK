@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "BlessingRecvPicRecord.proto";
-// CmdId: 2869
-// Obf: BDBGJMHKMOM
+// CmdId: 2185
+// Obf: MCPJJCHKFJB
 message BlessingGetAllRecvPicRecordListRsp {
-	int32 retcode = 8;
-	repeated BlessingRecvPicRecord recv_pic_record_list = 2;
+	repeated BlessingRecvPicRecord recv_pic_record_list = 11;
+	int32 retcode = 4;
 }

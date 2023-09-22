@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "CustomDungeonBlock.proto";
-// Obf: MMBJOBCADNI
+// Obf: DGHOPJKNHOD
 message CustomDungeonRoom {
-	repeated CustomDungeonBlock block_list = 13;
-	uint32 room_id = 12;
+	repeated CustomDungeonBlock block_list = 3;
+	uint32 room_id = 4;
 }

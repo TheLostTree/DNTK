@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 6829
-// Obf: PMICKJFENDE
+// CmdId: 8225
+// Obf: JCKMKHACOPM
 message BlitzRushParkourRestartReq {
-	uint32 schedule_id = 11;
-	uint32 group_id = 2;
+	uint32 group_id = 1;
+	uint32 schedule_id = 6;
 }

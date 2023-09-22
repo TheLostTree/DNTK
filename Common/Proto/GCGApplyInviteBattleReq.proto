@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 871
-// Obf: EJIKDIPBAPO
+// CmdId: 7769
+// Obf: GEGPHCIODBB
 message GCGApplyInviteBattleReq {
 	bool is_agree = 9;
 }

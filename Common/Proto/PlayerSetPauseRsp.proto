@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 1771
-// Obf: DJHGLEGIDAC
+// CmdId: 149
+// Obf: IGMIFEKGJNK
 message PlayerSetPauseRsp {
-	int32 retcode = 3;
+	int32 retcode = 4;
 }

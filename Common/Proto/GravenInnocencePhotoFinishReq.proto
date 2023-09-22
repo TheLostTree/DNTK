@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 25179
-// Obf: BLFANLFCPDO
+// CmdId: 21250
+// Obf: PALKFPHPFOO
 message GravenInnocencePhotoFinishReq {
-	uint32 object_id = 10;
-	uint32 param = 3;
+	uint32 object_id = 7;
+	uint32 param = 13;
 }

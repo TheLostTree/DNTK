@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5429
-// Obf: FMFCLDDJBEA
+// CmdId: 4489
+// Obf: OEMBFGFLDHP
 message HomeTransferRsp {
-	int32 retcode = 3;
+	int32 retcode = 5;
 }

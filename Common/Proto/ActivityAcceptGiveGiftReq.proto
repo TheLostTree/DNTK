@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 25362
-// Obf: DDEKGJEIGAN
+// CmdId: 8313
+// Obf: DKKHNAGFGPB
 message ActivityAcceptGiveGiftReq {
-	uint32 uid = 2;
-	uint32 schedule_id = 9;
+	uint32 uid = 3;
+	uint32 schedule_id = 6;
 }

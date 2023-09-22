@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "FoundationInfo.proto";
-// CmdId: 3606
-// Obf: OACBEHADMHF
+// CmdId: 838
+// Obf: MLGJDILLNOB
 message FoundationNotify {
-	FoundationInfo info = 3;
-	uint32 gadget_entity_id = 4;
+	FoundationInfo info = 2;
+	uint32 gadget_entity_id = 5;
 }

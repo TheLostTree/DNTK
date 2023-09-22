@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 7062
-// Obf: HIJCDJOGCHE
+// CmdId: 20595
+// Obf: DAACKJELOBN
 message LanV3RaceRestartRsp {
-	int32 retcode = 7;
-	uint32 gallery_id = 2;
+	int32 retcode = 4;
+	uint32 gallery_id = 12;
 }

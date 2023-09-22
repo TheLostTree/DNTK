@@ -19,11 +19,11 @@ option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ItemParam.proto";
 import "GachaTransferItem.proto";
-// Obf: NJOOCPHJKKG
+// Obf: FPBHAFGFLPA
 message GachaItem {
-	repeated ItemParam token_item_list = 9;
-	bool is_gacha_item_new = 6;
+	bool is_gacha_item_new = 15;
 	ItemParam gacha_item = 4;
-	bool is_flash_card = 2;
-	repeated GachaTransferItem transfer_items = 1;
+	bool is_flash_card = 3;
+	repeated ItemParam token_item_list = 8;
+	repeated GachaTransferItem transfer_items = 14;
 }

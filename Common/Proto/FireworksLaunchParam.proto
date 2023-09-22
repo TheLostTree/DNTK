@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "FireworksLaunchParamType.proto";
-// Obf: KCIOCLGGPIH
+// Obf: FDCKBNPMGFO
 message FireworksLaunchParam {
-	FireworksLaunchParamType type = 14;
-	int32 value = 2;
+	int32 value = 11;
+	FireworksLaunchParamType type = 2;
 }

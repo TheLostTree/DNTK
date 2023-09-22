@@ -18,11 +18,11 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ProfilePicture.proto";
-// Obf: LKIJFJPJOIB
+// Obf: EPMJNGDMKOC
 message ActivityFriendGiftWishData {
+	string remark_name = 12;
+	ProfilePicture profile_picture = 8;
+	map<uint32, uint32> gift_num_map = 5;
 	uint32 uid = 13;
-	string remark_name = 5;
-	ProfilePicture profile_picture = 9;
-	string nickname = 15;
-	map<uint32, uint32> gift_num_map = 2;
+	string nickname = 7;
 }

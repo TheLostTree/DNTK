@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 7524
-// Obf: LLKABFDGMBI
+// CmdId: 934
+// Obf: BIJEIFJHGGO
 message DungeonShowReminderNotify {
-	uint32 reminder_id = 13;
+	uint32 reminder_id = 14;
 }

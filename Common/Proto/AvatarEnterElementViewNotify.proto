@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 23736
-// Obf: FPPIIFCCGBG
+// CmdId: 303
+// Obf: EDAPCAJPOLC
 message AvatarEnterElementViewNotify {
-	bool is_triggerd = 10;
-	uint32 avatar_entity_id = 6;
+	bool is_triggerd = 2;
+	uint32 avatar_entity_id = 12;
 }

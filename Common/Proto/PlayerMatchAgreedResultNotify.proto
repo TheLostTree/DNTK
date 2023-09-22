@@ -18,10 +18,10 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "MatchType.proto";
-// CmdId: 29150
-// Obf: FCOMIHCCKGM
+// CmdId: 4153
+// Obf: JFBDENGHLJN
 message PlayerMatchAgreedResultNotify {
-	// Obf: NILJADMMOMK
+	// Obf: EGGMLHKLMHE
 	enum Reason {
 		SUCC = 0;
 		TARGET_SCENE_CANNOT_ENTER = 1;
@@ -30,7 +30,7 @@ message PlayerMatchAgreedResultNotify {
 		DATA_VERSION_NOT_LATEST = 4;
 	}
 	
-	uint32 target_uid = 12;
-	Reason reason = 4;
-	MatchType match_type = 2;
+	Reason reason = 7;
+	MatchType match_type = 10;
+	uint32 target_uid = 15;
 }

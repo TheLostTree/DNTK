@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 23959
-// Obf: HNIMFOOBNIA
+// CmdId: 24982
+// Obf: HJJJJJEDFEB
 message CoinCollectInterruptPlayRsp {
-	uint32 gallery_id = 13;
-	int32 retcode = 5;
+	int32 retcode = 10;
+	uint32 gallery_id = 15;
 }

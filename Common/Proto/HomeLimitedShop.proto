@@ -18,7 +18,7 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "HomeLimitedShopGoods.proto";
-// Obf: MDHPMMADLIK
+// Obf: NPMNNGIFGEG
 message HomeLimitedShop {
-	repeated HomeLimitedShopGoods goods_list = 5;
+	repeated HomeLimitedShopGoods goods_list = 14;
 }

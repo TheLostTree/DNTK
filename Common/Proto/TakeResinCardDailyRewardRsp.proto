@@ -18,10 +18,10 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ItemParam.proto";
-// CmdId: 319
-// Obf: BCALHNAGNKI
+// CmdId: 4123
+// Obf: JJEPFMPCOFD
 message TakeResinCardDailyRewardRsp {
-	repeated ItemParam item_vec = 6;
-	uint32 product_config_id = 9;
-	int32 retcode = 2;
+	int32 retcode = 4;
+	uint32 product_config_id = 2;
+	repeated ItemParam item_vec = 11;
 }

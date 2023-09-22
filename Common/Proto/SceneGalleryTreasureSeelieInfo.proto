@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: HHAFHACABKN
+// Obf: BANHLKHPLBC
 message SceneGalleryTreasureSeelieInfo {
-	uint32 goal = 7;
-	uint32 progress = 9;
+	uint32 goal = 9;
+	uint32 progress = 5;
 }

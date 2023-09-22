@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 7912
-// Obf: OPBCAJPHJCN
+// CmdId: 2181
+// Obf: NIMHLANNJAE
 message AsterMiscInfoNotify {
-	uint32 ADOPPAOJEAN = 14;
-	uint32 BLIJLCKCIJP = 11;
+	uint32 CBLMAGNNCGK = 5;
+	uint32 CGOCPLCJMBA = 10;
 }

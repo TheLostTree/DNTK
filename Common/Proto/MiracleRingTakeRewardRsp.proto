@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 119
-// Obf: LFBOJKCCKEE
+// CmdId: 5226
+// Obf: PPFDCPKONEK
 message MiracleRingTakeRewardRsp {
-	int32 retcode = 7;
+	int32 retcode = 6;
 }

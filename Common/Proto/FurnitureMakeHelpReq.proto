@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 27122
-// Obf: DALFEONAJCG
+// CmdId: 4756
+// Obf: JKNCMMEKFNK
 message FurnitureMakeHelpReq {
 }

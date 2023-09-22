@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: OKBFMCFBABK
+// Obf: NLIDHPKHNHF
 message TanukiTravelLevelData {
-	bool is_finish = 2;
-	uint32 route_id = 12;
-	bool is_open = 6;
+	uint32 route_id = 14;
+	bool is_open = 9;
+	bool is_finish = 15;
 }

@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5912
-// Obf: HMECHAPKFND
+// CmdId: 3390
+// Obf: IBKIGABFLNK
 message ChangeWorldToSingleModeRsp {
-	int32 retcode = 10;
-	uint32 quit_mp_valid_time = 8;
+	int32 retcode = 15;
+	uint32 quit_mp_valid_time = 5;
 }

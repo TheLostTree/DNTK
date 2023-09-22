@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 29889
-// Obf: KJLCCOGJHIP
+// CmdId: 2188
+// Obf: CFOKBBGKOKA
 message ExpeditionChallengeEnterRegionNotify {
-	bool is_puzzle_finished = 4;
-	uint32 id = 9;
+	bool is_puzzle_finished = 11;
+	uint32 id = 8;
 }

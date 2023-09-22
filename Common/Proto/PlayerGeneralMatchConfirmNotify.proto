@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 1380
-// Obf: GIJKNFDOPEF
+// CmdId: 4192
+// Obf: BPBHPAMFJCL
 message PlayerGeneralMatchConfirmNotify {
-	uint32 match_id = 8;
-	bool is_agree = 15;
-	uint32 uid = 10;
+	bool is_agree = 7;
+	uint32 uid = 9;
+	uint32 match_id = 4;
 }

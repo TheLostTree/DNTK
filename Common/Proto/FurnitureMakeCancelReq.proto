@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 29262
-// Obf: EPJPMHPGODB
+// CmdId: 4663
+// Obf: NNJHMCNPNHK
 message FurnitureMakeCancelReq {
+	uint32 index = 6;
 	uint32 make_id = 1;
-	uint32 index = 12;
 }

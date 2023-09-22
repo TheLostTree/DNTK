@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "WinterCampRecvItemData.proto";
-// CmdId: 23213
-// Obf: LKKLNFAIADK
+// CmdId: 8284
+// Obf: LDFIBAJCHBO
 message WinterCampRecvItemNotify {
-	WinterCampRecvItemData recv_item_data = 7;
+	WinterCampRecvItemData recv_item_data = 15;
 }

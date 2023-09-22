@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "DeshretObeliskChestInfo.proto";
-// CmdId: 22407
-// Obf: IPMPIFNCLNK
+// CmdId: 859
+// Obf: GOOBLMIJGFH
 message DeshretObeliskChestInfoNotify {
-	repeated DeshretObeliskChestInfo chest_info_list = 13;
+	repeated DeshretObeliskChestInfo chest_info_list = 7;
 }

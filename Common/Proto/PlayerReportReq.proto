@@ -18,14 +18,14 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ReportReasonType.proto";
-import "HPJLDBHCMDP.proto";
-// CmdId: 28063
-// Obf: MKOJEJGODLD
+import "IFFLGKMOMBH.proto";
+// CmdId: 4071
+// Obf: AENEOIIELKC
 message PlayerReportReq {
-	ReportReasonType reason = 10;
-	string LOINCLOGOKL = 11;
-	string content = 2;
-	HPJLDBHCMDP HMENDHHKIPN = 5;
-	uint32 MJKCNIILBEE = 6;
-	uint32 target_uid = 7;
+	uint32 target_uid = 2;
+	string content = 15;
+	ReportReasonType reason = 13;
+	uint32 HLDOCCEEDNB = 7;
+	IFFLGKMOMBH CJKENNIFJCO = 6;
+	string MNKLMBKOOBK = 11;
 }

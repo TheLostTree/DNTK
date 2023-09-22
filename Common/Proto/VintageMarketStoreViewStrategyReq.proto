@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 27163
-// Obf: NBEDCPAKDGL
+// CmdId: 21521
+// Obf: FMKDOMIHJDP
 message VintageMarketStoreViewStrategyReq {
-	repeated uint32 strategy_list = 1;
-	uint32 strategy_id = 6;
+	uint32 strategy_id = 2;
+	repeated uint32 strategy_list = 13;
 }

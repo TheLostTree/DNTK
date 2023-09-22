@@ -18,7 +18,7 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "InstableSprayStageInfo.proto";
-// Obf: AAAJPJMNFOD
+// Obf: JPJHKNMPHCC
 message InstableSprayDetailInfo {
-	repeated InstableSprayStageInfo stage_info_list = 14;
+	repeated InstableSprayStageInfo stage_info_list = 13;
 }

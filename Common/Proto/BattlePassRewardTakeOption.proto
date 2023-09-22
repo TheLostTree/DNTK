@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "BattlePassRewardTag.proto";
-// Obf: ABOLHFADNBD
+// Obf: ADIBKPFDGAE
 message BattlePassRewardTakeOption {
-	uint32 option_idx = 14;
-	BattlePassRewardTag tag = 7;
+	BattlePassRewardTag tag = 8;
+	uint32 option_idx = 11;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 7011
-// Obf: HCHCACOAIHC
+// CmdId: 928
+// Obf: MNNIMBPFDDM
 message DungeonDataNotify {
-	map<uint32, uint32> dungeon_data_map = 13;
+	map<uint32, uint32> dungeon_data_map = 4;
 }

@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: LJAJANHHOML
+// Obf: BOLKGGNMHLK
 message Investigation {
-	// Obf: GMMLBMGDPPP
+	// Obf: MPOBDBLHGOF
 	enum State {
 		INVALID = 0;
 		IN_PROGRESS = 1;
@@ -27,8 +27,8 @@ message Investigation {
 		REWARD_TAKEN = 3;
 	}
 	
-	uint32 id = 8;
-	uint32 progress = 7;
-	State state = 12;
-	uint32 total_progress = 14;
+	uint32 progress = 4;
+	uint32 id = 10;
+	State state = 13;
+	uint32 total_progress = 8;
 }

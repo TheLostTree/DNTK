@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "FishInfo.proto";
 import "FishingScore.proto";
-// Obf: DPDLLDGEHGD
+import "FishInfo.proto";
+// Obf: CNIMOCNKNIA
 message FishingGallerySettleInfo {
-	map<uint32, FishInfo> fish_map = 11;
-	repeated FishingScore fishing_score_list = 2;
+	repeated FishingScore fishing_score_list = 6;
+	map<uint32, FishInfo> fish_map = 10;
 }

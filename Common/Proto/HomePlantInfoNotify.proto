@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "HomePlantFieldData.proto";
-// CmdId: 27599
-// Obf: MNCJNMKHBED
+// CmdId: 4606
+// Obf: BPKLKNGIPAK
 message HomePlantInfoNotify {
 	repeated HomePlantFieldData field_list = 2;
 }

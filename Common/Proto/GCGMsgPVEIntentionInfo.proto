@@ -18,7 +18,7 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "GCGMsgPVEIntention.proto";
-// Obf: LNDIMDNPKLF
+// Obf: BGGKCMPMNPA
 message GCGMsgPVEIntentionInfo {
-	map<uint32, GCGMsgPVEIntention> intention_map = 14;
+	map<uint32, GCGMsgPVEIntention> intention_map = 7;
 }

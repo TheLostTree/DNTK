@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 28966
-// Obf: GFJCIAADHDF
+// CmdId: 820
+// Obf: CLLFLMHOGKP
 message RequestLiveInfoRsp {
-	string FECJIGBNJPI = 15;
-	string EPBEHDEFFBO = 12;
-	int32 retcode = 8;
-	uint32 live_id = 10;
+	uint32 live_id = 8;
+	string PAFOMEAMGAE = 9;
+	int32 retcode = 15;
+	string BNPEFIPPCML = 5;
 }

@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 1456
-// Obf: HBLLMABHFIK
+// CmdId: 4568
+// Obf: KMHIFHPLAHH
 message HomePriorCheckNotify {
-	fixed32 end_time = 2;
+	fixed32 end_time = 9;
 }

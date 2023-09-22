@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-// CmdId: 29507
-// Obf: IBFNEMPIGAO
+// CmdId: 110
+// Obf: HPHBIEGDFGM
 message AddRandTaskInfoNotify {
-	uint32 rand_task_id = 12;
-	Vector pos = 8;
+	Vector pos = 14;
+	uint32 rand_task_id = 5;
 }

@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: EBHGFCMJEFN
+// Obf: AOCOAMOHHJK
 message GCGOperationRedraw {
-	repeated uint32 card_list = 7;
+	repeated uint32 card_list = 6;
 }

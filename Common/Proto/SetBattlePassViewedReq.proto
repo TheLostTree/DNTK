@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 7320
-// Obf: KKIGJEPPADN
+// CmdId: 2601
+// Obf: IOCOEGFGKKH
 message SetBattlePassViewedReq {
-	uint32 schedule_id = 2;
+	uint32 schedule_id = 13;
 }

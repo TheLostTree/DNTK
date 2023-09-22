@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "ClientReconnectReason.proto";
-// CmdId: 650
-// Obf: FIDFKFNOCEC
+// CmdId: 64
+// Obf: BFOEAKGBCLA
 message ClientReconnectNotify {
-	ClientReconnectReason reason = 10;
+	ClientReconnectReason reason = 5;
 }

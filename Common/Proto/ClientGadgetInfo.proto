@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: KCPDCBKPNNL
+// Obf: INJJFHFANAD
 message ClientGadgetInfo {
 	uint32 camp_id = 1;
 	uint32 camp_type = 2;

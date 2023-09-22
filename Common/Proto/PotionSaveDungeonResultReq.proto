@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 9617
-// Obf: LGMBEAKGELG
+// CmdId: 8611
+// Obf: LLJOJKMGHDJ
 message PotionSaveDungeonResultReq {
-	uint32 level_id = 13;
-	uint32 stage_id = 7;
+	uint32 stage_id = 13;
+	uint32 level_id = 8;
 }

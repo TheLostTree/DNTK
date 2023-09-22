@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: OFOBFBLLPIN
+// Obf: GNOICPDCCBH
 message SummerTimeSprintBoatRecord {
-	uint32 start_time = 10;
-	bool is_touched = 15;
-	repeated uint32 watcher_id_list = 7;
-	uint32 group_id = 9;
-	uint32 best_score = 3;
+	repeated uint32 watcher_id_list = 5;
+	uint32 group_id = 13;
+	uint32 best_score = 6;
+	uint32 start_time = 7;
+	bool is_touched = 9;
 }

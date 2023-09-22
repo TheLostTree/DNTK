@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "TransmitReason.proto";
-// CmdId: 21025
-// Obf: EADAAIGJCEL
+// CmdId: 271
+// Obf: JOOFBEDCDMD
 message ClientTransmitRsp {
-	TransmitReason reason = 4;
-	int32 retcode = 8;
+	TransmitReason reason = 15;
+	int32 retcode = 1;
 }

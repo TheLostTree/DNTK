@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "TreasureMapBonusChallengeInfo.proto";
-// CmdId: 23317
-// Obf: JLLLKAKIGKC
+// CmdId: 2091
+// Obf: FBLOFCGMIAK
 message TreasureMapBonusChallengeNotify {
-	TreasureMapBonusChallengeInfo info = 11;
+	TreasureMapBonusChallengeInfo info = 14;
 }

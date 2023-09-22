@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: AECGNDNLCLC
+// Obf: PCNMPAGEACE
 message InBattleMechanicusMonsterInfo {
-	uint32 count = 9;
-	uint32 level = 15;
-	uint32 monster_id = 2;
+	uint32 count = 4;
+	uint32 monster_id = 12;
+	uint32 level = 14;
 }

@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "RogueDiaryAvatar.proto";
-// CmdId: 26124
-// Obf: DDBGDIEFCNK
+// CmdId: 8838
+// Obf: JJKONECIGHG
 message RogueDiaryReviveAvatarReq {
-	RogueDiaryAvatar revive_avatar = 7;
+	RogueDiaryAvatar revive_avatar = 5;
 }

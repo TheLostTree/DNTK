@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "GravenInnocencePhotoStageInfo.proto";
 import "GravenInnocencePhotoObjectInfo.proto";
-// Obf: HLNCBIKONCA
+import "GravenInnocencePhotoStageInfo.proto";
+// Obf: KOEBDBCCGLJ
 message GravenInnocencePhotoInfo {
-	repeated GravenInnocencePhotoStageInfo stage_info_list = 11;
-	repeated GravenInnocencePhotoObjectInfo object_info_list = 15;
+	repeated GravenInnocencePhotoObjectInfo object_info_list = 8;
+	repeated GravenInnocencePhotoStageInfo stage_info_list = 13;
 }

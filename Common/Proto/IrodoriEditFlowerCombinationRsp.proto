@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 26271
-// Obf: KAHODAHFAJB
+// CmdId: 8620
+// Obf: CGLBNIHCHCG
 message IrodoriEditFlowerCombinationRsp {
-	bool ODLPBHCGNJL = 15;
-	int32 retcode = 11;
-	bool MBDLGCECEIG = 1;
+	bool HKJABNODJMO = 3;
+	int32 retcode = 9;
+	bool EJIEJONDCCP = 13;
 }

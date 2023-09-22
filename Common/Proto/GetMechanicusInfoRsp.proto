@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "MechanicusInfo.proto";
-// CmdId: 1507
-// Obf: PEELPJDMPLJ
+// CmdId: 3996
+// Obf: HHNMJPBHIIP
 message GetMechanicusInfoRsp {
-	int32 retcode = 1;
-	MechanicusInfo mechanicus_info = 7;
+	MechanicusInfo mechanicus_info = 4;
+	int32 retcode = 13;
 }

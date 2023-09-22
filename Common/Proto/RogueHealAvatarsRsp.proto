@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 3917
-// Obf: CFJHEIHENJI
+// CmdId: 8037
+// Obf: CLDNIDNBGAH
 message RogueHealAvatarsRsp {
-	uint32 dungeon_id = 13;
-	int32 retcode = 12;
-	uint32 cell_id = 8;
+	int32 retcode = 11;
+	uint32 dungeon_id = 5;
+	uint32 cell_id = 13;
 }

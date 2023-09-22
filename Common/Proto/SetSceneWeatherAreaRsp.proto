@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 29445
-// Obf: CNFBIIHKOLL
+// CmdId: 229
+// Obf: KAPMBELENFN
 message SetSceneWeatherAreaRsp {
-	int32 retcode = 1;
+	int32 retcode = 14;
 }

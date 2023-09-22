@@ -17,11 +17,11 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "DNKNPOGNOFP.proto";
-// Obf: DAJEIAADGGF
+import "JJKBPBNAGAD.proto";
+// Obf: DFJLPKHALNG
 message SceneGallerySandwormInfo {
-	bool EOFIKOMIALM = 9;
-	uint32 energy = 15;
-	DNKNPOGNOFP AOHLJOMAPLN = 13;
-	uint32 ACAODPCJIOP = 7;
+	bool GHAOEGPFCIN = 6;
+	uint32 energy = 1;
+	uint32 MGAACMOKFJC = 2;
+	JJKBPBNAGAD KJGHIGCOBPJ = 3;
 }

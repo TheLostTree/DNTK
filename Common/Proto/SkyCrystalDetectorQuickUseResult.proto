@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "SkyCrystalDetectorData.proto";
-// Obf: MDBHGHIINAM
+// Obf: GECIONGCJJF
 message SkyCrystalDetectorQuickUseResult {
-	SkyCrystalDetectorData sky_crystal_detector_data = 2;
-	int32 retcode = 15;
+	int32 retcode = 11;
+	SkyCrystalDetectorData sky_crystal_detector_data = 4;
 }

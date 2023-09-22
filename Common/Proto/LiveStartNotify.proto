@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 1396
-// Obf: HHADHIBOHBK
+// CmdId: 805
+// Obf: PJOANFBOENG
 message LiveStartNotify {
-	uint32 live_id = 3;
+	uint32 live_id = 4;
 }

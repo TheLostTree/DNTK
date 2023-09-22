@@ -19,7 +19,7 @@ option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
 import "MathQuaternion.proto";
-// Obf: EDGGMGMHPJB
+// Obf: AJPPKICDBMJ
 message RoutePoint {
 	Vector position = 1;
 	float arrive_range = 2;

@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "DungeonCandidateTeamDismissReason.proto";
-// CmdId: 9931
-// Obf: JGHDDECCJPG
+// CmdId: 936
+// Obf: PNCMAJFHICH
 message DungeonCandidateTeamDismissNotify {
-	DungeonCandidateTeamDismissReason reason = 11;
-	uint32 player_uid = 14;
+	uint32 player_uid = 9;
+	DungeonCandidateTeamDismissReason reason = 7;
 }

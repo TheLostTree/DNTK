@@ -18,10 +18,10 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "PlantFlowerFriendFlowerWishData.proto";
-// CmdId: 24917
-// Obf: AECNCPPBEKH
+// CmdId: 8419
+// Obf: JFFMDBPMICN
 message PlantFlowerGetFriendFlowerWishListRsp {
-	repeated PlantFlowerFriendFlowerWishData friend_flower_wish_list = 14;
-	uint32 schedule_id = 13;
-	int32 retcode = 15;
+	uint32 schedule_id = 2;
+	int32 retcode = 9;
+	repeated PlantFlowerFriendFlowerWishData friend_flower_wish_list = 5;
 }

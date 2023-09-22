@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: IMLMACPDKCO
+// Obf: ODLHFHHKAJL
 message DuelHeartLevelDifficultyInfo {
-	bool is_open = 4;
-	uint32 difficulty = 1;
-	uint32 cost_time = 14;
+	bool is_open = 12;
+	uint32 difficulty = 11;
+	uint32 cost_time = 13;
 }

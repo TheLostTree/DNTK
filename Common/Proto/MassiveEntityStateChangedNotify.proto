@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "MassiveEntityState.proto";
-// CmdId: 21761
-// Obf: CNPCOPNIOEH
+// CmdId: 363
+// Obf: IKOPAAIHMDG
 message MassiveEntityStateChangedNotify {
-	repeated MassiveEntityState massive_entity_state_list = 9;
+	repeated MassiveEntityState massive_entity_state_list = 11;
 }

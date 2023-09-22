@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "OpActivityInfo.proto";
-// CmdId: 7676
-// Obf: DIKBKGBJGLE
+// CmdId: 5102
+// Obf: LMCKJDMLBEM
 message OpActivityDataNotify {
-	repeated OpActivityInfo op_activity_info_list = 3;
+	repeated OpActivityInfo op_activity_info_list = 5;
 }

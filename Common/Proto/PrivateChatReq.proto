@@ -17,12 +17,12 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 8163
-// Obf: LOHLOJMOCAG
+// CmdId: 5025
+// Obf: ILJNAECHFLC
 message PrivateChatReq {
-	uint32 target_uid = 5;
+	uint32 target_uid = 2;
 	oneof content {
-		string text = 12;
-		uint32 icon = 11;
+		string text = 4;
+		uint32 icon = 5;
 	}
 }

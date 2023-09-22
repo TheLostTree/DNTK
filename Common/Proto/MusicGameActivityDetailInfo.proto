@@ -19,9 +19,9 @@ option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "UgcMusicBriefInfo.proto";
 import "MusicGameRecord.proto";
-// Obf: OEHHDNDMFHH
+// Obf: BJIFBHFFOLH
 message MusicGameActivityDetailInfo {
-	repeated UgcMusicBriefInfo LDBACGEPLLE = 9;
-	map<uint32, MusicGameRecord> music_game_record_map = 4;
-	repeated UgcMusicBriefInfo OHEAGJIPKGF = 14;
+	repeated UgcMusicBriefInfo NLNCBALMLML = 5;
+	repeated UgcMusicBriefInfo IKPPPFNHMEG = 9;
+	map<uint32, MusicGameRecord> music_game_record_map = 2;
 }

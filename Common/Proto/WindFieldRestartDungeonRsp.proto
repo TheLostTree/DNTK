@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 816
-// Obf: INFBHECNIEL
+// CmdId: 20315
+// Obf: KKINCKBIIGA
 message WindFieldRestartDungeonRsp {
-	int32 retcode = 13;
+	int32 retcode = 3;
 }

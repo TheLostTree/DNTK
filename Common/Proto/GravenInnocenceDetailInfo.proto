@@ -18,14 +18,14 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "GravenInnocenceRaceInfo.proto";
-import "GravenInnocenceCampInfo.proto";
 import "GravenInnocencePhotoInfo.proto";
+import "GravenInnocenceCampInfo.proto";
 import "GravenInnocenceCarveInfo.proto";
-// Obf: DAMILCBHHPE
+// Obf: PGHJFAEIOEL
 message GravenInnocenceDetailInfo {
-	GravenInnocenceRaceInfo race_info = 13;
+	GravenInnocenceRaceInfo race_info = 12;
+	bool is_content_closed = 15;
+	GravenInnocencePhotoInfo photo_info = 6;
 	GravenInnocenceCampInfo camp_info = 11;
-	bool is_content_closed = 7;
-	GravenInnocencePhotoInfo photo_info = 2;
-	GravenInnocenceCarveInfo carve_info = 15;
+	GravenInnocenceCarveInfo carve_info = 4;
 }

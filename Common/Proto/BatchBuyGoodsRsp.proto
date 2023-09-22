@@ -17,13 +17,13 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "BuyGoodsParam.proto";
 import "ShopGoods.proto";
-// CmdId: 29700
-// Obf: DLIGMKDIKKM
+import "BuyGoodsParam.proto";
+// CmdId: 730
+// Obf: EIJEMIJEBLP
 message BatchBuyGoodsRsp {
-	repeated BuyGoodsParam buy_goods_list = 12;
-	repeated ShopGoods goods_list = 9;
-	uint32 shop_type = 3;
-	int32 retcode = 6;
+	repeated ShopGoods goods_list = 5;
+	int32 retcode = 8;
+	repeated BuyGoodsParam buy_goods_list = 6;
+	uint32 shop_type = 10;
 }

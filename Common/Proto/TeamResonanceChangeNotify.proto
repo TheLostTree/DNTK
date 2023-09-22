@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "AvatarTeamResonanceInfo.proto";
-// CmdId: 23566
-// Obf: GPHMDAHPNLK
+// CmdId: 1028
+// Obf: OBBKOMNOEJA
 message TeamResonanceChangeNotify {
-	repeated AvatarTeamResonanceInfo info_list = 1;
+	repeated AvatarTeamResonanceInfo info_list = 9;
 }

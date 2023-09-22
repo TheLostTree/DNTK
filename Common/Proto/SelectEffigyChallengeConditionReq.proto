@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 7159
-// Obf: KOMEHDLAFCI
+// CmdId: 2074
+// Obf: DEEECCABGIE
 message SelectEffigyChallengeConditionReq {
-	repeated uint32 condition_id_list = 5;
-	uint32 challenge_id = 15;
-	uint32 difficulty_id = 7;
+	uint32 difficulty_id = 11;
+	uint32 challenge_id = 6;
+	repeated uint32 condition_id_list = 2;
 }

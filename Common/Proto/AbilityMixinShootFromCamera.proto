@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-// Obf: KMDKCMLECGB
+// Obf: EOEKNCGNPGB
 message AbilityMixinShootFromCamera {
-	Vector InitPos = 4;
-	Vector forward = 11;
+	Vector InitPos = 5;
+	Vector forward = 4;
 }

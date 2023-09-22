@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: GPODMAALLGC
+// Obf: OOFKDFMGBHE
 enum GadgetBornType {
 	GADGET_BORN_TYPE_NONE = 0;
 	GADGET_BORN_TYPE_IN_AIR = 1;

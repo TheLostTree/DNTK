@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 8986
-// Obf: AJDFJMPKPDK
+// CmdId: 183
+// Obf: JIEKKJEKJDG
 message DailyTaskFilterCityRsp {
-	uint32 city_id = 2;
-	int32 retcode = 4;
+	int32 retcode = 15;
+	uint32 city_id = 4;
 }

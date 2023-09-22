@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 23525
-// Obf: HFOAHJMDHDH
+// CmdId: 3984
+// Obf: OEBANJNBOIL
 message EnterMechanicusDungeonReq {
-	uint32 difficult_level = 13;
+	uint32 difficult_level = 8;
 }

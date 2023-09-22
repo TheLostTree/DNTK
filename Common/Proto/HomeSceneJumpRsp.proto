@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 22825
-// Obf: OEJJANGAIPG
+// CmdId: 4544
+// Obf: HBDFALCPCIA
 message HomeSceneJumpRsp {
-	int32 retcode = 14;
-	bool is_enter_room_scene = 8;
+	bool is_enter_room_scene = 14;
+	int32 retcode = 13;
 }

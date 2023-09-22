@@ -17,10 +17,10 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 29756
-// Obf: OBPEKPDBDNM
+// CmdId: 3916
+// Obf: KPKKFLAAGNM
 message MechanicusCandidateTeamCreateRsp {
 	int32 retcode = 13;
-	uint32 difficult_level = 9;
-	uint32 dungeon_id = 10;
+	uint32 difficult_level = 3;
+	uint32 dungeon_id = 7;
 }

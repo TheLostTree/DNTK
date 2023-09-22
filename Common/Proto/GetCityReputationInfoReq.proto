@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 8549
-// Obf: NGMPLHMNEFE
+// CmdId: 2875
+// Obf: CCKEGBEBNDG
 message GetCityReputationInfoReq {
-	uint32 city_id = 15;
+	uint32 city_id = 4;
 }

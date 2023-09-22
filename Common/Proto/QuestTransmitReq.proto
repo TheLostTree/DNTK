@@ -17,10 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 2854
-// Obf: FGDGCAJEJPM
+// CmdId: 442
+// Obf: NBIBEFFJOJP
 message QuestTransmitReq {
-	uint32 quest_id = 2;
-	uint32 point_id = 1;
-	uint32 LAJGLCIFKCP = 10;
+	uint32 quest_id = 8;
+	uint32 point_id = 13;
 }

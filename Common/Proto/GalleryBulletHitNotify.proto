@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 25744
-// Obf: BOHILAMBODG
+// CmdId: 5584
+// Obf: MOCNEPOFOLB
 message GalleryBulletHitNotify {
-	uint32 gallery_id = 15;
-	uint32 hit_count = 12;
+	uint32 gallery_id = 8;
+	uint32 hit_count = 11;
 }

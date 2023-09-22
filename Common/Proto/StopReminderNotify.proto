@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 29994
-// Obf: NCBNNBPKPFK
+// CmdId: 3385
+// Obf: DOBDKGNMPOO
 message StopReminderNotify {
-	uint32 reminder_id = 9;
+	uint32 reminder_id = 13;
 }

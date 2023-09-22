@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "PbNavMeshStatsInfo.proto";
-// CmdId: 2339
-// Obf: AKDOLJNNLOM
+// CmdId: 2374
+// Obf: PLPMACOCIMJ
 message NavMeshStatsNotify {
-	repeated PbNavMeshStatsInfo infos = 2;
+	repeated PbNavMeshStatsInfo infos = 9;
 }

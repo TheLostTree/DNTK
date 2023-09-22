@@ -17,12 +17,12 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-import "CustomDungeonRoom.proto";
 import "CustomDungeonSetting.proto";
-// CmdId: 7311
-// Obf: JBKNDGLOCNF
+import "CustomDungeonRoom.proto";
+// CmdId: 6237
+// Obf: KPHMOHHLHGJ
 message SaveCustomDungeonRoomReq {
-	bool is_update_setting = 9;
-	CustomDungeonRoom custom_dungeon_room = 14;
-	CustomDungeonSetting setting = 12;
+	CustomDungeonSetting setting = 2;
+	bool is_update_setting = 4;
+	CustomDungeonRoom custom_dungeon_room = 13;
 }

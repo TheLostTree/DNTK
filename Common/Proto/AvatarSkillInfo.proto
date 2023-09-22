@@ -17,7 +17,7 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// Obf: FKBNODHMBMG
+// Obf: LJGFAMEDAGO
 message AvatarSkillInfo {
 	uint32 pass_cd_time = 1;
 	repeated uint32 full_cd_time_list = 2;

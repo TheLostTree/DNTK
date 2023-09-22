@@ -18,9 +18,9 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "Vector.proto";
-// Obf: IHNPIOGOGKD
+// Obf: ACFEEBJCEHD
 message HomeAnimalData {
-	Vector spawnRot = 7;
-	uint32 furniture_id = 6;
+	uint32 furniture_id = 11;
+	Vector spawnRot = 10;
 	Vector spawn_pos = 4;
 }

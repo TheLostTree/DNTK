@@ -17,9 +17,9 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 3805
-// Obf: IEBDLOBLJDP
+// CmdId: 255
+// Obf: NMAKCEKIKPC
 message SceneInitFinishRsp {
-	int32 retcode = 4;
-	uint32 enter_scene_token = 13;
+	uint32 enter_scene_token = 3;
+	int32 retcode = 2;
 }

@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "GCGSettleOption.proto";
-// CmdId: 9600
-// Obf: GJDHABPAPHN
+// CmdId: 7370
+// Obf: GDGMONKKMCC
 message GCGSettleOptionReq {
-	GCGSettleOption option = 5;
+	GCGSettleOption option = 2;
 }

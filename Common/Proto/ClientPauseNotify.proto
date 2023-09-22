@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 29272
-// Obf: FFFCAOAIFDJ
+// CmdId: 239
+// Obf: FAOFIMHCBEM
 message ClientPauseNotify {
-	bool is_open = 8;
+	bool is_open = 6;
 }

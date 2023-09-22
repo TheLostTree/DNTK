@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 21995
-// Obf: IKIPCIJDGNH
+// CmdId: 7160
+// Obf: AAEFHPMFMGF
 message GCGDebugReplayNotify {
-	string json_str = 8;
+	string json_str = 9;
 }

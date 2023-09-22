@@ -18,8 +18,8 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "InstableSprayAvatarInfo.proto";
-// CmdId: 21079
-// Obf: MEKNBOLMLCK
+// CmdId: 24423
+// Obf: CFJMBKIGGLC
 message InstableSpraySwitchTeamReq {
-	repeated InstableSprayAvatarInfo avatar_info_list = 1;
+	repeated InstableSprayAvatarInfo avatar_info_list = 13;
 }

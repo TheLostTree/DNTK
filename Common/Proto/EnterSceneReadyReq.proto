@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 5011
-// Obf: HDKGADMEFMP
+// CmdId: 251
+// Obf: IEJDFJHKAGE
 message EnterSceneReadyReq {
-	uint32 enter_scene_token = 15;
+	uint32 enter_scene_token = 14;
 }

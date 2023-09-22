@@ -17,8 +17,8 @@
 syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
-// CmdId: 3410
-// Obf: BHNLDJOCKJJ
+// CmdId: 7807
+// Obf: IIMEOILCLMG
 message GCGHeartBeatNotify {
-	uint32 server_seq = 7;
+	uint32 server_seq = 4;
 }

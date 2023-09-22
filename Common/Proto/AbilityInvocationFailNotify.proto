@@ -18,10 +18,10 @@ syntax = "proto3";
 option csharp_namespace = "Common.Protobuf";
 option java_package = "emu.grasscutter.net.proto";
 import "AbilityInvokeEntry.proto";
-// CmdId: 26730
-// Obf: PKAPLLHEELP
+// CmdId: 1155
+// Obf: CMJMPJAFMGK
 message AbilityInvocationFailNotify {
-	AbilityInvokeEntry invoke = 6;
-	uint32 entity_id = 9;
-	string reason = 1;
+	uint32 entity_id = 1;
+	AbilityInvokeEntry invoke = 12;
+	string reason = 2;
 }
