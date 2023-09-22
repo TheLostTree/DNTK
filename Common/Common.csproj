@@ -17,7 +17,7 @@
       <PackageReference Include="Serilog" Version="2.12.0-dev-01479" />
     </ItemGroup>
     <ItemGroup>
-<!--        <Protobuf Include="Proto/*.proto" ProtoRoot="Proto" GrpcServices="None"/>-->
+        <Protobuf Include="Proto/*.proto" ProtoRoot="Proto" GrpcServices="None"/>
     </ItemGroup>
 
 </Project>

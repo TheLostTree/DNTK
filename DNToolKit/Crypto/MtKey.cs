@@ -1,7 +1,7 @@
 ﻿using System.Buffers.Binary;
 using System.Runtime.InteropServices;
 
-namespace DNToolKit.AnimeGame.Crypto
+namespace DNToolKit.Crypto
 {
     /// <summary>
     /// Represents a key created with <see cref="Mt1993764"/>.
@@ -16,7 +16,7 @@ namespace DNToolKit.AnimeGame.Crypto
         private static readonly Mt1993764 Mt = new();
         public static readonly MtKey Null = new();
 
-        private readonly byte[] _buffer;
+        public readonly byte[] _buffer;
 
         private MtKey() : this(new byte[BufferLength])
         { }

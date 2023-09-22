@@ -10,10 +10,10 @@
         private readonly object _lockObj = new();
 
 
-        public KCP(uint conv, uint token)
+        public KCP(uint conv, uint token, object obj)
         {
 
-            _nativeKcp = new IKCP(conv, token, new object());
+            _nativeKcp = new IKCP(conv, token, obj);
             _nativeKcp.NoDelay(1, 10, 2, 0);
             _nativeKcp.WndSize(256, 256);
             _nativeKcp.SetOutput((_, _, _) => { });
@@ -36,30 +36,11 @@
         }
 
         /// <summary>
-        /// Receives all messages input by <see cref="Input"/>.
-        /// </summary>
-        private void ReceiveAll(Action<byte[]> callback)
-        {
-            byte[]? recv;
-            do
-            {
-                recv = Receive();
-                if (recv == null)
-                {
-                    break;
-                }
-                callback(recv);
-            } while (true);
-            // Receive and process message, until message is null
-            // while (Receive() is { } receivedMessage)
-            //     OnMessageReceived(receivedMessage);
-        }
-
-        /// <summary>
         /// Received a single message input by <see cref="Input"/>.
         /// </summary>
         /// <returns></returns>
-        private byte[]? Receive()
+        /// 
+        public ReceiveResult Receive()
         {
             int size;
             lock (_lockObj)
@@ -67,7 +48,7 @@
                 size = _nativeKcp.PeekSize();
             }
             if (size < 0)
-                return null;
+                return ReceiveResult.Fail();
             var buffer = new byte[size];
 
             var ret = 0;
@@ -80,7 +61,29 @@
             {
                 Console.WriteLine($"ret: {ret}");
             }
-            return buffer.ToArray();
+
+            return ReceiveResult.Success(buffer);
+        }
+
+        public class ReceiveResult
+        {
+            public byte[]? bytes;
+            public Boolean isSuccess;
+
+            public static ReceiveResult Fail()
+            {
+                return new ReceiveResult();
+            }
+            
+            public static ReceiveResult Success(byte[] bytes)
+            {
+                return new ReceiveResult()
+                {
+                    bytes = bytes,
+                    isSuccess = true
+                };
+            }
+            
         }
     }
 

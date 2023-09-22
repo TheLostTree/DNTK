@@ -1,4 +1,4 @@
-﻿namespace DNToolKit.AnimeGame.Crypto
+﻿namespace DNToolKit.Crypto
 {
     /// <summary>
     /// The 64-bit version of the Mersenne Twister pseudorandom number generator.

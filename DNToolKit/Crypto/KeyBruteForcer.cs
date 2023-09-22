@@ -1,7 +1,7 @@
 ﻿using DNToolKit.Extensions;
 using Serilog;
 
-namespace DNToolKit.AnimeGame.Crypto
+namespace DNToolKit.Crypto
 {
     static class KeyBruteForcer
     {
