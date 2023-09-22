@@ -29,7 +29,7 @@ namespace DNToolKit.AnimeGame.Crypto
         /// <returns>The found <see cref="MtKey"/> for dispatch. Otherwise <see langword="null"/>.</returns>
         public static MtKey? Find(byte[] packet)
         {
-            var magic = (ushort)(packet.GetUInt16(0) ^ AnimeGamePacket.Magic);
+            var magic = (ushort)(packet.GetUInt16(0) ^ 0x4567);
             if (magic == 0)
                 return MtKey.Null;
 
