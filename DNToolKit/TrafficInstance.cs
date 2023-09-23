@@ -25,7 +25,16 @@ public class TrafficInstance{
     }
 
     private Action<TrafficPacket> callback;
-    
+
+    private void Reset()
+    {
+        curKey = Convert.FromBase64String(DispatchKeyLookup.DispatchKeys[29921]);
+        seq = 0;
+        session++;
+        _server = null;
+        _client = null;
+        bfcontext.Clear();
+    }
 
     private void ProcessHandshake(byte[] data, Sender sender){
         var magic = data.GetUInt32(0);
@@ -38,7 +47,8 @@ public class TrafficInstance{
             case 0x145:
                 if (sender != Sender.Server)
                     break;
-                
+
+                Reset();
                 Log.Debug("Server Handshake : {Conv}, {Token}", conv, token);
                 _client = new KCP(conv, token, Sender.Client);
                 _server = new KCP(conv, token, Sender.Server);
@@ -65,25 +75,25 @@ public class TrafficInstance{
     }
 
 
-    private byte[] XorCopy(byte[] source, byte[] key)
+    private void XorCopy(byte[] source, byte[] key, byte[] result)
     {
-        byte[] result = new byte[source.Length];
         for (int i = 0; i < source.Length; i++)
         {
             result[i] = (byte)(source[i] ^ key[i % key.Length]);
         }
-        return result;
+
     }
 
     
     
     //todo: make this not hardcoded for na client
-    private byte[] curKey = Convert.FromBase64String(Crypto.DispatchKeyLookup.DispatchKeys[29921]);
+    private byte[] curKey;
     private static readonly RSA ClientPrivate = RSA.Create();
 
     private uint startingMagic = 0x4567;
     private uint endingMagic = 0x89ab;
 
+    private uint session = 0;
     private uint seq = 0;
     
     public class ProtobufParseResult
@@ -149,11 +159,28 @@ public class TrafficInstance{
         }
     }
 
-    private BruteforceContext bfcontext = new BruteforceContext();
+    private BruteforceContext bfcontext = new ();
     
+    private byte[] xoredBuf = new byte[0x10000];
+
+    private void CheckXorBufLength(byte[] data)
+    {
+        if (data.Length >= xoredBuf.Length)
+        {
+            int newlength = (int)Math.Pow(2, Math.Log2(data.Length) + 1);
+            
+            xoredBuf = new byte[newlength];
+        }
+    }
+
     public TrafficPacket ProcessKcpPacket(byte[] data)
     {
-        var xored = XorCopy(data, curKey);
+
+        CheckXorBufLength(data);
+        byte[] xored = xoredBuf;
+        XorCopy(data, curKey, xored);
+        
+        
         var magic = xored.GetUInt16(0);
         if (magic != 0x4567)
         {
@@ -165,7 +192,9 @@ public class TrafficInstance{
 
                 var key = KeyBruteForcer.BruteForce(data, (long)bfcontext._tokenReqSendTime,bfcontext._tokenRspServerKey.Value);
                 curKey = key._buffer;
-                xored = XorCopy(data, curKey);
+                
+                CheckXorBufLength(data);
+                XorCopy(data, curKey, xored);
 
             }
             else
@@ -192,8 +221,8 @@ public class TrafficInstance{
         var head = new byte[packetHeaderLen];
         Array.Copy(xored, 10, head, 0, packetHeaderLen);
         
-        if (packetHeaderLen + dataLen + 12 != xored.Length) {
-            Log.Warning("weird packet length discrepancy? reported: {reported}, actual: {actual}", packetHeaderLen + dataLen + 16, xored.Length);
+        if (packetHeaderLen + dataLen + 12 != data.Length) {
+            Log.Warning("weird packet length discrepancy? reported: {reported}, actual: {actual}", packetHeaderLen + dataLen + 12, data.Length);
         }
 
         if (magic2 != endingMagic) {
@@ -231,6 +260,8 @@ public class TrafficInstance{
             CmdId = cmdId,
             Data = slice,
             Seq = ++seq,
+            SessionNum = session,
+            ParseResult = obj
         };
 
 
@@ -291,6 +322,8 @@ public class TrafficInstance{
         public uint CmdId;
         public byte[] Data;
         public uint Seq;
+        public uint SessionNum;
         public Sender Source;
+        public ProtobufParseResult ParseResult;
     }
 }

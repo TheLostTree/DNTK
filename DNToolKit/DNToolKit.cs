@@ -1,4 +1,5 @@
 ﻿
+using Common;
 using DNToolKit.Crypto;
 using PacketDotNet;
 using Serilog;
@@ -19,11 +20,35 @@ namespace DNToolKit
             Log.Information("DNToolKit for v{Major}.{Minor}", 4, 0);
             instance = new TrafficInstance((pack) =>
             {
-                Console.WriteLine(((Common.Opcode)pack.CmdId).ToString());
+                var cmdIdName = ((Opcode)pack.CmdId).ToString();
+                Console.WriteLine(cmdIdName);
+
+                if (pack.ParseResult.Packet is null)
+                {
+                    return;
+                }
+
+                var s = Google.Protobuf.JsonFormatter.Default.Format(pack.ParseResult.Packet);
+                switch (pack.CmdId)
+                {
+                    case (int)Opcode.SceneEntityAppearNotify:
+                        File.WriteAllText($"./Session{pack.SessionNum}Seq{pack.Seq}.json", s);
+
+                        break;
+                    case (int)Opcode.MarkMapRsp:
+                        File.WriteAllText($"./MarkMapRsp{pack.SessionNum}Seq{pack.Seq}.json", s);
+
+                        break;
+                    default:
+                        
+                        break;
+                }
+                
+
             });
             Console.WriteLine(Common.ProtobufParser.ParserCount);
             KeyBruteForcer.LoadOldSeeds();
-            using var device = new CaptureFileReaderDevice("/Users/admin/Documents/Projects/DNToolKit/sensitive/login4.0gi.pcap");
+            using var device = new CaptureFileReaderDevice("/Users/admin/Documents/Projects/DNToolKit/sensitive/3logins4.0gi.pcap");
 
             device.Open();
             device.Filter = PCapFilter_;
